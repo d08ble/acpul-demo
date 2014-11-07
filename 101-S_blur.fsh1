@@ -1,0 +1,37 @@
+### 101:S blur.fsh1
+#ifdef GL_ES
+//precision mediump float;
+#endif
+
+//varying vec4 v_fragmentColor;
+varying vec2 v_texCoord;
+
+uniform sampler2D CC_Texture0;
+
+//uniform vec2 blurSize;
+//uniform vec4 substract;
+
+uniform vec2 p0;
+//uniform vec4 p1;
+
+void main() {
+  //vec2 p0 = vec2(0.003, 0.003);
+  vec4 p1 = vec4(0, 1.0, 0, 0);
+
+   vec2 blurSize = p0;
+   vec4 substract = p1;
+
+   vec4 sum = vec4(0.0);
+   sum += texture2D(CC_Texture0, v_texCoord - 4.0 * blurSize) * 0.05;
+   sum += texture2D(CC_Texture0, v_texCoord - 3.0 * blurSize) * 0.09;
+   sum += texture2D(CC_Texture0, v_texCoord - 2.0 * blurSize) * 0.12;
+   sum += texture2D(CC_Texture0, v_texCoord - 1.0 * blurSize) * 0.15;
+   sum += texture2D(CC_Texture0, v_texCoord                ) * 0.16;
+   sum += texture2D(CC_Texture0, v_texCoord + 1.0 * blurSize) * 0.15;
+   sum += texture2D(CC_Texture0, v_texCoord + 2.0 * blurSize) * 0.12;
+   sum += texture2D(CC_Texture0, v_texCoord + 3.0 * blurSize) * 0.09;
+   sum += texture2D(CC_Texture0, v_texCoord + 4.0 * blurSize) * 0.05;
+ 
+    gl_FragColor = sum;//vec4(sum.rg, v_texCoord.x, sum.a);//texture2D(CC_Texture0, v_texCoord+vec2(0, ));sum;//(sum - substract) *vec4(100.0, 6.4,9.0, 50.0);//* v_fragmentColor;
+
+}

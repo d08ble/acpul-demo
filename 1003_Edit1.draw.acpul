@@ -1,0 +1,53 @@
+### 1003 Edit1.draw
+r0:=1;
+rect(r0, 2, 0,0,400,1000);
+#watch(k);
+
+m @1002;
+#watch(m.vec2d.array.d.a);
+ptr m.vec2d.array.d.a;
+cnt m.vec2d.array.d.n;
+#watch(cnt);
+
+#color(u0, 15/16, 15/16, 15/16, 1.0);
+#rect(u0, 6, 0,0, 500,500);
+
+color(u0, 0.2, 0.5*sin(t), 0.4, 0.1);
+#color(u0, 0.02, 0.0*(0.5+sin(t*10)/4), 0.02, 0.01);
+#color(u0, 0.0, 1*(0.5+sin(t*2)/4), 0.9, 0.5);
+
+_ @1010;
+_ @sys.display;
+
+psize1(3);
+
+vertarr display.gl;
+
+vertarr.param(0, 2, 0, ptr, 0);
+vertarr.draw(0, 0, cnt);
+#watch(cnt);
+
+x 900+sin(t)*100;
+y 100;
+
+psize1(1);
+
+#color(u0, 0.2, 0.5*sin(t), (1*(sin(t*10))+1)/2, 1);
+color(u0, 0, 0, 0.5, 1);
+
+body.h 0; #sin(t*0);
+
+rect(u0, 6, x+50/2-10,y+110+50*body.h, 20,20);
+
+#color(u0, 0.2, 0.5*sin(t), 0, (1*(sin(t*10))+1)/2);
+color(u0, 1, 0, 0, 0);
+rect(u0, 6, x+50/2-10+2*sin(t*10),y+120+50*body.h, 5,5);
+rect(u0, 6, x+50/2+2*sin(t*10),y+120+50*body.h, 5,5);
+
+color(u0, 0.2, 0.5*body.h, 1, 1);
+
+rect(u0, 2, x,y, 50,110+50*body.h);
+
+rect(u0, 2, x,0, 10,y); # x,y w,h 
+rect(u0, 2, x+50-10,0, 10,y);  
+

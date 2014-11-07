@@ -1,0 +1,24 @@
+### 1004 Edit1.Mesh
+lt:=0.1;
+#watch(p0);
+r0:=k==0;
+get2(u0, p0, 0, 0);
+#watch(l0);
+#watch(l1);
+mesh.tri
+{
+ load io(_0, 500200, _1, _2, _3, 0);
+ result io(_0, 500201, _1, 0,0,0);
+};
+
+triangulate
+{
+ mesh.tri.load(_0, _1, _2, _3);
+ mesh.tri.result(_0, _4);
+};
+
+#heap.alloc(l2, 1);
+#triangulate(r0, l0, 0, l1, l2);
+
+k:=1;
+#watch(-111);

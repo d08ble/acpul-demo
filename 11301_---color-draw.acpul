@@ -1,0 +1,5 @@
+### 11301 -- color/draw
+# background [
+color(u0, 0.2,0,0.2,0.1);
+rect(u0, 6, 0,0, 768, 1024);
+# background ]

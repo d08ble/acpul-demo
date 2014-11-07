@@ -1,0 +1,40 @@
+### 7100000  7.1.Post effect
+r0:=k==0;
+
+#7.1.1.Circle A;
+create(r0, -30000, 711, 5555555, 7110000, p0);
+
+#7.1.2.Circle B;
+create(r0, -30000, 712, 5555555, 7120000, p0);
+
+#7.1.3.Circle C;
+create(r0, -30000, 713, 5555555, 7130000, p0);
+
+#7.1.4.Circle D;
+create(r0, -30000, 714, 5555555, 7140000, p0);
+
+#7.1.5.Circle E;
+create(r0, -30000, 715, 5555555, 7150000, p0);
+
+#watch(p0);
+
+#INIT TEXTURE;
+#size;
+r1:=io(r0, 2003, 256, 256, 0,0);
+#clear;
+r1:=io(r0, 2007, 1, 0,0,0);
+#clear rgba;
+r1:=io(r0, 2009, 0, 0, 0, 0);
+
+#query self;
+r1:=io(r0, 100, 0, 0,0,0);
+#query child[0] - vrt;
+r1:=io(r0, 101, 0, 0,0,0);
+#query child[0] - vrt.sprite;
+r1:=io(r0, 101, 0, 0,0,0);
+
+#create target node in self. target->sprite;
+r1:=create(r0, 0, 710, -7777777, 7100001, 0);
+
+
+k:=1;

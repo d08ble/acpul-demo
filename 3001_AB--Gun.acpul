@@ -1,0 +1,116 @@
+### 3001 AB::Gun
+r0:=k==0;
+
+r7:=p0;
+draw(r0, 3002);
+
+_ @1010;
+_ @sys.touch;
+
+context.def
+{
+ # position & size
+ x 0;
+ y 1;
+ width 2;
+ height 3;
+
+ # minimal delta for run
+ dist.min.run 4;
+
+ # target node for set distance/run
+ delta.x 6;
+ delta.y 7;
+ event 8;
+ # memory size
+ msize 9;
+};
+
+context
+{
+ _;
+ cd def;
+ msize cd.msize;
+ x.s {set(u0, d.a, cd.x, _0);};
+ x.g {get(u0, d.a, cd.x);};
+ y.s {set(u0, d.a, cd.y, _0);};
+ y.g {get(u0, d.a, cd.y);};
+ width.s {set(u0, d.a, cd.width, _0);};
+ width.g {get(u0, d.a, cd.width);};
+ height.s {set(u0, d.a, cd.height, _0);};
+ height.g {get(u0, d.a, cd.height);};
+ rect {x.s(_0);y.s(_1);width.s(_2);height.s(_3);};
+ position.g {_0:=x.g;_1:=y.g;};
+
+ dist.min.run.s {set(u0, d.a, cd.dist.min.run, _0);};
+ dist.min.run.g {get(u0, d.a, cd.dist.min.run);};
+
+ delta.x.s {set(u0, d.a, cd.delta.x, _0);};
+ delta.x.g {get(u0, d.a, cd.delta.x);};
+ delta.y.s {set(u0, d.a, cd.delta.y, _0);};
+ delta.y.g {get(u0, d.a, cd.delta.y);};
+ delta.s {x.s(_0);y.s(_1);};
+ delta.g {_0:=x.g();_1:=y.g();};
+
+ event.s {set(u0, d.a, event, _0);};
+ event.g {get(u0, d.a, event);};
+ event.next {_0:=g();if(_0!=0){s(0);g;};};
+ event.run {s(1);};
+ event.update {s(2);};
+};
+
+context.d.a p0;
+ctx context;
+#l0:=ctx.x.g;
+
+target
+{
+ delta.point
+ # x, y
+ {
+  ctx.delta.s(_0-x, _1-y);
+  ctx.event.update();
+#  watch(_0-x);
+ };
+ run
+ {
+  distance sqrt((_2-_0)^2+(_3-_1)^2);
+  if (distance(x, y, _0, _1)>=ctx.dist.min.run.g)
+  {
+   ctx.event.run();
+  };
+ };
+};
+
+touch.ev
+{
+ began 
+ # x, y 
+ {
+  target.delta.point(_0, _1);
+ };
+ moved
+ # x, y
+ {
+  target.delta.point(_0, _1);
+ };
+ ended
+ # x, y
+ {
+  target.run(_0, _1);
+ };
+};
+
+if (r0)
+{
+ x:=ctx.x.g;
+ y:=ctx.y.g;
+ w:=ctx.width.g;
+ h:=ctx.height.g;
+};
+
+_ @sys.touch.ev.process.once;
+touch.rect(r1, x-w/2,y-h/2,w,h);
+touch.ev.process.once(r1, r2);
+
+k:=1;

@@ -1,0 +1,19 @@
+### 20002 X::Main
+r0:=k==0;
+
+draw(r0, 20003);
+
+x:=1200;
+
+### Create Window {
+_ @1010;
+_ @sys.node;
+
+X.Window 20100;
+
+node.new.target.object(r0, X.Window, 0);
+node.new.target.object(r0, X.Window, 0);
+### }
+
+
+k:=1;

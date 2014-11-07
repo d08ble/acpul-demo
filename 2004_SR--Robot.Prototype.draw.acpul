@@ -1,0 +1,27 @@
+### 2004 SR::Robot.Prototype.draw
+robot.prototype
+{
+ head;
+ body;
+ hang;
+};
+
+#
+# item {
+#  dt
+#  void *ptr
+# }
+motion.timeline
+{
+ object.DESCRIPTION
+ {
+  items.count;
+  items;
+  object.a;
+  object.b;
+  for.each();
+ };
+};
+
+color(u0, 0.5, 0, 0.2, 0.5);
+rect(u0, 6, 0,0,200,200);

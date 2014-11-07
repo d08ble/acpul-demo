@@ -1,0 +1,6 @@
+### 2011 SR::Joystick.point
+r0:=k==0;
+
+draw(r0, 2012);
+
+k:=1;

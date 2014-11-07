@@ -1,0 +1,21 @@
+### 9742 node.ex::Demo.0
+r0:=k==0;
+
+draw(r0, 9743);
+
+_ @1010;
+_ @sys.node;
+
+#create node.ex::Test
+node.new.this.ex(r0, 9700, 0);
+
+#simple transform child
+
+#s+=0.001;
+s:=0.04;
+#x:=-20*rnd(r0);
+#y:=1000*rnd(r0);
+x:=0;
+y:=0;
+
+k:=1;

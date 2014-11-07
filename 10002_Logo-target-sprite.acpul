@@ -1,0 +1,16 @@
+### 10002 Logo#target#sprite
+#r:=140;
+r:=r-3;
+s:=1;
+lt:=5;
+x:=300;
+y:=300;
+
+r0:=k==0;
+r1:=shader(r0, 0, 1);
+
+r0:=1;
+r1:=uniform(r0, 0, p);
+r1:=uniform(r0, 1, (sin(p*32)+1)/4);
+
+k:=1;

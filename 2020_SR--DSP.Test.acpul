@@ -1,0 +1,17 @@
+### 2020 SR::DSP.Test
+_ @1010;
+_ @sys.dsp;
+_ @sys.dsp.test;
+
+r0:=k==0;
+
+if (r0)
+{
+ dsp.test();
+};
+
+x:=730;
+y:=20;
+draw(r0, 2021);
+
+k:=1;

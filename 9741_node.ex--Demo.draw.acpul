@@ -1,0 +1,88 @@
+### 9741 node.ex::Demo.draw
+d @9740;
+#_ d.exports;
+aa {_ d.exports;};
+aa {_;tex1a l10;tex1b l11;};
+_ aa; # bugfix in redefine export (need debug)
+
+t1 d.exports.tex1a;
+t2 d.exports.tex1b;
+tick l12;
+tex1a:=if(tick, t1, t2);
+tex1b:=if(tick, t2, t1);
+tick:=mod(tick+1, 2);
+#l0:=aa.tex1a+t1;
+
+_ @1010;
+_ @sys.node;
+
+# 1 CHILD->T0
+node.ex.gl.fbo(u0, tex0);
+node.ex.gl.clear(u0, 0,1,0,0.4);
+node.ex.gl.child.draw(u0);
+
+# 2 T0->T1 (rgba)->(x,y,dx,dy)
+node.ex.gl.fbo(u0, tex1a);
+#if(r0){
+#node.ex.gl.clear(r0, 1,0,1,1);
+node.ex.gl.clear(r0, 0,0,0,0);
+
+node.ex.shader.use(u0, 9711, 9730);
+node.ex.shader.uniform.texture(u0, 0, tex0, 0);
+node.ex.gl.rect(u0, -20,-100+rnd(r0)*800, t0w,t0h);
+
+#};
+# 2a T1->T1'
+node.ex.gl.fbo(u0, tex1b);
+node.ex.gl.clear(u0, 0,0,0,0);
+
+node.ex.shader.use(u0, 9711, 9732);
+node.ex.shader.uniform.texture(u0, 0, tex1a, 0);
+#node.ex.shader.uniform.f2(u0, 1, t0w,t0h);
+node.ex.gl.rect(u0, 0,0, t1w,t1h);
+
+# 3 T1->GL
+node.ex.gl.fbo(u0, -1);
+
+node.ex.shader.use(u0, 9711, 9721);
+node.ex.shader.uniform.texture(u0, 0, tex1a, 0);
+node.ex.gl.rect(u0, 0,0, t1w,t1h);
+
+#node.gl.blend(u0, 1, 16);
+
+node.ex.shader.use(u0, 9733, 9734);
+#watch(vec2p0);
+node.ex.shader.attribute(u0, 0, vec2p0,0,4,0, 0,0);
+node.ex.shader.uniform.texture(u0, 0, tex1a, 0);
+node.ex.gl.draw(u0, 0, 100*500);
+
+node.ex.gl.fbo(u0, tex1b);
+node.ex.gl.mem.gpu2cpu(u0, 0,0, 100,500, vec2p0,0);
+
+
+node.ex.gl.fbo(u0, -1);
+
+#node.ex.gl.rect(u0, 0,0, 1000,1000);
+
+# DEBUG
+
+psize1(1);
+
+node.ex.shader.use(u0, 9711, 9721);
+node.ex.shader.uniform.texture(u0, 0, tex1a, 0);
+dr{x 500;y 0;w t1w/5;h t1h/5;};
+node.ex.gl.rect(u0, dr.x,dr.y, dr.w,dr.h);
+rect(u0, 2, dr.x,dr.y, dr.w,dr.h);
+
+node.ex.shader.uniform.texture(u0, 0, tex1b, 0);
+dr{_;x 500+w;x1 x+w;};
+node.ex.gl.rect(u0, dr.x,dr.y, dr.w,dr.h);
+rect(u0, 2, dr.x,dr.y, dr.w,dr.h);
+
+node.ex.shader.uniform.texture(u0, 0, tex0, 0);
+dr{_;x x1;w t0w/5*2;h t0h/5*2;};
+node.ex.gl.rect(u0, dr.x,dr.y, dr.w,dr.h);
+rect(u0, 2, dr.x,dr.y, dr.w,dr.h);
+
+color(u0, 0.2,0.3,0.7,0.8);
+rect(u0, 6, 0,0, 100,100);

@@ -1,0 +1,18 @@
+### -4 Catalog
+variable.string.example `the string;
+
+hello.world `hello world;
+
+_ @1010;
+_ @demo.mega.text;
+
+mega.text(hello.world);
+
+a `config;
+a {
+ f i==-1;
+};
+
+fn& i==-1;
+s `config;
+catalog.add(s, fn);

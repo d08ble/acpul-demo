@@ -1,0 +1,11 @@
+### 3006 AB::Box2d.world.draw
+_ @1010;
+_ @sys.node;
+_ @sys.box2d;
+_ @sys.box2d.test;
+
+color(u0, 0.5, 0.1, 0.5, 0.11);
+psize1(1);
+rect(u0, 6, 200,200,400,200);
+
+box2d.world.draw(u0, u10);

@@ -1,0 +1,9 @@
+### 10005021 ##[1]rt#draw
+r0:=1;
+
+r1:=color(r0, rnd(r0), rnd(r0), rnd(r0), 1);
+r1:=psize(r0, 3);
+r1:=line(r0,1, 0,0, 100, 100);
+
+r1:=color(r0, (sin(p*9)+2)/3, (sin(p)+2)/7, (sin(p*33)+2)/2, 1);
+r1:=circle(r0,6,20+sin(p)*40,  20+sin(p*10)*20, 5, pi-pi*p, 50, 1);

@@ -1,0 +1,14 @@
+### 9703 node.ex::Test.0.draw
+l0+=dt*5;
+g 0.2+1*(1+sin(l0*222))/2.2;
+#b 0+(sin(l0)+1.0)/4+
+b 0.5;#rnd(r0); #*0.5;
+#watch(g);
+#watch(b);
+psize(u0, 3);
+#color(u0, b, g, 1,1);
+#color(u0, g, g, b,1);
+color(u0, 0.6, g, 1,1);
+rect(u0, 0, -50,-50, 100,100);
+#rect(u0, 6, -5000,-5000, 10000,10000);
+#watch(r0);

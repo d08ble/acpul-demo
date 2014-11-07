@@ -1,0 +1,252 @@
+### -5 ide.dom
+r0:=k==0;
+
+ide.dom
+{
+ reset io(_0, 19901, _1,0,0,0);
+ child io(_0, 19902, _1,0,0,0);
+ dump io(_0, 19903, 0,0,0,0);
+ bg io(_0, 19904, _1,_2,_3,_4);
+ fg io(_0, 19905, _1,_2,_3,_4);
+ txt io(_0, 19906, _1,_2,_3,_4);
+ font io(_0, 19907, _1,_2,0,0);
+ tbl.sep io(_0, 19908, _1,_2,_3,_4);
+ tbl.row.h io(_0, 19909, _1,0,0,0);
+ cell.font io(_0, 19910, _1,_2,0,0);
+ cell.txt io(_0, 19911, _1,_2,_3,_4);
+ cell.bg io(_0, 19912, _1,_2,_3,_4);
+ cell.update io(_0, 19913, 0,0,0,0);
+ border.c io(_0, 19914, _1,_2,_3,_4);
+ border.w io(_0, 19915, _1,0,0,0);
+ frame io(_0, 19916, _1,_2,_3,_4);
+};
+ide.ctrl
+{
+ u0 r0;
+ s0 dom.reset(u0, 0);
+ #s0 select [0]
+ ss {s0; dom.child(u0, _0);};
+ #ss select [0][index]
+ sss {ss(_0); dom.child(u0, _1);};
+ #sss select [0][index0][index1] 
+
+ bg {_0; dom.bg(u0, _1,_2,_3,_4);};
+ fg {_0; dom.fg(u0, _1,_2,_3,_4);};
+ txt {_0; dom.txt(u0, _1,_2,_3,_4);};
+ font {_0; dom.font(u0, _1,_2);};
+ tbl.sep {_0; dom.tbl.sep(u0, _1,_2,_3,_4);};
+ tbl.row.h {_0; dom.tbl.row.h(u0, _1);};
+ cell.font {_0; dom.cell.font(u0, _1,_2);};
+ cell.txt {_0; dom.cell.txt(u0, _1,_2,_3,_4);};
+ cell.bg {_0; dom.cell.bg(u0, _1,_2,_3,_4);};
+ cell.update {_0; dom.cell.update(u0);};
+ border.c {_0; dom.border.c(u0,_1,_2,_3,_4);};
+ border.w {_0; dom.border.w(u0,_1);};
+ frame {_0; dom.frame(u0,_1,_2,_3,_4);};
+
+ main s0;
+ save ss(0);
+ new ss(1);
+ delete ss(2);
+ load_menu ss(4);
+ reset sss(14, 1);
+ reset_input sss(14, 0);
+ hide ss(3);
+ name_input ss(9);
+ id_input ss(10);
+ apply ss(11);
+ load.popup.reload sss(15, 0);
+ load.popup.file sss(15, 1);
+
+ type_label ss(13);
+ type_switch ss(12);
+
+ cut ss(5);
+ copy ss(6);
+ paste ss(7);
+
+ clipboard ss(8);
+ clipboard_scroll sss(8, 0);
+
+ clear ss(19);
+
+ list ss(16);
+ edit ss(17);
+ list_view sss(16,0);
+ list_table {sss(16,0); dom.child(u0, 0);};
+ edit_scroll {sss(17,0);};# dom.child(u0, 0);};
+# list_scroll sss(16, 0);
+# clipboard_text.bg {ss(19); d.bg(_0,_1,_2,_3);};
+ log ss(18);
+ log_txt sss(18, 0);
+};
+ide.ctrl.filemanager
+{
+ s0 dom.reset(u0, 2);
+ #s0 select [1]
+ ss {s0; dom.child(u0, _0);};
+ #ss select [1][index]
+ sss {ss(_0); dom.child(u0, _1);};
+ #sss select [1][index0][index1] 
+ s4 {sss(_0, _1); dom.child(u0, _2);};
+
+ main s0;
+ path ss(0);
+ root ss(1);
+ close ss(2);
+ files sss(3, 0);
+ files_table s4(3, 0, 0);
+ info ss(4);
+# dropbox 
+};
+ide.ctrl.theme.commander
+{
+ filemanager
+ {
+  _ ide.ctrl.filemanager;
+
+  bg(main, 0,0,0.4,1);
+  border.c(main, 0,0.7,0.7,1);
+  border.w(main, 1);
+  frame(main, 0,522,768,238);
+
+  txt(path, 1,1,1,1);
+  bg(path, 0,0,0.3,1);
+  border.c(path, 0,0.7,0.7,1);
+  border.w(path, 1);
+
+  fg(close, 0,0.7,0.7,1);
+  txt(close, 0,0,0,1);
+  fg(root, 0,0.7,0.7,1);
+  txt(root, 0,0,0,1);
+
+  bg(files, 1,1,1,0);
+  bg(files_table, 0,0,0,0);
+  border.c(files, 0,0.7,0.7,1);
+  border.w(files, 1);
+  tbl.sep(files_table, 1,1,1,0.1);
+  cell.txt(files, 1,1,1,1);
+  cell.font(files, 19,14);
+  cell.bg(files, 0,0,0,0);
+  cell.update(files);
+
+  bg(info, 0,0,0.4,1);
+  border.c(info, 0,0.7,0.7,1);
+  border.w(info, 1);
+
+ };
+};
+ide.ctrl.theme.commander
+{
+ _;
+ bg(main, 0,0,0.4,1);
+ border.c(main, 0,0.7,0.7,1);
+ border.w(main, 1);
+ 
+ fg(save, 0,0.7,0.7,1);
+ txt(save, 0,0,0,1);
+ fg(new, 0,0.7,0.7,1);
+ txt(new, 0,0,0,1);
+ fg(delete, 0,0.7,0.7,1);
+ txt(delete, 0,0,0,1);
+ fg(load_menu, 0,0.7,0.7,1);
+ txt(load_menu, 0,0,0,1);
+ fg(reset, 0,0.7,0.7,1);
+ txt(reset, 0,0,0,1);
+ fg(hide, 0,0.7,0.7,1);
+ txt(hide, 0,0,0,1);
+ fg(apply, 0,0.7,0.7,1);
+ txt(apply, 0,0,0,1);
+ l load.popup;
+ fg(l.reload, 0,0.7,0.7,1);
+ txt(l.reload, 0,0,0,1);
+ fg(l.file, 0,0.7,0.7,1);
+ txt(l.file, 0,0,0,1);
+
+ bg(type_label, 0,0,0.7,0);
+ bg(type_switch, 0,0,0.7,0);
+
+ fg(cut, 0,0.7,0.7,1);
+ txt(cut, 0,0,0,1);
+ fg(copy, 0,0.7,0.7,1);
+ txt(copy, 0,0,0,1);
+ fg(paste, 0,0.7,0.7,1);
+ txt(paste, 0,0,0,1);
+
+ fg(clear, 0,0.7,0.7,1);
+ txt(clear, 0,0,0,1);
+
+
+ bg(list, 0,0,1,1);
+ bg(edit, 0,0,1,1);
+ border.c(list, 0,0.7,0.7,1);
+ border.w(list, 1);
+
+ border.c(edit, 0,0.7,1,1);
+ border.w(edit, 1);
+
+ txt(reset_input, 1,1,1,1);
+ font(reset_input, 0,20);
+ bg(reset_input, 0,0,0.3,1);
+ border.c(reset_input, 0,0.7,0.7,1);
+ border.w(reset_input, 1);
+
+ txt(name_input, 1,1,1,1);
+ font(name_input, 0,20);
+ bg(name_input, 0,0,0.3,1);
+ border.c(name_input, 0,0.7,0.7,1);
+ border.w(name_input, 1);
+
+ txt(id_input, 1,1,1,1);
+ font(id_input, 0,20);
+ bg(id_input, 0,0,0.3,1);
+ border.c(id_input, 0,0.7,0.7,1);
+ border.w(id_input, 1);
+
+ txt(type_label, 0,0.7,0.7,1);
+ font(type_label, 2,18);
+ fg(type_switch, 0,0,0,1);
+
+ bg(list_table, 0,0,0.4,1);
+ bg(edit_scroll, 0,0,0.4,1);
+
+ tbl.sep(list_table, 1,1,1,0.1);
+# tbl.row.h(list_table, 40);
+ cell.txt(list_view, 1,1,1,1);
+ cell.font(list_view, 19,14);
+ cell.bg(list_view, 0,0,0,0);
+ cell.update(list_view);
+# dom.cell.update(u0);
+
+ bg(log, 0,0,1,0.9);
+ border.c(log, 0,0.7,0.7,1);
+ border.w(log, 1);
+ font(log_txt, 47,12);
+ txt(log_txt, 0,1,1,1);
+# dom.font(u0, 19, 12);};
+
+ bg(clipboard_scroll, 0,0,0.3,1);
+ border.c(clipboard_scroll, 0,0.7,0.7,1);
+ border.w(clipboard_scroll, 1);
+# bg(clipboard, 0,0,0.3,1);
+# dom.child(u0, 0);
+# dom.bg(u0, 1,1,0,1);
+
+ filemanager();
+};
+
+ide.ctrl.theme.commander();
+
+#ide.ctrl.main.bg(0,0,0.7,1);
+#ide.ctrl.save.bg(0,0,0.7,1);
+#ide.ctrl.save.fg(0,0,0.3,1);
+#ide.ctrl.new.fg(0,1,0.3,1);
+#ide.ctrl.delete.fg(0,1,0.3,1);
+
+#ide.dom.reset(r0, 0);
+#ide.dom.child(r0, 0);
+ide.dom.dump(r0);
+#ide.dom.bg(r0, 0, 0, 1, 1);
+#ide.dom.fg(r0, 0, 1, 0, 1);
+
+k:=1;

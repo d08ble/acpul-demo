@@ -1,0 +1,11 @@
+### 2002 SR::B2D.Test.draw
+
+_ @1010;
+_ @sys.node;
+_ @sys.box2d;
+_ @sys.box2d.test;
+
+psize1(1);
+rect(u0, 2, 100,100,200,200);
+
+box2d.world.draw(u0, box2d.test.world);

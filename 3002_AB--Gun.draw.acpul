@@ -1,0 +1,41 @@
+### 3002 AB::Gun.draw
+_ @1010;
+
+psize1(1);
+color(u0, 1, 1, 1, 1);
+rect(u0, 2, -w/2,-h/2, w,h);
+
+_ @2999;# file.def
+game.gun @game.file.gun;
+game.gun.context.d.a r7;
+
+gg game.gun;
+ctx gg.context;
+
+r ctx.dist.min.run.g();
+circle(u0, 1, 0,0, r, 1, r, 0);
+
+ctx.delta.g(l0, l1);
+color(u0, 0, 0.5, 0.5, 0.5);
+circle(u0, 3, l0,l1, 20, 1, 20, 0);
+
+#l0:=game.gun.context.x.g();
+
+#gg game.gun;
+#l1:=gg.context.x.g();
+#ctx gg.context;
+#l2:=ctx.x.g();
+
+#gg.context.d.a p1;
+#ctx gg.context;
+#l0:=ctx.x.g();
+#l1:=ctx.y.g();
+
+# target
+#color(u0, 1, 1, rnd(r0), 1);
+#rect(u0, 2, 0,0, 20, 20);
+
+
+# run
+#color(u0, 1, 1, 0, 1);
+#rect(u0, 2, 0,0, 10, 10);

@@ -1,0 +1,56 @@
+### 7000001  7.0.#init_object
+lt:=100;
+
+r0:=p0;
+
+s:=0.5+(sin(p*110)+1)/p/50;
+
+#MEMORY;
+l15:=if(r0, mem(r0, 0, 7000, 1024), l15);
+#debug;
+#r2:=r0;
+r2:=1;
+
+r5:=sin(p*55)*2;
+
+#7.1.1.Circle A;
+#$color4, $xy, $size, $angle;
+l14:=0;
+set4(r2, l15, l14, (sin(p*331)+1)/5, 0.9, 0, 1);
+set2(r2, l15, l14+4, 100, 100);
+set(r2, l15, l14+7, 100);
+set(r2, l15, l14+8, r5);
+
+#7.2.1.Circle B;
+#$color4, $xy, $size, $angle;
+l14:=20;
+set4(r2, l15, l14+0, (sin(p*33)+1)/5, 0.0, 0.9, 0.1);
+set2(r2, l15, l14+4, 100, 100);
+set(r2, l15, l14+7, 100);
+set(r2, l15, l14+8, r5);
+
+#7.3.1.Circle C;
+#$color4, $xy, $size, $angle;
+l14:=40;
+set4(r2, l15, l14+0, 0, 0.3, 0.0, 1);
+set2(r2, l15, l14+4, 100, 100);
+set(r2, l15, l14+7, 90);
+
+#7.4.1.Circle D;
+#$color4, $xy, $size, $angle;
+l14:=60;
+set4(r2, l15, l14+0, 0.3, 0.7, 0.2, 1);
+set2(r2, l15, l14+4, 100, 100);
+set(r2, l15, l14+7, 80);
+
+#7.5.1.Circle E;
+#$color4, $xy, $size, $angle;
+l14:=80;
+set4(r2, l15, l14+0, 0.1, 0.2, 0.1, 1);
+set2(r2, l15, l14+4, 100, 100);
+set(r2, l15, l14+7, 85);
+set(r2, l15, l14+8, -r5);
+
+#watch(l15);
+
+l15;

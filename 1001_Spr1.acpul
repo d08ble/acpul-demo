@@ -1,0 +1,16 @@
+### 1001 Spr1
+x:=400;
+y:=400;
+a:=1;
+r1+=0.1;
+s:=1.0+sin(r1)/2;
+r+=1;
+r:=0;
+s:=0.4;
+_ @1010;#sys.include.def;
+_ @sys.touch;
+
+touch.rect(r2, 0,0,500,1000);
+r3:=touch.event(r2);
+#if (r3, watch(r3), 0);
+if (r3==touch.e.click) {r:=0;};

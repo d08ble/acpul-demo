@@ -1,0 +1,22 @@
+### 11211 --- 1/draw
+seg 20;
+rr 50;
+rc 30;
+
+cx sin(_0)*_1; cy cos(_0)*_1;
+
+l15+=dt;
+rp 0.3+0.3*sin(l15*pi+_0*pi/3*2);
+ir rp(0);
+ig rp(1);
+ib rp(2);
+
+a pi/3*2;
+color(u0, ir,ig,ib,0.1);
+circle(u0, 6, cx(a,rc),cy(a,rc), rr, 0, seg, 0);
+a pi*2/3*2;
+color(u0, ib,ig,ir,0.1);
+circle(u0, 6, cx(a,rc),cy(a,rc), rr, 0, seg, 0);
+a pi*3/3*2;
+color(u0, ig,ir,ib,0.1);
+circle(u0, 6, cx(a,rc),cy(a,rc), rr, 0, seg, 0);

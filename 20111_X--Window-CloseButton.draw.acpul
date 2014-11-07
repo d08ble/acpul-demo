@@ -1,0 +1,12 @@
+### 20111 X::Window:CloseButton.draw
+r0:=k==0;
+
+color(u0, 1,0,0,1);
+rect(u0, 6, 0,0,w,h);
+color(u0, 0,0,0,1);
+ww 32/100;
+hh 32/100;
+line(u0, 3, 25*ww,25*hh,75*ww,75*hh);
+line(u0, 3, 25*ww,75*hh,75*ww,25*hh);
+
+k:=1;

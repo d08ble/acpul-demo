@@ -1,0 +1,21 @@
+### 1027 sys.vec2d.array_util
+vec2d.array # util
+{
+ _;
+ copy
+ # dst, start, end,
+ # fn, args[8] -> fn(index, i, args[8]):x,y
+ {
+  i b0;
+  x b1;
+  y b2;
+  i:=_1;
+  while(i<_2)
+  {
+   at.index(i, x, y);
+   _3(i, x, y, _4,_5,_6,_7, _8,_9,_10,_11);
+   _0.update(i, x, y);
+   i+=1;
+  };
+ };
+};

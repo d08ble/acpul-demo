@@ -1,0 +1,3 @@
+### 9743 node.ex::Demo.0.draw
+color(u0, 1,0,1,0);
+triangle(u0, 6, 0,0, 100,100, 0,200);

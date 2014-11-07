@@ -1,0 +1,19 @@
+### 1021 sys.touch.ev.process.once
+touch.ev.process.once
+# id, _b0
+# shared: o0, o1
+{
+ _1:=touch.event(_0);
+ if (_1==touch.e.began)
+ {
+  touch.ev.began(o0, o1);
+ };
+ if (_1==touch.e.moved)
+ {
+  touch.ev.moved(o0, o1);
+ };
+ if (_1==touch.e.ended)
+ {
+  touch.ev.ended(o0, o1);
+ };
+};

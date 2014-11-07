@@ -1,0 +1,27 @@
+### 3000 AB::Game
+r0:=k==0;
+
+_ @1010;
+_ @sys.node;
+_ @sys.heap;
+
+_ @2999;# file.def
+game.gun @game.file.gun;
+game.gun.context.d.a r5;
+
+gg game.gun;
+ctx gg.context;
+
+if (r0)
+{
+ heap.alloc(r5, ctx.msize);
+ ctx.rect(380,200,300,300);
+ ctx.dist.min.run.s(30);
+};
+
+node.new.target.object(r0, 3001, r5);
+node.new.target.object(r0, 3003, r5);
+
+node.new.target.object(r0, 3005, 0);
+
+k:=1;

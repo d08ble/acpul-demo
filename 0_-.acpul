@@ -1,0 +1,34 @@
+### 0 -
+
+# $ is pragma
+# $pragma 
+#
+# $console `~set str default json`; - pragma default format, execute at compile time
+#
+# `~json {dict:[]}`; - json->tree
+# `~svg <svg></svg>`; - svg->tree
+# `~html <html></html>; - html->tree
+# `~xml <xml></xml>`; - generic xml->tree
+# `~css ...`
+# `~js var a = 1;`; - js object - syntax tree, text
+# `~acpul r0:=1; - acpul object - syntax tree, text
+# `~lua ...`
+
+# `abc; - default
+# ``qwerty;cde`;
+# 'one `" ';
+# "two `' ";
+
+# a `a%i{r0}`;
+# b `hello %f.4{sin(r0)}!`;
+# c `hello %s{r0}!`;
+
+# $console `~set str var char $$`; - default char for var block
+# a `a$$i{r0}`;
+
+# a `a%i4.2{r0}`; -->
+# a {
+#  b0:=$str.const('a'); // b0:=str.reset(17, 10175); $str=17 'a'=10175 (const)
+#  str.append.i(b0, r0, 4, 2); // b0 += printf('%i', r0) with precission=4.2
+#  //return b0
+# };

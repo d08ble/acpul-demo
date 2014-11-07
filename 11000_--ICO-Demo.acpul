@@ -1,0 +1,29 @@
+### 11000 - ICO-Demo
+r0:=k==0;
+#watch(r0);
+
+_ @1010;
+_ @sys.node;
+
+# children [
+c.node.js 11100;
+c.abstract 11200;
+c.color 11300;
+node.new.this.ex(r0, c.node.js, 0);
+node.new.this.ex(r0, c.abstract, 0);
+node.new.this.ex(r0, c.color, 0);
+# children ]
+
+draw(r0, 11001);
+
+x:=-99;#-80;
+y:=200;
+s:=0.4;
+
+#x:=-580;s:=1.0;
+#x:=-500;y:=100;s:=1.0;
+#x:=-1200;y:=0;s:=2.0;
+#x:=-4500;y:=-800;s:=7.0;
+
+
+k:=1;

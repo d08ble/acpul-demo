@@ -1,0 +1,6 @@
+### 2009 SR::Joystick.background
+r0:=k==0;
+
+draw(r0, 2010);
+
+k:=1;

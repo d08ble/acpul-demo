@@ -1,0 +1,33 @@
+### 10005020 ##[1]rt
+lt:=5;
+x:=200;
+y:=400;
+
+r0:=k==0;
+
+#s:=1.0+rnd(one);
+s:=1;
+a:=1;
+
+r1:=draw(r0, 10005021);
+
+#size;
+r1:=io(r0, 2003, 256, 256, 0,0);
+#clear;
+r1:=io(r0, 2007, 1, 0,0,0);
+#clear rgba;
+r1:=io(r0, 2009, 0, 0, 0, 0);
+
+r1:=create(r0, 0, 7771, 1002, 10005023, 0);
+
+#query self;
+r1:=io(r0, 100, 0, 0,0,0);
+#query child[0] - vrt;
+r1:=io(r0, 101, 0, 0,0,0);
+#query child[0] - vrt.sprite;
+r1:=io(r0, 101, 0, 0,0,0);
+
+#create target node in self ##[1]rt#[0]vrt#[0]sprtex;
+#r1:=create(r0, 0, 77700, -7777777, 10005022, 0);
+
+k:=1;

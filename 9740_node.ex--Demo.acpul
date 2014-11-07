@@ -1,0 +1,55 @@
+### 9740 node.ex::Demo
+r0:=k==0;
+
+draw(r0, 9741);
+
+s:=5;
+
+_ @1010;
+_ @sys.node;
+
+#create node.ex::Demo.0.draw
+node.new.this.ex(r0, 9742, 0);
+
+exports {
+ tex0 r1;
+ tex1a r2;
+ tex1b r3;
+ vec2p0 r4;
+ t0w 150;
+ t0h 200;
+ t1w 150;
+ t1h 1000;
+};
+_ exports;
+
+node.ex.child.draw.s(r0, 0);
+
+if(r0){
+ w t1w;
+ h t1h;
+ tex0:=node.ex.texture.create(r0, t0w,t0h);
+ tex1a:=node.ex.texture.create(r0, w,h);
+ tex1b:=node.ex.texture.create(r0, w,h);
+
+ _ @sys.heap;
+
+ heap.alloc(vec2p0, w*h*2*2);
+
+ vec2p0_init {
+  i l0;
+  i:=0;
+  while(i<w*h*1+0){
+   i+=1;
+   p i*2;
+   x mod(i, t1w)/100;
+   y i/t1w/100;
+   set2(r0, vec2p0, p, x, y);
+#watch(vec2p0);watch(p);watch(x);watch(y);
+#   set2(r0, r2, p, x*100, y*100);
+  };
+ };
+ vec2p0_init();
+};
+
+k:=1;

@@ -1,0 +1,37 @@
+### 3004 AB::Unit.draw
+
+n:=20;
+
+#
+# New draw method: tri(t) - draw triangle
+#
+t{
+ a{x 0-n;y 0-n;};
+ b{x 0;y n;};
+ c{x n;y n;};
+};
+
+t
+{
+ a
+ {
+  x cos(pi/2)*n;
+  y sin(pi/2)*n;
+ };
+ b
+ {
+  x cos(pi*4/3)*n;
+  y sin(pi*4/3)*n;
+ };
+ c
+ {
+  x cos(-pi*1/3)*n;
+  y sin(-pi*1/3)*n;
+ };
+};
+
+tri
+{
+ triangle(u0, 6, _0.a.x,_0.a.y, _0.b.x, _0.b.y, _0.c.x, _0.c.y);
+};
+tri(t);

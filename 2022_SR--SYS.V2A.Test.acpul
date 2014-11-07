@@ -1,0 +1,54 @@
+### 2022 SR::SYS.V2A.Test
+_ @1010;
+_ @sys.heap;
+
+b0 l10;
+b1 l11;
+b2 l12;
+b3 l13;
+b4 l14;
+
+v2sz 100;
+
+vec2d.array.d {a r4;n r5;max v2sz;};
+_ @sys.vec2d.array.ALL;
+v2a vec2d.array;
+
+vec2d.array.d {a r6;n r7;max v2sz;};
+_ @sys.vec2d.array.ALL;
+v2b vec2d.array;
+
+r0:=k==0;
+
+if (r0)
+{
+ v2a.new;
+ v2b.new;
+ v2a.d.n:=v2sz;
+ v2b.d.n:=v2sz;
+
+# v2a.line(0,0, -150,300);
+ v2a.circle(0,0, 50);
+# v2b.line(0,0, 50,50);
+# v2b.circle(0,0, 50);
+
+};
+t+=dt/7;
+#t 0.1*sin(n*10)+0.1;
+fn {_1:=_1+sin(_0*t)*50*sin(_0/200);_2;};
+#fn {};
+v2a.copy(v2b, 0,v2sz, fn);
+
+fn1
+{
+ _1:=_1+_3*sin(_0*pi*2/v2sz);
+ _2:=_2+_4*cos(_0*pi*2/v2sz);
+};
+v2b.copy(v2b, 0,v2sz, fn1, -50+100*sin(t*10), 15);
+
+x:=640;
+y:=80;
+#s+=0.01;
+draw(r0, 2023);
+
+k:=1;

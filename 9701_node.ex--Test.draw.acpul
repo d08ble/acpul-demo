@@ -1,0 +1,61 @@
+### 9701 node.ex::Test.draw
+#watch(r0);
+
+tex0 r1;
+v1p0 r2;
+
+_ @1010;
+_ @sys.node;
+
+node.ex.gl.fbo(u0, tex0);
+node.ex.gl.clear(r0, 0,0,1,0);
+node.ex.gl.child.draw(u0);
+
+node.ex.gl.fbo(u0, -1);
+_ @sys.display;
+b display.gl.blend;
+b.func(u0, b.mode.src.alpha, b.mode.one.minus.src.alpha);
+#b.func(u0, 4,1);
+
+node.ex.shader.use(u0, 9711, 9721);
+node.ex.shader.uniform.texture(u0, 0, tex0, 0);
+#node.ex.gl.rect(u0, 0,0, 5000,5000);
+#node.ex.gl.rect(u0, 0,0, 2000,2000);
+#node.ex.gl.rect(u0, 0,0, 1000,1000);
+grid.a();
+
+node.ex.shader.use(u0, 9712, 9720);
+node.ex.shader.attribute(u0, 0, v1p0,0,2,0, 0,0);
+node.ex.gl.draw(u0, 5, 4);
+
+
+i l10;
+j l11;
+grid.a {
+ j:=0;
+ while(j<7*1){
+  i:=0;
+  while(i<5*1){
+   s 3;z 0.68;
+ t 0;
+   dx sin(t*10+i+j)*10;
+   dy cos(t*10+i*10+j*10)*20;
+   node.ex.gl.rect(u0, i*200*s+dx,j*200*s+dy, z*s*300,z*s*300);
+   i+=1;
+  };
+  j+=1;
+ };
+};
+#watch(t);
+#grid.a();
+
+#b.func(u0, 10,1);
+#node.ex.gl.rect(u0, 0,0, 2000,2000);
+
+# ex.shader.uniform.i1
+# ex.shader.uniform.f1
+# ex.gl.fbo;
+# ex.gl.child.draw
+
+color(u0, 0.9,0.8,0.0,1);
+triangle(u0, 6, 0,0, 100,100, 200,0);

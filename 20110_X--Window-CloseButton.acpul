@@ -1,0 +1,39 @@
+### 20110 X::Window:CloseButton
+r0:=k==0;
+
+draw(r0, 20111);
+
+W @20100;
+
+r1:=p0;
+wctx W.ctx; #r1 is ctx
+
+w:=32;
+h:=32;
+
+# top left
+y:=wctx.h.g-h;
+#watch(y);
+#watch(p0);
+
+_ @1010;
+_ @sys.touch;
+_ @sys.touch.ev.process.once;
+
+touch.ev {_;
+ began
+ {
+  W.ctx.close.s(1);
+  watch(_0);
+ };
+ moved
+ {
+ };
+ ended
+ {
+ };
+};
+touch.rect(r2, 0,0,w,h);
+touch.ev.process.once(r2, r3);
+
+k:=1;

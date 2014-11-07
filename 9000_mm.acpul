@@ -1,0 +1,19 @@
+### 9000 mm
+r0:=k==0;
+
+draw(r0, 9001);
+
+_ @1010;
+_ @sys.node;
+
+s:=0.2;
+s:=1;
+n:=if(r0, 0, n);
+while(n<100)
+{
+ node.new.target.object(r0, 9010, 0);
+ n+=1;
+};
+
+
+k:=1;

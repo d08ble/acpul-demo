@@ -1,0 +1,72 @@
+### 11321 --- 2/draw
+r0:=k==0;
+
+_ @1010;
+_ @sys.node;
+
+tex0 r1;
+gl node.ex.gl;
+shader node.ex.shader;
+
+gl.fbo(u0, tex0);
+#gl.clear(u0, 0,0,0,0);
+gl.clear(u0, 0,0,0,1);
+
+#node.ex.gl.fbo(u0, tex0);
+#node.ex.gl.clear(r0, 0,0,0,0);
+
+l15+=dt;
+a l15/10; #+abs(sin(l15*pi)/(1+cos(l15*pi)));#10*log10(0.5+0.4*sin(l15*pi/4));
+r 0.5+sin(a*pi/3)*0.1+0.4*sin(a*pi*18.3);
+g 0.5+sin(a*pi/5)*0.1+0.4*sin(a*pi*8.7);
+b 0.5+sin(a*pi/7)*0.1+0.4*sin(a*pi*7);
+color(u0, r,g,b,0.1);
+#color(u0, 0,0,0,1);
+bw 400;
+bh 150;
+#rect(u0, 6, 0,0, bw,bh);
+
+# ACPU LOGO [
+psize(u0, 18);
+mx 10; my 10;
+gw bw/10/4; # 8x8 char
+gh bh/9;
+sym _0*gw*10;
+pri3 triangle(u0, 3,
+  sym(_0)+_1*gw+mx,_2*gh+my, 
+  sym(_0)+_3*gw+mx,_4*gh+my, 
+  sym(_0)+_5*gw+mx,_6*gh+my);
+
+pri2 line(u0, 1, 
+  sym(_0)+_1*gw+mx,_2*gh+my, 
+  sym(_0)+_3*gw+mx,_4*gh+my);
+
+pri4 point4(u0, 3,
+  sym(_0)+_1*gw+mx,_2*gh+my, 
+  sym(_0)+_3*gw+mx,_4*gh+my, 
+  sym(_0)+_5*gw+mx,_6*gh+my,
+  sym(_0)+_7*gw+mx,_8*gh+my);
+
+# A
+pri3(0, 0,0, 4,8, 8,0);
+pri2(0, 2,3, 6,3);
+# C
+pri4(1, 8,8, 0,8, 0,0, 8,0);
+# P
+pri2(2, 0,0, 0,8);
+pri4(2, 0,4, 8,4, 8,8, 0,8);
+# U
+pri4(3, 0,8, 0,0, 8,0, 8,8);
+# ACPU LOGO ]
+
+gl.fbo(u0, -1);
+
+
+shader.use(u0, 11330, 11332);
+shader.uniform.texture(u0, 0, r1, 0);
+shader.uniform.f1(u0, 1, 0.5+0.5*sin(l15*1));
+#watch(l15);
+gl.rect(u0, -bw/2,-bh/2, bw,bh);
+#watch(r1);
+
+k:=1;

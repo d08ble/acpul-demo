@@ -1,0 +1,11 @@
+### 20000 ACPU-X
+r0:=k==0;
+
+_ @1010;
+_ @sys.node;
+
+X.Main 20002;
+
+node.new.target.object(r0, X.Main, 0);
+
+k:=1;

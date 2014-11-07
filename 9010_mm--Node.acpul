@@ -1,0 +1,28 @@
+### 9010 mm::Node
+r0:=k==0;
+
+draw(r0, 9011);
+
+dd @9011;
+if(r0,dd.fcolor.init,0); # init shared regs
+#r+=1*dx;
+
+dx r7;
+dy r6;
+if(r0)
+{
+ x:=rnd(r)*768;
+ y:=rnd(r)*1024;
+ dx:=rnd(r)-0.5;
+ dy:=rnd(r)-0.5;
+};
+
+#x+=dx*10;
+y+=dy*10;
+
+if(x<0){x:=0; dx:=-dx;};
+if(y<-100){y:=-100; dy:=-dy;};
+if(x>768){x:=768; dx:=-dx;};
+if(y>1124){y:=1124; dy:=-dy;};
+
+k:=1;

@@ -1,0 +1,145 @@
+### 1002 Edit1
+#x:=400;
+#y:=400;
+a:=1;
+r1+=0.1;
+s:=1.0;#+sin(r1)/2;
+#r+=5;
+
+r0:=k==0;
+draw(r0, 1003);
+k:=1;
+
+_ @1010;#sys.include.def;
+_ @sys.touch;
+_ @sys.node;
+
+_ @sys.heap;
+
+vec2d.array.d.a r5;
+vec2d.array.d.max 1000;
+vec2d.array.d.n r6;
+
+_ @sys.vec2d.array;
+
+v2a vec2d.array;
+
+if(r0)
+{
+ v2a.new;
+};
+
+#watch(r1);
+#v2a.add(1, 2);
+#v2a.clear;
+#watch(v2a.d.n);
+
+#edit1.init;
+
+b0 l10;
+b1 l11;
+b2 l12;
+
+touch.ev
+{
+ began
+ {
+  v2a.clear();
+  v2a.add(_0, _1);
+#  watch(o0);
+ };
+ moved
+ {
+  x0 _0;
+  y0 _1;
+  x1 b0;
+  y1 b1;
+  v2a.at.last(x1, y1);
+
+  distance sqrt((_2-_0)^2+(_3-_1)^2);
+  b2:=distance(x0, y0, x1, y1);
+  
+  dist.min 5;
+  if (b2>=dist.min)
+  {
+   v2a.add(x0, y0);
+  };
+
+#  watch(o1);
+ };
+ ended
+ {
+  new.node.Mesh
+  {
+   heap.alloc(b0, 2);
+   set2(u0, b0, 0, _0.d.a, _0.d.n);
+   node.new.target.object(u0, 1004, b0);
+  };
+
+  new.node.Mesh(v2a);
+ };
+};
+
+touch.rect(r2, 0,0,400,1000);
+r3:=touch.event(r2);
+if (r3==touch.e.began)
+{
+ touch.ev.began(o0, o1);
+};
+if (r3==touch.e.moved)
+{
+ touch.ev.moved(o0, o1);
+};
+if (r3==touch.e.ended)
+{
+ touch.ev.ended(o0, o1);
+};
+#watch(r0);
+
+#s:=0.7;
+
+#fn {watch(_0);_0+=1;};
+#fn {_0+=0.5-rnd(u0);_1+=0.5-rnd(u0);};
+#fn {_1+=sin(t+_0);_2+=cos(t+_0);};
+n:=0.5;
+fn {_1+=sin(t+_0)*n;_2+=cos(t+_0)*n;};
+v2a.for.each.a(fn);
+#watch(t);
+t+=dt;
+v2a.add(100, 400);
+v2a.add(100+1, 400+1);
+v2a.add(100-1, 400-1);
+v2a.add(100-1, 400+1);
+v2a.add(100+1, 400-1);
+
+# H8-240814 [
+# test stream
+_ @sys.stream;
+stream.reset(r0);
+sid l14;
+if (r0)
+{
+ sid:=stream.open(r0, 1, 12345, 320, 240);
+};
+if (t *0 > 0.20) {
+if (l15 < 30*1)
+{
+ stream.add.image(u0, sid, 1);
+# watch(l15);
+ l15+=1;
+};
+};
+#watch(t);
+#stream.close(r0, sid);
+# H8-240714 ]
+
+# H9-250714 [
+_ @sys.cpu;
+
+#cpu.frame.dt(u0, 0.0);
+#cpu.frame.dt(u0, 0.01);
+#o0:=cpu.profile.get(u0, 3);
+#cpu.profile.begin(u0, 3);
+#cpu.profile.end(u0, 3);
+#watch(o0);
+# H9-250714 ]

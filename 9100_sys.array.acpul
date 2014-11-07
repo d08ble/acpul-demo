@@ -1,0 +1,53 @@
+### 9100 sys.array
+r0:=array.new(capacity, item_size);
+r0:=array.new(100, 2);
+
+r1:=array.new(0, 1);
+r2:=array.new(100, 2);
+array.add(r2, 100.0, 200.0);
+array.set(r2, 0, 100.0, 200.0);
+array.add(r1, r2);
+r3:=array.get(r1, 0);
+r3,r4:=array.get2(r1, 0); 
+# array.get2(r1, 0, &3, &4);
+array.get2(r1, 0, r3, r4);
+return 0; #return
+[l0, l1]; #_cpu.set2(&3, l0, &4, l1); 
+b0 $; # b0=>$autoname, per cpu auto[64];
+b0 $(_0); # b0=>$auto; b0:=_0; 
+b0 $(0); # b0=>$auto; b0:=0;
+
+fn
+{
+ [if(_0, 0, 1)];
+};
+r0:=fn(0);
+fn1
+{
+ [fn(0), 1];
+};
+fn2
+{
+ [[fn1()]];
+}
+r1,r2:=fn1();
+# b = block<r1, r2>
+# f1(b);
+
+fn3
+{
+ if (color.white==_0)
+ {
+  [12, 33];
+ }
+ [11, 90];
+};
+
+fn4
+{
+ a _0;
+ _r._0:=a;
+ _r._1:=2;
+};
+
+r3,r4:=fn4(1);

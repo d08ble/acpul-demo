@@ -1,0 +1,22 @@
+### 2023 SR::SYS.V2A.Test.draw
+_ @1010;
+_ @sys.display;
+
+psize1(1);
+color(u0, 0.5, 1, 0, 0.1);
+point4(u0, 2, -10,0, 0,20, 10,0, 0,-20);
+
+color1(u0, 0.2, 0.2, 0.2, 0.1);
+ptr r4;
+cnt r5;
+display.gl.param(0, 2,0, ptr,0);
+display.gl.draw(0, 0, cnt);
+
+ptr r6; # v2b
+cnt r7;
+
+color1(u0, 0.5, 1, 0, 0.1);
+display.gl.param(0, 2,0, ptr,0);
+display.gl.draw(0, 0, cnt);
+
+#watch(r5);

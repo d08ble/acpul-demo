@@ -1,0 +1,88 @@
+### 20100 X::Window
+r0:=k==0;
+_ @1010;
+
+draw(r0, 20101);
+
+if (r0)
+{
+ x:=300;
+ y:=500;
+ w:=200;
+ h:=100;
+};
+
+_ @sys.heap;
+
+ctx.a r1;
+heap.alloc0(r0, ctx.a, 100);
+#watch(r1);
+
+ctx {_;
+ o.x 0;
+ o.y 1;
+ o.w 2;
+ o.h 3;
+ o.close 4;
+ o.xy o.x;
+ o.wh o.w;
+
+ xy.s set2(u0, a, o.xy, _0,_1);
+ wh.s set2(u0, a, o.wh, _0,_1);
+ x.g get(u0, a, o.x);
+ y.g get(u0, a, o.y);
+ h.g get(u0, a, o.h);
+ w.g get(u0, a, o.w);
+
+ close.s set(u0, a, o.close, _0);
+ close.g get(u0, a, o.close);
+};
+
+#watch(r1);
+ctx.xy.s(x, y);
+ctx.wh.s(w, h);
+
+### Create CloseButton {
+_ @sys.node;
+
+X.W.CloseButton 20110;
+
+node.new.target.object(r0, 
+ X.W.CloseButton, ctx.a);
+### }
+
+### Touch {
+_ @sys.touch;
+_ @sys.touch.ev.process.once;
+
+touch.ev {_;
+ x0 l4;
+ y0 l5;
+ began
+ {
+  x0:=_0;
+  y0:=_1;
+#  watch(_0);
+ };
+ moved
+ {
+ # watch(_0);
+  x+=_0-x0; x0:=_0;
+  y+=_1-y0; y0:=_1;
+ };
+ ended
+ {
+ };
+};
+
+touch.rect(r2, 0,0,w,h);
+touch.ev.process.once(r2, r3);
+### }
+
+if(ctx.close.g)
+{
+ lt:=0.001;
+# watch(k);
+};
+
+k:=1;

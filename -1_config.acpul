@@ -1,0 +1,302 @@
+### -1 config
+
+#colors;
+
+#k:=0;
+
+l0:=k==0;
+
+#a.io 13400;
+#io(l0, a.io, 0.1,0.5,0.7,1);
+
+
+#l1:=l1+1;
+#io(l0, 10005, 0.8,(sin(l1/3)+1)/4+0.3,0.0,1);
+#default;
+#io(l0, 10000, 1.0,0.9,0.5,1);
+#io(l0, 10002, 1,1,1,1);
+#io(l0, 10004, 0.3,0.4,0.8,1);
+#io(l0, 10005, 1,1,0.1,1);
+
+a.fn.if 12024;
+a.fn.while 12056;
+a.fn.abs 12000;
+a.fn.acos 12001;
+a.fn.and 12002;
+a.fn.asin 12003;
+a.fn.atan 12004;
+a.fn.atan2 12005;
+a.fn.avg 12006;
+a.fn.ceil 12007;
+a.fn.clamp 12008;
+a.fn.cos 12009;
+a.fn.cosh 12010;
+a.fn.cot 12011;
+a.fn.csc 12012;
+a.fn.deg2grad 12013;
+a.fn.deg2rad 12014;
+a.fn.equal 12015;
+a.fn.erf 12016;
+a.fn.erfc 12017;
+a.fn.exp 12018;
+a.fn.false 12019;
+a.fn.floor 12020;
+a.fn.for 12021;
+a.fn.grad2deg 12022;
+a.fn.hyp 12023;
+a.fn.ilike 12025;
+a.fn.in 12026;
+a.fn.inrange 12027;
+a.fn.like 12028;
+a.fn.log 12029;
+a.fn.log10 12030;
+a.fn.logn 12031;
+a.fn.max 12032;
+a.fn.min 12033;
+a.fn.mod 12034;
+a.fn.mul 12035;
+a.fn.nand 12036;
+a.fn.nor 12037;
+a.fn.not 12038;
+a.fn.not_equal 12039;
+a.fn.or 12040;
+a.fn.rad2deg 12041;
+a.fn.root 12042;
+a.fn.round 12043;
+a.fn.roundn 12044;
+a.fn.sec 12045;
+a.fn.sgn 12046;
+a.fn.shl 12047;
+a.fn.shr 12048;
+a.fn.sin 12049;
+a.fn.sinh 12050;
+a.fn.sqrt 12051;
+a.fn.sum 12052;
+a.fn.tan 12053;
+a.fn.tanh 12054;
+a.fn.true 12055;
+a.fn.xor 12057;
+
+
+fn
+{
+ _ a.fn;
+
+ f io(l0, _0, 1,1,0.5,1);
+ f1 io(l0, _0, 0,0.7,1,1);
+ f2 io(l0, _0, 1,1,0,1);
+
+ f1(if);f1(while);
+ f2(abs);f2(acos);f(and);f(asin);
+ f(atan);f(atan2);f(avg);f(ceil);
+ f(clamp);f2(cos);f(cosh);f(cot);
+ f(csc);f(deg2grad);f(deg2rad);
+ f(equal);f(erf);f(erfc);f(exp);
+ f(false);f(floor);f(for);f(grad2deg);
+ f(hyp);f(ilike);f(in);f(inrange);
+ f(like);f2(log);f2(log10);f(logn);
+ f(max);f(min);f(mod);f(mul);
+ f(nand);f(nor);f(not);f(not_equal);
+ f(or);f(rad2deg);f(root);f(round);
+ f(roundn);f(sec);f(sgn);f(shl);f(shr);
+ f2(sin);f(sinh);f(sqrt);f(sum);f2(tan);
+ f(tanh);f(true);f(xor);
+};
+
+fn;
+
+a.core.call 13101;
+a.core.create 13100;
+a.core.io1 13400;
+
+a.core.draw 13200;
+a.core.point 13201;
+a.core.line 13202;
+a.core.rect 13203;
+a.core.qbezier 13204;
+a.core.cbezier 13205;
+a.core.triangle 13206;
+a.core.point4 13207;
+a.core.color 13208;
+a.core.psize 13209;
+a.core.circle 13210;
+
+a.core.shader 13300;
+a.core.uniform 13301;
+a.core.uniform2 13302;
+a.core.uniform4 13303;
+
+a.core.mem 13500;
+a.core.set 13501;
+a.core.set2 13502;
+a.core.set4 13503;
+a.core.get 13510;
+a.core.get2 13511;
+a.core.get4 13512;
+
+
+core
+{
+ _ a.core;
+
+ io(l0, call, 1,0,1,1);
+ io(l0, create, 0,1,1,1);
+ io(l0, io1, 0.1,0.5,0.7,1);
+ io(l0, draw, 0.5,0.8,1,1);
+
+ f1 io(l0, _0, 1,0.3,0.8,1);
+
+ f1(point);f1(line);f1(rect);
+ f1(qbezier);f1(cbezier);f1(triangle);
+ f1(point4);f1(psize);f1(color);f1(circle);
+
+ f2 io(l0, _0, 1,0.9,0.1,1);
+
+ f2(shader);f2(uniform);f2(uniform2);
+ f2(uniform4);
+
+ f3 io(l0, _0, 0.5,0.8,1,1);
+
+ f3(mem);f3(set);f3(set2);f3(set4);
+ f3(get);f3(get2);f3(get4);
+};
+
+core;
+
+a.op.end 11100;
+a.op.cbrl 11101;
+a.op.cbrr 11102;
+a.op.ebrl 11103;
+a.op.ebrr 11104;
+a.op.comma 11105;
+a.op.dot 11106;
+a.op.at 11107;
+a.op.op 11110;
+
+operators
+{
+ _ a.op;
+ io(l0, end, 1,0,0.5,0.5);
+ io(l0, cbrl, 1,1,0.5,0.5);
+ io(l0, cbrr, 1,1,0.5,0.5);
+ io(l0, ebrl, 1,0.5,0.5,1);
+ io(l0, ebrr, 1,0.5,0.5,1);
+ io(l0, comma, 1,0.5,0,0.5);
+ io(l0, dot, 1,0.5,0.9,0.5);
+ io(l0, at, 1,1,0,1);
+ io(l0, op, 1,1,1,1);
+};
+
+operators;
+
+a.main.any 11700;
+a.main.ident 11701;
+a.main.number 11702;
+
+main
+{
+ _ a.main;
+ io(l0, any, 0.5, 0.5, 0.5, 1);
+ io(l0, ident, 0.7, 0.3, 0.8, 1);
+ io(l0, number, 1, 0, 0, 1);
+};
+
+main;
+
+a.node.x 14000;
+a.node.y 14001;
+a.node.s 14002;
+a.node.a 14003;
+a.node.r 14004;
+a.node.dt 14005;
+a.node.t 14006;
+a.node.lt 14007;
+a.node.p 14008;
+a.node.w 14009;
+a.node.h 14010;
+a.node.sx 14011;
+a.node.sy 14012;
+
+node
+{
+ _ a.node;
+ f io(l0, _0, 0,1,0,1);
+ f(x);f(y);f(s);f(a);f(r);
+ f(dt);f(t);f(lt);f(p);
+ f(w);f(h);f(sx);f(sy);
+};
+
+node;
+
+#l15:=x;
+#regs global;
+io(l0, 14100, 1,0.7,0.5,1);
+io(l0, 14101, 1,0.7,0.5,1);
+io(l0, 14102, 1,0.7,0.5,1);
+io(l0, 14103, 1,0.7,0.5,1);
+io(l0, 14104, 1,0.7,0.5,1);
+io(l0, 14105, 1,0.7,0.5,1);
+io(l0, 14106, 1,0.7,0.5,1);
+io(l0, 14107, 1,0.7,0.5,1);
+io(l0, 14108, 1,0.7,0.5,1);
+io(l0, 14109, 1,0.7,0.5,1);
+io(l0, 14110, 1,0.7,0.5,1);
+io(l0, 14111, 1,0.7,0.5,1);
+io(l0, 14112, 1,0.7,0.5,1);
+io(l0, 14113, 1,0.7,0.5,1);
+io(l0, 14114, 1,0.7,0.5,1);
+io(l0, 14115, 1,0.7,0.5,1);
+io(l0, 14116, 1,0.7,0.5,1);
+
+#regs params;
+io(l0, 14200, 1,0,0.2,1);
+io(l0, 14201, 1,0,0.2,1);
+io(l0, 14202, 1,0,0.2,1);
+io(l0, 14203, 1,0,0.2,1);
+io(l0, 14204, 1,0,0.2,1);
+io(l0, 14205, 1,0,0.2,1);
+io(l0, 14206, 1,0,0.2,1);
+io(l0, 14207, 1,0,0.2,1);
+
+#regs locals;
+io(l0, 14300, 0.1,1,0.5,1);
+io(l0, 14301, 0.1,1,0.5,1);
+io(l0, 14302, 0.1,1,0.5,1);
+io(l0, 14303, 0.1,1,0.5,1);
+io(l0, 14304, 0.1,1,0.5,1);
+io(l0, 14305, 0.1,1,0.5,1);
+io(l0, 14306, 0.1,1,0.5,1);
+io(l0, 14307, 0.1,1,0.5,1);
+io(l0, 14308, 0.1,1,0.5,1);
+io(l0, 14309, 0.1,1,0.5,1);
+io(l0, 14310, 0.1,1,0.5,1);
+io(l0, 14311, 0.1,1,0.5,1);
+io(l0, 14312, 0.1,1,0.5,1);
+io(l0, 14313, 0.1,1,0.5,1);
+io(l0, 14314, 0.1,1,0.5,1);
+io(l0, 14315, 0.1,1,0.5,1);
+
+a.locals.ret 14316;
+a.locals.n 14317;
+a.locals.k 14318;
+
+locals
+{
+ _ a.locals;
+ io(l0, ret, 0.1,1,0.5,1);
+ io(l0, n, 0.1,1,0.5,1);
+ io(l0, k, 0.1,1,0.5,1);
+};
+
+locals;
+
+l15:=r0;
+p0:=r0;
+
+#regs;
+#io(l0, 1, 0,1,1,1);
+
+#colors apply;
+io(l0, 19900, 0,0,0,0);
+
+k:=1;

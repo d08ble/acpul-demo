@@ -1,0 +1,96 @@
+### 3003 AB::Unit
+r0:=k==0;
+
+draw(r0, 3004);
+
+states.enum
+{
+ wait.in.queue 0;
+ go.to.gun 1;
+ in.gun 2;
+ fly 3;
+};
+
+context.def
+{
+ id;
+ state;
+};
+
+#x:=100;
+#y:=100;
+
+_ @2999;# file.def
+game.gun @game.file.gun;
+game.gun.context.d.a p0;
+
+gg game.gun;
+ctx gg.context;
+
+ctx.delta.g(l0, l1);
+x:=ctx.x.g+l0;
+y:=ctx.y.g+l1;
+
+delta.x l2;
+delta.y l3;
+delta.x:=ctx.delta.x.g;
+delta.y:=ctx.delta.y.g;
+
+ctx.event.next(r1);
+if (r1==2)
+{
+ s:=2;
+};
+if (r1==1)
+{
+ s:=1;
+ b2d.unit.new;
+};
+
+_ @1010;
+_ @sys.box2d;
+
+box2d.common.world u10;
+
+b2d.unit.new
+{
+ body1 r2;
+ body.new
+ {
+   box2d.body.def0(u0, _0, _1, _2, _3);
+   box2d.body.def1(u0, -delta.x, -delta.y,-5,0);
+   box2d.body.def3(u0, 0, 0,1,5);
+   box2d.body.create(u0, box2d.common.world);
+# body.def0 body.def.type.position.angle;
+# body.def1 body.def.velocity.linear.angular;
+# body.def2 body.def.damping.linear.angular.allowSleep.awake;
+# body.def3 body.def.fixed.rotation.bullet.active.gravity.scale;
+
+ };
+ body1:=body.new(box2d.dynamic, x/2, y/2, 90);
+# watch(r2);
+ # BODY GROUP
+# box2d.body.group.add(u0, body0, cgs.friend);
+# box2d.body.group.add(u0, body1, cgs.enemy.fire);
+
+ # BODY DATA
+# box2d.body.data.values4(u0, 1, 2, 3, 4);
+# box2d.body.data.set(u0, body0, 0);
+
+ # SHAPE
+ shape1 r3;
+ shape1:=box2d.shape.create.circle(u0);
+ box2d.shape.set.radius(u0, shape1, 10);
+# box2d.shape.polygon.box(u0, shape0, 20, 1);
+
+ # FIXTURE
+ fixture1 r4;
+
+ box2d.fixture.def(u0, 0.2, 0, 0, 0);
+ fixture1:=box2d.fixture.create(u0, body1, shape1);
+
+# watch(r4);
+};
+
+k:=1;
+

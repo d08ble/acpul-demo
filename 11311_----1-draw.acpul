@@ -1,0 +1,14 @@
+### 11311 --- 1/draw
+r0:=k==0;
+
+l15+=dt;
+a l15/10; #+abs(sin(l15*pi)/(1+cos(l15*pi)));#10*log10(0.5+0.4*sin(l15*pi/4));
+r 0.5+sin(a*pi/3)*0.1+0.4*sin(a*pi*18.3);
+g 0.5+sin(a*pi/5)*0.1+0.4*sin(a*pi*8.7);
+b 0.5+sin(a*pi/7)*0.1+0.4*sin(a*pi*7);
+color(u0, r,g,b,0.1);
+bw 170;
+bh 170;
+rect(u0, 6, -bw/2,-bh/2, bw,bh);
+
+k:=1;

@@ -1,0 +1,8 @@
+### 2999 AB::DEF
+# file.def
+game.file.gun 3001;
+
+
+# u0 - cpu, always 1
+# u10 - box2d.world
+# u31 - 

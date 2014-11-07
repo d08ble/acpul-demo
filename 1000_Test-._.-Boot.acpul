@@ -1,0 +1,113 @@
+### 1000 Test ._. Boot
+#
+# INIT
+#
+
+r0:=k==0;
+#create(r0, -30000, -1, 100, 1001, 0);
+
+ide.setup
+ call(_0, -5, 0,0,0,0, 0,0,0,0);
+
+syntax.highlight.init
+ call(_0, -1, 0,0,0,0, 0,0,0,0);
+
+ide.setup(u0);
+syntax.highlight.init(u0);
+
+music.play
+ # r0, melody, time, loop
+ io(_0, 500090, _1,_2,_3,0);
+
+music.stop
+ # r0
+ io(_0, 500091, 0,0,0,0);
+
+#music.play(r0, 1, 0, 1);
+music.stop(r0);
+
+#
+# BOOT
+#
+_ @1010;
+_ @sys.node;
+_ @sys.touch;
+
+touch.start();
+x:=200;
+y:=-400;
+s:=0.2*10;
+r:=0;
+#s:=1.0;
+
+#x:=300;y:=100;s:=0.4;r:=-2;
+#x:=300;y:=100;s:=0.2;r:=10;
+
+spr1 1;
+#node.new.this(r0, spr1, 1001, 0);
+
+new.Edit1
+ node.new.this.object(r0, 1002, 0);
+
+new.Edit1();
+
+node.new.this.object(r0, 2000, 0);
+node.new.this.object(r0, 3000, 0);
+#node.new.this.object(r0, 9000, 0);
+#node.new.this.ex(r0, 9700, 0);
+#node.new.this.ex(r0, 9740, 0);
+node.new.this.ex(r0, 20000, 0);
+node.new.this.ex(r0, 11000, 0);
+
+#watch(r0);
+
+_ @sys.cpu;
+
+cpu.init(r0);
+cpu.debug.errors.console(r0, 0);
+cpu.debug.errors.enabled(r0, 1);
+cpu.debug.log.to.xcode.console(r0, 1);
+cpu.debug.log.to.console(r0, 1);
+
+#
+# TEST STACK
+#
+stack.a 60000;
+stack.size 10000;
+stack.head u15;
+stack.m u16;
+
+#watch(u2);
+#if(u2){watch(u2);};
+#if(r0, watch(2), 0);
+#stack.head l15;
+#stack.m l14;
+
+_ @sys.stack.base;
+
+#stack.start;
+
+#stack.test;
+#watch(stack.head);
+
+###
+
+_ @sys.heap;
+
+heap.start;
+
+net 
+{
+ set.ip io(u0, 19917, _0,_1,_2,_3);
+ set.port io(u0, 19918, _0,0,0,0);
+ set.host 
+ {
+  set.ip(_0,_1,_2,_3);
+  set.port(_4);
+ };
+};
+net.set.host(192,168,7,225, 8077);
+
+#x:=500;
+#y:=500;
+k:=1;

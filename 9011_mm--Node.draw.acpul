@@ -1,0 +1,53 @@
+### 9011 mm::Node.draw
+
+_ @1010;
+
+l0+=0.1;
+k l15;
+
+#l0:=0;
+fcolor
+{
+ r l7;
+ g l8;
+ b l9;
+ a l10;
+ d {
+#  r l5;g l4;b l3;a l2;
+  r r5;g r4;b r3;
+ };
+ init
+ {
+  a:=1;
+  d.r:=rnd(r0)*0.1;
+  d.g:=rnd(r0)*0.1;
+  d.b:=rnd(r0)*0.1;
+#  watch(k);
+ };
+# if(k==0,init,0);
+ r:=sin(l0*d.r*pi*2)/2+0.5;
+ g:=sin(l0*d.g*pi*2)/2+0.5;
+ b:=sin(l0*d.b*pi*2)/2+0.5;
+# d.g:=rnd(r0)*0.1;
+# d.b:=rnd(r0)*0.1;
+
+# color(u0, r, g, b, 0.5-r6);
+ color(u0, 0.8*r, g*(sin(l0/10)*r6/2+0.5), b*(0.5+sin(l0/11)/4), 0.5-r6);
+};
+
+#fcolor;
+
+color(u0, 0.8, sin(l0/10)*r6/2+0.5, 0.5+sin(l0/11)/4, 0.5-r6);
+#color(u0, 0, 1, 0, r6+0.5);
+#psize1(5);
+
+#rect(u0, 2, 0,0,20,20);
+rect(u0, 6, 0,0,10,10);
+#watch(r7);
+
+#triangle(u0, 6, 0,0, 11,111*sin(l0), 222*cos(l0/3),0);
+
+
+k:=1;
+
+

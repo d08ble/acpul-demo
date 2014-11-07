@@ -1,0 +1,18 @@
+### 1020 sys.touch.tpl.event
+touch.ev
+{
+ began 
+ # x, y 
+ {};
+ moved
+ # x, y
+ {};
+ ended
+ # x, y
+ {};
+ #
+ # future->all methods should execute for
+ # force override non-tpl:
+ # {throw.not.implemented};
+ #
+};

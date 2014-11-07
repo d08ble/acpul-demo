@@ -1,0 +1,20 @@
+### 2000 SR::Star Ranger
+r0:=k==0;
+
+_ @1010;
+_ @sys.node;
+
+#B2D.Test
+#node.new.target.object(r0, 2001, 0);
+
+#DSP.Test
+#node.new.target.object(r0, 2020, 0);
+
+#vec2d.array.Test
+node.new.target.object(r0, 2022, 0);
+
+node.new.target.object(r0, 2003, 0);
+node.new.target.object(r0, 2005, 0);
+node.new.target.object(r0, 2007, 0);
+
+k:=1;

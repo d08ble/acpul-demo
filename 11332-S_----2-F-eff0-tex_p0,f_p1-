@@ -1,0 +1,56 @@
+### 11332:S --- 2/F/eff0(tex_p0,f_p1)
+#ifdef GL_ES
+precision lowp float;
+#endif
+
+varying vec2 v_texCoord;
+varying vec4 v_p;
+
+uniform sampler2D p0;
+uniform float p1;
+
+void main() 
+{
+ vec2 tp = v_texCoord;
+ vec4 c0 = texture2D(p0, tp);
+// vec4 c0 = texture2D(p0, tp)
+//              + texture2D(p0, tp+vec2(-0.1,-0.1)*0.1)
+//              + texture2D(p0, tp+vec2(0.1,-0.1)*0.1)
+//              + texture2D(p0, tp+vec2(-0.1,0.1)*0.1)
+//              + texture2D(p0, tp+vec2(0.1,0.1)*0.1);
+ vec4 c=c0; 
+ float a=c.a;
+ float ya1=5.0*(1.0-sin(p1/4.0))*v_texCoord.x;
+ float ya2=7.0*(1.0-sin(p1*3.14/7.0))*(1.0-v_texCoord.x);
+ c.g = c.g+ya1*0.8+ya2*0.1;
+ c.r = c.r+ya1*0.1+ya2*0.8;
+ c.b = c.b+(ya1*ya2*1.0+4.0*sin(p1/2.0))*1.0*(v_texCoord.y+0.3);
+// c=mod(c, 0.10)*10.0;
+ c=c*0.6; 
+// c.a=gl_Position.x;
+// vec2 p=v_texCoord;
+ vec4 p=v_p;//*2.0;
+//p.x=p.x+p1*0.005;
+//p.y=p.y+p1*0.001;
+ bool n=mod(p.x,0.02)<0.01;
+ bool m=mod(p.y,0.02)<0.01;
+ if(n == m) {
+  c=c*0.4;
+ }
+// float e=(c.r+c.g+c.b)/3.0;
+// c.r=c.g=c.b=e;
+ c-=(texture2D(p0, tp-vec2(0.01,-0.01))+
+texture2D(p0, tp+vec2(0.01)))*2.0;
+
+ c.a=1.0;
+ c=step(0.01, a)*c;
+
+ gl_FragColor = c;
+
+// float an=p1;
+// an=an+0.0001;
+// float k=(1.0+sin(an))/2.0;
+// float k=sin(3.14*111.0);
+// float k=0.5+0.5*sin(an);
+//  gl_FragColor = vec4(k,0.0,0.0,0.5);
+}

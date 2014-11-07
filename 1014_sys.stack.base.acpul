@@ -1,0 +1,57 @@
+### 1014 sys.stack.base
+stack
+{
+ _;
+ base
+ {
+  start
+  {
+   # init once
+   if (m == 0)
+   {
+    head:=0;
+    m:=mem(u0, 0, a, size);
+#    watch(m);
+   };
+  };
+  check
+  {
+   #throw if error
+   watch(head);
+  };
+  push
+  {
+   check(head);
+   set(u0, m, head, _0);
+   head+=1;
+  };
+  pop
+  {
+   check(head);
+   head-=1;
+   _0:=get(u0, m, head);
+  };
+  empty
+  {
+   head==0;
+  };
+ };
+};
+
+stack.test
+{
+ s stack.base;
+ s.start;
+
+ s.push(1);
+ s.push(2);
+ s.push(3);
+
+ s.pop(l5);
+ watch(l5);
+ s.pop(l5);
+ watch(l5);
+ s.pop(l5);
+ watch(l5);
+#stack.base.start;
+};

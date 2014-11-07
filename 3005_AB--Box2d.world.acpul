@@ -1,0 +1,34 @@
+### 3005 AB::Box2d.world
+r0:=k==0;
+
+s:=2;
+draw(r0, 3006);
+
+_ @1010;
+_ @sys.box2d;
+
+# RESET
+
+box2d.reset(r0);
+
+# CREATE WORLD
+
+world u10;
+gravity.x 0;
+gravity.y 0-9.8; #earth 9.8 m/s/s
+
+if (r0)
+{
+ world:=box2d.world(r0, gravity.x, gravity.y);
+};
+
+# STEP
+
+velocity.iteractions 8;
+position.iteractions 3;
+
+box2d.step(u0, 1/60, velocity.iteractions, position.iteractions);
+
+
+
+k:=1;

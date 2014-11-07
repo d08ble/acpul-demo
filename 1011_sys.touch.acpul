@@ -1,0 +1,22 @@
+### 1011 sys.touch
+touch.e.began 1;
+touch.e.moved 2;
+touch.e.ended 3;
+touch.e.click 5;
+
+touch.a.a 500100;
+touch.a.reset a;
+touch.a.mode a+1;
+touch.a.rect a+2;
+touch.a.event a+3;
+
+touch.start io(u0, touch.a.reset, 0,0,0,0);
+
+touch.rect
+{
+ io(u0, a.mode, _0, 1, 1, 0);
+ _0:=io(u0, a.rect, _1, _2, _3, _4);
+};
+
+touch.event io(u0, a.event, _0,0,0,0);
+

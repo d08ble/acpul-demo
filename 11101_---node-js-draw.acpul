@@ -1,0 +1,45 @@
+### 11101 -- node-js/draw
+r0:=k==0;
+
+# background [
+color(u0, 0.1,0.1,0,0.1);
+rect(u0, 6, 0,0, 768, 1024);
+# background ]
+
+# 6-point [
+color(u0, 0,0.9,0,0);
+each 
+# _r, n, fn
+{
+ _0:=_1;
+ while(_0>0)
+ {
+  _2(_1-_0);
+  _0-=1;
+ };
+ #watch(r0);
+};
+f
+# i
+{
+ vw 768; vh 1024;
+ cx vw/2; cy vh/2;
+ r 100+10*sin(l15*pi/2);
+ a pi/3;
+ b 0;
+ px cx+sin(_0*a+b)*r;
+ py cy+cos(_0*a+b)*r;
+ line(u0, 3, cx,cy, px,py);
+ if (_0>0) {
+#  line(u0, 3, px,py, l4,l5);
+  triangle(u0, 4, cx,cy, px,py, l4,l5);
+ };
+ l4:=px;
+ l5:=py;
+};
+each(l2, 7, f);
+#watch(l15);
+l15+=dt;
+# 6-point ]
+
+k:=1;

@@ -98,7 +98,8 @@ heap.start;
 
 net 
 {
- autoapply io(u0, 19919, _0,0,0,0);
+ editor.update io(u0, 19919, _0,_1,0,0);
+ reset.after.update io(u0, 19920, _0,0,0,0);
  ip io(u0, 19917, _0,_1,_2,_3);
  port io(u0, 19918, _0,0,0,0);
  host 

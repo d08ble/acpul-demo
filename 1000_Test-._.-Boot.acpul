@@ -113,7 +113,8 @@ net
  };
 };
 net.host(192,168,7,225, 8077);
-net.editor.update(0, 1000);
+net.editor.update(0);
+net.reset.after.update (0, 1000);
 
 #x:=500;
 #y:=500;

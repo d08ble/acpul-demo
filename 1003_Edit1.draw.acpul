@@ -19,7 +19,7 @@ color(u0, 0.2, 0.5*sin(t), 0.4, 0.1);
 _ @1010;
 _ @sys.display;
 
-psize1(1);
+psize1(3);
 
 vertarr display.gl;
 

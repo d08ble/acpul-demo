@@ -98,15 +98,16 @@ heap.start;
 
 net 
 {
+ autoapply io(u0, 19919, _0,0,0,0);
  set.ip io(u0, 19917, _0,_1,_2,_3);
  set.port io(u0, 19918, _0,0,0,0);
- set.host 
+ host 
  {
   set.ip(_0,_1,_2,_3);
   set.port(_4);
  };
 };
-net.set.host(192,168,7,225, 8077);
+net.host(192,168,7,225, 8077);
 
 #x:=500;
 #y:=500;

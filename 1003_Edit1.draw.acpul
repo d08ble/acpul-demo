@@ -24,7 +24,7 @@ psize1(3);
 vertarr display.gl;
 
 vertarr.param(0, 2, 0, ptr, 0);
-vertarr.draw(0, 0, cnt);
+vertarr.draw(1, 0, cnt);
 #watch(cnt);
 
 x 900+sin(t)*100;

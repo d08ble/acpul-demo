@@ -7,6 +7,7 @@ draw(r0, 3002);
 _ @1010;
 _ @sys.touch;
 
+# context.def [
 context.def
 {
  # position & size
@@ -25,7 +26,9 @@ context.def
  # memory size
  msize 9;
 };
+# context.def ]
 
+# context [
 context
 {
  _;
@@ -66,11 +69,15 @@ context
  event.run {s(1);};
  event.update {s(2);};
 };
+# context ]
 
+# ctx [
 context.d.a p0;
 ctx context;
 #l0:=ctx.x.g;
+# ctx ]
 
+# target [
 target
 {
  delta.point
@@ -89,7 +96,9 @@ target
   };
  };
 };
+# target ]
 
+# touch.ev [
 touch.ev
 {
  began 
@@ -108,6 +117,7 @@ touch.ev
   target.run(_0, _1);
  };
 };
+# touch.ev ]
 
 if (r0)
 {

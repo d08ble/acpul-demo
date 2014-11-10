@@ -119,6 +119,7 @@ touch.ev
 };
 # touch.ev ]
 
+# init [
 if (r0)
 {
  x:=ctx.x.g;
@@ -126,9 +127,11 @@ if (r0)
  w:=ctx.width.g;
  h:=ctx.height.g;
 };
+# init ]
 
+# touch process [
 _ @sys.touch.ev.process.once;
 touch.rect(r1, x-w/2,y-h/2,w,h);
 touch.ev.process.once(r1, r2);
-
+# touch process ]
 k:=1;

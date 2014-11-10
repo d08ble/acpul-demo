@@ -31,10 +31,13 @@ context
  _;
  cd def;
  msize cd.msize;
+
+# future fix [
 #S {set(u0, d.a, _0,_1);};
 #G {get(u0, d.a, _0);};
 #x {s{S(cd.x, _0);};g{G(cd.x);}}
-#
+# future fix ]
+
  x.s {set(u0, d.a, cd.x, _0);};
  x.g {get(u0, d.a, cd.x);};
  y.s {set(u0, d.a, cd.y, _0);};

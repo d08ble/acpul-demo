@@ -36,6 +36,7 @@ context
 #S {set(u0, d.a, _0,_1);};
 #G {get(u0, d.a, _0);};
 #x {s{S(cd.x, _0);};g{G(cd.x);}}
+#x {a cd.x; s{S(a, _0);};g{G(a);}}
 # future fix ]
 
  x.s {set(u0, d.a, cd.x, _0);};

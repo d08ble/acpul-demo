@@ -1,6 +1,17 @@
 # MAP
-# 3200-3300 Dota
-# 3290		Game Networking
+# 3200-3300 Game Dota
+# 3200 		Main
+# 3290		Networking
+
+### 3200 Main
+
+r0:=k==1;
+
+k:=1;
+
+### 3201 Main.draw
+
+watch(r0);
 
 ### 3290 Networking
 

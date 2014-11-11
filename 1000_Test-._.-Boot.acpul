@@ -99,23 +99,6 @@ _ @sys.heap;
 
 heap.start;
 
-net 
-{
- editor.update 
-  # e
-  io(u0, 19920, _0,0,0,0);
- reset.after.update 
-  # e, id
-  io(u0, 19919, _0,_1,0,0);
- ip io(u0, 19917, _0,_1,_2,_3);
- port io(u0, 19918, _0,0,0,0);
- host 
- {
-  ip(_0,_1,_2,_3);
-  port(_4);
- };
-};
-
 _ @sys.net;
 
 net.host(192,168,7,225, 8077);

@@ -30,6 +30,7 @@ draw(r0, 3291);
 
 sys.net
 {
+ is.conencted io(u0, 19930, 0,0,0,0);
  started io(u0, 19930, 0,0,0,0);
 };
 

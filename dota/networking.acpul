@@ -9,6 +9,11 @@ r0:=k==0;
 
 draw(r0, 3201);
 
+NETWORKING 3290;
+
+node.new.this.ex(r0, NETWORKING, 0);
+
+
 k:=1;
 
 ### 3201 Main.draw

@@ -1,4 +1,7 @@
 ### 1010 sys.include.def
+
+# SYS.DEF [
+
 sys.include.def 1010;
 
 sys.touch 1011;
@@ -34,6 +37,10 @@ sys.net 1030;
 
 sys.modules.a.MAX 1031;
 
+# SYS.DEF ]
+
+# __bugfix [
+
 # bugfix 1. render order
 # render sequence should call using line after
 # psize for shader set.
@@ -48,3 +55,4 @@ color1
  line(u0, 3, 0,0, 1,1);
 };
 
+# __bugfix ]

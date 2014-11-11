@@ -24,10 +24,9 @@ if (l0==0)
 
 _ @3299;
 
-#r2:=net.is.setup();
-#if(r2)
+#if(net.is.setup())
 #{
-# gnet.id:=r2;
+# gnet.id:=net.get.index();
 # gnet.frame:=0;
 # gt:=0;
 # glt:=0;

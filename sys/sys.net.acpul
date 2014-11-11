@@ -1,6 +1,6 @@
 ### 1030 sys.net
 
-# api [
+# net [
 
 net 
 {
@@ -19,7 +19,7 @@ net
  };
 };
 
-# api ]
+# net ]
 
 
 # snippet [

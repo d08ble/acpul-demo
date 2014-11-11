@@ -28,6 +28,12 @@ r0:=k==0;
 
 draw(r0, 3291);
 
+sys.net
+{
+ ready io(u0, 19930, 0,0,0,0);
+ 
+};
+
 k:=1;
 
 ### 3291 Networking.draw

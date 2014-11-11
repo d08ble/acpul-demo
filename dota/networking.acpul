@@ -49,5 +49,5 @@ k:=1;
 ### 3291 Networking.draw
 
 #watch(r0);
-color(u0, 0,0,0.5,1);
+color(u0, 0,0.5,0,1);
 rect(u0, 6, 0,0,1024,768);

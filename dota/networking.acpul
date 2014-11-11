@@ -21,10 +21,10 @@ _ @3299;
 # gnet.id:=r2;
 # gnet.frame:=0;
 # gt:=0;
-# glt:=0; #100 us
+# glt:=0;
 #};
 
-if (glt < 100) {
+if (glt < 0.1) {
  glt+=dt;
  watch(glt);
 };

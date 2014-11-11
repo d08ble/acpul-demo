@@ -3,7 +3,7 @@
 # 3200 		Main
 # 3290		Networking
 
-### 3200 Main
+### 3200 Dota::Main
 
 r0:=k==0;
 
@@ -16,7 +16,7 @@ node.new.this.ex(r0, NETWORKING, 0);
 
 k:=1;
 
-### 3201 Main.draw
+### 3201 Dota::Main.draw
 
 #watch(r0);
 

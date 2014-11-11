@@ -17,6 +17,10 @@ net
   ip(_0,_1,_2,_3);
   port(_4);
  };
+
+ is.conencted io(u0, 19950, 0,0,0,0);
+ started io(u0, 19951, 0,0,0,0);
+
 };
 
 # net ]

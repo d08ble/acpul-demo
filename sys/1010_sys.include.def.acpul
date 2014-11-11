@@ -26,13 +26,13 @@ sys.vec2d.array_geometry 1026;
 sys.vec2d.array_util 1027;
 sys.vec2d.array.ALL 1028;
 
-sys.net 1029;
-
 # H8-240714 [
 sys.stream 1029;
 # H8-240714 ]
 
-sys.modules.a.MAX 1029;
+sys.net 1030;
+
+sys.modules.a.MAX 1031;
 
 # bugfix 1. render order
 # render sequence should call using line after

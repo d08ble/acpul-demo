@@ -13,6 +13,14 @@ if (net.is.connected(r1==0))
  net.started(u0);
 };
 
+#r2:=net.is.setup();
+#if(r2)
+#{
+# gnet.id:=r2;
+# gnet.frame:=0;
+# gt:=0;
+#};
+
 k:=1;
 
 ### 3291 Networking.draw

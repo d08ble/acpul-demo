@@ -34,6 +34,11 @@ sys.net
  started io(u0, 19930, 0,0,0,0);
 };
 
+if (sys.net.is.connected())
+{
+ 
+};
+
 k:=1;
 
 ### 3291 Networking.draw

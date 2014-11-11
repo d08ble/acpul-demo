@@ -21,6 +21,10 @@ if (net.is.connected(r1==0))
 # gt:=0;
 #};
 
+#if(net.is.sync)
+#
+#
+
 k:=1;
 
 ### 3291 Networking.draw

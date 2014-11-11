@@ -12,11 +12,9 @@ _ @sys.node;
 node.new.this.ex(r0, NETWORKING, 0);
 
 
-k:=1;
-### 3201 Dota::Main.draw
+k:=1;### 3201 Dota::Main.draw
 
 #watch(r0);
-
 
 ### 3290 Networking
 
@@ -29,10 +27,9 @@ _ @sys.net;
 
 #if (net.is.connected(r0))
 #{
-# net.started(r0);
+ net.started(r0);
 #};
 
-k:=1;
-### 3291 Networking.draw
+k:=1;### 3291 Networking.draw
 
 #watch(r0);

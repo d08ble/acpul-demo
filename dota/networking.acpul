@@ -19,7 +19,12 @@ if (net.is.connected(r1==0))
 # gnet.id:=r2;
 # gnet.frame:=0;
 # gt:=0;
+# reainingt:=100; #100 us
 #};
+
+if (reainingt > 0) {
+ reainingt-=dt;
+};
 
 #if(net.is.sync)
 #

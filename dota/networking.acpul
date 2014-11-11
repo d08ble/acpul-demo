@@ -26,6 +26,8 @@ k:=1;
 
 r0:=k==0;
 
+draw(r0, 3291);
+
 k:=1;
 
 ### 3291 Networking.draw

@@ -1,6 +1,6 @@
 ### 1010 sys.include.def
 
-# SYS.DEF [
+# sys.def [
 
 sys.include.def 1010;
 
@@ -37,7 +37,7 @@ sys.net 1030;
 
 sys.modules.a.MAX 1031;
 
-# SYS.DEF ]
+# sys.def ]
 
 # __bugfix [
 

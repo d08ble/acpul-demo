@@ -1,9 +1,9 @@
 ### 1000 Test ._. Boot
-#
-# INIT
-#
 
 r0:=k==0;
+
+# INIT [
+
 #create(r0, -30000, -1, 100, 1001, 0);
 
 ide.setup
@@ -26,9 +26,10 @@ music.stop
 #music.play(r0, 1, 0, 1);
 music.stop(r0);
 
-#
-# BOOT
-#
+# INIT ]
+
+# BOOT [
+
 _ @1010;
 _ @sys.node;
 _ @sys.touch;
@@ -99,12 +100,19 @@ _ @sys.heap;
 
 heap.start;
 
+# NETWORKING [
+
 _ @sys.net;
 
 net.host(192,168,7,225, 8077);
 net.editor.update(1);
 net.reset.after.update(1, 1000);
 
+# NETWORKING ]
+
 #x:=500;
 #y:=500;
+
+# BOOT ]
+
 k:=1;

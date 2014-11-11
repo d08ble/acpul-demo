@@ -1,8 +1,3 @@
-# MAP
-# 3200-3300 Game Dota
-# 3200 		Main
-# 3290		Networking
-
 ### 3200 Dota::Main
 
 r0:=k==0;
@@ -18,11 +13,9 @@ node.new.this.ex(r0, NETWORKING, 0);
 
 
 k:=1;
-
 ### 3201 Dota::Main.draw
 
 #watch(r0);
-
 
 
 ### 3290 Networking
@@ -34,13 +27,12 @@ draw(r0, 3291);
 _ @1010;
 _ @sys.net;
 
-if (net.is.connected(r0))
-{
- net.started(r0);
-};
+#if (net.is.connected(r0))
+#{
+# net.started(r0);
+#};
 
 k:=1;
-
 ### 3291 Networking.draw
 
 #watch(r0);

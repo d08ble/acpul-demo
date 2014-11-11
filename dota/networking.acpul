@@ -31,8 +31,6 @@ draw(r0, 3291);
 _ @1010;
 _ @sys.net;
 
-# sys.net
-
 if (net.is.connected(r0))
 {
  net.started(r0);

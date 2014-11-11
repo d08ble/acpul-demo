@@ -11,6 +11,9 @@ draw(r0, 3201);
 
 NETWORKING 3290;
 
+_ @1010;
+_ @sys.node;
+
 node.new.this.ex(r0, NETWORKING, 0);
 
 

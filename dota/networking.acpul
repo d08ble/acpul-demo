@@ -24,11 +24,11 @@ _ @3299;
 # glt:=0;
 #};
 
-if (glt < 0.1) {
- #glt+=dt;
- #watch(glt);
+if (glt < 0.2) {
+ glt+=dt;
+ watch(glt);
  #glt:=0;
- watch(dt);
+ #watch(dt);
 };
 
 #if(net.is.sync)

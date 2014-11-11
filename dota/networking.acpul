@@ -31,7 +31,6 @@ if (net.is.connected(r1==0))
  net.started(u0);
 };
 
-
 k:=1;### 3291 Networking.draw
 
 #watch(r0);

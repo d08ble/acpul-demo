@@ -16,7 +16,7 @@ node.new.this.ex(r0, NETWORKING, 0);
 
 
 s:=0.45;
-x:=-100;
+x:=-90;
 y:=220;
 
 k:=1;

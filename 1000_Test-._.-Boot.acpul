@@ -59,6 +59,9 @@ node.new.this.object(r0, 3000, 0);
 node.new.this.ex(r0, 20000, 0);
 node.new.this.ex(r0, 11000, 0);
 
+DOTA.MAIN 3200;
+node.new.this.ex(r0, DOTA.MAIN, 0);
+
 #watch(r0);
 
 _ @sys.cpu;

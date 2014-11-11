@@ -18,11 +18,11 @@ net
 };
 
 
-# help [
-help 
+# snippet [
+snippet
 {
  net.host(192,168,7,225, 8077);
  net.editor.update(1);
  net.reset.after.update(1, 1000);
 };
-# help ]
+# snippet ]

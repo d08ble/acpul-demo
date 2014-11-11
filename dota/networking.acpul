@@ -25,10 +25,10 @@ draw(r0, 3291);
 _ @1010;
 _ @sys.net;
 
-#if (net.is.connected(r0))
-#{
+if (net.is.connected(r0))
+{
  net.started(r0);
-#};
+};
 
 k:=1;### 3291 Networking.draw
 

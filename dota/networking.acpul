@@ -49,4 +49,4 @@ k:=1;
 ### 3291 Networking.draw
 
 #watch(r0);
-
+rect(u0, 6, 0,0,100,100);

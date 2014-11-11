@@ -4,4 +4,10 @@
 
 ### 3290 Networking
 
+r0:=k==1;
+
+k:=1;
+
 ### 3291 Networking.draw
+
+watch(r0);

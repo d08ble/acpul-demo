@@ -1,5 +1,7 @@
 ### 1030 sys.net
 
+# api [
+
 net 
 {
  editor.update 
@@ -16,6 +18,8 @@ net
   port(_4);
  };
 };
+
+# api ]
 
 
 # snippet [

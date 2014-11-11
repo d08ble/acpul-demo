@@ -24,8 +24,8 @@ _ @3299;
 # glt:=100; #100 us
 #};
 
-if (reainingt > 0) {
- reainingt-=dt;
+if (glt > 0) {
+ glt-=dt;
 };
 
 #if(net.is.sync)

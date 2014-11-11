@@ -27,6 +27,7 @@ _ @3299;
 if (glt < 0.1) {
  glt+=dt;
  watch(glt);
+ glt:=0;
 };
 
 #if(net.is.sync)

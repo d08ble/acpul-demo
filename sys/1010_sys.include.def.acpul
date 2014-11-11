@@ -1,0 +1,48 @@
+### 1010 sys.include.def
+sys.include.def 1010;
+
+sys.touch 1011;
+
+sys.node 1012;
+
+sys.heap 1013;
+sys.stack.base 1014;
+sys.cpu 1015;
+
+sys.box2d 1017;
+sys.box2d.test 1018;
+
+sys.display 1019;
+
+sys.touch.tpl.event 1020;
+sys.touch.ev.process.once 1021;
+
+sys.dsp 1022;
+sys.dsp.test 1023;
+
+sys.vec2d.array 1024;
+sys.vec2d.array_primitives 1025;
+sys.vec2d.array_geometry 1026;
+sys.vec2d.array_util 1027;
+sys.vec2d.array.ALL 1028;
+
+# H8-240714 [
+sys.stream 1029;
+# H8-240714 ]
+
+sys.modules.a.MAX 1029;
+
+# bugfix 1. render order
+# render sequence should call using line after
+# psize for shader set.
+psize1
+{
+ psize(u0, _0);
+ line(u0, 3, 0,0, 1,1);
+};
+color1
+{
+ color(u0, _0, _1, _2, _3);
+ line(u0, 3, 0,0, 1,1);
+};
+

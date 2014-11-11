@@ -20,8 +20,9 @@ net
 
  # proto [
  
- is.conencted io(u0, 19950, 0,0,0,0);
- started io(u0, 19951, 0,0,0,0);
+ is.conencted io(_0, 19950, 0,0,0,0);
+ started io(_0, 19951, 0,0,0,0);
+
  
  # proto ]
 
@@ -38,9 +39,9 @@ net.snippet
  net.editor.update(1);
  net.reset.after.update(1, 1000);
 
- if (net.is.connected())
+ if (net.is.connected(r0))
  {
-  net.started();
+  net.started(r0);
  };
 
 };

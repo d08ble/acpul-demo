@@ -7,11 +7,18 @@ draw(r0, 3291);
 _ @1010;
 _ @sys.net;
 
-if (net.is.connected(r1==0))
+l0:=net.is.connected(u0);
+if (l0)
 {
- r1:=1;
- net.started(u0);
+ if (r1==0) {
+  r1:=1;
+  net.started(u0);
+ }
 };
+if (l0==0)
+{
+	r1:=0;
+}
 
 _ @3299;
 

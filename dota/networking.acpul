@@ -12,7 +12,9 @@ _ @sys.node;
 node.new.this.ex(r0, NETWORKING, 0);
 
 
-k:=1;### 3201 Dota::Main.draw
+k:=1;
+
+### 3201 Dota::Main.draw
 
 #watch(r0);
 

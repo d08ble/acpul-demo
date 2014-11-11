@@ -31,8 +31,8 @@ draw(r0, 3291);
 # sys.net
 net
 {
- is.conencted io(u0, 19930, 0,0,0,0);
- started io(u0, 19930, 0,0,0,0);
+ is.conencted io(u0, 19950, 0,0,0,0);
+ started io(u0, 19951, 0,0,0,0);
 };
 
 if (net.is.connected())

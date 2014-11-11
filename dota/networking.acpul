@@ -33,9 +33,9 @@ _ @sys.net;
 
 # sys.net
 
-if (net.is.connected())
+if (net.is.connected(r0))
 {
- net.started();
+ net.started(r0);
 };
 
 k:=1;

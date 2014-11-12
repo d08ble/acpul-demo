@@ -42,8 +42,8 @@ net
   #  0 broadcast
   io(_0, 19954, _1,_2, 0,0);
  recv.mem
-  # r0, type, addr
-  # type:
+  # r0, mode, addr
+  # mode:
   #  0 default
   io(_0, 19955, _1,_2, 0,0);
  is.sync.event

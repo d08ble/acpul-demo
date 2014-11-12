@@ -130,6 +130,6 @@ rect(u0, 6, 8+16*2,8,8,8);
 
 _ @1010;
 _ @sys.net;
-if(net.is.connected(u0)*0, color(u0, 0,1,0,1), color(u0, 1+0.5*sin(t*pi*4),0,0,1));
+if(net.is.connected(u0)*0, color(u0, 0,1,0,1), color(u0, 1+0.5*sin(t*pi*10),0,0,1));
 rect(u0, 6, 8+16*3,8,8,8);
 

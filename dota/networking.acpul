@@ -50,7 +50,7 @@ if (this.turn.sended==0)
 {
  if (glt > net.t.send) {
   this.turn.sended:=1;
-  net.send.mem(u0, gnet.mem.wr, 0);
+  net.send.mem(u0, 0, gnet.mem.wr, 0);
  };
 };
 

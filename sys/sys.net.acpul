@@ -34,6 +34,14 @@ net
   # type: 
   #  0 broadcast
   io(_0, 19954, _1,_2, 0,0);
+ recv.mem
+  # r0, type, mem
+  # type:
+  #  0 default
+  io(_0, 19955, _1,_2, 0,0);
+ is.sync.event
+  # r0
+  io(_0, 19956, 0,0,0,0);
  # proto ]
 
 };

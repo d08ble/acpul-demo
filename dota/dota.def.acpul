@@ -1,7 +1,6 @@
 ### 3299 dota.def.acpul
 
-gnet.id u4;
-gnet.frame u5;
+gnet.id u5;
 
 gt u6;
 glt u7;

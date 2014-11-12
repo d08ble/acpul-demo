@@ -36,7 +36,6 @@ net.t.max 0.2;
 gdt:=min(net.t.max-glt, dt);
 
 if (glt < net.t.max) {
- 
  glt+=gdt;
  watch(glt);
 };

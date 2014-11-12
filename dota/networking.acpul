@@ -171,6 +171,6 @@ while(i<2) {
 # cy:=get(u0, gnet.mem.rd.a, offs(i)+1)+cos(gt)*10;
 
  color(u0, 1,i,0,1);
- rect(u0, 6, cx+gnet.id*100,cy, 32,32);
+ rect(u0, 6, cx+gnet.id*100,cy+gnet.id*100, 32,32);
  i+=1;
 };

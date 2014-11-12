@@ -168,7 +168,7 @@ offsself offs(gnet.id);
 i l2;
 i:=0;
 while(i<2) {
- cx+=get(u0, gnet.mem.rd.a, offs(i)+1);
+ cx+=get(u0, gnet.mem.rd.a, offs(i)+0);
  cy+=get(u0, gnet.mem.rd.a, offs(i)+1);
 # cx:=get(u0, gnet.mem.rd.a, offs(i)+0)+sin(gt*10)*10;
 # cy:=get(u0, gnet.mem.rd.a, offs(i)+1)+cos(gt)*10;

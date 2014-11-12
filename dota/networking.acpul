@@ -42,6 +42,15 @@ net.t.send 0.1;
 
 # game time [
 
+if (glt+dt > net.t.max)
+{
+ if (this.turn.received) {
+  this.turn.received:=0;
+  glt:=0;
+  this.turn.sended:=0;
+ };
+};
+
 gdt:=min(net.t.max-glt, dt);
 gt+=gdt;
 
@@ -76,8 +85,6 @@ if (this.turn.sended==0)
 
 if (net.is.sync.event(u0)>0)
 {
-# glt:=0;
-# this.turn.sended:=0;
  net.recv.mem(u0, 0, gnet.mem.rd.a);
  this.turn.received:=1;
 };

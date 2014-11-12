@@ -28,8 +28,8 @@ if(net.is.setup.event(u0))
 {
  gnet.id:=net.get.index(u0);
  gnet.frame:=0;
-# gt:=0;
-# glt:=0;
+ gt:=0;
+ glt:=0;
  l0:=1234555;
  watch(l0);
  watch(gnet.id);

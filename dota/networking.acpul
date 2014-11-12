@@ -24,6 +24,7 @@ if (l0==0)
 
 _ @3299;
 
+this.turn.received l7;
 this.turn.sended l8;
 
 if(net.is.setup.event(u0))
@@ -33,6 +34,7 @@ if(net.is.setup.event(u0))
  gt:=0;
  glt:=0;
  this.turn.sended:=0;
+ this.turn.received:=0;
 };
 
 net.t.max 0.2;
@@ -74,9 +76,10 @@ if (this.turn.sended==0)
 
 if (net.is.sync.event(u0)>0)
 {
- glt:=0;
- this.turn.sended:=0;
+# glt:=0;
+# this.turn.sended:=0;
  net.recv.mem(u0, 0, gnet.mem.rd.a);
+ this.turn.received:=1;
 };
 
 # recv ]

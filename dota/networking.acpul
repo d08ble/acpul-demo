@@ -176,7 +176,7 @@ while(i<max) {
  cx:=get(u0, gnet.mem.rd.a, offs(i)+0);
  cy:=get(u0, gnet.mem.rd.a, offs(i)+1);
 
- color(u0, 0,i/max,1,0);
+ color(u0, 0,1,i/max,0);
  rect(u0, 6, cx+i*100,cy+i*100+100, 32,32);
  i+=1;
 };

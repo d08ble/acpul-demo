@@ -53,6 +53,8 @@ if (glt < net.t.max)
 gnet.mem.wr 8825;
 gnet.mem.rd 8827;
 
+# send [
+
 if (this.turn.sended==0)
 {
  if (glt>net.t.send) 
@@ -62,11 +64,17 @@ if (this.turn.sended==0)
  };
 };
 
+# send ]
+
+# recv [
+
 if (net.is.sync.event(u0))
 {
  this.turn.sended:=0;
  net.recv.mem(u0, 0, gnet.mem.rd);
 };
+
+# recv ]
 
 k:=1;
 

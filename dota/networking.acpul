@@ -6,9 +6,6 @@ r0:=k==0;
 draw(r0, 3291);
 
 
-_ @1010;
-_ @sys.net;
-
 _ @3299;
 
 l0:=net.is.connected(u0);

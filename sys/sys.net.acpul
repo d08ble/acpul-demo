@@ -27,7 +27,7 @@ net
  
  is.connected io(_0, 19950, 0,0,0,0);
  started io(_0, 19951, 0,0,0,0);
- is.setup io(_0, 19952, 0,0,0,0);
+ is.setup.event io(_0, 19952, 0,0,0,0);
  get.index io(_0, 19953, 0,0,0,0);
  
  # proto ]
@@ -49,6 +49,10 @@ net.snippet
  {
   net.started(r0);
  };
-
+ if (net.is.setup.event(u0))
+ {
+  # bootstrap
+  k:=get.index(u0);
+ };
 };
 # snippet ]

@@ -30,9 +30,6 @@ if(net.is.setup.event(u0))
  gnet.frame:=0;
  gt:=0;
  glt:=0;
- l0:=1234555;
- watch(l0);
- watch(gnet.id);
 };
 
 net.t.max 0.2;
@@ -40,8 +37,6 @@ if (glt < net.t.max) {
  glt+=dt;
  glt:=min(net.t.max, glt);
  watch(glt);
- #glt:=0;
- #watch(dt);
 };
 
 #if(net.is.sync)

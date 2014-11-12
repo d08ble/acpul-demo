@@ -29,7 +29,9 @@ net
  started io(_0, 19951, 0,0,0,0);
  is.setup.event io(_0, 19952, 0,0,0,0);
  get.index io(_0, 19953, 0,0,0,0);
- 
+ send.mem
+  # r0, type, mem
+  io(_0, 19954, _1,_2, 0,0);
  # proto ]
 
 };

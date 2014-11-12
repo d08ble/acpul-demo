@@ -46,10 +46,12 @@ net.t.send 0.1;
 if (glt+dt > net.t.max)
 {
  if (this.turn.received) {
+  # next turn [
   this.turn.received:=0;
   glt:=0;
   this.turn.sended:=0;
   this.halted:=0;
+  # next turn ]
  };
 };
 

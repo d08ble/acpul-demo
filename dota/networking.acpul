@@ -125,3 +125,8 @@ rect(u0, 6, 8+16,8,8,8);
 # recved
 if(r7, color(u0, 1,1,0,1), color(u0, 1,0,0,1));
 rect(u0, 6, 8+16*2,8,8,8);
+
+_ @1010;
+_ @sys.net;
+if(net.is.connected(u0), color(u0, 1,1,0,1), color(u0, 1,0,0,1));
+rect(u0, 6, 8+16*3,8,8,8);

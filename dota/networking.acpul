@@ -32,6 +32,7 @@ if(net.is.setup.event(u0))
 # glt:=0;
  l0:=1234555;
  watch(l0);
+ watch(gnet.id);
 };
 
 if (glt < 0.2) {

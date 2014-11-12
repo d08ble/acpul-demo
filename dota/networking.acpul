@@ -39,7 +39,7 @@ if(net.is.setup.event(u0))
 };
 
 net.t.max 0.3;
-net.t.send 0.1;
+net.t.send 0.9;
 
 # game time [
 

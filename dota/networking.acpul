@@ -124,7 +124,7 @@ t+=dt;
 
 k:=1;
 
-set2(u0, gnet.mem.wr.a, 0, 1+, 2);
+set2(u0, gnet.mem.wr.a, 0, 1+gnet.id, 2);
 
 ### 3291 Networking.draw
 

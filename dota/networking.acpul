@@ -36,7 +36,7 @@ if(net.is.setup.event(u0))
  glt:=0;
  this.turn.sended:=0;
  this.turn.received:=0;
- this.halted:=0;
+ this.turn.halted:=0;
 };
 
 net.t.max 0.2;

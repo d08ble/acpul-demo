@@ -54,8 +54,8 @@ if (glt < net.t.max)
 gnet.mem.wr.a 8825;
 gnet.mem.rd.a 8827;
 
-gnet.mem.p l9;
-gnet.mem.p l10;
+gnet.mem.wr.p l9;
+gnet.mem.rd.p l10;
 
 
 # send [

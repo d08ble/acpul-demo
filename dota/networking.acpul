@@ -51,7 +51,7 @@ if (glt < net.t.max)
 # game time ]
 
 gnet.mem.wr 8825;
-gnet.mem.rd 8826;
+gnet.mem.rd 8827;
 
 if (this.turn.sended==0)
 {

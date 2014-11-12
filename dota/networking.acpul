@@ -26,7 +26,7 @@ _ @3299;
 
 if(net.is.setup.event(u0))
 {
- gnet.id:=net.get.index();
+ gnet.id:=0; #@net.get.index();
 # gnet.frame:=0;
 # gt:=0;
 # glt:=0;

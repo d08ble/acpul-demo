@@ -1,6 +1,9 @@
 ### 3290 Networking
 # r0, r1
 
+net.t.max 0.3;
+net.t.send 0.09;
+
 r0:=k==0;
 
 draw(r0, 3291);

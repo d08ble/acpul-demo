@@ -7,7 +7,7 @@ glt u7;
 gdt u8;
 
 net.t.max 0.1;
-net.t.send 0.03;
+net.t.send 0.05;
 
 #net.t.max 0.3;
 #net.t.send 0.09;

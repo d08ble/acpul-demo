@@ -8,12 +8,6 @@ draw(r0, 3291);
 _ @1010;
 _ @sys.net;
 
-net.t.max 0.1;
-net.t.send 0.07;
-
-#net.t.max 0.3;
-#net.t.send 0.09;
-
 l0:=net.is.connected(u0);
 if (l0)
 {
@@ -28,6 +22,13 @@ if (l0==0)
 };
 
 _ @3299;
+
+net.t.max 0.1;
+net.t.send 0.07;
+
+#net.t.max 0.3;
+#net.t.send 0.09;
+
 
 this.turn.halted r6;
 this.turn.received r7;

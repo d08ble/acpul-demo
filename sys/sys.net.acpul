@@ -33,6 +33,9 @@ net
  started io(_0, 19951, 0,0,0,0);
  is.setup.event io(_0, 19952, 0,0,0,0);
  get.index io(_0, 19953, 0,0,0,0);
+
+ # sync [
+
  send.mem
   # r0, type, mem
   # type: 
@@ -46,6 +49,8 @@ net
  is.sync.event
   # r0
   io(_0, 19956, 0,0,0,0);
+ 
+ # sync ]
 
  # proto ]
 

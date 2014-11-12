@@ -114,7 +114,7 @@ k:=1;
 _ @1010;
 _ @sys.net;
 
-l0:=net.is.connected(u0)*0;
+l0:=net.is.connected(u0);
 
 color(u0, 1,1,0,0);
 rect(u0, 2, 0,0,64-8,32-8);

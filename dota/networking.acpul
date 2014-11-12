@@ -101,6 +101,8 @@ if (net.is.sync.event(u0)>0)
 
 k:=1;
 
+
+
 ### 3291 Networking.draw
 
 #watch(r0);

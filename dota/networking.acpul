@@ -160,7 +160,7 @@ cx l0;
 cy l1;
 
 cx:=get(u0, gnet.mem.wr.a, 0);
-cx:=get(u0, gnet.mem.wr.a, 1);
+cy:=get(u0, gnet.mem.wr.a, 1);
 
 color(u0, 1,1,1,1);
 rect(u0, 6, cx,cy, 32,32);

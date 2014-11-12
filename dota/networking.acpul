@@ -38,6 +38,8 @@ if(net.is.setup.event(u0))
 net.t.max 0.2;
 net.t.send 0.1;
 
+# game time [
+
 gdt:=min(net.t.max-glt, dt);
 
 if (glt < net.t.max) 
@@ -45,6 +47,8 @@ if (glt < net.t.max)
  glt+=gdt;
  watch(glt);
 };
+
+# game time ]
 
 if (this.turn.sended==0)
 {

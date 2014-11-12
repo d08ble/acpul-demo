@@ -4,7 +4,7 @@
 
 net 
 {
- # bootstrap [
+ # connection [
 
  ip io(u0, 19917, _0,_1,_2,_3);
  port io(u0, 19918, _0,0,0,0);
@@ -13,8 +13,8 @@ net
   ip(_0,_1,_2,_3);
   port(_4);
  };
- 
- # bootstrap ]
+
+ # connection ]
 
  # livecoding [
 

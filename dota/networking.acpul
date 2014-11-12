@@ -50,13 +50,13 @@ if (this.turn.sended==0)
 {
  if (glt > net.t.send) {
   this.turn.sended:=1;
-  
+  net.send.mem(gnet.mem.wr);  
  };
 };
 
 #if(net.is.sync)
 #{
-#
+# this.turn.sended:=0;
 #};
 
 k:=1;

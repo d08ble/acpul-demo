@@ -176,4 +176,5 @@ while(i<2) {
  color(u0, 1,i,0,1);
  rect(u0, 6, cx+i*100,cy+i*100, 32,32);
  i+=1;
+ watch(offs(i));
 };

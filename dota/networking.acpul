@@ -55,15 +55,17 @@ gnet.mem.rd 8827;
 
 if (this.turn.sended==0)
 {
- if (glt > net.t.send) {
+ if (glt > net.t.send) 
+ {
   this.turn.sended:=1;
   net.send.mem(u0, 0, gnet.mem.wr);
  };
 };
 
-if(net.is.sync.event())
+if(net.is.sync.event(u0))
 {
  this.turn.sended:=0;
+ net.recv.mem(u0, 0, gnet.mem.rd);
 };
 
 k:=1;

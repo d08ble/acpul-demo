@@ -170,8 +170,6 @@ i:=0;
 while(i<net.nodes.count(u0)) {
 # cx+=get(u0, gnet.mem.rd.a, offs(i)+0);
 # cy+=get(u0, gnet.mem.rd.a, offs(i)+1);
-# cx:=get(u0, gnet.mem.rd.a, offs(i)+0)+sin(gt*10)*10;
-# cy:=get(u0, gnet.mem.rd.a, offs(i)+1)+cos(gt)*10;
  cx:=get(u0, gnet.mem.rd.a, offs(i)+0);
  cy:=get(u0, gnet.mem.rd.a, offs(i)+1);
 

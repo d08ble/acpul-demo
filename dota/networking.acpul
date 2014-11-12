@@ -158,10 +158,11 @@ gnet.mem.rd.a 8827;
 
 cx l0;
 cy l1;
-offs gnet.id*gnet.mem.wr.size;
+offs _0*gnet.mem.wr.size;
+offsself offs(gnet.id);
 
-cx:=get(u0, gnet.mem.rd.a, offs+0);
-cy:=get(u0, gnet.mem.rd.a, offs+1);
+cx:=get(u0, gnet.mem.rd.a, offs(0)+0);
+cy:=get(u0, gnet.mem.rd.a, offs(0)+1);
 
 color(u0, 1,1,1,1);
 rect(u0, 6, cx,cy, 32,32);

@@ -48,6 +48,7 @@ if (glt+dt > net.t.max)
   this.turn.received:=0;
   glt:=0;
   this.turn.sended:=0;
+  this.halted:=0;
  };
 };
 
@@ -58,6 +59,9 @@ if (glt < net.t.max)
 {
  glt+=gdt;
  watch(glt);
+ if (this.turn.received==0) {
+  this.halted:=1;
+ };
 };
 
 # game time ]

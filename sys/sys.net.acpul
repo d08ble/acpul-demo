@@ -31,6 +31,8 @@ net
  get.index io(_0, 19953, 0,0,0,0);
  send.mem
   # r0, type, mem
+  # type: 
+  #  0 broadcast
   io(_0, 19954, _1,_2, 0,0);
  # proto ]
 

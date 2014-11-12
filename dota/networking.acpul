@@ -159,8 +159,8 @@ gnet.mem.rd.a 8827;
 gnet.mem.wr.size 10;
 gnet.mem.rd.size 10*5;
 
-cx l0;
-cy l1;
+cx l4;
+cy l5;
 offs _0*gnet.mem.wr.size;
 offsself offs(gnet.id);
 i l2;

@@ -64,7 +64,7 @@ if (glt < net.t.max)
  glt+=gdt;
  watch(glt);
  if (this.turn.received==0) {
-  #this.turn.halted:=1;
+  this.turn.halted:=1;
  };
 };
 

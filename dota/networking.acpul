@@ -63,9 +63,6 @@ if (glt < net.t.max)
 {
  glt+=gdt;
 # watch(glt);
- if (this.turn.received==0) {
-  this.turn.halted:=1;
- };
 };
 
 # game time ]
@@ -88,6 +85,13 @@ if (this.turn.sended==0)
 };
 
 # send ]
+
+if (glt >= net.t.max) 
+{
+ if (this.turn.received==0) {
+  this.turn.halted:=1;
+ };
+};
 
 # recv [
 

@@ -108,11 +108,14 @@ k:=1;
 color(u0, 1,1,0,0);
 rect(u0, 2, 0,0,64,32);
 
-color(u0, 1,1,0,0);
+# halted
+if(r6, color(u0, 1,1,0,0), color(u0, 1,0,0,0));
 rect(u0, 6, 8,8,8,8);
 
+# recv
 if(r7, color(u0, 1,1,0,0), color(u0, 1,0,0,0));
 rect(u0, 6, 8+16,8,8,8);
 
+# send
 if(r8, color(u0, 1,1,0,0), color(u0, 1,0,0,0));
 rect(u0, 6, 8+16*2,8,8,8);

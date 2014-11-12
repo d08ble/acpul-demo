@@ -73,6 +73,18 @@ gnet.mem.rd.a 8827;
 gnet.mem.wr.p l9;
 gnet.mem.rd.p l10;
 
+gnet.mem.wr.size 10;
+gnet.mem.rd.size 10*5;
+
+newmem
+{
+ if (_0.p==0)
+ {
+  _0.p:=mem(u0, 0, _0.a, _0.size);
+ };
+};
+newmem(gnet.mem.wr);
+
 # send [
 
 if (this.turn.sended==0)

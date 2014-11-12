@@ -31,7 +31,6 @@ this.turn.sended r5;
 if(net.is.setup.event(u0))
 {
  gnet.id:=net.get.index(u0);
- gnet.frame:=0;
  gt:=0;
  glt:=0;
  this.turn.sended:=0;

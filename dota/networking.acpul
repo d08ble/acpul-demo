@@ -38,8 +38,7 @@ gdt:=min(net.t.max-gtl, dt);
 if (glt < net.t.max) {
  
  glt+=gdt;
- 
-# watch(glt);
+ watch(glt);
 };
 
 #if(net.is.sync)

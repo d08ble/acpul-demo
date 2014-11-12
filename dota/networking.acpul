@@ -125,7 +125,7 @@ t+=dt;
 k:=1;
 
 #set2(u0, gnet.mem.wr.a, 0, 0, 0);
-set2(u0, gnet.mem.wr.a, 0, gnet.id*sin(t), 0);
+set2(u0, gnet.mem.wr.a, 0, gnet.id*sin(gt), 0);
 #watch(gnet.id);
 #l0 gnet.id;
 #set2(u0, gnet.mem.wr.a, 0, 0, l0);

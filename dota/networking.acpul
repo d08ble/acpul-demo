@@ -84,6 +84,7 @@ newmem
  };
 };
 newmem(gnet.mem.wr);
+newmem(gnet.mem.rd);
 
 # send [
 

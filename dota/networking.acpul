@@ -42,7 +42,8 @@ net.t.send 0.07;
 
 #net.t.max 0.3;
 #net.t.send 0.09;
-l0:=0;watch(l0+net.t.max);
+#l0:=0;watch(l0+net.t.max);
+
 # game time [
 
 if (glt+dt > net.t.max)

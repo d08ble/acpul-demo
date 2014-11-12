@@ -165,15 +165,18 @@ cx l4;
 cy l5;
 offs _0*gnet.mem.wr.size;
 offsself offs(gnet.id);
+
 i l2;
 i:=0;
-while(i<net.nodes.count(u0)) {
+max l0;
+max:=net.nodes.count(u0);
+while(i<max) {
 # cx+=get(u0, gnet.mem.rd.a, offs(i)+0);
 # cy+=get(u0, gnet.mem.rd.a, offs(i)+1);
  cx:=get(u0, gnet.mem.rd.a, offs(i)+0);
  cy:=get(u0, gnet.mem.rd.a, offs(i)+1);
 
- color(u0, 1,i,0,0);
+ color(u0, 1,i/max,0,0);
  rect(u0, 6, cx+i*100,cy+i*100+100, 32,32);
  i+=1;
 };

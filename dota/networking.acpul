@@ -24,7 +24,7 @@ if (l0==0)
 
 _ @3299;
 
-if(is.setup.event(u0))
+if(net.is.setup.event(u0))
 {
 # gnet.id:=net.get.index();
 # gnet.frame:=0;

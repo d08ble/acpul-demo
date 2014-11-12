@@ -24,7 +24,6 @@ if (l0==0)
 
 _ @3299;
 
-
 this.turn.halted r6;
 this.turn.received r7;
 this.turn.sended r5;

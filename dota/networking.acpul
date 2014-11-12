@@ -81,6 +81,7 @@ if (this.turn.sended==0)
  {
   this.turn.sended:=1;
   net.send.mem(u0, 0, gnet.mem.wr.a);
+  l0 88777;pp watch(l0);
  };
 };
 

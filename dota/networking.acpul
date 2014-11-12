@@ -69,7 +69,7 @@ if (this.turn.sended==0)
 
 # recv [
 
-if (net.is.sync.event(u0))
+if (net.is.sync.event(u0)>0)
 {
  glt:=0;
  this.turn.sended:=0;

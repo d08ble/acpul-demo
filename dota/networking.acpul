@@ -24,20 +24,34 @@ if (l0==0)
 
 _ @3299;
 
+this.turn.sended l8;
+
 if(net.is.setup.event(u0))
 {
  gnet.id:=net.get.index(u0);
  gnet.frame:=0;
  gt:=0;
  glt:=0;
+ this.turn.sended:=0;
 };
 
 net.t.max 0.2;
+net.t.send 0.1;
+
 gdt:=min(net.t.max-glt, dt);
 
-if (glt < net.t.max) {
+if (glt < net.t.max) 
+{
  glt+=gdt;
  watch(glt);
+};
+
+if (this.turn.sended==0)
+{
+ if (glt > net.t.send) {
+  this.turn.sended:=1;
+  
+ };
 };
 
 #if(net.is.sync)

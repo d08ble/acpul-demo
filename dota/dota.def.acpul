@@ -1,5 +1,8 @@
 ### 3299 dota.def.acpul
 
+_ @1010;
+_ @sys.net;
+
 gnet.id u5;
 
 gt u6;

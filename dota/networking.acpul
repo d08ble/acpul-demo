@@ -58,10 +58,10 @@ if (this.turn.sended==0)
  };
 };
 
-#if(net.is.sync)
-#{
-# this.turn.sended:=0;
-#};
+if(net.is.sync.event())
+{
+ this.turn.sended:=0;
+};
 
 k:=1;
 

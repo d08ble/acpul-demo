@@ -109,7 +109,7 @@ color(u0, 1,1,0,0);
 rect(u0, 2, 0,0,64,32);
 
 # halted
-if(r6, color(u0, 1,1,0,0), color(u0, 1,0,0,0));
+if(r6, color(u0, 1,0,0,0), color(u0, 0,0.5,0,0));
 rect(u0, 6, 8,8,8,8);
 
 # recv

@@ -24,6 +24,7 @@ if (l0==0)
 
 _ @3299;
 
+this.turn.halted r6;
 this.turn.received r7;
 this.turn.sended r8;
 
@@ -50,7 +51,7 @@ if (glt+dt > net.t.max)
   this.turn.received:=0;
   glt:=0;
   this.turn.sended:=0;
-  this.halted:=0;
+  this.turn.halted:=0;
   # next turn ]
  };
 };
@@ -63,7 +64,7 @@ if (glt < net.t.max)
  glt+=gdt;
  watch(glt);
  if (this.turn.received==0) {
-  this.halted:=1;
+  this.turn.halted:=1;
  };
 };
 

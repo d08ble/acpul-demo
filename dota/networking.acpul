@@ -188,6 +188,7 @@ while(i<max) {
  rect(u0, 6, cx+i*100,cy+i*100+100, 32,32);
  i+=1;
 };
+watch(max);
 
 # simulate wr draw ]
 

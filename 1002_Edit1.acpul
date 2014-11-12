@@ -1,7 +1,7 @@
 ### 1002 Edit1
 
 _ @3299;
-dt gdt;
+t gt;
 
 r0:=k==0;
 
@@ -108,7 +108,8 @@ n:=0.5;
 fn {_1+=sin(t+_0)*n;_2+=cos(t+_0)*n;};
 v2a.for.each.a(fn);
 #watch(t);
-t+=dt;
+#t+=dt;
+
 v2a.add(100, 400);
 v2a.add(100+1, 400+1);
 v2a.add(100-1, 400-1);

@@ -126,7 +126,8 @@ k:=1;
 
 #set2(u0, gnet.mem.wr.a, 0, gnet.id, 0);
 #watch(gnet.id);
-set2(u0, gnet.mem.wr.a, 0, 1, 1);
+l0 gnet.id;
+set2(u0, gnet.mem.wr.a, 0, 1, l0);
 ### 3291 Networking.draw
 
 _ @1010;

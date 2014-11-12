@@ -51,8 +51,12 @@ if (glt < net.t.max)
 
 # game time ]
 
-gnet.mem.wr 8825;
-gnet.mem.rd 8827;
+gnet.mem.wr.a 8825;
+gnet.mem.rd.a 8827;
+
+gnet.mem.p l9;
+gnet.mem.p l10;
+
 
 # send [
 
@@ -61,7 +65,7 @@ if (this.turn.sended==0)
  if (glt>net.t.send) 
  {
   this.turn.sended:=1;
-  net.send.mem(u0, 0, gnet.mem.wr);
+  net.send.mem(u0, 0, gnet.mem.wr.a);
  };
 };
 
@@ -73,7 +77,7 @@ if (net.is.sync.event(u0)>0)
 {
  glt:=0;
  this.turn.sended:=0;
- net.recv.mem(u0, 0, gnet.mem.rd);
+ net.recv.mem(u0, 0, gnet.mem.rd.a);
 };
 
 # recv ]

@@ -38,7 +38,7 @@ if(net.is.setup.event(u0))
  this.turn.halted:=0;
 };
 
-net.t.max 0.25;
+net.t.max 0.3;
 net.t.send 0.1;
 
 # game time [

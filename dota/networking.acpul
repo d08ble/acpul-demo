@@ -127,7 +127,7 @@ k:=1;
 # simulate wr [
 
 #set2(u0, gnet.mem.wr.a, 0, 0, 0);
-set2(u0, gnet.mem.wr.a, 0, gnet.id*10*sin(gt*pi*2), 0);
+set2(u0, gnet.mem.wr.a, 0, gnet.id*20*sin(gt*pi*2), 0);
 #watch(gnet.id);
 #l0 gnet.id;
 #set2(u0, gnet.mem.wr.a, 0, 0, l0);

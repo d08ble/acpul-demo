@@ -115,7 +115,7 @@ color(u0, 1,1,0,0);
 rect(u0, 2, 0,0,64-8,32-8);
 
 # halted
-if(r6, color(u0, 1,0,0,0), color(u0, 0,0.5,0,1));
+if(r6, color(u0, 1,0,0,1), color(u0, 0,0.5,0,0));
 rect(u0, 6, 8,8,8,8);
 
 # send

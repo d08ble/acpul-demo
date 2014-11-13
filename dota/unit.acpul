@@ -1,9 +1,13 @@
 ### 3220 Object (type,x,y,...)
 # <type> <x,y> <team> [bot|player]
+# type
+#  - map
+#  - unit
+#  - shot
 # team
-#  0 - sys
-#  1 - green
-#  2 - blue
+#  - sys (0)
+#  - green
+#  - blue
 # bot
 #  type
 #  - robot

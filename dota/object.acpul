@@ -97,6 +97,7 @@ _ @sys.heap;
 
 context
 {
+ SIZE 10;
 };
 
 context.d.a r5;
@@ -105,7 +106,7 @@ this context;
 
 if (r0)
 {
- heap.alloc(r5, this.msize);
+ heap.alloc(r5, this.SIZE);
 };
 
 # unit code (split later) ]

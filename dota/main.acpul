@@ -18,12 +18,14 @@ r0:=k==0;
 
 draw(r0, 3203);
 
-NETWORKING 3290;
-
 _ @1010;
 _ @sys.node;
 
+NETWORKING 3290;
+OBJECT 3220;
+
 node.new.this.ex(r0, NETWORKING, 0);
+node.new.this.ex(r0, OBJECT, 0);
 
 
 s:=0.45;

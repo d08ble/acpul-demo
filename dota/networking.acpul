@@ -127,7 +127,6 @@ t+=dt;
 
 k:=1;
 
-
 # simulate wr [
 
 #set2(u0, gnet.mem.wr.a, 0, 0, 0);

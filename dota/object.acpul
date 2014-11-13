@@ -54,6 +54,11 @@ bots
 };
 players
 {
+ hero
+ {
+  debug 0,
+  cat 1
+ };
  # id
 };
 # types ]

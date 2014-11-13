@@ -111,20 +111,20 @@ context
 };
 # context ]
 
-# alloc this context [
+# alloc self context [
 
 context.d.a r5;
 
-this context;
+self context;
 
 if (r0)
 {
- heap.alloc(context.d.a, this.def.SIZE);
-# this.nop.set(177788);
-# watch(this.nop);
+ heap.alloc(context.d.a, self.def.SIZE);
+ self.nop.set(177788);
+ watch(self.nop);
 };
 
-# alloc this context ]
+# alloc self context ]
 
 # unit code (split later) ]
 

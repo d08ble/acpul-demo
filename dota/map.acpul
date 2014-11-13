@@ -24,9 +24,6 @@ node.new.this.ex8(r0, OBJECT, obj.types.unit, 50,30, team, obj.subtypes.player, 
 node.new.this.ex8(r0, OBJECT, obj.types.unit, 70,30, team, obj.subtypes.player, 0,0,0);
 
 #node.new.this.ex4(r0, OBJECT, obj.types.unit, 120,200, obj.teams.sys);
-#node.new.this.ex8(r0, OBJECT, obj.types.unit, 120,200, 0);
-#node.new.this.ex4(r0, OBJECT, 2, 140, 200, 0);
-#node.new.this.ex4(r0, OBJECT, 3, 160, 200, 0);
 
 k:=1;
 

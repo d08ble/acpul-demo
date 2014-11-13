@@ -1,5 +1,5 @@
 ### 3220 Object (type,x,y,...)
-# 0      1     2      3
+#  0      1 2   3      4
 # <type> <x,y> <team> <subtype> [bot|player]
 # type
 #  - map

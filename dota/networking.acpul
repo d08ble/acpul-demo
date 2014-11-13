@@ -184,6 +184,7 @@ while(i<max) {
 # cy+=get(u0, gnet.mem.rd.a, offs(i)+1);
  cx:=get(u0, gnet.mem.rd.a, offs(i)+0);
  cy:=get(u0, gnet.mem.rd.a, offs(i)+1);
+
  color(u0, 1,0,i/max,0);
  rect(u0, 6, cx+i*100,cy+i*100+100, 32,32);
  i+=1;

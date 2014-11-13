@@ -15,9 +15,17 @@ type p0;
 x:=p1;
 y:=p2;
 
+_ @1010;
+_ @sys.node;
+
+MAP 3224;
+UNIT 3230;
+
 if (r0)
 {
- if (type==0) { };
+ if (type==types.map) { node.new.this.ex(r0, MAP, 0);};
+ if (type==types.unit) { node.new.this.ex(r0, UNIT, 0);};
+# if (type==types.shot) { node.new.this.ex(r0, SHOT, 0);};
 };
 
 k:=1;

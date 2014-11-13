@@ -101,6 +101,12 @@ context
 
 context.d.a r5;
 
+this context;
+
+if (r0)
+{
+ heap.alloc(r5, this.msize);
+};
 
 # unit code (split later) ]
 

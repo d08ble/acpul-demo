@@ -106,7 +106,7 @@ context
  dd context.def;
  S {set(u0, d.a, _0,_1);};
  G {set(u0, d.a, _0);};
- nop {s {S(dd.nop, _0);}; G(dd.nop)};
+ nop {G(dd.nop)}; #s {S(dd.nop, _0);}; 
 };
 
 context.d.a r5;
@@ -118,7 +118,7 @@ if (r0)
  heap.alloc(r5, this.def.SIZE);
 # this.S(context.def, 100);
  this.nop;
- this.nop.s(177788);
+# this.nop.s(177788);
 l0:=177788;
  watch(l0);
 };

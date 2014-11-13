@@ -1,4 +1,4 @@
-### 3220 Object (x,y,type,...)
+### 3220 Object (type,x,y,...)
 # ... <team> [bot|player]
 # team
 #  0 - sys

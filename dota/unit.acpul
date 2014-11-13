@@ -7,6 +7,10 @@ type
  shot 2;
 };
 
+r0:=k==0;
+
+k:=1;
+
 ### 3221 Object.draw
 
 

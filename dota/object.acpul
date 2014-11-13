@@ -95,11 +95,15 @@ if (r0)
 _ @1010;
 _ @sys.heap;
 
-context
+context.def
 {
  
+};
+context
+{
+ _;
  SIZE 10;
-
+ p 
 };
 
 context.d.a r5;

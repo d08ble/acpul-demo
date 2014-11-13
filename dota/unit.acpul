@@ -10,6 +10,7 @@
 #  - green
 #  - blue
 # subtype
+#  - none (0)
 #  - bot
 #  - player
 # bot
@@ -33,6 +34,12 @@ teams
  sys 0;
  green 1;
  blue 2;
+};
+subtypes
+{
+ none 0;
+ bot 1;
+ player 2;
 };
 bots
 {

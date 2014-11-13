@@ -17,6 +17,18 @@ types
  unit 1;
  shot 2;
 };
+bots
+{
+ types
+ {
+  robot 0;
+  tower 1;
+  base 2;
+ };
+};
+players
+{	
+};
 # types ]
 
 r0:=k==0;

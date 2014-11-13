@@ -97,8 +97,9 @@ _ @sys.heap;
 
 context
 {
- SIZE 10;
  
+ SIZE 10;
+
 };
 
 context.d.a r5;

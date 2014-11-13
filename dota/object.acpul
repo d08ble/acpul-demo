@@ -120,8 +120,8 @@ self context;
 if (r0)
 {
  heap.alloc(context.d.a, self.def.SIZE);
- self.nop.set(177788);
- watch(self.nop);
+# self.nop.set(177788);
+# watch(self.nop);
 };
 
 # alloc self context ]

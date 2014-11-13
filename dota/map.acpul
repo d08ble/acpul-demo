@@ -1,5 +1,9 @@
 ### 3224 Map
 
+r0:=k==0;
+
+draw(r0, 3221);
+
 _ @1010;
 _ @sys.node;
 
@@ -10,6 +14,8 @@ obj @OBJECT;
 #node.new.this.ex4(r0, OBJECT, obj.types.unit, 120, 200, 0);
 #node.new.this.ex4(r0, OBJECT, 2, 140, 200, 0);
 #node.new.this.ex4(r0, OBJECT, 3, 160, 200, 0);
+
+k:=1;
 
 ### 3225 Map.draw
 

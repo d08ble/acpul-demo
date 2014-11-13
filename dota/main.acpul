@@ -6,6 +6,7 @@
 # 3290,3291 Networking
 
 # 3220,3221 Game Object
+# 3224,3225 Map
 # 3230,3231 Unit (Player|Bot(Robot|Tower|Base)) Id
 # 3250,3251 Shot
 

@@ -47,7 +47,7 @@ bots
  {
   robot 0;
   tower 1;
-  base 2;
+  homebase 2;
  };
 };
 players

@@ -111,9 +111,9 @@ this context;
 
 if (r0)
 {
- heap.alloc(r5, context.def.SIZE);
- this.p.set(177788);
- watch(p);
+ heap.alloc(r5, this.def.SIZE);
+# this.p.set(177788);
+# watch(p);
 };
 
 # unit code (split later) ]

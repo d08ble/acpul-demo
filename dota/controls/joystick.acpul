@@ -33,6 +33,20 @@ touch.ev
 };
 # touch.ev ]
 
+# touch process [
+_ @sys.touch.ev.process.once;
+r
+{
+ a x-w/2;
+ b y-h/2;
+ c w;
+ d h;
+};
+
+touch.rect(r1, r.a,r.b,r.c,r.d);
+touch.ev.process.once(r1, r2);
+
+# touch process ]
 
 
 k:=1;

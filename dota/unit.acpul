@@ -1,10 +1,19 @@
+### 3220 Object
+
+type
+{
+ map 0;
+ unit 1;
+ shot 2;
+};
+
+### 3221 Object.draw
+
+
+
 ### 3224 Map
 
 ### 3225 Map.draw
-
-### 3220 Object
-
-### 3221 Object.draw
 
 ### 3230 Unit
 

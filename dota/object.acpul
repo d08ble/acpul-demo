@@ -103,7 +103,7 @@ context.def
  x 1;
  y 2;
  controls { # size: 7
-  i 3
+  i 3;
 #  dir {
 #   x i+0;
 #   y i+1;

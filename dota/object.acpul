@@ -54,7 +54,7 @@ bots
 };
 players
 {
- hero
+ heroes
  {
   debug 0;
   cat 1;

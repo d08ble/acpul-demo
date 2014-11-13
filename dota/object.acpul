@@ -95,6 +95,13 @@ if (r0)
 _ @1010;
 _ @sys.heap;
 
+context
+{
+	
+};
+
+context.d.a r5;
+
 
 # unit code (split later) ]
 

@@ -5,6 +5,12 @@
 # 3202,3203 Main
 # 3290,3291 Networking
 
+# 3220,3221 Game Object
+# 3230,3231 Player
+# 3230,3231 Robot
+# 3250,3251 Shot
+
+
 r0:=k==0;
 
 draw(r0, 3203);

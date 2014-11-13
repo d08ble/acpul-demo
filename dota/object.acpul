@@ -116,8 +116,8 @@ this context;
 if (r0)
 {
  heap.alloc(r5, this.def.SIZE);
- this.nop;
  this.nop.set(177788);
+ watch(this.nop);
 };
 
 # unit code (split later) ]

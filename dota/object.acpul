@@ -112,7 +112,7 @@ context.def
   s3 i+5;
   s4 i+6;
  };
- SIZE 10;
+ SIZE 20;
 };
 # def ]
 context

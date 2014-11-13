@@ -10,6 +10,7 @@ w:=1000;
 h:=1000;
 
 watch (k);
+
 # 3271 Joystick.draw
 
 _ @1010;

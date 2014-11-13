@@ -55,6 +55,7 @@ if (l0==1) {line(u0, 3, 8,4, 8,12);};
 if (l0==2) {sb;sc;se;sf;sg;};
 if (l0==3) {sb;sc;sd;se;sg;};
 if (l0==4) {sa;sc;sd;sg;};
+if (l0==5) {sb;sa;se;sd;sg;};
 # draw 0-9 16x16 ]
 
 ### 3224 Map

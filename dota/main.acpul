@@ -6,7 +6,7 @@
 # 3290,3291 Networking
 
 # 3220,3221 Game Object
-# 3230,3231 Unit (Player|Bot(Robot(Type)|Tower|Base)) Id
+# 3230,3231 Unit (Player|Bot(Robot|Tower|Base)) Id
 # 3250,3251 Shot
 
 # 3260,3261 Skill Button

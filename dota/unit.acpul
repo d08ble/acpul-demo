@@ -1,11 +1,13 @@
 ### 3220 Object (x,y,type)
 
+# types [
 types
 {
  map 0;
  unit 1;
  shot 2;
 };
+# types ]
 
 r0:=k==0;
 

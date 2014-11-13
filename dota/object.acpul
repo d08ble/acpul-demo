@@ -144,7 +144,7 @@ context.d.a r5;
 
 self context;
 
-l0:=context.def.x;
+l0:=context.def.controls.i;
 if (r0)
 {
  heap.alloc(context.d.a, self.def.SIZE);

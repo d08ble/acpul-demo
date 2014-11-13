@@ -20,7 +20,7 @@ _ @sys.node;
 _ @sys.heap;
 
 vec2d.array.d.a r5;
-vec2d.array.d.max 6000;
+vec2d.array.d.max 4000;
 vec2d.array.d.n r6;
 
 _ @sys.vec2d.array;

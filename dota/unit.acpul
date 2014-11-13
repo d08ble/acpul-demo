@@ -1,6 +1,5 @@
 ### 3220 Object
 
-x:=p0;
 type
 {
  map 0;
@@ -12,6 +11,11 @@ r0:=k==0;
 
 draw(r0, 3221);
 
+if (r0)
+{
+ x:=p0;
+ y:=p1;
+};
 k:=1;
 
 ### 3221 Object.draw

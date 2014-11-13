@@ -29,7 +29,7 @@ if (r0)
  if (type==types.unit) { node.new.this.ex(r0, UNIT, 0);};
 # if (type==types.shot) { node.new.this.ex(r0, SHOT, 0);};
 };
-s:=4;
+#s:=4;
 
 k:=1;
 

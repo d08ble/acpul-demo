@@ -13,10 +13,13 @@ touch.a.event a+3;
 touch.start io(u0, touch.a.reset, 0,0,0,0);
 
 touch.rect
+# id, x,y,w,h
 {
  io(u0, a.mode, _0, 1, 1, 0);
  _0:=io(u0, a.rect, _1, _2, _3, _4);
 };
 
-touch.event io(u0, a.event, _0,0,0,0);
+touch.event 
+# id => event
+ io(u0, a.event, _0,0,0,0);
 

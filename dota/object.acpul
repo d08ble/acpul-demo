@@ -29,6 +29,7 @@ types
  map 0;
  unit 1;
  shot 2;
+ joystick 3;
 };
 teams
 {
@@ -81,12 +82,14 @@ _ @sys.node;
 
 MAP 3224;
 UNIT 3230;
+JOYSTICK 3270;
 
 if (r0)
 {
  if (type==types.map) { node.new.this.ex(r0, MAP, 0);};
  if (type==types.unit) { node.new.this.ex(r0, UNIT, 0);};
 # if (type==types.shot) { node.new.this.ex(r0, SHOT, 0);};
+ if (type==types.joystick) { node.new.this.ex(r0, JOYSTICK, 0);};
 };
 #s:=4;
 

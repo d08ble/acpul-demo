@@ -1,0 +1,7 @@
+# 3270 Joystick
+
+r0:=k==1;
+
+k:=1;
+
+# 3271 Joystick.draw

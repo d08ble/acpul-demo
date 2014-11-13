@@ -1,0 +1,7 @@
+# 3260 Skill Button
+
+r0:=k==0;
+
+k:=1;
+
+# 3261 Skill Button.draw

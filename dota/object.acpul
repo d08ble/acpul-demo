@@ -104,8 +104,10 @@ context.def
  y 2;
  controls { # size: 7
   i 3
-  dir.x i+0;
-  dir.y i+1;
+  dir {
+   x i+0;
+   y i+1;
+  };
   s0 i+2;
   s1 i+3;
   s2 i+4;
@@ -144,7 +146,7 @@ self context;
 
 if (r0)
 {
- context.def.controls.s0;
+ context.def.controls.dir;
  heap.alloc(context.d.a, self.def.SIZE);
  self.s0.set(177788);
  watch(self.s0);

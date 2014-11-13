@@ -13,6 +13,7 @@ obj @OBJECT;
 ot obj.types;
 ost obj.subtypes;
 obt obj.bots.types;
+opt obj.players.types;
 
 team obj.teams.green;
 

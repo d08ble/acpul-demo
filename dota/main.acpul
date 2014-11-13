@@ -1,11 +1,11 @@
-### 3200 Dota::Main
+### 3202 Dota::Main
 
 # 3200-3300 DOTA
 # 3290-3291 Networking
 
 r0:=k==0;
 
-draw(r0, 3201);
+draw(r0, 3203);
 
 NETWORKING 3290;
 
@@ -21,7 +21,7 @@ y:=220;
 
 k:=1;
 
-### 3201 Dota::Main.draw
+### 3203 Dota::Main.draw
 
 #watch(r0);
 color(u0, 0,0.1, 0,0);

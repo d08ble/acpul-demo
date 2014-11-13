@@ -1,5 +1,5 @@
 ### 3220 Object (type,x,y,...)
-# ... <team> [bot|player]
+# <type> <x,y> <team> [bot|player]
 # team
 #  0 - sys
 #  1 - green

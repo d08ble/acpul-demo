@@ -9,6 +9,8 @@ type
 
 r0:=k==0;
 
+draw(r0, 3221);
+
 k:=1;
 
 ### 3221 Object.draw

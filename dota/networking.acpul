@@ -71,12 +71,6 @@ if (glt < net.t.max)
 
 # mem [
 
-gnet.mem.wr.a 8825;
-gnet.mem.rd.a 8827;
-
-gnet.mem.wr.size 10;
-gnet.mem.rd.size 10*5;
-
 gnet.mem.wr.p l9;
 gnet.mem.rd.p l10;
 

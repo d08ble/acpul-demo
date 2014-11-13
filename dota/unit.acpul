@@ -20,7 +20,7 @@ _ @sys.node;
 
 MAP 3224;
 UNIT 3230;
-watch(p0)
+watch(p0);
 
 if (r0)
 {

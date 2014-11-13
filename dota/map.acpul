@@ -11,7 +11,7 @@ OBJECT 3220;
 
 obj @OBJECT;
 
-node.new.this.ex4(r0, OBJECT, obj.types.unit, 120,200, obj.team.sys);
+node.new.this.ex4(r0, OBJECT, obj.types.unit, 120,200, 0);
 #node.new.this.ex8(r0, OBJECT, obj.types.unit, 120,200, 0);
 #node.new.this.ex4(r0, OBJECT, 2, 140, 200, 0);
 #node.new.this.ex4(r0, OBJECT, 3, 160, 200, 0);

@@ -125,7 +125,7 @@ context
  x {G(dd.x);set {S(dd.x, _0);};};
  y {G(dd.y);set {S(dd.y, _0);};};
 
- ctrl context.def.controls
+ ctrl context.def.controls;
  dir.x {G(ctrl.dir.x);set {S(ctrl.dir.x, _0);};};
  dir.y {G(ctrl.dir.y);set {S(ctrl.dir.y, _0);};};
  s0 {G(ctrl.s0);set {S(ctrl.s0, _0);};};

@@ -1,6 +1,6 @@
 ### 3220 Object (type,x,y,...)
 # 0      1     2      3
-# <type> <x,y> <team> type:unit[bot|player]
+# <type> <x,y> <team> <subtype> [bot|player]
 # type
 #  - map
 #  - unit
@@ -9,6 +9,9 @@
 #  - sys (0)
 #  - green
 #  - blue
+# subtype
+#  - bot
+#  - player
 # bot
 #  type
 #  - robot

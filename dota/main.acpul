@@ -9,6 +9,9 @@
 # 3230,3231 Unit (Player|Robot) Id
 # 3250,3251 Shot
 
+# 3260,3261 Skill Button
+# 3270,3271 Joystick
+
 
 r0:=k==0;
 

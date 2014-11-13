@@ -1,6 +1,9 @@
 ### 3220 Object (x,y,type,...)
 # ... <team> [bot|player]
 # team
+#  0 - system
+#  1 - green
+#  2 - red
 # bot
 #  type
 #  - robot

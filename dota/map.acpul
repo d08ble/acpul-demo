@@ -19,7 +19,7 @@ node.new.this.ex8(r0, OBJECT, obj.types.unit, 50,200, team, obj.subtypes.bot, ob
 node.new.this.ex8(r0, OBJECT, obj.types.unit, 10,10, team, obj.subtypes.bot, obj.bots.types.shop,0,0);
 node.new.this.ex8(r0, OBJECT, obj.types.unit, 50,50, team, obj.subtypes.player, 0,0,0);
 node.new.this.ex8(r0, OBJECT, obj.types.unit, 70,50, team, obj.subtypes.player, 0,0,0);
-node.new.this.ex8(r0, OBJECT, obj.types.unit, 80,50, team, obj.subtypes.player, 0,0,0);
+node.new.this.ex8(r0, OBJECT, obj.types.unit, 90,50, team, obj.subtypes.player, 0,0,0);
 
 #node.new.this.ex4(r0, OBJECT, obj.types.unit, 120,200, obj.teams.sys);
 #node.new.this.ex8(r0, OBJECT, obj.types.unit, 120,200, 0);

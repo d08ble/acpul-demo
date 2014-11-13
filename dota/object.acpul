@@ -96,11 +96,13 @@ _ @1010;
 _ @sys.heap;
 
 # context [
+# def [
 context.def
 {
  nop 0;
  SIZE 10;
 };
+# def ]
 context
 {
  _;

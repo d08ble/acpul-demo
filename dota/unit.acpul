@@ -1,9 +1,9 @@
 ### 3220 Object (x,y,type,...)
 # ... <team> [bot|player]
 # team
-#  0 - system
+#  0 - sys
 #  1 - green
-#  2 - red
+#  2 - blue
 # bot
 #  type
 #  - robot
@@ -20,6 +20,12 @@ types
  unit 1;
  shot 2;
 };
+teams
+{
+ sys 0;
+ green 1;
+ blue 2;
+};
 bots
 {
  types
@@ -30,7 +36,8 @@ bots
  };
 };
 players
-{	
+{
+ # id
 };
 # types ]
 

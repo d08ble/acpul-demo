@@ -105,8 +105,8 @@ if (r3==touch.e.ended)
 #fn {_0+=0.5-rnd(u0);_1+=0.5-rnd(u0);};
 #fn {_1+=sin(t+_0);_2+=cos(t+_0);};
 n:=0.5;
-fn {_1+=sin(t+_0)*n;_2+=cos(t+_0)*n;};
-v2a.for.each.a(fn);
+#fn {_1+=sin(t+_0)*n;_2+=cos(t+_0)*n;};
+#v2a.for.each.a(fn);
 #watch(t);
 t+=dt;
 

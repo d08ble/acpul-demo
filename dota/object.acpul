@@ -91,6 +91,11 @@ if (r0)
 #s:=4;
 
 # unit code (split later) [
+
+_ @1010;
+_ @sys.heap;
+
+
 # unit code (split later) ]
 
 k:=1;

@@ -1,4 +1,4 @@
-# 3270 Joystick
+### 3270 Joystick
 
 r0:=k==0;
 
@@ -10,8 +10,7 @@ w:=1000;
 h:=1000;
 
 watch (k);
-
-# 3271 Joystick.draw
+### 3271 Joystick.draw
 
 _ @1010;
 

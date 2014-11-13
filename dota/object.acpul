@@ -122,6 +122,17 @@ context
  S {set(u0, d.a, _0,_1);};
  G {get(u0, d.a, _0);};
  nop {G(dd.nop);set {S(dd.nop, _0);};};
+ x {G(dd.x);set {S(dd.x, _0);};};
+ y {G(dd.y);set {S(dd.y, _0);};};
+
+ ctrl context.def.controls
+ dir.x {G(ctrl.dir.x);set {S(ctrl.dir.x, _0);};};
+ dir.y {G(ctrl.dir.y);set {S(ctrl.dir.y, _0);};};
+ s0 {G(ctrl.s0);set {S(ctrl.s0, _0);};};
+ s1 {G(ctrl.s1);set {S(ctrl.s1, _0);};};
+ s2 {G(ctrl.s2);set {S(ctrl.s2, _0);};};
+ s3 {G(ctrl.s3);set {S(ctrl.s3, _0);};};
+ s4 {G(ctrl.s4);set {S(ctrl.s4, _0);};};
 };
 # context ]
 
@@ -134,8 +145,8 @@ self context;
 if (r0)
 {
  heap.alloc(context.d.a, self.def.SIZE);
-# self.nop.set(177788);
-# watch(self.nop);
+ self.x.set(177788);
+ watch(self.x);
 };
 
 # alloc self context ]

@@ -1,6 +1,6 @@
 ### 3220 Object
 
-type
+enum.type
 {
  map 0;
  unit 1;
@@ -13,7 +13,7 @@ draw(r0, 3221);
 
 #if (r0)
 #{
- x:=p0;
+ type p0;
  y:=p1;
 #};
 k:=1;

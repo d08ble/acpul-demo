@@ -56,10 +56,10 @@ players
 {
  hero
  {
-  debug 0,
-  cat 1,
-  santa 2,
-  angel 3
+  debug 0;
+  cat 1;
+  santa 2;
+  angel 3;
  };
  # id
 };

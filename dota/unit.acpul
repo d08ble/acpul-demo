@@ -1,5 +1,6 @@
 ### 3220 Object (type,x,y,...)
-# <type> <x,y> <team> [bot|player]
+# 0      1     2      3
+# <type> <x,y> <team> type:unit[bot|player]
 # type
 #  - map
 #  - unit

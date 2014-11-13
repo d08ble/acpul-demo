@@ -1,6 +1,8 @@
 ### 3220 Object (x,y,type,...)
-# ...
-# bottype
+# ... <team> [bot|player]
+# team
+# bot
+#  type
 #  - robot
 #  - tower
 #  - base

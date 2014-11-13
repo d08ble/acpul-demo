@@ -100,6 +100,16 @@ _ @sys.heap;
 context.def
 {
  nop 0;
+ controls { # 7 1-7
+  i 1
+  dir.x i+0;
+  dir.y i+1;
+  s0 i+2;
+  s1 i+3;
+  s2 i+4;
+  s3 i+5;
+  s4 i+6;
+ };
  SIZE 10;
 };
 # def ]
@@ -109,7 +119,7 @@ context
  dd context.def;
  S {set(u0, d.a, _0,_1);};
  G {get(u0, d.a, _0);};
- nop {G(dd.nop);set {S(dd.nop, _0);};}; 
+ nop {G(dd.nop);set {S(dd.nop, _0);};};
 };
 # context ]
 

@@ -9,6 +9,11 @@ y:=h/2;
 
 draw(r0, 3271);
 
+_ @1010;
+_ @sys.touch;
+
+
+
 k:=1;
 
 ### 3271 Joystick.draw

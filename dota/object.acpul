@@ -105,7 +105,8 @@ context
  _;
  dd context.def;
  S {set(u0, d.a, _0,_1);};
- nop {S(dd.nop, _0);};
+ G {set(u0, d.a, _0);};
+ nop {set {S(dd.nop, _0);}; G(dd.nop, _0)};
 };
 
 context.d.a r5;

@@ -146,10 +146,10 @@ self context;
 
 if (r0)
 {
- r0:=context.def.controls.x;
+# r0:=context.def.controls.x;
  heap.alloc(context.d.a, self.def.SIZE);
- self.s0.set(177788);
- watch(self.s0);
+# self.s0.set(177788);
+# watch(self.s0);
 };
 
 # alloc self context ]

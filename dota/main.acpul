@@ -26,6 +26,9 @@ OBJECT 3220;
 
 node.new.this.ex(r0, NETWORKING, 0);
 node.new.this.ex4(r0, OBJECT, 0, 100, 200, 0);
+node.new.this.ex4(r0, OBJECT, 1, 120, 200, 0);
+node.new.this.ex4(r0, OBJECT, 2, 140, 200, 0);
+node.new.this.ex4(r0, OBJECT, 3, 160, 200, 0);
 
 
 s:=0.45;

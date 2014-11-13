@@ -28,7 +28,7 @@ obj @OBJECT;
 
 node.new.this.ex(r0, NETWORKING, 0);
 node.new.this.ex4(r0, OBJECT, obj.types.map, 250,50, 0);
-node.new.this.ex4(r0, OBJECT, obj.types.joystick, 0,0, 0);
+node.new.this.ex4(r0, OBJECT, obj.types.joystick, 10,0, 0);
 
 
 s:=0.45;

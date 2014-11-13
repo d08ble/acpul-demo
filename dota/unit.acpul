@@ -15,7 +15,6 @@ type p0;
 x:=p1;
 y:=p2;
 
-p1+=1;
 k:=1;
 
 ### 3221 Object.draw

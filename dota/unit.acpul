@@ -18,6 +18,7 @@
 #  - robot
 #  - tower
 #  - homebase
+#  - shop
 # player
 #  id
 #
@@ -48,6 +49,7 @@ bots
   robot 0;
   tower 1;
   homebase 2;
+  shop 3;
  };
 };
 players

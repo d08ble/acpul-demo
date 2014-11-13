@@ -43,8 +43,10 @@ r
  d h;
 };
 
-touch.rect(r1, r.a,r.b,r.c,r.d);
-touch.ev.process.once(r1, r2);
+touch.id r1;
+
+touch.rect(touch.id, r.a,r.b,r.c,r.d);
+touch.ev.process.once(touch.id, l0);
 
 # touch process ]
 

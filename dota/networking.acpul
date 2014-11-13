@@ -21,7 +21,7 @@ if (l0==0)
  r1:=0;
 };
 
-_ @3299;
+_ @3200;
 
 this.turn.halted r6;
 this.turn.received r7;
@@ -163,7 +163,7 @@ rect(u0, 6, 8+16*3,8,8,8);
 
 # simulate wr draw [
 
-_ @3299;
+_ @3200;
 gnet.mem.wr.a 8825;
 gnet.mem.rd.a 8827;
 

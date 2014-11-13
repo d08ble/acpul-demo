@@ -95,10 +95,9 @@ if (r0)
 _ @1010;
 _ @sys.heap;
 
-#context
-#{
-
-#};
+context
+{
+};
 
 #context.d.a r5;
 

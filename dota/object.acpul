@@ -102,7 +102,7 @@ context.def
  nop 0;
  x 1;
  y 2;
- a{};
+ a{b{};};
  controls { # size: 7
   i 3
 #  dir {

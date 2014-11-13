@@ -115,7 +115,7 @@ if (r0)
 {
  heap.alloc(r5, this.def.SIZE);
  this.S(context.def, 100);
-# this.p.set(177788);
+ this.p.set(177788);
 l0:=177788;
  watch(l0);
 };

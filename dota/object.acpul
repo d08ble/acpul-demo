@@ -145,8 +145,8 @@ self context;
 if (r0)
 {
  heap.alloc(context.d.a, self.def.SIZE);
-# self.x.set(177788);
-# watch(self.x);
+ self.y.set(177788);
+ watch(self.y);
 };
 
 # alloc self context ]

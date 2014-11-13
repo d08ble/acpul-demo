@@ -1,5 +1,6 @@
 ### 3220 Object
 
+x:=p0;
 type
 {
  map 0;

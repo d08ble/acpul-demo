@@ -144,12 +144,11 @@ context.d.a r5;
 
 self context;
 
-l0:=context.def.controls.s0;
 if (r0)
 {
  heap.alloc(context.d.a, self.def.SIZE);
- self.dir.x.set(177788);
- watch(self.dir.x);
+# self.dir.x.set(177788);
+# watch(self.dir.x);
 };
 
 # alloc self context ]

@@ -54,6 +54,7 @@ sg line(u0, 3, 5,8, 5+6,8);
 if (l0==0) {rect(u0, 2, 5,4, 6,8);};
 if (l0==1) {line(u0, 3, 8,4, 8,12);};
 if (l0==2) {sb;sc;se;sf;sg;};
+if (l0==3) {sb;sc;sd;se;sg;};
 # draw 0-9 16x16 ]
 
 ### 3224 Map

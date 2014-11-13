@@ -97,13 +97,12 @@ _ @sys.heap;
 
 context.def
 {
- 
+ SIZE 10;
 };
 context
 {
  _;
- SIZE 10;
- p 
+ S {set(u0, d.a, _0,_1);};
 };
 
 context.d.a r5;
@@ -112,7 +111,7 @@ this context;
 
 if (r0)
 {
- heap.alloc(r5, context.SIZE);
+ heap.alloc(r5, context.def.SIZE);
  this.p.set(177788);
  watch(p);
 };

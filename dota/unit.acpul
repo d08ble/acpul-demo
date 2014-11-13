@@ -60,7 +60,7 @@ if (l0==4) {sa;sc;sd;sg;};
 if (l0==5) {sb;sa;se;sd;sg;};
 if (l0==6) {sa;sb;sd;se;sf;sg;};
 if (l0==7) {sb;sc;sd;};
-if (l0==9) {sa;sb;sc;sd;sf;sg};
+if (l0==9) {sa;sb;sc;sd;sf;sg;};
 # draw 0-9 16x16 ]
 
 ### 3224 Map

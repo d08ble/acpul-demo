@@ -63,6 +63,9 @@ if (l0==9) {sa;sb;sc;sd;se;sg;};
 
 ### 3224 Map
 
+_ @1010;
+_ @sys.node;
+
 #node.new.this.ex4(r0, OBJECT, obj.types.unit, 120, 200, 0);
 #node.new.this.ex4(r0, OBJECT, 2, 140, 200, 0);
 #node.new.this.ex4(r0, OBJECT, 3, 160, 200, 0);

@@ -52,7 +52,7 @@ touch.ev
   b:=_1-y;
   c:=sqrt(a^2+b^2);
   aa:=asin(a/c);
-  watch(aa);
+  watch(a/c);
 
 #  distance sqrt((_2-_0)^2+(_3-_1)^2);
 #  distance1 sqrt((_2-_0)^2+(_3-_1)^2);

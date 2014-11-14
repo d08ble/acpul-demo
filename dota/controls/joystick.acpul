@@ -46,8 +46,8 @@ touch.ev
 
 r
 {
- a x-w/2;
- b y-h/2;
+ a x-w;
+ b y-h;
  c w;
  d h;
 };

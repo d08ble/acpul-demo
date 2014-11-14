@@ -54,7 +54,7 @@ touch.ev
   c:=sqrt(a^2+b^2);
   aa:=asin(a/c);
   bb:=acos(b/c);
-  watch(b);
+  watch(bb);
 #  watch(b/c);
 #  watch(bb);
 #  watch(cos(bb));

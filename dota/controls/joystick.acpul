@@ -53,9 +53,9 @@ touch.ev
   b:=_1-point.start.y;
   c:=sqrt(a^2+b^2);
   aa:=asin(a/c);
-#  bb:=acos(b/c);
+  bb:=acos(a/c);
 #  watch(a/c);
-  watch(aa);
+  watch(bb);
 #  watch(cos(bb));
 #  watch(sin(bb));
   oa l5;

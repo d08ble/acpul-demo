@@ -20,6 +20,8 @@ touch.ev
  {
   #target.delta.point(_0, _1);
   watch(_0);
+  watch(_0);
+  watch(_1);
  };
  moved
  # x, y
@@ -45,9 +47,10 @@ r
 };
 
 touch.id r1;
+touch.b0 r2;
 touch.rect(touch.id, r.a,r.b,r.c,r.d);
 _ @sys.touch.ev.process.once;
-touch.ev.process.once(touch.id, l0);
+touch.ev.process.once(touch.id, touch.b0);
 
 # touch process ]
 

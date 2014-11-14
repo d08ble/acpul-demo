@@ -12,6 +12,12 @@ draw(r0, 3271);
 _ @1010;
 _ @sys.touch;
 
+direction.vector.set
+{
+ watch(_0);
+ watch(_1);
+};
+
 radius 100;
 minimal.move.delta 20;
 
@@ -63,17 +69,11 @@ touch.ev
   ob:=if(c>radius, cos(bb)*radius, cos(bb)*c);
   point.now.x:=point.start.x+oa;
   point.now.y:=point.start.y+ob;
-#  point.now.y:= #b+point.start.y; #point.start.y+ob;
-#  point.now.y:=l0; #ob; #b+point.start.y; #point.start.y+ob;
-# watch(ob);
-#  distance sqrt((_2-_0)^2+(_3-_1)^2);
-#  distance1 sqrt((_2-_0)^2+(_3-_1)^2);
 
-#  l0:=distance(x, y, _0, _1);
-#  if (l0>=minimal.move.delta)
-#  {
-   # direction.vector.set(_0-x, _1-y);
-#  };
+  if (c>=minimal.move.delta)
+  {
+   # direction.vector.set(sin(aa), cos(bb));
+  };
 
 
   #target.delta.point(_0, _1);

@@ -14,8 +14,8 @@ _ @sys.touch;
 
 direction.vector.set
 {
- watch(_0);
- watch(_1);
+# watch(_0);
+# watch(_1);
 };
 
 radius 100;

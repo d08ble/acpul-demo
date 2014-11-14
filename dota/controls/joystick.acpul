@@ -25,7 +25,7 @@ touch.ev
  began 
  # x, y 
  {
-  point.start.x:=_0;
+  point.start.x:=if(_0<0, 0, _0);
   point.start.y:=_1;
   point.now.x:=_0;
   point.now.y:=_1;

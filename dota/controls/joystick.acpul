@@ -15,7 +15,9 @@ _ @sys.touch;
 minimal.move.delta 20;
 point.start.x r3;
 point.start.y r4;
-pressed r5;
+point.now.x r5;
+point.now.y r6;
+pressed r7;
 
 # touch.ev [
 touch.ev
@@ -92,5 +94,6 @@ rect(u0, 2, -w/2,-h/2, w,h);
 
 if (p.pressed)
 {
- 
+ radius 50;
+# circle(u0, 6, point.start.x, point.start.y, radius, 0, 10, 0);
 };

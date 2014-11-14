@@ -90,13 +90,16 @@ k:=1;
 _ @1010;
 p @3270; #this
 
+px:=-w/2;
+py:=-h/2
+
 psize1(1);
 color(u0, 1, 1, 1, 1);
-rect(u0, 2, -w/2,-h/2, w,h);
+rect(u0, 2, px,py, w,h);
 
 if (p.pressed)
 {
  watch(r0);
  radius 50;
- circle(u0, 6, p.point.start.x, p.point.start.y, radius, 0, 10, 0);
+ circle(u0, 6, px+p.point.start.x, py+p.point.start.y, radius, 0, 10, 0);
 };

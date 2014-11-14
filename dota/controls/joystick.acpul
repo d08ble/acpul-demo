@@ -44,7 +44,7 @@ touch.ev
   point.now.x:=_0;
   point.now.y:=_1;
 
-  с l3;
+  c l3;
   a l1;
   b l2;
   aa l4;

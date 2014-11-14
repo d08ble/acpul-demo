@@ -44,7 +44,16 @@ touch.ev
   point.now.x:=_0;
   point.now.y:=_1;
 
-  distance sqrt((_2-_0)^2+(_3-_1)^2);
+  с l3; 
+  a l1;
+  b l2;
+  a:=_0-x;
+  b:=_1-y;
+  c:=sqrt(a^2+b^2);
+  aa:=arcsin(a/c);
+  watch(aa);
+
+№  distance sqrt((_2-_0)^2+(_3-_1)^2);
 #  distance1 sqrt((_2-_0)^2+(_3-_1)^2);
 
 #  l0:=distance(x, y, _0, _1);

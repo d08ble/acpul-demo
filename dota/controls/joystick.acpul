@@ -15,6 +15,7 @@ _ @sys.touch;
 minimal.move.delta 20;
 point.start.x r3;
 point.start.y r4;
+pressed r5;
 
 # touch.ev [
 touch.ev

@@ -97,5 +97,5 @@ rect(u0, 2, -w/2,-h/2, w,h);
 if (p.pressed)
 {
  radius 50;
-# circle(u0, 6, point.start.x, point.start.y, radius, 0, 10, 0);
+ circle(u0, 6, point.start.x, point.start.y, radius, 0, 10, 0);
 };

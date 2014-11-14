@@ -49,24 +49,18 @@ touch.ev
   b l2;
   aa l4;
   bb l5;
+  oa l6;
+  ob l7;
+  # my fail, same reg l5
 
   a:=_0-point.start.x;
   b:=_1-point.start.y;
   c:=sqrt(a^2+b^2);
   aa:=asin(a/c);
   bb:=acos(b/c);
-#  watch(bb);
-#  watch(b/c);
-#  watch(bb);
-#  watch(cos(bb)*c);
-#  watch(cos(bb)*c);
   l0:=cos(bb)*c;
-#  watch(l0);
-#  watch(sin(bb));
-  oa l6;
-#  ob l7;
   oa:=if(c>radius, sin(aa)*radius, sin(aa)*c);
-#  ob:=cos(bb)*c; # if(c>radius, cos(bb)*radius, cos(bb)*c);
+  ob:=if(c>radius, cos(bb)*radius, cos(bb)*c);
   point.now.x:=point.start.x+oa;
   l0:=cos(bb)*radius;
   point.now.y:=point.start.y+l0;

@@ -20,6 +20,7 @@ touch.ev
  # x, y 
  {
   #target.delta.point(_0, _1);
+  watch(_0);
  };
  moved
  # x, y

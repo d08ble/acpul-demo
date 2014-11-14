@@ -20,6 +20,7 @@ team obj.teams.green;
 nodenew node.new.this.ex8;
 
 nodenew(r0, OBJECT, ot.unit, 100,100, obj.teams.sys, ost.bot, obt.homebase,0,0);
+if (0) {
 nodenew(r0, OBJECT, ot.unit, 200,50, team, ost.bot, obt.tower,0,0);
 nodenew(r0, OBJECT, ot.unit, 200,200, team, ost.bot, obt.tower,0,0);
 nodenew(r0, OBJECT, ot.unit, 50,200, team, ost.bot, obt.tower,0,0);
@@ -30,7 +31,7 @@ nodenew(r0, OBJECT, ot.unit, 70,50, team, ost.player, 1,heroes.cat,0);
 nodenew(r0, OBJECT, ot.unit, 90,50, team, ost.player, 2,heroes.santa,0);
 nodenew(r0, OBJECT, ot.unit, 50,30, team, ost.player, 3,heroes.angel,0);
 nodenew(r0, OBJECT, ot.unit, 70,30, team, ost.player, 4,heroes.cat,0);
-
+};
 #node.new.this.ex4(r0, OBJECT, ot.unit, 120,200, obj.teams.sys);
 
 k:=1;

@@ -80,6 +80,7 @@ touch.id r1;
 touch.b0 r2;
 touch.rect(touch.id, q.a,q.b,q.c,q.d);
 watch(touch.id);
+
 _ @sys.touch.ev.process.once;
 touch.ev.process.once(touch.id, touch.b0);
 

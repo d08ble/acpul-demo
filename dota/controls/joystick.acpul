@@ -53,8 +53,8 @@ touch.ev
   b:=_1-y;
   c:=sqrt(a^2+b^2);
   aa:=asin(a/c);
-  bb:=acos(a/c);
-  watch(a);
+  bb:=asin(b/c);
+  watch(bb);
   oa l5;
   ob l6;
   oa:=if(c>radius, sin(aa)*radius, sin(aa)*c);

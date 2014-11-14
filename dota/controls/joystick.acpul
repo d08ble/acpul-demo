@@ -43,6 +43,7 @@ touch.ev
  {
 #  point.now.x:=_0;
 #  point.now.y:=_1;
+ watch(_0);
 
   c l3;
   a l1;

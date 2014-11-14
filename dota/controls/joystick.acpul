@@ -68,11 +68,13 @@ touch.ev
 
 # touch process [
 
+fullscreen.width 768;
+
 q
 {
  a x-w;
  b y-h;
- c w;
+ c if(pressed, fullscreen.width, w);
  d h;
 };
 

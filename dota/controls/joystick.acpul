@@ -12,6 +12,7 @@ draw(r0, 3271);
 _ @1010;
 _ @sys.touch;
 
+minimal.move.delta 20;
 point.start.x r3;
 point.start.y r4;
 
@@ -23,6 +24,8 @@ touch.ev
  {
   point.start.x:=_0;
   point.start.y:=_1;
+  pressed:=1;
+
   #target.delta.point(_0, _1);
 #  l0:=5550;watch(l0);
 #  watch(_0);
@@ -31,6 +34,13 @@ touch.ev
  moved
  # x, y
  {
+  distance sqrt((_2-_0)^2+(_3-_1)^2);
+  if (distance(x, y, _0, _1)>=minimal.move.delta)
+  {
+   ctx.event.run();
+  };
+
+
   #target.delta.point(_0, _1);
 #  l0:=5551;watch(l0);
 #  watch(_0);
@@ -39,6 +49,8 @@ touch.ev
  ended
  # x, y
  {
+  pressed:=0;
+
   #target.run(_0, _1);
 #  l0:=5552;watch(l0);
 #  watch(_0);

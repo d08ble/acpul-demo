@@ -102,5 +102,5 @@ if (p.pressed)
  watch(r0);
  radius 100;
  circle(u0, 3, px+p.point.start.x, py+p.point.start.y, radius, 0, 30, 0);
- circle(u0, 3, px+p.point.start.x, py+p.point.start.y, radius*0.3, 0, 30, 0);
+ circle(u0, 3, px+p.point.start.x, py+p.point.start.y, radius*0.4, 0, 30, 0);
 };

@@ -100,8 +100,8 @@ fullscreen.height 1024;
 
 q
 {
- a x-w;
- b y-h;
+ a x-if(pressed, fullscreen.width, w);;
+ b y-if(pressed, fullscreen.height, h);
  c if(pressed, fullscreen.width, w);
  d if(pressed, fullscreen.height, h);
 };

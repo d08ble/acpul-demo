@@ -75,7 +75,7 @@ touch.ev
 # watch(ob);
 #  distance sqrt((_2-_0)^2+(_3-_1)^2);
 #  distance1 sqrt((_2-_0)^2+(_3-_1)^2);
-# fk bug in cpu!!!
+
 #  l0:=distance(x, y, _0, _1);
 #  if (l0>=minimal.move.delta)
 #  {

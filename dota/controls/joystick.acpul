@@ -56,7 +56,7 @@ touch.ev
   bb:=acos(b/c);
   watch(b/c);
   watch(bb);
-#  watch(cos(bb));
+  watch(cos(bb));
 #  watch(sin(bb));
   oa l5;
   ob l6;

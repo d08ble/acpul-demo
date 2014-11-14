@@ -49,8 +49,8 @@ touch.ev
   b l2;
   aa l4;
   bb l5;
-  a:=_0-x;
-  b:=_1-y;
+  a:=_0-point.start.x;
+  b:=_1-point.start.y;
   c:=sqrt(a^2+b^2);
   aa:=asin(a/c);
   bb:=acos(a/c);
@@ -62,8 +62,8 @@ touch.ev
   ob l6;
   oa:=if(c>radius, sin(aa)*radius, sin(aa)*c);
 #  ob:=if(c>radius, sin(bb)*radius, sin(bb)*c);
-  point.now.x:=x+oa;
-#  point.now.y:=y+ob;
+  point.now.x:=point.start.x+oa;
+#  point.now.y:=point.start.y+ob;
 
 #  distance sqrt((_2-_0)^2+(_3-_1)^2);
 #  distance1 sqrt((_2-_0)^2+(_3-_1)^2);

@@ -72,7 +72,7 @@ touch.ev
 
   if (c>=minimal.move.delta)
   {
-   # direction.vector.set(sin(aa), cos(bb));
+   direction.vector.set(sin(aa), cos(bb));
   };
 
 

@@ -44,7 +44,7 @@ touch.ev
 
 # touch process [
 
-r
+q
 {
  a x-w;
  b y-h;
@@ -54,7 +54,7 @@ r
 
 touch.id r1;
 touch.b0 r2;
-touch.rect(touch.id, r.a,r.b,r.c,r.d);
+touch.rect(touch.id, q.a,q.b,q.c,q.d);
 _ @sys.touch.ev.process.once;
 touch.ev.process.once(touch.id, touch.b0);
 

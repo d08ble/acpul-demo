@@ -90,12 +90,14 @@ newmem(gnet.mem.rd);
 
 # send [
 
+gnet.wr:=0;
 if (this.turn.sended==0)
 {
  if (glt>net.t.send) 
  {
   this.turn.sended:=1;
   net.send.mem(u0, 0, gnet.mem.wr.a);
+  gnet.wr:=1;
 #  l0 88777;watch(l0); #
  };
 };

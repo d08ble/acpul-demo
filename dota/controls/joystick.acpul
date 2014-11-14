@@ -50,7 +50,7 @@ touch.ev
   aa l4;
   a:=_0-x;
   b:=_1-y;
-  c:=sqrt(a^2+1); #+(b)^2
+  c:=sqrt(a^2+b); #+(b)^2
   aa:=asin(a/c);
   watch(a/c);
 

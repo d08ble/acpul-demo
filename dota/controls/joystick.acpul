@@ -64,7 +64,7 @@ touch.ev
   oa:=if(c>radius, sin(aa)*radius, sin(aa)*c);
   ob:=if(c>radius, cos(bb)*radius, cos(bb)*c);
   point.now.x:=point.start.x+oa;
-  point.now.y:= #b+point.start.y; #point.start.y+ob;
+#  point.now.y:= #b+point.start.y; #point.start.y+ob;
   point.now.y:=ob; #b+point.start.y; #point.start.y+ob;
 
 #  distance sqrt((_2-_0)^2+(_3-_1)^2);

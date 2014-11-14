@@ -82,7 +82,9 @@ _ @sys.node;
 
 _ @3200;
 
-watch(gnet.rd);
+if (type==types.map) {
+ watch(gnet.rd);
+};
 
 MAP 3224;
 UNIT 3230;

@@ -83,7 +83,7 @@ _ @sys.node;
 _ @3200;
 
 if (type==types.map) {
- watch(gnet.rd);
+ watch(gnet.wr);
 };
 
 MAP 3224;

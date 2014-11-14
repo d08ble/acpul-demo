@@ -52,8 +52,12 @@ touch.ev
   b:=_1-y;
   c:=sqrt(a^2+b^2);
   aa:=asin(a/c);
-  watch(a/c);
-
+  bb:=acos(a/c);
+  watch(bb);
+#  oa l5;
+#  ob l6;
+#  oa:=if(c>radius, sin(aa)*radius, sin(aa)*c);
+#  ob:=if(c>radius, cos(aa)*radius, sin(aa)*c);
 #  distance sqrt((_2-_0)^2+(_3-_1)^2);
 #  distance1 sqrt((_2-_0)^2+(_3-_1)^2);
 

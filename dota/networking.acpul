@@ -46,6 +46,7 @@ net.t.send 0.03;
 
 # game time [
 
+gnet.rd:=0;
 if (glt+dt > net.t.max)
 {
  if (this.turn.received) {
@@ -54,6 +55,7 @@ if (glt+dt > net.t.max)
   glt:=0;
   this.turn.sended:=0;
   this.turn.halted:=0;
+  gnet.rd:=1;
   # next turn ]
  };
 };

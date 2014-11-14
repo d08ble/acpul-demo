@@ -12,32 +12,37 @@ draw(r0, 3271);
 _ @1010;
 _ @sys.touch;
 
+point.start.x r3;
+point.start.y r4;
+
 # touch.ev [
 touch.ev
 {
  began 
  # x, y 
  {
+  point.start.x:=_0;
+  point.start.y:=_1;
   #target.delta.point(_0, _1);
-  l0:=5550;watch(l0);
-  watch(_0);
-  watch(_1);
+#  l0:=5550;watch(l0);
+#  watch(_0);
+#  watch(_1);
  };
  moved
  # x, y
  {
   #target.delta.point(_0, _1);
-  l0:=5551;watch(l0);
-  watch(_0);
-  watch(_1);
+#  l0:=5551;watch(l0);
+#  watch(_0);
+#  watch(_1);
  };
  ended
  # x, y
  {
   #target.run(_0, _1);
-  l0:=5552;watch(l0);
-  watch(_0);
-  watch(_1);
+#  l0:=5552;watch(l0);
+#  watch(_0);
+#  watch(_1);
  };
 };
 # touch.ev ]

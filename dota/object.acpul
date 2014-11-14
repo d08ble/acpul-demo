@@ -80,6 +80,8 @@ r7:=type;
 _ @1010;
 _ @sys.node;
 
+_ @3200;
+
 MAP 3224;
 UNIT 3230;
 JOYSTICK 3270;

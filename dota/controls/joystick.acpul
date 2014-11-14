@@ -27,6 +27,8 @@ touch.ev
  {
   point.start.x:=_0;
   point.start.y:=_1;
+  point.now.x:=_0;
+  point.now.y:=_1;
   pressed:=1;
 
   #target.delta.point(_0, _1);
@@ -101,5 +103,5 @@ if (p.pressed)
 {
  radius 100;
  circle(u0, 3, px+p.point.start.x, py+p.point.start.y, radius, 0, 30, 0);
- circle(u0, 3, px+p.point.start.x, py+p.point.start.y, radius*0.4, 0, 30, 0);
+ circle(u0, 3, px+p.point.now.x, py+p.point.now.y, radius*0.4, 0, 30, 0);
 };

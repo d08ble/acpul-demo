@@ -82,7 +82,7 @@ _ @sys.node;
 
 _ @3200;
 
-watch(gnet.wr);
+watch(gnet.rd);
 
 MAP 3224;
 UNIT 3230;

@@ -11,7 +11,6 @@ draw(r0, 3271);
 
 _ @1010;
 _ @sys.touch;
-_ @sys.touch.ev.process.once;
 
 # touch.ev [
 touch.ev
@@ -47,6 +46,7 @@ r
 
 touch.id r1;
 touch.rect(touch.id, r.a,r.b,r.c,r.d);
+_ @sys.touch.ev.process.once;
 touch.ev.process.once(touch.id, l0);
 
 # touch process ]

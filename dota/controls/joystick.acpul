@@ -70,7 +70,7 @@ touch.ev
 #  ob:=cos(bb)*c; # if(c>radius, cos(bb)*radius, cos(bb)*c);
 #  point.now.x:=point.start.x+oa;
   l0:=cos(bb)*c;
-#watch(l0);
+watch(l0);
   point.now.y:=point.start.y+l0;
 #  point.now.y:= #b+point.start.y; #point.start.y+ob;
 #  point.now.y:=l0; #ob; #b+point.start.y; #point.start.y+ob;

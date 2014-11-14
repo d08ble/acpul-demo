@@ -44,13 +44,13 @@ touch.ev
   point.now.x:=_0;
   point.now.y:=_1;
 
-  с l3; 
+  с l3;
   a l1;
   b l2;
   aa l4;
-  a:=_0-x;
-  b:=_1-y;
-  c:=sqrt(a^2+b^2);
+#  a:=_0-x;
+#  b:=_1-y;
+#  c:=sqrt(a^2+b^2);
 #  aa:=asin(a/c);
 #  watch(aa);
 

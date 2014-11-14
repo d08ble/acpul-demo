@@ -12,7 +12,9 @@ draw(r0, 3271);
 _ @1010;
 _ @sys.touch;
 
+radius 100;
 minimal.move.delta 20;
+
 point.start.x r3;
 point.start.y r4;
 point.now.x r5;
@@ -41,8 +43,12 @@ touch.ev
  {
   point.now.x:=_0;
   point.now.y:=_1;
+
   distance sqrt((_2-_0)^2+(_3-_1)^2);
-  if (distance(x, y, _0, _1)>=minimal.move.delta)
+#  distance1 sqrt((_2-_0)^2+(_3-_1)^2);
+
+  l0:=distance(x, y, _0, _1);
+  if (l0>=minimal.move.delta)
   {
    # direction.vector.set(_0-x, _1-y);
   };
@@ -105,7 +111,7 @@ rect(u0, 2, px,py, w,h);
 
 if (p.pressed)
 {
- radius 100;
+ p.radius 100;
  circle(u0, 3, px+p.point.start.x, py+p.point.start.y, radius, 0, 30, 0);
  circle(u0, 3, px+p.point.now.x, py+p.point.now.y, radius*0.4, 0, 30, 0);
 };

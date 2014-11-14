@@ -100,6 +100,6 @@ rect(u0, 2, px,py, w,h);
 if (p.pressed)
 {
  watch(r0);
- radius 50;
- circle(u0, 6, px+p.point.start.x, py+p.point.start.y, radius, 0, 10, 0);
+ radius 100;
+ circle(u0, 6, px+p.point.start.x, py+p.point.start.y, radius, 0, 30, 0);
 };

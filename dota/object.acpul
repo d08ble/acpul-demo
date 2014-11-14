@@ -82,6 +82,8 @@ _ @sys.node;
 
 _ @3200;
 
+watch(gnet.wr);
+
 MAP 3224;
 UNIT 3230;
 JOYSTICK 3270;

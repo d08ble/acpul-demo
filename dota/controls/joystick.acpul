@@ -54,16 +54,17 @@ touch.ev
   c:=sqrt(a^2+b^2);
   aa:=asin(a/c);
   bb:=acos(b/c);
-  watch(b/c);
-  watch(bb);
-  watch(cos(bb));
+  watch(b);
+#  watch(b/c);
+#  watch(bb);
+#  watch(cos(bb));
 #  watch(sin(bb));
   oa l5;
   ob l6;
   oa:=if(c>radius, sin(aa)*radius, sin(aa)*c);
   ob:=if(c>radius, cos(bb)*radius, cos(bb)*c);
   point.now.x:=point.start.x+oa;
-  point.now.y:=b+point.start.y; #point.start.y+ob;
+  point.now.y:= #b+point.start.y; #point.start.y+ob;
 
 #  distance sqrt((_2-_0)^2+(_3-_1)^2);
 #  distance1 sqrt((_2-_0)^2+(_3-_1)^2);

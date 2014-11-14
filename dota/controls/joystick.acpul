@@ -41,8 +41,8 @@ touch.ev
  moved
  # x, y
  {
-  point.now.x:=_0;
-  point.now.y:=_1;
+#  point.now.x:=_0;
+#  point.now.y:=_1;
 
   c l3;
   a l1;

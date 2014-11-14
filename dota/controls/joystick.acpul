@@ -47,11 +47,11 @@ touch.ev
   distance sqrt((_2-_0)^2+(_3-_1)^2);
 #  distance1 sqrt((_2-_0)^2+(_3-_1)^2);
 
-  l0:=distance(x, y, _0, _1);
-  if (l0>=minimal.move.delta)
-  {
+#  l0:=distance(x, y, _0, _1);
+#  if (l0>=minimal.move.delta)
+#  {
    # direction.vector.set(_0-x, _1-y);
-  };
+#  };
 
 
   #target.delta.point(_0, _1);

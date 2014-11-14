@@ -26,7 +26,7 @@ touch.ev
  # x, y 
  {
   point.start.x:=if(_0<x, x, _0);
-  point.start.y:=if(_1<y, y, _1);;
+  point.start.y:=if(_1<y, y, _1);
   point.now.x:=_0;
   point.now.y:=_1;
   pressed:=1;

@@ -19,7 +19,7 @@ touch.ev
  # x, y 
  {
   #target.delta.point(_0, _1);
-  watch(_0);
+  l0:=5550;watch(l0);
   watch(_0);
   watch(_1);
  };
@@ -27,11 +27,17 @@ touch.ev
  # x, y
  {
   #target.delta.point(_0, _1);
+  l0:=5551;watch(l0);
+  watch(_0);
+  watch(_1);
  };
  ended
  # x, y
  {
   #target.run(_0, _1);
+  l0:=5552;watch(l0);
+  watch(_0);
+  watch(_1);
  };
 };
 # touch.ev ]

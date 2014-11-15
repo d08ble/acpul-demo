@@ -57,7 +57,7 @@ if (glt+dt > net.t.max)
   this.turn.halted:=0;
   gnet.rd:=1;
   # next turn ]
-  watch(gdt);
+#  watch(gdt);
  };
 };
 

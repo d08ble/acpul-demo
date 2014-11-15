@@ -12,11 +12,16 @@ draw(r0, 3271);
 _ @1010;
 _ @sys.touch;
 
+# controls [
+
+
+
 direction.vector.set
 {
 # watch(_0);
 # watch(_1);
 };
+# controls ]
 
 radius 100;
 minimal.move.delta 20;

@@ -72,8 +72,8 @@ direction.vector.set
  dir.y:=_1;
 # watch(_0);
 # watch(_1);
- context.dir.x(_0);
- context.dir.x(_1);
+ context.dir.x.set(_0);
+ context.dir.x.set(_1);
  watch(context.dir.x);
 };
 

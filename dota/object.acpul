@@ -154,7 +154,7 @@ if (type==types.unit)
 {
  if (subtype==subtypes.player)
  {
- watch(player.id);
+# watch(player.id);
 # watch(get(u0, gnet.mem.wr.a, 2));
   x+=get(u0, gnet.mem.rd.a, 2);
   y+=get(u0, gnet.mem.rd.a, 3);

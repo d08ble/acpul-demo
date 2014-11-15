@@ -26,7 +26,8 @@ if (gnet.wr)
    _0+=1;
   };
  };
- memclear(l0, gnet.mem.wr.a, gnet.mem.wr.size);
+ watch(r0);
+# memclear(l0, gnet.mem.wr.a, gnet.mem.wr.size);
 # if ()
 };
 

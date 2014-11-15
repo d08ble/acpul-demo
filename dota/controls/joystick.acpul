@@ -46,6 +46,15 @@ direction.vector.set
  dir.y:=_1;
 # watch(_0);
 # watch(_1);
+
+ def.controls {
+  i 0;
+  dir {
+   x i+0;
+   y i+1;
+  };
+ };
+
 };
 
 # controls ]

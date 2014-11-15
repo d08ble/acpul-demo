@@ -117,7 +117,7 @@ point.now.update
  ob:=if(c>radius, cos(bb)*radius, cos(bb)*c);
  point.now.x:=point.start.x+oa;
  point.now.y:=point.start.y+ob;
- 
+
 
 # if (c>=minimal.move.delta)
 # {
@@ -132,7 +132,7 @@ touch.ev
  # x, y 
  {
   point.start.x:=_0; #if(_0<x, x, _0);
-  point.start.y:=_0; #if(_1<y, y, _1);
+  point.start.y:=_1; #if(_1<y, y, _1);
 #  point.now.x:=_0;
 #  point.now.y:=_1;
   point.now.update(_0, _1);

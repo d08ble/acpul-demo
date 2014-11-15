@@ -22,6 +22,7 @@ if (gnet.wr)
   while(_0<_2)
   {
    watch(_0);
+   set(u0, gnet.mem.wr.a,_0 ,0);
    _0+=1;
   };
  };

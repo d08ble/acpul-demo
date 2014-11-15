@@ -29,8 +29,6 @@ direction.vector.set
 
 # controls ]
 
-
-
 radius 100;
 minimal.move.delta 20;
 

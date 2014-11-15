@@ -26,29 +26,6 @@ memclear
 };
 # sys.memclear ]
 
-# controls [
-
-if (gnet.wr)
-{
- memclear(l0, gnet.mem.wr.a,0, gnet.mem.wr.size);
- 
- if (pressed)
- {
-  direction.vector.set(dir.x, dir.y);
- };
-};
-
-dir.x l10;
-dir.y l11;
-
-direction.vector.set
-{
- dir.x:=_0;
- dir.y:=_1;
-# watch(_0);
-# watch(_1);
-};
-
 # context wr [
 context.d gnet.mem.wr.a;
 
@@ -73,6 +50,29 @@ context
  dir.y {G(ctrl.dir.y);set {S(ctrl.dir.y, _0);};};
 };
 # context wr ]
+
+# controls [
+
+if (gnet.wr)
+{
+ memclear(l0, gnet.mem.wr.a,0, gnet.mem.wr.size);
+ 
+ if (pressed)
+ {
+  direction.vector.set(dir.x, dir.y);
+ };
+};
+
+dir.x l10;
+dir.y l11;
+
+direction.vector.set
+{
+ dir.x:=_0;
+ dir.y:=_1;
+# watch(_0);
+# watch(_1);
+};
 
 # controls ]
 

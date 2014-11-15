@@ -97,7 +97,7 @@ if (r0)
  if (type==types.map) { node.new.this.ex(r0, MAP, 0);};
  if (type==types.unit) { node.new.this.ex(r0, UNIT, 0);};
 # if (type==types.shot) { node.new.this.ex(r0, SHOT, 0);};
- if (type==types.joystick) { node.new.this.ex(r0, JOYSTICK, 0);l0:=1888552;watch(l0);};
+ if (type==types.joystick) { node.new.this.ex(r0, JOYSTICK, 0);};
 };
 #s:=4;
 

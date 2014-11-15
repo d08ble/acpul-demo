@@ -23,8 +23,8 @@ if (gnet.wr)
 
 direction.vector.set
 {
-# watch(_0);
-# watch(_1);
+ watch(_0);
+ watch(_1);
 };
 
 # controls ]
@@ -41,7 +41,29 @@ pressed r7;
 point.now.update
 # x,y
 {
-	
+ a l1;
+ b l2;
+ c l3;
+ aa l4;
+ bb l5;
+ oa l6;
+ ob l7;
+
+ a:=_0-point.start.x;
+ b:=_1-point.start.y;
+ c:=sqrt(a^2+b^2);
+ aa:=asin(a/c);
+ bb:=acos(b/c);
+ l0:=cos(bb)*c;
+ oa:=if(c>radius, sin(aa)*radius, sin(aa)*c);
+ ob:=if(c>radius, cos(bb)*radius, cos(bb)*c);
+ point.now.x:=point.start.x+oa;
+ point.now.y:=point.start.y+ob;
+
+# if (c>=minimal.move.delta)
+# {
+ direction.vector.set(sin(aa), cos(bb));
+# };
 };
 
 # touch.ev [
@@ -56,58 +78,18 @@ touch.ev
 #  point.now.y:=_1;
   point.now.update(_0, _1);
   pressed:=1;
-
-  #target.delta.point(_0, _1);
-#  l0:=5550;watch(l0);
-#  watch(_0);
-#  watch(_1);
  };
  moved
  # x, y
  {
 #  point.now.x:=_0;
 #  point.now.y:=_1;
-
-  a l1;
-  b l2;
-  c l3;
-  aa l4;
-  bb l5;
-  oa l6;
-  ob l7;
-  # my fail, same reg l5
-
-  a:=_0-point.start.x;
-  b:=_1-point.start.y;
-  c:=sqrt(a^2+b^2);
-  aa:=asin(a/c);
-  bb:=acos(b/c);
-  l0:=cos(bb)*c;
-  oa:=if(c>radius, sin(aa)*radius, sin(aa)*c);
-  ob:=if(c>radius, cos(bb)*radius, cos(bb)*c);
-  point.now.x:=point.start.x+oa;
-  point.now.y:=point.start.y+ob;
-
-  if (c>=minimal.move.delta)
-  {
-   direction.vector.set(sin(aa), cos(bb));
-  };
-
-
-  #target.delta.point(_0, _1);
-#  l0:=5551;watch(l0);
-#  watch(_0);
-#  watch(_1);
+  point.now.update(_0, _1);
  };
  ended
  # x, y
  {
   pressed:=0;
-
-  #target.run(_0, _1);
-#  l0:=5552;watch(l0);
-#  watch(_0);
-#  watch(_1);
  };
 };
 # touch.ev ]

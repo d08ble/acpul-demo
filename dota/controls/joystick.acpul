@@ -18,16 +18,17 @@ if (gnet.wr)
 {
  # sys.memclear [
  memclear
+ # b0, a:o,size
  {
   _0:=0;
-  while(_0<_2)
+  while(_0<_3)
   {
-   set(u0, gnet.mem.wr.a,_0 ,0);
+   set(u0, _1, _2+_0, 0);
    _0+=1;
   };
  };
  # sys.memclear ]
- memclear(l0, gnet.mem.wr.a, gnet.mem.wr.size);
+# memclear(l0, gnet.mem.wr.a,0, gnet.mem.wr.size);
 # if ()
 };
 

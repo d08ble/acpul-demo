@@ -144,6 +144,8 @@ context
 };
 # context ]
 
+x+=get(u0, gnet.mem.rd.a, 0);
+
 # alloc self context [
 
 context.d.a r5;

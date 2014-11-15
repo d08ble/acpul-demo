@@ -27,6 +27,7 @@ memclear
 # sys.memclear ]
 
 # controls [
+
 if (gnet.wr)
 {
  memclear(l0, gnet.mem.wr.a,0, gnet.mem.wr.size);
@@ -46,16 +47,32 @@ direction.vector.set
  dir.y:=_1;
 # watch(_0);
 # watch(_1);
-
- def.controls {
-  i 0;
-  dir {
-   x i+0;
-   y i+1;
-  };
- };
-
 };
+
+# context wr [
+context.d gnet.mem.wr.a;
+
+context.def.controls 
+{
+ i 0;
+ dir 
+ {
+  x i+0;
+  y i+1;
+ };
+};
+context
+{
+ _;
+ dd context.def;
+ S {set(u0, d.a,_0, _1);};
+ G {get(u0, d.a,_0);};
+
+ ctrl context.def.controls;
+ dir.x {G(ctrl.dir.x);set {S(ctrl.dir.x, _0);};};
+ dir.y {G(ctrl.dir.y);set {S(ctrl.dir.y, _0);};};
+};
+# context wr ]
 
 # controls ]
 

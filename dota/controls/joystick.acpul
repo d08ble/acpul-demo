@@ -17,7 +17,16 @@ _ @3200;
 
 if (gnet.wr)
 {
- 0;
+ memclear
+ {
+  _0:=0;
+  while(_0<_2)
+  {
+   watch(_0);
+  }
+ };
+# memclear(l0, gnet.mem.wr.a, gnet.mem.wr.size);
+# if ()
 };
 
 dir.x l10;

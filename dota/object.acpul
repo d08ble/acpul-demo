@@ -149,7 +149,7 @@ context
 
 if (type==types.unit)
 {
- watch(get(u0, gnet.mem.wr.a, 0));
+ watch(get(u0, gnet.mem.wr.a, 2));
 # x+=get(u0, gnet.mem.wr.a, 0);
 # y+=get(u0, gnet.mem.wr.a, 1);
 

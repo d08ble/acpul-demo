@@ -16,6 +16,7 @@ _ @3200;
 # controls [
 if (gnet.wr)
 {
+ # sys.memclear [
  memclear
  {
   _0:=0;
@@ -25,7 +26,7 @@ if (gnet.wr)
    _0+=1;
   };
  };
-# watch(r0);
+ # sys.memclear ]
  memclear(l0, gnet.mem.wr.a, gnet.mem.wr.size);
 # if ()
 };

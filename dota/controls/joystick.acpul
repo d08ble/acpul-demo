@@ -20,8 +20,13 @@ if (gnet.wr)
  0;
 };
 
+dir.x l10;
+dir.y l11;
+
 direction.vector.set
 {
+ dir.x:=_0;
+ dir.y:=_1;
 # watch(_0);
 # watch(_1);
 };

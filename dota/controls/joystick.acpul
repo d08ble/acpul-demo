@@ -68,6 +68,7 @@ if (gnet.wr)
  };
 };
 
+
 dir.x l10;
 dir.y l11;
 

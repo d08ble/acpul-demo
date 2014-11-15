@@ -73,12 +73,8 @@ direction.vector.set
 {
  dir.x:=_0;
  dir.y:=_1;
-# watch(_0);
-# watch(_1);
  context.dir.x.set(_0);
  context.dir.y.set(_1);
-# watch(context.dir.x);
-# watch(context.dir.y);
 };
 
 # controls ]

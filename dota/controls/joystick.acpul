@@ -14,7 +14,7 @@ _ @sys.touch;
 _ @3200;
 
 # controls [
-watch(gnet.wr);
+watch(gnet.rd);
 if (gnet.wr)
 {
  memclear

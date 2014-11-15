@@ -74,6 +74,7 @@ direction.vector.set
 # watch(_1);
  context.dir.x(_0);
  context.dir.x(_1);
+ watch(context.dir.x);
 };
 
 # controls ]

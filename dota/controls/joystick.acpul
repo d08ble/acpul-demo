@@ -11,6 +11,7 @@ draw(r0, 3271);
 
 _ @1010;
 _ @sys.touch;
+_ @3200;
 
 # controls [
 

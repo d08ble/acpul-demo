@@ -207,6 +207,6 @@ if (l0==4) {sa;sc;sd;sg;};
 if (l0==5) {sb;sa;se;sd;sg;};
 if (l0==6) {sa;sb;sd;se;sf;sg;};
 if (l0==7) {sb;sc;sd;};
-if (l0==7) {sa;sb;sc;sd;se;sf;sg;};
+if (l0==8) {sa;sb;sc;sd;se;sf;sg;};
 if (l0==9) {sa;sb;sc;sd;se;sg;};
 # draw 0-9 16x16 ]

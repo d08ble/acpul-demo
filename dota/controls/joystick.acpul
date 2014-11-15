@@ -84,7 +84,7 @@ direction.vector.set
 
 # controls ]
 
-radius 100;
+radius 80;
 minimal.move.delta 20;
 
 point.start.x r3;

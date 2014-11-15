@@ -13,13 +13,14 @@
 #  - none (0)
 #  - bot
 #  - player
-# bot
+#
+# subtype::bot
 #  type
 #  - robot
 #  - tower
 #  - homebase
 #  - shop
-# player
+# subtype::player
 #  id
 #
 

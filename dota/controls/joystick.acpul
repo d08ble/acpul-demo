@@ -30,7 +30,7 @@ if (gnet.wr)
   };
  };
  # sys.memclear ]
-# memclear(l0, gnet.mem.wr.a,0, gnet.mem.wr.size);
+ memclear(l0, gnet.mem.wr.a,0, gnet.mem.wr.size);
 # if ()
 };
 

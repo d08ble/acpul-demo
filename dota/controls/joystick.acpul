@@ -24,7 +24,7 @@ if (gnet.wr)
   while(_0<_3)
   {
    watch(_1);
-   watch(_2+_0);
+#   watch(_2+_0);
    set(u0, _1, _2+_0, 0);
    _0+=1;
   };

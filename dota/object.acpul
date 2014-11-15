@@ -79,6 +79,7 @@ if (r0)
 };
 team p3;
 subtype p4;
+player.id p5;
 
 r7:=type;
 

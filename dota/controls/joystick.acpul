@@ -27,7 +27,7 @@ memclear
 # sys.memclear ]
 
 # context wr [
-context.d gnet.mem.wr.a;
+context.d.a gnet.mem.wr.a;
 
 context.def.controls 
 {

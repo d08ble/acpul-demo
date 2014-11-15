@@ -16,9 +16,12 @@ _ @sys.touch;
 
 if (gnet.wr)
 {
- 
+ 0;
 };
 
+ if (a==0) {
+  0;
+ };
 
 
 direction.vector.set
@@ -51,7 +54,6 @@ point.now.update
 
  a:=_0-point.start.x;
  b:=_1-point.start.y;
- if (a==0) {0;};
  c:=sqrt(a^2+b^2);
  aa:=asin(a/c);
  bb:=acos(b/c);

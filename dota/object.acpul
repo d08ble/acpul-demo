@@ -149,9 +149,9 @@ context
 
 if (type==types.unit)
 {
- x+=get(u0, gnet.mem.wr.a, 0);
- y+=get(u0, gnet.mem.wr.a, 1);
- 
+# x+=get(u0, gnet.mem.wr.a, 0);
+# y+=get(u0, gnet.mem.wr.a, 1);
+
 };
 
 # alloc self context [

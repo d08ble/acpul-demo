@@ -71,8 +71,11 @@ r0:=k==0;
 draw(r0, 3221);
 
 type p0;
-x:=p1;
-y:=p2;
+if (r0)
+{
+ x:=p1;
+ y:=p2;
+};
 team p3;
 
 r7:=type;

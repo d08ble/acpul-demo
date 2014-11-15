@@ -22,8 +22,8 @@ if (gnet.wr)
 
 direction.vector.set
 {
- watch(_0);
- watch(_1);
+# watch(_0);
+# watch(_1);
 };
 
 # controls ]
@@ -51,7 +51,7 @@ point.now.update
  a:=_0-point.start.x;
  b:=_1-point.start.y;
  
- a:=if(a==0,if(b==0,0.01,a),a);
+ a:=if(a==0,if(b==0,0.01,a),a); # prevent nan
 
  c:=sqrt(a^2+b^2);
  aa:=asin(a/c);

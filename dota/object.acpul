@@ -182,6 +182,7 @@ if (r0)
 
 k:=1;
 
+
 ### 3221 Object.draw
 
 color(u0, 0,0,0,1);

@@ -61,9 +61,9 @@ touch.ev
 #  point.now.x:=_0;
 #  point.now.y:=_1;
 
-  c l3;
   a l1;
   b l2;
+  c l3;
   aa l4;
   bb l5;
   oa l6;

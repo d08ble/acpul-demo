@@ -77,6 +77,7 @@ if (r0)
  y:=p2;
 };
 team p3;
+subtype p4;
 
 r7:=type;
 
@@ -149,10 +150,12 @@ context
 
 if (type==types.unit)
 {
+ if (subtype==player)
+ {
 # watch(get(u0, gnet.mem.wr.a, 2));
- x+=get(u0, gnet.mem.rd.a, 2);
- y+=get(u0, gnet.mem.rd.a, 3);
-
+  x+=get(u0, gnet.mem.rd.a, 2);
+  y+=get(u0, gnet.mem.rd.a, 3);
+ };
 };
 
 # alloc self context [

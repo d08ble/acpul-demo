@@ -38,6 +38,12 @@ point.now.x r5;
 point.now.y r6;
 pressed r7;
 
+point.now.update
+# x,y
+{
+	
+};
+
 # touch.ev [
 touch.ev
 {
@@ -46,8 +52,9 @@ touch.ev
  {
   point.start.x:=if(_0<x, x, _0);
   point.start.y:=if(_1<y, y, _1);
-  point.now.x:=_0;
-  point.now.y:=_1;
+#  point.now.x:=_0;
+#  point.now.y:=_1;
+  point.now.update(_0, _1);
   pressed:=1;
 
   #target.delta.point(_0, _1);

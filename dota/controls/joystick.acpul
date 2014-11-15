@@ -28,8 +28,13 @@ if (gnet.wr)
   };
  };
  # sys.memclear ]
+
  memclear(l0, gnet.mem.wr.a,0, gnet.mem.wr.size);
-# if ()
+ 
+ if (pressed)
+ {
+  direction.vector.set(dir.x, dir.y);
+ };
 };
 
 dir.x l10;

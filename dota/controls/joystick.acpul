@@ -34,7 +34,8 @@ context.d.a gnet.mem.wr.a;
 
 context.def.controls 
 {
- i 0;
+ # 2 bytes reserved for simulate test
+ i 2;
  dir 
  {
   x i+0;

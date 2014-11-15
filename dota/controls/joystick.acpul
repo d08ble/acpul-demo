@@ -20,11 +20,6 @@ if (gnet.wr)
  0;
 };
 
- if (a==0 && b==0) {
-  0;
- };
-
-
 direction.vector.set
 {
  watch(_0);
@@ -55,6 +50,9 @@ point.now.update
 
  a:=_0-point.start.x;
  b:=_1-point.start.y;
+ 
+ a:=if(a==0,if(b==0,0.01,a),a);
+
  c:=sqrt(a^2+b^2);
  aa:=asin(a/c);
  bb:=acos(b/c);

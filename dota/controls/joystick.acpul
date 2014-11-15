@@ -13,22 +13,22 @@ _ @1010;
 _ @sys.touch;
 _ @3200;
 
+# sys.memclear [
+memclear
+# b0, a:o,size
+{
+ _0:=0;
+ while(_0<_3)
+ {
+  set(u0, _1, _2+_0, 0);
+  _0+=1;
+ };
+};
+# sys.memclear ]
+
 # controls [
 if (gnet.wr)
 {
- # sys.memclear [
- memclear
- # b0, a:o,size
- {
-  _0:=0;
-  while(_0<_3)
-  {
-   set(u0, _1, _2+_0, 0);
-   _0+=1;
-  };
- };
- # sys.memclear ]
-
  memclear(l0, gnet.mem.wr.a,0, gnet.mem.wr.size);
  
  if (pressed)

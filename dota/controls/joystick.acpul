@@ -23,6 +23,7 @@ if (gnet.wr)
   while(_0<_2)
   {
    watch(_0);
+   _0+=1;
   }
  };
 # memclear(l0, gnet.mem.wr.a, gnet.mem.wr.size);

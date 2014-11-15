@@ -150,6 +150,7 @@ context
 
 if (type==types.unit)
 {
+ watch(subtype);
  if (subtype==player)
  {
 # watch(get(u0, gnet.mem.wr.a, 2));

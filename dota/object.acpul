@@ -156,8 +156,8 @@ if (type==types.unit)
  {
 # watch(player.id);
 # watch(get(u0, gnet.mem.wr.a, 2));
-  x+=get(u0, gnet.mem.rd.a, player.id*gnet.mem.wr.size + 2)*gdt*100;
-  y+=get(u0, gnet.mem.rd.a, player.id*gnet.mem.wr.size + 3)*gdt*100;
+  x+=get(u0, gnet.mem.rd.a, player.id*gnet.mem.wr.size + 2)*glt*100;
+  y+=get(u0, gnet.mem.rd.a, player.id*gnet.mem.wr.size + 3)*glt*100;
   r7:=player.id+5;
  };
 };

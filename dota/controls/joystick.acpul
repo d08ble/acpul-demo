@@ -117,6 +117,7 @@ point.now.update
  ob:=if(c>radius, cos(bb)*radius, cos(bb)*c);
  point.now.x:=point.start.x+oa;
  point.now.y:=point.start.y+ob;
+ 
 
 # if (c>=minimal.move.delta)
 # {

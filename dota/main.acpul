@@ -13,8 +13,6 @@
 # 3260,3261 Skill Button
 # 3270,3271 Joystick
 
-
-
 r0:=k==0;
 
 draw(r0, 3203);

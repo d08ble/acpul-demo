@@ -7,6 +7,8 @@ draw(r0, 3233);
 t+=dt;
 s:=0.2;
 
+r:=rnd(u0);
+
 k:=1;
 
 ### 3233 Unit::Robot.draw

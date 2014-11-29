@@ -14,6 +14,9 @@ k:=1;
 
 # ROBOT [
 
+_ @1010;
+_ @sys.display;
+
 x 900+sin(t)*100;
 y 100;
 

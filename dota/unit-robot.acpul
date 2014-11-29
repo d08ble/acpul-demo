@@ -4,6 +4,8 @@ r0:=k==0;
 
 draw(r0, 3233);
 
+t+=dt;
+
 k:=1;
 
 ### 3233 Unit::Robot.draw

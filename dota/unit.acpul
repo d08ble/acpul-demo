@@ -7,6 +7,12 @@ draw(r0, 3231);
 _ @1010;
 _ @sys.node;
 
+OBJECT 3220;
+
+obj @OBJECT;
+ot obj.types;
+ost obj.subtypes;
+
 subtype p4;
 player.id p5;
 

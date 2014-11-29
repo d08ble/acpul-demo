@@ -10,7 +10,7 @@ s:=0.2;
 #r:=(rnd(u0)-0.5)*5;
 #s:=0.2+rnd(u0)*0.3;
 #r:=sin(t)*10;
-watch(t);
+#watch(t);
 k:=1;
 
 ### 3233 Unit::Robot.draw

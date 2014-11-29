@@ -7,6 +7,9 @@ draw(r0, 3231);
 _ @1010;
 _ @sys.node;
 
+UNIT.ROBOT 3232;
+node.new.this.ex(r0, UNIT.ROBOT, 0);
+
 t+=dt;
 
 k:=1;

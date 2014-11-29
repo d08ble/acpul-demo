@@ -30,7 +30,7 @@ node.new.this.ex4(r0, OBJECT, obj.types.map, 250,50, 0);
 node.new.this.ex4(r0, OBJECT, obj.types.joystick, 0,0, 0);
 
 
-s:=0.45;
+s:=1.45;
 x:=-80;
 y:=220;
 

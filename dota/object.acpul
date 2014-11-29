@@ -183,6 +183,7 @@ if (r0)
 k:=1;
 
 ### 3221 Object.draw
+if (0) {
 
 color(u0, 0,0,0,1);
 rect(u0, 6, 0,0, 16,16);
@@ -210,3 +211,5 @@ if (l0==7) {sb;sc;sd;};
 if (l0==8) {sa;sb;sc;sd;se;sf;sg;};
 if (l0==9) {sa;sb;sc;sd;se;sg;};
 # draw 0-9 16x16 ]
+
+};

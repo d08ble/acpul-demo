@@ -21,7 +21,7 @@ color(u0, 0, 1, 0, 1);
 _ @1010;
 _ @sys.display;
 
-psize1(58);
+psize1(8);
 
 vertarr display.gl;
 

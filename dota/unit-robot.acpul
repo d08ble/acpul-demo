@@ -45,7 +45,7 @@ FF 6;
 rect(u0, FF, x,y, 50,110+50*body.h);
 
 rect(u0, FF, x,10+10*sin(t*10+pi/2), 10,y); # x,y w,h 
-rect(u0, FF, x+50-10,10+10*sin(t*10), 10,y);  
+#rect(u0, FF, x+50-10,10+10*sin(t*10), 10,y);  
 
 #color(u0, 1, 0.5*body.h, 1, 1);
 
@@ -57,7 +57,7 @@ kk sin(t*10)*10;
 #color(u0, 1, 0.5*body.h, 1, 1);
 x1 x+50;
 rect(u0, FF, x-2,y1, -10,-70+sin(t*10+pi)*10);  
-#rect(u0, FF, x1+2,y1, 10,-70+kk);  
+rect(u0, FF, x1+2,y1, 10,-70+kk);  
 
 # ROBOT ]
 

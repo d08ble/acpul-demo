@@ -23,7 +23,7 @@ _ @sys.display;
 #x 15; #+sin(t)*100;
 #y 90;
 x 0-20;
-y 0-50+sin(t)*10;
+y 0-50+sin(t*20)*10;
 
 psize1(5);
 

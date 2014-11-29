@@ -28,6 +28,8 @@ vertarr.param(0, 2, 0, ptr, 0);
 vertarr.draw(0, 0, cnt);
 #watch(cnt);
 
+# ROBOT [
+
 x 900+sin(t)*100;
 y 100;
 
@@ -62,3 +64,5 @@ point4(u0, 2, x1,y1, x1,y1-20, x1-40+kk,y1-70+kk/2, x1-50+kk,y1-70+kk/2);
 #color(u0, 1, 0.5*body.h, 1, 1);
 x1 x+50;
 rect(u0, 2, x1,y1, 10,-70+kk/3);  
+
+# ROBOT ]

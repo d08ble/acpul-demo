@@ -188,7 +188,7 @@ px 0-w/2;
 py 0-h/2;
 
 psize1(1);
-color(u0, 0.5, 0.5, 0.1, 0.5);
+color(u0, 0.5, 0.5, 0.9, 0.5);
 rect(u0, 2, px,py, w,h);
 
 if (p.pressed)

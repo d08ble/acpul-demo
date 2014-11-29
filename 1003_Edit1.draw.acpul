@@ -28,6 +28,12 @@ vertarr.param(0, 2, 0, ptr, 0);
 vertarr.draw(0, 0, cnt);
 #watch(cnt);
 
+# BG [
+
+rect(u0, 6, 0,0, 100,100);
+
+# BG ]
+
 # ROBOT [
 
 x 900+sin(t)*100;
@@ -39,7 +45,6 @@ psize1(5);
 color(u0, 0, 0, 0.5, 1);
 
 body.h 0; #sin(t*0);
-
 
 rect(u0, 6, x+50/2-10,y+110+50*body.h, 20,20);
 

@@ -50,7 +50,7 @@ rect(u0, 6, x+50/2+2*sin(t*10),y+120+50*body.h, 5,5);
 
 color(u0, 0.2, 0.5*body.h, 1, 1);
 
-FF 6
+FF 6;
 
 rect(u0, FF, x,y, 50,110+50*body.h);
 

@@ -45,6 +45,7 @@ FF 6;
 rect(u0, FF, x,y+40, 50,70+50*body.h);
 
 rect(u0, FF, x,y, 10,-10); # x,y w,h 
+rect(u0, FF, x+50-10,y, 10,-10); # x,y w,h 
 #rect(u0, FF, x+50-10,10+10*sin(t*10), 10,y);  
 
 #color(u0, 1, 0.5*body.h, 1, 1);

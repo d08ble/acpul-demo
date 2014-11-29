@@ -35,6 +35,9 @@ _ @sys.node;
 _ @sys.touch;
 
 touch.start();
+
+t+=dt;
+
 x:=200;
 y:=-400;
 s:=0.2*10;
@@ -54,7 +57,6 @@ y:=100;
 r:=10;
 s:=0.4+0.2*sin(t);
 x:=100;
-t+=dt;
 };
 
 zoom3

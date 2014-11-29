@@ -25,7 +25,7 @@ psize1(3);
 vertarr display.gl;
 
 vertarr.param(0, 2, 0, ptr, 0);
-vertarr.draw(2, 0, cnt);
+vertarr.draw(3, 0, cnt);
 #watch(cnt);
 
 # BG [

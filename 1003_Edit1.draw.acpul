@@ -50,5 +50,5 @@ color(u0, 0.2, 0.5*body.h, 1, 1);
 rect(u0, 6, x,y, 50,110+50*body.h);
 
 rect(u0, 6, x,0, 10,y); # x,y w,h 
-rect(u0, 6, x+50-10,0+sin(t)*100, 10,y);  
+rect(u0, 6, x+50-10,0+sin(t)0, 10,y);  
 

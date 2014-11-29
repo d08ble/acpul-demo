@@ -60,7 +60,7 @@ spr1 1;
 new.Edit1
  node.new.this.object(r0, 1002, 0);
 
-new.Edit1();
+#new.Edit1();
 
 node.new.this.object(r0, 2000, 0);
 node.new.this.object(r0, 3000, 0);
@@ -71,7 +71,7 @@ node.new.this.ex(r0, 20000, 0);
 node.new.this.ex(r0, 11000, 0);
 
 DOTA.MAIN 3202;
-#node.new.this.ex(r0, DOTA.MAIN, 0);
+node.new.this.ex(r0, DOTA.MAIN, 0);
 
 #watch(r0);
 

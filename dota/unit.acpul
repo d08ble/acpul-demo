@@ -23,7 +23,6 @@ if (subtype==ost.player) {
  l0:=0;
 }
 
-watch(r0);
 k:=1;
 
 ### 3231 Unit.draw

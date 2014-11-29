@@ -31,7 +31,7 @@ body.h 0; #sin(t*0);
 rect(u0, 6, x+50/2-10,y+110+50*body.h, 20,20);
 
 #color(u0, 0.2, 0.5*sin(t), 0, (1*(sin(t*10))+1)/2);
-color(u0, rnd(u0), rnd(u0), rnd(u0), 1);
+#color(u0, rnd(u0), rnd(u0), rnd(u0), 1);
 rect(u0, 6, x+50/2-10+2*sin(t*10),y+120+50*body.h, 5,5);
 rect(u0, 6, x+50/2+2*sin(t*10),y+120+50*body.h, 5,5);
 

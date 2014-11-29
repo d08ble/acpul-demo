@@ -10,8 +10,6 @@ _ @sys.node;
 UNIT.ROBOT 3232;
 node.new.this.ex(r0, UNIT.ROBOT, 0);
 
-t+=dt;
-
 k:=1;
 
 ### 3231 Unit.draw

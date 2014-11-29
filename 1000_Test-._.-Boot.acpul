@@ -61,7 +61,7 @@ x:=100;
 
 zoom3
 {
- i fmod(t, 10);
+ i mod(t, 10);
  #if(i<5,zoom1,zoom2);
  watch(i);
 };

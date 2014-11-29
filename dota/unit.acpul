@@ -22,6 +22,7 @@ if (subtype==ost.player) {
 # node.new.this.ex(r0, UNIT.ROBOT, 0);
 }
 
+watch(r0);
 k:=1;
 
 ### 3231 Unit.draw

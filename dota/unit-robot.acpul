@@ -44,7 +44,7 @@ FF 6;
 
 rect(u0, FF, x,y+40, 50,70+50*body.h);
 
-y0 y-40
+y0 y-40;
 rect(u0, FF, x,y0, 10,-10); # x,y w,h 
 rect(u0, FF, x+50-10,y0, 10,-10); # x,y w,h 
 

@@ -9,12 +9,12 @@ ptr m.vec2d.array.d.a;
 cnt m.vec2d.array.d.n;
 #watch(cnt);
 
-#color(u0, 15/16, 15/16, 15/16, 1.0);
+color(u0, 15/16, 15/16, 15/16, 1.0);
 #rect(u0, 6, 0,0, 500,500);
 
 #color(u0, 0.2, 0.5*sin(t), 0.4, 0.1);
 #color(u0, 0.02, 0.0*(0.5+sin(t*10)/4), 0.02, 0.01);
-color(u0, 0.0, 1*(0.5+sin(t*2)/4), 0.9, 0.5);
+#color(u0, 0.0, 1*(0.5+sin(t*2)/4), 0.9, 0.5);
 
 _ @1010;
 _ @sys.display;

@@ -20,12 +20,12 @@ color(u0, 0.2, 0.5*sin(t), 0.4, 0.1);
 _ @1010;
 _ @sys.display;
 
-psize1(3);
+psize1(8);
 
 vertarr display.gl;
 
 vertarr.param(0, 2, 0, ptr, 0);
-vertarr.draw(2, 0, cnt);
+vertarr.draw(0, 0, cnt);
 #watch(cnt);
 
 # BG [

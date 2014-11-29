@@ -13,8 +13,8 @@ obj @OBJECT;
 ot obj.types;
 ost obj.subtypes;
 
-subtype p4;
-player.id p5;
+subtype p0;
+player.id p1;
 
 UNIT.ROBOT 3232;
 if (subtype==ost.player) {

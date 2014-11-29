@@ -17,8 +17,8 @@ k:=1;
 _ @1010;
 _ @sys.display;
 
-x 900+sin(t)*100;
-y 100;
+x 0+sin(t)*100;
+y 0;
 
 psize1(5);
 

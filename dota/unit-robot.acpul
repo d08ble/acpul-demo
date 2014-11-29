@@ -22,7 +22,6 @@ k:=1;
 _ @1010;
 _ @sys.display;
 
-if (0) {
 x 15; #+sin(t)*100;
 y 90;
 #x 0-20;
@@ -38,6 +37,7 @@ color(u0, 0, 0, 0.5, 1);
 body.h 0; #sin(t*0);
 
 rect(u0, 6, x+50/2-10,y+110+50*body.h, 20,20);
+if (0) {
 
 #color(u0, 0.2, 0.5*sin(t), 0, (1*(sin(t*10))+1)/2);
 #color(u0, rnd(u0), rnd(u0), rnd(u0), 1);

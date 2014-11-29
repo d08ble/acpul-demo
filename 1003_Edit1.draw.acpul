@@ -31,7 +31,7 @@ vertarr.draw(0, 0, cnt);
 x 900+sin(t)*100;
 y 100;
 
-psize1(1);
+psize1(10);
 
 #color(u0, 0.2, 0.5*sin(t), (1*(sin(t*10))+1)/2, 1);
 color(u0, 0, 0, 0.5, 1);

@@ -8,3 +8,54 @@ k:=1;
 
 ### 3233 Unit::Robot.draw
 
+# FAKE UNIT DRAW [
+
+# ROBOT [
+
+_ @1010;
+_ @sys.display;
+
+x 0+sin(t)*100;
+y 0;
+
+psize1(5);
+
+#color(u0, 0.2, 0.5*sin(t), (1*(sin(t*10))+1)/2, 1);
+color(u0, 0, 0, 0.5, 1);
+
+body.h 0; #sin(t*0);
+
+rect(u0, 6, x+50/2-10,y+110+50*body.h, 20,20);
+
+#color(u0, 0.2, 0.5*sin(t), 0, (1*(sin(t*10))+1)/2);
+color(u0, 1, 0, 0, 0);
+rect(u0, 6, x+50/2-10+2*sin(t*10),y+120+50*body.h, 5,5);
+rect(u0, 6, x+50/2+2*sin(t*10),y+120+50*body.h, 5,5);
+
+#color(u0, 0.2, 0.5*body.h, 1, 1);
+color(u0, 0.4, 0.3, 0.8, 1);
+#color(u0, 0.1, 0, 0.1, 0.1);
+#color(u0, 0, 0.8, 0.1, 0.1);
+
+FF 6;
+
+rect(u0, FF, x,y, 50,110+50*body.h);
+
+rect(u0, FF, x,10+10*sin(t*10+pi/2), 10,y); # x,y w,h 
+rect(u0, FF, x+50-10,10+10*sin(t*10), 10,y);  
+
+#color(u0, 1, 0.5*body.h, 1, 1);
+
+y1 y+110;
+x1 x;
+kk sin(t*10)*10;
+#point4(u0, FF, x1,y1, x1,y1-20, x1-40+kk,y1-70+kk/2, x1-50+kk,y1-70+kk/2);
+
+#color(u0, 1, 0.5*body.h, 1, 1);
+x1 x+50;
+rect(u0, FF, x-2,y1, -10,-70+sin(t*10+pi)*10);  
+rect(u0, FF, x1+2,y1, 10,-70+kk);  
+
+# ROBOT ]
+
+# FAKE UNIT DRAW ]

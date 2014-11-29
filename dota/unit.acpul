@@ -17,7 +17,9 @@ subtype p4;
 player.id p5;
 
 UNIT.ROBOT 3232;
-node.new.this.ex(r0, UNIT.ROBOT, 0);
+if (subtype==ost.player) {
+ node.new.this.ex(r0, UNIT.ROBOT, 0);
+}
 
 k:=1;
 

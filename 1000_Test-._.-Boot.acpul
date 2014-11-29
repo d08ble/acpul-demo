@@ -64,9 +64,9 @@ zoom3
  i mod(t, 30);
  if(i<10,zoom1, if(i<20,zoom2,0));
 };
-#zoom1;
+zoom1;
 #zoom2;
-zoom3;
+#zoom3;
 
 #x:=300;y:=100;s:=0.4;r:=-2;
 #x:=300;y:=100;s:=0.2;r:=10;

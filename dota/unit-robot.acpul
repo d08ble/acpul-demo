@@ -42,7 +42,7 @@ rect(u0, 6, x+50/2+2*sin(t*10),y+120+50*body.h, 5,5);
 
 FF 6;
 
-rect(u0, FF, x,y, 50,110+50*body.h);
+rect(u0, FF, x,y, 50,50+50*body.h);
 
 rect(u0, FF, x,y, 10,-10); # x,y w,h 
 #rect(u0, FF, x+50-10,10+10*sin(t*10), 10,y);  

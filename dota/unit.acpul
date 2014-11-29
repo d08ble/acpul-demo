@@ -20,6 +20,7 @@ player.id p1;
 UNIT.ROBOT 3232;
 if (subtype==ost.player) {
 # node.new.this.ex(r0, UNIT.ROBOT, 0);
+ l0:=0;
 }
 
 watch(r0);

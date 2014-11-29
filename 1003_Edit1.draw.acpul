@@ -66,7 +66,7 @@ kk sin(t*10)*10;
 
 #color(u0, 1, 0.5*body.h, 1, 1);
 x1 x+50;
-rect(u0, FF, x,y1, -10,-70+sin(t*10+pi)*10);  
+rect(u0, FF, x,y1, -12,-70+sin(t*10+pi)*10);  
 rect(u0, FF, x1,y1, 10,-70+kk);  
 
 # ROBOT ]

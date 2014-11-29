@@ -53,4 +53,4 @@ rect(u0, 6, x,10+10*sin(t*10+pi/2), 10,y); # x,y w,h
 rect(u0, 6, x+50-10,10+10*sin(t*10), 10,y);  
 
 color(u0, 1, 0.5*body.h, 1, 1);
-point4(u0, 6, x,y, x+100, y+20);
+point4(u0, 6, x,y, x+100,y, x+111,y+20, x+150,y+200);

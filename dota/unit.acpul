@@ -2,6 +2,10 @@
 
 r0:=k==0;
 
+draw(r0, 3231);
+
 k:=1;
 
 ### 3231 Unit.draw
+
+watch(r0);

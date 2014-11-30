@@ -68,7 +68,7 @@ if (r7==bt.homehealth) {
  color(u0, a*0.3,0,a*0.5,0.1);
  triangle(u0, 3, x,y, x+30*sc-60*sc*n,y+50*sc+sin(n*pi)*20, x,y+100*sc);
 
- color(u0, a*0.3,0,a*0.5,0.3);
+ color(u0, a*0.3,0,a*0.5,0.6);
  triangle(u0, 3, x,y, x-30*sc+60*sc*n,y+50*sc-sin(n*pi)*20, x,y+100*sc);
 };
 

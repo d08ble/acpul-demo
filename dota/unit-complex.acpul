@@ -4,11 +4,17 @@ r0:=k==0;
 
 draw(r0, 3235);
 
+r7:=p0;
 #watch(p0);
+
 t+=dt;
 
 r0:=1;
 
 ### 3235 Unit::Complex.draw
 
+b rect(u0, 6, _0,_1, 32,32);
 
+if (r7==0) {
+ b(0,0);	
+};

@@ -19,6 +19,7 @@ OBJECT 3220;
 
 obj @OBJECT;
 bt obj.bots.types;
+watch(bt.homehealth);
 
 if (r7==bt.tower) {
  b(1,0,3,3);

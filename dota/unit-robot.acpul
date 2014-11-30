@@ -30,7 +30,7 @@ if (r0) {
  bb.def0(u0, box2d.dynamic, x,y, 0);
  bb.def1(u0, 0,0, 0,0);
  bb.def3(u0, 0, 0,1,5);
- body0:=bb.create(u0, box2d.common.world);
+ body0:=bb.create(u0, b2d.world);
 # body.def.type.position.angle;
 # body.def.velocity.linear.angular;
 # body.def.damping.linear.angular.allowSleep.awake;

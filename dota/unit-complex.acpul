@@ -50,6 +50,7 @@ if (r7==bt.homehealth) {
 ### 3236 U::Complex::Crystal
 
 r0:=k==0;
+lt:=1;
 
 draw(r0, 3237);
 

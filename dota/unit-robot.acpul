@@ -28,6 +28,7 @@ fixture0 l2;
 
 if (l10<10) {
 l10+=1;
+watch(l10);
 #if (r0) {
 
  bb.def0(u0, box2d.dynamic, x,y, 0);

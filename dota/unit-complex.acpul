@@ -3,6 +3,7 @@
 r0:=k==0;
 
 draw(r0, 3235);
+watch(r0);
 
 r7:=p0;
 #watch(p0);

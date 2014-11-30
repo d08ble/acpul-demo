@@ -172,11 +172,7 @@ body0 l0;
 shape0 l1;
 fixture0 l2;
 
-if (l10<3) {
-l10+=1;
-watch(l10);
-#};
-#if (r0) {
+if (r0) {
 
  bb.def0(u0, box2d.dynamic, x,y, 0);
  bb.def1(u0, -10,-10, 0,0);

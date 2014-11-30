@@ -9,7 +9,7 @@ gt u6;
 glt u7;
 gdt u8;
 
-b2d.world u9;
+b2d.world u10;
 
 
 gnet.mem.wr.a 8825;

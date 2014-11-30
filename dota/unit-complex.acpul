@@ -59,7 +59,7 @@ if (r7==bt.homehealth) {
  sc 2;
 
  color(u0, a*0.3,0,a*0.5,0.6);
- n mod(t,1);
+ n sin(mod(t,1)*pi);
  psize(u0, 7);
  point4(u0, 2, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
 

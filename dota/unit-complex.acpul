@@ -66,10 +66,10 @@ if (r7==bt.homehealth) {
  psize(u0, 7);
 
  nn sin(n*pi);
- color(u0, a*0.3,0,a*0.5,0.8+0.2*nn);
+ color(u0, a*0.3,0,a*0.5,0.5+0.2*nn);
  triangle(u0, 3, x,y, x+30*sc-60*sc*n,y+50*sc+nn*20, x,y+100*sc);
 
- color(u0, a*0.3,0,a*0.5,0.5);
+ color(u0, a*0.3,0,a*0.5,0.5-0.2*nn);
  triangle(u0, 3, x,y, x-30*sc+60*sc*n,y+50*sc-nn*20, x,y+100*sc);
 
  point4(u0, 2, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);

@@ -172,6 +172,8 @@ body0 l10;
 shape0 l11;
 fixture0 l12;
 
+if (type==types.unit)
+{
 if (r0) {
 
  bb.def0(u0, box2d.dynamic, x,y, 0);
@@ -192,6 +194,7 @@ if (r0) {
 box2d.body.get.position(u0, body0);
 x:=o0;
 y:=o1;
+};
 
 # CREATE BODY ]
 

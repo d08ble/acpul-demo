@@ -45,6 +45,7 @@ if (r7==bt.homehealth) {
  point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
 };
 
+
 ### 3236 U::Complex::Crystal
 
 r0:=k==0;

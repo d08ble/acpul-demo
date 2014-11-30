@@ -80,7 +80,7 @@ new.Edit1
 new.Edit1();
 
 node.new.this.object(r0, 2000, 0);
-node.new.this.object(r0, 3000, 0);
+#node.new.this.object(r0, 3000, 0);
 #node.new.this.object(r0, 9000, 0);
 #node.new.this.ex(r0, 9700, 0);
 #node.new.this.ex(r0, 9740, 0);

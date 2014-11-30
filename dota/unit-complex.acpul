@@ -45,3 +45,17 @@ if (r7==bt.homehealth) {
  l0:=0;	
 };
 
+### 3236 U::Complex::Crystal
+
+r0:=k==0;
+
+draw(r0, 3237);
+
+k:=1;
+
+### 3237 U::Complex::Crystal.draw
+
+x 40;
+y 70;
+sc 2;
+point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);

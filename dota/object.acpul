@@ -203,7 +203,7 @@ y:=o1;
   vy get(u0, gnet.mem.rd.a, player.id*gnet.mem.wr.size + 3)*gdt*3000;
   box2d.body.set.linear.velocity(u0, body0, vx,vy);
 #  watch(vx);
- }
+ };
 };
 
 # CREATE BODY ]

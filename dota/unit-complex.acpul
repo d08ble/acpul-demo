@@ -65,11 +65,12 @@ if (r7==bt.homehealth) {
  watch(n);
  psize(u0, 7);
 
- color(u0, a*0.3,0,a*0.5,0.8);
- triangle(u0, 3, x,y, x+30*sc-60*sc*n,y+50*sc+sin(n*pi)*20, x,y+100*sc);
+ nn sin(n*pi);
+ color(u0, a*0.3,0,a*0.5,0.8+0.2*nn);
+ triangle(u0, 3, x,y, x+30*sc-60*sc*n,y+50*sc+nn*20, x,y+100*sc);
 
  color(u0, a*0.3,0,a*0.5,0.5);
- triangle(u0, 3, x,y, x-30*sc+60*sc*n,y+50*sc-sin(n*pi)*20, x,y+100*sc);
+ triangle(u0, 3, x,y, x-30*sc+60*sc*n,y+50*sc-nn*20, x,y+100*sc);
 
  point4(u0, 2, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
 };

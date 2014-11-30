@@ -57,12 +57,13 @@ if (r7==bt.homehealth) {
  x 40;
  y 70;
  sc 2;
+ color(u0, a*0.3,0,a*0.5,0.3);
+ point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
 
  color(u0, a*0.3,0,a*0.5,0.6);
  n sin(mod(t*0.2,1)*pi*2)*0.5+0.5;
  watch(n);
  psize(u0, 7);
- point4(u0, 2, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
 
  color(u0, a*0.3,0,a*0.5,0.8);
  triangle(u0, 3, x,y, x+30*sc-60*sc*n,y+50*sc+sin(n*pi)*20, x,y+100*sc);
@@ -70,8 +71,7 @@ if (r7==bt.homehealth) {
  color(u0, a*0.3,0,a*0.5,0.5);
  triangle(u0, 3, x,y, x-30*sc+60*sc*n,y+50*sc-sin(n*pi)*20, x,y+100*sc);
 
- color(u0, a*0.3,0,a*0.5,0.3);
- #point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
+ point4(u0, 2, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
 };
 
 ### 3236 U::C::Crystal.Pulses

@@ -22,10 +22,13 @@ _ @1010;
 _ @3200;
 _ @sys.box2d;
 bb box2d.body;
- body0 l0;
- shape0 l1;
- fixture0 l2;
-if (r0) {
+body0 l0;
+shape0 l1;
+fixture0 l2;
+
+if (n<10) {
+n+=1;
+#if (r0) {
 
  bb.def0(u0, box2d.dynamic, x,y, 0);
  bb.def1(u0, -10,-10, 0,0);
@@ -42,8 +45,6 @@ if (r0) {
  box2d.fixture.def(u0, 0.2, 0, 0, 0);
  fixture0:=box2d.fixture.create(u0, body0, shape0);
 };
-#watch(b2d.world);
-#watch(body0);
 
 # CREATE BODY ]
 

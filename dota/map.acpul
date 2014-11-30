@@ -50,6 +50,6 @@ _ @sys.box2d.test;
 
 color(u0, 0.5, 0.1, 0.5, 0.11);
 psize1(1);
-rect(u0, 6, 200,200,400,200);
+rect(u0, 6, 0,0,400,200);
 
 box2d.world.draw(u0, b2d.world);

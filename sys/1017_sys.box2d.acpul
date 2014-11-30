@@ -106,12 +106,22 @@ box2d
  box2d.set.linear.velocity
  # u0, vx,vy
  {
-  io(_0, 500372, _1, _2,_3, 0);
+  io(_0, 500373, _1, _2,_3, 0);
  };
  body.get.linear.velocity
  # u0 -> o0,o1
  {
-  io(_0, 500373, _1, 0,0,0);
+  io(_0, 500374, _1, 0,0,0);
+ };
+ box2d.set.angular.velocity
+ # u0, va
+ {
+  io(_0, 500374, _1, _2, 0,0);
+ };
+ body.get.angular.velocity
+ # u0
+ {
+  io(_0, 500375, _1, 0,0,0);
  };
 
 

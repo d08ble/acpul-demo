@@ -36,7 +36,7 @@ if (r7==bt.homebase) {
 };
 
 if (r7==bt.shop) {
- #l0:=0;
+ l0:=0;
 };
 
 if (r7==bt.homehealth) {

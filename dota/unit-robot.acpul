@@ -23,10 +23,19 @@ _ @3200;
 _ @sys.box2d;
 bb box2d.body;
 if (r0) {
+ body0 l0;
+ shape0 l1;
+ fixture0 l2;
+
  bb.def0(u0, box2d.dynamic, x,y, 0);
  bb.def1(u0, -delta.x, -delta.y,-5,0);
  bb.def3(u0, 0, 0,1,5);
- l0:=bb.create(u0, box2d.common.world);
+ body0:=bb.create(u0, box2d.common.world);
+
+ shape0:=box2d.shape.create.circle(u0);
+ box2d.shape.set.radius(u0, shape0, 10);
+
+
 };
 
 # CREATE BODY ]

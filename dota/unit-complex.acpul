@@ -9,6 +9,13 @@ r7:=p0;
 s:=0.2;
 t+=dt;
 
+OBJECT 3220;
+obj @OBJECT;
+bt obj.bots.types;
+
+if (r7==bt.homehealth) {
+};
+
 r0:=1;
 
 ### 3235 Unit::Complex.draw
@@ -16,7 +23,6 @@ r0:=1;
 b rect(u0, 6, _0*32-42,_1*32+70, _2*32,_3*32);
 
 OBJECT 3220;
-
 obj @OBJECT;
 bt obj.bots.types;
 

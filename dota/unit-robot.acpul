@@ -26,7 +26,7 @@ if (r0) {
  bb.def0(u0, box2d.dynamic, x,y, 0);
  bb.def1(u0, -delta.x, -delta.y,-5,0);
  bb.def3(u0, 0, 0,1,5);
- bb.create(u0, box2d.common.world);
+ l0:=bb.create(u0, box2d.common.world);
 };
 
 # CREATE BODY ]

@@ -62,7 +62,7 @@ if (r7==bt.homehealth) {
  color(u0, a*0.3,0,a*0.5,0.3);
  n mod(t,1);
  psize(u0, 5);
- point4(u0, 2, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc-60*n,y+50*sc);
+ point4(u0, 2, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc-160*n,y+50*sc);
  watch(n);
 };
 

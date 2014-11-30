@@ -17,7 +17,7 @@ Project Plan
 Game Design
 0. What do you want?
 
-The Game
+Game Logic
 1. Map, Unints, Minions, Towers, Base, Shop, Walls, Houses
 1.1 Minimap
 1.2 Skills buttons

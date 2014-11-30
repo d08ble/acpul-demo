@@ -15,4 +15,3 @@ gnet.mem.rd.a 8827;
 
 gnet.mem.wr.size 10;
 gnet.mem.rd.size 10*5;
-

@@ -35,14 +35,14 @@ if (r7==bt.homebase) {
 };
 
 if (r7==bt.shop) {
+ l0:=0;	
+};
+
+if (r7==bt.homehealth) {
  x 40;
  y 70;
  sc 2;
  point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
-};
-
-if (r7==bt.homehealth) {
- l0:=0;	
 };
 
 ### 3236 U::Complex::Crystal

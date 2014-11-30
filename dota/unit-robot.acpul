@@ -12,6 +12,8 @@ s:=0.2;
 #r:=sin(t)*10;
 #watch(t);
 k:=1;
+watch(p0);
+
 
 ### 3233 Unit::Robot.draw
 
@@ -69,8 +71,6 @@ kk sin(t*10)*10;
 x1 x+50;
 rect(u0, FF, x-2,y1, -10,-70+sin(t*10+pi)*10);  
 rect(u0, FF, x1+2,y1, 10,-70+kk);  
-
-watch(p0);
 
 # ROBOT ]
 

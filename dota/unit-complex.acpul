@@ -66,13 +66,20 @@ r0:=k==0;
 lt:=1;
 
 draw(r0, 3237);
-
+dx r5;
+dy r6;
+ds r7;
+if (r0) {
+ dx:=rnd(u0)-0.5;
+ dy:=rnd(u0)-0.5;
+ ds:=rnd(u0)-0.5;
+};
 k:=1;
 
 ### 3237 U::C::Crystal.Pulses.draw
 
 color(u0, 1,0,0,0.5);
-x 40;
-y 70;
-sc 2;
+x 40*r5;
+y 70*r6;
+sc 2+r7;
 point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);

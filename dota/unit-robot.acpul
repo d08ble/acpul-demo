@@ -26,8 +26,8 @@ body0 l0;
 shape0 l1;
 fixture0 l2;
 
-if (n<10) {
-n+=1;
+if (m<10) {
+m+=1;
 #if (r0) {
 
  bb.def0(u0, box2d.dynamic, x,y, 0);

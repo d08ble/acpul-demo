@@ -59,7 +59,6 @@ if (r7==bt.homehealth) {
  y 70;
  sc 2;
  point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
- watch(t);
 };
 
 ### 3236 U::C::Crystal.Pulses

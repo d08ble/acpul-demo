@@ -75,7 +75,7 @@ if (r0) {
  ds:=rnd(u0)-0.5;
 };
 k:=1;
-a:=0.5;
+a:=0;
 
 ### 3237 U::C::Crystal.Pulses.draw
 

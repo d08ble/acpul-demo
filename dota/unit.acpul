@@ -19,9 +19,11 @@ player.id p1;
 
 UNIT.ROBOT 3232;
 if (r0) { #hack!
+ if (subtype==ost.bot) {
+  node.new.this.ex(r0, UNIT.ROBOT, player.id);
+ };
  if (subtype==ost.player) {
   node.new.this.ex(r0, UNIT.ROBOT, player.id);
-  l0:=0;
  };
 };
 

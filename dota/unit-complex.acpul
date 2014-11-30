@@ -57,7 +57,7 @@ if (r7==bt.homehealth) {
  x 40;
  y 70;
  sc 2;
- color(u0, a*0.3,0.5+0.5*sin(t),a*0.5,0.3);
+ color(u0, a*0.3,0.1+0.2*sin(t),a*0.5,0.3);
  point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
 
  color(u0, a*0.3,0,a*0.5,0.6);

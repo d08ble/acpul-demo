@@ -19,7 +19,7 @@ _ @sys.node;
 if (r7==bt.homehealth) {
  if (rnd(u0) > 0.9) {
   Crystal.Pulses 3236;
-  node.new.this.ex(r0, Crystal.Pulses, 0);
+  node.new.this.ex(u0, Crystal.Pulses, 0);
  };
 };
 
@@ -71,6 +71,7 @@ k:=1;
 
 ### 3237 U::C::Crystal.Pulses.draw
 
+color(u0, 1,0,0,1);
 x 40;
 y 70;
 sc 2;

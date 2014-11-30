@@ -70,6 +70,8 @@ x1 x+50;
 rect(u0, FF, x-2,y1, -10,-70+sin(t*10+pi)*10);  
 rect(u0, FF, x1+2,y1, 10,-70+kk);  
 
+watch(p0);
+
 # ROBOT ]
 
 # FAKE UNIT DRAW ]

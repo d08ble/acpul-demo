@@ -53,6 +53,7 @@ bots
   tower 1;
   homebase 2;
   shop 3;
+  homehealth 4;
  };
 };
 players

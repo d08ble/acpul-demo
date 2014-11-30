@@ -7,7 +7,14 @@ draw(r0, 3233);
 t+=dt;
 s:=0.2;
 
-r7:=p0; # hack!
+if (r0) 
+{
+ r5:=rnd(r0);
+ r6:=rnd(r0);
+ r7:=rnd(r0);
+};
+
+#r7:=p0; # hack!
 
 #r:=(rnd(u0)-0.5)*5;
 #s:=0.2+rnd(u0)*0.3;

@@ -88,6 +88,21 @@ box2d
  {
   io(_0, 500312, _1, _2, 0,0);
  };
+ body.set.transform
+ # u0, x,y, angle
+ {
+  io(_0, 500370, _1,_2, _3, 0);
+ };
+ body.get.position
+ # u0 -> o0,o1
+ {
+  io(_0, 500371, _1, 0,0,0);
+ };
+ body.get.angle
+ # u0
+ {
+  io(_0, 500372, _1, 0,0,0);
+ };
 
  # COLLISION
   

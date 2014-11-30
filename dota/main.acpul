@@ -32,10 +32,17 @@ node.new.this.ex(r0, NETWORKING, 0);
 node.new.this.ex4(r0, OBJECT, obj.types.map, 250,150, 0);
 node.new.this.ex4(r0, OBJECT, obj.types.joystick, 0,0, 0);
 
-
 s:=0.45;
 x:=-80;
 y:=220;
+
+# PHYSICS [
+
+_ @sys.box2d;
+box2d.reset(u0);
+
+
+# PHYSICS ]
 
 k:=1;
 

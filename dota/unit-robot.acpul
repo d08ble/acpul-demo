@@ -13,7 +13,6 @@ s:=0.2;
 #watch(t);
 k:=1;
 
-
 ### 3233 Unit::Robot.draw
 
 # FAKE UNIT DRAW [

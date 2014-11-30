@@ -53,4 +53,4 @@ psize1(1);
 rect(u0, 6, 0,0,400,200);
 
 l0:=box2d.world.draw(u0, b2d.world);
-watch(l0);
+watch(b2d.world);

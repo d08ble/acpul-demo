@@ -52,7 +52,6 @@ if (r7==bt.shop) {
  l0:=0;
 };
 
-
 if (r7==bt.homehealth) {
  x 40;
  y 70;

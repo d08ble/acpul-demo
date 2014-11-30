@@ -16,6 +16,12 @@ if (r0)
 
 player.id p0;
 
+# CREATE BODY [
+
+
+
+# CREATE BODY ]
+
 #r:=(rnd(u0)-0.5)*5;
 #s:=0.2+rnd(u0)*0.3;
 #r:=sin(t)*10;

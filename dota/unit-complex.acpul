@@ -53,6 +53,8 @@ if (r7==bt.shop) {
 };
 
 if (r7==bt.homehealth) {
+ a 1;
+ color(u0, a*0.3,0,a*0.5,a);
  x 40;
  y 70;
  sc 2;

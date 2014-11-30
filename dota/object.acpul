@@ -198,7 +198,7 @@ y:=o1;
  {
   vx get(u0, gnet.mem.rd.a, player.id*gnet.mem.wr.size + 2)*gdt*30;
   vy get(u0, gnet.mem.rd.a, player.id*gnet.mem.wr.size + 3)*gdt*30;
-  box2d.body.set.linear.velocity(u0, vx,vy);
+  box2d.body.set.linear.velocity(u0, body0, vx,vy);
  }
 };
 

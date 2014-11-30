@@ -18,6 +18,10 @@ player.id p0;
 
 # CREATE BODY [
 
+_ @1010;
+_ @3200;
+_ @sys.box2d;
+bb box2d.body;
 
 
 # CREATE BODY ]

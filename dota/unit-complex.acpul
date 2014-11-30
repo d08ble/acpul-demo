@@ -71,7 +71,7 @@ if (r7==bt.homehealth) {
  triangle(u0, 3, x,y, x-30*sc+60*sc*n,y+50*sc-sin(n*pi)*20, x,y+100*sc);
 
  color(u0, a*0.3,0,a*0.5,0.3);
- point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
+ #point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
 };
 
 ### 3236 U::C::Crystal.Pulses

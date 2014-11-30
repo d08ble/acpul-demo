@@ -5,7 +5,6 @@ box2d
  kinematic 1;
  dynamic 2;
 
-
  bodyDef.DESCRIPTION # info only (types, ranges...)
  {
   type     {static;kinematic;dynamic;};

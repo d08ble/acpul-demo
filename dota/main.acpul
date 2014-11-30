@@ -40,7 +40,8 @@ y:=220;
 # PHYSICS [
 
 _ @sys.box2d;
-box2d.reset(u0);
+# 
+box2d.reset(r0);
 
 # CREATE WORLD [
 gravity.x 0;

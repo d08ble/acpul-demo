@@ -24,7 +24,8 @@ nodenew(r0, OBJECT, ot.unit, 100,100, obj.teams.sys, ost.bot, obt.homebase,0,0);
 nodenew(r0, OBJECT, ot.unit, 200,50, team, ost.bot, obt.tower,0,0);
 nodenew(r0, OBJECT, ot.unit, 200,200, team, ost.bot, obt.tower,0,0);
 nodenew(r0, OBJECT, ot.unit, 50,200, team, ost.bot, obt.tower,0,0);
-nodenew(r0, OBJECT, ot.unit, 10,10, team, ost.bot, obt.shop,0,0);
+nodenew(r0, OBJECT, ot.unit, 10,100, team, ost.bot, obt.shop,0,0);
+nodenew(r0, OBJECT, ot.unit, 10,10, team, ost.bot, obt.homehealth,0,0);
 
 nodenew(r0, OBJECT, ot.unit, 50,50, team, ost.player, 0,heroes.debug,0);
 nodenew(r0, OBJECT, ot.unit, 70,50, team, ost.player, 1,heroes.cat,0);

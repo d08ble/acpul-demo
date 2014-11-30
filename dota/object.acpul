@@ -94,6 +94,7 @@ MAP 3224;
 UNIT 3230;
 JOYSTICK 3270;
 
+
 if (r0)
 {
  if (type==types.map) { node.new.this.ex(r0, MAP, 0);};

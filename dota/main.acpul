@@ -15,7 +15,7 @@
 
 # 3232,3233 *Unit::Robot
 # 3234,3235 *Unit::Complex
-# 3236		 - Crystal.Effect
+# 3236,3237	 - Crystal.Effect
 
 r0:=k==0;
 

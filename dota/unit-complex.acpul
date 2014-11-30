@@ -14,11 +14,12 @@ obj @OBJECT;
 bt obj.bots.types;
 
 _ @1010;
-
+_ @sys.node;
 
 if (r7==bt.homehealth) {
  if (rnd(u0) > 0.9) {
-  
+  Crystal.Pulses
+  node.new.this.ex(r0, Crystal.Pulses, 0);
  };
 };
 
@@ -59,7 +60,7 @@ if (r7==bt.homehealth) {
 };
 
 
-### 3236 U::Complex::Crystal
+### 3236 U::C::Crystal.Pulses
 
 r0:=k==0;
 lt:=1;
@@ -68,7 +69,7 @@ draw(r0, 3237);
 
 k:=1;
 
-### 3237 U::Complex::Crystal.draw
+### 3237 U::C::Crystal.Pulses.draw
 
 x 40;
 y 70;

@@ -80,6 +80,6 @@ k:=1;
 
 color(u0, 1,0,0,0.5);
 x 40*r5;
-y 70*r6;
+y 70*r6+p;
 sc 2+r7;
 point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);

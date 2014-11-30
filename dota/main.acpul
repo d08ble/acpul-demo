@@ -71,13 +71,3 @@ psize(u0, 1);
 color(u0, 1,1,0,0);
 rect(u0, 2, 0,0,768,1024);
 
-_ @3200;
-_ @1010;
-_ @sys.box2d;
-_ @sys.box2d.test;
-
-color(u0, 0.5, 0.1, 0.5, 0.11);
-psize1(1);
-rect(u0, 6, 200,200,400,200);
-
-box2d.world.draw(u0, b2d.world);

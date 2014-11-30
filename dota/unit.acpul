@@ -21,7 +21,7 @@ UNIT.ROBOT 3232;
 UNIT.COMPLEX 3234;
 if (r0) { #hack!
  if (subtype==ost.bot) {
-#  node.new.this.ex(r0, UNIT.COMPLEX, 0);
+  node.new.this.ex(r0, UNIT.COMPLEX, 0);
  };
  if (subtype==ost.player) {
   node.new.this.ex(r0, UNIT.ROBOT, player.id);

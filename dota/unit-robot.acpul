@@ -14,7 +14,7 @@ if (r0)
  r7:=rnd(r0);
 };
 
-#r7:=p0; # hack!
+player.id p0;
 
 #r:=(rnd(u0)-0.5)*5;
 #s:=0.2+rnd(u0)*0.3;
@@ -50,7 +50,6 @@ rect(u0, 6, x+50/2-10,y+110+50*body.h, 20,20);
 #color(u0, 0.2, 0.5*sin(t), 0, (1*(sin(t*10))+1)/2);
 #color(u0, rnd(u0), rnd(u0), rnd(u0), 1);
 #color(u0, 1, 0, 0.5, 1);
-#color(u0, 1, r7/5, 0.5, 1); #hack!
 color(u0, r5, r6, r7, 1);
 
 rect(u0, 6, x+50/2-10+2*sin(t*10),y+120+50*body.h, 5,5);

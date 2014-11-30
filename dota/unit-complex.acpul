@@ -77,7 +77,7 @@ if (r7==bt.homehealth) {
 r0:=k==0;
 lt:=1;
 
-draw(r0, 3237);
+#draw(r0, 3237);
 dx r5;
 dy r6;
 ds r7;

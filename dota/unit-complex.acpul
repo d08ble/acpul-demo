@@ -18,7 +18,7 @@ _ @sys.node;
 
 if (r7==bt.homehealth) {
  if (rnd(u0) > 0.9) {
-  Crystal.Pulses
+  Crystal.Pulses 3236;
   node.new.this.ex(r0, Crystal.Pulses, 0);
  };
 };

@@ -29,6 +29,10 @@ Game Logic
 2. Collision AI
 3. Art Update
 
+- Object Static Physics
+- Game Pad Walls
+- Static Object Types
+
 Platform
 1. Strings
 1.1 ACPUL Strings support

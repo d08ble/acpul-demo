@@ -48,6 +48,11 @@ gravity.y 0; #DOTA reality 0 m/s
 b2d.world:=box2d.world(u0, gravity.x, gravity.y);
 # CREATE WORLD ]
 
+ dt 0.1;
+ velocity.iteractions 8;
+ position.iteractions 3;
+
+ box2d.step(u0, dt, velocity.iteractions, position.iteractions);
 
 # PHYSICS ]
 

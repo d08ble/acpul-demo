@@ -198,6 +198,7 @@ box2d.body.get.position(u0, body0);
 x:=o0;
 y:=o1;
 
+
  if (subtype==subtypes.player)
  {
   vx get(u0, gnet.mem.rd.a, player.id*gnet.mem.wr.size + 2)*gdt*3000;

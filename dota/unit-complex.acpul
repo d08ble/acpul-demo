@@ -64,7 +64,6 @@ if (r7==bt.homehealth) {
  psize(u0, 5);
  point4(u0, 6, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
  tri(u0, 2, x,y, x+30*sc-60*sc*n,y+50*sc, x,y+100*sc, );
- watch(n);
 };
 
 ### 3236 U::C::Crystal.Pulses

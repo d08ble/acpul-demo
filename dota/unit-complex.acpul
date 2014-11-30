@@ -78,7 +78,7 @@ k:=1;
 
 ### 3237 U::C::Crystal.Pulses.draw
 
-color(u0, 1,abs(dx*dy),0,0.8-p*0.8);
+color(u0, 1,abs(dx+dy),0,0.8-p*0.8);
 x 40+100*r5+sin(r5+p*10)*r6/2;
 y 140+80*r6+p*100;
 sc 0.7*(2+r7);

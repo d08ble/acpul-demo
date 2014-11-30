@@ -13,6 +13,9 @@ OBJECT 3220;
 obj @OBJECT;
 bt obj.bots.types;
 
+_ @1010;
+
+
 if (r7==bt.homehealth) {
  if (rnd(u0) > 0.9) {
   

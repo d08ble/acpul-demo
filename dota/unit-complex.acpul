@@ -95,4 +95,4 @@ color(u0, a*0.3,0,a*0.5,a);
 x 40+100*r5+sin(r5+p*10)*r6*10;
 y 140+100*r6+p*100;
 sc 0.7*(2+r7)*p;
-point4(u0, 1, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);
+point4(u0, 0, x,y, x-30*sc,y+50*sc, x,y+100*sc, x+30*sc,y+50*sc);

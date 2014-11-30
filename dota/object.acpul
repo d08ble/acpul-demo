@@ -189,7 +189,7 @@ if (r0) {
  box2d.fixture.def(u0, 0.2, 0, 0, 0);
  fixture0:=box2d.fixture.create(u0, body0, shape0);
 };
-box2d.body.get.position(u0, body0);
+#box2d.body.get.position(u0, body0);
 #x:=o0;
 #y:=o1;
 

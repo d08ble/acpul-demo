@@ -168,9 +168,9 @@ _ @1010;
 _ @3200;
 _ @sys.box2d;
 bb box2d.body;
-body0 l0;
-shape0 l1;
-fixture0 l2;
+body0 l10;
+shape0 l11;
+fixture0 l12;
 
 if (r0) {
 
@@ -189,6 +189,9 @@ if (r0) {
  box2d.fixture.def(u0, 0.2, 0, 0, 0);
  fixture0:=box2d.fixture.create(u0, body0, shape0);
 };
+box2d.body.get.position(u0, body0);
+x:=o0;
+y:=o1;
 
 # CREATE BODY ]
 

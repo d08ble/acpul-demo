@@ -27,7 +27,7 @@ if (r0) {
  shape0 l1;
  fixture0 l2;
 
- bb.def0(u0, box2d.dynamic, x,y, 0);
+ bb.def0(u0, box2d.dynamic, x+100,y+100, 0);
  bb.def1(u0, 0,0, 0,0);
  bb.def3(u0, 0, 0,1,5);
  body0:=bb.create(u0, b2d.world);

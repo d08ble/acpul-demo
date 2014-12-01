@@ -30,8 +30,9 @@ Game Logic
 3. Art Update
 
 - Object Static Physics
-- Game Pad Walls
 - Static Object Types
+- Game Pad Walls
+- Shader: Lighting Heal Crystal
 
 Platform
 1. Strings

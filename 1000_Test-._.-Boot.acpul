@@ -79,8 +79,8 @@ zoomA
  i mod(t, 38);
  if(i<10,zoom1, if(i<20,zoom2, if(i<20,zoom4,0)));
 };
-zoom1;
-#zoom2;
+#zoom1;
+zoom2;
 #zoom3;
 #zoom4;
 #zoomA;

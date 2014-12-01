@@ -64,9 +64,6 @@ zoom3
  i mod(t, 30);
  if(i<10,zoom1, if(i<20,zoom2,0));
 };
-#zoom1;
-#zoom2;
-#zoom3;
 
 zoom4
 {
@@ -75,6 +72,17 @@ zoom4
  s:=5;
 };
 zoom4;
+
+zoomA
+{
+ i mod(t, 38);
+ if(i<10,zoom1, if(i<20,zoom2,if(i<20,zoom4,0));
+};
+#zoom1;
+#zoom2;
+#zoom3;
+#zoom4;
+#zoomA;
 
 #x:=300;y:=100;s:=0.4;r:=-2;
 #x:=300;y:=100;s:=0.2;r:=10;

@@ -763,7 +763,7 @@ void main( void )
 // "Seascape" by Alexander Alekseev aka TDM - 2014
 // License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
-const int NUM_STEPS = 8;
+const int NUM_STEPS = 1;
 const float PI      = 3.1415;
 const float EPSILON = 1e-3;
 float EPSILON_NRM   = 0.1 / iResolution.x;

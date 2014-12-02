@@ -1474,7 +1474,8 @@ vec3 raymarch( in vec3 ro, in vec3 rd )
     float t = 0.0;
 
     // dithering    
-    t += 0.05*texture2D( iChannel0, gl_FragCoord.xy/iChannelResolution[0].x ).x;
+//    t += 0.05*texture2D( iChannel0, gl_FragCoord.xy/iChannelResolution[0].x ).x;
+    t += 0.05;
     
     for( int i=0; i<100; i++ )
     {

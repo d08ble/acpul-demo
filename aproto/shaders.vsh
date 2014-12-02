@@ -1607,8 +1607,8 @@ void main(void)
     for(float i = 0.0; i < 10.0; i++) {
         
         uv.y += (0.07 * sin(uv.x + i/7.0 + iGlobalTime ));
-        wave_width = abs(1.0 / (150.0 * uv.y));
-        wave_color += vec3(wave_width * 1.9, wave_width, wave_width * 0.1);
+        wave_width = abs(1.0 / (150.0 * uv.y))/2;
+        wave_color += vec3(wave_width * 1.9, wave_width, wave_width * 1.5);
     }
     
     final_color = bg_color + wave_color;

@@ -1057,6 +1057,7 @@ uniform samplerXX iChannel0..3;          // input channel. XX = 2D/Cube
 uniform vec4      iDate;                 // (year, month, day, time in seconds)
 uniform float     iSampleRate;           // sound sample rate (i.e., 44100)
 
+### 37103:S Fire.fsh
 
 float snoise(vec3 uv, float res)
 {
@@ -1097,6 +1098,8 @@ void main(void)
     }
     gl_FragColor = vec4( color, pow(max(color,0.),2.)*0.4, pow(max(color,0.),3.)*0.15 , 1.0);
 }
+
+### 37104:S ---
 
 # Fire ]
 

@@ -1059,6 +1059,9 @@ uniform float     iSampleRate;           // sound sample rate (i.e., 44100)
 
 ### 37103:S Fire.fsh
 
+#define iGlobalTime CC_Time[3]
+#define iResolution vec2(200.0) 
+
 float snoise(vec3 uv, float res)
 {
     const vec3 s = vec3(1e0, 1e2, 1e3);
@@ -1558,7 +1561,7 @@ _ @sys.node;
 _ @sys.display;     
 
 #node.ex.shader.use(u0, 37100, 37101);
-node.ex.shader.use(u0, 37100, 37102);
+node.ex.shader.use(u0, 37100, 37103);
 node.ex.gl.rect(u0, 0,0, 200,200);
 
 ### 37002 ---

@@ -1421,6 +1421,8 @@ void main(void)
 
 ### 37102:S Hellfire.vsh
 
+#define iGlobalTime CC_Time[3]
+#define iResolution vec2(200.0) 
 
 // Created by inigo quilez - iq/2013
 // License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
@@ -1496,8 +1498,6 @@ vec3 raymarch( in vec3 ro, in vec3 rd )
 
 void main(void)
 {
-    float iGlobalTime = CC_Time[3];
-    vec2 iResolution = vec2(200.0); 
 
     vec2 q = gl_FragCoord.xy / iResolution.xy;
     vec2 p = -1.0 + 2.0*q;

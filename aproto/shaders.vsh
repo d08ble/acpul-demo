@@ -1420,6 +1420,8 @@ void main(void)
 # Hellfire [
 
 ### 37102:S Hellfire.vsh
+
+
 // Created by inigo quilez - iq/2013
 // License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
@@ -1493,12 +1495,15 @@ vec3 raymarch( in vec3 ro, in vec3 rd )
 
 void main(void)
 {
+    float iGlobalTime = CC_Time[3];
+    vec2 iResolution = vec2(200.0); 
+
     vec2 q = gl_FragCoord.xy / iResolution.xy;
     vec2 p = -1.0 + 2.0*q;
     p.x *= iResolution.x/ iResolution.y;
     
     vec2 mo = iMouse.xy / iResolution.xy;
-    if( iMouse.w<=0.00001 ) mo=vec2(0.0);
+//    if( iMouse.w<=0.00001 ) mo=vec2(0.0);
     
     // camera
     vec3 ro = 4.0*normalize(vec3(cos(3.0*mo.x), 1.4 - 1.0*(mo.y-.1), sin(3.0*mo.x)));

@@ -1548,7 +1548,7 @@ node.ex.gl.rect(u0, 0,0, 200,200);
 
 ### 37002 ---
 
-# Waves [
+// Waves [
 
 ### 37100:S Waves.vsh
 
@@ -1616,4 +1616,4 @@ void main(void)
     gl_FragColor = vec4(1.0,1.0,1.0,1.0);
 }
 
-# Waves ]
+// Waves ]

@@ -1525,6 +1525,16 @@ void main(void)
 
 # Hellfire ]
 
+### 37000 shader-test
+
+r0:=k==0;
+
+draw(r0, 37001);
+
+k:=1;
+
+### 37001 shader-test.draw
+
 # Waves [
 
 ### 37100:S Waves.vsh

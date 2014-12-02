@@ -1527,7 +1527,7 @@ void main(void)
 
 # Waves [
 
-### 37000:S Waves.vsh
+### 37100:S Waves.vsh
 
 attribute vec4 a_position;
 attribute vec2 a_texCoord;
@@ -1540,8 +1540,7 @@ void main()
     v_texCoord = a_texCoord;
 }
 
-
-### 37001:S Waves.fsh
+### 37101:S Waves.fsh
 
 vec3 COLOR1 = vec3(0.0, 0.0, 0.3);
 vec3 COLOR2 = vec3(0.5, 0.0, 0.0);

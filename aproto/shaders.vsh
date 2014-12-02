@@ -752,7 +752,7 @@ void main( void )
 }
 
 # Elevated ]
-# Water [
+// Water [
 
 ### 37105:S ---
 
@@ -945,7 +945,11 @@ void main(void) {
     // post
     gl_FragColor = vec4(pow(color,vec3(0.75)), 1.0);
 }
-# Water ]
+
+### 37106:S ---
+
+// Water ]
+
 # Sun [
 uniform vec3      iResolution;           // viewport resolution (in pixels)
 uniform float     iGlobalTime;           // shader playback time (in seconds)
@@ -1051,8 +1055,6 @@ void main(void)
     gl_FragColor.rgb    = vec3( f * ( 0.75 + brightness * 0.3 ) * orange ) + starSphere + corona * orange + starGlow * orangeRed;
     gl_FragColor.a      = 1.0;
 }
-
-### 37106:S ---
 
 # Sun ]
 # Fire [

@@ -757,7 +757,8 @@ void main( void )
 ### 37105:S ---
 
 #define iGlobalTime CC_Time[3]
-#define iResolution vec2(200.0) 
+#define iResolution vec2(200.0)
+#define iMouse vec2(0.5)
 
 // "Seascape" by Alexander Alekseev aka TDM - 2014
 // License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.

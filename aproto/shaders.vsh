@@ -1477,7 +1477,7 @@ vec3 raymarch( in vec3 ro, in vec3 rd )
 //    t += 0.05*texture2D( iChannel0, gl_FragCoord.xy/iChannelResolution[0].x ).x;
     t += 0.05;
     
-    for( int i=0; i<50; i++ )
+    for( int i=0; i<10; i++ )
     {
         if( sum.a > 0.99 ) continue;
         
@@ -1514,8 +1514,10 @@ void main(void)
     float cr = 0.5*cos(0.7*iGlobalTime);
     
     // shake        
-    ro += 0.5;//*(-1.0+2.0*texture2D( iChannel0, iGlobalTime*vec2(0.010,0.014) ).xyz);
-    ta += 0.5;//*(-1.0+2.0*texture2D( iChannel0, iGlobalTime*vec2(0.013,0.008) ).xyz);
+//    ro += 0.1*(-1.0+2.0*texture2D( iChannel0, iGlobalTime*vec2(0.010,0.014) ).xyz);
+//    ta += 0.1*(-1.0+2.0*texture2D( iChannel0, iGlobalTime*vec2(0.013,0.008) ).xyz);
+    ro += 0.7;
+    ta += 0.6;
     
     // build ray
     vec3 ww = normalize( ta - ro);

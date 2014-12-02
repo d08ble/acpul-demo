@@ -1504,6 +1504,7 @@ void main(void)
     vec2 p = -1.0 + 2.0*q;
     p.x *= iResolution.x/ iResolution.y;
     
+    vec2 mo = vec2(0.5);
 //    vec2 mo = iMouse.xy / iResolution.xy;
 //    if( iMouse.w<=0.00001 ) mo=vec2(0.0);
     

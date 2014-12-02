@@ -1582,7 +1582,7 @@ float BLOCK_WIDTH = 0.01;
 
 void main(void)
 {
-    vec2 uv = gl_FragCoord.xy / iResolution.xy;
+/*    vec2 uv = gl_FragCoord.xy / iResolution.xy;
     
     // To create the BG pattern
     vec3 final_color = vec3(1.0);
@@ -1612,7 +1612,8 @@ void main(void)
     final_color = bg_color + wave_color;
     
     
-    gl_FragColor = vec4(final_color, 1.0);
+    gl_FragColor = vec4(final_color, 1.0);*/
+    gl_FragColor = vec4(1.0,1.0,1.0,1.0);
 }
 
 # Waves ]

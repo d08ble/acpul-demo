@@ -1530,17 +1530,28 @@ void main(void)
 ### 37100:S Waves.vsh
 
 attribute vec4 a_position;
-attribute vec2 a_texCoord;
+//attribute vec2 a_texCoord;
 
-varying mediump vec2 v_texCoord;
+//varying mediump vec2 v_texCoord;
 
 void main()
 {
     gl_Position = CC_MVPMatrix * a_position;
-    v_texCoord = a_texCoord;
+//    v_texCoord = a_texCoord;
 }
 
 ### 37101:S Waves.fsh
+
+#ifdef GL_ES
+precision lowp float;
+#endif
+
+//varying vec2 v_texCoord
+
+//uniform sampler2D p0;
+
+//gl_FragColor = texture2D(p0, v_texCoord);
+
 
 vec3 COLOR1 = vec3(0.0, 0.0, 0.3);
 vec3 COLOR2 = vec3(0.5, 0.0, 0.0);

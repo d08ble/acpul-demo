@@ -1604,7 +1604,7 @@ void main(void)
     float wave_width = 0.01;
     uv  = -1.0 + 2.0 * uv;
     uv.y += 0.1;
-    for(float i = 0.0; i < 10.0; i++) {
+    for(float i = 0.0; i < 100.0; i++) {
         
         uv.y += (0.17 * sin(uv.x + i/7.0 + iGlobalTime ));
         wave_width = abs(1.0 / (150.0 * uv.y))/2.0;

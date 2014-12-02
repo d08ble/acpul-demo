@@ -1535,8 +1535,8 @@ k:=1;
 
 ### 37001 shader-test.draw
 
+_ @1010;
 _ @sys.display;     
-
 
 
 ### 37002 ---

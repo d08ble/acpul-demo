@@ -1536,14 +1536,14 @@ k:=1;
 
 ### 37001 shader-test.draw
 
+color(u0, 1,1,1,1);
+rect(u0, 2, 0,0, 200,200);
+
 _ @1010;
 _ @sys.display;     
 
 #node.ex.shader.use(u0, 37100, 37101);
 #node.ex.gl.rect(u0, 0,0, 200,200);
-
-color(u0, 1,1,1,1);
-rect(u0, 6, 0,0, 200,200);
 
 ### 37002 ---
 

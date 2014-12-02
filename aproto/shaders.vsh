@@ -1530,7 +1530,7 @@ void main(void)
 r0:=k==0;
 
 draw(r0, 37001);
-
+x:=-100;
 k:=1;
 
 ### 37001 shader-test.draw

@@ -1426,7 +1426,7 @@ void main(void)
 
 #define iGlobalTime CC_Time[3]
 #define iResolution vec2(200.0) 
-int a = {};
+int aqwer = {};
 // Created by inigo quilez - iq/2013
 // License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 

@@ -107,6 +107,8 @@ node.new.this.ex(r0, 11000, 0);
 DOTA.MAIN 3202;
 node.new.this.ex(r0, DOTA.MAIN, 0);
 
+node.new.this.ex(r0, 37000, 0);
+
 #watch(r0);
 
 _ @sys.cpu;

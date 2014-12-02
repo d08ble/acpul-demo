@@ -756,7 +756,7 @@ void main( void )
 
 ### 37105:S ---
 
-#define iGlobalTime CC_Time[3]
+#define iGlobalTime CC_Time[3]*10.0
 #define iResolution vec2(200.0)
 #define iMouse vec2(0.5)
 

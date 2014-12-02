@@ -33,6 +33,7 @@ Game Logic
 - Static Object Types
 - Game Pad Walls
 - Shader: Lighting Heal Crystal
+- Shader Experiments
 
 Platform
 1. Strings

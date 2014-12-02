@@ -1527,7 +1527,7 @@ void main(void)
 
 # Waves [
 
-### 37000:S Waves.fsh
+### 37001:S Waves.fsh
 
 vec3 COLOR1 = vec3(0.0, 0.0, 0.3);
 vec3 COLOR2 = vec3(0.5, 0.0, 0.0);

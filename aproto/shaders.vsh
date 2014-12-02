@@ -1417,7 +1417,7 @@ void main(void)
 }
 
 # Muto ]
-# Hellfire [
+// Hellfire [
 
 ### 37102:S Hellfire.vsh
 
@@ -1530,7 +1530,7 @@ void main(void)
     gl_FragColor = vec4( col, 1.0 );
 }
 
-# Hellfire ]
+// Hellfire ]
 
 ### 37000 shader-test
 

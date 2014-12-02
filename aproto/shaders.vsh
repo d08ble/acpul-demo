@@ -1582,6 +1582,7 @@ float BLOCK_WIDTH = 0.01;
 
 void main(void)
 {
+    vec2 iGlobalTime = 0;
     vec2 iResolution = vec2(100.0); 
     vec2 uv = gl_FragCoord.xy / iResolution.xy;
     

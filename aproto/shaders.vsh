@@ -1538,8 +1538,11 @@ k:=1;
 _ @1010;
 _ @sys.display;     
 
-node.ex.shader.use(u0, 37100, 37101);
+#node.ex.shader.use(u0, 37100, 37101);
+#node.ex.gl.rect(u0, 0,0, 200,200);
 
+color(u0, 1,1,1,1);
+rect(u0, 0,0, 1000,1000);
 
 ### 37002 ---
 

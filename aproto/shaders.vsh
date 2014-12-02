@@ -1535,6 +1535,12 @@ k:=1;
 
 ### 37001 shader-test.draw
 
+_ @sys.display;     
+
+
+
+### 37002 ---
+
 # Waves [
 
 ### 37100:S Waves.vsh

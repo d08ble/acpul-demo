@@ -1583,7 +1583,7 @@ float BLOCK_WIDTH = 0.01;
 void main(void)
 {
     float iGlobalTime = CC_Time[3];
-    vec2 iResolution = vec2(100.0); 
+    vec2 iResolution = vec2(200.0); 
     vec2 uv = gl_FragCoord.xy / iResolution.xy;
     
     // To create the BG pattern

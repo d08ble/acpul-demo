@@ -753,6 +753,12 @@ void main( void )
 
 # Elevated ]
 # Water [
+
+### 37105:S ---
+
+#define iGlobalTime CC_Time[3]
+#define iResolution vec2(200.0) 
+
 // "Seascape" by Alexander Alekseev aka TDM - 2014
 // License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
@@ -1044,6 +1050,8 @@ void main(void)
     gl_FragColor.rgb    = vec3( f * ( 0.75 + brightness * 0.3 ) * orange ) + starSphere + corona * orange + starGlow * orangeRed;
     gl_FragColor.a      = 1.0;
 }
+
+### 37106:S ---
 
 # Sun ]
 # Fire [

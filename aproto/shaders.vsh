@@ -1540,6 +1540,7 @@ color(u0, 0.1,0.1,0.1,0.1);
 rect(u0, 6, 0,0, 200,200);
 
 _ @1010;
+_ @sys.node;
 _ @sys.display;     
 
 node.ex.shader.use(u0, 37100, 37101);

@@ -1565,9 +1565,9 @@ void main()
 
 ### 37101:S Waves.fsh
 
-#ifdef GL_ES
-precision lowp float;
-#endif
+//#ifdef GL_ES
+//precision lowp float;
+//#endif
 
 //varying vec2 v_texCoord
 

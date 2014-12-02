@@ -1418,6 +1418,8 @@ void main(void)
 
 # Muto ]
 # Hellfire [
+
+### 37102:S Hellfire.vsh
 // Created by inigo quilez - iq/2013
 // License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 
@@ -1543,7 +1545,8 @@ _ @1010;
 _ @sys.node;
 _ @sys.display;     
 
-node.ex.shader.use(u0, 37100, 37101);
+#node.ex.shader.use(u0, 37100, 37101);
+node.ex.shader.use(u0, 37100, 37102);
 node.ex.gl.rect(u0, 0,0, 200,200);
 
 ### 37002 ---

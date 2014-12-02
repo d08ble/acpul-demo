@@ -1514,8 +1514,8 @@ void main(void)
     float cr = 0.5*cos(0.7*iGlobalTime);
     
     // shake        
-    ro += 0.1*(-1.0+2.0*texture2D( iChannel0, iGlobalTime*vec2(0.010,0.014) ).xyz);
-    ta += 0.1*(-1.0+2.0*texture2D( iChannel0, iGlobalTime*vec2(0.013,0.008) ).xyz);
+    ro += 0.1;//*(-1.0+2.0*texture2D( iChannel0, iGlobalTime*vec2(0.010,0.014) ).xyz);
+    ta += 0.1;//*(-1.0+2.0*texture2D( iChannel0, iGlobalTime*vec2(0.013,0.008) ).xyz);
     
     // build ray
     vec3 ww = normalize( ta - ro);

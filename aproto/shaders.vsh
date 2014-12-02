@@ -1432,8 +1432,9 @@ float noise( in vec3 x )
     f = f*f*(3.0-2.0*f);
     
     vec2 uv = (p.xy+vec2(37.0,17.0)*p.z) + f.xy;
-    vec2 rg = texture2D( iChannel0, (uv+ 0.5)/256.0, -100.0 ).yx;
-    return mix( rg.x, rg.y, f.z );
+//    vec2 rg = texture2D( iChannel0, (uv+ 0.5)/256.0, -100.0 ).yx;
+//    return mix( rg.x, rg.y, f.z );
+    return mix( uv.x, uv.y, f.z );
 }
 
 vec4 map( vec3 p )

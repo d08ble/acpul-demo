@@ -2807,6 +2807,9 @@ void main()
 ### 37036:S GPU.Benchmark.fsh
 
 // http://www.youi.tv/mobile-gpu-floating-point-accuracy-variances/
+#ifdef GL_ES
+precision mediump float;
+#endif
 
 //uniform vec2 resolution;
 void main( void )

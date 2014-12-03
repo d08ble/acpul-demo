@@ -1830,7 +1830,7 @@ void main(void)
 
 ### 37012:S Lines1.fsh
 
-#define time CC_Time[3]*10.0
+#define time CC_Time[3]*1.0
 #define resolution vec2(400.0)
 #define mouse vec2(0.5)
 

@@ -2541,7 +2541,7 @@ precision mediump float;
 
 #define MAX_ITER 3
 void main( void ) {
-    vec2 sp = vec2(.1, .1); //surfacePosition;//vec2(.4, .7);
+    vec2 sp = vec2(time); //vec2(.1, .1); //surfacePosition;//vec2(.4, .7);
     vec2 p = sp*6.0 - vec2(125.0);
     vec2 i = p;
     float c = 1.0;

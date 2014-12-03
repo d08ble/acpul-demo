@@ -1993,7 +1993,7 @@ void main( void )
 ### 37018:S Light1.fsh
 
 #define time CC_Time[3]*1.0
-#define resolution vec2(600.0)
+#define resolution vec2(400.0)
 #define mouse vec2(0.5)
 
 #ifdef GL_ES

@@ -2,7 +2,7 @@
 ### 37107:S ---
 
 #define iGlobalTime CC_Time[3]*10.0
-#define iResolution vec2(100.0)
+#define iResolution vec2(400.0)
 #define iMouse vec2(0.5)
 
 float noise(vec3 p) //Thx to Las^Mercury

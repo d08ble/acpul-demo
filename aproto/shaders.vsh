@@ -2266,12 +2266,12 @@ precision mediump float;
 
 void main(void)
 {
+    
     //get coords and direction
     vec2 uv=gl_FragCoord.xy/resolution.xy*.2;
     uv.y*=resolution.y/resolution.x;
     vec3 dir=vec3(uv*zoom,1.);
     float time=time*speed+.25;
-
 
     //mouse rotation
     float a1=.5+mouse.x/resolution.x*2.;

@@ -2592,7 +2592,8 @@ void main( void ) {
     
     y += 1./length(665.*length(position - vec2(0., position.y)));
     
-    float saule = 1./length(65.*length(position - vec2(0, 0.5)));
+    float lpy = sin(time);
+    float saule = 1./length(65.*length(position - vec2(0, lpy)));
     
     vec4 vsaule = vec4(saule, saule, saule*5., 1.0);
     vec4 vstari = vec4(position.y*0.5 - y, y, y*5., 1.0);

@@ -2538,10 +2538,11 @@ precision mediump float;
 
 //uniform float time;
 //varying vec2 surfacePosition;
+varying vec2 v_texCoord;
 
 #define MAX_ITER 3
 void main( void ) {
-    vec2 sp = vec2(time); //vec2(.1, .1); //surfacePosition;//vec2(.4, .7);
+    vec2 sp = v_texCoord; //vec2(.1, .1); //surfacePosition;//vec2(.4, .7);
     vec2 p = sp*6.0 - vec2(125.0);
     vec2 i = p;
     float c = 1.0;

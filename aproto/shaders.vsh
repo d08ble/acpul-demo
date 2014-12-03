@@ -2808,7 +2808,7 @@ void main()
 
 // http://www.youi.tv/mobile-gpu-floating-point-accuracy-variances/
 #ifdef GL_ES
-precision mediump float;
+precision lowp float;
 #endif
 
 //uniform vec2 resolution;

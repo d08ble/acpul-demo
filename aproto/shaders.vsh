@@ -2690,6 +2690,7 @@ float InterpolatedNoise(float x, float y)
     return(lerp(i1, i2, fractional_Y));
 }
 
+
 /*
 
 

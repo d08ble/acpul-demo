@@ -2277,13 +2277,13 @@ void main(void)
     float a2=.8+mouse.y/resolution.y*2.;
     mat2 rot1=mat2(cos(a1),sin(a1),sin(a1),cos(a1));
     mat2 rot2=mat2(cos(a2),sin(a2),sin(a2),cos(a2));
-    dir.xz*=rot1;
+/*    dir.xz*=rot1;
     dir.xy*=rot2;
     vec3 from=vec3(1.,.5,0.5);
-//    from+=vec3(time*2.,time,-2.);
+    from+=vec3(time*2.,time,-2.);
     from.xz*=rot1;
     from.xy*=-rot2;
-    
+  */  
     //volumetric rendering
     float s=0.1,fade=1.;
     vec3 v=vec3(0.);

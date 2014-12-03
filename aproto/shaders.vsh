@@ -2671,7 +2671,10 @@ void main( void ) {
 #endif
     float px = v_texCoord.x;
     float py = v_texCoord.y;
-    gl_FragColor = vec4(px,0.,py,0.);
+    float r = px;
+    float g = 0;
+    float b = 0;
+    gl_FragColor = vec4(r,g,b,0.);
 }
 
 // Texture.T1 ]

@@ -2258,8 +2258,6 @@ precision mediump float;
 #define tile   0.850
 #define speed  0.010 
 
-
-
 #define brightness 0.0015
 #define darkmatter 0.300
 #define distfading 0.730
@@ -2308,7 +2306,7 @@ void main(void)
         fade*=distfading; // distance fading
         s+=stepsize;
     }*/
-    v=mix(vec3(length(v)),v,saturation); //color adjust
+//    v=mix(vec3(length(v)),v,saturation); //color adjust
     vec3 col = v*.01;
     if(col.x+col.y+col.z<0.6)col = vec3(0.0,0.,1.);
     gl_FragColor = vec4(v*.04,1.);

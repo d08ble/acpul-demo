@@ -108,7 +108,7 @@ DOTA.MAIN 3202;
 node.new.this.ex(r0, DOTA.MAIN, 0);
 
 SHADER.TEST 37000;
-#node.new.this.ex(r0, SHADER.TEST, 0);
+node.new.this.ex(r0, SHADER.TEST, 0);
 
 #watch(r0);
 

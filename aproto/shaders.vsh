@@ -2819,7 +2819,7 @@ void main( void )
 //    if(fract(y)<0.9)
 //        gl_FragColor = vec4( vec3( fade ), 1.0 );
 //    else
-        gl_FragColor = vec4( 0.0 );
+    gl_FragColor = vec4( 0.0 );
 }
 
 ### 37037:S ---

@@ -2621,7 +2621,7 @@ void main( void ) {
     float y = 0.2 * position.y * sin(300.0 * position.y - 20.0 * time *0.01);
     y = 1. / (600. * abs(position.x - y));
     
-//    y += 1./length(665.*length(position - vec2(0., position.y)));
+    y += 1./length(665.*length(position - vec2(0., position.y)));
     
     float saule = 1./length(65.*length(position - vec2(0, 0)));
     

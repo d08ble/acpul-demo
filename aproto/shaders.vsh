@@ -2014,7 +2014,7 @@ void main(void){
     float l = abs(sin(time*1.1)*0.1) / length(p);
     float l2 = abs(sin(time*1.2)*0.1) / length(p);
     float l3 = abs(sin(time*1.3)*0.1) / length(p);
-    gl_FragColor = vec4(l,l2,l3, 0.5);
+    gl_FragColor = vec4(l,l2,l3, 0.0);
 }
 // Light1 ]
 

@@ -2234,7 +2234,7 @@ void main( void ) {
 
 // Univ1 [
 
-### 37024:S Fire2.fsh
+### 37024:S Univ1.fsh
 
 #define time CC_Time[3]*1.0
 #define resolution vec2(400.0)
@@ -2312,4 +2312,4 @@ void main(void)
     
 }
 
-// Univ2 ]
+// Univ1 ]

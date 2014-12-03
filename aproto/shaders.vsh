@@ -2685,10 +2685,9 @@ float InterpolatedNoise(float x, float y)
     float v2 = SmoothNoise(integer_X + 1., integer_Y);
     float v3 = SmoothNoise(integer_X, integer_Y + 1.);
     float v4 = SmoothNoise(integer_X + 1., integer_Y + 1.);
-    float i1 = lerp(v1, v2, fractional_X);
-    //float i2 = lerp(v3, v4, fractional_X);
-//    return(lerp(i1, i2, fractional_Y));*/
-    return 0.;
+    float i1 = mix(v1, v2, fractional_X);
+    float i2 = mix(v3, v4, fractional_X);
+    return(mix(i1, i2, fractional_Y));*/
 }
 
 

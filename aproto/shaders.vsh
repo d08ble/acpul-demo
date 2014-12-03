@@ -1857,3 +1857,71 @@ void main( void ) {
 }
 
 // Lines1 ]
+// Noise1 [
+
+### 37014:S Lines1.fsh
+
+#define time CC_Time[3]*1.0
+#define resolution vec2(400.0)
+#define mouse vec2(0.5)
+
+
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+//uniform float time;
+//uniform vec2 resolution;
+
+vec3 hash3(vec2 p)
+{
+    vec3 q = vec3(dot(p,vec2(127.1,311.7)), 
+          dot(p,vec2(269.5,183.3)), 
+          dot(p,vec2(419.2,371.9)));
+    return fract(sin(q)*43758.5453);
+}
+
+float noise(in vec2 x, float u, float v)
+{
+    vec2 p = floor(x);
+    vec2 f = fract(x);
+
+    float k = 1.0 + 63.0*pow(1.0-v,4.0);
+    float va = 0.0;
+    float wt = 0.0;
+    for( int j=-2; j<=2; j++ )
+    for( int i=-2; i<=2; i++ )
+    {
+        vec2  g = vec2(float(i), float(j));
+        vec3  o = hash3( p + g )*vec3(u,u,1.0);
+        vec2  r = g - f + o.xy;
+        float d = dot(r,r);
+        float w = pow(1.0-smoothstep(0.0,1.414,sqrt(d)), k);
+        va += w*o.z;
+        wt += w;
+    }
+
+    return va/wt;
+}
+
+void main(void) {
+    float xSpeed = 0.1;
+    float ySpeed = 0.01;
+
+    vec2 position = (gl_FragCoord.xy / resolution.xy) + vec2(time * xSpeed, time * ySpeed);
+    
+    float r = sin(position.x*5.3)*0.5+0.5;
+    float g = sin(position.y*2.1)*0.5+0.5;
+    float b = sin(position.y*1.3*position.x)*0.5+0.5;
+    
+    float noise1 = noise(position * 5.2, 1.0, 1.0);
+    float noise2 = noise((position + vec2(2.405, 6.4)) * 3.0, 1.0, 1.0);
+    
+    float combinedNoise = min(noise1, noise1);
+    
+    vec3 color = vec3(r, g, b * 0.3) * combinedNoise * 0.5;
+    
+    gl_FragColor = vec4(color, 1.0);
+}
+
+// Noise1 ]

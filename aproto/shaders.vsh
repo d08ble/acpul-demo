@@ -2613,7 +2613,7 @@ precision mediump float;
 #endif
 
 void main( void ) {
-    vec2 position = gl_FragCoord.xy; //(gl_FragCoord.xy/resolution.xy) - 0.5 ;
+    vec2 position = (gl_FragCoord.xy/resolution.xy) - 0.5 ;
     float y = 0.2 * position.y * sin(300.0 * position.y - 20.0 * time *0.01);
     y = 1. / (600. * abs(position.x - y));
     

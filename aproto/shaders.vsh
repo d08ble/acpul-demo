@@ -2678,7 +2678,7 @@ float SmoothNoise(float x, float y)
 float InterpolatedNoise(float x, float y)
 {
     float integer_X    = ceil(x);
-    float fractional_X = x - integer_X;
+/*    float fractional_X = x - integer_X;
     float integer_Y    = ceil(y);
     float fractional_Y = y - integer_Y;
     float v1 = SmoothNoise(integer_X, integer_Y);
@@ -2687,7 +2687,8 @@ float InterpolatedNoise(float x, float y)
     float v4 = SmoothNoise(integer_X + 1., integer_Y + 1.);
     float i1 = lerp(v1, v2, fractional_X);
     float i2 = lerp(v3, v4, fractional_X);
-    return(lerp(i1, i2, fractional_Y));
+    return(lerp(i1, i2, fractional_Y));*/
+    return 0.;
 }
 
 

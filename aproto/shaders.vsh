@@ -2280,7 +2280,7 @@ void main(void)
     dir.xz*=rot1;
     dir.xy*=rot2;
     vec3 from=vec3(1.,.5,0.5);
-    from+=vec3(time*2.,time,-2.);
+//    from+=vec3(time*2.,time,-2.);
     from.xz*=rot1;
     from.xy*=-rot2;
     

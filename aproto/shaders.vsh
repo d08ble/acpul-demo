@@ -1596,7 +1596,7 @@ _ @sys.display;
 #node.ex.shader.use(u0, 37100, 37022);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 node.ex.shader.use(u0, 37100, 37024);
-node.ex.gl.rect(u0, 0,0, 200,200);
+node.ex.gl.rect(u0, 0,0, 100,100);
 
 ### 37002 ---
 
@@ -2309,7 +2309,7 @@ void main(void)
     v=mix(vec3(length(v)),v,saturation); //color adjust
     vec3 col = v*.01;
     if(col.x+col.y+col.z<0.6)col = vec3(0.0,0.,1.);
-    gl_FragColor = vec4(v*.04,.1);
+    gl_FragColor = vec4(v*.04,.5);
 
 }
 

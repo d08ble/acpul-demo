@@ -2009,7 +2009,7 @@ precision mediump float;
 
 void main(void){
     vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);
-    p.x += sin(time*3.0)/5.0*20.;
+    p.x += sin(time*3.0)/5.0;
     p.y += cos(time*3.0)/5.0;
     float l = abs(sin(time*1.1)*0.1) / length(p);
     float l2 = abs(sin(time*1.2)*0.1) / length(p);

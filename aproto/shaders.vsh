@@ -2602,7 +2602,7 @@ void main( void ) {
 }
 // HLight1 ]
 
-// HLight1.1 [
+// HLight1.1-Shop [
 
 ### 37033:S HLight1.fsh
 
@@ -2630,5 +2630,5 @@ void main( void ) {
 
     gl_FragColor = mix(vsaule, vstari, abs(sin(time)));
 }
-// HLight1.1 ]
+// HLight1.1-Shop ]
 

@@ -2728,9 +2728,9 @@ void main( void ) {
     float g = 0.;//rand(v_texCoord);
     float b = sin(px*3.14*100.)*0.5+0.5;
 //    gl_FragColor = vec4(r,g,b,0.);
-    r= PerlinNoise_2D(px*100., py*100.)*0.1;
+    r= PerlinNoise_2D(px*100., py*100.)*0.2;
 //    r=g=b = rand(v_texCoord);
-    gl_FragColor = vec4(r,g,b,1.);
+    gl_FragColor = vec4(r,g,b,0.5);
 }
 
 

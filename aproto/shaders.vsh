@@ -1582,7 +1582,7 @@ _ @sys.display;
 #node.ex.shader.use(u0, 37100, 37101);
 #node.ex.gl.rect(u0, 0,0, 100,100);
 
-node.ex.shader.use(u0, 37100, 37016);
+node.ex.shader.use(u0, 37100, 37018);
 node.ex.gl.rect(u0, 0,0, 200,200);
 
 ### 37002 ---
@@ -1928,7 +1928,7 @@ void main(void) {
 // Muto1 [
 
 
-### 37016:S Lines1.fsh
+### 37016:S Muto1.fsh
 
 #define time CC_Time[3]*1.0
 #define resolution vec2(600.0)
@@ -1988,3 +1988,33 @@ void main( void )
 }
 
 // Muto1 ]
+// Light1 [
+
+### 37018:S Light1.fsh
+
+#define time CC_Time[3]*1.0
+#define resolution vec2(600.0)
+#define mouse vec2(0.5)
+
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+
+
+///uniform float time; // time
+//uniform vec2  resolution; // resolution
+
+
+
+void main(void){
+    vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);
+    p.x += sin(time*3.0)/5.0;
+    p.y += cos(time*3.0)/5.0;
+    float l = abs(sin(time*1.1)*0.1) / length(p);
+    float l2 = abs(sin(time*1.2)*0.1) / length(p);
+    float l3 = abs(sin(time*1.3)*0.1) / length(p);
+    gl_FragColor = vec4(l,l2,l3, 0.5);
+}
+// Light1 ]
+

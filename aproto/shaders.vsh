@@ -2696,7 +2696,7 @@ float PerlinNoise_2D(float x, float y)
     float p     = 0.8;
     float n     = 8. - 1.;
     //[unroll]
-    for (int i = 0.; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         float frequency = pow(2., i);
         float amplitude = pow(p, i);

@@ -2617,7 +2617,7 @@ varying vec2 v_texCoord;
 void main( void ) {
     vec2 position = v_texCoord;// (gl_FragCoord.xy/resolution.xy) - 0.5 ;
     float y = 0.2 * position.y * sin(300.0 * position.y - 20.0 * time *0.01);
-    y = 1. / (600. * abs(position.x - y));
+    y = 1. / (600. * abs(position.x*0.5 - y));
     
     y += 1./length(665.*length(position - vec2(0., position.y)));
     

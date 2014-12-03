@@ -2730,7 +2730,7 @@ void main( void ) {
 //    gl_FragColor = vec4(r,g,b,0.);
     b= PerlinNoise_2D(px*100., py*100.)*0.2;
 //    r=g=b = rand(v_texCoord);
-    gl_FragColor = vec4(r,g,b,0.5);
+    gl_FragColor = vec4(r,g,b,1.);
 }
 
 

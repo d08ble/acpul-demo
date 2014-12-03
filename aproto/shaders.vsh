@@ -1585,7 +1585,7 @@ _ @sys.display;
 #node.ex.shader.use(u0, 37100, 37012);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 
-node.ex.shader.use(u0, 37100, 37014);
+node.ex.shader.use(u0, 37100, 37016);
 node.ex.gl.rect(u0, 0,0, 200,200);
 
 #node.ex.shader.use(u0, 37100, 37018);

@@ -83,6 +83,7 @@ zoomA
 #zoom2;
 #zoom3;
 zoom4;
+s:=1;
 #zoomA;
 
 #x:=300;y:=100;s:=0.4;r:=-2;

@@ -2690,27 +2690,21 @@ float InterpolatedNoise(float x, float y)
     return(mix(i1, i2, fractional_Y));
 }
 
-
-/*
-
-
 float PerlinNoise_2D(float x, float y)
 {
-    float total = 0;
+    float total = 0.;
     float p     = 0.8;
-    float n     = 8 - 1;
-    [unroll]
-   for (int i = 0; i < n; i++)
-   {
-        float frequency = pow(2, i);
+    float n     = 8. - 1.;
+    //[unroll]
+    for (int i = 0.; i < n; i++)
+    {
+        float frequency = pow(2., i);
         float amplitude = pow(p, i);
         total = total + InterpolatedNoise(x * frequency, y * frequency) * amplitude;
     }
-
-
    return(total);
 }
-*/
+
 void main( void ) {
 
 #if 0

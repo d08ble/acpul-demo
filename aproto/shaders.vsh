@@ -2604,20 +2604,13 @@ void main( void ) {
 
 ### 37033:S HLight1.fsh
 
-#define time CC_Time[3]
-#define resolution vec2(400.0)
-#define mouse vec2(0.5)
-
 #ifdef GL_ES
 precision mediump float;
 #endif
 
-//uniform float time;
-//uniform vec2 mouse;
-//uniform vec2 resolution;
-//varying vec3 v;
-
-//yes I know... just needed a break
+#define time CC_Time[3]
+#define resolution vec2(400.0)
+#define mouse vec2(0.5)
 
 void main( void ) {
     vec2 position = (gl_FragCoord.xy/resolution.xy) - 0.5 ;

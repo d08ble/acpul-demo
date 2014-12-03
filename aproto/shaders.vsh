@@ -49,7 +49,7 @@ _ @sys.display;
 #node.ex.gl.rect(u0, 0,0, 200,200);
 
 node.ex.shader.use(u0, 37100, 37034);
-node.ex.gl.rect(u0, 50,50, 50,50);
+node.ex.gl.rect(u0, 100,50, 50,50);
 
 ### 37002 ---
 

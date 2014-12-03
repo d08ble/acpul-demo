@@ -1663,6 +1663,7 @@ void main(void)
 
 ### 37010:S Fire1.fsh
 
+
 #define iGlobalTime CC_Time[3]*10.0
 #define iResolution vec2(400.0)
 #define iMouse vec2(0.5)

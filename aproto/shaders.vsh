@@ -2646,14 +2646,13 @@ void main( void ) {
 #define resolution vec2(200.0)
 #define mouse vec2(0.5)
 
-
 #ifdef GL_ES
 precision mediump float;
 #endif
 
 varying vec2 v_texCoord;
 
-
+/*
 float Noise(int x, int y)
 {
     int n = x + y * 57;
@@ -2703,7 +2702,7 @@ float PerlinNoise_2D(float x, float y)
 
    return(total);
 }
-
+*/
 float rand(vec2 co){
     return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
 }

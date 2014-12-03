@@ -2323,7 +2323,7 @@ void main(void)
 ### 37026:S Eq1.fsh
 
 #define time CC_Time[3]
-#define resolution vec2(400.0)
+#define resolution vec2(200.0)
 #define mouse vec2(0.5)
 
 #ifdef GL_ES

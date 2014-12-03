@@ -2285,8 +2285,8 @@ void main(void)
     from.xy*=-rot2;
   */  
     //volumetric rendering
-    float s=0.1,fade=1.;
-    vec3 v=vec3(0.);
+//    float s=0.1,fade=1.;
+    //vec3 v=vec3(0.);
 
 /*    for (int r=0; r<volsteps; r++) {
         vec3 p=from+s*dir*-9.9;

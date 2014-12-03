@@ -2675,8 +2675,6 @@ float SmoothNoise(float x, float y)
     return(corners + sides + center);
 }
 
-/*
-
 float InterpolatedNoise(float x, float y)
 {
     float integer_X    = int(x);
@@ -2691,6 +2689,8 @@ float InterpolatedNoise(float x, float y)
     float i2 = lerp(v3, v4, fractional_X);
     return(lerp(i1, i2, fractional_Y));
 }
+
+/*
 
 
 float PerlinNoise_2D(float x, float y)

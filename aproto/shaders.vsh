@@ -2277,18 +2277,18 @@ void main(void)
     float a2=.8+mouse.y/resolution.y*2.;
     mat2 rot1=mat2(cos(a1),sin(a1),sin(a1),cos(a1));
     mat2 rot2=mat2(cos(a2),sin(a2),sin(a2),cos(a2));
-/*    dir.xz*=rot1;
+    dir.xz*=rot1;
     dir.xy*=rot2;
     vec3 from=vec3(1.,.5,0.5);
     from+=vec3(time*2.,time,-2.);
     from.xz*=rot1;
     from.xy*=-rot2;
-  */  
-    //volumetric rendering
-//    float s=0.1,fade=1.;
-    //vec3 v=vec3(0.);
 
-/*    for (int r=0; r<volsteps; r++) {
+    //volumetric rendering
+    float s=0.1,fade=1.;
+    vec3 v=vec3(0.);
+
+    for (int r=0; r<volsteps; r++) {
         vec3 p=from+s*dir*-9.9;
         p = abs(vec3(tile)-mod(p,vec3(tile*2.))); // tiling fold
         float pa,a=pa=0.;
@@ -2305,7 +2305,7 @@ void main(void)
         v+=vec3(s,s*s,s*s*s*s)*a*brightness*fade; // coloring based on distance
         fade*=distfading; // distance fading
         s+=stepsize;
-    }*/
+    }
 //    v=mix(vec3(length(v)),v,saturation); //color adjust
 //    vec3 col = v*.01;
 //    if(col.x+col.y+col.z<0.6)col = vec3(0.0,0.,1.);

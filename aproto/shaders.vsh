@@ -2224,7 +2224,7 @@ void main( void ) {
     vec3 amarillo = vec3(1.0,1.0,0.4);
     vec3 rojo = vec3(1.0, 0.0, 0.0);
     
-    gl_FragColor = vec4(mix(rojo, amarillo, val-0.6)*val, 1.0 );
+    gl_FragColor = vec4(mix(rojo, amarillo, val-0.6)*val, val );
 }
 
 // Fire2 ]

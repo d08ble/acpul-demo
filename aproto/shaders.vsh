@@ -1,4 +1,10 @@
-# Fire [
+// Fire [
+### 37107:S ---
+
+#define iGlobalTime CC_Time[3]*10.0
+#define iResolution vec2(400.0)
+#define iMouse vec2(0.5)
+
 float noise(vec3 p) //Thx to Las^Mercury
 {
     vec3 i = floor(p);
@@ -64,7 +70,9 @@ void main()
 
 }
 
-# Fire ]
+### 37108:S ---
+
+// Fire ]
 
 # Clouds [
 
@@ -1572,7 +1580,7 @@ _ @sys.node;
 _ @sys.display;     
 
 #node.ex.shader.use(u0, 37100, 37101);
-node.ex.shader.use(u0, 37100, 37105);
+node.ex.shader.use(u0, 37100, 37107);
 node.ex.gl.rect(u0, 0,0, 400,400);
 
 ### 37002 ---

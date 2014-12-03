@@ -48,6 +48,9 @@ _ @sys.display;
 #node.ex.shader.use(u0, 37100, 37032);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 
+node.ex.shader.use(u0, 37100, 37034);
+node.ex.gl.rect(u0, 0,0, 200,200);
+
 ### 37002 ---
 
 // Fire [
@@ -2634,4 +2637,40 @@ void main( void ) {
     gl_FragColor = mix(vsaule, vstari, abs(sin(time)));
 }
 // HLight1.1-Shop ]
+
+// Texture.T1 [
+
+### 37034:S Texture.T1.fsh
+
+#define time CC_Time[3]
+#define resolution vec2(200.0)
+#define mouse vec2(0.5)
+
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+varying vec2 v_texCoord;
+
+void main( void ) {
+    
+#if 0
+    vec2 position = -0.2+v_texCoord*0.5;// (gl_FragCoord.xy/resolution.xy) - 0.5 ;
+    float y = 0.2 * position.y * sin(300.0 * position.y - 20.0 * time *0.01);
+    y = 1. / (600. * abs(position.x - y));
+    
+    y += 1./length(665.*length(position - vec2(0., position.y)));
+    
+    float lpy = (mod(time/2., 1.)-0.5)*2.;
+    float saule = 1./length(65.*length(position - vec2(0, lpy)));
+    
+    vec4 vsaule = vec4(saule*5., saule, saule*5., 0.0);
+    vec4 vstari = vec4(position.y*0.5 - y, y, y*5., 0.0);
+
+    gl_FragColor = mix(vsaule, vstari, abs(sin(time)));
+#endif
+}
+
+// Texture.T1 ]
+
 

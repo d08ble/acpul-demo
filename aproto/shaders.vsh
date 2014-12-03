@@ -2653,7 +2653,7 @@ precision mediump float;
 varying vec2 v_texCoord;
 
 void main( void ) {
-    
+
 #if 0
     vec2 position = -0.2+v_texCoord*0.5;// (gl_FragCoord.xy/resolution.xy) - 0.5 ;
     float y = 0.2 * position.y * sin(300.0 * position.y - 20.0 * time *0.01);
@@ -2669,6 +2669,7 @@ void main( void ) {
 
     gl_FragColor = mix(vsaule, vstari, abs(sin(time)));
 #endif
+    gl_FragColor = vec4(0.,0.,1.,0.)
 }
 
 // Texture.T1 ]

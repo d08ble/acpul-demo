@@ -770,7 +770,7 @@ float EPSILON_NRM   = 0.1 / iResolution.x;
 
 // sea
 const int ITER_GEOMETRY = 3;
-const int ITER_FRAGMENT = 1;
+const int ITER_FRAGMENT = 5;
 const float SEA_HEIGHT = 0.6;
 const float SEA_CHOPPY = 4.0;
 const float SEA_SPEED = 0.8;

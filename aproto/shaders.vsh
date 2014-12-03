@@ -2664,7 +2664,7 @@ float rand(vec2 co){
 }
 float Noise(int x, int y)
 {
-    return rand(vec2(x,y));
+    return rand(vec2(x, y));
 }
 /*
 
@@ -2710,9 +2710,6 @@ float PerlinNoise_2D(float x, float y)
    return(total);
 }
 */
-float rand(vec2 co){
-    return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
-}
 void main( void ) {
 
 #if 0

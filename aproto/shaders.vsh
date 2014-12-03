@@ -2330,7 +2330,7 @@ void main(void)
 precision mediump float;
 #endif
 
-uniform float time;
+//uniform float time;
 
 //uniform vec2 resolution;
 

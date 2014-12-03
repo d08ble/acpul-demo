@@ -2625,7 +2625,7 @@ void main( void ) {
     
     vec4 vsaule = vec4(saule, saule, saule*5., 0.0);
     vec4 vstari = vec4(position.y*0.5 - y, y, y*5., 0.0);
-vstari = vec4(normalize(vec3(vsaule)),0.);
+vstari = vec4(normalize(vec3(vstari)),0.);
     gl_FragColor = mix(vsaule, vstari, abs(sin(time)));
     
 }

@@ -2666,7 +2666,6 @@ float Noise(int x, int y)
 {
     return rand(vec2(x, y));
 }
-/*
 
 float SmoothNoise(float x, float y)
 {
@@ -2676,6 +2675,7 @@ float SmoothNoise(float x, float y)
     return(corners + sides + center);
 }
 
+/*
 
 float InterpolatedNoise(float x, float y)
 {

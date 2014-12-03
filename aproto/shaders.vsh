@@ -2009,12 +2009,12 @@ precision mediump float;
 
 void main(void){
     vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);
-    p.x += sin(time*3.0)/5.0;
-    p.y += cos(time*3.0)/5.0;
+    p.x += sin(time*3.0)/15.0;
+    p.y += cos(time*3.0)/15.0;
     float l = abs(sin(time*1.1)*0.1) / length(p);
     float l2 = abs(sin(time*1.2)*0.1) / length(p);
     float l3 = abs(sin(time*1.3)*0.1) / length(p);
-    gl_FragColor = vec4(l,l2,l3, 0.1);
+    gl_FragColor = vec4(l,l2,l3, 0.5);
 }
 // Light1 ]
 

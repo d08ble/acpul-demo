@@ -2066,6 +2066,6 @@ void main(void)
     vec3 u=vec3(col*2.4,col*0.5,0.0);
     if (u.x<0.0){u.x=1.1+u.x/abs(cos(PI*(sin(time*0.03)+sin(time*0.04))));}
 //    gl_FragColor = vec4(u, 1.0);
-    gl_FragColor = vec4(u.a, u.b, u.c, 1.0);
+    gl_FragColor = vec4(u.g, u.r, u.b, 1.0);
 }
 // Lava1 ]

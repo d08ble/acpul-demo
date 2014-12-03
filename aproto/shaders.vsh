@@ -2013,7 +2013,7 @@ void main(void){
     p.y += cos(time*3.0)/5.0;
     float l = abs(sin(time*1.1)*0.1) / length(exp(p));
     float l2 = abs(sin(time*1.2)*0.1) / length(exp(p));
-    float l3 = abs(sin(time*1.3)*0.1) / length(exp(p);
+    float l3 = abs(sin(time*1.3)*0.1) / length(exp(p));
     gl_FragColor = vec4(l,l2,l3, 0.0);
 }
 // Light1 ]

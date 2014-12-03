@@ -2669,7 +2669,9 @@ void main( void ) {
 
     gl_FragColor = mix(vsaule, vstari, abs(sin(time)));
 #endif
-    gl_FragColor = vec4(v_texCoord.x,0.,1.,0.);
+    float px = v_texCoord.x;
+    float py = v_texCoord.y;
+    gl_FragColor = vec4(px,py,1.,0.);
 }
 
 // Texture.T1 ]

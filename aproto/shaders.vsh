@@ -2272,6 +2272,7 @@ void main(void)
     vec3 dir=vec3(uv*zoom,1.);
     float time=time*speed+.25;
 
+
     //mouse rotation
     float a1=.5+mouse.x/resolution.x*2.;
     float a2=.8+mouse.y/resolution.y*2.;

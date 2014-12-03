@@ -2729,7 +2729,7 @@ void main( void ) {
     float b = sin(px*3.14*100.)*0.5+0.5;
 //    gl_FragColor = vec4(r,g,b,0.);
     r=g=b = PerlinNoise_2D(px, py)*0.05;
-    gl_FragColor = vec4(r,g,b,0.);
+    gl_FragColor = vec4(r,g,b,1.);
 }
 
 

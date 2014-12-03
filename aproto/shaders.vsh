@@ -1,3 +1,55 @@
+
+### 37000 shader-test
+
+r0:=k==0;
+
+draw(r0, 37001);
+x:=-100;
+y:=200;
+k:=1;
+
+### 37001 shader-test.draw
+
+#color(u0, 0.1,0.1,0.1,0.1);
+#rect(u0, 6, 0,0, 200,200);
+
+_ @1010;
+_ @sys.node;
+_ @sys.display;     
+
+#node.ex.shader.use(u0, 37100, 37101);
+#node.ex.gl.rect(u0, 0,0, 100,100);
+
+#node.ex.shader.use(u0, 37100, 37012);
+#node.ex.gl.rect(u0, 0,0, 200,200);
+
+#node.ex.shader.use(u0, 37100, 37016);
+#node.ex.gl.rect(u0, 0,0, 200,200);
+
+#node.ex.shader.use(u0, 37100, 37018);
+#node.ex.gl.rect(u0, 0,0, 200,200);
+
+#node.ex.shader.use(u0, 37100, 37020);
+#node.ex.gl.rect(u0, 0,0, 200,200);
+#node.ex.shader.use(u0, 37100, 37022);
+#node.ex.gl.rect(u0, 0,0, 200,200);
+#node.ex.shader.use(u0, 37100, 37024);
+#node.ex.gl.rect(u0, 0,0, 100,100);
+
+#node.ex.shader.use(u0, 37100, 37026);
+#node.ex.gl.rect(u0, 0,0, 200,200);
+
+#node.ex.shader.use(u0, 37100, 37028);
+#node.ex.gl.rect(u0, 0,0, 200,200);
+
+#node.ex.shader.use(u0, 37100, 37030);
+#node.ex.gl.rect(u0, 0,0, 200,200);
+
+node.ex.shader.use(u0, 37100, 37032);
+node.ex.gl.rect(u0, 0,0, 200,200);
+
+### 37002 ---
+
 // Fire [
 ### 37107:S ---
 
@@ -1561,56 +1613,6 @@ void main(void)
 
 // Hellfire ]
 
-### 37000 shader-test
-
-r0:=k==0;
-
-draw(r0, 37001);
-x:=-100;
-y:=200;
-k:=1;
-
-### 37001 shader-test.draw
-
-#color(u0, 0.1,0.1,0.1,0.1);
-#rect(u0, 6, 0,0, 200,200);
-
-_ @1010;
-_ @sys.node;
-_ @sys.display;     
-
-#node.ex.shader.use(u0, 37100, 37101);
-#node.ex.gl.rect(u0, 0,0, 100,100);
-
-#node.ex.shader.use(u0, 37100, 37012);
-#node.ex.gl.rect(u0, 0,0, 200,200);
-
-#node.ex.shader.use(u0, 37100, 37016);
-#node.ex.gl.rect(u0, 0,0, 200,200);
-
-#node.ex.shader.use(u0, 37100, 37018);
-#node.ex.gl.rect(u0, 0,0, 200,200);
-
-#node.ex.shader.use(u0, 37100, 37020);
-#node.ex.gl.rect(u0, 0,0, 200,200);
-#node.ex.shader.use(u0, 37100, 37022);
-#node.ex.gl.rect(u0, 0,0, 200,200);
-#node.ex.shader.use(u0, 37100, 37024);
-#node.ex.gl.rect(u0, 0,0, 100,100);
-
-#node.ex.shader.use(u0, 37100, 37026);
-#node.ex.gl.rect(u0, 0,0, 200,200);
-
-#node.ex.shader.use(u0, 37100, 37028);
-#node.ex.gl.rect(u0, 0,0, 200,200);
-
-#node.ex.shader.use(u0, 37100, 37030);
-#node.ex.gl.rect(u0, 0,0, 200,200);
-
-node.ex.shader.use(u0, 37100, 37032);
-node.ex.gl.rect(u0, 0,0, 200,200);
-
-### 37002 ---
 
 // Waves [
 

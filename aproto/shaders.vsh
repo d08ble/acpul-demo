@@ -2677,9 +2677,9 @@ float SmoothNoise(float x, float y)
 
 float InterpolatedNoise(float x, float y)
 {
-    float integer_X    = int(x);
+    float integer_X    = ceil(x);
     float fractional_X = x - integer_X;
-    float integer_Y    = int(y);
+    float integer_Y    = ceil(y);
     float fractional_Y = y - integer_Y;
     float v1 = SmoothNoise(integer_X, integer_Y);
     float v2 = SmoothNoise(integer_X + 1., integer_Y);

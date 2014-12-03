@@ -1931,7 +1931,7 @@ void main(void) {
 ### 37016:S Lines1.fsh
 
 #define time CC_Time[3]*1.0
-#define resolution vec2(400.0)
+#define resolution vec2(100.0)
 #define mouse vec2(0.5)
 
 //Twister thing  /Harley version...

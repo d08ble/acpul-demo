@@ -1588,8 +1588,8 @@ _ @sys.display;
 #node.ex.shader.use(u0, 37100, 37016);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 
-node.ex.shader.use(u0, 37100, 37018);
-node.ex.gl.rect(u0, 0,0, 200,200);
+#node.ex.shader.use(u0, 37100, 37018);
+#node.ex.gl.rect(u0, 0,0, 200,200);
 
 #node.ex.shader.use(u0, 37100, 37020);
 #node.ex.gl.rect(u0, 0,0, 200,200);
@@ -1597,8 +1597,9 @@ node.ex.gl.rect(u0, 0,0, 200,200);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 #node.ex.shader.use(u0, 37100, 37024);
 #node.ex.gl.rect(u0, 0,0, 100,100);
-#node.ex.shader.use(u0, 37100, 37024);
-#node.ex.gl.rect(u0, 0,0, 100,100);
+
+node.ex.shader.use(u0, 37100, 37026);
+node.ex.gl.rect(u0, 0,0, 100,100);
 
 ### 37002 ---
 
@@ -2316,3 +2317,58 @@ void main(void)
 }
 
 // Univ1 ]
+// Eq1 [
+
+
+### 37026:S Eq1.fsh
+
+#define time CC_Time[3]
+#define resolution vec2(400.0)
+#define mouse vec2(0.5)
+
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+uniform float time;
+
+//uniform vec2 resolution;
+
+#define PI 90
+
+void main( void ) {
+
+    
+    vec2 p = ( gl_FragCoord.xy / resolution.xy ) - 0.0; //nosaka vilnu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
+    vec2 p2 = ( gl_FragCoord.xy / resolution.xy ) - 0.0; //nosaka šautrinu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
+    
+    // pirmais 0.5 - atrašanas vieta: <0.5 - zem viduslinijas, >0.5 - virs
+    // otrais 0.5 - vilnu augstums
+    // sin(100.0.. - vilnu platums
+    // p.x vai p2.y - nosaka attieciga vektora virzienu/veidu, ja x, tad veidos vilnus, ja y, tad šautrinas
+    // sin( 2.0.. - nosaka vilnu amplitudu - jo lielaks skaitlis, jo mazaka amplituda
+    // p.x vai p2.x - nosaka amplitudas virzienu
+    // 1. * pow(time, 0.9)*5. - nosaka vilnu atrumu
+    float sx = 0.5 + 0.5 * sin( 100.0 * p.x - 1. * pow(time, 0.5)*2.) * sin( 2.0 * p.x - 1. * pow(time, 0.9)*5.);
+    float sx2 = 0.5 + 0.5 * sin( 100.0 * p2.y - 1. * pow(time, 0.5)*2.) * sin( 2.0 * p2.x - 1. * pow(time, 0.9)*5.);
+    
+    // 1.0 -  nosaka vilna spilgtumu - ja mazaks skaitlis, tad vilnis sastav no punktiniem, ja lielaks, tad saplust linijas
+    // 1000. - ari nosaka vilna spilgtumu, ja lielaks skaitlis, tad sastav no punktiem, ja mazaks, tad linijas
+    float dy = 1.0/ ( 1000. * abs(p.y - sx));
+    float dy2 = 1.0/ ( 1000. * abs(p2.y - sx2));
+    
+    // 2.  - nosaka fona gaišumu, jo lielaks skaitlis, jo gaišas fons
+    // p.y vai p2.y - nosaka no kuras puses spides gaisma, ja y, tad no kreisa stura, ja x, tad no apakšas
+    // 0. - nosaka krasu
+    dy += 2./ (15. * length(p - vec2(p.y, 0.)));
+    dy2 += 2./ (15. * length(p2 - vec2(p2.y, 0.)));
+    
+    // p.y vai p2.y + 0.3- nosaka no kuras puses veidosies krasu maina un kada toni ta bus
+    // parejie parametri nosaka krasas spožumu, toni un virzienu
+    vec4 pirmais = vec4( (p.y + 0.3) * dy , 0.9 * dy, dy, 1.1 );
+    vec4 otrais = vec4( (p2.y + 0.3) * dy2 , 0.3 * dy2, dy2, 1.1 );
+    
+    gl_FragColor = (otrais + pirmais);
+
+}
+// Eq1 ]

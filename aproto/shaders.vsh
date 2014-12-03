@@ -2236,7 +2236,7 @@ void main( void ) {
 
 ### 37024:S Univ1.fsh
 
-#define time CC_Time[3]*1.0
+#define time CC_Time[3]
 #define resolution vec2(400.0)
 #define mouse vec2(0.5)
 

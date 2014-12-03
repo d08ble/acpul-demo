@@ -2672,8 +2672,8 @@ void main( void ) {
     float px = v_texCoord.x;
     float py = v_texCoord.y;
     float r = px;
-    float g = 0;
-    float b = 0;
+    float g = 0.;
+    float b = 0.;
     gl_FragColor = vec4(r,g,b,0.);
 }
 

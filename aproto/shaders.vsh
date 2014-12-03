@@ -1938,9 +1938,9 @@ void main(void) {
 
 precision highp float;
 
-uniform float time;
-uniform vec2 touch;
-uniform vec2 resolution;
+//uniform float time;
+//uniform vec2 touch;
+//uniform vec2 resolution;
 
 float pi = atan(1.0)*4.0;
 float pi2 = atan(1.0)*9.0;//try time!

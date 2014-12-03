@@ -2627,7 +2627,6 @@ void main( void ) {
     vec4 vstari = vec4(position.y*0.5 - y, y, y*5., 0.0);
 
     gl_FragColor = mix(vsaule, vstari, abs(sin(time)));
-    
 }
 // HLight1.1 ]
 

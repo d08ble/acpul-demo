@@ -50,6 +50,11 @@ if (r7==bt.homebase) {
 
 if (r7==bt.shop) {
  l0:=0;
+
+ _ @1010;
+ _ @sys.node;
+ _ @sys.display;     
+
 };
 
 if (r7==bt.homehealth) {

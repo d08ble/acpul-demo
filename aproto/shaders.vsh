@@ -1667,7 +1667,7 @@ void main(void)
 #define iResolution vec2(400.0)
 #define iMouse vec2(0.5)
 
-const int _VolumeSteps = 32;
+const int _VolumeSteps = 3;
 const float _StepSize = 0.1; 
 const float _Density = 0.2;
 

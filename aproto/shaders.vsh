@@ -2287,7 +2287,7 @@ void main(void)
     //volumetric rendering
     float s=0.1,fade=1.;
     vec3 v=vec3(0.);
-    for (int r=0; r<volsteps; r++) {
+/*    for (int r=0; r<volsteps; r++) {
         vec3 p=from+s*dir*-9.9;
         p = abs(vec3(tile)-mod(p,vec3(tile*2.))); // tiling fold
         float pa,a=pa=0.;
@@ -2304,7 +2304,7 @@ void main(void)
         v+=vec3(s,s*s,s*s*s*s)*a*brightness*fade; // coloring based on distance
         fade*=distfading; // distance fading
         s+=stepsize;
-    }
+    }*/
     v=mix(vec3(length(v)),v,saturation); //color adjust
     vec3 col = v*.01;
     if(col.x+col.y+col.z<0.6)col = vec3(0.0,0.,1.);

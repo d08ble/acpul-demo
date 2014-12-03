@@ -45,7 +45,7 @@ _ @sys.display;
 #node.ex.shader.use(u0, 37100, 37030);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 
-node.ex.shader.use(u0, 37100, 37033);
+node.ex.shader.use(u0, 37100, 37032);
 node.ex.gl.rect(u0, 0,0, 200,200);
 
 ### 37002 ---
@@ -2607,7 +2607,7 @@ void main( void ) {
 ### 37033:S HLight1.fsh
 
 #define time CC_Time[3]
-#define resolution vec2(400.0)
+#define resolution vec2(200.0)
 #define mouse vec2(0.5)
 
 #ifdef GL_ES

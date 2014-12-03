@@ -2669,9 +2669,9 @@ float Noise(int x, int y)
 
 float SmoothNoise(float x, float y)
 {
-    float corners = (Noise(x - 1, y - 1) + Noise(x + 1, y - 1) + Noise(x - 1, y + 1) + Noise(x + 1, y + 1)) / 16;
-    float sides   = (Noise(x - 1, y) + Noise(x + 1, y) + Noise(x, y - 1) + Noise(x, y + 1)) / 8;
-    float center  = Noise(x, y) / 4;
+    float corners = (Noise(x - 1., y - 1.) + Noise(x + 1., y - 1.) + Noise(x - 1., y + 1.) + Noise(x + 1., y + 1.)) / 16.;
+    float sides   = (Noise(x - 1., y) + Noise(x + 1., y) + Noise(x, y - 1.) + Noise(x, y + 1.)) / 8.;
+    float center  = Noise(x, y) / 4.;
     return(corners + sides + center);
 }
 

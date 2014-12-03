@@ -55,7 +55,7 @@ if (r7==bt.shop) {
  _ @sys.node;
  _ @sys.display;     
  node.ex.shader.use(u0, 37100, 37033);
- node.ex.gl.rect(u0, -50,60, 200,200);
+ node.ex.gl.rect(u0, -40,70, 200,200);
 
 };
 

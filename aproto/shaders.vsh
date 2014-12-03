@@ -2814,7 +2814,7 @@ precision highp float;
 //uniform vec2 resolution;
 void main( void )
 {
-    vec2 resolution = vec2(1000.);
+    vec2 resolution = vec2(1200.);
     float x = ( 1.0 - ( gl_FragCoord.x / resolution.x ));
     float y = ( gl_FragCoord.y / resolution.y ) * 26.0;
     float yp = pow( 2.0, floor(y) );

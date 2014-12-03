@@ -2662,7 +2662,7 @@ varying vec2 v_texCoord;
 float rand(vec2 co){
     return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
 }
-float Noise(int x, int y)
+float Noise(float x, float y)
 {
     return rand(vec2(x, y));
 }

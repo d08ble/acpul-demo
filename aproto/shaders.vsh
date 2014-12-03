@@ -2652,13 +2652,20 @@ precision mediump float;
 
 varying vec2 v_texCoord;
 
-float Noise(int x, int y)
+/*float Noise(int x, int y)
 {
     int n = x + y * 57;
     // n = (n<<13) ^ n;
    return(1.0 - ((n * (n * n * 15731 + 789221) + 1376312589) & 0x7fffffff) / 1073741824.0);
-}
+}*/
 
+float rand(vec2 co){
+    return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
+}
+float Noise(int x, int y)
+{
+    return rand(vec2(x,y));
+}
 /*
 
 float SmoothNoise(float x, float y)

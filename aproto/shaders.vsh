@@ -55,7 +55,7 @@ _ @sys.display;
 #node.ex.gl.rect(u0, 0,0, 500,500);
 
 node.ex.shader.use(u0, 37100, 37038);
-node.ex.gl.rect(u0, 0,0, 500,500);
+#node.ex.gl.rect(u0, 0,0, 500,500);
 
 ### 37002 ---
 

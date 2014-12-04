@@ -2860,8 +2860,7 @@ void main( void )
 
     f = 0.5 + 0.5*f;
     
-    f *= smoothstep( 0.0, 0.005, abs(p.x-0.6) );    
-    
+    f *= smoothstep( 0.0, 0.005, abs(p.x-0.6) );       
     gl_FragColor = vec4( f, f, f, 1.0 );
 }
 

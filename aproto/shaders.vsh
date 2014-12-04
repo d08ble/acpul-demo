@@ -2944,4 +2944,47 @@ void main( void ) {
 ### 37041:S ---
 
 // EffGreen1 ]
+// WaveM1 [
 
+### 37042:S WaveM1.fsh
+
+#define time CC_Time[3]
+#define resolution vec2(1024.0, 768.0)
+#define mouse vec2(0.5)
+
+#ifdef GL_ES
+precision mediump float;
+#endif
+
+//uniform vec2 resolution;
+//uniform float time;
+
+const float Pi = 3.14159;
+
+float sinApprox(float x) {
+    x = Pi + (2.0 * Pi) * floor(x / (2.0 * Pi)) - x;
+    return (4.0 / Pi) * x - (4.0 / Pi / Pi) * x * abs(x);
+}
+
+float cosApprox(float x) {
+    return sinApprox(x + 0.5 * Pi);
+}
+
+void main()
+{
+    float t = time * 0.01;
+    vec2 p=(0.2*gl_FragCoord.xy-resolution)/max(resolution.x,resolution.y);
+    for(int i=1;i<50;i++)
+    {
+        vec2 newp=p;
+        newp.x+=0.6/float(i)*sin(float(i)*p.y+t+0.3*float(i))+1.0;
+        newp.y+=0.6/float(i)*sin(float(i)*p.x+t+0.3*float(i+10))-1.4;
+        p=newp;
+    }
+    vec3 col=vec3(0.5*sin(3.0*p.x)+0.5,0.5*sin(3.0*p.y)+0.5,sin(p.x+p.y));
+    gl_FragColor=vec4(col, 1.0);
+}
+
+### 37043:S ---
+
+// WaveM1 ]

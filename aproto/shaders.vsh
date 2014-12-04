@@ -2916,7 +2916,7 @@ varying vec3 v;
 //yes I know... just needed a break
 
 void main( void ) {
-    vec2 resolution = vec2(500., 500.);
+    vec2 resolution = vec2(200., 200.);
     vec2 position = (gl_FragCoord.xy/resolution.xy) - 0.5 ;
     position.x = fract(0.25-position.x*position.x);
     position.y *= 2.8;

@@ -3058,7 +3058,7 @@ void main(void) {
 // bfogerty at gmail dot com
 
 #ifdef GL_ES
-precision highp float;
+precision lowp float;
 #endif
 
 varying mediump vec2 v_texCoord;

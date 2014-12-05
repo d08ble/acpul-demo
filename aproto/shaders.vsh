@@ -3094,6 +3094,21 @@ void main( void )
 
 ### 37048:S lines2.fsh
 
+void FAST32_hash_2D( vec2 gridcell, out vec4 hash_0, out vec4 hash_1 )  //  generates 2 random numbers for each of the 4 cell corners
+{
+    //    gridcell is assumed to be an integer coordinate
+    const vec2 OFFSET = vec2( 26.0, 161.0 );
+    const float DOMAIN = 71.0;
+    const vec2 SOMELARGEFLOATS = vec2( 951.135664, 642.949883 );
+    vec4 P = vec4( gridcell.xy, gridcell.xy + 1.0 );
+    P = P - floor(P * ( 1.0 / DOMAIN )) * DOMAIN;
+    P += OFFSET.xyxy;
+    P *= P;
+    P = P.xzxz * P.yyww;
+    hash_0 = fract( P * ( 1.0 / SOMELARGEFLOATS.x ) );
+    hash_1 = fract( P * ( 1.0 / SOMELARGEFLOATS.y ) );
+}
+
 //  convert a 0.0->1.0 sample to a -1.0->1.0 sample weighted towards the extremes
 vec4 Cellular_weight_samples( vec4 samples )
 {

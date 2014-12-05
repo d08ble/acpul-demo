@@ -2993,7 +2993,7 @@ void main()
 // WaveM1 ]
 // dots1 [
 
-### 37044:S ---
+### 37044:S dots1
 
 #define time CC_Time[3]
 #define resolution vec2(1024.0/2., 768.0/2.)

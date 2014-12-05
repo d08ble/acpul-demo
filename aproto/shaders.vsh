@@ -72,7 +72,7 @@ b.func(u0, 2, 2);
 
 node.ex.shader.use(u0, 37100, 37048);
 node.ex.gl.rect(u0, 0,0, 200,200);
-#node.ex.gl.rect(u0, 200,0, 200,200);
+node.ex.gl.rect(u0, 200,0, 200,200);
 
 ### 37002 ---
 

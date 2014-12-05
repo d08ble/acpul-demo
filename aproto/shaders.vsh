@@ -3089,6 +3089,8 @@ void main( void )
 
 // noise-SimplexCellular2D [
 
+### 37048:S lines2.fsh
+
 //  convert a 0.0->1.0 sample to a -1.0->1.0 sample weighted towards the extremes
 vec4 Cellular_weight_samples( vec4 samples )
 {
@@ -3143,6 +3145,34 @@ float SimplexCellular2D( vec2 P )
     return min( tmp.x, tmp.y );
 }
 
+#define time CC_Time[3]
+#define resolution vec2(1024.0/2., 768.0/2.)
+#define mouse vec2(0.5)
+
+// By: Brandon Fogerty
+// bfogerty at gmail dot com
+
+#ifdef GL_ES
+precision highp float;
+#endif
+
+varying mediump vec2 v_texCoord;
+//#define gl_FragCoord  v_texCoord*vec2(1000.)
+
+void main(void)
+{
+    float px = v_texCoord.x;
+    float py = v_texCoord.y;
+    float r = 0.;//cos(py*3.14*100.);
+    float g = 0.;//rand(v_texCoord);
+    float b = sin(px*3.14*100.)*0.5+0.5;
+//    gl_FragColor = vec4(r,g,b,0.);
+    b= SimplexCellular2D(px*100., py*100.)*0.2;
+//    r=g=b = rand(v_texCoord);
+    gl_FragColor = vec4(r,g,b,0.5);
+}
+
+### 37049:S ---
 
 // noise-SimplexCellular2D ]
 

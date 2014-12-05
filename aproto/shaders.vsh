@@ -3239,6 +3239,7 @@ void main(void)
     r=g= SimplexPerlin2D(vec2(px*10., py*10.))*0.5;
     r*= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
     g+= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
+    b+=r*g;
 //    r=g=b = rand(v_texCoord);
     gl_FragColor = vec4(r,g,b,1.);
 }

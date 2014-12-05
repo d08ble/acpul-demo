@@ -124,7 +124,6 @@ box2d
   io(_0, 500375, _1, 0,0,0);
  };
 
-
  # COLLISION
   
  collision.group.rule # world, a, b, enableEvent

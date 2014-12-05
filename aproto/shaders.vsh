@@ -3177,7 +3177,7 @@ float SimplexCellular2D( vec2 P )
 }
 
 #define time CC_Time[3]
-#define resolution vec2(200.0/2., 200.0/2.)
+#define resolution vec2(20.0/2., 20.0/2.)
 #define mouse vec2(0.5)
 
 varying mediump vec2 v_texCoord;

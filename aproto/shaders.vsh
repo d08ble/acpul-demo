@@ -3086,3 +3086,55 @@ void main( void )
 ### 37047:S ---
 
 // lines2 ]
+
+// noise-SimplexCellular2D [
+
+//
+//  SimplexCellular2D
+//  cellular noise over a simplex (triangular) grid
+//  Return value range of 0.0->~1.0
+//  http://briansharpe.files.wordpress.com/2012/01/simplexcellularsample.jpg
+//
+//  TODO:  scaling of return value to strict 0.0->1.0 range
+//
+float SimplexCellular2D( vec2 P )
+{
+    //  simplex math based off Stefan Gustavson's and Ian McEwan's work at...
+    //  http://github.com/ashima/webgl-noise
+
+    //  simplex math constants
+    const float SKEWFACTOR = 0.36602540378443864676372317075294;            // 0.5*(sqrt(3.0)-1.0)
+    const float UNSKEWFACTOR = 0.21132486540518711774542560974902;          // (3.0-sqrt(3.0))/6.0
+    const float SIMPLEX_TRI_HEIGHT = 0.70710678118654752440084436210485;    // sqrt( 0.5 )  height of simplex triangle.
+    const float INV_SIMPLEX_TRI_HEIGHT = 1.4142135623730950488016887242097; //  1.0 / sqrt( 0.5 )
+    const vec3 SIMPLEX_POINTS = vec3( 1.0-UNSKEWFACTOR, -UNSKEWFACTOR, 1.0-2.0*UNSKEWFACTOR ) * INV_SIMPLEX_TRI_HEIGHT;     //  vertex info for simplex triangle
+
+    //  establish our grid cell.
+    P *= SIMPLEX_TRI_HEIGHT;        // scale space so we can have an approx feature size of 1.0  ( optional )
+    vec2 Pi = floor( P + dot( P, vec2( SKEWFACTOR ) ) );
+
+    //  calculate the hash.
+    //  ( various hashing methods listed in order of speed )
+    vec4 hash_x, hash_y;
+    FAST32_hash_2D( Pi, hash_x, hash_y );
+    //SGPP_hash_2D( Pi, hash_x, hash_y );
+
+    //  push hash values to extremes of jitter window
+    const float JITTER_WINDOW = ( 0.10566243270259355887271280487451 * INV_SIMPLEX_TRI_HEIGHT );        // this will guarentee no artifacts.
+    hash_x = Cellular_weight_samples( hash_x ) * JITTER_WINDOW;
+    hash_y = Cellular_weight_samples( hash_y ) * JITTER_WINDOW;
+
+    //  calculate sq distance to closest point
+    vec2 p0 = ( ( Pi - dot( Pi, vec2( UNSKEWFACTOR ) ) ) - P ) * INV_SIMPLEX_TRI_HEIGHT;
+    hash_x += p0.xxxx;
+    hash_y += p0.yyyy;
+    hash_x.yzw += SIMPLEX_POINTS.xyz;
+    hash_y.yzw += SIMPLEX_POINTS.yxz;
+    vec4 distsq = hash_x*hash_x + hash_y*hash_y;
+    vec2 tmp = min( distsq.xy, distsq.zw );
+    return min( tmp.x, tmp.y );
+}
+
+
+// noise-SimplexCellular2D ]
+

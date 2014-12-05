@@ -3237,8 +3237,8 @@ void main(void)
 //    r+= SimplexCellular2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
 //    g+= SimplexCellular2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
     r=g= SimplexPerlin2D(vec2(px*20., py*20.))*2.;
-    r+= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
-    g+= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
+//    r+= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
+    //g+= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
 //    r=g=b = rand(v_texCoord);
     gl_FragColor = vec4(r,g,b,1.);
 }

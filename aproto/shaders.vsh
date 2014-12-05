@@ -3242,7 +3242,8 @@ void main(void)
     b=r*g;
     vec3 v=clamp(vec3(r,g,b), vec3(0.), vec3(1.));
 //    r=g=b = rand(v_texCoord);
-    gl_FragColor = vec4(r,g,b,1.);
+//    gl_FragColor = vec4(r,g,b,1.);
+    gl_FragColor = vec4(v,1.);
 }
 
 

@@ -3059,7 +3059,7 @@ precision highp float;
 #endif
 
 varying mediump vec2 v_texCoord;
-#define gl_FragCoord  v_texCoord
+#define gl_FragCoord  v_texCoord*10.
 //uniform float time;
 //uniform vec2 resolution;
 

@@ -3058,6 +3058,7 @@ void main(void) {
 precision highp float;
 #endif
 
+#define gl_FragCoord  v_texCoord
 //uniform float time;
 //uniform vec2 resolution;
 

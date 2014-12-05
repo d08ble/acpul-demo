@@ -3177,7 +3177,7 @@ float SimplexCellular2D( vec2 P )
 }
 
 #define time CC_Time[3]
-#define resolution vec2(20.0/2., 20.0/2.)
+#define resolution vec2(200.0/2., 200.0/2.)
 #define mouse vec2(0.5)
 
 varying mediump vec2 v_texCoord;
@@ -3191,7 +3191,7 @@ void main(void)
     float g = 0.;//rand(v_texCoord);
     float b = sin(px*3.14*100.)*0.5+0.5;
 //    gl_FragColor = vec4(r,g,b,0.);
-    b= SimplexCellular2D(vec2(px*20., py*20.));
+    b= SimplexCellular2D(vec2(px*2., py*2.));
 //    r=g=b = rand(v_texCoord);
     gl_FragColor = vec4(r,g,b,1.);
 }

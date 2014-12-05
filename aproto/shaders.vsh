@@ -3047,7 +3047,7 @@ void main(void) {
 
 ### 37046:S lines2.fsh
 
-#define time sin(CC_Time[3])*10+10.0;
+#define time sin(CC_Time[3])*10.+10.0;
 #define resolution vec2(1024.0/2., 768.0/2.)
 #define mouse vec2(0.5)
 

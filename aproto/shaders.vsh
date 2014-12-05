@@ -3187,7 +3187,7 @@ void main(void)
 //    gl_FragColor = vec4(r,g,b,0.);
     b= SimplexCellular2D(vec2(px*100., py*100.));
 //    r=g=b = rand(v_texCoord);
-    gl_FragColor = vec4(r,g,b,0.5);
+    gl_FragColor = vec4(r,g,b,1.);
 }
 
 

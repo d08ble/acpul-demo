@@ -51,11 +51,11 @@ _ @sys.display;
 #node.ex.shader.use(u0, 37100, 37036); # gpu benchmark
 #node.ex.gl.rect(u0, 0,0, 500,500);
 
-#node.ex.shader.use(u0, 37100, 37034);
-#node.ex.gl.rect(u0, 0,0, 500,500);
-
-node.ex.shader.use(u0, 37100, 37038);
+node.ex.shader.use(u0, 37100, 37034);
 node.ex.gl.rect(u0, 0,0, 500,500);
+
+#node.ex.shader.use(u0, 37100, 37038);
+#node.ex.gl.rect(u0, 0,0, 500,500);
 
 #node.ex.shader.use(u0, 37100, 37040);
 #node.ex.gl.rect(u0, 0,0, 200,200);

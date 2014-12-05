@@ -65,7 +65,7 @@ _ @sys.display;
 
 b display.gl.blend;                         #   b is display.gl.blend
 b.func(u0,                                  #   
-        1,                   #   src = SRC.ALPHA
+        3,                   #   src = SRC.ALPHA
         b.mode.one.minus.src.alpha);        #   dst = 1-SRC.ALPHA
 
 node.ex.shader.use(u0, 37100, 37048);

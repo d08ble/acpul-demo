@@ -2996,7 +2996,7 @@ void main()
 ### 37044:S ---
 
 #define time CC_Time[3]
-#define resolution vec2(1024.0/2., 768/2..0)
+#define resolution vec2(1024.0/2., 768.0/2.)
 #define mouse vec2(0.5)
 
 #ifdef GL_ES

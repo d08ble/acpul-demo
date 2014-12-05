@@ -3089,6 +3089,14 @@ void main( void )
 
 // noise-SimplexCellular2D [
 
+//  convert a 0.0->1.0 sample to a -1.0->1.0 sample weighted towards the extremes
+vec4 Cellular_weight_samples( vec4 samples )
+{
+    samples = samples * 2.0 - 1.0;
+    //return (1.0 - samples * samples) * sign(samples); // square
+    return (samples * samples * samples) - sign(samples);   // cubic (even more variance)
+}
+
 //
 //  SimplexCellular2D
 //  cellular noise over a simplex (triangular) grid

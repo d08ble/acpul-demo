@@ -2628,7 +2628,7 @@ void main( void ) {
 #define mouse vec2(0.5)
 
 #ifdef GL_ES
-precision mediump float;
+precision highp float;
 #endif
 
 varying vec2 v_texCoord;

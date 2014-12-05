@@ -3094,6 +3094,11 @@ void main( void )
 
 ### 37048:S lines2.fsh
 
+#ifdef GL_ES
+precision highp float;
+#endif
+
+
 void FAST32_hash_2D( vec2 gridcell, out vec4 hash_0, out vec4 hash_1 )  //  generates 2 random numbers for each of the 4 cell corners
 {
     //    gridcell is assumed to be an integer coordinate
@@ -3166,13 +3171,6 @@ float SimplexCellular2D( vec2 P )
 #define time CC_Time[3]
 #define resolution vec2(1024.0/2., 768.0/2.)
 #define mouse vec2(0.5)
-
-// By: Brandon Fogerty
-// bfogerty at gmail dot com
-
-#ifdef GL_ES
-precision highp float;
-#endif
 
 varying mediump vec2 v_texCoord;
 //#define gl_FragCoord  v_texCoord*vec2(1000.)

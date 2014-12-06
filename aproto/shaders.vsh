@@ -126,7 +126,7 @@ step4 { _ node.ex;
  shader.use(u0, 37100, 37054);
  shader.uniform.texture(u0, 0, TEX.A, 0);
  shader.uniform.texture(u0, 1, TEX.A, 1);
-# shader.uniform.texture(u0, 1, TEX.B, 1);
+ shader.uniform.texture(u0, 1, TEX.B, 1);
 # shader.uniform.texture(u0, 1, TEX.A, 1);
 
 

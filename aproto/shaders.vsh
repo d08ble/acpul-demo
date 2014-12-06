@@ -68,7 +68,7 @@ b display.gl.blend;                         #   b is display.gl.blend
 #        b.mode.src.alpha,                   #   src = SRC.ALPHA
 #        b.mode.one.minus.src.alpha);        #   dst = 1-SRC.ALPHA
 
-b.func(u0, 2, 2);
+b.func(u0, b.mode.src.alpha, 2);
 
 node.ex.shader.use(u0, 37100, 37048);
 #node.ex.gl.rect(u0, 0,0, 200,200);

@@ -160,7 +160,7 @@ void main(void)
 //    diffuse += 0.1;
     float diffuse = 1.;
   
-    vec3 color = diffuse * texture2D(p0, v_texCoord).rgb *0. + 1.*texture2D(p1, v_texCoord).rgb;
+    vec3 color = diffuse * texture2D(p0, v_texCoord).rgb *1. + 1.*texture2D(p1, v_texCoord).rgb;
 
 
     //-texture2D(p1, v_texCoord);

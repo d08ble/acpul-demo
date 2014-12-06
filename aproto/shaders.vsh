@@ -163,7 +163,7 @@ void main(void)
     float dy = CC_SinTime[3]*20.;
 
     vec3 normal = normalize(texture2D(p1, v_texCoord).rgb * 2.0 - 1.0); 
-    vec3 light_pos = normalize(vec3(dx+1.0, 1.0, 1.5));
+    vec3 light_pos = normalize(vec3(dx+1.0, dy+1.0, 1.5));
     float diffuse = max(dot(normal, light_pos), 0.0);
 //    diffuse += 0.1;
 //    float diffuse = 1.;

@@ -119,15 +119,16 @@ step3 { _ node.ex;
  gl.fbo(u0, -1);
 };
 
-step3 { _ node.ex;
- gl.fbo(u0, TEX.B);
- gl.clear(r0, 0,0,0,0);
+step4 { _ node.ex;
+# gl.fbo(u0, TEX.B);
+# gl.clear(r0, 0,0,0,0);
 
- shader.use(u0, 37100, 37052);
+ shader.use(u0, 37100, 37054);
  shader.uniform.texture(u0, 0, TEX.A, 0);
+ shader.uniform.texture(u0, 0, TEX.B, 0);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
  
- gl.fbo(u0, -1);
+# gl.fbo(u0, -1);
 };
 
 step0;
@@ -138,6 +139,21 @@ drawtex(TEX.B, 100,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
 
 ### 37002 ---
+
+// Texture+Normal [
+### 37054:S Texture+Normal.fsh
+
+uniform sampler2D p0;
+varying mediump vec2 v_texCoord;
+
+void main(void)
+{
+    gl_FragColor = texture2D(p0, v_texCoord);
+}
+
+### 37055:S ---
+// Texture+Normal ]
+
 
 // NormalMap [
 ### 37052:S NormalMap.fsh

@@ -152,7 +152,6 @@ uniform sampler2D p0;
 uniform sampler2D p1;
 varying mediump vec2 v_texCoord;
 
-
 void main(void)
 {
 //    vec3 normal = normalize(texture2D(p1, v_texCoord).rgb * 2.0 - 1.0); 

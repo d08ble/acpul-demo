@@ -79,8 +79,13 @@ node.ex.gl.rect(u0, 200,0, 200,200);
 # 3. TEXTURE.A --> NORMALMAP.A
 # 4. TEXTURE.A + NORMALMAP.A --> OUT
 
+TEX.SIZE {w 200; h 200;};
 step0 {
  #node.ex.child.draw.s(r0, 0);                # render setup
+ if (r0)                                     # run once (by r1:=<...>), r1 is texture
+ {                                           #
+  r1:=node.ex.texture.create(r0, TEX.SIZE.w,200);   # create texture (r1) with 200x200 size by r0 (once)
+ };                                          #
 
 };
 

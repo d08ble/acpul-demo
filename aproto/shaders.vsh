@@ -103,14 +103,14 @@ step1 { _ node.ex;
 };
 
 step3 { _ node.ex;
- gl.fbo(u0, TEX.B);                  # - FBO-->TEXTURE
- gl.clear(r0, 0,0,0,0);              # - TEXURE FILL COLOR
+ gl.fbo(u0, TEX.B);
+ gl.clear(r0, 0,0,0,0);
 
  shader.use(u0, 37100, 37052);
  shader.uniform.texture(u0, 0, TEX.A, 0);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
  
- gl.fbo(u0, -1);                     # - FBO-->DEFAULT
+ gl.fbo(u0, -1);
 };
 
 drawtex { _ node.ex;

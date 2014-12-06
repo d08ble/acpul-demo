@@ -139,7 +139,7 @@ varying mediump vec2 v_texCoord;
 
 void main(void)
 {
-    gl_FragColor = texture2D(p0, v_texCoord)+1.;
+    gl_FragColor = texture2D(p0, v_texCoord);
 }
 
 ### 37053:S ---

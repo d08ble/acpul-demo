@@ -180,8 +180,8 @@ void main(void)
     float s21 = texture2D(image, uv.xy + offzy).x;
     float s10 = texture2D(image, uv.xy + offyx).x;
     float s12 = texture2D(image, uv.xy + offyz).x;
-    vec3 va = {size.x, size.y, s21-s01};
-    vec3 vb = {size.y, size.x, s12-s10};
+    vec3 va = vec3(size.x, size.y, s21-s01);
+    vec3 vb = vec3(size.y, size.x, s12-s10);
     va = normalize(va);
     vb = normalize(vb);
     vec4 bump = vec4(vec3(cross(va,vb)) / 2 + 0.5), 1.0);

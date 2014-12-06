@@ -91,7 +91,7 @@ step0 {
 
 step1 {
  node.ex.shader.use(u0, 37100, 37048);
- node.ex.gl.rect(u0, 0,0, 200,200);
+ node.ex.gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
 };
 
 ### 37002 ---

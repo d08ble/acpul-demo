@@ -105,6 +105,8 @@ step4 {
  shader.uniform.texture(u0, 0, TEX.A, 0);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
 };
+step0;
+watch(TEX.A);
 
 ### 37002 ---
 

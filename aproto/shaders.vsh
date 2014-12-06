@@ -140,9 +140,10 @@ varying mediump vec2 v_texCoord;
 
 void main(void)
 {
-    vec4 v = texture2D(p0, v_texCoord);
-    v=vec4(vec3(v.r+v.g+v.b), 1.);
-    gl_FragColor = v;
+    vec4 n = texture2D(p0, v_texCoord);
+//    v=vec4(vec3(v.r+v.g+v.b), 1.);
+    n = (n.x * 0.5f + 0.5f, n.y * 0.5f + 0.5f, n.z * 0.5f + 0.5f, 1.0f);
+    gl_FragColor = n;
 }
 
 ### 37053:S ---

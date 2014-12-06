@@ -79,7 +79,7 @@ node.ex.gl.rect(u0, 200,0, 200,200);
 # 3. TEXTURE.A --> NORMALMAP.A
 # 4. TEXTURE.A + NORMALMAP.A --> OUT
 
-TEX.I l10;
+TEX.A l10;
 TEX.SIZE {w 200; h 200;};
 step0 {
  if (r0)                                     
@@ -94,6 +94,11 @@ step1 {
  node.ex.shader.use(u0, 37100, 37048);
  node.ex.gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
  node.ex.gl.fbo(u0, -1);                     # - FBO-->DEFAULT
+};
+
+step4 {
+ node.ex.shader.use(u0, 9711, 9721);
+ node.ex.shader.uniform.texture(u0, 0, TEX.A, 0);
 };
 
 ### 37002 ---

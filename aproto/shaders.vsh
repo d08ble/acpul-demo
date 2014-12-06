@@ -153,8 +153,8 @@ void main(void)
     const vec2 size = vec2(2.0,0.0);
     const ivec3 off = ivec3(-1,0,1);
 
-//    vec4 wave = n;
-//    float s11 = wave.x;
+    vec4 wave = n;
+    float s11 = wave.x;
 
     float s01 = texture_offset(p0, v_texCoord, off.xy).x;
     float s21 = texture_offset(p0, v_texCoord, off.zy).x;

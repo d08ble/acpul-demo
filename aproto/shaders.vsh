@@ -109,7 +109,7 @@ step0;
 step1;
 step4;
 
-l0:=0;while(l0<1000) {
+l0:=0;while(l0<100) {
  node.ex.gl.rect(u0, l0*1,0, TEX.SIZE.w,TEX.SIZE.h);
  l0+=1;
 };

@@ -162,7 +162,7 @@ void main(void)
 //    float k = sin(CC_Time[3]*3.14*.1)*0.5;
 //    float dx = CC_SinTime[3]*2.;
     float dy = 0;//CC_CosTime[3]*2.;
-    float dx = p2;
+    float dx =1;// p2;
 
     vec3 normal = normalize(texture2D(p1, v_texCoord).rgb * 2.0 - 1.0); 
     vec3 light_pos = normalize(vec3(dx+1.0, dy+1.0, 1.5));

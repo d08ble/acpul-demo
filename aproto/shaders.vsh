@@ -166,7 +166,7 @@ void main(void)
 
     gl_FragColor = vec4(bump);
     */
-    sampler2D image = p0;
+    #define image p0
     vec2 uv = v_texCoord;
     vec4 color = texture2D(image, uv.xy);
 

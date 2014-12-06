@@ -158,9 +158,9 @@ void main(void)
 //    float s12 = texture2D(unit_wave, tex_coord + off.yz).x;
 //    vec3 va = normalize(vec3(size.xy,s21-s01));
 //    vec3 vb = normalize(vec3(size.yx,s12-s10));
-    vec4 bump = vec4( cross(va,vb), s11 );
+//    vec4 bump = vec4( cross(va,vb), s11 );
 
-    gl_FragColor = n;
+    gl_FragColor = vec4(s01);
 }
 
 

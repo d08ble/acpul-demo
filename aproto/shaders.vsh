@@ -149,6 +149,7 @@ step4;
 
 uniform sampler2D p0;
 uniform sampler2D p1;
+uniform sampler2D p2;
 varying mediump vec2 v_texCoord;
 
 void main(void)

@@ -151,7 +151,7 @@ void main(void)
 //    n = vec4(n.x*.5+.5, n.y*.5+.5, n.z*.5+.5, 1.);
 
     const vec2 size = vec2(2.0,0.0);
-    const ivec3 off = ivec3(-1,0,1);
+    const ivec3 off = ivec3(-1,2,1);
 
     vec4 wave = n;
     float s11 = wave.x;

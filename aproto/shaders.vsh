@@ -158,7 +158,7 @@ precision highp float;
 
 void main(void)
 {
-    float k = sin(CC_Time[2]*3.14)-10.;
+    float k = sin(CC_Time[2]*3.14)*10.-10.;
 
     vec3 normal = normalize(texture2D(p1, v_texCoord).rgb * 2.0 - 1.0); 
     vec3 light_pos = normalize(vec3(k+10.0, 1.0, 1.5));

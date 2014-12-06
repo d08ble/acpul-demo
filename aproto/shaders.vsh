@@ -104,6 +104,22 @@ step1debug { _ node.ex;
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
 };
 
+step3 { _ node.ex;
+ gl.fbo(u0, TEX.A);                  # - FBO-->TEXTURE
+ gl.clear(r0, 1,0,0,1);              # - TEXURE FILL COLOR
+
+ shader.use(u0, 37100, 37048);
+ gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
+ 
+ gl.fbo(u0, -1);                     # - FBO-->DEFAULT
+};
+
+step3debug { _ node.ex;
+ shader.use(u0, 37100, 37050);
+ shader.uniform.texture(u0, 0, TEX.B, 0);
+ gl.rect(u0, 200,0, TEX.SIZE.w,TEX.SIZE.h);
+};
+
 step0;
 step1;
 step1debug;

@@ -114,7 +114,7 @@ step3 { _ node.ex;
 };
 
 drawtex { _ node.ex;
-# shader.uniform.texture(u0, 0, _0, 0);
+ shader.uniform.texture(u0, 0, _0, 0);
  shader.use(u0, 37100, 37050);
  gl.rect(u0, _1,_2, _3,_4);
 };

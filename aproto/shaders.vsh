@@ -101,7 +101,7 @@ step1 {
 
 step4 {
  _ node.ex;
- shader.use(u0, 37100, 37048);
+ shader.use(u0, 37100, 37050);
  shader.uniform.texture(u0, 0, TEX.A, 0);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
 };
@@ -110,13 +110,13 @@ step4 {
 
 ### 37050:S TextureRAW.fsh
 
+uniform sampler2D p0;
 varying mediump vec2 v_texCoord;
 
 void main(void)
 {
     gl_FragColor = texture2D(p0, v_texCoord);
 }
-
 
 // Fire [
 ### 37107:S ---

@@ -109,6 +109,11 @@ step0;
 step1;
 step4;
 
+l0:=0;while(l0<10) {
+ gl.rect(u0, l0*10,0, TEX.SIZE.w,TEX.SIZE.h);
+ l0+=1;
+};
+
 ### 37002 ---
 
 ### 37050:S TextureRAW.fsh

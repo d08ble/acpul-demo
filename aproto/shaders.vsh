@@ -124,12 +124,19 @@ step3debug { _ node.ex;
  shader.uniform.texture(u0, 0, TEX.B, 0);
  gl.rect(u0, 200,0, TEX.SIZE.w,TEX.SIZE.h);
 };
+drawtex { _ node.ex;
+ shader.use(u0, 37100, 37050);
+ shader.uniform.texture(u0, 0, _0, 0);
+ gl.rect(u0, _1,_2, _3,_4);
+};
+
 
 step0;
 step1;
 step1debug;
 step3;
-step3debug;
+#step3debug;
+drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
 
 ### 37002 ---
 

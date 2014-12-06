@@ -88,8 +88,7 @@ step0 {
  };
 };
 
-step1 {
- _ node.ex;
+step1 { _ node.ex;
  gl.fbo(u0, TEX.A);                  # - FBO-->TEXTURE
  gl.clear(r0, 1,0,0,1);              # - TEXURE FILL COLOR
 
@@ -99,8 +98,7 @@ step1 {
  gl.fbo(u0, -1);                     # - FBO-->DEFAULT
 };
 
-step1debug {
- _ node.ex;
+step1debug { _ node.ex;
  shader.use(u0, 37100, 37050);
  shader.uniform.texture(u0, 0, TEX.A, 0);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);

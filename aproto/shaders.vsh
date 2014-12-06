@@ -94,7 +94,7 @@ step0 {
 
 step1 { _ node.ex;
  gl.fbo(u0, TEX.A);                  # - FBO-->TEXTURE
- gl.clear(r0, 1,0,0,1);              # - TEXURE FILL COLOR
+ gl.clear(r0, 0,0,0,0);              # - TEXURE FILL COLOR
 
  shader.use(u0, 37100, 37048);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);

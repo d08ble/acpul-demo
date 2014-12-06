@@ -145,7 +145,7 @@ step4;
 ### 37054:S Texture+Normal.fsh
 
 uniform sampler2D p0;
-uniform sampler2D p0;
+uniform sampler2D p1;
 varying mediump vec2 v_texCoord;
 
 void main(void)

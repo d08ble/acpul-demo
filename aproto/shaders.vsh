@@ -110,6 +110,14 @@ step4 {
 
 ### 37050:S TextureRAW.fsh
 
+varying mediump vec2 v_texCoord;
+
+void main(void)
+{
+    gl_FragColor = texture2D(p0, v_texCoord);
+}
+
+
 // Fire [
 ### 37107:S ---
 

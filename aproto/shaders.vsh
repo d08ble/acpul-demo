@@ -153,7 +153,7 @@ uniform sampler2D p1;
 varying mediump vec2 v_texCoord;
 
 #ifdef GL_ES
-precision highp float;
+precision mediump float;
 #endif
 
 void main(void)

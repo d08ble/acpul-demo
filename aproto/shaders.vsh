@@ -108,7 +108,7 @@ step1debug { _ node.ex;
 
 step3 { _ node.ex;
  gl.fbo(u0, TEX.B);                  # - FBO-->TEXTURE
- gl.clear(r0, 1,0,0,1);              # - TEXURE FILL COLOR
+ gl.clear(r0, 0,0,0,1);              # - TEXURE FILL COLOR
 
  shader.use(u0, 37100, 37052);
  shader.uniform.texture(u0, 0, TEX.A, 0);

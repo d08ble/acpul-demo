@@ -169,7 +169,7 @@ void main(void)
 //    vec2 size = {2.0,0.0};
 //    vec3 off = {-1.0,0.0,1.0};
     const vec2 size = vec2(2.0,0.0);
-    const ivec3 off = vec3(-1.,0.,1.);
+    const vec3 off = vec3(-1.,0.,1.);
     #define image p0
     vec2 uv = v_texCoord;
     vec4 color = texture2D(image, uv.xy);

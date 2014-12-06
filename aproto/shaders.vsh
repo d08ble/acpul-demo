@@ -153,7 +153,7 @@ void main(void)
     vec3 normal = normalize(texture2D(p1, v_texCoord).rgb * 2.0 - 1.0); 
     vec3 light_pos = normalize(vec3(1.0, 1.0, 1.5));
     float diffuse = max(dot(normal, light_pos), 0.0);
-    diffuse += 1.;
+    diffuse += 0.1;
   
     vec3 color = diffuse * texture2D(p0, v_texCoord).rgb;
 

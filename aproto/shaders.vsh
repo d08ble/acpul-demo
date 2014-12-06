@@ -154,7 +154,7 @@ precision highp float;
 
 uniform sampler2D p0;
 uniform sampler2D p1;
-uniform float p2;
+//uniform float p2;
 varying mediump vec2 v_texCoord;
 
 void main(void)

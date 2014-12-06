@@ -84,12 +84,12 @@ TEX.SIZE {w 200; h 200;};
 step0 {
  if (r0)                                     
  {
-  TEX.I:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);   # create texture (r1) with 200x200 size by r0 (once)
+  TEX.A:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);   # create texture (r1) with 200x200 size by r0 (once)
  };
 };
 
 step1 {
- node.ex.gl.fbo(u0, TEX.I);                  # - FBO-->TEXTURE
+ node.ex.gl.fbo(u0, TEX.A);                  # - FBO-->TEXTURE
  node.ex.gl.clear(r0, 1,0,0,1);              # - TEXURE FILL COLOR
  
  node.ex.shader.use(u0, 37100, 37048);

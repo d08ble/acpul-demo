@@ -162,7 +162,6 @@ void main(void)
   
     vec3 color = diffuse * texture2D(p0, v_texCoord).rgb *0. + 1.*texture2D(p1, v_texCoord).rgb;
 
-
     //-texture2D(p1, v_texCoord);
     gl_FragColor = vec4(color, 1.0); 
 }

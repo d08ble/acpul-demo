@@ -128,7 +128,7 @@ step4 { _ node.ex;
 # shader.uniform.texture(u0, 1, TEX.A, 1);
 # shader.uniform.texture(u0, 0, TEX.B, 0);
  shader.uniform.texture(u0, 1, TEX.B, 1);
- 
+
 
 
 # shader.uniform.texture(u0, 1, TEX.B, 1);
@@ -162,7 +162,7 @@ void main(void)
 //    diffuse += 0.1;
     float diffuse = 1.;
   
-    vec3 color = diffuse * texture2D(p0, v_texCoord).rgb *1. + 1.*texture2D(p1, v_texCoord).rgb;
+    vec3 color = diffuse * texture2D(p0, v_texCoord).rgb *1. + 0.*texture2D(p1, v_texCoord).rgb;
 
     //-texture2D(p1, v_texCoord);
     gl_FragColor = vec4(color, 1.0); 

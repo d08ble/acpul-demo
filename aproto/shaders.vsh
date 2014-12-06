@@ -99,7 +99,7 @@ step1 {
  gl.fbo(u0, -1);                     # - FBO-->DEFAULT
 };
 
-step1a {
+step1debug {
  _ node.ex;
  shader.use(u0, 37100, 37050);
  shader.uniform.texture(u0, 0, TEX.A, 0);
@@ -108,7 +108,7 @@ step1a {
 
 step0;
 step1;
-step1a;
+step1debug;
 
 ### 37002 ---
 

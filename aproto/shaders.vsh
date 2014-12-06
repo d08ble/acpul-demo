@@ -160,11 +160,11 @@ void main(void)
     float s21 = texture_offset(p0, v_texCoord, off.zy).x;
     float s10 = texture_offset(p0, v_texCoord, off.yx).x;
     float s12 = texture_offset(p0, v_texCoord, off.yz).x;
-//    vec3 va = normalize(vec3(size.xy,s21-s01));
-//    vec3 vb = normalize(vec3(size.yx,s12-s10));
-//    vec4 bump = vec4( cross(va,vb), s11 );
+    vec3 va = normalize(vec3(size.xy,s21-s01));
+    vec3 vb = normalize(vec3(size.yx,s12-s10));
+    vec4 bump = vec4( cross(va,vb), s11 );
 
-    gl_FragColor = vec4(s12);
+    gl_FragColor = vec4(bump);
 }
 
 

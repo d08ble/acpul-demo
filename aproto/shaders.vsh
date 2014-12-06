@@ -185,7 +185,7 @@ void main(void)
     vec3 vb = vec3(size.y, size.x, s12-s10);
     va = normalize(va);
     vb = normalize(vb);
-    vec4 bump = vec4(vec3(cross(va,vb)) / 2 + 0.5)), 1.0);
+    vec4 bump = vec4(vec3(cross(va,vb) / 2 + 0.5), 1.0);
     gl_FragColor = bump;
 }
 

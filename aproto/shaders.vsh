@@ -124,8 +124,8 @@ step4 { _ node.ex;
 # gl.clear(r0, 0,0,0,0);
 
  shader.use(u0, 37100, 37054);
- shader.uniform.texture(u0, 0, TEX.A, 0);
- shader.uniform.texture(u0, 1, TEX.B, 1);
+ shader.uniform.texture(u0, 0, TEX.A);
+ shader.uniform.texture(u0, 1, TEX.B);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
  
 # gl.fbo(u0, -1);

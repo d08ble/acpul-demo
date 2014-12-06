@@ -7,6 +7,8 @@ draw(r0, 37001);
 x:=-100;
 y:=200;
 k:=1;
+ t+=dt;
+watch(t);
 
 ### 37001 shader-test.draw
 

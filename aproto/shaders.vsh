@@ -144,7 +144,22 @@ void main(void)
 //    v=vec4(vec3(v.r+v.g+v.b), 1.);
 //    v=vec4(vec3(v.r+v.g+v.b), 1.);
 //    n = vec4(n.x*.5+.5, n.y*.5+.5, n.z*.5+.5, 1.);
-    gl_FragColor = n;
+
+    const vec2 size = vec2(2.0,0.0);
+    const ivec3 off = ivec3(-1,0,1);
+
+    vec4 wave = n
+    float s11 = wave.x;
+    float s01 = textureOffset(unit_wave, tex_coord, off.xy).x;
+    float s21 = textureOffset(unit_wave, tex_coord, off.zy).x;
+    float s10 = textureOffset(unit_wave, tex_coord, off.yx).x;
+    float s12 = textureOffset(unit_wave, tex_coord, off.yz).x;
+    vec3 va = normalize(vec3(size.xy,s21-s01));
+    vec3 vb = normalize(vec3(size.yx,s12-s10));
+    vec4 bump = vec4( cross(va,vb), s11 );
+
+    gl_FragColor = bump;
+
 }
 
 ### 37053:S ---

@@ -160,7 +160,7 @@ void main(void)
 //    vec3 vb = normalize(vec3(size.yx,s12-s10));
 //    vec4 bump = vec4( cross(va,vb), s11 );
 
-    gl_FragColor = n; //vec4(s01);
+    gl_FragColor = vec4(s01);
 }
 
 

@@ -153,7 +153,7 @@ void main(void)
     vec3 normal = normalize(texture2D(p1, v_texCoord).rgb * 2.0 - 1.0); 
 
     //-texture2D(p1, v_texCoord);
-    gl_FragColor = texture2D(p0, v_texCoord);
+    gl_FragColor = texture2D(p0, v_texCoord)*normal;
 }
 
 ### 37055:S ---

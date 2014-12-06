@@ -141,7 +141,7 @@ varying mediump vec2 v_texCoord;
 void main(void)
 {
     vec4 v = texture2D(p0, v_texCoord);
-    v=vec4((v.r+v.g+v.b));
+    v=vec4(vec3(v.r+v.g+v.b), 1.);
     gl_FragColor = v;
 }
 

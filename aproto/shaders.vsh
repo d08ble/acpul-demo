@@ -91,14 +91,17 @@ step0 {
 step1 {
  node.ex.gl.fbo(u0, TEX.I);                  # - FBO-->TEXTURE
  node.ex.gl.clear(r0, 1,0,0,1);              # - TEXURE FILL COLOR
+ 
  node.ex.shader.use(u0, 37100, 37048);
  node.ex.gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
+ 
  node.ex.gl.fbo(u0, -1);                     # - FBO-->DEFAULT
 };
 
 step4 {
  node.ex.shader.use(u0, 37100, 37048);
  node.ex.shader.uniform.texture(u0, 0, TEX.A, 0);
+ node.ex.gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
 };
 
 ### 37002 ---

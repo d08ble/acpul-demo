@@ -80,6 +80,7 @@ node.ex.gl.rect(u0, 200,0, 200,200);
 # 4. TEXTURE.A + NORMALMAP.A --> OUT
 
 step0 {
+ #node.ex.child.draw.s(r0, 0);                # render setup
 
 };
 

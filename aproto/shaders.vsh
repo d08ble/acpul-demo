@@ -121,9 +121,9 @@ drawtex { _ node.ex;
 
 step0;
 step1;
-drawtex(TEX.A, 0,0, TEX.SIZE.w,TEX.SIZE.h);
+#drawtex(TEX.A, 0,0, TEX.SIZE.w,TEX.SIZE.h);
 step3;
-drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
+#drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
 
 ### 37002 ---
 

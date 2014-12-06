@@ -152,13 +152,13 @@ void main(void)
 //    vec4 wave = n;
 //    float s11 = wave.x;
 
-//    float s01 = texture2D(p0, vec2(ivec2(v_texCoord) + off.xy)).x;
+    float s01 = texture2D(p0, vec2(ivec2(v_texCoord) + off.xy)).x;
 //    float s21 = texture2D(unit_wave, tex_coord + off.zy).x;
 //    float s10 = texture2D(unit_wave, tex_coord + off.yx).x;
 //    float s12 = texture2D(unit_wave, tex_coord + off.yz).x;
 //    vec3 va = normalize(vec3(size.xy,s21-s01));
 //    vec3 vb = normalize(vec3(size.yx,s12-s10));
-//    vec4 bump = vec4( cross(va,vb), s11 );
+    vec4 bump = vec4( cross(va,vb), s11 );
 
     gl_FragColor = n;
 }

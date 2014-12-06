@@ -3405,6 +3405,7 @@ void main(void)
     float r = 0.;//cos(py*3.14*100.);
     float g = 0.;//rand(v_texCoord);
     float b = sin(px*3.14*100.)*0.5+0.5;
+    #define time 0.
 //    gl_FragColor = vec4(r,g,b,0.);
 //    r=g= SimplexCellular2D(vec2(px*20.-time, py*20.))*2.;
 //    r+= SimplexCellular2D(vec2(px*2.+10.+time, py*2.+10.))*2.;

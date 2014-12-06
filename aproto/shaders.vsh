@@ -3343,7 +3343,7 @@ void main(void)
     r*= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
     g+= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
     b=r*g;
-    vec3 v=clamp(vec3(r,g,b), vec3(0.5), vec3(1.));
+    vec3 v=clamp(vec3(r,g,b), vec3(0.), vec3(1.));
 
 ///    v=vec3((v.r+v.g+v.b)/3.);
 //    r=g=b = rand(v_texCoord);

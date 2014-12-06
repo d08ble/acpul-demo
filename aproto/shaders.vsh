@@ -121,7 +121,7 @@ step3 { _ node.ex;
 step3debug { _ node.ex;
  shader.use(u0, 37100, 37050);
  shader.uniform.texture(u0, 0, TEX.B, 0);
- gl.rect(u0, 200,0, TEX.SIZE.w,TEX.SIZE.h);
+# gl.rect(u0, 200,0, TEX.SIZE.w,TEX.SIZE.h);
 };
 
 step0;

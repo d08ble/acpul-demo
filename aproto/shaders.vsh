@@ -129,8 +129,6 @@ step0;
 step1;
 step1debug;
 step3;
-
-b.func(u0, 6, 0);
 step3debug;
 
 ### 37002 ---

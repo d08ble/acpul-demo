@@ -150,7 +150,7 @@ void main(void)
 
     vec4 wave = n;
     float s11 = wave.x;
-    float s01 = texture2D(p0, v_texCoord.xy + off.xy).x;
+    float s01 = texture2D(p0, ivec2(v_texCoord.xy) + off.xy).x;
 //    float s21 = texture2D(unit_wave, tex_coord + off.zy).x;
 //    float s10 = texture2D(unit_wave, tex_coord + off.yx).x;
 //    float s12 = texture2D(unit_wave, tex_coord + off.yz).x;

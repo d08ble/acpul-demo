@@ -148,10 +148,10 @@ void main(void)
     const vec2 size = vec2(2.0,0.0);
     const ivec3 off = ivec3(-1,0,1);
 
-    vec4 wave = n;
-    float s11 = wave.x;
+//    vec4 wave = n;
+//    float s11 = wave.x;
 
-    float s01 = texture2D(p0, vec2(ivec2(v_texCoord) + off.xy)).x;
+//    float s01 = texture2D(p0, vec2(ivec2(v_texCoord) + off.xy)).x;
 //    float s21 = texture2D(unit_wave, tex_coord + off.zy).x;
 //    float s10 = texture2D(unit_wave, tex_coord + off.yx).x;
 //    float s12 = texture2D(unit_wave, tex_coord + off.yz).x;

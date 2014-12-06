@@ -74,6 +74,10 @@ node.ex.shader.use(u0, 37100, 37048);
 node.ex.gl.rect(u0, 0,0, 200,200);
 node.ex.gl.rect(u0, 200,0, 200,200);
 
+# 1. NOISE --> TEXTURE.A
+# 2. TEXTURE.A
+
+
 ### 37002 ---
 
 // Fire [

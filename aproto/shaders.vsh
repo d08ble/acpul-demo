@@ -145,7 +145,7 @@ step4;
 ### 37054:S Texture+Normal.fsh
 
 uniform sampler2D p0;
-uniform sampler2D p1;
+uniform sampler2D p4;
 varying mediump vec2 v_texCoord;
 
 void main(void)
@@ -156,7 +156,7 @@ void main(void)
 //    diffuse += 0.1;
     float diffuse = 1.;
   
-    vec3 color = diffuse * texture2D(p1, v_texCoord).rgb;
+    vec3 color = diffuse * texture2D(p4, v_texCoord).rgb;
 
     //-texture2D(p1, v_texCoord);
     gl_FragColor = vec4(color, 1.0); 

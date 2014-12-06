@@ -155,7 +155,7 @@ void main(void)
     float diffuse = max(dot(normal, light_pos), 0.0);
 //    diffuse += 0.1;
   
-    vec3 color = diffuse * texture2D(p0, v_texCoord).rgb;
+    vec3 color = diffuse * texture2D(p1, v_texCoord).rgb;
 
     //-texture2D(p1, v_texCoord);
     gl_FragColor = vec4(color, 1.0); 

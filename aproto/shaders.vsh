@@ -97,7 +97,7 @@ step1 {
 };
 
 step4 {
- node.ex.shader.use(u0, 9711, 9721);
+ node.ex.shader.use(u0, 37100, 37048);
  node.ex.shader.uniform.texture(u0, 0, TEX.A, 0);
 };
 

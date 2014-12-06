@@ -149,7 +149,7 @@ void main(void)
 //    v=vec4(vec3(v.r+v.g+v.b), 1.);
 //    v=vec4(vec3(v.r+v.g+v.b), 1.);
 //    n = vec4(n.x*.5+.5, n.y*.5+.5, n.z*.5+.5, 1.);
-
+/*
     const vec2 size = vec2(2.0,0.0);
     const ivec3 off = ivec3(-1,0,1);
 
@@ -165,6 +165,27 @@ void main(void)
     vec4 bump = vec4( cross(va,vb), s11 );
 
     gl_FragColor = vec4(bump);
+    */
+    vec2 uv = v_texCoord;
+    vec4 color = texture2D(image, uv.xy);
+
+    vec2 nTex = vec2(200., 200.);
+    vec2 offxy = vec2(off.x/nTex.x , off.y/nTex.y);
+    vec2 offzy = vec2(off.z/nTex.x , off.y/nTex.y);
+    vec2 offyx = vec2(off.y/nTex.x , off.x/nTex.y);
+    vec2 offyz = vec2(off.y/nTex.x , off.z/nTex.y);
+
+    float s11 = color.x;
+    float s01 = texture2D(image, uv.xy + offxy).x;
+    float s21 = texture2D(image, uv.xy + offzy).x;
+    float s10 = texture2D(image, uv.xy + offyx).x;
+    float s12 = texture2D(image, uv.xy + offyz).x;
+    vec3 va = {size.x, size.y, s21-s01};
+    vec3 vb = {size.y, size.x, s12-s10};
+    va = normalize(va);
+    vb = normalize(vb);
+    vec4 bump = vec4(vec3(cross(va,vb)) / 2 + 0.5), 1.0);
+    gl_FragColor = bump;
 }
 
 

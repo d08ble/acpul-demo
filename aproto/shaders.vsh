@@ -159,7 +159,7 @@ varying mediump vec2 v_texCoord;
 void main(void)
 {
 //    float k = sin(CC_Time[3]*3.14*.1)*0.5;
-    float dx = sin(CC_Time[1]*100.);//CC_SinTime[3]*10.;
+    float dx = sin(CC_Time[1]*10.);//CC_SinTime[3]*10.;
     float dy = 0.;//CC_CosTime[3]*10.;
 
     vec3 normal = normalize(texture2D(p1, v_texCoord).rgb * 2.0 - 1.0); 

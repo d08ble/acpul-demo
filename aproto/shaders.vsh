@@ -3341,9 +3341,9 @@ void main(void)
 //    g+= SimplexCellular2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
     r=g= SimplexPerlin2D(vec2(px*10., py*10.))*0.5;
     r*= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
-    g+= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
+    g+= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*22.;
     b=r*g;
-    vec3 v=clamp(vec3(r,g,b)*2., vec3(0.), vec3(1.));
+    vec3 v=clamp(vec3(r,g,b), vec3(0.), vec3(1.));
 
 ///    v=vec3((v.r+v.g+v.b)/3.);
 //    r=g=b = rand(v_texCoord);

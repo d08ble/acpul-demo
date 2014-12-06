@@ -106,7 +106,7 @@ step4 {
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
 };
 step0;
-watch(r0);
+step1;
 
 ### 37002 ---
 

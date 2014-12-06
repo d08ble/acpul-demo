@@ -142,7 +142,7 @@ void main(void)
 {
     vec4 n = texture2D(p0, v_texCoord);
 //    v=vec4(vec3(v.r+v.g+v.b), 1.);
-    n = vec4(n.x * 0.5f + 0.5f, n.y * 0.5f + 0.5f, n.z * 0.5f + 0.5f, 1.0f);
+    n = vec4(n.x*.5+.5, n.y*.5+.5, n.z*.5+.5, 1.);
     gl_FragColor = n;
 }
 

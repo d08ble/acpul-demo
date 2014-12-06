@@ -75,7 +75,7 @@ node.ex.gl.rect(u0, 0,0, 200,200);
 node.ex.gl.rect(u0, 200,0, 200,200);
 
 # 1. SHADER.NOISE --> TEXTURE.NOISE
-# 2. TEXTURE.NOISE --> TEXTURE.[A,B]
+# 2. TEXTURE.NOISE --> TEXTURE.[A,B...]
 # 3. TEXTURE.A --> NORMALMAP.A
 # 4. TEXTURE.A + NORMALMAP.A --> OUT
 

@@ -79,7 +79,7 @@ node.ex.gl.rect(u0, 200,0, 200,200);
 # 3. TEXTURE.A --> NORMALMAP.A
 # 4. TEXTURE.A + NORMALMAP.A --> OUT
 
-TEX.I
+TEX.I l10;
 TEX.SIZE {w 200; h 200;};
 step0 {
  if (r0)                                     

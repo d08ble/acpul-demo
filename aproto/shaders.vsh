@@ -110,6 +110,21 @@ step1debug;
 
 ### 37002 ---
 
+// NormalMap [
+### 37052:S NormalMap.fsh
+
+uniform sampler2D p0;
+varying mediump vec2 v_texCoord;
+
+void main(void)
+{
+    gl_FragColor = texture2D(p0, v_texCoord)*0.5;
+}
+
+### 37053:S ---
+// NormalMap ]
+
+// TextureRAW [
 ### 37050:S TextureRAW.fsh
 
 uniform sampler2D p0;
@@ -121,6 +136,7 @@ void main(void)
 }
 
 ### 37051:S ---
+// TextureRAW ]
 
 // Fire [
 ### 37107:S Fire.fsh

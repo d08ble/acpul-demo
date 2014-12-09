@@ -161,7 +161,7 @@ step3(TEX.A1, TEX.B1);
 drawtex(TEX.B1, 100,100, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 #drawtex(TEX.B1, 200,100, TEX.SIZE.w,TEX.SIZE.h);
 #step4(TEX.A1, TEX.B1, TEX.C1);
-#drawtex(TEX.C1, 200,0, TEX.SIZE.w/2,TEX.SIZE.h/2);
+drawtex(TEX.C1, 200,0, TEX.SIZE.w/2,TEX.SIZE.h/2);
 
 
 

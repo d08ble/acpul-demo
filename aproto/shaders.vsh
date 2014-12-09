@@ -178,7 +178,7 @@ step5 { _ node.ex;
  gl.fbo(u0, -1);
 };
 
-#step5(TEX.C, TEX.B1);
+step5(TEX.C, TEX.B1);
 
 ### 37002 ---
 

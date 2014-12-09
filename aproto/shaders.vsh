@@ -92,6 +92,10 @@ drawtex { _ node.ex;
 TEX.A l10;
 TEX.B l11;
 TEX.C l12;
+
+TEX.A1 l14;
+TEX.B1 l15;
+TEX.C1 l16;
 TEX.SIZE {w 200; h 200;};
 step0 {
  if (r0)                                     
@@ -99,11 +103,14 @@ step0 {
   TEX.A:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);
   TEX.B:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);
   TEX.C:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);
+  TEX.A1:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);
+  TEX.B1:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);
+  TEX.C1:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);
  };
 };
 
 step1 { _ node.ex;
- gl.fbo(u0, TEX.A);                  # - FBO-->TEXTURE
+ gl.fbo(u0, _0);                  # - FBO-->TEXTURE
  gl.clear(r0, 0,0,0,0);              # - TEXURE FILL COLOR
 
  shader.use(u0, 37100, 37048);
@@ -140,13 +147,21 @@ step4 { _ node.ex;
 };
 
 step0;
-step1;
+step1(TEX.A);
 drawtex(TEX.A, 0,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 step3;
 drawtex(TEX.B, 100,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 #drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
 step4;
 drawtex(TEX.C, 200,0, TEX.SIZE.w/2,TEX.SIZE.h/2);
+
+#step1;
+#drawtex(TEX.A, 0,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
+#step3;
+#drawtex(TEX.B, 100,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
+##drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
+#step4;
+#drawtex(TEX.C, 200,0, TEX.SIZE.w/2,TEX.SIZE.h/2);
 
 
 

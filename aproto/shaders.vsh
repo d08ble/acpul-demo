@@ -196,7 +196,7 @@ varying mediump vec2 v_texCoord;
 
 void main(void)
 {
-    float a = v_texCoord.x;
+    float a = 0.5; //v_texCoord.x;
     float b = 1. - a;
     
     //texture2D(p1, v_texCoord).rgb * b;

@@ -91,7 +91,7 @@ drawtex { _ node.ex;
 
 TEX.A l10;
 TEX.B l11;
-TEX.C l11;
+TEX.C l12;
 TEX.SIZE {w 200; h 200;};
 step0 {
  if (r0)                                     

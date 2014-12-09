@@ -144,9 +144,9 @@ step1;
 drawtex(TEX.A, 0,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 step3;
 drawtex(TEX.B, 100,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
-drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
+#drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
 step4;
-#drawtex(TEX.C, 0,0, TEX.SIZE.w,TEX.SIZE.h);
+drawtex(TEX.C, 0,0, TEX.SIZE.w,TEX.SIZE.h);
 
 
 

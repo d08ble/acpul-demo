@@ -147,7 +147,7 @@ step4 { _ node.ex;
 };
 
 step0;
-step1(TEX.A, 37044);
+step1(TEX.A, 37048);
 drawtex(TEX.A, 0,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 step3(TEX.A, TEX.B);
 drawtex(TEX.B, 100,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);

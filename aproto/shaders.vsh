@@ -91,12 +91,14 @@ drawtex { _ node.ex;
 
 TEX.A l10;
 TEX.B l11;
+TEX.C l11;
 TEX.SIZE {w 200; h 200;};
 step0 {
  if (r0)                                     
  {
   TEX.A:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);
   TEX.B:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);
+  TEX.C:=node.ex.texture.create(r0, TEX.SIZE.w,TEX.SIZE.h);
  };
 };
 

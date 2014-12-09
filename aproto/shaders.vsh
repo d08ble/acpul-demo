@@ -192,7 +192,7 @@ uniform sampler2D p1;
 //uniform float p2;
 varying mediump vec2 v_texCoord;
 
-float3 blend(float4 texture1, float a1, float4 texture2, float a2)
+float3 blend(vec4 texture1, float a1, vec4 texture2, float a2)
 {
     float depth = 0.2;
     float ma = max(texture1.a + a1, texture2.a + a2) - depth;

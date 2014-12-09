@@ -215,7 +215,7 @@ void main(void)
     vec4 t1 = texture2D(p0, v_texCoord);
     vec4 t2 = texture2D(p1, v_texCoord);
     t1.a = (t1.b+t1.g+t1.r)/3.;
-    t2.a = t2.b *.1; //(t2.b+t2.g+t2.r)/3.*.1;
+    t2.a = (t2.b-t2.r) *.1; //(t2.b+t2.g+t2.r)/3.*.1;
     vec3 v = blend(t1, a, t2, b);
     gl_FragColor = vec4(v, 1.);
 }

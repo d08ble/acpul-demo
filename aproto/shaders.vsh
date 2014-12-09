@@ -3421,13 +3421,14 @@ void main(void)
 //    #undef time
 //    #define time 1.
 //    gl_FragColor = vec4(r,g,b,0.);
-//    r=g= SimplexCellular2D(vec2(px*20.-time, py*20.))*2.;
-//    r+= SimplexCellular2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
-//    g+= SimplexCellular2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
+    r=g= SimplexCellular2D(vec2(px*20.-time, py*20.))*2.;
+    r+= SimplexCellular2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
+    g+= SimplexCellular2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
+
 //    r=g= SimplexPerlin2D(vec2(px*10., py*10.))*0.5;
 //    r*= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
 //    g+= SimplexPerlin2D(vec2(px*2.+10.+time, py*2.+10.))*2.;
-    b=r*g;
+//    b=r*g;
     vec3 v=clamp(vec3(r,g,b), vec3(0.), vec3(1.));
 //    v=vec3(1.);
 

@@ -131,14 +131,14 @@ step3 { _ node.ex;
 };
 
 step4 { _ node.ex;
- gl.fbo(u0, TEX.C);
+ gl.fbo(u0, _2);
  gl.clear(r0, 0,0,0,0);
 
  shader.use(u0, 37100, 37054);
- shader.uniform.texture(u0, 0, TEX.A, 0);
+ shader.uniform.texture(u0, 0, _0, 0);
 # shader.uniform.texture(u0, 1, TEX.A, 1);
 # shader.uniform.texture(u0, 0, TEX.B, 0);
- shader.uniform.texture(u0, 1, TEX.B, 1);
+ shader.uniform.texture(u0, 1, _1, 1);
  shader.uniform.f1(u0, 2, sin(t*2.), 2);
 # shader.uniform.texture(u0, 1, TEX.B, 1);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
@@ -152,7 +152,7 @@ drawtex(TEX.A, 0,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 step3(TEX.A, TEX.B);
 drawtex(TEX.B, 100,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 #drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
-step4;
+step4(TEX.A, TEX.B, TEX.C);
 drawtex(TEX.C, 200,0, TEX.SIZE.w/2,TEX.SIZE.h/2);
 
 #step1;

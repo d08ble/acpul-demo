@@ -202,7 +202,7 @@ void main(void)
     
     //texture2D(p1, v_texCoord).rgb * b;
     //gl_FragColor = vec4(a);
-    gl_FragColor = vec4(texture2D(p0, v_texCoord).rgb * a, 1.);
+    gl_FragColor = vec4(texture2D(p1, v_texCoord).rgb * a, 1.);
 }
 
 ### 37057:S ---

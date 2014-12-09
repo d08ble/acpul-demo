@@ -171,8 +171,8 @@ drawtex(TEX.C1, 200,100, TEX.SIZE.w/2,TEX.SIZE.h/2);
 ### 37056:S TextureMerge.fsh
 
 
-### 37057:S ---
 
+### 37057:S ---
 // TextureMerge ]
 
 // Texture+Normal [

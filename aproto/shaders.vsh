@@ -2545,7 +2545,7 @@ void main( void ) {
 #define mouse vec2(0.5)
 
 #ifdef GL_ES
-precision mediump float;
+precision highp float;
 #endif
 
 //uniform float time;

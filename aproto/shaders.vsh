@@ -146,6 +146,7 @@ step4 { _ node.ex;
  gl.fbo(u0, -1);
 };
 
+
 step0;
 step1(TEX.A);
 drawtex(TEX.A, 0,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
@@ -163,6 +164,20 @@ drawtex(TEX.B1, 100,100, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 step4(TEX.A1, TEX.B1, TEX.C1);
 drawtex(TEX.C1, 200,100, TEX.SIZE.w/2,TEX.SIZE.h/2);
 
+
+step5 { _ node.ex;
+ #gl.fbo(u0, _2);
+ #gl.clear(r0, 0,0,0,0);
+
+ shader.use(u0, 37100, 37056);
+ shader.uniform.texture(u0, 0, _0, 0);
+ shader.uniform.texture(u0, 1, _1, 1);
+# shader.uniform.f1(u0, 2, sin(t*2.), 2);
+# shader.uniform.texture(u0, 1, TEX.B, 1);
+ gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
+ 
+ gl.fbo(u0, -1);
+};
 
 
 ### 37002 ---

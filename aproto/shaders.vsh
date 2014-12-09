@@ -198,7 +198,11 @@ varying mediump vec2 v_texCoord;
 void main(void)
 {
     float a = v_texCoord.x;
-    gl_FragColor = vec4(a);
+    float b = 1. - a;
+    
+    //texture2D(p1, v_texCoord).rgb * b;
+    //gl_FragColor = vec4(a);
+    gl_FragColor = vec4(texture2D(p0, v_texCoord).rgb * a, 1.);
 }
 
 ### 37057:S ---

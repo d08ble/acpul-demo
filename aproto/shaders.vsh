@@ -3325,7 +3325,7 @@ void main( void )
 
 // noise-SimplexCellular2D [
 
-### 37048:S lines2.fsh
+### 37048:S noise-SimplexCellular2D.fsh
 
 #ifdef GL_ES
 precision highp float;

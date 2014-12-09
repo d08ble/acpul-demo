@@ -93,9 +93,9 @@ TEX.A l10;
 TEX.B l11;
 TEX.C l12;
 
-TEX.A1 l14;
-TEX.B1 l15;
-TEX.C1 l16;
+TEX.A1 l13;
+TEX.B1 l14;
+TEX.C1 l15;
 TEX.SIZE {w 200; h 200;};
 step0 {
  if (r0)                                     
@@ -160,8 +160,8 @@ drawtex(TEX.A1, 0,100, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 step3(TEX.A1, TEX.B1);
 drawtex(TEX.B1, 100,100, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 #drawtex(TEX.B1, 200,100, TEX.SIZE.w,TEX.SIZE.h);
-step4(TEX.A1, TEX.B1, TEX.C1);
-drawtex(TEX.C1, 200,100, TEX.SIZE.w/2,TEX.SIZE.h/2);
+#step4(TEX.A1, TEX.B1, TEX.C1);
+#drawtex(TEX.C1, 200,100, TEX.SIZE.w/2,TEX.SIZE.h/2);
 
 
 

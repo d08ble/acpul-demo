@@ -170,7 +170,18 @@ drawtex(TEX.C1, 200,100, TEX.SIZE.w/2,TEX.SIZE.h/2);
 // TextureMerge [
 ### 37056:S TextureMerge.fsh
 
+#ifdef GL_ES
+precision highp float;
+#endif
 
+uniform sampler2D p0;
+uniform sampler2D p1;
+uniform float p2;
+varying mediump vec2 v_texCoord;
+
+void main(void)
+{
+}
 
 ### 37057:S ---
 // TextureMerge ]

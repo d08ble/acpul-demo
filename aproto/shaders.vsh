@@ -177,7 +177,7 @@ step5 { _ node.ex;
 };
 
 step5(TEX.A, TEX.A1);
-#step5(TEX.C, TEX.C1);
+#step5(TEX.A, TEX.C1);
 
 ### 37002 ---
 

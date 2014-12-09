@@ -148,6 +148,8 @@ drawtex(TEX.B, 200,0, TEX.SIZE.w,TEX.SIZE.h);
 step4;
 drawtex(TEX.C, 0,0, TEX.SIZE.w,TEX.SIZE.h);
 
+
+
 ### 37002 ---
 
 // Texture+Normal [

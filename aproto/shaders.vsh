@@ -139,7 +139,7 @@ step4 { _ node.ex;
 # shader.uniform.texture(u0, 1, TEX.A, 1);
 # shader.uniform.texture(u0, 0, TEX.B, 0);
  shader.uniform.texture(u0, 1, _1, 1);
- shader.uniform.f1(u0, 2, sin(t*2.), 2);
+ shader.uniform.f1(u0, 2, sin(t*22.), 2);
 # shader.uniform.texture(u0, 1, TEX.B, 1);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
  
@@ -171,8 +171,6 @@ step5 { _ node.ex;
  shader.use(u0, 37100, 37056);
  shader.uniform.texture(u0, 0, _0, 0);
  shader.uniform.texture(u0, 1, _1, 1);
-# shader.uniform.f1(u0, 2, sin(t*2.), 2);
-# shader.uniform.texture(u0, 1, TEX.B, 1);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
  
  gl.fbo(u0, -1);

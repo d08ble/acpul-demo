@@ -113,7 +113,7 @@ step1 { _ node.ex;
  gl.fbo(u0, _0);                  # - FBO-->TEXTURE
  gl.clear(r0, 0,0,0,0);              # - TEXURE FILL COLOR
 
- shader.use(u0, 37100, 37048);
+ shader.use(u0, 37100, _1);
  gl.rect(u0, 0,0, TEX.SIZE.w,TEX.SIZE.h);
  
  gl.fbo(u0, -1);                     # - FBO-->DEFAULT
@@ -147,7 +147,7 @@ step4 { _ node.ex;
 };
 
 step0;
-step1(TEX.A);
+step1(TEX.A, 37048);
 drawtex(TEX.A, 0,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 step3(TEX.A, TEX.B);
 drawtex(TEX.B, 100,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
@@ -155,7 +155,7 @@ drawtex(TEX.B, 100,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 step4(TEX.A, TEX.B, TEX.C);
 drawtex(TEX.C, 200,0, TEX.SIZE.w/2,TEX.SIZE.h/2);
 
-step1(TEX.A1);
+step1(TEX.A1, 37046);
 drawtex(TEX.A1, 0,100, TEX.SIZE.w/2.,TEX.SIZE.h/2);
 step3(TEX.A1, TEX.B1);
 drawtex(TEX.B1, 100,100, TEX.SIZE.w/2.,TEX.SIZE.h/2);
@@ -178,7 +178,7 @@ step5 { _ node.ex;
  gl.fbo(u0, -1);
 };
 
-step5(TEX.C, TEX.B1);
+#step5(TEX.C, TEX.B1);
 
 ### 37002 ---
 

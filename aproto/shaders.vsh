@@ -206,7 +206,7 @@ vec3 blend(vec4 texture1, float a1, vec4 texture2, float a2)
 
 void main(void)
 {
-    float a = v_texCoord.y;
+    float a = sin(v_texCoord.y);
     float b = 1. - a;
 //    a=b=0.5;
     

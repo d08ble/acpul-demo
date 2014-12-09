@@ -176,8 +176,8 @@ step5 { _ node.ex;
  gl.fbo(u0, -1);
 };
 
-#step5(TEX.A, TEX.A1);
-step5(TEX.C, TEX.C1);
+step5(TEX.A, TEX.A1);
+#step5(TEX.C, TEX.C1);
 
 ### 37002 ---
 

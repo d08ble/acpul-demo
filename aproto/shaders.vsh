@@ -62,8 +62,8 @@ _ @sys.display;
 #node.ex.shader.use(u0, 37100, 37040);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 
-#node.ex.shader.use(u0, 37100, 37046);
-#node.ex.gl.rect(u0, 0,0, 200,200);
+node.ex.shader.use(u0, 37100, 37046);
+node.ex.gl.rect(u0, 0,0, 200,200);
 
 b display.gl.blend;                         #   b is display.gl.blend
 #b.func(u0,                                  #   
@@ -146,7 +146,7 @@ step4 { _ node.ex;
  gl.fbo(u0, -1);
 };
 
-
+if (0) {
 step0;
 step1(TEX.A);
 drawtex(TEX.A, 0,0, TEX.SIZE.w/2.,TEX.SIZE.h/2);
@@ -180,6 +180,7 @@ step5 { _ node.ex;
 };
 
 step5(TEX.C, TEX.B1);
+};
 
 ### 37002 ---
 

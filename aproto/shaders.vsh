@@ -180,7 +180,7 @@ step5(TEX.A, TEX.A1);
 #step5(TEX.C, TEX.C1);
 
 # t1 xxyy location (0, 0) - self
-# t2 r alpha
+# t2 radius alpha
 
 ### 37002 ---
 

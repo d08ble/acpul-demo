@@ -5,7 +5,7 @@ obj.poll.reset _obj_pool_reset(_0);
 obj.attach _obj_attach(_0, _1);
 obj.detach _obj_detach(_0, _1);
 
-obj.map
+map.new
  # u0, itemsize
  _obj_new(_0, 0, _1, 0,0,0);
 

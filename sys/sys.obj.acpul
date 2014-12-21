@@ -1,24 +1,24 @@
 ### 1031 sys.obj
 
-obj.poll.reset _obj_pool_reset(_0);
+obj.poll.reset obj_pool_reset(_0);
 
-obj.attach _obj_attach(_0, _1);
-obj.detach _obj_detach(_0, _1);
+obj.attach obj_attach(_0, _1);
+obj.detach obj_detach(_0, _1);
 
 map.new
  # u0, itemsize
- _obj_new(_0, 0, _1, 0,0,0);
+ obj_new(_0, 0, _1, 0,0,0);
 
 it.begin 
  # u0, id, i
- _obj_it_select(_0, _1, _2, 0);
+ obj_it_select(_0, _1, _2, 0);
 it.end
  # u0, id, i
- _obj_it_select(_0, _1, _2, 1);
+ obj_it_select(_0, _1, _2, 1);
 it.next
  # u0, id, i
- _obj_it_select(_0, _1, _2, 2);
+ obj_it_select(_0, _1, _2, 2);
 it.prev
  # u0, id, i
- _obj_it_select(_0, _1, _2, 3);
+ obj_it_select(_0, _1, _2, 3);
 

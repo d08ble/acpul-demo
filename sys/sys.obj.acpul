@@ -22,7 +22,9 @@ it.prev
  # u0, id, i
  obj_it_select(_0, _1, _2, 3);
 
-it.key
- # u0, id, i, key, create
- obj_it_select_key(_0, _1, _2, _3, _4);
-
+it.key.set
+ # u0, id, i, key
+ obj_it_select_key(_0, _1, _2, _3, 0);
+it.key.get
+ # u0, id, i, key
+ obj_it_select_key(_0, _1, _2, _3, 1);

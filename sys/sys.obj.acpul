@@ -9,16 +9,16 @@ map.new
  # u0, itemsize
  _obj_new(_0, 0, _0, 0,0,0);
 
-iterator.begin 
+it.begin 
  # u0, id, i
  _obj_it_select(_0, _1, _2, 0);
-iterator.end
+it.end
  # u0, id, i
  _obj_it_select(_0, _1, _2, 1);
-iterator.next
+it.next
  # u0, id, i
  _obj_it_select(_0, _1, _2, 2);
-iterator.prev
+it.prev
  # u0, id, i
  _obj_it_select(_0, _1, _2, 3);
 

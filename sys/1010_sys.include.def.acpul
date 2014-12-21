@@ -35,7 +35,9 @@ sys.stream 1029;
 
 sys.net 1030;
 
-sys.modules.a.MAX 1031;
+sys.obj 1037;
+
+sys.modules.a.MAX 1040;
 
 # sys.def ]
 

@@ -10,9 +10,15 @@ map.new
  _obj_new(_0, 0, _0, 0,0,0);
 
 iterator.begin 
- # u0, id, 
+ # u0, id, i
  _obj_it_select(_0, _1, _2, 0);
+iterator.end
+ # u0, id, i
+ _obj_it_select(_0, _1, _2, 1);
+iterator.next
+ # u0, id, i
+ _obj_it_select(_0, _1, _2, 2);
+iterator.prev
+ # u0, id, i
+ _obj_it_select(_0, _1, _2, 3);
 
-#iterator.end
-#iterator.next
-#iterator.prev

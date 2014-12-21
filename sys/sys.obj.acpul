@@ -7,7 +7,7 @@ obj.detach _obj_detach(_0, _1);
 
 map.new 
  # u0, itemsize
- _obj_new(_0, 0, _0, 0,0,0);
+ _obj_new(_0, 0, _1, 0,0,0);
 
 it.begin 
  # u0, id, i

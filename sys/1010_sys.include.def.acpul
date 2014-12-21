@@ -35,7 +35,7 @@ sys.stream 1029;
 
 sys.net 1030;
 
-sys.fake 1031;
+sys.norm 1031;
 
 sys.obj 1032;
 

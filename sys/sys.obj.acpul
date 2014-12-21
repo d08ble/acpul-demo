@@ -5,9 +5,14 @@ obj.poll.reset _obj_pool_reset(_0);
 obj.attach _obj_attach(_0, _1);
 obj.detach _obj_detach(_0, _1);
 
-map.new _obj_new(_0, 0, _0, 0,0,0);
+map.new 
+ # u0, itemsize
+ _obj_new(_0, 0, _0, 0,0,0);
 
-iterator.begin _obj_new(_0, 0, _0, 0,0,0);
-iterator.end _obj_new(_0, 0, _0, 0,0,0);
-iterator.next _obj_new(_0, 0, _0, 0,0,0);
-iterator.prev _obj_new(_0, 0, _0, 0,0,0);
+iterator.begin 
+ # u0, id, 
+ _obj_it_select(_0, _1, _2, 0);
+
+#iterator.end
+#iterator.next
+#iterator.prev

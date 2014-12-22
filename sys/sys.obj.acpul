@@ -24,7 +24,7 @@ it.prev
 
 it.key
  # u0, id, i, key
- obj_it_select_key(_0, _1, _2, _3, 1);
+ obj_it_select_key(_0, _1, _2, _3, 0);
 it.key.new
  # u0, id, i, key
- obj_it_select_key(_0, _1, _2, _3, 0);
+ obj_it_select_key(_0, _1, _2, _3, 1);

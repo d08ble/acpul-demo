@@ -31,3 +31,4 @@ it.key.new
 
 it.buf
  # u0, buf, id,i
+ obj_it_buf(_0, _1, _2,_3);

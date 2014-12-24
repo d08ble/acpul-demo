@@ -29,6 +29,6 @@ it.key.new
  # u0, id,i, key
  obj_it_select_key(_0, _1, _2, _3, 1);
 
-it.buf
+it.dma
  # u0, buf, id,i
- obj_it_buf(_0, _1, _2,_3);
+ obj_it_dma(_0, _1, _2,_3);

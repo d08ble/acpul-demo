@@ -1,5 +1,7 @@
 ### 1031 sys.obj
 
+# object common [
+
 obj.pool.reset obj_pool_reset(_0);
 
 obj.attach obj_attach(_0, _1);
@@ -9,9 +11,24 @@ obj.count obj_count(_0, _1);
 obj.delete obj_delete(_0, _1);
 obj.clear obj_clear(_0, _1);
 
+# object common ]
+
+# map [
+
 map.new
  # u0, itemmax, itemoverhead
  obj_new(_0, 0, _1, _2, 0,0);
+
+it.key
+ # u0, id,i, key
+ obj_it_select_key(_0, _1, _2, _3, 0);
+it.key.new
+ # u0, id,i, key
+ obj_it_select_key(_0, _1, _2, _3, 1);
+
+# map ]
+
+# object iterator common [
 
 it.begin 
  # u0, id,i
@@ -26,16 +43,13 @@ it.prev
  # u0, id,i
  obj_it_select(_0, _1, _2, 3);
 
-it.key
- # u0, id,i, key
- obj_it_select_key(_0, _1, _2, _3, 0);
-it.key.new
- # u0, id,i, key
- obj_it_select_key(_0, _1, _2, _3, 1);
-
 it.dma
  # u0, dma, id,i
  obj_it_dma(_0, _1, _2,_3);
+
+# object iterator common ]
+
+# buffer [
 
 buffer.new
  # u0, itemmax, itemoverhead
@@ -50,6 +64,9 @@ buffer.dma
  # u0, dma, id,i
  it.dma(_0, _1, _2,_3);
 
+# buffer ]
+
+# dma [
 
 dma.set
  # u0, dma, offset, v
@@ -74,3 +91,5 @@ dma.get4
 dma.copy
  # u0, dma0,offset0, dma1,offset1, size
  dma_get4(_0, _1,_2, _3,_4, _5);
+
+# dma ]

@@ -48,7 +48,6 @@ dma.set2
 dma.set4
  # u0, dma, offset, v0,v1,v2,v3
  dma_set4(_0, _1, _2, _3,_4,_5,_6);
-
 dma.get
  # u0, dma, offset
  dma_get(_0, _1, _2);

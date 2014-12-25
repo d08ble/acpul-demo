@@ -42,7 +42,6 @@ buffer.new
 dma.set
  # u0, dma, i, v
  dma_set(_0, _1, _2, _3);
-
 dma.set2
  # u0, dma, i, v0, v1
  dma_set(_0, _1, _2, _3,_4);

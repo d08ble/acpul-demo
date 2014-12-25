@@ -6,8 +6,8 @@ obj.attach obj_attach(_0, _1);
 obj.detach obj_detach(_0, _1);
 
 map.new
- # u0, itemsize
- obj_new(_0, 0, _1, 0,0,0);
+ # u0, itemmax, itemoverhead
+ obj_new(_0, 0, _1, _2, 0,0);
 
 it.begin 
  # u0, id,i
@@ -34,4 +34,5 @@ it.dma
  obj_it_dma(_0, _1, _2,_3);
 
 buffer.new
- obj_new(_0, 4, _1, 0,0,0);
+ # u0, itemmax, itemoverhead
+ obj_new(_0, 4, _1, _2, 0,0);

@@ -40,21 +40,24 @@ buffer.new
  obj_new(_0, 4, _1, _2, 0,0);
 
 dma.set
- # u0, dma, i, v
+ # u0, dma, offset, v
  dma_set(_0, _1, _2, _3);
 dma.set2
- # u0, dma, i, v0, v1
+ # u0, dma, offset, v0,v1
  dma_set2(_0, _1, _2, _3,_4);
 dma.set4
- # u0, dma, i, v0,v1,v2,v3
+ # u0, dma, offset, v0,v1,v2,v3
  dma_set4(_0, _1, _2, _3,_4,_5,_6);
 
 dma.get
- # u0, dma, i
+ # u0, dma, offset
  dma_get(_0, _1, _2);
 dma.get2
- # u0, dma, i
+ # u0, dma, offset
  dma_get2(_0, _1, _2);
 dma.get4
- # u0, dma, i
+ # u0, dma, offset
  dma_get4(_0, _1, _2);
+dma.copy
+ # u0, dma0,offset0, dma1,offset1
+ dma_get4(_0, _1,_2, _3,_4, _5);

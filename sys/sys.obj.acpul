@@ -38,3 +38,14 @@ it.dma
 buffer.new
  # u0, itemmax, itemoverhead
  obj_new(_0, 4, _1, _2, 0,0);
+
+dma.set
+ # u0, dma, i, v
+ dma_set(_0, _1, _2, _3);
+
+dma.set2
+ # u0, dma, i, v0, v1
+ dma_set(_0, _1, _2, _3,_4);
+dma.set4
+ # u0, dma, i, v0,v1,v2,v3
+ dma_set(_0, _1, _2, _3,_4,_5,_6);

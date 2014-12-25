@@ -32,3 +32,6 @@ it.key.new
 it.dma
  # u0, dma, id,i
  obj_it_dma(_0, _1, _2,_3);
+
+buffer.new
+ obj_new(_0, 4, _1, 0,0,0);

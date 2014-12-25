@@ -60,5 +60,5 @@ dma.get4
  dma_get4(_0, _1, _2);
 
 dma.copy
- # u0, dma0,offset0, dma1,offset1
+ # u0, dma0,offset0, dma1,offset1, size
  dma_get4(_0, _1,_2, _3,_4, _5);

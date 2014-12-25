@@ -7,6 +7,8 @@ obj.detach obj_detach(_0, _1);
 
 #obj.delete obj_delete(_0, _1);
 
+obj.count 
+
 map.new
  # u0, itemmax, itemoverhead
  obj_new(_0, 0, _1, _2, 0,0);
@@ -38,6 +40,16 @@ it.dma
 buffer.new
  # u0, itemmax, itemoverhead
  obj_new(_0, 4, _1, _2, 0,0);
+buffer.add
+ # u0, id, itemmax, itemoverhead
+ obj_add(_0);
+buffer.remove
+ # u0, id, i
+ obj_add(_0);
+buffer.dma 
+ # u0, dma, id,i
+ it.dma(_0, _1, _2,_3);
+
 
 dma.set
  # u0, dma, offset, v

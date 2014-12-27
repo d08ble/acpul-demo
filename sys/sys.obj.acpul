@@ -96,4 +96,8 @@ dma.copy
 
 # tree [
 
+tree.new
+ 1;
+ 
+
 # tree ]

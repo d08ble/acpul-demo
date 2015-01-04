@@ -98,7 +98,7 @@ dma.copy
 
 tree.new
  1;
- 
+
 it.tree.pre.begin # == it.begin
  # u0, id,i
  obj_it_select2(_0, _1,_2, 0, 0,0);
@@ -126,5 +126,12 @@ it.tree.sibling.begin
 it.tree.sibling.end
  # u0, id,i, j
  obj_it_select2(_0, _1,_2, 7, _3,0);
+
+it.tree.leaf.begin
+ # u0, id,i, j
+ obj_it_select2(_0, _1,_2, 8, _3,0);
+it.tree.leaf.end
+ # u0, id,i, j
+ obj_it_select2(_0, _1,_2, 9, _3,0);
 
 # tree ]

@@ -102,37 +102,37 @@ tree.new
 
 it.tree.begin # == it.begin
  # u0, id,i
- obj_it_select2(_0, _1,_2, 0, 0,0);
+ obj_it_select2(_0, 0, _1,_2, 0,0);
 it.tree.end   # == it.end
  # u0, id,i
- obj_it_select2(_0, _1,_2, 1, 0,0);
+ obj_it_select2(_0, 1, _1,_2, 0,0);
 
 it.tree.depth.begin
  # u0, id,i, j,depth
- obj_it_select2(_0, _1,_2, 2, _3,_4);
+ obj_it_select2(_0, 2, _1,_2, _3,_4);
 it.tree.depth.end
  # u0, id,i, j,depth
- obj_it_select2(_0, _1,_2, 3, _3,_4);
+ obj_it_select2(_0, 3, _1,_2, _3,_4);
 
 it.tree.breadth.begin
  # u0, id,i
- obj_it_select2(_0, _1,_2, 4, 0,0);
+ obj_it_select2(_0, 4, _1,_2, 0,0);
 it.tree.breadth.end
  # u0, id,i
- obj_it_select2(_0, _1,_2, 5, 0,0);
+ obj_it_select2(_0, 5, _1,_2, 0,0);
 
 it.tree.sibling.begin
  # u0, id,i, j
- obj_it_select2(_0, _1,_2, 6, _3,0);
+ obj_it_select2(_0, 6, _1,_2, _3,0);
 it.tree.sibling.end
  # u0, id,i, j
- obj_it_select2(_0, _1,_2, 7, _3,0);
+ obj_it_select2(_0, 7, _1,_2, _3,0);
 
 it.tree.leaf.begin
  # u0, id,i, j
- obj_it_select2(_0, _1,_2, 8, _3,0);
+ obj_it_select2(_0, 8, _1,_2, _3,0);
 it.tree.leaf.end
  # u0, id,i, j
- obj_it_select2(_0, _1,_2, 9, _3,0);
+ obj_it_select2(_0, 9, _1,_2, _3,0);
 
 # tree ]

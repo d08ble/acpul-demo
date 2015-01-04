@@ -99,5 +99,32 @@ dma.copy
 tree.new
  1;
  
+it.tree.pre.begin # == it.begin
+ # u0, id,i
+ obj_it_select2(_0, _1,_2, 0, 0,0);
+it.tree.pre.end   # == it.end
+ # u0, id,i
+ obj_it_select2(_0, _1,_2, 1, 0,0);
+
+it.tree.depth.begin
+ # u0, id,i, j,depth
+ obj_it_select2(_0, _1,_2, 2, _3,_4);
+it.tree.depth.end
+ # u0, id,i, j,depth
+ obj_it_select2(_0, _1,_2, 3, _3,_4);
+
+it.tree.breadth.begin
+ # u0, id,i
+ obj_it_select2(_0, _1,_2, 4, 0,0);
+it.tree.breadth.end
+ # u0, id,i
+ obj_it_select2(_0, _1,_2, 5, 0,0);
+
+it.tree.sibling.begin
+ # u0, id,i, j
+ obj_it_select2(_0, _1,_2, 6, _3,0);
+it.tree.sibling.end
+ # u0, id,i, j
+ obj_it_select2(_0, _1,_2, 7, _3,0);
 
 # tree ]

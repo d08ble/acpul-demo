@@ -97,7 +97,8 @@ dma.copy
 # tree [
 
 tree.new
- 1;
+ # u0, itemmax, itemoverhead
+ obj_new(_0, 2, _1, _2, 0,0);
 
 it.tree.begin # == it.begin
  # u0, id,i

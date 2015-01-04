@@ -99,10 +99,10 @@ dma.copy
 tree.new
  1;
 
-it.tree.pre.begin # == it.begin
+it.tree.begin # == it.begin
  # u0, id,i
  obj_it_select2(_0, _1,_2, 0, 0,0);
-it.tree.pre.end   # == it.end
+it.tree.end   # == it.end
  # u0, id,i
  obj_it_select2(_0, _1,_2, 1, 0,0);
 

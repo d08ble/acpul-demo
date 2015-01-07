@@ -123,6 +123,7 @@ dma.json.to.object
 
 log.dma
  # u0, mode, dma
+ # mode: 0 singleline 1 multiline
  dma_log(_0, _1, _2);
 
 # dma.ex ]

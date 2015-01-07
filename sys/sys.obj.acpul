@@ -64,7 +64,16 @@ buffer.dma
  # u0, dma, id,i
  it.dma(_0, _1, _2,_3);
 
+buffer.str
+ # u0, id,i
+ obj_str(_0, _1,_2);
 # buffer ]
+
+# str [
+str.dma
+ # u0, dma, id
+ it.dma(_0, _1, _2, 0);
+# str ]
 
 # dma [
 
@@ -92,7 +101,24 @@ dma.copy
  # u0, dma0,offset0, dma1,offset1, size
  dma_get4(_0, _1,_2, _3,_4, _5);
 
+dma.off
+ # u0, dma
+ dma_off(_0, _1);
+ 
 # dma ]
+
+# dma.ex [
+
+cpu.mode.formula 0;
+cpu.mode.shader 1;
+cpu.mode.formula.name 2;
+cpu.mode.shader.name 3;
+
+dma.from.file
+ # u0, dma, mode, file
+ dma_from_file(_0, _1, _2, _3);
+
+# dma.ex ]
 
 # tree [
 

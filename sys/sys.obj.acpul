@@ -104,7 +104,7 @@ dma.copy
 dma.off
  # u0, dma
  dma_off(_0, _1);
- 
+
 # dma ]
 
 # dma.ex [
@@ -117,6 +117,9 @@ cpu.mode.shader.name 3;
 dma.from.file
  # u0, dma, mode, file
  dma_from_file(_0, _1, _2, _3);
+dma.json.to.object
+ # u0, dma
+ dma_json_to_object(_0, _1);
 
 # dma.ex ]
 

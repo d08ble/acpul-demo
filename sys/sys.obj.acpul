@@ -121,6 +121,10 @@ dma.json.to.object
  # u0, dma
  dma_json_to_object(_0, _1);
 
+dma.log
+ # u0, dma
+ dma_log(_0, _1);
+ 
 # dma.ex ]
 
 # tree [

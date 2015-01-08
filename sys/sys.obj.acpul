@@ -201,6 +201,13 @@ it.tree.max_depth
  # u0, id,i
  obj_it_cmd(_0, 3, _1,_2, 0,0,0,0);
 
+it.tree.number_of_children
+ # u0, id,i
+ obj_it_cmd(_0, 3, _1,_2, 0,0,0,0);
+it.tree.number_of_siblings
+ # u0, id,i
+ obj_it_cmd(_0, 3, _1,_2, 0,0,0,0);
+
 #it.tree.previous_sibling
 #it.tree.next_sibling
 #it.tree.next_at_same_depth

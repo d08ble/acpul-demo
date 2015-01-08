@@ -176,4 +176,8 @@ it.tree.post.end
  # u0, id,i
  obj_it_select2(_0, 11, _1,_2, 0,0);
 
+it.tree.parent
+it.tree.previous_sibling
+it.tree.next_sibling
+
 # tree ]

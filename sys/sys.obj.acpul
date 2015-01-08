@@ -177,7 +177,11 @@ it.tree.post.end
  obj_it_select2(_0, 11, _1,_2, 0,0);
 
 it.tree.parent
-it.tree.previous_sibling
-it.tree.next_sibling
+ # u0, id, i, j
+ obj_it_select2(_0, 12, _1, _2, _3, 0);
+
+#it.tree.previous_sibling
+#it.tree.next_sibling
+#it.tree.next_at_same_depth
 
 # tree ]

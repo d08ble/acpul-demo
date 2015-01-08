@@ -180,6 +180,13 @@ it.tree.parent
  # u0, id, i, j
  obj_it_select2(_0, 12, _1, _2, _3, 0);
 
+it.tree.erase
+ # u0, id,i
+ obj_it_select2(_0, 13, _1,_2, 0, 0);
+it.tree.erase_children
+ # u0, id,i
+ obj_it_select2(_0, 14, _1,_2, 0, 0);
+
 #it.tree.previous_sibling
 #it.tree.next_sibling
 #it.tree.next_at_same_depth

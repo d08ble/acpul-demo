@@ -188,10 +188,10 @@ it.tree.erase_children
  obj_it_modify(_0, 0, _1,_2, 0,0,0,0);
 
 it.tree.append_child
- # u0, id,i
+ # u0, id, i,j
  obj_it_modify(_0, 0, _1,_2, 0,0,0,0);
 it.tree.prepend_child
- # u0, id,i
+ # u0, id, i,j
  obj_it_modify(_0, 0, _1,_2, 0,0,0,0);
 
 #it.tree.previous_sibling

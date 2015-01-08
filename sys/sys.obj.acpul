@@ -169,4 +169,11 @@ it.tree.leaf.end
  # u0, id,i, j
  obj_it_select2(_0, 9, _1,_2, _3,0);
 
+it.tree.post.begin
+ # u0, id,i
+ obj_it_select2(_0, 10, _1,_2, 0,0);
+it.tree.post.end
+ # u0, id,i
+ obj_it_select2(_0, 11, _1,_2, 0,0);
+
 # tree ]

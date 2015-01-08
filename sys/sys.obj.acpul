@@ -182,17 +182,24 @@ it.tree.parent
 
 it.tree.erase
  # u0, id,i
- obj_it_modify(_0, 0, _1,_2, 0,0,0,0);
+ obj_it_cmd(_0, 0, _1,_2, 0,0,0,0);
 it.tree.erase_children
  # u0, id,i
- obj_it_modify(_0, 0, _1,_2, 0,0,0,0);
+ obj_it_cmd(_0, 1, _1,_2, 0,0,0,0);
 
 it.tree.append_child
  # u0, id,i, j
- obj_it_modify(_0, 0, _1,_2, _3,0,0,0);
+ obj_it_cmd(_0, 2, _1,_2, _3,0,0,0);
 it.tree.prepend_child
  # u0, id,i, j
- obj_it_modify(_0, 0, _1,_2, _3,0,0,0);
+ obj_it_cmd(_0, 3, _1,_2, _3,0,0,0);
+
+it.tree.depth
+ # u0, id,i, j
+ obj_it_cmd(_0, 3, _1,_2, _3,0,0,0);
+it.tree.max_depth
+ # u0, id,i
+ obj_it_cmd(_0, 3, _1,_2, 0,0,0,0);
 
 #it.tree.previous_sibling
 #it.tree.next_sibling

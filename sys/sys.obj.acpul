@@ -182,10 +182,10 @@ it.tree.parent
 
 it.tree.erase
  # u0, id,i
- obj_it_select2(_0, 13, _1,_2, 0, 0);
+ obj_it_modify(_0, 0, _1,_2, 0,0,0,0);
 it.tree.erase_children
  # u0, id,i
- obj_it_select2(_0, 14, _1,_2, 0, 0);
+ obj_it_modify(_0, 0, _1,_2, 0,0,0,0);
 
 it.tree.append_child
 

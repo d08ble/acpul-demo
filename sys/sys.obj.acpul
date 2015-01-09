@@ -199,20 +199,20 @@ it.tree.insert
 
 it.tree.depth
  # u0, id,i
- obj_it_cmd(_0, 21, _1,_2, _3,0,0,0);
+ obj_it_cmd(_0, 20, _1,_2, _3,0,0,0);
 it.tree.depth.diff
  # u0, id,i, j
- obj_it_cmd(_0, 22, _1,_2, _3,0,0,0);
+ obj_it_cmd(_0, 21, _1,_2, _3,0,0,0);
 it.tree.max_depth
  # u0, id,i
- obj_it_cmd(_0, 23, _1,_2, 0,0,0,0);
+ obj_it_cmd(_0, 22, _1,_2, 0,0,0,0);
 
 it.tree.number_of_children
  # u0, id,i
- obj_it_cmd(_0, 24, _1,_2, 0,0,0,0);
+ obj_it_cmd(_0, 23, _1,_2, 0,0,0,0);
 it.tree.number_of_siblings
  # u0, id,i
- obj_it_cmd(_0, 25, _1,_2, 0,0,0,0);
+ obj_it_cmd(_0, 24, _1,_2, 0,0,0,0);
 
 #it.tree.previous_sibling
 #it.tree.next_sibling

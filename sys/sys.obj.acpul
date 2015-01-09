@@ -195,7 +195,7 @@ it.tree.prepend_child
  obj_it_cmd(_0, 3, _1,_2, _3,0,0,0);
 it.tree.insert
  # u0, id,i, j
- obj_it_cmd(_0, 3, _1,_2, _3,0,0,0);
+ obj_it_cmd(_0, 4, _1,_2, _3,0,0,0);
 
 it.tree.depth
  # u0, id,i, j

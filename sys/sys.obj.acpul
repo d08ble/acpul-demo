@@ -133,10 +133,14 @@ log.dma
  # mode: 0 singleline 1 multiline
  dma_log(_0, _1, _2);
 
+dma.split
+ # u0, dma, mode, p0
+ dma_obj_new_dma(_0, _1, _2, _3);
+
 dma.sprintf
- # u0, out, format, args
+ # u0,out, format, args
  dma_sprintf(_0, _1, _2, _3);
- 
+
 # dma.ex ]
 
 # tree [

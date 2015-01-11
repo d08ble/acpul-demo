@@ -134,8 +134,8 @@ log.dma
  dma_log(_0, _1, _2);
 
 dma.split
- # u0, dma, mode, p0
- dma_obj_new_dma(_0, _1, _2, _3);
+ # u0, mode, dma, p0
+ dma_obj_new_dma(_0, _2, _1, _3);
 
 dma.sprintf
  # u0, out, format, args

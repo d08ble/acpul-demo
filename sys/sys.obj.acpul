@@ -135,7 +135,7 @@ log.dma
 
 dma.split
  # u0, mode, dma, p0
- dma_obj_new_dma(_0, _2, _1, _3);
+ dma_split_to_object(_0, _2, _1, _3);
 
 dma.sprintf
  # u0, out, format, args

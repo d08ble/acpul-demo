@@ -128,7 +128,7 @@ dma.json.to.object
  # u0, dma
  dma_json_to_object(_0, _1);
 
-log.dma
+dma.log
  # u0, mode, dma
  # mode: 0 singleline 1 multiline
  dma_log(_0, _1, _2);

@@ -212,6 +212,12 @@ it.tree.insert
  # u0, id,i
  obj_it_cmd(_0, 4, _1,_2, 0,0,0,0);
 
+it.tree.insert.root {
+ it.begin(_0, _1,_2);
+ it.tree.insert(_0, _1,_2); # top
+};
+
+
 it.tree.depth
  # u0, id,i
  obj_it_cmd(_0, 20, _1,_2, 0,0,0,0);

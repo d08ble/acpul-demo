@@ -1,4 +1,4 @@
-### -2 Test
+### -2 AST bugtest
 a.io 13400;
 
 c.io {r 0.5;g 0.6;b 0.1;a 1;};
@@ -32,3 +32,4 @@ f
 };
 
 f.h(a.io, c.io);
+

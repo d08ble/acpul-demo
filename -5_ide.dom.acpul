@@ -1,4 +1,4 @@
-### -5 ide.dom
+### -5 ide.dom (CONSOLE)
 r0:=k==0;
 
 ide.dom
@@ -250,3 +250,4 @@ ide.dom.dump(r0);
 #ide.dom.fg(r0, 0, 1, 0, 1);
 
 k:=1;
+

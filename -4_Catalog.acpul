@@ -1,4 +1,4 @@
-### -4 Catalog
+### -4 Catalog `string
 variable.string.example `the string;
 
 hello.world `hello world;
@@ -16,3 +16,4 @@ a {
 fn& i==-1;
 s `config;
 catalog.add(s, fn);
+

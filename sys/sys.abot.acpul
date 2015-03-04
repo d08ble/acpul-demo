@@ -1,2 +1,5 @@
 ### 1032 sys.abot
 
+abot.a 500470;
+abot.ip io(u0, abot.a+0, _0,_1,_2,_3); 
+abot.ip io(u0, abot.a+0, _0,_1,_2,_3); 

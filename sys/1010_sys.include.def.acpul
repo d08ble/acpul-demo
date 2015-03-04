@@ -37,7 +37,9 @@ sys.net 1030;
 
 sys.obj 1031;
 
-sys.modules.a.MAX 1032;
+sys.abot 1032;
+
+sys.modules.a.MAX 1034;
 
 # sys.def ]
 

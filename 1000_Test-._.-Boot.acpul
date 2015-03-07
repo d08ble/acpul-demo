@@ -113,6 +113,8 @@ SHADER.TEST 37000;
 FILTERS 7000;
 node.new.this.ex(r0, FILTERS, 0);
 
+ABOT 1500;
+node.new.this.ex(r0, ABOT, 0);
 
 #watch(r0);
 

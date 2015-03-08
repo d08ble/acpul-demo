@@ -40,8 +40,6 @@ y:=cy;
 _ @1010;
 _ @sys.node;
 
-#node.ex.child.draw.s(
-
 if (r0)
 {
  r1:=node.ex.texture.create(r0, 400,200);

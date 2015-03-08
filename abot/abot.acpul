@@ -50,3 +50,15 @@ if (r0)
 k:=1;
 
 ### 1503 abot.video.draw
+
+_ @1010;
+_ @sys.node;
+
+tex0 r1;
+gl node.ex.gl;
+shader node.ex.shader;
+
+shader.use(u0, 11330, 11332);
+shader.uniform.texture(u0, 0, r1, 0);
+shader.uniform.f1(u0, 1, 0.5+0.5*sin(l15*1));
+gl.rect(u0, -bw/2,-bh/2, bw,bh);

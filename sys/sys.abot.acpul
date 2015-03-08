@@ -11,6 +11,10 @@ abot
   ip(_0,_1,_2,_3);
   port(_4);
  };
+
+ stream.setup io(u0, a+2, _0,_1,_2,_3);
+ stream.start io(u0, a+3, 0,0,0,0);
+ stream.stop io(u0, a+4, 0,0,0,0);
 };
 
 

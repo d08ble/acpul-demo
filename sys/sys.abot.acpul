@@ -12,7 +12,7 @@ abot
   port(_4);
  };
 
- stream.setup io(u0, a+2, _0,_1,_2,_3);
- stream.start io(u0, a+3, 0,0,0,0);
- stream.stop io(u0, a+4, 0,0,0,0);
+ stream.setup io(_0, a+2, _1,_2,_3,_4);
+ stream.start io(_0, a+3, 0,0,0,0);
+ stream.stop io(_0, a+4, 0,0,0,0);
 };

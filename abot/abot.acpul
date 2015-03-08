@@ -6,6 +6,8 @@ _ @1010;
 _ @sys.abot;
 
 abot.host(192,168,7,225, 19789);
+abot.stream.setup(0,0,0,0);
+abot.stream.start();
 
 draw(r0, 1501);
 

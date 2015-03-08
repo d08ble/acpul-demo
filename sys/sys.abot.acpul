@@ -16,5 +16,3 @@ abot
  stream.start io(u0, a+3, 0,0,0,0);
  stream.stop io(u0, a+4, 0,0,0,0);
 };
-
-

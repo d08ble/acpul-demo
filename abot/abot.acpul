@@ -21,6 +21,32 @@ color(u0, 1,0.5,0,1);
 rect(u0, 6, 50,50, 50,50);
 rect(u0, 6, 0,100, 150,50);
 
+
+# ---- ---- ---- ---- [
+# ---- ---- ---- ---- ]
+
+
 ### 1502 abot.video
+
+r0:=k==0;
+
+draw(r0, 1503);
+
+vw 768; vh 1024;
+cx vw/2; cy vh/2;
+x:=cx;
+y:=cy;
+
+_ @1010;
+_ @sys.node;
+
+#node.ex.child.draw.s(
+
+if (r0)
+{
+ r1:=node.ex.texture.create(r0, 400,200);
+};
+
+k:=1;
 
 ### 1503 abot.video.draw

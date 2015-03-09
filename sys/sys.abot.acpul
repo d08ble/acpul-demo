@@ -15,4 +15,6 @@ abot
  stream.setup io(_0, a+2, _1,_2,_3,_4);
  stream.start io(_0, a+3, 0,0,0,0);
  stream.stop io(_0, a+4, 0,0,0,0);
+
+ stream.render.texture io(_0, a+5, _1, _2, 0,0);
 };

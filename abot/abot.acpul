@@ -66,7 +66,40 @@ shader node.ex.shader;
 _ @sys.abot;
 abot.stream.render.texture(u0, 0, tex0);
 
-shader.use(u0, 11330, 11332);
+shader.use(u0, 1504, 1505);
 shader.uniform.texture(u0, 0, r1, 0);
 shader.uniform.f1(u0, 1, 0.5+0.5*sin(l15*1));
 gl.rect(u0, -bw/2,-bh/2, bw,bh);
+
+### 1504 abot.video.vsh
+
+attribute vec4 a_position;
+attribute vec2 a_texCoord;
+
+varying mediump vec2 v_texCoord;
+varying mediump vec4 v_p;
+
+void main()
+{
+   gl_Position = CC_MVPMatrix * a_position+vec4(sin(a_position.x*0.05)*0.0,0.0,0.0,0.0);
+
+   v_texCoord = a_texCoord;
+   v_p = gl_Position;
+}
+
+### 1505 abot.video.fsh
+
+#ifdef GL_ES
+precision lowp float;
+#endif
+
+varying vec2 v_texCoord;
+
+uniform sampler2D p0;
+
+void main() 
+{
+  gl_FragColor = texture2D(p0, v_texCoord);
+
+//  gl_FragColor = vec4(0.0,0.5,1.0,0.5);
+}

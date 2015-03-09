@@ -56,7 +56,7 @@ if (r0)
 k:=1;
 
 t+=dt;
-r:=t*10;
+r:=45; #t*10;
 
 ### 1503 abot.video.draw
 

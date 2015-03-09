@@ -59,6 +59,9 @@ tex0 r1;
 gl node.ex.gl;
 shader node.ex.shader;
 
+_ @sys.abot;
+abot.stream.render.texture(u0, 0, tex0);
+
 shader.use(u0, 11330, 11332);
 shader.uniform.texture(u0, 0, r1, 0);
 shader.uniform.f1(u0, 1, 0.5+0.5*sin(l15*1));

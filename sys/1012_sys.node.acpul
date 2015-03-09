@@ -106,13 +106,43 @@ node {_;
  ex.texture.create
   # u0, width, height
   io(_0, 7000, _1,_2, 0,0);
- ex.texture.create.format
-  # u0, width, height, format
-  io(_0, 7002, _1,_2, _3,0);
  ex.texture.release
   # u0, width, height
   io(_0, 7001, _1, 0,0,0);
+ ex.texture.create.fmt
+  # u0, width, height, fmt
+  io(_0, 7002, _1,_2, _3,0);
+ ex.texture.fmt {
+  rgba8888 0; # 32-bit texture: RGBA8888
+  rgb888 1;   # 32-bit texture without Alpha channel. Don't use it.
+  rgb565 2;   # 16-bit texture without Alpha channel
+  a8 3;       # 8-bit textures used as masks
+  i8 4;       # 8-bit intensity texture
+  ai88 5;     # 16-bit textures used as masks
+  rgba444 6;  # 16-bit textures: RGBA4444
   
+ };
+  
+  kCCTexture2DPixelFormat_RGBA8888,
+  //! 
+  kCCTexture2DPixelFormat_RGB888,
+  //! 
+  kCCTexture2DPixelFormat_RGB565,
+  //! 
+  kCCTexture2DPixelFormat_A8,
+  //! 
+  kCCTexture2DPixelFormat_I8,
+  //! 
+  kCCTexture2DPixelFormat_AI88,
+  //! 
+  kCCTexture2DPixelFormat_RGBA4444,
+  //! 16-bit textures: RGB5A1
+  kCCTexture2DPixelFormat_RGB5A1,
+  //! 4-bit PVRTC-compressed texture: PVRTC4
+  kCCTexture2DPixelFormat_PVRTC4,
+  //! 2-bit PVRTC-compressed texture: PVRTC2
+  kCCTexture2DPixelFormat_PVRTC2,
+
  ex.shader.use
   # u0, vertex, fragment
   io(_0, 7100, _1,_2, 0,0);

@@ -121,6 +121,8 @@ node {_;
   ai88 5;     # 16-bit textures used as masks
   rgba444 6;  # 16-bit textures: RGBA4444
   rgb5a1 7;   # 16-bit textures: RGB5A1
+  pvrtc4 8;   # 4-bit PVRTC-compressed texture: PVRTC4
+  pvrtc2 9;   # 2-bit PVRTC-compressed texture: PVRTC2
  };
   
   kCCTexture2DPixelFormat_RGBA8888,
@@ -138,9 +140,9 @@ node {_;
   kCCTexture2DPixelFormat_RGBA4444,
   //! 
   kCCTexture2DPixelFormat_RGB5A1,
-  //! 4-bit PVRTC-compressed texture: PVRTC4
+  //! 
   kCCTexture2DPixelFormat_PVRTC4,
-  //! 2-bit PVRTC-compressed texture: PVRTC2
+  //! 
   kCCTexture2DPixelFormat_PVRTC2,
 
  ex.shader.use

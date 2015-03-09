@@ -111,7 +111,7 @@ node {_;
   io(_0, 7001, _1, 0,0,0);
 
  ex.texture.create.fmt
-  # u0, width, height, fmt, lazy
+  # u0, width, height, fmt, lazydata
   io(_0, 7002, _1,_2, _3, _4);
  ex.texture.fmt {
   rgba8888 0; # 32-bit texture: RGBA8888

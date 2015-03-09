@@ -125,7 +125,6 @@ node {_;
   pvrtc2 9;   # 2-bit PVRTC-compressed texture: PVRTC2
  };
 
-
  ex.shader.use
   # u0, vertex, fragment
   io(_0, 7100, _1,_2, 0,0);

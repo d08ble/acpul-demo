@@ -75,7 +75,7 @@ shader.uniform.f1(u0, 1, 0.5+0.5*sin(l15*1));
 #gl.rect(u0, -bw/2,-bh/2, bw,bh);
 gl.rect(u0, 0,0, 1000,1000);
 
-### 1504 abot.video.vsh
+### 1504:S abot.video.vsh
 
 attribute vec4 a_position;
 attribute vec2 a_texCoord;
@@ -91,7 +91,7 @@ void main()
    v_p = gl_Position;
 }
 
-### 1505 abot.video.fsh
+### 1505:S abot.video.fsh
 
 #ifdef GL_ES
 precision lowp float;

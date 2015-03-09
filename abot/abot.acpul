@@ -49,7 +49,7 @@ _ @sys.node;
 
 if (r0)
 {
- r1:=node.ex.texture.create.fmt(r0, 1024,768, node.ex.texture.fmt.rgb565);
+ r1:=node.ex.texture.create.fmt(r0, 1024,768, node.ex.texture.fmt.rgb565, 1);
 };
 
 k:=1;

@@ -108,10 +108,11 @@ node {_;
   io(_0, 7000, _1,_2, 0,0);
  ex.texture.create.format
   # u0, width, height, format
-  io(_0, 7000, _1,_2, _3,0);
+  io(_0, 7002, _1,_2, _3,0);
  ex.texture.release
   # u0, width, height
   io(_0, 7001, _1, 0,0,0);
+  
  ex.shader.use
   # u0, vertex, fragment
   io(_0, 7100, _1,_2, 0,0);

@@ -66,7 +66,7 @@ shader node.ex.shader;
 _ @sys.abot;
 abot.stream.render.texture(u0, 0, tex0);
 
-color(u0, 0.0,0.5,0,0.5);
+color(u0, 0.0,0.0,0,0.5);
 
 
 shader.use(u0, 1504, 1505);

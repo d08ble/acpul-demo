@@ -34,9 +34,9 @@ r7:=abot.regions.create();
 
 region abot.region;
 region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);
-region.view(r7, 0,0, 100,100);
-region.video(r7, 0,0, 100,100);
-region.src(r7, 0,0, 100,100);
+region.view(0,0, 100,100);
+region.video(0,0, 100,100);
+region.src(0,0, 100,100);
 
 abot.regions.sync(l7);
 

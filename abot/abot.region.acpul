@@ -63,7 +63,7 @@ shader.uniform.f1(u0, 1, 0.5+0.5*sin(l15*1));
 bw 1024;
 bh 768;
 #gl.rect(u0, +30,0, bw-60,bh);
-gl.rect(u0, bw/2+30,-bh/2, bw-60,bh);
+gl.rect(u0, -bw/2+30,-bh/2, bw-60,bh);
 
 # ---- ---- ---- ---- [
 # ---- ---- ---- ---- ]

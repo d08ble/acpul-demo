@@ -57,6 +57,12 @@ abot.regions {
  };
 
  sync {
+  _0:=it.begin(u0, r7,0);
+  while(l0>-1) {
+   it.dma(u0, 0, r7,_0);
+
+   _0:=it.next(u0, r7,_0);
+  };
  };
 };
 
@@ -71,8 +77,7 @@ if (r0)
  region.video(0,0, 100,100);
  region.src(0,0, 100,100);
 
-# abot.regions.sync(u0, r7);
- 
+ abot.regions.sync(u0, r7);
 };
 
 # removed [

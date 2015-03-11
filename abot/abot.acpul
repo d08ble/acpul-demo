@@ -27,11 +27,25 @@ k:=1;
 #y:=200;
 #s:=0.25;
 
+_ @sys.display;
+
+vw 1024; vh 768;
+cx vw/2; cy vh/2;
+
+
 vw 768; vh 1024;
+
+l0:=display.orientation.get() - display.orientation.landscape;
+if (l0>0) {
 x:=vw/2;
 y:=vh/2;
 s:=0.7;
-
+};
+if (l0<=0) {
+ x:=0;
+ y:=0;
+ s:=1;
+};
 ### 1501 ACPUBot.draw
 
 color(u0, 1,0.5,0,0.5);
@@ -58,8 +72,6 @@ _ @sys.display;
 
 vw 1024; vh 768;
 cx vw/2; cy vh/2;
-
-
 
 l0:=display.orientation.get() - display.orientation.landscape;
 if (l0>0) {

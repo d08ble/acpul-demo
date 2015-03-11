@@ -56,7 +56,9 @@ abot.regions {
  };
 };
 
-r7:=abot.regions.create();
+if (r0) {
+ r7:=abot.regions.create();
+};
 
 region abot.regions.region;
 region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);

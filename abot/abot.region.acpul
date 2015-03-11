@@ -22,7 +22,9 @@ k:=1;
 # <window> <control> 
 rn.xcode.panel.view 0;
 rn.xcode.panel.buttons 1;
-rn.xcode.editor 2;
+rn.xcode.editor.view 2;
+rn.xcode.vars 3;
+rn.xcode.console 4;
 
 
 ### 1511 abot.region.draw

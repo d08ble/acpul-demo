@@ -38,7 +38,7 @@ abot.regions {
   video 6;
   src 10;
  };
- max o.src+4;
+ max 14;
  create map.new(u0, max, max);
  region {
   query.window {

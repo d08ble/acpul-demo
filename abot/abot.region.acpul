@@ -25,7 +25,7 @@ rn.xcode.panel.buttons 1;
 rn.xcode.editor.view 2;
 rn.xcode.vars 3;
 rn.xcode.console 4;
-rn.xcode.status 5;
+rn.xcode.build.status 5;
 
 
 ### 1511 abot.region.draw

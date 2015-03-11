@@ -41,7 +41,7 @@ abot.regions {
  max 14;
 
  create map.new(u0, max, max);
- 
+
  region {
   query.window {
    it.key.new(u0, _0,0, _1*1000+_2);
@@ -58,14 +58,16 @@ abot.regions {
 };
 
 r7:=if(r0, abot.regions.create(), r7);
+if (r0)
+{
+ region abot.regions.region;
+ region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);
+ region.view(0,0, 100,100);
+ region.video(0,0, 100,100);
+ region.src(0,0, 100,100);
 
-region abot.regions.region;
-region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);
-region.view(0,0, 100,100);
-region.video(0,0, 100,100);
-region.src(0,0, 100,100);
-
-abot.sync.regions(u0, l7);
+ abot.sync.regions(u0, l7);
+};
 
 # removed [
 # ### 1516 abot.region.data.windows

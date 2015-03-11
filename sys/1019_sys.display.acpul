@@ -45,5 +45,5 @@ display
   landscape 2;
   rlandscape 3;
  };
- orientation.get io(u0, 500240, 0,0,0,0);
+ get.orientation io(u0, 500240, 0,0,0,0);
 };

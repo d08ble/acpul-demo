@@ -17,7 +17,7 @@ abot.stream.setup(r0, 0,0,0,0);
 abot.stream.start(r0);
 
 VIDEO 1502;
-node.new.this.ex(r0, VIDEO, 0);
+#node.new.this.ex(r0, VIDEO, 0);
 
 draw(r0, 1501);
 

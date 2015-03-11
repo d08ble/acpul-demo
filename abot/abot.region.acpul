@@ -26,6 +26,7 @@ rn.xcode.editor.view 2;
 rn.xcode.vars 3;
 rn.xcode.console 4;
 rn.xcode.build.status 5;
+rn.xcode.simulator 6;
 
 
 ### 1511 abot.region.draw

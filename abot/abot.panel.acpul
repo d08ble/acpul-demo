@@ -4,6 +4,8 @@ r0:=k==0;
 
 draw(r0, 1551);
 
+p0:=0;
+
 k:=1;
 
 ### 1551 abot.panel.draw

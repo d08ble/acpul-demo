@@ -41,10 +41,12 @@ abot.regions {
  max 6;
  create map.new(u0, max, max);
  #sync io(u0, )
- region.query.window {
-  it.key.new(u0, _0,0, _1);
-  it.dma(u0, 0, _0,0);
-  dma.set2()
+ region {
+  query.window {
+   it.key.new(u0, _0,0, _1);
+   it.dma(u0, 0, _0,0);
+   dma.set2()
+  };
  };
 };
 

@@ -8,7 +8,7 @@ p0:=0;
 
 k:=1;
 
-vw 768; vh 1024;
+vw 1024; vh 768;
 x:=-vw/2;
 
 ### 1551 abot.panel.draw

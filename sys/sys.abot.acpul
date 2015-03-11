@@ -17,4 +17,6 @@ abot
  stream.stop io(_0, a+4, 0,0,0,0);
 
  stream.render.texture io(_0, a+5, _1, _2, 0,0);
+
+ sync.regions io(_0, a+6, _1, 0,0,0);
 };

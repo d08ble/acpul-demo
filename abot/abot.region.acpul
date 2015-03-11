@@ -59,10 +59,10 @@ abot.regions {
 
 region abot.regions.region;
 
-r7:=if(r0, abot.regions.create(), r7);
-
 if (r0)
 {
+ r7:=abot.regions.create();
+
  region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);
  region.view(0,0, 100,100);
  region.video(0,0, 100,100);

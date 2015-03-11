@@ -90,7 +90,7 @@ color(u0, 0.0,0.0,0,0.5);
 shader.use(u0, 1504, 1505);
 shader.uniform.texture(u0, 0, r1, 0);
 shader.uniform.f1(u0, 1, 0.5+0.5*sin(l15*1));
-bw 1024;
+bw 1024-100;
 bh 768;
 gl.rect(u0, -bw/2,-bh/2, bw,bh);
 #gl.rect(u0, 0,0, 1024+200*sin(t),768);

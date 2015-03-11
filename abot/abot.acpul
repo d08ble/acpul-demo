@@ -23,17 +23,10 @@ draw(r0, 1501);
 
 k:=1;
 
-#x:=100;
-#y:=200;
-#s:=0.25;
-
 _ @sys.display;
 
 vw 1024; vh 768;
-cx vw/2; cy vh/2;
 
-
-vw 768; vh 1024;
 
 l0:=display.orientation.get() - display.orientation.landscape;
 if (l0>0) {

@@ -4,11 +4,14 @@ r0:=k==0;
 
 draw(r0, 1511);
 
-k:=1;
-
 vw 1024; vh 768;
 x:=-vw/2;
 y:=-vh/2;
+
+REGION.VIDEO 1510;
+node.new.this.ex(r0, REGION.VIDEO, 0);
+
+k:=1;
 
 ### 1511 abot.region.draw
 

@@ -43,7 +43,7 @@ if (r0)
 
 k:=1;
 r:=180;
-x:=768;
+x:=1024;
 
 ### 1513 abot.region.video.draw
 

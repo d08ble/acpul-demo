@@ -39,7 +39,7 @@ abot.regions {
   src 10;
  };
  max 14;
- 
+
  create map.new(u0, max, max);
  region {
   query.window {
@@ -47,9 +47,12 @@ abot.regions {
    it.dma(u0, 0, _0,0);
    dma.set2(u0, 0, o.wnd, _1,_2);
   };
-  view dma.set4(u0, 0, o.view, _0,_1, _2,_3);
-  video dma.set4(u0, 0, o.video, _0,_1, _2,_3);
-  src dma.set4(u0, 0, o.src, _0,_1, _2,_3);
+  view 
+   dma.set4(u0, 0, o.view, _0,_1, _2,_3);
+  video 
+   dma.set4(u0, 0, o.video, _0,_1, _2,_3);
+  src 
+   dma.set4(u0, 0, o.src, _0,_1, _2,_3);
  };
 };
 

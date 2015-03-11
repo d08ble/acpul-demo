@@ -54,7 +54,7 @@ cx vw/2; cy vh/2;
 
 
 
-l0:=display.orientation - 2;# display.orientation.landscape;
+l0:=display.orientation.get() - 2 display.orientation.landscape;
 if (l0>0) {
 x:=cx;
 y:=cy;

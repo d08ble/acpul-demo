@@ -30,11 +30,15 @@ rn.xcode.simulator 6;
 
 wnd.xcode.acpubot 0;
 
+r7:=abot.regions.create();
+
 region abot.region;
-region.query.window(wnd.xcode.acpubot);
-region.view(rn.xcode.panel.view, 0,0, 100,100);
-region.video(rn.xcode.panel.view, 0,0, 100,100);
-region.src(rn.xcode.panel.view, 0,0, 100,100);
+region.query.window(r7, wnd.xcode.acpubot);
+region.view(r7, rn.xcode.panel.view, 0,0, 100,100);
+region.video(r7, rn.xcode.panel.view, 0,0, 100,100);
+region.src(r7, rn.xcode.panel.view, 0,0, 100,100);
+
+abot.regions.sync(l7);
 
 # removed [
 # ### 1516 abot.region.data.windows

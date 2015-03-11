@@ -31,7 +31,7 @@ rn.xcode.simulator 6;
 wnd.xcode.acpubot 0;
 
 region abot.region;
-region.window(wnd.xcode.acpubot);
+region.query.window(wnd.xcode.acpubot);
 region.view(rn.xcode.panel.view, 0,0, 100,100);
 region.video(rn.xcode.panel.view, 0,0, 100,100);
 region.src(rn.xcode.panel.view, 0,0, 100,100);

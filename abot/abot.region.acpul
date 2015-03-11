@@ -43,9 +43,9 @@ abot.regions {
  #sync io(u0, )
  region {
   query.window {
-   it.key.new(u0, _0,0, _1);
+   it.key.new(u0, _0,0, _1*1000+_2);
    it.dma(u0, 0, _0,0);
-   dma.set2(u0, )
+   dma.set2(u0, 0, o.wnd, _1,_2);
   };
  };
 };

@@ -45,7 +45,7 @@ abot.regions {
   query.window {
    it.key.new(u0, _0,0, _1);
    it.dma(u0, 0, _0,0);
-   dma.set2()
+   dma.set2(u0, )
   };
  };
 };

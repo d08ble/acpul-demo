@@ -2,11 +2,31 @@
 
 ### 1511 abot.region.draw
 
+# ---- ---- ---- ---- [
+# ---- ---- ---- ---- ]
+
 ### 1512 abot.region.video
 
 ### 1513 abot.region.video.draw
 
+# ---- ---- ---- ---- [
+# ---- ---- ---- ---- ]
+
 ### 1514:S abot.region.video.vsh
+
+attribute vec4 a_position;
+attribute vec2 a_texCoord;
+
+varying mediump vec2 v_texCoord;
+varying mediump vec4 v_p;
+
+void main()
+{
+   gl_Position = CC_MVPMatrix * a_position+vec4(sin(a_position.x*0.05)*0.0,0.0,0.0,0.0);
+
+   v_texCoord = a_texCoord;
+   v_p = gl_Position;
+}
 
 ### 1515:S abot.region.video.fsh
 

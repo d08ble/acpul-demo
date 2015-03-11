@@ -19,8 +19,8 @@ abot.stream.start(r0);
 VIDEO 1502;
 node.new.this.ex(r0, VIDEO, 0);
 PANEL 1550;
-node.new.this.ex(r0, PANEL, 0); # L
-node.new.this.ex(r0, PANEL, 1); # R
+node.new.this.ex(r0, PANEL, 0); # R
+node.new.this.ex(r0, PANEL, 1); # L
 
 draw(r0, 1501);
 

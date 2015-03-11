@@ -62,7 +62,7 @@ if (l0<=0) {
 y:=cx;
 x:=cy;
 };
-watch(l0);
+#watch(l0);
 
 #s:=0.5;
 

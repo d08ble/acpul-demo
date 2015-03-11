@@ -32,7 +32,7 @@ wnd.xcode.acpubot 0;
 abot.query.window(wnd.xcode.acpubot);
 abot.region.view(rn.xcode.panel.view, 0,0, 100,100);
 abot.region.video(rn.xcode.panel.view, 0,0, 100,100);
-abot.region.record(rn.xcode.panel.view, 0,0, 100,100);
+abot.region.src(rn.xcode.panel.view, 0,0, 100,100);
 
 # removed [
 # ### 1516 abot.region.data.windows

@@ -20,6 +20,8 @@ k:=1;
 #region.window.control
 # define region:
 # <window> <control> 
+rn.xcode.panel.projects
+
 
 ### 1511 abot.region.draw
 

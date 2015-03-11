@@ -30,19 +30,6 @@ rn.xcode.simulator 6;
 
 wnd.xcode.acpubot 1;
 
-abot.regions {
- o {
-  wnd 0;
-  ctrl 1;
-  view 2;
-  video 6;
-  src 10;
- };
- max 6;
- create map.new(u0, max, max);
- 
-};
-
 r7:=abot.regions.create();
 
 region abot.region;

@@ -132,17 +132,17 @@ _ @sys.display;
 bw 1024;
 bh 768;
 l0:=display.orientation.get() - display.orientation.landscape;
-l0:=(l0>0);
+#l0:=(l0>0);
 
-gl.rect(u0, -bw/2+30*l0,-bh/2, bw-60*l0,bh);
+#gl.rect(u0, -bw/2+30*l0,-bh/2, bw-60*l0,bh);
 
 #watch((l0>0));
-#if (l0>0) {
-#gl.rect(u0, -bw/2+30,-bh/2, bw-60,bh);
-#};
-#if (l0<=0) {
-#gl.rect(u0, -bw/2+30,-bh/2, bw-60,bh);
-#};
+if (l0>0) {
+gl.rect(u0, -bw/2+30,-bh/2, bw-60,bh);
+};
+if (l0<=0) {
+gl.rect(u0, -bh/2+30,-bw/2, bh-60,bw);
+};
 
 bw 1024;
 bh 768;

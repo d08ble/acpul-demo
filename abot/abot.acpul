@@ -45,10 +45,10 @@ r0:=k==0;
 
 draw(r0, 1503);
 
-vw 768; vh 1024;
+vw 1024; vh 768;
 cx vw/2; cy vh/2;
-#x:=cx;
-#y:=cy;
+x:=cx;
+y:=cy;
 
 _ @1010;
 _ @sys.node;

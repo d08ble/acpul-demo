@@ -30,6 +30,10 @@ rn.xcode.simulator 6;
 
 wnd.xcode.acpubot 0;
 
+abot.regions.create {
+    
+};
+
 r7:=abot.regions.create();
 
 region abot.region;

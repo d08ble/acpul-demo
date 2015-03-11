@@ -38,4 +38,11 @@ display
    one.minus.dst.alpha 7;
   };
  };
+
+ orientation {
+  portrait 0;
+  portrait.upside.down 0;
+  portrait 0;
+  portrait 0;
+ };
 };

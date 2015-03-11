@@ -60,7 +60,7 @@ region.view(0,0, 100,100);
 region.video(0,0, 100,100);
 region.src(0,0, 100,100);
 
-abot.sync.regions(l7);
+abot.sync.regions(u0, l7);
 
 # removed [
 # ### 1516 abot.region.data.windows

@@ -37,8 +37,8 @@ vw 768; vh 1024;
 
 l0:=display.orientation.get() - display.orientation.landscape;
 if (l0>0) {
- x:=0;
- y:=0;
+ x:=vh/2;
+ y:=vw/2;
  s:=1;
 };
 if (l0<=0) {

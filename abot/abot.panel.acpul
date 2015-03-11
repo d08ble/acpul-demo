@@ -9,8 +9,10 @@ p0:=0;
 k:=1;
 
 vw 1024; vh 768;
+if (p0) {
 x:=-vw/2;
 y:=-vh/2;
+};
 
 ### 1551 abot.panel.draw
 

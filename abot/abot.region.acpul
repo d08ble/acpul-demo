@@ -20,7 +20,7 @@ k:=1;
 #region.window.control
 # define region:
 # <window> <control> 
-rn.xcode.panel.projects;
+rn.xcode.panel.view;
 rn.xcode.editor;
 
 

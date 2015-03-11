@@ -28,11 +28,12 @@ rn.xcode.console 4;
 rn.xcode.build.status 5;
 rn.xcode.simulator 6;
 
-wnd.acpubot 0;
+wnd.acpubot 1;
 query.window(wnd.acpubot);
 reg.wnd(rn.xcode.panel.view);
 
-### 1516 abot.region.data
+### 1516 abot.region.data.windows
+#<wnd> <prefix> <index>
 XCode ACPUBot 0
 
 ### 1511 abot.region.draw

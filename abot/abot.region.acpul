@@ -20,9 +20,9 @@ k:=1;
 #region.window.control
 # define region:
 # <window> <control> 
-rn.xcode.panel.view;
-rn.xcode.panel.buttons;
-rn.xcode.editor;
+rn.xcode.panel.view 0;
+rn.xcode.panel.buttons 1;
+rn.xcode.editor 2;
 
 
 ### 1511 abot.region.draw

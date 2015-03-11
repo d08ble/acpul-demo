@@ -41,8 +41,8 @@ display
 
  orientation {
   portrait 0;
-  rportrait 0;
-  portrait 0;
-  portrait 0;
+  rportrait 1;
+  landscape 2;
+  rlandscape 3;
  };
 };

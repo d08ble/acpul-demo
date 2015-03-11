@@ -45,14 +45,17 @@ r0:=k==0;
 
 draw(r0, 1503);
 
+_ @1010;
+_ @sys.node;
+_ @sys.display;
+
 vw 1024; vh 768;
 cx vw/2; cy vh/2;
+
 x:=cx;
 y:=cy;
 r:=180;
 
-_ @1010;
-_ @sys.node;
 
 if (r0)
 {

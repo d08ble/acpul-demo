@@ -21,6 +21,7 @@ k:=1;
 # define region:
 # <window> <control> 
 rn.xcode.panel.view;
+rn.xcode.panel.buttons;
 rn.xcode.editor;
 
 

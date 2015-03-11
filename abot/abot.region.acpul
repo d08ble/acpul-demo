@@ -7,6 +7,21 @@
 
 ### 1512 abot.region.video
 
+r0:=k==0;
+
+draw(r0, 1503);
+
+_ @1010;
+_ @sys.node;
+
+if (r0)
+{
+ r1:=node.ex.texture.create.fmt(r0, 1024,768, node.ex.texture.fmt.rgb565, 1);
+};
+
+k:=1;
+r:=180;
+
 ### 1513 abot.region.video.draw
 
 _ @1010;

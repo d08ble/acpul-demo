@@ -28,9 +28,9 @@ rn.xcode.console 4;
 rn.xcode.build.status 5;
 rn.xcode.simulator 6;
 
-wnd.acpubot 0;
-query.window(wnd.acpubot);
-reg.wnd(rn.xcode.panel.view);
+wnd.xcode.acpubot 0;
+abot.query.window(wnd.xcode.acpubot);
+abot.wnd.region(rn.xcode.panel.view);
 
 # removed [
 # ### 1516 abot.region.data.windows

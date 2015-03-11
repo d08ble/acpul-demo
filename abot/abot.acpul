@@ -25,7 +25,7 @@ k:=1;
 
 _ @sys.display;
 
-vw 1024; vh 768;
+vw 768; vh 1024;
 
 
 l0:=display.orientation.get() - display.orientation.landscape;

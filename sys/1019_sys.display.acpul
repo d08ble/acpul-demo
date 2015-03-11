@@ -40,8 +40,7 @@ display
  };
 
  orientation io(u0, 500240, 0,0,0,0);
- orientation {
-  _;
+ orientation { _;
   portrait 0;
   rportrait 1;
   landscape 2;

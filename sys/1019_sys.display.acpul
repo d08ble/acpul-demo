@@ -41,7 +41,7 @@ display
 
  orientation {
   portrait 0;
-  portrait.upside.down 0;
+  rportrait 0;
   portrait 0;
   portrait 0;
  };

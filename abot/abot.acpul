@@ -53,7 +53,7 @@ vw 1024; vh 768;
 cx vw/2; cy vh/2;
 
 
-l0:=display.orientation;# - display.orientation.landscape;
+l0:=display.orientation - display.orientation.landscape;
 if (l0>0) {
 x:=cx;
 y:=cy;

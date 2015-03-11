@@ -56,14 +56,14 @@ cx vw/2; cy vh/2;
 
 l0:=display.orientation.get() - display.orientation.landscape;
 if (l0>0) {
-x:=cx;
-y:=cy;
-s:=1;
+#x:=cx;
+#y:=cy;
+#s:=1;
 };
 if (l0<=0) {
-y:=cx;
-x:=cy;
-s:=0.75;
+#y:=cx;
+#x:=cy;
+#s:=0.75;
 };
 #watch(l0);
 

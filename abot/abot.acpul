@@ -129,9 +129,10 @@ shader.uniform.f1(u0, 1, 0.5+0.5*sin(l15*1));
 
 #_ @sys.display;
 
-#bw 1024;
-#bh 768;
-#l0:=display.orientation.get() - display.orientation.landscape;
+bw 1024;
+bh 768;
+l0:=display.orientation.get() - display.orientation.landscape;
+watch((l0>0));
 #if (l0>0) {
 #gl.rect(u0, -bw/2+30,-bh/2, bw-60,bh);
 #};

@@ -144,9 +144,9 @@ if (l0<=0) {
 gl.rect(u0, -bh/2+30,-bw/2, bh-60,bw);
 };
 
-bw 1024;
-bh 768;
-gl.rect(u0, -bw/2+30,-bh/2, bw-60,bh);
+#bw 1024;
+#bh 768;
+#gl.rect(u0, -bw/2+30,-bh/2, bw-60,bh);
 #gl.rect(u0, 0,0, 1024+200*sin(t),768);
 #gl.rect(u0, -700,-200, 1024,768);
 #gl.rect(u0, 0,0, 1024,768);

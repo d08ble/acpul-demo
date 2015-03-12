@@ -32,6 +32,9 @@ rn.xcode.simulator 6;
 wnd.xcode.acpubot 1;
 
 abot.regions {
+ _ @1010;
+ _ @sys.obj;
+
  o {
   wnd 0;
   ctrl 1;

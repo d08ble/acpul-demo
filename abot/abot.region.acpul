@@ -64,18 +64,19 @@ abot.regions {
 
 region abot.regions.region;
 
-if (r0)
+if (1)
 {
  r7:=abot.regions.create();
 
  region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);
  region.view(0,0, 100,100);
- region.video(0,0, 100,100);
+ region.video(100+sin(t)*100,0, 100,100);
  region.src(0,0, 100,100);
 
  abot.sync.regions(u0, r7);
 };
 
+t+=dt;
 
 # removed [
 # ## 1516 abot.region.data.windows

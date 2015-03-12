@@ -20,7 +20,7 @@ VIDEO 1502;
 #node.new.this.ex(r0, VIDEO, 0);
 
 REGION 1510;
-node.new.this.ex(r0, REGION, 0);
+#node.new.this.ex(r0, REGION, 0);
 
 PANEL 1550;
 node.new.this.ex(r0, PANEL, 0); # R

@@ -13,7 +13,7 @@ x:=-vw/2;
 y:=-vh/2;
 
 REGION.VIDEO 1512;
-node.new.this.ex(r0, REGION.VIDEO, 0);
+#node.new.this.ex(r0, REGION.VIDEO, 0);
 
 k:=1;
 

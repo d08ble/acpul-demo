@@ -88,8 +88,8 @@ if (1)
 
  region.query.window(r7, wnd.xcode.acpubot, 
   rn.xcode.editor);
- region.view(0,100, 200,100);
- region.video(0,100, 400,400);
+ region.view(0,100, 800,800);
+ region.video(0,100, 800,800);
  region.src(500,200, 400,400);
  
  abot.sync.regions(u0, r7);
@@ -187,5 +187,6 @@ void main()
 
 //  gl_FragColor = vec4(1.0,0.5,1.0,0.5);
 }
+
 
 

@@ -73,7 +73,7 @@ if (1)
  #region.video(100+sin(t)*100,0, 100,100);
  region.video(0,0, 100,100);
 # region.src(0,0, 100,100);
- region.src(1700+sin(t)*100,0, 100,100);
+ region.src(1500+sin(t)*100,0, 100,100);
  
  abot.sync.regions(u0, r7);
 };

@@ -68,7 +68,7 @@ wnd.xcode.acpubot 1;
 
 if (1)
 {
- r7:=if(r0, r7, abot.regions.create());
+ r7:=if(r0, abot.regions.create(), r7);
 
  abot.regions.clear(r7);
 

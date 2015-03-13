@@ -80,7 +80,7 @@ if (1)
  region.src(100+sin(t)*100,0, 100,100);
 
  region.query.window(r7, wnd.xcode.acpubot, rn.xcode.console);
- region.view(100,100, 200,100);
+ region.view(200,100, 200,100);
  region.video(100,0, 200,100);
  region.src(0,0, 200,100);
  

@@ -66,8 +66,7 @@ region abot.regions.region;
 
 if (1)
 {
-# r7:=if(r7, r7, abot.regions.create());
- r7:=abot.regions.create();
+ r7:=if(r7, r7, abot.regions.create());
  obj_clear(u0, r7);
 
  region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);

@@ -86,8 +86,6 @@ if (1)
  abot.sync.regions(u0, r7);
 };
 
-
-
 t+=dt;
 
 # removed [

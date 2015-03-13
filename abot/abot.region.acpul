@@ -57,7 +57,7 @@ region abot.regions.region;
 # <window> <control> 
 rn.xcode.panel.view 0;
 rn.xcode.panel.buttons 1;
-rn.xcode.editor.view 2;
+rn.xcode.editor 2;
 rn.xcode.vars 3;
 rn.xcode.console 4;
 rn.xcode.build.status 5;
@@ -72,17 +72,25 @@ if (1)
 
  abot.regions.clear(r7);
 
- region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);
+ region.query.window(r7, wnd.xcode.acpubot, 
+  rn.xcode.panel.view);
  region.view(0,0, 100,100);
  #region.video(100+sin(t)*100,0, 100,100);
  region.video(0,0, 100,100);
 # region.src(0,0, 100,100);
  region.src(100+sin(t)*100,0, 100,100);
 
- region.query.window(r7, wnd.xcode.acpubot, rn.xcode.console);
+ region.query.window(r7, wnd.xcode.acpubot, 
+  rn.xcode.console);
  region.view(100,100, 200,100);
  region.video(100,0, 200,100);
  region.src(1000,800, 200/2,100/2);
+
+ region.query.window(r7, wnd.xcode.acpubot, 
+  rn.xcode.editor);
+ region.view(0,100, 200,100);
+ region.video(0,100, 400,400);
+ region.src(5000,200, 400,400);
  
  abot.sync.regions(u0, r7);
 };
@@ -179,3 +187,4 @@ void main()
 
 //  gl_FragColor = vec4(1.0,0.5,1.0,0.5);
 }
+

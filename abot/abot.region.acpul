@@ -45,6 +45,7 @@ abot.regions {
  max 14;
 
  create map.new(u0, max, max);
+ clear obj.clear(u0, _0);
 
  region {
   query.window {
@@ -67,6 +68,7 @@ region abot.regions.region;
 if (1)
 {
  r7:=if(r7, r7, abot.regions.create());
+
  obj.clear(u0, r7);
 
  region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);

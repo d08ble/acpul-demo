@@ -18,19 +18,6 @@ node.new.this.ex(r0, REGION.VIDEO, 0);
 k:=1;
 
 
-#region.window.control
-# define region:
-# <window> <control> 
-rn.xcode.panel.view 0;
-rn.xcode.panel.buttons 1;
-rn.xcode.editor.view 2;
-rn.xcode.vars 3;
-rn.xcode.console 4;
-rn.xcode.build.status 5;
-rn.xcode.simulator 6;
-
-wnd.xcode.acpubot 1;
-
 abot.regions {
  _ @1010;
  _ @sys.obj;
@@ -64,6 +51,20 @@ abot.regions {
 };
 
 region abot.regions.region;
+
+#region.window.control
+# define region:
+# <window> <control> 
+rn.xcode.panel.view 0;
+rn.xcode.panel.buttons 1;
+rn.xcode.editor.view 2;
+rn.xcode.vars 3;
+rn.xcode.console 4;
+rn.xcode.build.status 5;
+rn.xcode.simulator 6;
+
+wnd.xcode.acpubot 1;
+
 
 if (1)
 {

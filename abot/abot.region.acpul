@@ -69,7 +69,7 @@ if (1)
 {
  r7:=if(r7, r7, abot.regions.create());
 
- obj.clear(u0, r7);
+ abot.regions.clear(r7);
 
  region.query.window(r7, wnd.xcode.acpubot, rn.xcode.panel.view);
  region.view(0,0, 100,100);

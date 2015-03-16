@@ -55,8 +55,8 @@ it.dma
  obj_it_dma(_0, _1, _2,_3);
 
 it.id
- # u0, dma, id,i -> id
- obj_it_id(_0, _1, _2,_3);
+ # u0, id,i -> id
+ obj_it_id(_0, _2,_3);
 
 # object iterator common ]
 

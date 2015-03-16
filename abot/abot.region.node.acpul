@@ -1,3 +1,11 @@
 ### 1520 abot.region.node
 
-### 1520 abot.region.node.draw
+r0:=k==0;
+
+if (r0) {
+    watch(1234234+r0);
+};
+
+k:=1;
+
+### 1521 abot.region.node.draw

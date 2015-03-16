@@ -13,8 +13,6 @@ k:=1;
 
 ### 1007 touch.debug.draw
 
-watch(r0);
-
 _ @1010;
 _ @sys.touch;
 _ @sys.obj;

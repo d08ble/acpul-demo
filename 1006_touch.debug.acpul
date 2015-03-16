@@ -35,4 +35,5 @@ while(i<l0) {
 
  i+=1;
  watch(i);
+ watch(l0);
 };

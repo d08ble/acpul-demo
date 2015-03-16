@@ -10,7 +10,12 @@ _ @sys.obj;
 
 r7:=if(r0, buffer.new, r7);
 l0:=touch.get.draw.rects(r7);
+i l1;
+i:=0;
+while (i<l0) {
 
+ i+=1;
+};
 
 k:=1;
 

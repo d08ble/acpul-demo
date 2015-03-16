@@ -8,12 +8,12 @@ _ @1010;
 _ @sys.touch;
 _ @sys.obj;
 
-r7:=if(r0, buffer.new, r7);
+r7:=if(r0, buffer.new(u0, 100, 100), r7);
 l0:=touch.get.draw.rects(r7);
 i l1;
 i:=0;
 while (i<l0) {
-
+ 
  i+=1;
 };
 

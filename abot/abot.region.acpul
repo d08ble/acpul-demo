@@ -115,12 +115,8 @@ while(l0>-1) {
  it.key.new(u0, r6,0, l1);
  it.dma(u0, 0, r6,0);
  l2:=dma.get(u0, 0, 0);
- if (l2==-1) {
-  dma.set(u0, 0, 0, 2); #new
- };
- if (l2==0) {
-  dma.set(u0, 0, 0, 1); #present
- };
+ l3:=if(l2==-1, 2, 1); # new or present
+ dma.set(u0, 0, 0, l3);
  watch(l2);
 # watch(l1);
  l0:=it.next(u0, r7,l0);

@@ -12,7 +12,13 @@ P @1510;
 #watch(a.REGION.TEXTURE);
 region P.abot.regions.region;
 
+rs p0;
+id p1;
 
+l0:=it.key(u0, rs,0, id);
+if (l0==-1) {
+ lt:=0.01;
+};
 
 
 k:=1;

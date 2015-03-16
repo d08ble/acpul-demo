@@ -32,7 +32,8 @@ while(i<l0) {
 # watch(o1);
 # watch(o2);
 # watch(o3);
- rect(u0, 3, o0,o1,o2,o3);
+# rect(u0, 3, o0,o1,o2,o3);
+
 
  i+=1;
  watch(i);

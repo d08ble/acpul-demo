@@ -19,17 +19,21 @@ id p1;
 _ @1010;
 _ @sys.obj;
 
-l0:=it.key(u0, regs.on,0, id);
-if (l0==-1) {
+end {
  lt:=0.01;
  watch(999999+lt);
+# it.
+};
+
+l0:=it.key(u0, regs.on,0, id);
+if (l0==-1) {
+ end();
 };
 if (l0>-1) {
  it.dma(u0, 0, regs.on,0);
  l1:=dma.get(u0, 0, 0);
  if (l1==0) {
-  lt:=0.01;
-  watch(1000000+id);
+  end();
  };
 # watch(l1);
 };

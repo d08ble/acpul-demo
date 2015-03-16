@@ -14,7 +14,7 @@ region P.abot.regions.region;
 
 regs.on p2;
 id p1;
-#watch(p2);
+watch(p2);
 
 l0:=it.key(u0, regs.on,0, id);
 if (l0==-1) {

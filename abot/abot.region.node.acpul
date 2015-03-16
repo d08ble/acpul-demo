@@ -16,6 +16,9 @@ regs.on p2;
 id p1;
 #watch(p2);
 
+_ @1010;
+_ @sys.obj;
+
 l0:=it.key(u0, regs.on,0, id);
 if (l0==-1) {
 # lt:=0.01;

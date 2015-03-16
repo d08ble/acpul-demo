@@ -116,6 +116,11 @@ FILTERS 7000;
 ABOT 1500;
 node.new.this.ex(r0, ABOT, 0);
 
+# touch debug should be lastest node [
+TOUCH.DEBUG 1006;
+node.new.this.ex(r0, TOUCH.DEBUG, 0);
+# touch debug should be lastest node ]
+
 #watch(r0);
 
 _ @sys.cpu;

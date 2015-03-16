@@ -1,3 +1,10 @@
 ### 1006 touch.debug
 
+r0:=k==0;
+
+draw(r0, 1007);
+
+k:=1;
+
 ### 1007 touch.debug.draw
+

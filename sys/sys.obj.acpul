@@ -26,6 +26,10 @@ it.key.new
  # u0, id,i, key
  obj_it_select_key(_0, _1, _2, _3, 1);
 
+it.map.erase
+ # u0, id,i, direction
+ obj_it_cmd(_0, 0, _1,_2, _1,0,0,0);
+
 # map ]
 
 # object iterator common [

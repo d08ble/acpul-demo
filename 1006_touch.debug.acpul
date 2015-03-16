@@ -21,6 +21,7 @@ psize1(u0, 1);
 color(u0, 1,1,1,1);
 
 l0:=touch.get.draw.rects(r7);
+watch(l0);
 i l1;
 i:=0;
 while(i<l0) {

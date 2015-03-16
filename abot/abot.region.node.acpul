@@ -3,9 +3,9 @@
 r0:=k==0;
 
 if (r0) {
- watch(1234234+r0);
- watch(p0);
- watch(p1);
+# watch(1234234+r0);
+# watch(p0);
+# watch(p1);
 };
 
 P @1510;
@@ -21,7 +21,7 @@ _ @sys.obj;
 
 end {
  lt:=0.01;
- watch(999999+lt);
+# watch(999999+lt);
  if (it.key(u0, regs.on,0, id)>-1) {
   it.map.erase(u0, regs.on,0, 0);
  };

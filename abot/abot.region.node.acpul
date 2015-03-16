@@ -4,6 +4,8 @@ r0:=k==0;
 
 if (r0) {
     watch(1234234+r0);
+    watch(p0);
+    watch(p1);
 };
 
 k:=1;

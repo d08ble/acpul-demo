@@ -74,8 +74,7 @@ touch.ev
 
 l0:=it.key(u0, regs.params,0, id);
 it.dma(u0, 0, regs.params,0);
-l0:=dma.get4(u0, 0, 0);
-
+l0:=region.view.g();
 
 q.x o0;
 q.y o1;

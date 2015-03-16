@@ -44,7 +44,8 @@ abot.regions {
   };
   view {
    dma.set4(u0, 0, o.view, _0,_1, _2,_3);
-   g dma.get4(u0, 0, o.view);
+#   g dma.get4(u0, 0, o.view);
+   g dma.get2(u0, 0, o.view+2);
   };
   video 
    dma.set4(u0, 0, o.video, _0,_1, _2,_3);

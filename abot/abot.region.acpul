@@ -127,9 +127,8 @@ while(l0>-1) {
  it.dma(u0, 0, r6,0);
  l1:=dma.get(u0, 0, 0);
  if (l1==2) {
-#REGION.VIDEO 1512;
-#node.new.this.ex(r0, REGION.VIDEO, 0);
-#  node
+  REGION.NODE 1520;
+  node.new.this.ex4(r0, REGION.NODE, r7, it.id(u0, r6,0), 0,0);
  };
  l0:=it.next(u0, r6,l0);
 };

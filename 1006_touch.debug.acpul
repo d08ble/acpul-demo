@@ -17,7 +17,7 @@ _ @1010;
 _ @sys.touch;
 _ @sys.obj;
 
-psize(u0, 5);
+psize(u0, 3);
 color(u0, 1,1,1,1);
 
 l0:=touch.get.draw.rects(r7);

@@ -101,10 +101,16 @@ _ @1010;
 _ @sys.obj;
 
 r6:=if(r0, map.new(u0, 1, 1), r6);
-l0:=it.begin(u6, r6,0);
+l0:=it.begin(u0, r6,0);
 while(l0>-1) {
  it.dma(u0, 0, r6,0);
  l0:=it.next(u0, r6,l0);
+};
+
+l0:=it.begin(u0, r7,0);
+while(l0>-1) {
+# it.dma(u0, 0, r6,0);
+ l0:=it.next(u0, r7,l0);
 };
 
 # removed [

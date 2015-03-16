@@ -6,10 +6,16 @@ draw(r0, 1007);
 
 k:=1;
 
+_ @1010;
+_ @sys.touch;
+_ @sys.obj;
+
+r7:=if(r0, buffer.new)
+touch.get.draw.rects()
+
 ### 1007 touch.debug.draw
 
 _ @1010;
 _ @sys.touch;
 _ @sys.obj;
-
 

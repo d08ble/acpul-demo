@@ -93,10 +93,10 @@ if (1)
  region.src(1000,800, 200/2,100/2);
 
  #if (mod(t, 1) < 0.5) {
-# region.query.window(r7, ws, rn.xcode.editor);
-# region.view(0+30,100, 500*f,500);
-# region.video(0,100, 600,600);
-# region.src(500,200, 600,600);
+ region.query.window(r7, ws, rn.xcode.editor);
+ region.view(0+30,100, 500*f,500);
+ region.video(0,100, 600,600);
+ region.src(500,200, 600,600);
  #};
 
  abot.sync.regions(u0, r7);

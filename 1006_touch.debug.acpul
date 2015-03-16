@@ -27,10 +27,10 @@ while(i<l0) {
  buffer.dma(u0, 0, r7,i);
  dma.get4(u0, 0, 0);
 # watch(l0);
-# watch(o0);
-# watch(o1);
-# watch(o2);
-# watch(o3);
+ watch(o0);
+ watch(o1);
+ watch(o2);
+ watch(o3);
 # rect(u0, 3, o0,o1,o2,o3);
 
  l2:=dma.get(u0, 0, 4);

@@ -17,13 +17,15 @@ id p1;
 
 l0:=it.key(u0, regs,0, id);
 if (l0==-1) {
- lt:=0.01;
+# lt:=0.01;
+ watch(999999+lt);
 };
 if (l0>-1) {
  it.dma(u0, 0, regs,0);
  l1:=it.get(u0, 0, 0);
  if (l1==0) {
-  lt:=0.01;
+#  lt:=0.01;
+  watch(999999+lt);
  };
 };
 

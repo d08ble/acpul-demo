@@ -97,6 +97,12 @@ if (1)
 
 t+=dt;
 
+r6:=if(r0, map.new(u0, 1, 1), r6);
+l0:=it.begin(u6, r6,0);
+while(l0>-1) {
+ it.dma(u0, 0, r6,0);
+ l0:=it.next(u0, r6,l0);
+};
 # removed [
 # ## 1516 abot.region.data.windows
 # #<wnd> <prefix> <index>

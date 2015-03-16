@@ -95,7 +95,7 @@ if (1)
  region.video(0,100, 600,600);
  region.src(500,200, 200,200);
  };
-watch(mod(t, 1) < 0.5);
+
  abot.sync.regions(u0, r7);
 };
 

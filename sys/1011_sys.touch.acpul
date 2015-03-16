@@ -9,6 +9,7 @@ touch.a.reset a;
 touch.a.mode a+1;
 touch.a.rect a+2;
 touch.a.event a+3;
+touch.a.draw.rects a+4;
 
 touch.start io(u0, touch.a.reset, 0,0,0,0);
 

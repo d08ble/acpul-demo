@@ -10,7 +10,7 @@ _ @sys.obj;
 r7:=if(r0, buffer.new(u0, 100, 100), r7);
 
 k:=1;
-
+watch(r0);
 ### 1007 touch.debug.draw
 
 _ @1010;

@@ -130,8 +130,6 @@ while(l0>-1) {
 #REGION.VIDEO 1512;
 #node.new.this.ex(r0, REGION.VIDEO, 0);
 #  node
-  watch(l1+1234567);
-  
  };
  l0:=it.next(u0, r6,l0);
 };

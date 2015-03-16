@@ -26,7 +26,7 @@ i:=0;
 while(i<l0) {
  buffer.dma(u0, 0, r7,i);
  dma.get4(u0, 0, 0);
- if (i==6) {
+ if (i==7) {
  watch(i);
  watch(o0);
  watch(o1);

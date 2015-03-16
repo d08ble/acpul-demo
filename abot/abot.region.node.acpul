@@ -10,6 +10,10 @@ if (r0) {
 
 P @1510;
 #watch(a.REGION.TEXTURE);
+region P.abot.regions.region;
+
+
+
 
 k:=1;
 

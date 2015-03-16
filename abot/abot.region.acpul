@@ -77,7 +77,8 @@ if (1)
 
  abot.regions.clear(r7);
 
- ws wnd.xcode.acpubot;
+# ws wnd.xcode.acpubot;
+ ws wnd.xcode.ipixel;
  region.query.window(r7, ws, rn.xcode.panel.view);
  region.view(0,0, 100,100);
  #region.video(100+sin(t)*100,0, 100,100);

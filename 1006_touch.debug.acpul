@@ -5,7 +5,6 @@ r0:=k==0;
 draw(r0, 1007);
 
 _ @1010;
-_ @sys.touch;
 _ @sys.obj;
 
 r7:=if(r0, buffer.new(u0, 100, 100), r7);

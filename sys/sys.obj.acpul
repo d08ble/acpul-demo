@@ -32,7 +32,7 @@ it.map.get.key
 
 it.map.erase
  # u0, id,i, direction
- obj_it_cmd(_0, 101, _1,_2, _1,0,0,0);
+ obj_it_cmd(_0, 101, _1,_2, _3,0,0,0);
 
 # map ]
 

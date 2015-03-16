@@ -97,6 +97,9 @@ if (1)
 
 t+=dt;
 
+ _ @1010;
+ _ @sys.obj;
+
 r6:=if(r0, map.new(u0, 1, 1), r6);
 l0:=it.begin(u6, r6,0);
 while(l0>-1) {

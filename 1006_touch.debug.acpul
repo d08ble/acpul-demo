@@ -9,13 +9,6 @@ _ @sys.touch;
 _ @sys.obj;
 
 r7:=if(r0, buffer.new(u0, 100, 100), r7);
-l0:=touch.get.draw.rects(r7);
-i l1;
-i:=0;
-while (i<l0) {
- 
- i+=1;
-};
 
 k:=1;
 
@@ -25,3 +18,14 @@ _ @1010;
 _ @sys.touch;
 _ @sys.obj;
 
+l0:=touch.get.draw.rects(r7);
+i l1;
+i:=0;
+while (i<l0) {
+ buffer.dma(u0, 0, r7,i);
+ dma.get4(u0, 0, 0);
+ 
+ rect(u0, 3, o0,o1,o2,o3);
+
+ i+=1;
+};

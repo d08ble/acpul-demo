@@ -18,7 +18,6 @@ _ @sys.touch;
 _ @sys.obj;
 
 psize(u0, 3);
-color(u0, 1,1,1,1);
 
 l0:=touch.get.draw.rects(r7);
 #watch(l0);
@@ -33,6 +32,11 @@ while(i<l0) {
 # watch(o2);
 # watch(o3);
 # rect(u0, 3, o0,o1,o2,o3);
+
+ l2:=dma.get(u0, 0, 4);
+ color(u0, 1,1,1,1);
+ if(l2, color(u0, 1,1,1,1), color(u0, 0,1,0,1));
+
  point4(u0, 2, o0,o1, o2,o1, o2,o3, o0,o3);
  line(u0, 3, o0,o1, o2,o3);
  line(u0, 3, o0,o3, o2,o1);

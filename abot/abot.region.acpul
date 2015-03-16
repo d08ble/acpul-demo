@@ -137,6 +137,7 @@ while(l0>-1) {
  if (l1==2) {
   REGION.NODE 1520;
   node.new.this.ex4(r0, REGION.NODE, r7, it.map.get.key(u0, r6,0), r6, 0);
+  watch(l1+7778884440);
  };
  watch(l1);
  watch(it.map.get.key(u0, r6,0));

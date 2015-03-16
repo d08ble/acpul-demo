@@ -109,7 +109,7 @@ while(l0>-1) {
 
 l0:=it.begin(u0, r7,0);
 while(l0>-1) {
- l1:=it.id(u0, r6,0);
+ l1:=it.id(u0, r7,0);
  watch(l1);
  l0:=it.next(u0, r7,l0);
 };

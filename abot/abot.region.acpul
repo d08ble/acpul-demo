@@ -12,6 +12,8 @@ vw 1024; vh 768;
 x:=-vw/2;
 y:=-vh/2;
 
+REGION.TEXTURE u20;
+
 REGION.VIDEO 1512;
 node.new.this.ex(r0, REGION.VIDEO, 0);
 
@@ -163,6 +165,8 @@ _ @sys.node;
 if (r0)
 {
  r1:=node.ex.texture.create.fmt(r0, 1024,768, node.ex.texture.fmt.rgb565, 1);
+ a @1510;
+ a.REGION.TEXTURE:=r1;
 };
 
 r:=180;

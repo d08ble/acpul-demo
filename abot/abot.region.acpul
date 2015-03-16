@@ -121,6 +121,7 @@ while(l0>-1) {
  if (l2==0) {
   dma.set(u0, 0, 0, 1); #present
  }
+ watch(l2);
 # watch(l1);
  l0:=it.next(u0, r7,l0);
 };

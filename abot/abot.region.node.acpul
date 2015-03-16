@@ -9,7 +9,7 @@ if (r0) {
 };
 
 a @1510;
-watch(a.REGION.TEXTURE);
+#watch(a.REGION.TEXTURE);
 
 k:=1;
 

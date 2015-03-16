@@ -79,7 +79,7 @@ l0:=region.view.g();
 q.x o0;
 q.y o1;
 q.w o2;
-q.h o2;
+q.h o3;
 
 touch.id r1;
 touch.b0 r2;

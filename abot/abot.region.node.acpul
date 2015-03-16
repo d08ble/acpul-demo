@@ -12,20 +12,20 @@ P @1510;
 #watch(a.REGION.TEXTURE);
 region P.abot.regions.region;
 
-regs p0;
+regs.on p2;
 id p1;
 
-l0:=it.key(u0, regs,0, id);
+l0:=it.key(u0, regs.on,0, id);
 if (l0==-1) {
 # lt:=0.01;
  watch(999999+lt);
 };
 if (l0>-1) {
- it.dma(u0, 0, regs,0);
+ it.dma(u0, 0, regs.on,0);
  l1:=dma.get(u0, 0, 0);
  if (l1==0) {
 #  lt:=0.01;
-#  watch(999999+lt);
+  watch(999999+lt);
  };
 # watch(l1);
 };

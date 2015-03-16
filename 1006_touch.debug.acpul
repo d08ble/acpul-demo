@@ -33,8 +33,8 @@ while(i<l0) {
 # watch(o2);
 # watch(o3);
 # rect(u0, 3, o0,o1,o2,o3);
- point4(u0, 3, o0,o1, o2,o1, o2,o3, o0,o3);
- line(u0, 6, o0,o1, o2,o3);
+ point4(u0, 2, o0,o1, o2,o1, o2,o3, o0,o3);
+ line(u0, 3, o0,o1, o2,o3);
  line(u0, 3, o0,o3, o2,o1);
 
  i+=1;

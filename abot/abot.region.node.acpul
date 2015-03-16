@@ -43,7 +43,40 @@ if (l0>-1) {
 _ @1010;
 _ @sys.touch;
 
+# touch.ev [
+touch.ev
+{
+ began 
+ # x, y 
+ {
+#  point.start.x:=_0; #if(_0<x, x, _0);
+#  point.start.y:=_1; #if(_1<y, y, _1);
+#  point.now.x:=_0;
+#  point.now.y:=_1;
+#  point.now.update(_0, _1);
+#  pressed:=1;
+ };
+ moved
+ # x, y
+ {
+#  point.now.x:=_0;
+#  point.now.y:=_1;
+#  point.now.update(_0, _1);
+ };
+ ended
+ # x, y
+ {
+#  pressed:=0;
+ };
+};
+# touch.ev ]
 
+touch.id r1;
+touch.b0 r2;
+touch.rect(touch.id, q.a,q.b,q.c,q.d);
+_ @sys.touch.ev.process.once;
+touch.b0:=1;
+while(touch.b0) {touch.ev.process.once(touch.id, touch.b0);};
 
 k:=1;
 

@@ -22,7 +22,9 @@ _ @sys.obj;
 end {
  lt:=0.01;
  watch(999999+lt);
- it.map.erase(u0, regs.on,0, 0);
+ if (it.key(u0, regs.on,0, id)>-1) {
+  it.map.erase(u0, regs.on,0, 0);
+ };
 };
 
 l0:=it.key(u0, regs.on,0, id);

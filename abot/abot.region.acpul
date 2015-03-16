@@ -117,7 +117,7 @@ while(l0>-1) {
  l2:=dma.get(u0, 0, 0);
  l3:=if(l2==-1, 2, 1); # new or present
  dma.set(u0, 0, 0, l3);
- watch(l2);
+# watch(l2);
 # watch(l1);
  l0:=it.next(u0, r7,l0);
 };

@@ -28,6 +28,7 @@ if (l0>-1) {
 #  watch(999999+lt);
  };
 };
+watch(regs);
 
 k:=1;
 

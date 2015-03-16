@@ -4,14 +4,15 @@ r0:=k==0;
 
 draw(r0, 1007);
 
-k:=1;
-
 _ @1010;
 _ @sys.touch;
 _ @sys.obj;
 
-r7:=if(r0, buffer.new)
-touch.get.draw.rects()
+r7:=if(r0, buffer.new, r7);
+l0:=touch.get.draw.rects(r7);
+
+
+k:=1;
 
 ### 1007 touch.debug.draw
 

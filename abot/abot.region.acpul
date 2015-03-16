@@ -139,6 +139,7 @@ while(l0>-1) {
   node.new.this.ex4(r0, REGION.NODE, r7, it.map.get.key(u0, r6,0), r6, 0);
  };
  watch(l1);
+ watch(it.map.get.key(u0, r6,0));
  l0:=it.next(u0, r6,l0);
 };
 

@@ -12,7 +12,8 @@ P @1510;
 #watch(a.REGION.TEXTURE);
 region P.abot.regions.region;
 
-regs.on p2;
+regs.data p0
+regs.enable p2;
 id p1;
 #watch(p2);
 
@@ -22,17 +23,17 @@ _ @sys.obj;
 end {
  lt:=0.01;
 # watch(999999+lt);
- if (it.key(u0, regs.on,0, id)>-1) {
+ if (it.key(u0, regs.enable,0, id)>-1) {
   it.map.erase(u0, regs.on,0, 0);
  };
 };
 
-l0:=it.key(u0, regs.on,0, id);
+l0:=it.key(u0, regs.enable,0, id);
 if (l0==-1) {
  end();
 };
 if (l0>-1) {
- it.dma(u0, 0, regs.on,0);
+ it.dma(u0, 0, regs.enable,0);
  l1:=dma.get(u0, 0, 0);
  if (l1==0) {
   end();

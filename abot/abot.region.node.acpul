@@ -21,14 +21,14 @@ _ @sys.obj;
 
 l0:=it.key(u0, regs.on,0, id);
 if (l0==-1) {
-# lt:=0.01;
+ lt:=0.01;
  watch(999999+lt);
 };
 if (l0>-1) {
  it.dma(u0, 0, regs.on,0);
  l1:=dma.get(u0, 0, 0);
  if (l1==0) {
-#  lt:=0.01;
+  lt:=0.01;
   watch(1000000+id);
  };
 # watch(l1);

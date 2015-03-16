@@ -25,8 +25,8 @@ l0:=touch.get.draw.rects(r7);
 i l1;
 i:=0;
 while(i<l0) {
- watch(l0);
  buffer.dma(u0, 0, r7,i);
+ watch(l0);
  dma.get4(u0, 0, 0);
 # watch(o0);
 # watch(o1);

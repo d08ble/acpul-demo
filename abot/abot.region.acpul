@@ -93,7 +93,7 @@ if (1)
 
  #if (mod(t, 1) < 0.5) {
  region.query.window(r7, ws, rn.xcode.editor);
- region.view(0,100, 800,800);
+ region.view(0,100, 500,500);
  region.video(0,100, 600,600);
  region.src(500,200, 600,600);
  #};

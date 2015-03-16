@@ -9,7 +9,7 @@ touch.a.reset a;
 touch.a.mode a+1;
 touch.a.rect a+2;
 touch.a.event a+3;
-touch.a.draw.rects a+4;
+touch.a.get.draw.rects a+4;
 
 touch.start io(u0, touch.a.reset, 0,0,0,0);
 
@@ -26,4 +26,4 @@ touch.event
 
 touch.get.draw.rects
  # buf => count
- io(u0, a.draw.rects, _0,0,0,0);
+ io(u0, a.get.draw.rects, _0,0,0,0);

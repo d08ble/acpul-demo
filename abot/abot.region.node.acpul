@@ -72,6 +72,8 @@ touch.ev
 };
 # touch.ev ]
 
+#it.key(u0, regs.enable,0, id);
+
 q.x o0;
 q.y o1;
 q.w o2;

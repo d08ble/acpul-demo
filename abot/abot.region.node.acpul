@@ -8,7 +8,7 @@ if (r0) {
  watch(p1);
 };
 
-a @1510;
+P @1510;
 #watch(a.REGION.TEXTURE);
 
 k:=1;

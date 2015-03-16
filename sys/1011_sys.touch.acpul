@@ -23,3 +23,6 @@ touch.event
 # id => event
  io(u0, a.event, _0,0,0,0);
 
+touch.get.draw.rects
+ # => buf[] rects
+ io(u0, a.draw.rects, 0,0,0,0);

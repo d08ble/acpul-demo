@@ -207,7 +207,7 @@ gl.rect(u0, +30,0, bw-60,bh);
 # ---- ---- ---- ---- ]
 
 ### 1514:S abot.region.video.vsh
-
+ 
 attribute vec4 a_position;
 attribute vec2 a_texCoord;
 
@@ -239,6 +239,7 @@ void main()
 
 //  gl_FragColor = vec4(1.0,0.5,1.0,0.5);
 }
+
 
 
 

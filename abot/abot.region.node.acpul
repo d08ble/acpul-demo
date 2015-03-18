@@ -83,6 +83,14 @@ q.y o1;
 q.w o2;
 q.h o3;
 
+rx l4;
+ry l5;
+rw l6;
+rh l7;
+rx:=q.x;
+ry:=q.y;
+rw:=q.w;
+rh:=q.h;
 
 touch.id r1;
 touch.b0 r2;

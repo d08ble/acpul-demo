@@ -82,6 +82,7 @@ q.y o1;
 q.w o2;
 q.h o3;
 
+
 touch.id r1;
 touch.b0 r2;
 touch.rect(touch.id, q.x,q.y,q.w,q.h);
@@ -89,6 +90,5 @@ _ @sys.touch.ev.process.once;
 touch.b0:=1;
 while(touch.b0) {touch.ev.process.once(touch.id, touch.b0);};
 
-k:=1;
-### 1521 abot.region.node.draw
+k:=1;### 1521 abot.region.node.draw
 #

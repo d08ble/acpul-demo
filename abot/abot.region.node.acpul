@@ -57,6 +57,7 @@ touch.ev
 #  point.now.update(_0, _1);
 #  pressed:=1;
   watch(o0);
+  watch(o1);
  };
  moved
  # x, y

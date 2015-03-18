@@ -8,6 +8,7 @@ r0:=k==0;
 # watch(p1);
 #};
 
+k:=1;
 P @1510;
 #watch(a.REGION.TEXTURE);
 region P.abot.regions.region;

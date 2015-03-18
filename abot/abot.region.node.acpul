@@ -56,6 +56,7 @@ touch.ev
 #  point.now.y:=_1;
 #  point.now.update(_0, _1);
 #  pressed:=1;
+  watch(o0);
  };
  moved
  # x, y
@@ -91,3 +92,4 @@ while(touch.b0) {touch.ev.process.once(touch.id, touch.b0);};
 k:=1;
 
 ### 1521 abot.region.node.draw
+

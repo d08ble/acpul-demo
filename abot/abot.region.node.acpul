@@ -13,7 +13,7 @@ P @1510;
 #watch(a.REGION.TEXTURE);
 region P.abot.regions.region;
 
-regs.params p0
+regs.params p0;
 regs.enable p2;
 id p1;
 #watch(p2);

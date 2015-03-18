@@ -12,6 +12,7 @@ k:=1;
 P @1510;
 #watch(a.REGION.TEXTURE);
 region P.abot.regions.region;
+k:=2;
 
 regs.params p0
 regs.enable p2;

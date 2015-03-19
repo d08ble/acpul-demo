@@ -103,7 +103,7 @@ if (1)
  region.query.window(r7, ws, rn.xcode.editor);
  region.view(0+30,100, 500*f,500);
  region.video(0,100, 600,600);
- region.src(500,200, 600,600);
+ region.src(200,200, 600,600);
  region.frame(500,200, 600,600);
  #};
 

@@ -58,6 +58,7 @@ point.start.y r9;
 point.now.x r10;
 point.now.y r11;
 pressed r12;
+mode.click r13;
 
 # touch.ev [
 touch.ev
@@ -85,6 +86,7 @@ touch.ev
   watch(o0);
   watch(o1);
   focus.region();
+  mode.click:=1;
  };
  moved
  # x, y

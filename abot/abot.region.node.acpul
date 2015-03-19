@@ -64,6 +64,8 @@ point.now.y r11;
 pressed r12;
 mode.click r13;
 
+abot.region.move 0;
+
 # touch.ev [
 touch.ev
 {
@@ -99,6 +101,10 @@ touch.ev
    mode.click:=0;
   };
   if(mode.click==0) {
+   dscale 0;
+   speed 0;
+   abot.region.move(
+    distance.dx,distance.dy, dscale, speed);
 #   rect.delta(distance.dx,distance.dy);
   };
  };

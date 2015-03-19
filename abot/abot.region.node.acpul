@@ -69,6 +69,8 @@ touch.ev
   a ps.x-pn.x;
   b ps.y-pn.y;
   sqrt(a*a+b*b);
+  dx a;
+  dy b;
  };
  dmax 16;
 

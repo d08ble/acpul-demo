@@ -99,17 +99,9 @@ touch.ev
   if(distance()>dmax) {
    mode.click:=0;
   };
- };
- ended
- # x, y
- {
-  pressed:=0;
- };
-};
-# touch.ev ]
 
-if(pressed) {
- distance touch.ev.distance;
+#if(pressed) {
+# distance touch.ev.distance;
  if(distance()>0) {
    dscale 0;
    speed 0;
@@ -118,7 +110,16 @@ if(pressed) {
     distance.dx,distance.dy, dscale, speed);
    watch(FOCUS.REGION);
  };
+#};
+ };
+ ended
+ # x, y
+ {
+  pressed:=0;
+  abot.region.move(u0, 0,0, 0, 0);
+ };
 };
+# touch.ev ]
 
 l0:=region.view.g();
 

@@ -106,7 +106,7 @@ if (r0)
  region.view(0+30,100, 500*f,500);
  region.video(0,100, 600,600);
  region.src(0,0, 600,600);
- region.frame(500,70, 600,600);
+ region.frame(400,70, 600,600);
  #};
 
  abot.sync.regions(u0, r7);

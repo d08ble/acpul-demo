@@ -30,6 +30,7 @@ end {
 # };
 };
 
+# setup/shutdown [
 l0:=it.key(u0, regs.enable,0, id);
 if (l0==-1) {
  end();
@@ -42,6 +43,7 @@ if (l0>-1) {
  };
 # watch(l1);
 };
+# setup/shutdown ]
 
 _ @1010;
 _ @sys.touch;
@@ -60,6 +62,7 @@ touch.ev
 #  pressed:=1;
   watch(o0);
   watch(o1);
+  focus.region();
  };
  moved
  # x, y

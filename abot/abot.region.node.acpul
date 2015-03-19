@@ -96,6 +96,9 @@ touch.ev
 #  point.now.x:=_0;
 #  point.now.y:=_1;
 #  point.now.update(_0, _1);
+  if(distance()>dmax) {
+   mode.click:=0;
+  };
  };
  ended
  # x, y

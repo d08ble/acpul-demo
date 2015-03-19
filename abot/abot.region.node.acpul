@@ -104,7 +104,6 @@ touch.ev
  # x, y
  {
   pressed:=0;
-  watch(mode.click);
  };
 };
 # touch.ev ]

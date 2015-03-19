@@ -64,9 +64,8 @@ touch.ev
  began 
  # x, y 
  {
-#  r9:=_0;
-#  point.start.x:=_0;
-#  point.start.y:=_1;
+  point.start.x:=_0;
+  point.start.y:=_1;
 #  point.now.x:=_0;
 #  point.now.y:=_1;
 #  point.now.update(_0, _1);

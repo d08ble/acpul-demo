@@ -110,12 +110,12 @@ touch.ev
 # touch.ev ]
 
 if(pressed) {
-  if(touch.distance()>0) {
+ if(touch.distance()>0) {
    dscale 0;
    speed 0;
    abot.region.move(
     distance.dx,distance.dy, dscale, speed);
-  };
+ };
 };
 
 l0:=region.view.g();

@@ -99,7 +99,7 @@ touch.ev
    mode.click:=0;
   };
   if(mode.click==0) {
-   
+#   rect.delta(distance.dx,distance.dy);
   };
  };
  ended

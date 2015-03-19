@@ -110,5 +110,5 @@ visible 1;
 
 q @1520;
 psize(u0, 10);
-color(u0, 0.5, 0.5, 1, 1);
+color(u0, 0.7, 0.5, 1, 1);
 rect(u0, 2, q.rx, q.ry, q.rw, q.rh);

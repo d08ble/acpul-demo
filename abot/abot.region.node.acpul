@@ -44,6 +44,11 @@ if (l0>-1) {
 # watch(l1);
 };
 # setup/shutdown sync ]
+FOCUS.REGION u21;
+
+focus.region {
+ FOCUS.REGION:=id;
+};
 
 _ @1010;
 _ @sys.touch;

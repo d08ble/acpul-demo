@@ -126,6 +126,7 @@ if(focus,
  color(u0, 0, 1, 0, 1),
  color(u0, 0.7, 0.5, 1, 1)
 );
+
 rect(u0, 2, q.rx, q.ry, q.rw, q.rh);
 
 #watch(p2);

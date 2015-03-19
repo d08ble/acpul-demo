@@ -78,7 +78,7 @@ wnd.xcode.acpubot 1;
 wnd.xcode.ipixel 2;
 
 
-if (1)
+if (r0)
 {
  r7:=if(r0, abot.regions.create(), r7);
 

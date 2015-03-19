@@ -57,6 +57,7 @@ point.start.x r8;
 point.start.y r9;
 point.now.x r10;
 point.now.y r11;
+pressed r12;
 
 # touch.ev [
 touch.ev
@@ -74,7 +75,7 @@ touch.ev
 #  point.now.x:=_0;
 #  point.now.y:=_1;
 #  point.now.update(_0, _1);
-#  pressed:=1;
+  pressed:=1;
   watch(o0);
   watch(o1);
   focus.region();
@@ -91,7 +92,7 @@ touch.ev
  ended
  # x, y
  {
-#  pressed:=0;
+  pressed:=0;
  };
 };
 # touch.ev ]

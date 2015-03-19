@@ -83,7 +83,7 @@ touch.ev
  # x, y
  {
   pn.x:=_0;
-  pn
+  pn.y:=_1;
 #  point.now.x:=_0;
 #  point.now.y:=_1;
 #  point.now.update(_0, _1);

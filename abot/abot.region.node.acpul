@@ -56,7 +56,7 @@ FOCUS.REGION u21;
 
 focus.region {
  FOCUS.REGION:=id;
- region.focus
+ region.focus(u0, id);
 };
 
 point.start.x r8;

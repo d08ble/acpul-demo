@@ -64,6 +64,11 @@ touch.ev
 {
  ps point.start;
  pn point.now;
+ distance {
+  a ps.x-pn.x;
+  b ps.y-pn.y;
+  sqrt(a*a+b*b);
+ };
 
  began 
  # x, y 

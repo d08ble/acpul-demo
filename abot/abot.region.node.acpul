@@ -114,19 +114,10 @@ l0:=it.key(u0, regs.params,0, id);
 it.dma(u0, 0, regs.params,0);
 l0:=region.view.g();
 
-q.x o0;
-q.y o1;
-q.w o2;
-q.h o3;
+q.x o0;q.y o1;q.w o2;q.h o3;
 
-rx r4;
-ry r5;
-rw r6;
-rh r7;
-rx:=q.x;
-ry:=q.y;
-rw:=q.w;
-rh:=q.h;
+rx r4;ry r5;rw r6;rh r7;
+rx:=q.x;ry:=q.y;rw:=q.w;rh:=q.h;
 
 touch.id r1;
 touch.b0 r2;

@@ -104,7 +104,8 @@ touch.ev
    dscale 0;
    speed 0;
    abot.region.move(
-    distance.dx,distance.dy, dscale, speed);
+    distance.dx,distance.dy, dscale, speed
+   );
 #   rect.delta(distance.dx,distance.dy);
   };
  };

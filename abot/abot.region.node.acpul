@@ -30,7 +30,7 @@ end {
 # };
 };
 
-# setup/shutdown [
+# setup/shutdown sync [
 l0:=it.key(u0, regs.enable,0, id);
 if (l0==-1) {
  end();
@@ -43,7 +43,7 @@ if (l0>-1) {
  };
 # watch(l1);
 };
-# setup/shutdown ]
+# setup/shutdown sync ]
 
 _ @1010;
 _ @sys.touch;

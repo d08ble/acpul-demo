@@ -98,6 +98,9 @@ touch.ev
   if(distance()>dmax) {
    mode.click:=0;
   };
+  if(mode.click==0) {
+   
+  };
  };
  ended
  # x, y

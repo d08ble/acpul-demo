@@ -107,7 +107,6 @@ k:=1;
 #
 active 1;
 visible 1;
-selected 1;
 
 q @1520;
 psize(u0, 1);

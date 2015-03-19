@@ -78,13 +78,9 @@ touch.ev
  began 
  # x, y 
  {
-  ps.x:=_0;
-  ps.y:=_1;
-  pn.x:=_0;
-  pn.y:=_1;
-#  point.now.x:=_0;
-#  point.now.y:=_1;
-#  point.now.update(_0, _1);
+  ps.x:=_0;ps.y:=_1;
+  pn.x:=_0;pn.y:=_1;
+
   pressed:=1;
   watch(o0);
   watch(o1);
@@ -94,11 +90,8 @@ touch.ev
  moved
  # x, y
  {
-  pn.x:=_0;
-  pn.y:=_1;
-#  point.now.x:=_0;
-#  point.now.y:=_1;
-#  point.now.update(_0, _1);
+  pn.x:=_0;pn.y:=_1;
+
   if(distance()>dmax) {
    mode.click:=0;
   };

@@ -56,7 +56,6 @@ FOCUS.REGION u21;
 
 focus.region {
  FOCUS.REGION:=id;
- abot.region.focus(u0, id);
 };
 
 point.start.x r8;
@@ -114,6 +113,7 @@ if(pressed) {
  if(distance()>0) {
    dscale 0;
    speed 0;
+   abot.region.focus(u0, FOCUS.REGION);
    abot.region.move(
     distance.dx,distance.dy, dscale, speed);
 #watch(r0);

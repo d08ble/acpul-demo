@@ -21,4 +21,5 @@ abot
  sync.regions io(_0, a+6, _1, 0,0,0);
 
  region.move io(_0, a+7, _1,_2, _3, _4);
+ region.focus io(_0, a+8, _1, 0,0,0); 
 };

@@ -53,6 +53,11 @@ focus.region {
 _ @1010;
 _ @sys.touch;
 
+point.start.x r8;
+point.start.y r9;
+point.now.x r10;
+point.now.y r11;
+
 # touch.ev [
 touch.ev
 {

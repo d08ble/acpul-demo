@@ -110,7 +110,8 @@ touch.ev
 # touch.ev ]
 
 if(pressed) {
- if(touch.distance()>0) {
+ distance touch.ev.distance;
+ if(distance()>0) {
    dscale 0;
    speed 0;
    abot.region.move(

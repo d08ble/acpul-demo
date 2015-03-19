@@ -119,7 +119,7 @@ error l10;
 
 q @1520;
 
-focus:=q.id==q.FOCUS.REGION;
+focus:=(q.id==q.FOCUS.REGION);
 
 psize(u0, 1);
 color(u0, 0.7, 0.5, 1, 1);

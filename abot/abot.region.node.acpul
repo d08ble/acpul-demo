@@ -83,10 +83,10 @@ q.y o1;
 q.w o2;
 q.h o3;
 
-rx l4;
-ry l5;
-rw l6;
-rh l7;
+rx r4;
+ry r5;
+rw r6;
+rh r7;
 rx:=q.x;
 ry:=q.y;
 rw:=q.w;

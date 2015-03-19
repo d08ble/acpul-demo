@@ -104,7 +104,7 @@ touch.ev
 # distance touch.ev.distance;
  if(distance()>0) {
    dscale 0;
-   speed 1/65;
+   speed 0;
    abot.region.focus(u0, FOCUS.REGION);
    abot.region.move(u0,
     distance.dx,distance.dy, dscale, speed);

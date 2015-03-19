@@ -116,7 +116,7 @@ if(pressed) {
    speed 0;
    abot.region.move(
     distance.dx,distance.dy, dscale, speed);
-watch(r0);
+#watch(r0);
  };
 };
 

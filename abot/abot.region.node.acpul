@@ -109,7 +109,7 @@ active 1;
 visible 1;
 
 q @1520;
-a:=q.rx;
-#rect(u0, 6, q.rx, q.ry, q.w, q.h);
+#a:=q.rx;
+rect(u0, 6, q.rx, q.ry, q.rw, q.rh);
 
 #watch(q.rx);

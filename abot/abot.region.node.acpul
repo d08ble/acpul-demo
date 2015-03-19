@@ -106,3 +106,6 @@ k:=1;
 active 1;
 visible 1;
 
+q @1520;
+rect(6, q.rx, q.ry, q.w, q.h);
+

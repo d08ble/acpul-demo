@@ -64,7 +64,7 @@ point.now.y r11;
 pressed r12;
 mode.click r13;
 
-abot.region.move 0;
+_ @sys.abot;
 
 # touch.ev [
 touch.ev

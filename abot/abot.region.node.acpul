@@ -103,4 +103,6 @@ k:=1;
 
 ### 1521 abot.region.node.draw
 #
+active 1;
+visible 1;
 

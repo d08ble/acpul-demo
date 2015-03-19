@@ -100,12 +100,6 @@ touch.ev
   if(distance()>dmax) {
    mode.click:=0;
   };
-  if(mode.click==0) {
-   dscale 0;
-   speed 0;
-   abot.region.move(
-    distance.dx,distance.dy, dscale, speed);
-  };
  };
  ended
  # x, y
@@ -115,6 +109,14 @@ touch.ev
 };
 # touch.ev ]
 
+if(pressed) {
+  if(touch.distance()>0) {
+   dscale 0;
+   speed 0;
+   abot.region.move(
+    distance.dx,distance.dy, dscale, speed);
+  };
+};
 
 l0:=region.view.g();
 

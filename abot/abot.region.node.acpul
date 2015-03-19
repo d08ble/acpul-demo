@@ -61,11 +61,16 @@ point.now.y r11;
 # touch.ev [
 touch.ev
 {
+ ps point.start;
+ pn point.now;
+
  began 
  # x, y 
  {
-  point.start.x:=_0;
-  point.start.y:=_1;
+  ps.x:=_0;
+  ps.y:=_1;
+  pn.x:=_0;
+  pn.y:=_1;
 #  point.now.x:=_0;
 #  point.now.y:=_1;
 #  point.now.update(_0, _1);
@@ -77,6 +82,8 @@ touch.ev
  moved
  # x, y
  {
+  pn.x:=_0;
+  pn
 #  point.now.x:=_0;
 #  point.now.y:=_1;
 #  point.now.update(_0, _1);

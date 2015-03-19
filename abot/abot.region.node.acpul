@@ -22,6 +22,9 @@ id p1;
 _ @1010;
 _ @sys.obj;
 
+l0:=it.key(u0, regs.params,0, id);
+it.dma(u0, 0, regs.params,0);
+
 end {
  lt:=0.01;
 # watch(999999+lt);
@@ -104,8 +107,6 @@ touch.ev
 };
 # touch.ev ]
 
-l0:=it.key(u0, regs.params,0, id);
-it.dma(u0, 0, regs.params,0);
 l0:=region.view.g();
 
 q.x o0;q.y o1;q.w o2;q.h o3;

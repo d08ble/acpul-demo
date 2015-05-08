@@ -154,6 +154,7 @@ node {_;
  ex.gl.clear
   # u0, r,g,b,a
   io(_0, 7204, _1,_2,_3,_4);
+
  ex.shader.attribute
   # r0, i, m,o,esize,stride, type, normalized
   {io(_0, 7210, _1, _2,_3, _4);
@@ -162,10 +163,15 @@ node {_;
   # r0, x,y, w,h, m,o
   {io(_0, 7210, 0, _5,_6, 0);
    io(_0, 7212, _1,_2, _3,_4);};
+
  ex.gl.draw
   # r0, mode, count
   io(_0, 7205, _1, _2, 0,0);
 
+ ex.gl.clip.rect
+  # r0, x,y,w,h
+  io(_0, 7206, _1,_2,_3,_4);
+ 
 };
 
 #node.new(r0, node.p.parent, -1, 100, 1001, 0);

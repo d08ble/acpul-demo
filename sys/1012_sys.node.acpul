@@ -171,7 +171,12 @@ node {_;
  ex.gl.clip.rect
   # r0, x,y,w,h
   io(_0, 7206, _1,_2,_3,_4);
- 
+ ex.gl.node.transform
+  # r0, x,y, w,h
+  io(_0, 7207, _1,_2,_3,_4);
+ ex.gl.node.draw
+  # r0, uid
+  io(_0, 7208, _1,0,0,0);
 };
 
 #node.new(r0, node.p.parent, -1, 100, 1001, 0);

@@ -177,6 +177,7 @@ node {_;
  ex.gl.node.draw
   # r0, uid
   io(_0, 7208, _1,0,0,0);
+  
 };
 
 #node.new(r0, node.p.parent, -1, 100, 1001, 0);

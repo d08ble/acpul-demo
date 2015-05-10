@@ -81,7 +81,7 @@ zoomA
 };
 #zoom1;
 #zoom2;
-#zoom3;
+zoom3;
 #zoom4;
 #zoomA;
 x:=0;y:=0;s:=1;

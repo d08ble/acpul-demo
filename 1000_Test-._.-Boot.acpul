@@ -103,7 +103,7 @@ node.new.this.object(r0, 2000, 0);
 #node.new.this.ex(r0, 9700, 0);
 #node.new.this.ex(r0, 9740, 0);
 #node.new.this.ex(r0, 20000, 0);
-node.new.this.ex(r0, 11000, 0);
+#node.new.this.ex(r0, 11000, 0);
 
 DOTA.MAIN 3202;
 #node.new.this.ex(r0, DOTA.MAIN, 0);

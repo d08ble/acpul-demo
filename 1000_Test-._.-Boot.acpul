@@ -80,11 +80,11 @@ zoomA
  if(i<10,zoom1, if(i<20,zoom2, if(i<30,zoom4,0)));
 };
 #zoom1;
-#zoom2;
+zoom2;
 #zoom3;
 #zoom4;
 #zoomA;
-x:=0;y:=0;s:=1;
+#x:=0;y:=0;s:=1;
 #x:=300;y:=100;s:=0.4;r:=-2;
 #x:=300;y:=100;s:=0.2;r:=10;
 

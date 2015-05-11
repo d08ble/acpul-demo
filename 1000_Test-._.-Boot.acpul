@@ -123,6 +123,7 @@ TEXTUREMAN.TEST 7200;
 IMGNODE 7040;
 node.new.this.ex(r0, IMGNODE, 0);
 
+
 # touch debug should be lastest node [
 TOUCH.DEBUG 1006;
 #node.new.this.ex(r0, TOUCH.DEBUG, 0);

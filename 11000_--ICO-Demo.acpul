@@ -11,7 +11,7 @@ c.abstract 11200;
 c.color 11300;
 node.new.this.ex(r0, c.node.js, 0);
 node.new.this.ex(r0, c.abstract, 0);
-node.new.this.ex(r0, c.color, 0);
+#node.new.this.ex(r0, c.color, 0);
 # children ]
 
 draw(r0, 11001);

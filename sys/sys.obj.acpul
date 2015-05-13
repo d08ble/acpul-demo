@@ -73,8 +73,8 @@ buffer.add
  # u0, id, itemmax, itemoverhead
  obj_add(_0, _1, _2, _3);
 buffer.remove
- # u0, id, i
- obj_add(_0);
+ # u0, id, i - NOT IMPL!!!
+ obj_add(_0); 
 buffer.dma 
  # u0, dma, id,i
  it.dma(_0, _1, _2,_3);

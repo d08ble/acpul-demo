@@ -91,6 +91,9 @@ str.dma
 # str ]
 
 # dma [
+dma.size
+ # u0, dma
+ dma_size(_0, _1);
 
 dma.set
  # u0, dma, offset, v

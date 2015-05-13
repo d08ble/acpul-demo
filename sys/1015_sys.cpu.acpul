@@ -37,6 +37,7 @@ cpu.frame.dt
  io(_0, 500405, _1,0,0,0);
 cpu.profile
 {
+ # id - 0-3 sys reserved
  begin
   #u0, id
   io(_0, 500420, _1,0,0,0);

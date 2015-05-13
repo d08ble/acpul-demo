@@ -73,7 +73,7 @@ buffer.add
  # u0, id, itemmax, itemoverhead
  buffer_add(_0, _1, _2, _3);
 buffer.remove
- # u0, id, i - NOT IMPL, see .m
+ # u0, id, i - NOT IMPL, see CpuObject.h
  buffer_remove(_0, _1,_2); 
 buffer.dma 
  # u0, dma, id,i

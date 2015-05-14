@@ -11,6 +11,10 @@ obj.count obj_count(_0, _1);
 obj.delete obj_delete(_0, _1);
 obj.clear obj_clear(_0, _1);
 
+obj.dump 
+# u0, mode, obj
+ obj_dump(_0, _1, _2);
+ 
 # object common ]
 
 # map [

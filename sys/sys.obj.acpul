@@ -67,7 +67,7 @@ it.dma
  obj_it_dma(_0, _1, _2,_3);
 
 it.dump
-# u0, dma, id,i
+# u0, id,i
  obj_it_dump(_0, _1,_2, 0);
 
 # object iterator common ]

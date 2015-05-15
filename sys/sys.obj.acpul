@@ -152,6 +152,7 @@ dma.log
  # u0, mode, dma
  # mode: 0 mem 1 singleline 2 multiline
  dma_log(_0, _1, _2);
+dma.dump dma.log(_0, _1, _2);
 
 dma.split
  # u0, mode, dma, p0

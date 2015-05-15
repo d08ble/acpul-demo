@@ -190,6 +190,9 @@ it.tree.breadth.end
  # u0, id,i
  obj_it_select2(_0, 5, _1,_2, 0,0);
 
+it.tree.sibling.child.begin
+ # u0, id,i, j
+ obj_it_select2(_0, 6, _1,_2, _3,1);
 it.tree.sibling.begin
  # u0, id,i, j
  obj_it_select2(_0, 6, _1,_2, _3,0);

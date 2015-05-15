@@ -59,8 +59,8 @@ it.eq
  # u0, id,i,j
  obj_it_eq(_0, _1, _2, _3);
 it.set
- # u0, id,i,j : j
- obj_it_set(_0, _1, _2, _3);
+ # u0, id, i,j : j
+ obj_it_set(_0, _1, _2,_3);
 
 it.dma
  # u0, dma, id,i

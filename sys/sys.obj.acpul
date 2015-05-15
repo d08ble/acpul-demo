@@ -14,7 +14,7 @@ obj.clear obj_clear(_0, _1);
 obj.dump 
 # u0, mode, obj
  obj_dump(_0, _1, _2);
- 
+
 # object common ]
 
 # map [
@@ -65,6 +65,9 @@ it.set
 it.dma
  # u0, dma, id,i
  obj_it_dma(_0, _1, _2,_3);
+
+it.dump
+ obj_it_dump(_0, _1,_2, 0);
 
 # object iterator common ]
 

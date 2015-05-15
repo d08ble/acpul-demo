@@ -150,7 +150,7 @@ dma.json.to.object
 
 dma.log
  # u0, mode, dma
- # mode: 0 singleline 1 multiline
+ # mode: 0 mem 1 singleline 2 multiline
  dma_log(_0, _1, _2);
 
 dma.split

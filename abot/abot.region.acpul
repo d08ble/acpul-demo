@@ -107,7 +107,7 @@ if (r0)
  region.video(0,100, 900,600);
  region.src(0,0, 900,600);
 # region.frame(440,70,1000,680);
- region.frame(0,70,900,680);
+ region.frame(0,70,1000,680);
  
  #};
 

@@ -167,7 +167,7 @@ node {_;
  ex.shader.attribute.dma
   # r0, i, dma,o,esize,stride,count, type,normalized
   {io(_0, 7210, _1, _2,_3, _4);
-   io(_0, 7213, _6, _7, _5, _6);};
+   io(_0, 7213, _5, _6, _7, _8);};
 
  ex.gl.draw
   # r0, mode, count

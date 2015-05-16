@@ -43,6 +43,10 @@ sys.modules.a.MAX 1033;
 
 # sys.def ]
 
+# sys.def.exp [
+sys.exp.obj.util.dma 7319;
+# sys.def.exp ]
+
 # __bugfix [
 
 # bugfix 1. render order

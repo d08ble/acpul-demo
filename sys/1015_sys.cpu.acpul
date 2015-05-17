@@ -50,7 +50,6 @@ cpu.profile
  get.now
   #u0, id
   io(_0, 500422, _1,1,0,0);
-
  end.now {
   io(_0, 500421, _1,0,0,0); # end
   io(_0, 500422, _1,1,0,0); # get.now

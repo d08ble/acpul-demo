@@ -108,6 +108,8 @@ if (r0)
  region.src(0,0, 800,600);
 # region.frame(440,70,1000,680);
  region.frame(0,70,1000,680);
+
+ region.src(100,0, 800,600);
  
  #};
 

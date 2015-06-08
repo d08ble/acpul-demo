@@ -254,7 +254,7 @@ void main()
  float r = gl_FragColor.r;
  float g = gl_FragColor.r;
  float b = gl_FragColor.r;
-  gl_FragColor = vec4(r*b,r*g,b-r*b,0.5);
+  gl_FragColor = vec4(b*g,r*g,b-r*b,0.5);
 }
 
 

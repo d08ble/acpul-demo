@@ -109,7 +109,7 @@ if (r0)
 # region.frame(440,70,1000,680);
  region.frame(0,70,1000,680);
 
- region.src(170,0, 800,600);
+ region.src(170,0, 400,300);
  
  #};
 

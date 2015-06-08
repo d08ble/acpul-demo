@@ -251,7 +251,10 @@ void main()
 //  gl_FragColor = texture2D(p0, v_texCoord);
   gl_FragColor = texture2D(p0, vec2(1.-v_texCoord.x, v_texCoord.y));
 
-  gl_FragColor = vec4(0.0,gl_FragColor.b-gl_FragColor.r,0.0,0.5);
+ float r = gl_FragColor.r;
+ float g = gl_FragColor.r;
+ float b = gl_FragColor.r;
+  gl_FragColor = vec4(r*g-b,r+b,b-g,0.5);
 }
 
 

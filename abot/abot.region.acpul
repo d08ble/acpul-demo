@@ -232,7 +232,7 @@ void main()
 {
    gl_Position = CC_MVPMatrix * a_position+vec4(sin(a_position.x*0.05)*0.0,0.0,0.0,0.0);
 
-   v_texCoord = a_texCoord.rrrr;
+   v_texCoord = a_texCoord;
    v_p = gl_Position;
 }
 
@@ -251,7 +251,7 @@ void main()
 //  gl_FragColor = texture2D(p0, v_texCoord);
   gl_FragColor = texture2D(p0, vec2(1.-v_texCoord.x, v_texCoord.y));
 
-//  gl_FragColor = vec4(1.0,0.5,1.0,0.5);
+  gl_FragColor *= vec4(1.0,0.5,1.0,0.5);
 }
 
 

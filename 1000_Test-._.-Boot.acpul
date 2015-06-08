@@ -115,7 +115,7 @@ FILTERS 7000;
 #node.new.this.ex(r0, FILTERS, 0);
 
 ABOT 1500;
-#node.new.this.ex(r0, ABOT, 0);
+node.new.this.ex(r0, ABOT, 0);
 
 TEXTUREMAN.TEST 7200;
 #node.new.this.ex(r0, TEXTUREMAN.TEST, 0);

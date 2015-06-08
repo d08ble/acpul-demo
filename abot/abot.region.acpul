@@ -232,7 +232,7 @@ void main()
 {
    gl_Position = CC_MVPMatrix * a_position+vec4(sin(a_position.x*0.05)*0.0,0.0,0.0,0.0);
 
-   v_texCoord = a_texCoord.rbga;
+   v_texCoord = a_texCoord.rrrr;
    v_p = gl_Position;
 }
 

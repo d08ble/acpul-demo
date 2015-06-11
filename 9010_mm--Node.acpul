@@ -1,7 +1,7 @@
 ### 9010 mm::Node
 r0:=k==0;
 
-draw(r0, 9011);
+draw(r0, 9811);
 
 dd @9011;
 if(r0,dd.fcolor.init,0); # init shared regs

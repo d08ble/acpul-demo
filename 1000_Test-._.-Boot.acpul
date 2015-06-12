@@ -99,7 +99,7 @@ new.Edit1
 
 #!node.new.this.object(r0, 2000, 0);
 #node.new.this.object(r0, 3000, 0);
-node.new.this.object(r0, 9000, 0);
+#node.new.this.object(r0, 9000, 0);
 #node.new.this.ex(r0, 9700, 0);
 #node.new.this.ex(r0, 9740, 0);
 #!node.new.this.ex(r0, 20000, 0);
@@ -123,7 +123,8 @@ TEXTUREMAN.TEST 7200;
 IMGNODE 7040;
 #node.new.this.ex(r0, IMGNODE, 0);
 
-
+Арестович 788;
+node.new.this.ex(r0, Арестович, 0);
 
 
 # touch debug should be lastest node [

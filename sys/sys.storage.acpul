@@ -24,4 +24,5 @@ storage.image.load.texture
  io(u0, 500510, 0,0,0,0);
 
 storage.is.image.loaded
- #
+ # handle
+ events.pop(u0, e.pool, _0);

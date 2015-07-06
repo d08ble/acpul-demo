@@ -1,6 +1,6 @@
 ### 1032 sys.storage
 
-_ @1033; #events
+storage.evs @1033; #events
 
 storage.e.pool 500;
 storage.e {
@@ -25,4 +25,4 @@ storage.image.load.texture
 
 storage.is.image.loaded
  # handle
- events.pop(u0, e.pool, _0);
+ evs.pop(u0, e.pool, _0);

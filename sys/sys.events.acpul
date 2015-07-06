@@ -1,2 +1,8 @@
 ### 1033 sys.events
 
+events.push {
+ # u0, pool,handle, p0,p1,p2,p3
+ io(_0, 500700, _1,_2);
+ io(_0, 500701, _3,_4,_5,_6);
+};
+

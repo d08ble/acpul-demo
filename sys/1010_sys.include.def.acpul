@@ -39,7 +39,9 @@ sys.obj 1031;
 
 sys.abot 1032;
 
-sys.modules.a.MAX 1033;
+sys.storage 1033;
+
+sys.modules.a.MAX 1034;
 
 # sys.def ]
 

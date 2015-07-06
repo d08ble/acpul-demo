@@ -25,7 +25,7 @@ storage.image.load.texture
 
 storage.process.event {
  # b0, handle, fn
- _0:=evs.events.pop(u0, e.pool, _0);
- if (_0)
- 
-}
+ # fn (event, handle... o0,o1,o2,o3)
+ _0:=evs.events.pop(u0, e.pool, _1);
+ if (_0==e.photo.loaded, _2(_0, _1), 0);
+};

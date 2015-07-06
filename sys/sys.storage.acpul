@@ -30,6 +30,6 @@ storage.get.event
 storage.process.event {
  # b0, handle, fn
  _0:=get.event(_1);
- # fn (handle, event ...o0,o1,o2,o3)
- if (_0, _2(_1, _0), 0);
+ # fn (event, handle ...o0,o1,o2,o3)
+ if (_0, _2(_0, _1), 0);
 };

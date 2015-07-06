@@ -1,5 +1,6 @@
 ### 1032 sys.storage
 
+storage.e.pool 500;
 storage.e {
  photo.loaded 1;
 };
@@ -22,3 +23,4 @@ storage.image.load.texture
 
 storage.is.image.loaded
  #
+ io(u0, 500510, ,0,0,0);

@@ -23,4 +23,3 @@ storage.image.load.texture
 
 storage.is.image.loaded
  #
- io(u0, 500510, ,0,0,0);

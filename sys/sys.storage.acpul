@@ -12,7 +12,13 @@ storage.popup.point
  # x,y
  io(u0, 500501, _0,_1, 0,0);
 
-storage.image.open
- # u0
+storage.image.save.texture
+ # 
  io(u0, 500510, 0,0,0,0);
 
+storage.image.load.texture
+ # 
+ io(u0, 500510, 0,0,0,0);
+
+storage.is.image.loaded
+ #

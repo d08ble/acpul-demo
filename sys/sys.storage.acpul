@@ -1,5 +1,9 @@
 ### 1032 sys.storage
 
+storage.evs {
+  
+};
+
 storage.image.load.from.photo 
  # pool,id, type
  io(u0, 500500, _0,_1, _2, 0);

@@ -23,6 +23,8 @@ storage.image.load.texture
  # 
  io(u0, 500510, 0,0,0,0);
 
-storage.is.image.loaded
- # handle
- evs.events.pop(u0, e.pool, _0);
+storage.process.event {
+ # b0, handle, fn
+ _0:=evs.events.pop(u0, e.pool, _0);
+ if (_0)
+}

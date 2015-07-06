@@ -1,9 +1,14 @@
 ### 1032 sys.storage
 
 storage.image.load.from.photo 
- # u0
- io(u0, 500500, 0,0,0,0);
+ # pool,id, type
+ io(u0, 500500, _0,_1, _2, 0);
+
+storage.popup.point
+ # x,y
+ io(u0, 500501, _0,_1, 0,0);
 
 storage.image.open
  # u0
- io(u0, 500501, 0,0,0,0);
+ io(u0, 500510, 0,0,0,0);
+

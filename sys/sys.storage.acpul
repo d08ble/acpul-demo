@@ -1,5 +1,7 @@
 ### 1032 sys.storage
 
+_ @1033; #events
+
 storage.e.pool 500;
 storage.e {
  photo.loaded 1;

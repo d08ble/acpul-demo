@@ -5,6 +5,7 @@ r0:=k==0;
 draw(r0, 5001);
 
 _ @1010;
+_ @sys.node;
 
 test.storage 5010;
 node.new.this.ex(r0, test.storage, 0);

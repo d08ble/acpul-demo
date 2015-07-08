@@ -15,8 +15,13 @@ storage.t {
  data 4;
 };
 
+storage.photo.mode {
+ photos 0;
+ camera 1;
+};
+
 storage.image.load.from.photo 
- # pool,id, type
+ # pool,id, mode
  io(u0, 500500, _0,_1, _2, 0);
 
 storage.popup.point

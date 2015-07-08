@@ -1,7 +1,61 @@
 ### 5000 tests
 
+r0:=k==0;
+
+draw(r0, 5001);
+
+_ @1010;
+
+test.storage 5010;
+node.new.this.ex(r0, test.storage, 0);
+
+k:=1;
+
 ### 5001 tests.draw
+
+rw 100;
+rh 100;
+rect(u0, 6, 0,0,rw,rh);
+rect(u0, 3, 5,5,rw-10,rh-10);
 
 ### 5010 test.storage
 
+r0:=k==0;
+
+draw(r0, 5011);
+
+_ @1010;
+_ @sys.touch;
+_ @sys.storage;
+
+touch.ev
+{
+ began {
+  r7:=1;
+  storage.popup.point(rnd(u0)*500, rnd(u0)*500);
+  storage
+ };
+ moved {
+  
+ };
+ ended {
+  r7:=0;
+ };
+};
+
+touch.id r1;
+touch.b0 r2;
+touch.rect(touch.id, q.x,q.y,q.w,q.h);
+_ @sys.touch.ev.process.once;
+touch.b0:=1;
+while(touch.b0) {touch.ev.process.once(touch.id, touch.b0);};
+
+
+k:=1;
+
 ### 5011 test.storage.draw
+
+rw 32;
+rh 32;
+rect(u0, 6, 0,0,rw,rh);
+

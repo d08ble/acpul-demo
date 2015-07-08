@@ -3,7 +3,7 @@
 storage.evs @1034; #events
 
 storage.e.pool 500;
-storage.e {
+storage.e { _;
  photo.loaded 1;
 };
 

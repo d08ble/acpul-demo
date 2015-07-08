@@ -38,7 +38,7 @@ storage.image.load.texture
 
 storage.get.event
  # handle
- evs.events.pop(u0, e.pool, _0);
+ evs.events.pop(u0, 123222, _0);
 
 storage.process.event {
  # b0, handle, fn

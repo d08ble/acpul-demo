@@ -44,8 +44,7 @@ touch.ev
  began {
   r7:=1;
   storage.popup.point(rnd(u0)*500, rnd(u0)*500);
-#  handle:=storage.image.load.from.photo(test.pool,0, storage.photo.mode.photos);
-#
+  handle:=storage.image.load.from.photo(test.pool,0, storage.photo.mode.photos);
  };
  moved {
   

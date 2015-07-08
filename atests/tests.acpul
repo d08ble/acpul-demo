@@ -12,6 +12,7 @@ test.storage 5010;
 
 k:=1;
 
+
 ### 5001 tests.draw
 
 color(u0, 0.5,0,0.5,1);

@@ -71,12 +71,12 @@ k:=1;
 
 ### 5011 test.storage.draw
 
-color(u0, 1,1,0,0);
+color(u0, 1,1,0,1);
 if (r7==1) {
- color(u0, 0,1,0,0);
+ color(u0, 0,1,0,1);
 };
 if (r7==2) {
- color(u0, 0,0,1,0);
+ color(u0, 0,0,1,1);
 };
 rw 32;
 rh 32;

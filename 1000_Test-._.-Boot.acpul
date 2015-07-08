@@ -36,6 +36,10 @@ _ @sys.touch;
 
 touch.start();
 
+_ @sys.events;
+
+events.init(r0);
+
 t+=dt;
 
 x:=200;

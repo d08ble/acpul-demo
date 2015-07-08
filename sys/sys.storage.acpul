@@ -9,7 +9,9 @@ storage.e {
 
 storage.t {
  image 0;
- 
+ sound 1;
+ font 2;
+ data 3;
 };
 
 storage.image.load.from.photo 

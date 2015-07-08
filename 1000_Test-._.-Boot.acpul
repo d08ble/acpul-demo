@@ -126,6 +126,9 @@ IMGNODE 7040;
 Арестович 788;
 node.new.this.ex(r0, Арестович, 0);
 
+TESTS 5000;
+node.new.this.ex(r0, TESTS, 0);
+
 
 # touch debug should be lastest node [
 TOUCH.DEBUG 1006;

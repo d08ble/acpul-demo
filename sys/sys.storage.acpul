@@ -8,10 +8,11 @@ storage.e {
 };
 
 storage.t {
- image 0;
- sound 1;
- font 2;
- data 3;
+ default 0
+ image 1;
+ sound 2;
+ font 3;
+ data 4;
 };
 
 storage.image.load.from.photo 

@@ -7,6 +7,11 @@ storage.e {
  photo.loaded 1;
 };
 
+storage.t {
+ image 0;
+ 
+};
+
 storage.image.load.from.photo 
  # pool,id, type
  io(u0, 500500, _0,_1, _2, 0);

@@ -2,10 +2,10 @@
 
 storage.evs @1034; #events
 
-storage.e.pool 500;
-storage.e { _;
+storage.e {
  photo.loaded 1;
 };
+storage.e.pool 500;
 
 storage.t {
  default 0

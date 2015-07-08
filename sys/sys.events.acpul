@@ -1,5 +1,7 @@
 ### 1033 sys.events
 
+events.pool.hwkeyboard 900;
+
 events.init 
  # u0
  io(_0, 500700, 0,0, 0,0);

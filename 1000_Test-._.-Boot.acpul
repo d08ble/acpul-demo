@@ -129,7 +129,7 @@ IMGNODE 7040;
 #node.new.this.ex(r0, IMGNODE, 0);
 
 Арестович 788;
-#node.new.this.ex(r0, Арестович, 0);
+node.new.this.ex(r0, Арестович, 0);
 
 TESTS 5000;
 #node.new.this.ex(r0, TESTS, 0);

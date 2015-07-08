@@ -41,7 +41,9 @@ sys.abot 1032;
 
 sys.storage 1033;
 
-sys.modules.a.MAX 1034;
+sys.events 1034;
+
+sys.modules.a.MAX 1035;
 
 # sys.def ]
 

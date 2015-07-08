@@ -28,12 +28,17 @@ _ @1010;
 _ @sys.touch;
 _ @sys.storage;
 
+test.pool 78945;
+handle r6;
+
+# touch [
+
 touch.ev
 {
  began {
   r7:=1;
   storage.popup.point(rnd(u0)*500, rnd(u0)*500);
-  storage
+  handle:=storage.image.load.from.photo(test.pool,0, storage.photo.mode.photos);
  };
  moved {
   
@@ -43,6 +48,10 @@ touch.ev
  };
 };
 
+q.x 0;
+q.y 0;
+q.w 32;
+q.h 32;
 touch.id r1;
 touch.b0 r2;
 touch.rect(touch.id, q.x,q.y,q.w,q.h);
@@ -50,12 +59,26 @@ _ @sys.touch.ev.process.once;
 touch.b0:=1;
 while(touch.b0) {touch.ev.process.once(touch.id, touch.b0);};
 
+# touch ]
+
+l0:=storage.get.event(handle);
+if (l0==storage.e.photo.loaded) {
+ r7:=2;
+};
 
 k:=1;
 
 ### 5011 test.storage.draw
 
+color(u0, 1,1,0,0);
+if (r7==1) {
+ color(u0, 0,1,0,0);
+};
+if (r7==2) {
+ color(u0, 0,0,1,0);
+};
 rw 32;
 rh 32;
 rect(u0, 6, 0,0,rw,rh);
+
 

@@ -21,7 +21,7 @@ rw 100;
 rh 100;
 rect(u0, 6, 0,0,rw,rh);
 color(u0, 0.5,0.6,0.5,1);
-rect(u0, 3, 5,5,rw-10,rh-10);
+rect(u0, 4, 5,5,rw-10,rh-10);
 
 ### 5010 test.storage
 

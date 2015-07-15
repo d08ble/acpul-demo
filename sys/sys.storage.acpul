@@ -21,7 +21,7 @@ storage.photo.mode {
 };
 
 storage.image.load.from.photo 
- # pool,id, mode
+ # pool,id, mode -> i
  io(u0, 500500, _0,_1, _2, 0);
 
 storage.popup.point

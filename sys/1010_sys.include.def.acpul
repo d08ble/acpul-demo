@@ -43,7 +43,9 @@ sys.storage 1033;
 
 sys.events 1034;
 
-sys.modules.a.MAX 1035;
+sys.media 1035;
+
+sys.modules.a.MAX 1036;
 
 # sys.def ]
 

@@ -9,4 +9,4 @@ nvg.load.font
 
 ft.load.font
  # u0, pool,id
- io(_0, 500810, 0,0, 0,0);
+ io(_0, 500900, 0,0, 0,0);

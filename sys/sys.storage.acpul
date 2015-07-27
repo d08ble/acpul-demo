@@ -33,7 +33,7 @@ storage.image.save.texture
  io(u0, 500510, 0,0,0,0);
 
 storage.image.load.texture
- # 
+ # pool,id,i
  io(u0, 500510, 0,0,0,0);
 
 storage.get.event

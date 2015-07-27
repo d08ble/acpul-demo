@@ -13,5 +13,5 @@ events.push {
 };
 
 events.pop 
- # u0, pool,handle
+ # u0, pool,handle -> type, o0-o3
  io(_0, 500703, _1,_2, 0,0);

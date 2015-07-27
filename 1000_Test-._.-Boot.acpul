@@ -38,7 +38,7 @@ touch.start();
 
 _ @sys.events;
 
-events.step(r0);
+events.step(u0);
 
 
 t+=dt;

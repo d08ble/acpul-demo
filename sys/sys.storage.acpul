@@ -4,7 +4,7 @@ storage.evs @1034; #events
 
 storage.e.pool 500;
 storage.e { _;
- photo.loaded 1;
+ photo.loaded 1; # -> type, pool, uid, i
 };
 
 storage.t {

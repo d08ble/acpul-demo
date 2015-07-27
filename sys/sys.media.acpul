@@ -5,9 +5,12 @@ media.init
 
 media.nvg.load.font
  # u0, pool,id
- io(_0, 500900, 0,0, 0,0);
+ io(_0, 500810, 0,0, 0,0);
 
 media.ft.load.font
  # u0, pool,id
- io(_0, 500950, 0,0, 0,0);
+ io(_0, 500900, 0,0, 0,0);
 
+media.shapeop.set.points.dma
+ # u0 type, dma
+ 

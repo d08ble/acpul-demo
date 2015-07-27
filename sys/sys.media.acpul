@@ -1,4 +1,7 @@
 ### 1035 sys.media
 
-nvg.load.font
+media.init
  io(_0, 500800, 0,0, 0,0);
+
+nvg.load.font
+ io(_0, 500810, 0,0, 0,0);

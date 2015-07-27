@@ -4,4 +4,9 @@ media.init
  io(_0, 500800, 0,0, 0,0);
 
 nvg.load.font
+ # u0, pool,id
+ io(_0, 500810, 0,0, 0,0);
+
+ft.load.font
+ # u0, pool,id
  io(_0, 500810, 0,0, 0,0);

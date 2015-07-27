@@ -12,5 +12,5 @@ media.ft.load.font
  io(_0, 500900, 0,0, 0,0);
 
 media.shapeop.set.points.dma
- # u0 type, dma
+ # u0, dma
  

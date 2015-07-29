@@ -79,8 +79,8 @@ if (l0==storage.e.photo.loaded) {
 
 k:=1;
 
-_ @sys.node;
-node.new.this.ex(r0, 7320, 0);
+#_ @sys.node;
+#node.new.this.ex(r0, 7320, 0);
 
 ### 5011 test.storage.draw
 

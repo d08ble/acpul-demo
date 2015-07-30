@@ -87,6 +87,7 @@ if (r0) {
  node.prop.x.s(u0, n0, 100);
  node.prop.y.s(u0, n0, 100);
  node.prop.r.s(u0, n0, 10);
+ node.prop.lt.s(u0, n0, 1);
 };
 #watch(n0);
 

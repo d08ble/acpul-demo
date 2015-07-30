@@ -103,7 +103,7 @@ if (r7==2) {
 };
 rw 32;
 rh 32;
-rect(u0, 6, 0,0,rw,rh);watch(r6);
+rect(u0, 6, 0,0,rw,rh);
 
 ### 5012 test.texture(tex)
 

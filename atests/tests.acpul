@@ -87,6 +87,7 @@ if (r0) {
 node.prop.s.s(u0, n0, 0.5);
 node.prop.x.s(u0, n0, 100);
 node.prop.y.s(u0, n0, 100);
+node.prop.r.s(u0, n0, 100);
 #watch(n0);
 
 ### 5011 test.storage.draw

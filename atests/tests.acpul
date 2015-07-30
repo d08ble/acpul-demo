@@ -83,11 +83,11 @@ n0 l15;
 _ @sys.node;
 if (r0) {
  n0:=node.new.this.ex(r0, 7320, 1);
+ node.prop.s.s(u0, n0, 0.5);
+ node.prop.x.s(u0, n0, 100);
+ node.prop.y.s(u0, n0, 100);
+ node.prop.r.s(u0, n0, 10);
 };
-node.prop.s.s(u0, n0, 0.5);
-node.prop.x.s(u0, n0, 100);
-node.prop.y.s(u0, n0, 100);
-node.prop.r.s(u0, n0, 10);
 #watch(n0);
 
 ### 5011 test.storage.draw

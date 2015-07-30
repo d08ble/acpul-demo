@@ -84,7 +84,7 @@ _ @sys.node;
 if (r0) {
  n0:=node.new.this.ex(r0, 7320, 0);
 };
-watch(n0);
+#watch(n0);
 
 ### 5011 test.storage.draw
 

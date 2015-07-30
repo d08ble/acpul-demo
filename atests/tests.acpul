@@ -81,7 +81,7 @@ k:=1;
 
 n0 l15;
 _ @sys.node;
-if (0) {
+if (r0) {
  n0:=node.new.this.ex(r0, 7320, 1);
  node.prop.s.s(u0, n0, 0.5);
  node.prop.x.s(u0, n0, 100);

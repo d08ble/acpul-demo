@@ -77,7 +77,8 @@ if (l0==storage.e.photo.loaded) {
  tex:=storage.image.load.texture(o1,o2,o3);
  watch(tex);
 };
-watch(r6);
+#watch(r6);
+
 k:=1;
 
 n0 l15;

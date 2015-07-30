@@ -104,7 +104,7 @@ node {_;
   io(_0, 8110, _1, _2, 0,0);
 
  ex.texture.create
-  # u0, width,height -> tex
+  # u0, w,h -> tex
   io(_0, 7000, _1,_2, 0,0);
  ex.texture.release
   # u0, tex

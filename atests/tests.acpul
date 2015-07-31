@@ -133,8 +133,10 @@ test.texture.utils 5019;
 _ @test.texture.utils;
 
 if (r0) {
- buffer.new.v2a.rect.dma(0, r2, 0,0, 1,1);
- buffer.new.v2a.rect.dma(0, r3, 0,0, 300,300);
+ texcoords r2;
+ verts r3;
+ buffer.new.v2a.rect.dma(0, texcoords, 0,0, 1,1);
+ buffer.new.v2a.rect.dma(0, verts, 0,0, 300,300);
 };
 
 k:=1;
@@ -145,11 +147,16 @@ _ @1010;
 _ @sys.node;
 _ @sys.obj;
 
+texcoords r2;
+verts r3;
+
 vsh 5022; fsh 5023;
 node.ex.shader.use(u0, vsh, fsh);
 
-buffer.dma(u0, 0, r3,0);
-buffer.dma(u0, 1, r2,0);
+buffer.dma(u0, 0, verts,0);
+buffer.dma(u0, 1, texcoords,0);
+
+node.ex.shader.attribute.dma0(0, )
 
 ### 5022:S test.drawing.texture.0.vsh
 

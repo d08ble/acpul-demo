@@ -110,10 +110,10 @@ rect(u0, 6, 0,0,rw,rh);
 
 buffer.new.v2a.rect.dma {
  # dma, id, x,y, w,h
- _0:=buffer.new(u0, 2*4, 2*4);
- buffer.dma(u0, 0, _0,0);
- dma.v2a.rect(0,0, 0,0, 1,1);
- dma.off(0);
+ _1:=buffer.new(u0, 2*4, 2*4);
+ buffer.dma(u0, _0, _1,0);
+ dma.v2a.rect(_0,0, _1,_2, _3,_4);
+ dma.off(_0);
 };
 
 buffer.new.v2a.rect.dma(0, r2, 0,0, 1,1);

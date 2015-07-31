@@ -108,6 +108,17 @@ rect(u0, 6, 0,0,rw,rh);
 
 ### 5019 test.texture.utils
 
+buffer.new.v2a.rect.dma {
+ # dma, id, x,y, w,h
+ _0:=buffer.new(u0, 2*4, 2*4);
+ buffer.dma(u0, 0, _0,0);
+ dma.v2a.rect(0,0, 0,0, 1,1);
+ dma.off(0);
+};
+
+buffer.new.v2a.rect.dma(0, r2, 0,0, 1,1);
+buffer.new.v2a.rect.dma(0, r2, 0,0, 300,300);
+
 ### 5020 test.texture(tex)
 
 ### 5021 test.texture(tex).draw

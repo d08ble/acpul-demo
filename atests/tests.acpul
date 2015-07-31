@@ -123,6 +123,8 @@ buffer.new.v2a.rect.dma {
 
 r0:=k==1;
 
+draw(r0, 5021);
+
 test.texture.utils 5019;
 _ @test.texture.utils;
 
@@ -131,7 +133,6 @@ if (r0) {
  buffer.new.v2a.rect.dma(0, r3, 0,0, 300,300);
 };
 
-draw(r0, 5021);
 
 k:=1;
 

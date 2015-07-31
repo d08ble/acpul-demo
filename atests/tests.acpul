@@ -137,4 +137,38 @@ k:=1;
 
 ### 5021 test.texture(tex).draw
 
+vsh 5022; fsh 5023;
+node.ex.shader.use(u0, vsh, fsh);
+
+### 5022:S test.drawing.texture.0.vsh
+
+#define a_position a0
+#define a_texCoord a1
+attribute vec4 a_position;
+attribute vec2 a_texCoord;
+
+varying vec4 v1;
+varying mediump vec2 v2;
+
+void main(void)
+{
+   gl_Position = CC_MVPMatrix * a_position;
+   v1 = a_position;
+   v2 = a_texCoord;
+}
+
+### 5023:S test.drawing.texture.0.fsh
+
+varying vec4 v1;
+varying vec2 v2;
+
+uniform sampler2D p0;
+
+void main(void)
+{
+//  gl_FragColor = vec4(1.);
+//  gl_FragColor = vec4(1.,1.,0.,1.);
+// gl_FragColor = vec4(v1.x/1024.*5.);
+ gl_FragColor = texture2D(p0, v2);
+}
 

@@ -146,7 +146,10 @@ if (r0) {
  verts r3;
  buffer.new.v2a.rect.d(0, texcoords, 0,0, 1,1);
  buffer.new.v2a.rect.d(0, verts, 0,0, 300,300);
+ tex r4;
+ tex:=p0;
 };
+
 
 k:=1;
 
@@ -158,7 +161,7 @@ _ @sys.obj;
 
 texcoords r2;
 verts r3;
-tex0 r4;
+tex r4;
 
 vsh 5022; fsh 5023;
 node.ex.shader.use(u0, vsh, fsh);
@@ -167,7 +170,7 @@ node.ex.shader.attribute.buffer.d(0, texcoords, 2,4, 0);
 node.ex.shader.attribute.buffer.d(1, verts, 2,4, 0);
 
 param 0; texUnit 0;
-node.ex.shader.uniform.texture(u0, param, tex0, texUnit);
+node.ex.shader.uniform.texture(u0, param, tex, texUnit);
 
 node.ex.gl.draw(u0, 6, 4);
 

@@ -106,7 +106,7 @@ rw 32;
 rh 32;
 rect(u0, 6, 0,0,rw,rh);
 
-### 5019 test.utils
+### 5019 test.texture.utils
 
 ### 5020 test.texture(tex)
 

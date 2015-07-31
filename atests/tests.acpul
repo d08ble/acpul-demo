@@ -128,7 +128,7 @@ node.ex.shader.attribute.dma0
 node.ex.shader.attribute.buffer.d {
  # dma, attribute, buf,elementsize,count, normalized
  buffer.dma(u0, _0, _2,0);
- node.ex.shader.attribute.dma0(_1, _3,_4, _5);
+ node.ex.shader.attribute.dma0(_1, _0,_3,_4, _5);
 };
 
 ### 5020 test.texture(tex)

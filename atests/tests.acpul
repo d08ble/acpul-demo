@@ -158,6 +158,7 @@ _ @sys.obj;
 
 texcoords r2;
 verts r3;
+tex0 r4;
 
 vsh 5022; fsh 5023;
 node.ex.shader.use(u0, vsh, fsh);

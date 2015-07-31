@@ -137,7 +137,6 @@ draw(r0, 5021);
 
 _ @1010;
 _ @sys.obj;
-
 test.texture.utils 5019;
 _ @test.texture.utils;
 
@@ -157,6 +156,8 @@ k:=1;
 _ @1010;
 _ @sys.node;
 _ @sys.obj;
+test.texture.utils 5019;
+_ @test.texture.utils;
 
 texcoords r2;
 verts r3;

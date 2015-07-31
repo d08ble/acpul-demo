@@ -119,9 +119,18 @@ buffer.new.v2a.rect.dma {
  dma.off(_0);
 };
 
-buffer.new.v2a.rect.dma(0, r2, 0,0, 1,1);
-buffer.new.v2a.rect.dma(0, r2, 0,0, 300,300);
-
 ### 5020 test.texture(tex)
+
+r0:=k==1;
+
+test.texture.utils 5019;
+_ @test.texture.utils;
+
+if (r0) {
+ buffer.new.v2a.rect.dma(0, r2, 0,0, 1,1);
+ buffer.new.v2a.rect.dma(0, r3, 0,0, 300,300);
+};
+
+k:=1;
 
 ### 5021 test.texture(tex).draw

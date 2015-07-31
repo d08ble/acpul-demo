@@ -134,7 +134,7 @@ node.ex.shader.attribute.buffer.d {
 };
 
 ### 5020 test.texture(tex)
-r0:=k==1;
+r0:=k==0;
 
 draw(r0, 5021);
 

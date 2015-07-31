@@ -113,6 +113,8 @@ rect(u0, 6, 0,0,rw,rh);
 _ @1010;
 _ @sys.obj;
 
+_ @7319;
+
 buffer.new.v2a.rect.d {
  # dma, id, x,y, w,h
  _1:=buffer.new(u0, 2*4, 2*4);

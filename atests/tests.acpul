@@ -165,8 +165,8 @@ node.ex.shader.use(u0, vsh, fsh);
 #buffer.dma(u0, 0, verts,0);
 #buffer.dma(u0, 1, texcoords,0);
 
-node.ex.shader.attribute.buffer.d(0, texcoords,2,4, 0);
-node.ex.shader.attribute.buffer.d(0, texcoords,2,4, 0);
+node.ex.shader.attribute.buffer.d(0, texcoords, 2,4, 0);
+node.ex.shader.attribute.buffer.d(0, verts, 2,4, 0);
 
 ### 5022:S test.drawing.texture.0.vsh
 

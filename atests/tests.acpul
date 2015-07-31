@@ -129,8 +129,8 @@ node.ex.shader.attribute.buffer.d {
  node.ex.shader.attribute.dma0(_1, _3,_4, _5);
 };
 
-
 ### 5020 test.texture(tex)
+
 
 r0:=k==1;
 

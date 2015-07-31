@@ -137,6 +137,10 @@ k:=1;
 
 ### 5021 test.texture(tex).draw
 
+_ @1010;
+_ @sys.node;
+_ @sys.obj;
+
 vsh 5022; fsh 5023;
 node.ex.shader.use(u0, vsh, fsh);
 

@@ -179,8 +179,8 @@ node.ex.gl.draw.d(u0, 6, 4);
 dma.off(u0, 0);
 dma.off(u0, 1);
 
-rw 32;
-rh 32;
+rw 320;
+rh 320;
 rect(u0, 6, 0,0,rw,rh);
 
 ### 5022:S test.drawing.texture.0.vsh

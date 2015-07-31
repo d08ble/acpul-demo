@@ -123,11 +123,20 @@ node.ex.shader.attribute.dma0
  # attribute, dma,elementsize,count, normalized
  node.ex.shader.attribute.dma(u0, _0, _1,0,_2,0,_3, 0,_4);
 
+node.ex.shader.attribute.buffer.dma {
+ # dma, buf, attribute, elementsize,count, normalized
+ buffer.dma(u0, _0, _1,0);
+ node.ex.shader.attribute.dma0(_2, _3,_4, _5);
+};
+
 ### 5020 test.texture(tex)
 
 r0:=k==1;
 
 draw(r0, 5021);
+
+_ @1010;
+_ @sys.obj;
 
 test.texture.utils 5019;
 _ @test.texture.utils;
@@ -156,7 +165,8 @@ node.ex.shader.use(u0, vsh, fsh);
 buffer.dma(u0, 0, verts,0);
 buffer.dma(u0, 1, texcoords,0);
 
-node.ex.shader.attribute.dma0(0, )
+node.ex.shader.attribute.dma0(0, texcoords,2,4, 0);
+node.ex.shader.attribute.dma0(0, texcoords,2,4, 0);
 
 ### 5022:S test.drawing.texture.0.vsh
 

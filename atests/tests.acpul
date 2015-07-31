@@ -136,3 +136,5 @@ if (r0) {
 k:=1;
 
 ### 5021 test.texture(tex).draw
+
+

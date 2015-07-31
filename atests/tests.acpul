@@ -119,6 +119,10 @@ buffer.new.v2a.rect.dma {
  dma.off(_0);
 };
 
+node.ex.shader.attribute.dma0 
+ # attribute, dma,elementsize,count, normalized
+ node.ex.shader.attribute.dma(u0, _0, _1,0,_2,0,_3, 0,_4);
+
 ### 5020 test.texture(tex)
 
 r0:=k==1;

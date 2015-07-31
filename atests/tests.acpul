@@ -133,7 +133,6 @@ if (r0) {
  buffer.new.v2a.rect.dma(0, r3, 0,0, 300,300);
 };
 
-
 k:=1;
 
 ### 5021 test.texture(tex).draw

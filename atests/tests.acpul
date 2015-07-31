@@ -172,7 +172,10 @@ node.ex.shader.attribute.buffer.d(1, verts, 2,4, 0);
 param 0; texUnit 0;
 node.ex.shader.uniform.texture(u0, param, tex, texUnit);
 
-node.ex.gl.draw(u0, 6, 4);
+node.ex.gl.draw.d(u0, 6, 4);
+
+dma.off(u0, 0);
+dma.off(u0, 1);
 
 ### 5022:S test.drawing.texture.0.vsh
 

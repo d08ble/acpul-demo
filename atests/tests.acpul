@@ -186,8 +186,8 @@ rect(u0, 6, 0,0,rw,rh);
 
 ### 5022:S test.drawing.texture.0.vsh
 
-#define a_position a0
-#define a_texCoord a1
+#define a_position a1
+#define a_texCoord a0
 attribute vec4 a_position;
 attribute vec2 a_texCoord;
 

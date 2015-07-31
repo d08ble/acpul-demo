@@ -119,7 +119,7 @@ buffer.new.v2a.rect.d {
  # dma, id, x,y, w,h
  _1:=buffer.new(u0, 2*4, 2*4);
  buffer.dma(u0, _0, _1,0);
- dma.v2a.rect(_0,0, _1,_2, _3,_4);
+ dma.v2a.rect(_0,0, _2,_3, _4,_5);
  dma.off(u0, _0);
 };
 

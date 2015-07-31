@@ -153,6 +153,7 @@ if (r0) {
 };
 
 k:=1;
+r+=dt*10;
 
 ### 5021 test.texture(tex).draw
 

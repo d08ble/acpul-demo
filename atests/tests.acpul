@@ -220,3 +220,5 @@ void main(void)
 ### 5030 test.lanczos.gpui
 
 ### 5030 test.lanczos.gpui.draw
+
+### 5030:S test.lanczos.filter.fsh

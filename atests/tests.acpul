@@ -210,10 +210,10 @@ uniform sampler2D p0;
 
 void main(void)
 {
-  gl_FragColor = vec4(1.);
+//  gl_FragColor = vec4(1.);
 //  gl_FragColor = vec4(1.,1.,0.,1.);
 // gl_FragColor = vec4(v1.x/1024.*5.);
-// gl_FragColor = texture2D(p0, v2);
+ gl_FragColor = texture2D(p0, v2);
 }
 
 ### 5030 test.lanczos.gpui

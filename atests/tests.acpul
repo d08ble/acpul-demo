@@ -12,7 +12,7 @@ _ @sys.node;
 test.storage 5010;
 node.new.this.ex(r0, test.storage, 0);
 
-#test.media 5050;
+test.media 5050;
 l0:=node.new.this.ex(r0, test.media, 0);
 node.prop.x.s(r0, l0, 100);
 

@@ -40,6 +40,9 @@ _ @sys.events;
 
 events.step();
 
+_ @sys.media;
+
+media.init(r0);
 
 t+=dt;
 

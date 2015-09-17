@@ -55,7 +55,7 @@ touch.ev
  };
 };
 
-q{x 0;y 0;w 32;h 32;};
+q {x 0;y 0;w 32;h 32;};
 touch.id r1;
 touch.b0 r2;
 touch.rect(touch.id, q.x,q.y,q.w,q.h);

@@ -227,3 +227,6 @@ draw(r0, 5051);
 k:=1;
 
 ### 5051 test.media.draw
+
+### 5052 test.media.strings
+

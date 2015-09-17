@@ -39,7 +39,6 @@ handle r6;
 
 # touch [
 
-
 touch.ev
 {
  began {
@@ -62,7 +61,6 @@ touch.rect(touch.id, q.x,q.y,q.w,q.h);
 _ @sys.touch.ev.process.once;
 touch.b0:=1;
 while(touch.b0) {touch.ev.process.once(touch.id, touch.b0);};
-
 
 # touch ]
 

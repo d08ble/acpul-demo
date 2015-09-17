@@ -231,6 +231,9 @@ draw(r0, 5051);
 
 k:=1;
 
+_ @1010;
+_ @sys.media;
+
 ### 5051 test.media.draw
 
 color(u0, 0.5,1,0.5,1);

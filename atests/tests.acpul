@@ -12,6 +12,9 @@ _ @sys.node;
 test.storage 5010;
 node.new.this.ex(r0, test.storage, 0);
 
+test.media 5050;
+node.new.this.ex(r0, test.media, 0);
+
 k:=1;
 
 ### 5001 tests.draw

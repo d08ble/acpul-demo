@@ -232,10 +232,6 @@ draw(r0, 5051);
 _ @1010;
 _ @sys.media;
 
-font0 r7;
-#font0:=if(r0, media.nvg.load.font(r0, 0,0), font0);
-media.nvg.load.font(u0, 0,0,0);
-
 k:=1;
 
 ### 5051 test.media.draw
@@ -248,6 +244,10 @@ rect(u0, 6, 0,0,rw,rh);
 #rect(u0, 6, 5,5,rw-10,rh-10);
 color(u0, 0.5,1,1,1);
 triangle(u0, 6, 50,0, 100,150, 150,0);
+
+font0 r7;
+#font0:=if(r0, media.nvg.load.font(r0, 0,0), font0);
+font0:=media.nvg.load.font(u0, 0,0,0);
 
 ### 5052 test.media.strings
 MEDIA

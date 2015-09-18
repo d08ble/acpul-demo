@@ -233,7 +233,8 @@ _ @1010;
 _ @sys.media;
 
 font0 r7;
-font0:=if(r0, media.nvg.load.font(r0, 0,0), font0);
+#font0:=if(r0, media.nvg.load.font(r0, 0,0), font0);
+media.nvg.load.font(u0, 0,0);
 
 k:=1;
 

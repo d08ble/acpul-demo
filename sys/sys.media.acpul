@@ -4,11 +4,11 @@ media.init
  io(_0, 500800, 0,0, 0,0);
 
 media.nvg.load.font
- # u0, pool,id
+ # u0, pool,id,i
  io(_0, 500810, 0,0, 0,0);
 
 media.ft.load.font
- # u0, pool,id
+ # u0, pool,id,i
  io(_0, 500900, 0,0, 0,0);
 
 media.shapeop.set.points.dma

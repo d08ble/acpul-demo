@@ -252,7 +252,7 @@ font0 r7;
 font0:=media.ft.load.font(u0, 0,0,0);
 buffer.new(u0, 1000*3, 1000*3); # x,y,z
 buffer.add(u0, 1000*4, 1000*4); # char, texture, offs0,offs1
-dma.
+buffer.dma
 #media.ft.
 
 ### 5052 test.media.strings

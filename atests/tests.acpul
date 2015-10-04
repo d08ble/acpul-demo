@@ -257,5 +257,7 @@ buffer.dma(u0, 1, fchars,1);
 #media.ft.render(u0, font0, mode, 0,1);
 # mode: texture, outline, polygon
 
+#media.ft.draw(u0, font0, mode, 0,1);
+
 ### 5052 test.media.strings
 MEDIA

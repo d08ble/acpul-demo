@@ -123,16 +123,16 @@ FILTERS 7000;
 #node.new.this.ex(r0, FILTERS, 0);
 
 ABOT 1500;
-node.new.this.ex(r0, ABOT, 0);
+#node.new.this.ex(r0, ABOT, 0);
 
 TEXTUREMAN.TEST 7200;
 #node.new.this.ex(r0, TEXTUREMAN.TEST, 0);
 
 IMGNODE 7040;
-node.new.this.ex(r0, IMGNODE, 0);
+#node.new.this.ex(r0, IMGNODE, 0);
 
 Арестович 788;
-node.new.this.ex(r0, Арестович, 0);
+#node.new.this.ex(r0, Арестович, 0);
 
 TESTS 5000;
 node.new.this.ex(r0, TESTS, 0);

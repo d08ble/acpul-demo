@@ -245,6 +245,7 @@ triangle(u0, 6, 50,0, 100,150, 150,0);
 
 _ @1010;
 _ @sys.media;
+_ @sys.obj;
 
 font0 r7;
 #font0:=if(r0, media.nvg.load.font(r0, 0,0), font0);

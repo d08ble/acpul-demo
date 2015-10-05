@@ -247,6 +247,8 @@ _ @1010;
 _ @sys.media;
 _ @sys.obj;
 
+media.shapeop.set.points.dma(u0);
+
 font0 r7;
 #font0:=if(r0, media.nvg.load.font(r0, 0,0), font0);
 #font0:=media.nvg.load.font(u0, 0,0,0);

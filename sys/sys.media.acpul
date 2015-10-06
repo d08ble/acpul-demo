@@ -12,7 +12,7 @@ media.ft.load.font
  io(_0, 500900, 0,0, 0,0);
 
 media.ft.text.dma {
- # u0, font, mode, dmaString, dma(p0,p1,p2)
+ # u0, font, mode, dmaString, dmaOut(p0,p1,p2)
  # mode: texture, outline, polygon
  io(_0, 500901, _1, _2, _3, _4);
  io(_0, 500902, _5,_6,_7, 0);

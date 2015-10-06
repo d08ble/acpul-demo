@@ -263,7 +263,7 @@ font0:=media.ft.load.font(u0, 1000,0,0);
 
 #media.ft.text.dma(u0, font0, mode, 2, 0,1,-1);
 # mode: texture, outline, polygon
-#media.ft.draw.dma(u0, font0, mode, 0,1);
+#media.ft.draw.dma(u0, font0, mode, 0);
 
 ### 5052 test.media.strings
 MEDIA

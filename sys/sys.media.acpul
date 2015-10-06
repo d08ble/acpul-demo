@@ -18,9 +18,8 @@ media.ft.text.dma {
  io(_0, 500902, _5,_6,_7, 0);
 };
 
-media.ft.draw.dma {
-  
-};
+media.ft.draw.dma 0;
+
 
 media.shapeop.set.points.dma
  # u0, sop, dma

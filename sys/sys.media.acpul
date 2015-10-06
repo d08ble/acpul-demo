@@ -14,8 +14,8 @@ media.ft.load.font
 media.ft.text.dma {
  # u0, font, mode, dmaString, dma(p0,p1,p2)
  # mode: texture, outline, polygon
- io(_0, 500901, 0,0, 0,0);
- io(_0, 500902, 0,0, 0,0);
+ io(_0, 500901, _1, _2, _3, _4);
+ io(_0, 500902, _5,_6,_7, 0);
 };
 
 media.shapeop.set.points.dma

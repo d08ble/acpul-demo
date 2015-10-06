@@ -11,6 +11,13 @@ media.ft.load.font
  # u0, pool,id,i
  io(_0, 500900, 0,0, 0,0);
 
+media.ft.text.dma {
+ # u0, font, mode, dmaString, dma(p0,p1,p2)
+ # mode: texture, outline, polygon
+ io(_0, 500901, 0,0, 0,0);
+ io(_0, 500902, 0,0, 0,0);
+};
+
 media.shapeop.set.points.dma
  # u0, sop, dma
  io(_0, 500950, 0,0, 0,0);

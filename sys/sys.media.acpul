@@ -19,7 +19,7 @@ media.ft.text.dma {
 };
 
 media.ft.draw.dma 
- font0, mode, dma
+ # u0, font0, mode, dma
  0;
 
 

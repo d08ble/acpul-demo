@@ -249,6 +249,7 @@ _ @sys.obj;
 
 media.shapeop.set.points.dma(u0);
 
+if (r0) {
 font0 r7;
 #font0:=if(r0, media.nvg.load.font(r0, 0,0), font0);
 #font0:=media.nvg.load.font(u0, 0,0,0);
@@ -262,7 +263,6 @@ dma.from.file(u0, 2, cpu.mode.formula, 5052);
 font0:=media.ft.load.font(u0, 1000,0,0);
 
 media.ft.text.dma(u0, font0, media.ft.mode.texture, 2, 0,1,-1);
-if (r0) {
 obj.dump(u0, 0, 0);
 obj.dump(u0, 0, 1);
 obj.dump(u0, 0, 2);

@@ -272,9 +272,9 @@ obj.dump(u0, 0, 2);
 #obj.dump(u0, 0, fchars);
 # mode: texture, outline, polygon
 #media.ft.draw.dma(u0, font0, mode, 0);
-dma.off(0);
-dma.off(1);
-dma.off(2);
+dma.off(u0, 0);
+dma.off(u0, 1);
+dma.off(u0, 2);
 
 ### 5052 test.media.strings
 medIA

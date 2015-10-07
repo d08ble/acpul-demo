@@ -261,7 +261,7 @@ buffer.dma(u0, 1, fchars,1);
 dma.off(2);
 dma.from.file(u0, 2, cpu.mode.formula, 5052);
 #font0:=media.ft.load.font(u0, media.ft.mode.outline, 1000,0,0);
-font0:=media.ft.load.font(u0, 2, 1000,0,0);
+font0:=media.ft.load.font(u0, 0, 1000,0,0);
 
 media.ft.text.dma(u0, font0, 2, 0,1,-1);
 obj.dump(u0, 0, 0);

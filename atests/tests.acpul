@@ -262,7 +262,7 @@ dma.off(2);
 dma.from.file(u0, 2, cpu.mode.formula, 7007);
 font0:=media.ft.load.font(u0, 1000,0,0);
 
-#media.ft.text.dma(u0, font0, mode, 2, 0,1,-1);
+media.ft.text.dma(u0, font0, media.ft.mode.texture, 2, 0,1,-1);
 # mode: texture, outline, polygon
 #media.ft.draw.dma(u0, font0, mode, 0);
 dma.off(0);

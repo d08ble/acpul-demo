@@ -14,7 +14,7 @@ media.ft.mode {
 };
 
 media.ft.load.font
- # u0, pool,id,i -> font
+ # u0, mode, pool,id,i -> font
  io(_0, 500900, 0,0, 0,0);
 
 media.ft.text.dma {

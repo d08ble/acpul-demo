@@ -8,7 +8,9 @@ media.nvg.load.font
  io(_0, 500810, 0,0, 0,0);
 
 media.ft.mode {
-  texture 0; outline 1; polygon 2;
+  texture 0; 
+  outline 1; 
+  polygon 2;
 };
 
 media.ft.load.font

@@ -230,15 +230,18 @@ _ @1010;
 #_ @sys.media;
 _ @sys.obj;
 
-r7:=buffer.new(u0, 2048*3, 2048*3);
-buffer.dma(u0, 0, r7,0);
+if (r0) {
+ r7:=buffer.new(u0, 2048*3, 2048*3);
+ buffer.dma(u0, 0, r7,0);
 
-i:=0;
-while (i<100) {
- p i*3;
- x i;
- y sin(i)*10;
- dma.set2(u0, 0, p, x,y);
+ i:=0;
+ while (i<100) {
+  p i*3;
+  x i;
+  y sin(i)*10;
+  dma.set2(u0, 0, p, x,y);
+ };
+ obj.dump(u0, 0, 0);
 };
 
 k:=1;

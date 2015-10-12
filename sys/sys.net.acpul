@@ -29,7 +29,7 @@ net
   # i: 0 -> ip0-3
   #    1 -> type, port
   #    2 -> name
-  io(u0, 19921, _0,_1,0,0);
+  io(u0, 19922, _0,_1,0,0);
 
  # bootstrap ]
  # peer [
@@ -38,7 +38,7 @@ net
   # mode, extra
   # mode: 0 - off
   #       1 - on
-  io(u0, 19922, _0,_1,0,0);
+  io(u0, 19923, _0,_1,0,0);
  
  peer.off peer(0);
  peer.on  peer(1);

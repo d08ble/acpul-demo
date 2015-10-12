@@ -12,6 +12,9 @@ _ @sys.node;
 test.storage 5010;
 node.new.this.ex(r0, test.storage, 0);
 
+test.lanczos 5030;
+l0:=node.new.this.ex(r0, test.lanczos, 0);
+
 test.media 5050;
 l0:=node.new.this.ex(r0, test.media, 0);
 node.prop.x.s(r0, l0, 100);
@@ -220,6 +223,8 @@ void main(void)
 ### 5030 test.lanczos.gpui
 
 ### 5031 test.lanczos.gpui.draw
+
+### 5032 test.lanczos.strings
 
 ### 5030:S test.lanczos.filter.fsh
 

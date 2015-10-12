@@ -226,7 +226,9 @@ void main(void)
 
 ### 5032 test.lanczos.strings
 
-### 5030:S test.lanczos.filter.fsh
+### 5033:S test.lanczos.filter.vsh
+
+### 5034:S test.lanczos.filter.fsh
 
 ### 5050 test.media
 

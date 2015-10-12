@@ -7,7 +7,7 @@ net
  # bootstrap [
  
  scan.local 
-  io(u0, 199, 0,0,0,0);;
+  io(u0, 199, 0,0,0,0);
 
  # bootstrap ]
  # connection [

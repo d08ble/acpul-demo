@@ -4,11 +4,8 @@
 
 net.e.pool 501;
 net.e { _;
- device.found 1;
- # -> id
- # --> ip0-3
- # --> type, port
- # --> name
+ node.found 1;
+  # -> id
 };
 
 net 
@@ -16,7 +13,7 @@ net
  # bootstrap [
  
  scan
-  # mode, type :=> e.device.found
+  # mode, type :=> e.node.found
   # mode: 0 - off
   #       1 - local
   # type: 0 - server
@@ -26,6 +23,14 @@ net
  scan.off          scan(0,0);
  scan.local.server scan(1,0);
  scan.local.peer   scan(1,1);
+
+ node.prop
+  # i
+  # i: 0 -> ip0-3
+  #    1 -> type, port
+  #    2 -> name
+  io(u0, 19921, _0,_1,0,0);
+
 
  # bootstrap ]
  # peer [

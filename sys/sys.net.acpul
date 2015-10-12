@@ -31,7 +31,6 @@ net
   #    2 -> name
   io(u0, 19921, _0,_1,0,0);
 
-
  # bootstrap ]
  # peer [
 

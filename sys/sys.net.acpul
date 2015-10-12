@@ -23,6 +23,15 @@ net
   io(u0, 199, _0,_1,0,0);
 
  # bootstrap ]
+ # peer [
+
+ peer
+  # mode, extra
+  # mode: 0 - off
+  #       1 - on
+  io(u0, 199, _0,_1,0,0);
+  
+ # peer ]
  # connection [
 
  ip io(u0, 19917, _0,_1,_2,_3);

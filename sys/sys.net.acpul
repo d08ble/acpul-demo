@@ -2,12 +2,20 @@
 
 # net [
 
+net.e.pool 501;
+net.e { _;
+
+};
+
 net 
 {
  # bootstrap [
  
- scan.local 
-  io(u0, 199, 0,0,0,0);
+ scan
+  # mode, type
+  # mode: 0 - local
+  # type: 0 - server, 1 - peer
+  io(u0, 199, _0,_1,0,0);
 
  # bootstrap ]
  # connection [

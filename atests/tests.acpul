@@ -222,6 +222,12 @@ void main(void)
 
 ### 5030 test.lanczos.gpui
 
+r0:=k==0;
+
+draw(r0, 5031);
+
+k:=1;
+
 ### 5031 test.lanczos.gpui.draw
 
 ### 5032 test.lanczos.strings

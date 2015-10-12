@@ -25,7 +25,7 @@ net
  scan.local.peer   scan(1,1);
 
  node.prop
-  # i
+  # id, i
   # i: 0 -> ip0-3
   #    1 -> type, port
   #    2 -> name

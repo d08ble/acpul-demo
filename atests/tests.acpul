@@ -248,8 +248,8 @@ k:=1;
 
 ### 5031 test.lanczos.gpui.draw
 
-vsh 7322;
-fsh 7323;
+vsh 5033;
+fsh 5034;
 node.ex.shader.use(u0, vsh, fsh);
 
 buffer.dma(u0, 0, r7,0);
@@ -260,6 +260,18 @@ node.ex.gl.draw(u0, 0, 100);
 ### 5032 test.lanczos.strings
 
 ### 5033:S test.lanczos.filter.vsh
+
+#define a_position a0
+attribute vec4 a_position;
+
+varying vec4 v1;
+
+void main(void)
+{
+   gl_Position = CC_MVPMatrix * a_position;
+   v1 = a_position;
+}
+
 
 ### 5034:S test.lanczos.filter.fsh
 

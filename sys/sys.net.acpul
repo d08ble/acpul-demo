@@ -21,6 +21,10 @@ net
   # type: 0 - server
   #       1 - peer
   io(u0, 199, _0,_1,0,0);
+ 
+ scan.off          scan(0,0);
+ scan.local.server scan(1,0);
+ scan.local.peer   scan(1,1);
 
  # bootstrap ]
  # peer [
@@ -30,7 +34,10 @@ net
   # mode: 0 - off
   #       1 - on
   io(u0, 199, _0,_1,0,0);
-  
+ 
+ peer.off peer(0);
+ peer.on  peer(1);
+
  # peer ]
  # connection [
 

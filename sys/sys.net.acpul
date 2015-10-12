@@ -133,7 +133,8 @@ net.snippet.scan {
   node.prop(nid,1);
   # o0-1 type, port
   name l2;
-  name:=node.prop(nid,2);
+  name:=
+  node.prop(nid,2);
  };
 };
 # snippet scan ]

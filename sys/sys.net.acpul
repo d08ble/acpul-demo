@@ -14,7 +14,8 @@ net
  
  scan
   # mode, type :=> e.device.found
-  # mode: 0 - local
+  # mode: 0 - off
+  #       1 - local
   # type: 0 - server, 1 - peer
   io(u0, 199, _0,_1,0,0);
 

@@ -4,8 +4,8 @@
 
 net.e.pool 501;
 net.e { _;
- device.found.type.port 1;
- device.found.ip 2;
+ device.found.ip 1;
+ device.found.type.port 2;
 };
 
 net 

@@ -129,6 +129,11 @@ net.snippet.scan {
  if (eid==net.e.node.found) {
   nid:=o0;
   node.prop(nid,0);
+  # o0-3 ip
+  node.prop(nid,1);
+  # o0-1 type, port
+  name l2;
+  name:=node.prop(nid,2);
  };
 };
 # snippet scan ]

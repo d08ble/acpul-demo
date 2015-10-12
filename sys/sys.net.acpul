@@ -5,7 +5,9 @@
 net.e.pool 501;
 net.e { _;
  device.found.ip 1;
+ # -> ip0-3
  device.found.type.port 2;
+ # -> type, port
 };
 
 net 

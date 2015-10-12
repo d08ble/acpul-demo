@@ -118,3 +118,8 @@ net.snippet
  };
 };
 # snippet ]
+# snippet scan [
+net.snippet.scan {
+ 
+};
+# snippet scan ]

@@ -4,10 +4,11 @@
 
 net.e.pool 501;
 net.e { _;
- device.found.ip 1;
- # -> ip0-3
- device.found.type.port 2;
- # -> type, port
+ device.found 1;
+ # -> id
+ # --> ip0-3
+ # --> type, port
+ # --> name
 };
 
 net 

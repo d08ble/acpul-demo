@@ -120,7 +120,8 @@ net.snippet
 # snippet ]
 # snippet scan [
 net.snippet.scan {
+ _ @1010;
+ _ @sys.event;
  scan.local.server();
- 
 };
 # snippet scan ]

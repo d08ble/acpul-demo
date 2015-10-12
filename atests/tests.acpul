@@ -274,8 +274,8 @@ varying vec4 v1;
 
 void main(void)
 {
-   gl_Position = CC_MVPMatrix * a_position;
-   v1 = a_position;
+  gl_Position = CC_MVPMatrix * a_position;
+  v1 = a_position;
 }
 
 ### 5034:S test.lanczos.filter.fsh

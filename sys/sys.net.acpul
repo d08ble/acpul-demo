@@ -4,6 +4,8 @@
 
 net 
 {
+ # bootstrap [
+ # bootstrap ]
  # connection [
 
  ip io(u0, 19917, _0,_1,_2,_3);
@@ -15,7 +17,6 @@ net
  };
 
  # connection ]
-
  # livecoding [
 
  editor.update
@@ -26,7 +27,6 @@ net
   io(u0, 19919, _0,_1,0,0);
 
  # livecoding ]
-
  # proto [
  
  is.connected io(_0, 19950, 0,0,0,0);
@@ -54,7 +54,6 @@ net
   io(_0, 19957, 0,0,0,0);
  
  # sync ]
-
  # proto ]
 
 };

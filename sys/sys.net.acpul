@@ -123,5 +123,12 @@ net.snippet.scan {
  _ @1010;
  _ @sys.event;
  scan.local.server();
+ eid l0;
+ nid l1;
+ eid:=events.pop(net.e.pool,0);
+ if (eid==net.e.node.found) {
+  nid:=o0;
+  node.prop(nid,0);
+ };
 };
 # snippet scan ]

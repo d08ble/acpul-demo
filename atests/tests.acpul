@@ -272,7 +272,6 @@ void main(void)
    v1 = a_position;
 }
 
-
 ### 5034:S test.lanczos.filter.fsh
 
 ### 5050 test.media

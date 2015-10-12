@@ -248,6 +248,10 @@ k:=1;
 
 ### 5031 test.lanczos.gpui.draw
 
+vsh 7322;
+fsh 7323;
+node.ex.shader.use(u0, vsh, fsh);
+
 buffer.dma(u0, 0, r7,0);
 #node.ex.shader.attribute.dma(u0, attr, pdma,offset,elementsize,stride,count, type,normalized);
 node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,100, 0,0);

@@ -4,7 +4,7 @@
 
 net.e.pool 501;
 net.e { _;
-
+ device.found 1;
 };
 
 net 
@@ -12,7 +12,7 @@ net
  # bootstrap [
  
  scan
-  # mode, type
+  # mode, type :=> e.device.found
   # mode: 0 - local
   # type: 0 - server, 1 - peer
   io(u0, 199, _0,_1,0,0);

@@ -274,6 +274,13 @@ void main(void)
 
 ### 5034:S test.lanczos.filter.fsh
 
+varying vec4 v1;
+
+void main(void)
+{
+  gl_FragColor = vec4(1.,1.,0.,1.);
+}
+
 ### 5050 test.media
 
 r0:=k==0;

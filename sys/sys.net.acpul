@@ -40,8 +40,8 @@ net
   #       1 - on
   io(u0, 19923, _0,_1,0,0);
  
- peer.off peer(0);
- peer.on  peer(1);
+ peer.off peer(0,0);
+ peer.on  peer(1,0);
 
  # peer ]
  # connection [

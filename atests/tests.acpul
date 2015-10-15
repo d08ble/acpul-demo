@@ -263,7 +263,7 @@ buffer.dma(u0, 0, r7,0);
 #if (r0) { obj.dump(u0, 0, 0);}
 #node.ex.shader.attribute.dma(u0, attr, pdma,offset,elementsize,stride,count, type,normalized);
 node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,100, 0,0);
-node.ex.gl.draw(u0, 3, 100);
+node.ex.gl.draw(u0, 4, 100);
 
 ### 5032 test.lanczos.strings
 

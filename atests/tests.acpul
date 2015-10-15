@@ -246,7 +246,7 @@ if (r0) {
   a 2;
 
   # L(x) Lanczos kernel
-  L sinc(_0)*sinc(_0/a);
+  L {watch(_0);sinc(_0)*sinc(_0/a);};
 
 #  y L(0.1*(i-ncount/2))*100;
   y L((i/ncount)*2-4)*100;

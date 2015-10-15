@@ -243,7 +243,7 @@ if (r0) {
  while (i<ncount) {
   p i*3;
   x i;
-  a 2;
+  a 1;
 
   # L(x) Lanczos kernel
   L {watch(_0);sinc(_0)*sinc(_0/a);};

@@ -258,7 +258,7 @@ _ @sys.obj;
 vsh 5033;
 fsh 5034;
 node.ex.shader.use(u0, vsh, fsh);
-#psize1(u0, 1);
+psize1(1);
 buffer.dma(u0, 0, r7,0);
 #if (r0) { obj.dump(u0, 0, 0);}
 #node.ex.shader.attribute.dma(u0, attr, pdma,offset,elementsize,stride,count, type,normalized);

@@ -249,7 +249,7 @@ if (r0) {
 
   a 1;
 
-  l a*sin(_0)*sinc(_0/a);
+  l a*sinc(_0)*sinc(_0/a);
   y l(0.1*(i-ncount/2))*100;
 #  y sinc.test;
   dma.set2(u0, 0, p, x,y);

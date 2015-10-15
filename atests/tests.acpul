@@ -241,6 +241,7 @@ if (r0) {
   x i;
   y sin(i)*10;
   dma.set2(u0, 0, p, x,y);
+  i+=1;
  };
  obj.dump(u0, 0, 0);
 };

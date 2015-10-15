@@ -247,7 +247,7 @@ if (r0) {
   sinc sin(_0)/_0;
   sinc.test sinc(0.1*(i-ncount/2))*100;
 
-  a 2;
+  a 3;
 
   l a*sinc(_0)*sinc(_0/a);
   y l(0.1*(i-ncount/2))*100;

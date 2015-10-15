@@ -240,7 +240,7 @@ if (r0) {
   p i*3;
   x i;
   y sin(i)*100;
-  dma.set2(u0, 0, p, x,i);
+  dma.set2(u0, 0, p, x,y*100);
   i+=1;
  };
 # obj.dump(u0, 0, 0);

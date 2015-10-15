@@ -248,7 +248,7 @@ if (r0) {
   sinc sin(_0)/_0;
   sinc.test sinc(0.1*(i-ncount/2))*100;
   l a*sin(x)*sinc(x/a);
-  #y l;
+  y l;
 #  y sinc.test;
   dma.set2(u0, 0, p, x,y);
   i+=1;

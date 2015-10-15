@@ -233,7 +233,7 @@ _ @sys.obj;
 #_ @sys.media;
 
 ncount r6;
-r6:=500;
+r6:=1500;
 
 if (r0) {
  r7:=buffer.new(u0, 2048*3, 2048*3);

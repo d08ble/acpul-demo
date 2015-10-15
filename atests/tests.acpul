@@ -243,7 +243,7 @@ if (r0) {
   dma.set2(u0, 0, p, x,y);
   i+=1;
  };
- obj.dump(u0, 0, 0);
+# obj.dump(u0, 0, 0);
 };
 
 k:=1;
@@ -260,6 +260,7 @@ fsh 5034;
 node.ex.shader.use(u0, vsh, fsh);
 
 buffer.dma(u0, 0, r7,0);
+if (r0) { obj.dump(u0, 0, 0);}
 #node.ex.shader.attribute.dma(u0, attr, pdma,offset,elementsize,stride,count, type,normalized);
 node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,100, 0,0);
 #node.ex.gl.draw(u0, 0, 100);

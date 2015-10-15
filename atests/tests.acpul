@@ -245,7 +245,7 @@ if (r0) {
   x i;
 #  y sin(i/5)*10;
   a 20*(0.5*(i/ncount)-1);
-  l a*sin(x)*sin(x/a);
+  l a*sin(x)*sinc(x/a);
   y l;
   dma.set2(u0, 0, p, x,y);
   i+=1;

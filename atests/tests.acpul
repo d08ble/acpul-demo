@@ -244,7 +244,7 @@ if (r0) {
   p i*3;
   x i;
 #  y sin(i/5)*10;
-  a 200*(0.5*(i/ncount)-1);
+  a 20*(0.5*(i/ncount)-1);
   sinc sin(_0)/_0;
   l a*sin(x)*sinc(x/a);
   y l;

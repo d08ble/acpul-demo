@@ -122,18 +122,18 @@ net.snippet
 net.snippet.scan {
  _ @1010;
  _ @sys.event;
- scan.local.server();
+ net.scan.local.server();
  eid l0;
  nid l1;
  eid:=events.pop(net.e.pool,0);
  if (eid==net.e.node.found) {
   nid:=o0;
-  node.prop(nid,0);
+  net.node.prop(nid,0);
   # o0-3 ip
-  node.prop(nid,1);
+  net.node.prop(nid,1);
   # o0-1 type, port
   name l2;
-  name:=node.prop(nid,2);
+  name:=net.node.prop(nid,2);
  };
 };
 # snippet scan ]

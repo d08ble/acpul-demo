@@ -249,7 +249,7 @@ if (r0) {
 #  L {watch(_0);sinc(_0)*sinc(_0/a);};
   L sinc(_0)*sinc(_0/a);
 
-  y L(1*(i-ncount/2)/ncount)*100;
+  y L(2*(i-ncount/2)/ncount)*100;
   dma.set2(u0, 0, p, x,y);
   i+=1;
  };

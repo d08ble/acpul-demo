@@ -248,7 +248,7 @@ if (r0) {
   sinc sin(_0)/_0;
   l a*sin(x)*sinc(x/a);
   #y l;
-  y sinc(0.2*(i-ncount/2))*100;
+  y sinc(0.1*(i-ncount/2))*100;
   dma.set2(u0, 0, p, x,y);
   i+=1;
  };

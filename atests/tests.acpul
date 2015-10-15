@@ -254,7 +254,7 @@ if (r0) {
   L if(_0>-a, if(_0<a, sinc(_0)*sinc(_0/a), 0), 0);
   y L((i/ncount)*6-3)*100;
 
-  dma.set2(u0, 0, p, x,y);
+  dma.set2(u0, 0, p, x*0.1,y);
   i+=1;
  };
 # obj.dump(u0, 0, 0);

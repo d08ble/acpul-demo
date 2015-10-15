@@ -245,7 +245,9 @@ if (r0) {
   x i;
   a 2;
 
-  L sinc(_0)*sinc(_0/a); # L(x)
+  # L(x) Lanczos kernel
+  L sinc(_0)*sinc(_0/a);
+   
   y L(0.1*(i-ncount/2))*100;
   dma.set2(u0, 0, p, x,y);
   i+=1;

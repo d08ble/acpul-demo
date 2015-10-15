@@ -250,6 +250,10 @@ if (r0) {
   L sinc(_0)*sinc(_0/a);
 
   y L(0.1*(i-ncount/2))*100;
+
+  L if(_0>-a, if(_0<a, sinc(_0)*sinc(_0/a), 0), 0);
+  y L((i/ncount)*6-3)*100;
+
   dma.set2(u0, 0, p, x,y);
   i+=1;
  };
@@ -263,8 +267,6 @@ k:=1;
 #  y sin(i/5)*10;
 #  sinc.test sinc(0.1*(i-ncount/2))*100;
 #  y sinc.test;
-#  L if(_0>-a, if(_0<a, sinc(_0)*sinc(_0/a), 0), 0);
-#  y L((i/ncount)*6-3)*100;
 
 ### 5031 test.lanczos.gpui.draw
 

@@ -246,7 +246,7 @@ if (r0) {
 #  y sin(i/5)*10;
   a 20*(0.5*(i/ncount)-);
   sinc sin(_0)/_0;
-  sinc.test sinc(0.1*(i-ncount/2))*100;
+  #sinc.test sinc(0.1*(i-ncount/2))*100;
   l a*sin(x)*sinc(x/a);
   y l;
 #  y sinc.test;

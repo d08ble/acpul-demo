@@ -70,3 +70,9 @@ color1
 };
 
 # __bugfix ]
+
+# math.future [
+
+sinc sin(_0)/_0;
+
+# math.future ]

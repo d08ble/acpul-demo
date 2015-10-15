@@ -250,7 +250,7 @@ if (r0) {
   L sinc(_0)*sinc(_0/a);
 
 #  y L(0.1*(i-ncount/2))*100;
-  y L((i/ncount)*4-2)*100;
+  y L((i/ncount)*6-3)*100;
   dma.set2(u0, 0, p, x,y);
   i+=1;
  };

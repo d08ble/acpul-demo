@@ -35,9 +35,9 @@ net
 
  node.prop.dma
   # id, dma, i
-  # type,port
-  # name
-  # count, (v,(ip0-3|ip0-5))*count
+  # i: 0 -> type,port
+  #    1 -> name
+  #    2 -> count, (v,(ip0-3|ip0-5))*count
   io(u0, 19924, _0,_1,0,0);
 
  # bootstrap ]

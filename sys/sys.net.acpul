@@ -5,6 +5,7 @@
 net.e.pool 501;
 net.e { _;
  node.found 1;
+ node.lost 2;
   # -> id
 };
 

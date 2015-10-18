@@ -34,8 +34,10 @@ net
   io(u0, 19922, _0,_1,0,0);
 
  node.prop.dma
-  # id, dma
-  # ip0-3,type,port,name
+  # id, dma, i
+  # type,port
+  # name
+  # (v,(ip0-3|ip0-5))*n
   io(u0, 19924, _0,_1,0,0);
 
  # bootstrap ]

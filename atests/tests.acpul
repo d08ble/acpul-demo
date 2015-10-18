@@ -132,6 +132,7 @@ _ @sys.events;
 
 if (r0) {
  #net.scan.local.server();
+ watch(r0);
 };
 eid l0;
 nid l1;

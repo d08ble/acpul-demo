@@ -124,7 +124,9 @@ net.snippet
 net.snippet.scan {
  _ @1010;
  _ @sys.event;
- net.scan.local.server();
+ if (r0) {
+  net.scan.local.server();
+ };
  eid l0;
  nid l1;
  eid:=events.pop(net.e.pool,0);
@@ -136,6 +138,9 @@ net.snippet.scan {
   # o0-1 type, port
   name l2;
   name:=net.node.prop(nid,2);
+ };
+ if (eid==net.e.node.lost) {
+  # remove
  };
 };
 # snippet scan ]

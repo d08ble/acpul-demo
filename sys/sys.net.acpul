@@ -37,7 +37,7 @@ net
   # id, dma, i
   # type,port
   # name
-  # (v,(ip0-3|ip0-5))*n
+  # count, (v,(ip0-3|ip0-5))*count
   io(u0, 19924, _0,_1,0,0);
 
  # bootstrap ]

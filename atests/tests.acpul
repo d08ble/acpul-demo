@@ -19,6 +19,8 @@ node.prop.x.s(r0, l0, 100);
 test.lanczos 5030;
 l0:=node.new.this.ex(r0, test.lanczos, 0);
 
+test.network 5060;
+l0:=node.new.this.ex(r0, test.network, 0);
 
 k:=1;
 

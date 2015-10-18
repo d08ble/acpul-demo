@@ -136,16 +136,16 @@ if (r0) {
 eid l0;
 nid l1;
 eid:=events.pop(net.e.pool,0);
-if (eid==net.e.node.found) {
- nid:=o0;
+#if (eid==net.e.node.found) {
+# nid:=o0;
 #  net.node.prop(nid,0);
   # o0-3 ip
 #  net.node.prop(nid,1);
   # o0-1 type, port
 #  name l2;
 #  name:=net.node.prop(nid,2);
- watch(nid);
-};
+# watch(nid);
+#};
 
 k:=1;
 

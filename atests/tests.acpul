@@ -145,7 +145,7 @@ if (eid==net.e.node.found) {
 #  name l2;
 #  name:=net.node.prop(nid,2);
  watch(nid);
- 
+
 };
 
 k:=1;

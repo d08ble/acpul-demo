@@ -11,6 +11,7 @@ net.e { _;
 
 net 
 {
+ _;
  # bootstrap [
  
  scan

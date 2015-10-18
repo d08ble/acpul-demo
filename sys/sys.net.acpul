@@ -139,8 +139,10 @@ net.snippet.scan {
   # type
   node.prop.dma(nid,0,1);
   # name
-  node.prop.dma(nid,0,1);
+  node.prop.dma(nid,0,2);
   # ips
+  node.prop.dma(nid,0,3);
+  # ports
  };
  if (eid==net.e.node.lost) {
   # remove

@@ -34,7 +34,7 @@ net
   io(u0, 19922, _0,_1,0,0);
 
  node.prop.dma
-  # id, dma
+  # id, dma, i
   # type,port
   # name
   # count, (v,(ip0-3|ip0-5))*count

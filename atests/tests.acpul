@@ -144,11 +144,16 @@ if (eid==net.e.node.found) {
   # o0-1 type, port
 #  name l2;
 #  name:=net.node.prop(nid,2);
+# l3:=111;
+# watch(l3);
+ watch(eid);
  watch(nid);
 };
 if (eid==net.e.node.lost) {
+ watch(eid);
  watch(nid);
 };
+
 
 k:=1;
 

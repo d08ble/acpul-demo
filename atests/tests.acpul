@@ -147,7 +147,7 @@ if (eid==net.e.node.found) {
  watch(nid);
 };
 eid:=net.e.node.lost;
- watch(k);
+#watch(k);
 #if (eid==net.e.node.lost) {
 # watch(nid);
 #r0:=1;

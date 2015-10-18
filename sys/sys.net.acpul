@@ -139,7 +139,7 @@ net.snippet.scan {
   node.prop.dma(nid,0,1);
   # name
   node.prop.dma(nid,0,1);
-  # 
+  # ips
  };
  if (eid==net.e.node.lost) {
   # remove

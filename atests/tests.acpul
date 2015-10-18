@@ -147,7 +147,7 @@ if (eid==net.e.node.found) {
 #  name:=net.node.prop(nid,2);
  watch(nid);
 };
-eid:=node.lost;
+eid:=net.e.node.lost;
 #if (eid==net.e.node.lost) {
 # watch(nid);
 #r0:=1;

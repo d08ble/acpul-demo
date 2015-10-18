@@ -26,12 +26,12 @@ net
  scan.local.server scan(1,0);
  scan.local.peer   scan(1,1);
 
- node.prop
+# node.prop
   # id, i
   # i: 0 -> ip0-3
   #    1 -> type, port
   #    2 -> name
-  io(u0, 19922, _0,_1,0,0);
+#  io(u0, 19922, _0,_1,0,0);
 
  node.prop.dma
   # id, dma, i

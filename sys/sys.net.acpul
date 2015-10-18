@@ -28,9 +28,10 @@ net
 
  node.prop.dma
   # id, dma, i
-  # i: 0 -> type,port
+  # i: 0 -> type
   #    1 -> name
   #    2 -> count, (type,(ipv4:ipv6))*count
+  #    3 -> ports
   io(u0, 19924, _0,_1,0,0);
 
  # bootstrap ]
@@ -135,7 +136,7 @@ net.snippet.scan {
   #buffer.dma(u0, 0, fchars,0);
   #dma.off(u0, 0);
   node.prop.dma(nid,0,0);
-  # type,port
+  # type
   node.prop.dma(nid,0,1);
   # name
   node.prop.dma(nid,0,1);

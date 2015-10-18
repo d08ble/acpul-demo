@@ -314,4 +314,11 @@ void main(void)
 
 r0:=k==0;
 
+ _ @1010;
+ _ @sys.event;
+ net.scan.local.server();
+
 k:=1;
+
+### 5061 test.network.draw
+

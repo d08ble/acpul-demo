@@ -37,7 +37,7 @@ net
   # id, dma, i
   # i: 0 -> type,port
   #    1 -> name
-  #    2 -> count, (v,(ipv4:ipv6))*count
+  #    2 -> count, (type,(ipv4:ipv6))*count
   io(u0, 19924, _0,_1,0,0);
 
  # bootstrap ]

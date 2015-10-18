@@ -314,9 +314,12 @@ void main(void)
 
 r0:=k==0;
 
- _ @1010;
- _ @sys.event;
+_ @1010;
+_ @sys.event;
+
+if (r0) {
  net.scan.local.server();
+};
 
 k:=1;
 

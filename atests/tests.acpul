@@ -147,11 +147,11 @@ if (eid==net.e.node.found) {
  watch(nid);
 };
 eid:=net.e.node.lost;
-#watch(k);
-#if (eid==net.e.node.lost) {
+watch(k);
+if (eid==net.e.node.lost) {
 # watch(nid);
-#r0:=1;
-#}
+r0:=1;
+}
 
 k:=1;
 

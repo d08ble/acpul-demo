@@ -137,12 +137,15 @@ net.snippet.scan {
  eid:=events.pop(net.e.pool,0);
  if (eid==net.e.node.found) {
   nid:=o0;
-  net.node.prop(nid,0);
+#  net.node.prop(nid,0);
   # o0-3 ip
-  net.node.prop(nid,1);
+#  net.node.prop(nid,1);
   # o0-1 type, port
-  name l2;
-  name:=net.node.prop(nid,2);
+#  name l2;
+#  name:=net.node.prop(nid,2);
+  #buffer.dma(u0, 0, fchars,1);
+  dma.off(u0, 0);
+  node.prop.dma(nid,0);
  };
  if (eid==net.e.node.lost) {
   # remove

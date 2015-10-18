@@ -132,7 +132,6 @@ _ @sys.events;
 
 if (r0) {
  #net.scan.local.server();
- watch(k);
 };
 eid l0;
 nid l1;
@@ -148,6 +147,7 @@ if (eid==net.e.node.found) {
  watch(nid);
 };
 eid:=net.e.node.lost;
+ watch(k);
 #if (eid==net.e.node.lost) {
 # watch(nid);
 #r0:=1;

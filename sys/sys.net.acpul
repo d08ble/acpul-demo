@@ -27,11 +27,11 @@ net
  scan.local.peer   scan(1,1);
 
  node.props
-  # id, i
+  # id, i -> buffer
   # i: 0 0 type
   #      1 name
   #      2 ports
-  #    1 (ipv4|ipv6)*count
+  #    1 n (ipv4|ipv6)*n
   io(u0, 19924, _0,_1,0,0);
 
  # bootstrap ]
@@ -135,14 +135,13 @@ net.snippet.scan {
   nid:=o0;
   #buffer.dma(u0, 0, fchars,0);
   #dma.off(u0, 0);
-  node.prop.dma(nid,0,0);
+  buf l2;
+  buf:=net.node.props(nid,0);
   # type
-  node.prop.dma(nid,0,1);
   # name
-  node.prop.dma(nid,0,2);
-  # ips
-  node.prop.dma(nid,0,3);
   # ports
+  buf:=net.node.props(nid,1);
+  # ips
  };
  if (eid==net.e.node.lost) {
   # remove

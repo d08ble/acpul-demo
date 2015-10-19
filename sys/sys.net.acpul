@@ -27,11 +27,11 @@ net
  scan.local.peer   scan(1,1);
 
  node.props
-  # id, i -> buffer
-  # i: 0 0 type
-  #      1 name
-  #      2 ports
-  #    1 n (ipv4|ipv6)*n
+  # id -> buffer
+  # b: 0 type
+  #    1 name
+  #    2 ports
+  #    3..n (ipv4|ipv6)*n
   io(u0, 19924, _0,_1,0,0);
 
  # bootstrap ]

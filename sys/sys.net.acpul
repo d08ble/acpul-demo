@@ -26,12 +26,12 @@ net
  scan.local.server scan(1,0);
  scan.local.peer   scan(1,1);
 
- node.prop.dma
-  # id, dma, i
-  # i: 0 -> type
-  #    1 -> name
-  #    2 -> count, (type,(ipv4:ipv6))*count
-  #    3 -> ports
+ node.props
+  # id, i
+  # i: 0 0 type
+  #      1 name
+  #      2 ports
+  #    1 (ipv4|ipv6)*count
   io(u0, 19924, _0,_1,0,0);
 
  # bootstrap ]

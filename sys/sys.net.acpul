@@ -32,7 +32,7 @@ net
   #    1 name
   #    2 ports
   #    3..n (ipv4|ipv6)*n
-  io(u0, 19924, _0,_1,0,0);
+  io(u0, 19924, _0,0,0,0);
 
  # bootstrap ]
  # peer [

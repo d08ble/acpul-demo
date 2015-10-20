@@ -129,6 +129,7 @@ r0:=k==0;
 _ @1010;
 _ @sys.net;
 _ @sys.events;
+_ @sys.obj;
 
 if (r0) {
 # net.scan.off();

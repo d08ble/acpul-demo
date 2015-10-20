@@ -138,8 +138,9 @@ nid l1;
 eid:=events.pop(u0, net.e.pool,0);
 nid:=o0;
 if (eid==net.e.node.found) {
- np l2;
- np:=net.node.props(nid);
+ nprop l2;
+ nprop:=net.node.props(nid);
+ watch(nprop);
  # type;name;ports;ips
 # l3:=111;
 # watch(l3);

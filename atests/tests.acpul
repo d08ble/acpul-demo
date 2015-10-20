@@ -133,6 +133,9 @@ _ @sys.events;
 if (r0) {
  net.scan.local.server();
 };
+if (r0==0) {
+ net.scan.off();
+};
 eid l0;
 nid l1;
 eid:=events.pop(u0, net.e.pool,0);

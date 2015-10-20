@@ -133,8 +133,6 @@ net.snippet.scan {
  eid:=events.pop(net.e.pool,0);
  if (eid==net.e.node.found) {
   nid:=o0;
-  #buffer.dma(u0, 0, fchars,0);
-  #dma.off(u0, 0);
   buf l2;
   buf:=net.node.props(nid);
   # type;name;ports;ips

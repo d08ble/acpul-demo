@@ -131,7 +131,7 @@ _ @sys.net;
 _ @sys.events;
 
 if (r0) {
- net.scan.off();
+# net.scan.off();
  net.scan.local.server();
 };
 eid l0;

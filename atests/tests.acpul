@@ -154,7 +154,6 @@ if (eid==net.e.node.lost) {
  watch(nid);
 };
 
-
 k:=1;
 
 ### 5061 test.network.draw

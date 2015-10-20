@@ -141,6 +141,7 @@ if (eid==net.e.node.found) {
  nprop l2;
  nprop:=net.node.props(nid);
  watch(nprop);
+ 
  # type;name;ports;ips
 # l3:=111;
 # watch(l3);

@@ -30,8 +30,7 @@ net
   # id -> buffer
   # b: 0 type
   #    1 name
-  #    2 ports
-  #    3..n (ipv4|ipv6)*n
+  #    2..n (ipv4|ipv6)*n
   io(u0, 19922, _0,0,0,0);
 
  # bootstrap ]

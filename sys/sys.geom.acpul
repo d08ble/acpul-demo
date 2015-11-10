@@ -62,7 +62,7 @@ geom.shapeop.add.volume
  ac(_0, t.volume, _1,_2,_3,_4);
 geom.shapeop.add.bending
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- io(_0, 501050, _1, 3, _1,_2);
+ ac(_0, t.bending, _1,_2,_3,_4);
 
 geom.shapeop.add.closeness
  # u0, sop, dmaIndex, dmaPositions(v3), weight, closenessPos(x,y,z)

@@ -9,11 +9,11 @@ geom.mesh2d.dma
  io(_0, 501001, _1, _2, _3, 0);
 
 geom.shapeop.new.solver.dma
- # u0, dma -> sop
+ # u0, dma(v3) -> sop
  io(_0, 501050, _1, 0,0,0);
 
 geom.shapeop.set.points.dma
- # u0, sop, dma
+ # u0, sop, dma(v3)
  io(_0, 501050, _1, 0,0,0);
 
 geom.shapeop.add.edge

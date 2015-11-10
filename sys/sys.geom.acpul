@@ -16,6 +16,12 @@ geom.shapeop.set.points.dma
  # u0, sop, dma(v3)
  io(_0, 501050, _1, 0,0,0);
 
+geom.shapeop.add.constraint
+ # u0, sop, type, dmaIndex(i), dmaPositions(v3)
+ io(_0, 501050, _1, _2, _3, _4);
+
+geom.shapeop.ac geom.shapeop.add.constraint(_0,_1,_2,_3,_4);
+
 geom.shapeop.add.edge
  # u0, sop, dmaIndex(i), dmaPositions(v3), weight, range(min,max), edgeLength
  io(_0, 501050, _1, 0, _1,_2);

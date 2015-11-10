@@ -23,13 +23,21 @@ geom.shapeop.add.constraint
 geom.shapeop.ac geom.shapeop.add.constraint(_0,_1,_2,_3,_4);
 geom.shapeop.t {
  line 0;
- line 0;
- line 0;
- line 0;
- line 0;
- line 0;
- line 0;
+ plane 1;
+ circle 2;
+ sphere 3;
+ rectangle 4;
+ parallelogram 5;
+ uniform.laplacian 6;
 };
+
+geom.shapeop.add.line ac(_0, t.line, _1,_2,_3,_4);
+geom.shapeop.add.plane ac(_0, t.plane, _1,_2,_3,_4);
+geom.shapeop.add.circle ac(_0, t.circle, _1,_2,_3,_4);
+geom.shapeop.add.sphere ac(_0, t.sphere, _1,_2,_3,_4);
+geom.shapeop.add.rectangle ac(_0, t.rectangle, _1,_2,_3,_4);
+geom.shapeop.add.parallelogram ac(_0, t.parallelogram, _1,_2,_3,_4);
+geom.shapeop.add.uniform.laplacian ac(_0, t.uniform.laplacian, _1,_2,_3,_4);
 
 geom.shapeop.add.edge
  # u0, sop, dmaIndex(i), dmaPositions(v3), weight, range(min,max), edgeLength
@@ -58,10 +66,3 @@ geom.shapeop.add.similarity
  # u0, sop, dmaIndex, dmaPositions(v3), weight, dmaShapes(v3)
  io(_0, 501050, _1, 3, _1,_2);
 
-geom.shapeop.add.line ac(_0, t.line, _1,_2,_3,_4);
-geom.shapeop.add.plane ac(_0, t.plane, _1,_2,_3,_4);
-geom.shapeop.add.circle ac(_0, t.circle, _1,_2,_3,_4);
-geom.shapeop.add.sphere ac(_0, t.sphere, _1,_2,_3,_4);
-geom.shapeop.add.rectangle ac(_0, t.rectangle, _1,_2,_3,_4);
-geom.shapeop.add.parallelogram ac(_0, t.parallelogram, _1,_2,_3,_4);
-geom.shapeop.add.uniform.laplacian ac(_0, t.uniform.laplacian, _1,_2,_3,_4);

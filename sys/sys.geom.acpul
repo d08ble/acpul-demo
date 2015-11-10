@@ -35,6 +35,7 @@ geom.shapeop.t {
  tetrahedron 9;
  area 10;
  volume 11;
+ bending 12;
 };
 
 geom.shapeop.add.line ac(_0, t.line, _1,_2,_3);

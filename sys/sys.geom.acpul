@@ -5,7 +5,7 @@ geom.voronoi.dma
  io(_0, 501000, _1, _2,_3, _4);
 
 geom.mesh2d.dma
- # u0, dst, src, mode
+ # u0, dma(dst), dma(src), mode
  io(_0, 501001, _1, _2, _3, 0);
 
 geom.shapeop.set.points.dma

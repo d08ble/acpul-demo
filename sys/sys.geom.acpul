@@ -28,4 +28,10 @@ geom.shapeop.add.tetrahedron
 geom.shapeop.add.area
  # u0, sop, dmaIndex, dmaPositions, weight, range(min,max)
  io(_0, 501050, _1, 3, _1,_2);
+geom.shapeop.add.volume
+ # u0, sop, dmaIndex, dmaPositions, weight, range(min,max)
+ io(_0, 501050, _1, 3, _1,_2);
+geom.shapeop.add.bending
+ # u0, sop, dmaIndex, dmaPositions, weight, range(min,max)
+ io(_0, 501050, _1, 3, _1,_2);
 

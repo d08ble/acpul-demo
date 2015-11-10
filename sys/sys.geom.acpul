@@ -67,7 +67,7 @@ geom.shapeop.add.bending
 
 geom.shapeop.add.closeness
  # u0, sop, dmaIndex, dmaPositions(v3), weight, closenessPos(x,y,z)
- io(_0, 501050, _1, 3, _1,_2);
+ ac(_0, t.closeness, _1,_2,_3);
 
 geom.shapeop.add.similarity
  # u0, sop, dmaIndex, dmaPositions(v3), weight, dmaShapes(v3)

@@ -48,22 +48,22 @@ geom.shapeop.add.uniform.laplacian ac(_0, t.uniform.laplacian, _1,_2,_3);
 
 geom.shapeop.add.edge
  # u0, sop, dmaIndex(i), dmaPositions(v3), weight, range(min,max), edgeLength
- ac(_0, t.edge, _1,_2,_3,_4);
+ ac(_0, t.edge, _1,_2,_3);
 geom.shapeop.add.triangle
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- ac(_0, t.triangle, _1,_2,_3,_4);
+ ac(_0, t.triangle, _1,_2,_3);
 geom.shapeop.add.tetrahedron
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- ac(_0, t.tetrahedron, _1,_2,_3,_4);
+ ac(_0, t.tetrahedron, _1,_2,_3);
 geom.shapeop.add.area
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- ac(_0, t.area, _1,_2,_3,_4);
+ ac(_0, t.area, _1,_2,_3);
 geom.shapeop.add.volume
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- ac(_0, t.volume, _1,_2,_3,_4);
+ ac(_0, t.volume, _1,_2,_3);
 geom.shapeop.add.bending
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- ac(_0, t.bending, _1,_2,_3,_4);
+ ac(_0, t.bending, _1,_2,_3);
 
 geom.shapeop.add.closeness
  # u0, sop, dmaIndex, dmaPositions(v3), weight, closenessPos(x,y,z)

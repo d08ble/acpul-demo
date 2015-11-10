@@ -33,17 +33,17 @@ geom.shapeop.t {
  edge 7;
 };
 
-geom.shapeop.add.line ac(_0, t.line, _1,_2,_3,_4);
-geom.shapeop.add.plane ac(_0, t.plane, _1,_2,_3,_4);
-geom.shapeop.add.circle ac(_0, t.circle, _1,_2,_3,_4);
-geom.shapeop.add.sphere ac(_0, t.sphere, _1,_2,_3,_4);
-geom.shapeop.add.rectangle ac(_0, t.rectangle, _1,_2,_3,_4);
-geom.shapeop.add.parallelogram ac(_0, t.parallelogram, _1,_2,_3,_4);
-geom.shapeop.add.uniform.laplacian ac(_0, t.uniform.laplacian, _1,_2,_3,_4);
+geom.shapeop.add.line ac(_0, t.line, _1,_2,_3);
+geom.shapeop.add.plane ac(_0, t.plane, _1,_2,_3);
+geom.shapeop.add.circle ac(_0, t.circle, _1,_2,_3);
+geom.shapeop.add.sphere ac(_0, t.sphere, _1,_2,_3);
+geom.shapeop.add.rectangle ac(_0, t.rectangle, _1,_2,_3);
+geom.shapeop.add.parallelogram ac(_0, t.parallelogram, _1,_2,_3);
+geom.shapeop.add.uniform.laplacian ac(_0, t.uniform.laplacian, _1,_2,_3);
 
 geom.shapeop.add.edge
  # u0, sop, dmaIndex(i), dmaPositions(v3), weight, range(min,max), edgeLength
- io(_0, 501050, _1, 0, _1,_2);
+ ac(_0, t.edge, _1,_2,_3,_4);
 geom.shapeop.add.triangle
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
  io(_0, 501050, _1, 1, _1,_2);

@@ -17,7 +17,7 @@ geom.shapeop.set.points.dma
  io(_0, 501050, _1, 0,0,0);
 
 geom.shapeop.add.edge
- # u0, sop, dmaIndex, dmaPositions, weight, range(min,max), edgeLength
+ # u0, sop, dmaIndex(i), dmaPositions(v3), weight, range(min,max), edgeLength
  io(_0, 501050, _1, 0, _1,_2);
 geom.shapeop.add.triangle
  # u0, sop, dmaIndex, dmaPositions, weight, range(min,max)
@@ -35,6 +35,6 @@ geom.shapeop.add.bending
  # u0, sop, dmaIndex, dmaPositions, weight, range(min,max)
  io(_0, 501050, _1, 3, _1,_2);
 geom.shapeop.add.closeness
- # u0, sop, dmaIndex, dmaPositions, weight, range(min,max)
+ # u0, sop, dmaIndex, dmaPositions, weight, dmaCloseness(v3)
  io(_0, 501050, _1, 3, _1,_2);
 

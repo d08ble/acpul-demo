@@ -34,6 +34,7 @@ geom.shapeop.t {
  triangle 8;
  tetrahedron 9;
  area 10;
+ volume 11;
 };
 
 geom.shapeop.add.line ac(_0, t.line, _1,_2,_3);
@@ -58,7 +59,7 @@ geom.shapeop.add.area
  ac(_0, t.area, _1,_2,_3,_4);
 geom.shapeop.add.volume
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- io(_0, 501050, _1, 3, _1,_2);
+ ac(_0, t.volume, _1,_2,_3,_4);
 geom.shapeop.add.bending
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
  io(_0, 501050, _1, 3, _1,_2);

@@ -21,6 +21,7 @@ geom.shapeop.add.constraint
  io(_0, 501050, _1, _2, _3, _4);
 
 geom.shapeop.ac geom.shapeop.add.constraint(_0,_1,_2,_3,_4);
+
 geom.shapeop.t {
  line 0;
  plane 1;

@@ -38,6 +38,7 @@ geom.shapeop.t {
  bending 12;
  closeness 13;
  similarity 14;
+ angle 15;
 };
 
 geom.shapeop.add.line ac(_0, t.line, _1,_2,_3);

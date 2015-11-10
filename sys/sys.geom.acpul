@@ -1,0 +1,13 @@
+### 1036 sys.geom
+
+geom.voronoi.dma
+ # u0, dma, w,h, mode
+ io(_0, 501000, _1, _2,_3, _4);
+
+geom.mesh2d.dma
+ # u0, dst, src, mode
+ io(_0, 501001, _1, _2, _3, 0);
+
+geom.shapeop.set.points.dma
+ # u0, sop, dma
+ io(_0, 501050, 0,0, 0,0);

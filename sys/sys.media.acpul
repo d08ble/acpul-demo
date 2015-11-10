@@ -26,9 +26,3 @@ media.ft.text.dma {
 media.ft.draw.dma 
  # u0, font0, mode, dma
  0;
-
-
-media.shapeop.set.points.dma
- # u0, sop, dma
- io(_0, 500950, 0,0, 0,0);
- 

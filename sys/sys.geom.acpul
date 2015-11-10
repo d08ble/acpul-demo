@@ -37,6 +37,7 @@ geom.shapeop.t {
  volume 11;
  bending 12;
  closeness 13;
+ similarity 14;
 };
 
 geom.shapeop.add.line ac(_0, t.line, _1,_2,_3);

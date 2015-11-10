@@ -1,7 +1,7 @@
 ### 1036 sys.geom
 
 geom.voronoi.dma
- # u0, dma, w,h, mode
+ # u0, dma, w,h, mode -> buffer
  io(_0, 501000, _1, _2,_3, _4);
 
 geom.mesh2d.dma

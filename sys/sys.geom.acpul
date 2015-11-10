@@ -8,6 +8,12 @@ geom.mesh2d.dma
  # u0, dmaDst, dmaSrc, mode
  io(_0, 501001, _1, _2, _3, 0);
 
+geom.shapeop.new.solver.dma
+ # u0, dma -> sop
+ io(_0, 501050, _1, 0,0,0);
+
 geom.shapeop.set.points.dma
  # u0, sop, dma
- io(_0, 501050, 0,0, 0,0);
+ io(_0, 501050, _1, 0,0,0);
+
+geom.shapeop.

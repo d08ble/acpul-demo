@@ -77,6 +77,6 @@ geom.shapeop.add.similarity
  ac(_0, t.similarity, _1,_2,_3);
 
 geom.shapeop.add.angle
- # u0, sop, dmaIndex, dmaPositions(v3), weight, dmaShapes(v3)
+ # u0, sop, dmaIndex, dmaPositions(v3), weight, angle(min,max)
  ac(_0, t.angle, _1,_2,_3);
 

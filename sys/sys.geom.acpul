@@ -35,6 +35,6 @@ geom.shapeop.add.bending
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
  io(_0, 501050, _1, 3, _1,_2);
 geom.shapeop.add.closeness
- # u0, sop, dmaIndex, dmaPositions(v3), weight, dmaCloseness(v3)
+ # u0, sop, dmaIndex, dmaPositions(v3), weight, dmaCloseness(v3*1)
  io(_0, 501050, _1, 3, _1,_2);
 

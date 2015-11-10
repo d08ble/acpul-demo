@@ -30,6 +30,7 @@ geom.shapeop.t {
  rectangle 4;
  parallelogram 5;
  uniform.laplacian 6;
+ edge 7;
 };
 
 geom.shapeop.add.line ac(_0, t.line, _1,_2,_3,_4);

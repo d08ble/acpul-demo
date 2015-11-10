@@ -19,11 +19,13 @@ geom.shapeop.set.points.dma
 geom.shapeop.add.edge
  # u0, sop, dmaIndex, dmaPositions, weight, range(min,max), edgeLength
  io(_0, 501050, _1, 0, _1,_2);
-
 geom.shapeop.add.triangle
  # u0, sop, dmaIndex, dmaPositions, weight, range(min,max)
  io(_0, 501050, _1, 1, _1,_2);
-
 geom.shapeop.add.tetrahedron
  # u0, sop, dmaIndex, dmaPositions, weight, range(min,max)
  io(_0, 501050, _1, 2, _1,_2);
+geom.shapeop.add.area
+ # u0, sop, dmaIndex, dmaPositions, weight, range(min,max)
+ io(_0, 501050, _1, 3, _1,_2);
+

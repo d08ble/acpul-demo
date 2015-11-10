@@ -49,3 +49,4 @@ geom.shapeop.add.circle
 geom.shapeop.add.sphere
 geom.shapeop.add.rectangle
 geom.shapeop.add.parallelogram
+geom.shapeop.add.uniform.laplacian

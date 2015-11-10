@@ -17,4 +17,5 @@ geom.shapeop.set.points.dma
  io(_0, 501050, _1, 0,0,0);
 
 geom.shapeop.add.edge
- # u0, edgeLength, range(min,max)
+ # u0, dmaIndex, dmaPositions, weight, edgeLength, range(min,max)
+ io(_0, 501050, _1, 0,0,0);

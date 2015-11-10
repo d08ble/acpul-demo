@@ -31,6 +31,7 @@ geom.shapeop.t {
  parallelogram 5;
  uniform.laplacian 6;
  edge 7;
+ triangle 8;
 };
 
 geom.shapeop.add.line ac(_0, t.line, _1,_2,_3);
@@ -46,7 +47,7 @@ geom.shapeop.add.edge
  ac(_0, t.edge, _1,_2,_3,_4);
 geom.shapeop.add.triangle
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- io(_0, 501050, _1, 1, _1,_2);
+ ac(_0, t.triangle, _1,_2,_3,_4);
 geom.shapeop.add.tetrahedron
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
  io(_0, 501050, _1, 2, _1,_2);

@@ -29,7 +29,7 @@ geom.shapeop.add.constraint
  # u0, type, sop, dmaIndex(i), dmaPositions(v3)
  io(_0, 501054, _1, _2, _3, _4);
 
-geom.shapeop.set.param
+geom.shapeop.param
  # u0, p0-p4
  io(_0, 501055, _1,_2,_3,_4);
 

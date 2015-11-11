@@ -65,6 +65,7 @@ geom.shapeop.add.uniform.laplacian ac(_0, t.uniform.laplacian, _1,_2,_3);
 
 geom.shapeop.add.edge
  # u0, sop, dmaIndex(i), dmaPositions(v3), weight, range(min,max), edgeLength
+ set.param(_4, _5,_6, _7);
  ac(_0, t.edge, _1,_2,_3);
 geom.shapeop.add.triangle
  # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)

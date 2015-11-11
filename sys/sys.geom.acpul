@@ -16,6 +16,10 @@ geom.shapeop.set.points
  # u0, sop, dma(v3)
  io(_0, 501051, _1, 0,0,0);
 
+geom.shapeop.init
+ # u0, sop
+ io(_0, 501052, _1, 0,0,0);
+
 geom.shapeop.add.constraint
  # u0, type, sop, dmaIndex(i), dmaPositions(v3)
  io(_0, 501052, _1, _2, _3, _4);

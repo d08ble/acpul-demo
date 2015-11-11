@@ -22,15 +22,15 @@ geom.shapeop.init
 
 geom.shapeop.init
  # u0, sop, dynamic, masses, damping, timestep
- io(_0, 501052, _1, _2,_3,_4);
+ io(_0, 501053, _1, _2,_3,_4);
 
 geom.shapeop.solve
  # u0, sop, iteration
- io(_0, 501052, _1, _2, 0,0);
+ io(_0, 501054, _1, _2, 0,0);
 
 geom.shapeop.add.constraint
  # u0, type, sop, dmaIndex(i), dmaPositions(v3)
- io(_0, 501052, _1, _2, _3, _4);
+ io(_0, 501055, _1, _2, _3, _4);
 
 geom.shapeop.ac geom.shapeop.add.constraint(_0,_1,_2,_3,_4);
 

@@ -21,7 +21,11 @@ geom.shapeop.init
  io(_0, 501052, _1, 0,0,0);
 
 geom.shapeop.init
- # u0, sop
+ # u0, sop, dynamic, masses, damping, timestep
+ io(_0, 501052, _1, 0,0,0);
+
+geom.shapeop.solve
+ # u0, sop, iteration
  io(_0, 501052, _1, 0,0,0);
 
 geom.shapeop.add.constraint

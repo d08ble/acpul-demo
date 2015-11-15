@@ -36,11 +36,10 @@ rect(u0, 6, 5,5,rw-10,rh-10);
 ### 5030 test.lanczos.gpui
 
 r0:=k==0;
-k:=1;
-#draw(r0, 5031);
-k:=1;
+
+draw(r0, 5031);
+
 _ @1010;
-k:=1;
 _ @sys.node;
 _ @sys.obj;
 #_ @sys.media;
@@ -49,11 +48,8 @@ ncount r6;
 r6:=500;
 
 if (r0) {
-r7:=5550;
-watch(r7);
  r7:=buffer.new(u0, 2048*3, 2048*3);
  buffer.dma(u0, 0, r7,0);
-watch(r7);
  i:=0;
  while (i<ncount) {
   p i*3;

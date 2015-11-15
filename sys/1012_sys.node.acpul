@@ -176,9 +176,9 @@ node {_;
   # r0, type, count, ibuf::object
   io(_0, 7216, _1, _2, _3, 0);
 
- ex.gl.draw
+ ex.gl.draw {_;
   # r0, mode, count
-  io(_0, 7205, _1, _2, 0,0);
+  io(_0, 7205, _1, _2, 0,0);};
 
  ex.gl.view.port
   # r0, x,y,w,h

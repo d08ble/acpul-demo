@@ -1,4 +1,5 @@
 ### 5000 tests
+# 5000-6000
 
 r0:=k==0;
 
@@ -162,3 +163,11 @@ k:=1;
 
 color(u0, 1,1,1,1);
 rect(u0, 6, 0,0,222,222);
+
+### 5070 test.gl.draw.elements
+
+_ @1010;
+
+#ex.shader.indices.dma
+
+### 5071 test.gl.draw.elements.draw

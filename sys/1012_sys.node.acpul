@@ -168,10 +168,13 @@ node {_;
   # r0, i, dma,o,esize,stride,count, type,normalized
   {io(_0, 7210, _1, _2,_3, _4);
    io(_0, 7213, _5, _6, _7, _8);};
+
  ex.shader.indices.dma
-  # r0, dma, esize,count -> i
+  # r0, dma, esize,count -> ibuf::object
   io(_0, 7215, _1, _2,_3, 0);
  ex.gl.draw.elements
+  # r0, type, count, ibuf::object
+  io(_0, 7216, _1, _2, _3, 0);
 
  ex.gl.draw
   # r0, mode, count

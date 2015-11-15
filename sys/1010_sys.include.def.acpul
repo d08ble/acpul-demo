@@ -45,7 +45,7 @@ sys.events 1034;
 
 sys.media 1035;
 
-sys.geom 1036
+sys.geom 1036;
 
 sys.modules.a.MAX 1037;
 

@@ -166,8 +166,9 @@ rect(u0, 6, 0,0,222,222);
 
 ### 5070 test.gl.draw.elements
 
+r0:=k==0;
+
 _ @1010;
-_ @sys.node;
 _ @sys.obj;
 
 if (r0) {
@@ -181,7 +182,13 @@ if (r0) {
  dma.set4(u0, 1,4, 4,5, 6,7);
 };
 
+k:=1;
+
 ### 5071 test.gl.draw.elements.draw
+
+_ @1010;
+_ @sys.node;
+_ @sys.obj;
 
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);

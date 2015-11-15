@@ -183,5 +183,6 @@ if (r0) {
 
 ### 5071 test.gl.draw.elements.draw
 
+node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,4, 0,0);
 buffer.dma(u0, r6,1);
 node.ex.shader.indices.dma(1, 2, 4);

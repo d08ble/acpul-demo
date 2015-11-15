@@ -167,7 +167,15 @@ rect(u0, 6, 0,0,222,222);
 ### 5070 test.gl.draw.elements
 
 _ @1010;
+_ @sys.node;
+_ @sys.obj;
 
-#ex.shader.indices.dma
+r7:=buffer.new(u0, 2*4, 2*4);
+r6:=buffer.new(u0, 2*4, 2*4);
+buffer.dma(u0, r7,0);
+dma.set4(0,0, 100,0);
+dma.set4(100,100, 0,100);
+buffer.dma(u0, r6,1);
+node.ex.shader.indices.dma(1, 2, 4);
 
 ### 5071 test.gl.draw.elements.draw

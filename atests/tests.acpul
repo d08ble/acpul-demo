@@ -51,6 +51,7 @@ if (r0) {
 r7:=5550;
 watch(r7);
  r7:=buffer.new(u0, 2048*3, 2048*3);
+watch(r7);
  buffer.dma(u0, 0, r7,0);
 watch(r7);
  i:=0;

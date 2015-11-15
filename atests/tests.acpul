@@ -41,6 +41,7 @@ r0:=k==0;
 
 
 _ @1010;
+k:=1;
 _ @sys.node;
 _ @sys.obj;
 #_ @sys.media;

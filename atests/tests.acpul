@@ -47,7 +47,6 @@ _ @sys.obj;
 ncount r6;
 r6:=500;
 
-
 if (r0) {
 r7:=5550;
 watch(r7);

@@ -36,10 +36,9 @@ rect(u0, 6, 5,5,rw-10,rh-10);
 ### 5030 test.lanczos.gpui
 
 r0:=k==0;
-
+k:=1;
 #draw(r0, 5031);
-
-
+k:=1;
 _ @1010;
 k:=1;
 _ @sys.node;

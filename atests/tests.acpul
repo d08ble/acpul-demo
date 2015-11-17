@@ -211,8 +211,8 @@ node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,4, 0,0);
 l0:=node.ex.shader.indices.dma(u0, 1, 2,4);
 node.ex.gl.draw.elements(u0, 3, l0);
 obj.delete(u0, l0);
- dma.off(u0, 0);
- dma.off(u0, 1);
+dma.off(u0, 0);
+dma.off(u0, 1);
 
 ### 5072:S test.gl.draw.elements.vsh
 

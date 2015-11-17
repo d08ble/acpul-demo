@@ -229,5 +229,5 @@ void main(void)
 
 void main(void)
 {
-  gl_FragColor = vec4(0.5,0.5+gl_Position.x,0.5,0.5);
+  gl_FragColor = vec4(0.5,0.5,0.5,0.5);
 }

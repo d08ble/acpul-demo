@@ -229,7 +229,8 @@ void main(void)
 
 ### 5073:S test.gl.draw.elements.fsh
 
+varying vec4 v0;
 void main(void)
 {
-  gl_FragColor = vec4(0.5,0.5,0.5,0.5);
+  gl_FragColor = vec4(0.5,0.5,0.5,0.5)+v0;
 }

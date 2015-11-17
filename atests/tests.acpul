@@ -220,7 +220,7 @@ dma.off(u0, 1);
 
 #define a_position a0
 attribute vec4 a_position;
-varying vec2 v0;
+varying vec4 v0;
 void main(void)
 {
   gl_Position = CC_MVPMatrix * a_position;

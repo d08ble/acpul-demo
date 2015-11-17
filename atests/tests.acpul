@@ -183,8 +183,10 @@ if (r0) {
  buffer.dma(u0, 1, r6,0);
  dma.set4(u0, 0,0, 0,0, 100,0);
  dma.set4(u0, 0,4, 100,100, 0,100);
- dma.set4(u0, 1,0, 0,1, 2,3, 4,5);
- dma.set4(u0, 1,4, 2,3, 4,5, 6,7);
+ dma.set4(u0, 1,0, 0,1, 2,3);
+ dma.set2(u0, 1,4, 4,5);
+ dma.set4(u0, 1,6, 2,3, 4,5)
+ dma.set2(u0, 1,10, 6,7);
  obj.dump(u0, 0, r7);
  obj.dump(u0, 0, r6);
  dma.off(u0, 0);

@@ -189,8 +189,8 @@ if (r0) {
  watch(r7);
  watch(r7);
  watch(r7);
- obj.dump(u0, r7);
- obj.dump(u0, r6);
+ obj.dump(u0, r7, 0);
+ obj.dump(u0, r6, 0);
 };
 
 k:=1;

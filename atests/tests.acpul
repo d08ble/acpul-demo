@@ -211,6 +211,7 @@ node.ex.shader.use(u0, vsh, fsh);
 
 ### 5072:S test.gl.draw.elements.vsh
 
+#define a_position a1
 attribute vec4 a_position;
 void main(void)
 {

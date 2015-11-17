@@ -201,12 +201,12 @@ buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
 vsh 5072;
 fsh 5073;
-node.ex.shader.use(u0, vsh, fsh);
+#node.ex.shader.use(u0, vsh, fsh);
 # r0, i, dma,o,esize,stride,count, type,normalized
-node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,4, 0,0);
+#node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,4, 0,0);
 # r0, dma, esize,count -> ibuf::object
-l0:=node.ex.shader.indices.dma(1, 2,4);
-node.ex.gl.draw.elements(3, l0);
+#l0:=node.ex.shader.indices.dma(1, 2,4);
+#node.ex.gl.draw.elements(3, l0);
 
 ### 5072:S test.gl.draw.elements.vsh
 

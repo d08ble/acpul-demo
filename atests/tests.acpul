@@ -187,6 +187,8 @@ if (r0) {
  dma.set2(u0, 1,4, 4,5);
  dma.set4(u0, 1,6, 2,3, 4,5);
  dma.set2(u0, 1,10, 6,7);
+ dma.set4(u0, 1,12, 2,3, 4,5);
+ dma.set2(u0, 1,16, 6,7);
  obj.dump(u0, 0, r7);
  obj.dump(u0, 0, r6);
  dma.off(u0, 0);

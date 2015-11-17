@@ -23,6 +23,9 @@ l0:=node.new.this.ex(r0, test.lanczos, 0);
 test.network 5060;
 l0:=node.new.this.ex(r0, test.network, 0);
 
+test.gl.draw.elements 5070;
+l0:=node.new.this.ex(r0, test.gl.draw.elements, 0);
+
 k:=1;
 
 ### 5001 tests.draw

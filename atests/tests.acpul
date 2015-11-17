@@ -207,7 +207,7 @@ _ @sys.obj;
 
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
-dma.set2(u0, 0,10, 350+50*sin(t),70);
+dma.set2(u0, 0,10, 350+100*sin(t),70);
 vsh 5072;
 fsh 5073;
 node.ex.shader.use(u0, vsh, fsh);

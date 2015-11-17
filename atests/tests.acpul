@@ -177,7 +177,7 @@ _ @1010;
 _ @sys.obj;
 
 if (r0) {
- r7:=buffer.new(u0, 2*4, 2*4);
+ r7:=buffer.new(u0, 100, 100);
  r6:=buffer.new(u0, 100, 100);
  buffer.dma(u0, 0, r7,0);
  buffer.dma(u0, 1, r6,0);

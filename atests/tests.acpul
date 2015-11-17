@@ -181,7 +181,7 @@ if (r0) {
  r6:=buffer.new(u0, 100, 100);
  buffer.dma(u0, 0, r7,0);
  buffer.dma(u0, 1, r6,0);
- dma.set4(u0, 0,0, 0,0, 100,0);
+ dma.set4(u0, 0,0, 0,0, 200,0);
  dma.set2(u0, 0,4, 100,100);
  
  dma.set4(u0, 1,0, 0,1, 2,0);

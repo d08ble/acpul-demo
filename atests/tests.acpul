@@ -207,7 +207,7 @@ fsh 5073;
 node.ex.shader.use(u0, vsh, fsh);
 #obj.dump(u0, 0, r7);
 # r0, i, dma,o,esize,stride,count, type,normalized
-node.ex.shader.attribute.dma(u0, 0, 0,0,2,3, 0,0);
+node.ex.shader.attribute.dma(u0, 0, 0,0,0,2,3, 0,0);
 # r0, dma, count -> ibuf::object
 l0:=node.ex.shader.indices.dma(u0, 1, 3);
 # r0, type, ibuf

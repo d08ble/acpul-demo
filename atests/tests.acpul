@@ -220,9 +220,11 @@ dma.off(u0, 1);
 
 #define a_position a0
 attribute vec4 a_position;
+varying vec2 v0;
 void main(void)
 {
   gl_Position = CC_MVPMatrix * a_position;
+  v0 = gl_Position;
 }
 
 ### 5073:S test.gl.draw.elements.fsh

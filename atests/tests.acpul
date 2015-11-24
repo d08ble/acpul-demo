@@ -269,5 +269,9 @@ void main(void)
 
 ### 5090 test.shapeop
 
+tge @5080;
+
+if (r0) {tge.f0;};
+
 ### 5091 test.shapeop.draw
 

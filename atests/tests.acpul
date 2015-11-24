@@ -294,6 +294,7 @@ if (r0) {
   };
  };
  fill.indices;
+ r5:=10;
 
 # dma.set4(u0, 0,0, 0,0, 200,0);
 # dma.set2(u0, 0,4, 200,200);
@@ -319,6 +320,7 @@ _ @1010;
 _ @sys.node;
 _ @sys.obj;
 
+count r5;
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
 vsh 5082;
@@ -326,9 +328,9 @@ fsh 5083;
 node.ex.shader.use(u0, vsh, fsh);
 #obj.dump(u0, 0, r7);
 # r0, i, dma,o,esize,stride,count, type,normalized
-node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,6, 0,0);
+node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,count, 0,0);
 # r0, dma, count -> ibuf::object
-l0:=node.ex.shader.indices.dma(u0, 1, 6);
+l0:=node.ex.shader.indices.dma(u0, 1, count);
 # r0, type, ibuf
 node.ex.gl.draw.elements(u0, 4, l0);
 obj.delete(u0, l0);

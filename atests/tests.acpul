@@ -290,10 +290,7 @@ if (r0) {
     dma.set4(u0, 1,p+0, x+0+j,x+1+j,x+w+j, 0);
     dma.set4(u0, 1,p+3, x+1+j,x+w+j,x+w+j+1, 0);
     p+=6;
-#    dma.set4(u0, 1,p+3, 0,0,0, 0);
     x+=1;
-    watch(x);
-#    watch(x+0+j);
    };
    y+=1;
    r5:=p;

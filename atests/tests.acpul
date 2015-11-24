@@ -294,7 +294,6 @@ if (r0) {
     x+=1;
     watch(x);
 #    watch(x+0+j);
-    watch(p);
    };
    y+=1;
   };

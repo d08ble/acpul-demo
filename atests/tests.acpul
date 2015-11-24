@@ -321,7 +321,6 @@ _ @sys.node;
 _ @sys.obj;
 
 count r5;
-watch(r5);
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
 vsh 5082;
@@ -331,9 +330,9 @@ node.ex.shader.use(u0, vsh, fsh);
 # r0, i, dma,o,esize,stride,count, type,normalized
 node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,count, 0,0);
 # r0, dma, count -> ibuf::object
-l0:=node.ex.shader.indices.dma(u0, 1, count);
+#l0:=node.ex.shader.indices.dma(u0, 1, count);
 # r0, type, ibuf
-node.ex.gl.draw.elements(u0, 4, l0);
+#node.ex.gl.draw.elements(u0, 4, l0);
 obj.delete(u0, l0);
 dma.off(u0, 0);
 dma.off(u0, 1);

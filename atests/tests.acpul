@@ -296,7 +296,7 @@ if (r0) {
 #    watch(x+0+j);
    };
    y+=1;
-  r5:=p/6;
+   r5:=p/6;
   };
  };
  fill.indices;

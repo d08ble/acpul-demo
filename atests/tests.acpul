@@ -24,7 +24,7 @@ test.network 5060;
 #l0:=node.new.this.ex(r0, test.network, 0);
 
 test.gl.draw.elements 5070;
-l0:=node.new.this.ex(r0, test.gl.draw.elements, 0);
+#l0:=node.new.this.ex(r0, test.gl.draw.elements, 0);
 
 test.grid.elements 5080;
 l0:=node.new.this.ex(r0, test.grid.elements, 0);

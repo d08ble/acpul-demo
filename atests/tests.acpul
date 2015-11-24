@@ -297,7 +297,6 @@ if (r0) {
  count.indices r5;
  r4:=w*h*2;
  r5:=6*6; #3*10;#(w-1)*h;# 6*2;
- watch(r4);
 # dma.set4(u0, 0,0, 0,0, 200,0);
 # dma.set2(u0, 0,4, 200,200);
 # dma.set4(u0, 0,6, 300,0, 400,0);
@@ -324,6 +323,7 @@ _ @sys.obj;
 
 count.points r4;
 count.indices r5;
+ watch(r4);
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
 vsh 5082;

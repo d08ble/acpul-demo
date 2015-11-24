@@ -261,8 +261,8 @@ if (r0) {
  r6:=buffer.new(u0, 1000, 100000);
  buffer.dma(u0, 0, r7,0);
  buffer.dma(u0, 1, r6,0);
- w 10;
- h 10+1;
+ w 100;
+ h 100+1;
  x l1;
  y l2;
  fill.points {
@@ -271,7 +271,7 @@ if (r0) {
    x:=0;
    while(x<w) {
     p 2*(x+y*w);
-    dma.set2(u0, 0,p+0, x*50,y*50);
+    dma.set2(u0, 0,p+0, x*5,y*5);
     x+=1;
    };
    y+=1;

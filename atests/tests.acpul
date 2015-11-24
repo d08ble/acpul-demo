@@ -278,6 +278,26 @@ t+=dt;
 
 ### 5081 test.grid.elements.draw
 
+_ @1010;
+_ @sys.node;
+_ @sys.obj;
+
+buffer.dma(u0, 0, r7,0);
+buffer.dma(u0, 1, r6,0);
+vsh 5072;
+fsh 5073;
+node.ex.shader.use(u0, vsh, fsh);
+#obj.dump(u0, 0, r7);
+# r0, i, dma,o,esize,stride,count, type,normalized
+node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,6, 0,0);
+# r0, dma, count -> ibuf::object
+l0:=node.ex.shader.indices.dma(u0, 1, 6);
+# r0, type, ibuf
+node.ex.gl.draw.elements(u0, 4, l0);
+obj.delete(u0, l0);
+dma.off(u0, 0);
+dma.off(u0, 1);
+
 ### 5082:S test.grid.elements.vsh
 
 attribute vec4 a_position;
@@ -293,5 +313,5 @@ void main(void)
 varying vec4 v0;
 void main(void)
 {
-  gl_FragColor = vec4(0.5+v0.x,0.5+v0.y,0.5,0.5);
+  gl_FragColor = vec4(0.+v0.x,0.5+v0.y,0.5,0.5);
 }

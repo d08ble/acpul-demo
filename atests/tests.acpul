@@ -167,7 +167,7 @@ draw(r0, 5081);
 _ @1010;
 _ @sys.obj;
 
-f0 {
+create.grid {
  r7:=buffer.new(u0, 1000, 100000);
  r6:=buffer.new(u0, 1000, 100000);
  buffer.dma(u0, 0, r7,0);

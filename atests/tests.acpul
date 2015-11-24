@@ -291,10 +291,10 @@ if (r0) {
    };
    y+=1;
   };
-  watch(obj.count(u0, 1));
-  watch(r0);
  };
  fill.indices;
+  watch(obj.count(u0, 1));
+  watch(r0);
  count.points r4;
  count.indices r5;
  r4:=w*h;

@@ -218,7 +218,7 @@ create.grid {
  dma.off(u0, 1);
 };
 
-if (r0) {f0;};
+if (r0) {create.grid;};
 
 k:=1;
 

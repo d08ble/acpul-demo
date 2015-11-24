@@ -284,8 +284,8 @@ _ @sys.obj;
 
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
-vsh 5072;
-fsh 5073;
+vsh 5082;
+fsh 5083;
 node.ex.shader.use(u0, vsh, fsh);
 #obj.dump(u0, 0, r7);
 # r0, i, dma,o,esize,stride,count, type,normalized

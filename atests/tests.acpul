@@ -295,7 +295,7 @@ if (r0) {
  fill.indices;
  count.points r4;
  count.indices r5;
- r4:=w*h;
+ count.points:=w*h;
  r5:=6*6; #3*10;#(w-1)*h;# 6*2;
 # dma.set4(u0, 0,0, 0,0, 200,0);
 # dma.set2(u0, 0,4, 200,200);

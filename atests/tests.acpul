@@ -257,12 +257,12 @@ _ @1010;
 _ @sys.obj;
 
 if (r0) {
- r7:=buffer.new(u0, 1000, 1000);
- r6:=buffer.new(u0, 1000, 1000);
+ r7:=buffer.new(u0, 10000, 10000);
+ r6:=buffer.new(u0, 10000, 10000);
  buffer.dma(u0, 0, r7,0);
  buffer.dma(u0, 1, r6,0);
- w 83;
- h 4+1;
+ w 100;
+ h 100+1;
  x l1;
  y l2;
  fill.points {

@@ -321,6 +321,7 @@ _ @sys.node;
 _ @sys.obj;
 
 count r5;
+watch(r5);
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
 vsh 5082;

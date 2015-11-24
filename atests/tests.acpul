@@ -282,7 +282,7 @@ if (r0) {
   p l3;
   p:=0;
   y:=0;
-  while(y<h) {
+  while(y<h-1) {
    x:=0;
    while(x<w-1) {
 #    p 3*2*(x+y*w);

@@ -279,18 +279,20 @@ if (r0) {
   };
  };
  fill.points;
- 
- y:=0;
- while(y<h) {
-  x:=0;
-  while(x<w-1) {
-   p 6*(x+y*w);
+ fill.indices {
+  y:=0;
+  while(y<h) {
+   x:=0;
+   while(x<w-1) {
+    p 6*(x+y*w);
 #   dma.set4(u0, 1,p+0, x+0,x+1,x+w, 0);
-   x+=1;
+    x+=1;
+   };
+   y+=2;
   };
-  y+=2;
  };
-
+ fill.indices;
+ 
 # dma.set4(u0, 0,0, 0,0, 200,0);
 # dma.set2(u0, 0,4, 200,200);
 # dma.set4(u0, 0,6, 300,0, 400,0);

@@ -275,7 +275,7 @@ draw(r0, 5081);
 
 tge @5080;
 
-if (r0) {tge.f0;};
+if (r0) {tge.create.grid;};
 
 k:=1;
 

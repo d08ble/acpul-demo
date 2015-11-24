@@ -261,7 +261,7 @@ if (r0) {
  r6:=buffer.new(u0, 1000, 1000);
  buffer.dma(u0, 0, r7,0);
  buffer.dma(u0, 1, r6,0);
- w 81;
+ w 82;
  h 4+1;
  x l1;
  y l2;

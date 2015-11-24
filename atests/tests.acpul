@@ -198,6 +198,7 @@ if (r0) {
 k:=1;
 
 t+=dt;
+dma.set2(u0, 0,10, 350+100*sin(t),70);
 
 ### 5071 test.gl.draw.elements.draw
 
@@ -207,7 +208,6 @@ _ @sys.obj;
 
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
-dma.set2(u0, 0,10, 350+100*sin(t),70);
 vsh 5072;
 fsh 5073;
 node.ex.shader.use(u0, vsh, fsh);
@@ -243,7 +243,37 @@ void main(void)
 
 ### 5080 test.grid.elements
 
-### 5081 test.grid.elements
+r0:=k==0;
+
+draw(r0, 5071);
+
+_ @1010;
+_ @sys.obj;
+
+if (r0) {
+ r7:=buffer.new(u0, 1000, 1000);
+ r6:=buffer.new(u0, 1000, 1000);
+ buffer.dma(u0, 0, r7,0);
+ buffer.dma(u0, 1, r6,0);
+# dma.set4(u0, 0,0, 0,0, 200,0);
+# dma.set2(u0, 0,4, 200,200);
+# dma.set4(u0, 0,6, 300,0, 400,0);
+# dma.set2(u0, 0,10, 350,70);
+ 
+# dma.set4(u0, 1,0, 0,1,2, 0);
+# dma.set4(u0, 1,3, 3,4,5, 0);
+ 
+ obj.dump(u0, 0, r7);
+ obj.dump(u0, 0, r6);
+ dma.off(u0, 0);
+ dma.off(u0, 1);
+};
+
+k:=1;
+
+t+=dt;
+
+### 5081 test.grid.elements.draw
 
 ### 5082:S test.grid.elements.vsh
 

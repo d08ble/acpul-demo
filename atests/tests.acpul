@@ -291,6 +291,7 @@ if (r0) {
    };
    y+=1;
   };
+  watch(dma.size(u0, 1));
  };
  fill.indices;
  count.points r4;

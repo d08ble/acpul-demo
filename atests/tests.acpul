@@ -272,8 +272,6 @@ if (r0) {
    p 2*(x+y*w);
    dma.set2(u0, 0,p+0, x*10,y*10);
    dma.get2(u0, 0,p);
-   watch(o0);
-   watch(o1);
    x+=1;
   };
   y+=1;

@@ -265,17 +265,24 @@ if (r0) {
  h 10;
  x l1;
  y l2;
- y:=0;
- while(y<h){
-  x:=0;
-  while(x<w) {
-   p 2*(x+y*w);
-   dma.set2(u0, 0,p+0, x*10,y*10);
-   dma.get2(u0, 0,p);
-   x+=1;
+ fill.points {
+  y:=0;
+  while(y<h) {
+   x:=0;
+   while(x<w) {
+    p 2*(x+y*w);
+    dma.set2(u0, 0,p+0, x*10,y*10);
+    dma.get2(u0, 0,p);
+    x+=1;
+   };
+   y+=1;
   };
-  y+=1;
  };
+ y:=0;
+ while(y<h) {
+ 
+ };
+ 
 # dma.set4(u0, 0,0, 0,0, 200,0);
 # dma.set2(u0, 0,4, 200,200);
 # dma.set4(u0, 0,6, 300,0, 400,0);

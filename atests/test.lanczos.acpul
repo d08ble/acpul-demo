@@ -1,0 +1,89 @@
+### 5030 test.lanczos.gpui
+
+r0:=k==0;
+
+draw(r0, 5031);
+
+_ @1010;
+_ @sys.node;
+_ @sys.obj;
+#_ @sys.media;
+
+ncount r6;
+r6:=500;
+
+if (r0) {
+ r7:=buffer.new(u0, 2048*3, 2048*3);
+ buffer.dma(u0, 0, r7,0);
+ i:=0;
+ while (i<ncount) {
+  p i*3;
+  x i;
+  a 1;
+
+  # L(x) Lanczos kernel
+#  L {watch(_0);sinc(_0)*sinc(_0/a);};
+  L sinc(_0)*sinc(_0/a);
+
+  y L(0.1*(i-ncount/2))*100;
+
+  L if(_0>-a, if(_0<a, sinc(_0)*sinc(_0/a), 0), 0);
+  y L((i/ncount)*6-3)*100;
+
+  dma.set2(u0, 0, p, x,y);
+  dma.set(u0, 0, p+2, 0);
+  i+=1;
+ };
+# obj.dump(u0, 0, 0);
+};
+#x-=1;
+s:=1;
+
+k:=1;
+
+#  y sin(i/5)*10;
+#  sinc.test sinc(0.1*(i-ncount/2))*100;
+#  y sinc.test;
+
+### 5031 test.lanczos.gpui.draw
+
+_ @1010;
+_ @sys.node;
+_ @sys.obj;
+
+ncount r6;
+
+vsh 5033;
+fsh 5034;
+node.ex.shader.use(u0, vsh, fsh);
+#psize1(1);
+buffer.dma(u0, 0, r7,0);
+#if (r0) { obj.dump(u0, 0, 0);}
+#node.ex.shader.attribute.dma(u0, attr, pdma,offset,elementsize,stride,count, type,normalized);
+node.ex.shader.attribute.dma(u0, 0, 0,0,3,0,ncount, 0,0);
+node.ex.gl.draw(u0, 3, ncount);
+
+### 5032 test.lanczos.strings
+
+### 5033:S test.lanczos.filter.vsh
+
+#define a_position a0
+attribute vec4 a_position;
+
+varying vec4 v1;
+
+void main(void)
+{
+  gl_Position = CC_MVPMatrix * a_position;
+  v1 = a_position;
+}
+
+### 5034:S test.lanczos.filter.fsh
+
+varying vec4 v1;
+
+void main(void)
+{
+  gl_FragColor = vec4(1.,1.,v1.x/100.,1.);
+}
+

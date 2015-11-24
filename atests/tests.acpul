@@ -278,6 +278,8 @@ if (r0) {
    y+=1;
   };
  };
+ fill.points;
+ 
  y:=0;
  while(y<h) {
   x:=0;

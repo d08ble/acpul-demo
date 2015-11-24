@@ -271,7 +271,7 @@ if (r0) {
    x:=0;
    while(x<w) {
     p 2*(x+y*w);
-    dma.set2(u0, 0,p+0, x*10,y*10);
+    dma.set2(u0, 0,p+0, x*50,y*50);
     dma.get2(u0, 0,p);
     x+=1;
    };

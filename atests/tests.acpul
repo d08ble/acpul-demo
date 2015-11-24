@@ -262,7 +262,7 @@ if (r0) {
  buffer.dma(u0, 0, r7,0);
  buffer.dma(u0, 1, r6,0);
  w 10;
- h 3+1;
+ h 1+1;
  x l1;
  y l2;
  fill.points {

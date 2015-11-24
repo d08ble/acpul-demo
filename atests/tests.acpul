@@ -198,6 +198,7 @@ if (r0) {
 k:=1;
 
 t+=dt;
+
 buffer.dma(u0, 0, r7,0);
 dma.set2(u0, 0,10, 350+100*sin(t),70);
 dma.off(u0, 0);

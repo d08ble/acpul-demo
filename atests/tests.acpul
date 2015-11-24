@@ -339,6 +339,7 @@ dma.off(u0, 1);
 
 ### 5082:S test.grid.elements.vsh
 
+#define a_position a0
 attribute vec4 a_position;
 varying vec4 v0;
 void main(void)

@@ -17,8 +17,8 @@ geom.shapeop.new.solver
  io(_0, 501050, _1, _2, 0,0);
 
 geom.shapeop.set.points
- # u0, sop, dma(v3)
- io(_0, 501051, _1, 0,0,0);
+ # u0, sop, dma(v2|v3), vecSize
+ io(_0, 501051, _1, _2, _3, 0);
 
 geom.shapeop.init {
  # u0, sop, dynamic, masses, damping, timestep

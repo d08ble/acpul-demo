@@ -13,8 +13,8 @@ geom.shapeop.param
  io(_0, 501055, _1,_2,_3,_4);
 
 geom.shapeop.new.solver
- # u0, dma(v3) -> sop
- io(_0, 501050, _1, 0,0,0);
+ # u0, dma(v2|v3), itemSize -> sop
+ io(_0, 501050, _1, _2, 0,0);
 
 geom.shapeop.set.points
  # u0, sop, dma(v3)

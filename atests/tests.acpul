@@ -216,8 +216,8 @@ create.grid {
  count.indices r5;
  r4:=w*h;
  
- obj.dump(u0, 0, r7);
- obj.dump(u0, 0, r6);
+# obj.dump(u0, 0, r7);
+# obj.dump(u0, 0, r6);
  dma.off(u0, 0);
  dma.off(u0, 1);
 };

@@ -277,12 +277,15 @@ r0:=k==0;
 
 draw(r0, 5081);
 
+_ @1010;
+_ @sys.geom;
+
 tge @5080;
 
 if (r0) {
  tge.create.grid;
 # r7
- 
+ geom.shapeop.new.solver(u0, r7);
 };
 
 k:=1;

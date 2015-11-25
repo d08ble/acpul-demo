@@ -176,8 +176,8 @@ create.grid {
  r6:=buffer.new(u0, 1000, 100000);
  buffer.dma(u0, 0, r7,0);
  buffer.dma(u0, 1, r6,0);
- w 100;
- h 100+1;
+ w 10;
+ h 10+1;
  x l1;
  y l2;
  fill.points {
@@ -238,7 +238,7 @@ count.points r4;
 count.indices r5;
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
-watch(r7);
+#watch();
 vsh 5082;
 fsh 5083;
 node.ex.shader.use(u0, vsh, fsh);

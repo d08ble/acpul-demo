@@ -239,6 +239,7 @@ count.indices r5;
 buffer.dma(u0, 0, r7,0);
 buffer.dma(u0, 1, r6,0);
 watch(r7);
+watch(r4);;
 vsh 5082;
 fsh 5083;
 node.ex.shader.use(u0, vsh, fsh);

@@ -285,9 +285,9 @@ tge @5080;
 if (r0) {
  tge.create.grid;
 # r7
- buffer.dma(u0, 0, r7,0);
- geom.shapeop.new.solver(u0, 0, 2);
- dma.off(u0, 0);
+# buffer.dma(u0, 0, r7,0);
+# geom.shapeop.new.solver(u0, 0, 2);
+# dma.off(u0, 0);
 };
 
 k:=1;

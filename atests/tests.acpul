@@ -291,7 +291,7 @@ if (r0) {
  sop r8;
  sop:=geom.shapeop.new.solver(u0);
  geom.shapeop.set.points(u0, sop, 0, 2);
- geom.shapeop.init(u0, )
+ geom.shapeop.init(u0, sop, 0,1,1,1);
 
 
  r9:=buffer.new(u0, 1000, 100000);

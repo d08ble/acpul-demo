@@ -30,7 +30,7 @@ geom.shapeop.solve
  io(_0, 501053, _1, _2, 0,0);
 
 geom.shapeop.add.constraint
- # u0, type, sop, dmaIndex(i), dmaPositions(v3)
+ # u0, type, sop, dmaIndex(i), weight
  io(_0, 501054, _1, _2, _3, _4);
 
 geom.shapeop.get.points
@@ -67,42 +67,42 @@ geom.shapeop.add.parallelogram ac(_0, t.parallelogram, _1,_2,_3);
 geom.shapeop.add.uniform.laplacian ac(_0, t.uniform.laplacian, _1,_2,_3);
 
 geom.shapeop.add.edge {
- # u0, sop, dmaIndex(i), dmaPositions(v3), weight, range(min,max), edgeLength
- param(_0, _4, _5,_6, _7);
+ # u0, sop, dmaIndex(i), weight, range(min,max), edgeLength
+ param(_0, _4, _5,_6, 0);
  ac(_0, t.edge, _1,_2,_3);};
 geom.shapeop.add.triangle {
- # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- param(_0, _4, _5,_6, 0);
+ # u0, sop, dmaIndex, weight, range(min,max)
+ param(_0, _4,_5, 0,0);
  ac(_0, t.triangle, _1,_2,_3);};
 geom.shapeop.add.tetrahedron {
- # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- param(_0, _4, _5,_6, 0);
+ # u0, sop, dmaIndex, weight, range(min,max)
+ param(_0, _4,_5, 0,0);
  ac(_0, t.tetrahedron, _1,_2,_3);};
 geom.shapeop.add.area {
- # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- param(_0, _4, _5,_6, 0);
+ # u0, sop, dmaIndex, weight, range(min,max)
+ param(_0, _4,_5, 0,0);
  ac(_0, t.area, _1,_2,_3);};
 geom.shapeop.add.volume {
- # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- param(_0, _4, _5,_6, 0);
+ # u0, sop, dmaIndex, weight, range(min,max)
+ param(_0, _4,_5, 0,0);
  ac(_0, t.volume, _1,_2,_3);};
 geom.shapeop.add.bending {
- # u0, sop, dmaIndex, dmaPositions(v3), weight, range(min,max)
- param(_0, _4, _5,_6, 0);
+ # u0, sop, dmaIndex, weight, range(min,max)
+ param(_0, _4,_5, 0,0);
  ac(_0, t.bending, _1,_2,_3);};
 
 geom.shapeop.add.closeness {
- # u0, sop, dmaIndex, dmaPositions(v3), weight, closenessPos(x,y,z)
- param(_0, _4, _5,_6,_7);
+ # u0, sop, dmaIndex, weight, closenessPos(x,y,z)
+ param(_0, _4,_5,_6, 0);
  ac(_0, t.closeness, _1,_2,_3);};
 
 geom.shapeop.add.similarity {
- # u0, sop, dmaIndex, dmaPositions(v3), weight, dmaShapes(v3)
- param(_0, _4, _5,_6,_7);
+ # u0, sop, dmaIndex, weight, dmaShapes(v3)
+ param(_0, _4,_5,_6, 0);
  ac(_0, t.similarity, _1,_2,_3);};
 
 geom.shapeop.add.angle {
- # u0, sop, dmaIndex, dmaPositions(v3), weight, angle(min,max)
- param(_0, _4, _5,_6, 0);
+ # u0, sop, dmaIndex, weight, angle(min,max)
+ param(_0, _4,_5, 0, 0);
  ac(_0, t.angle, _1,_2,_3);};
 

@@ -287,7 +287,9 @@ if (r0) {
  tge.create.grid;
 # r7
  buffer.dma(u0, 0, r7,0);
- geom.shapeop.new.solver(u0, 0, 2);
+ r8:=geom.shapeop.new.solver(u0);
+ geom.shapeop.set.points(u0, r8, 0, 2);
+
  dma.off(u0, 0);
 };
 

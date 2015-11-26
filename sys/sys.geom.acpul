@@ -95,7 +95,7 @@ geom.shapeop.add.bending {
  # u0, sop, dmaIndex, weight, closenessPos(x,y,z)
 # param(_0, _4,_5,_6, 0);
 # ac(_0, t.closeness, _1,_2,_3);};
-geom.shapeop.add.closeness {
+geom.shapeop.add.closeness
  # u0, sop, pointIndex, weight
  ac(_0, t.closeness, _1,_2,_3);};
 

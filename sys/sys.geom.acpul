@@ -33,6 +33,9 @@ geom.shapeop.add.constraint
  # u0, type, sop, dmaIndex(i), dmaPositions(v3)
  io(_0, 501054, _1, _2, _3, _4);
 
+geom.shapeop.get.points
+ # u0, sop, dma
+ io(_0, 501056, _1, _2, 0,0);
 
 geom.shapeop.ac geom.shapeop.add.constraint(_0,_1,_2,_3,_4);
 

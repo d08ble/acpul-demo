@@ -40,22 +40,22 @@ geom.shapeop.get.points
 geom.shapeop.ac geom.shapeop.add.constraint(_0,_1,_2,_3,_4);
 
 geom.shapeop.t {
- line 0;
- plane 1;
- circle 2;
- sphere 3;
- rectangle 4;
- parallelogram 5;
- uniform.laplacian 6;
- edge 7;
- triangle 8;
- tetrahedron 9;
- area 10;
- volume 11;
- bending 12;
- closeness 13;
- similarity 14;
- angle 15;
+ line 0; # points >2
+ plane 1; # >3
+ circle 2; # >3
+ sphere 3; # >4
+ rectangle 4; # =4
+ parallelogram 5; # =4
+ uniform.laplacian 6; # >2
+ edge 7; # =2
+ triangle 8; # =3
+ tetrahedron 9; # =4
+ area 10; # =3
+ volume 11; # =4
+ bending 12; # =4
+ closeness 13; # =1
+ similarity 14; # >1
+ angle 15; # =3
 };
 
 geom.shapeop.add.line ac(_0, t.line, _1,_2,_3);

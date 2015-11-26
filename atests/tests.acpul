@@ -295,7 +295,7 @@ if (r0) {
  r9:=buffer.new(u0, 1000, 100000);
  buffer.dma(u0, 1, r9,0);
  geom.shapeop.get.points(u0, sop, 1);
- dma.dump(u0, 1, 0);
+ obj.dump(u0, 1, 0);
 
  dma.off(u0, 0);
 };

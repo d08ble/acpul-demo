@@ -297,7 +297,7 @@ if (r0) {
  geom.shapeop.add.closeness(u0, sop, l0, 1);
  };
 
- geom.shapeop.init(u0, sop, 1,1,1,1);
+ geom.shapeop.init(u0, sop, 0,1,1,1);
  geom.shapeop.solve(u0, sop, 10);
 
  r9:=buffer.new(u0, 1000, 100000);

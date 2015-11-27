@@ -292,11 +292,11 @@ if (r0) {
  sop:=geom.shapeop.new.solver(u0);
  geom.shapeop.set.points(u0, sop, 0, 2);
  geom.shapeop.add.closeness(u0, sop, 0, 1);
-# geom.shapeop.add.closeness(u0, sop, 1, 1);
-# geom.shapeop.add.closeness(u0, sop, 2, 1);
+ geom.shapeop.add.closeness(u0, sop, 1, 1);
+ geom.shapeop.add.closeness(u0, sop, 2, 1);
 
- geom.shapeop.init(u0, sop, 1,1,1,1);
- geom.shapeop.solve(u0, sop, 50);
+ geom.shapeop.init(u0, sop, 0,1,1,1);
+ geom.shapeop.solve(u0, sop, 1);
 
  r9:=buffer.new(u0, 1000, 100000);
  buffer.dma(u0, 1, r9,0);

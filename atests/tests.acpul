@@ -293,7 +293,7 @@ if (r0) {
  geom.shapeop.set.points(u0, sop, 0, 2);
  geom.shapeop.add.closeness(u0, sop, 0, 1);
  geom.shapeop.add.closeness(u0, sop, 1, 1);
- l0:=0;while(l0<1000){l0+=1;
+ l0:=0;while(l0<50){l0+=1;
  geom.shapeop.add.closeness(u0, sop, l0, 1);
  };
 

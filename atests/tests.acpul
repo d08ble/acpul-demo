@@ -85,83 +85,6 @@ k:=1;
 color(u0, 1,1,1,1);
 rect(u0, 6, 0,0,222,222);
 
-### 5070 test.gl.draw.elements
-
-r0:=k==0;
-
-draw(r0, 5071);
-
-_ @1010;
-_ @sys.obj;
-
-if (r0) {
- r7:=buffer.new(u0, 100, 100);
- r6:=buffer.new(u0, 100, 100);
- buffer.dma(u0, 0, r7,0);
- buffer.dma(u0, 1, r6,0);
- dma.set4(u0, 0,0, 0,0, 200,0);
- dma.set2(u0, 0,4, 200,200);
- dma.set4(u0, 0,6, 300,0, 400,0);
- dma.set2(u0, 0,10, 350,70);
- 
- dma.set4(u0, 1,0, 0,1,2, 0);
- dma.set4(u0, 1,3, 3,4,5, 0);
- 
- obj.dump(u0, 0, r7);
- obj.dump(u0, 0, r6);
- dma.off(u0, 0);
- dma.off(u0, 1);
-};
-
-k:=1;
-
-t+=dt;
-
-buffer.dma(u0, 0, r7,0);
-dma.set2(u0, 0,10, 350+100*sin(t),70);
-dma.off(u0, 0);
-
-### 5071 test.gl.draw.elements.draw
-
-_ @1010;
-_ @sys.node;
-_ @sys.obj;
-
-buffer.dma(u0, 0, r7,0);
-buffer.dma(u0, 1, r6,0);
-vsh 5072;
-fsh 5073;
-node.ex.shader.use(u0, vsh, fsh);
-#obj.dump(u0, 0, r7);
-# r0, i, dma,o,esize,stride,count, type,normalized
-node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,6, 0,0);
-# r0, dma, count -> ibuf::object
-l0:=node.ex.shader.indices.dma(u0, 1, 6);
-# r0, type, ibuf
-node.ex.gl.draw.elements(u0, 4, l0);
-obj.delete(u0, l0);
-dma.off(u0, 0);
-dma.off(u0, 1);
-
-### 5072:S test.gl.draw.elements.vsh
-
-#define a_position a0
-attribute vec4 a_position;
-varying vec4 v0;
-void main(void)
-{
-  gl_Position = CC_MVPMatrix * a_position;
-  v0 = gl_Position;
-}
-
-### 5073:S test.gl.draw.elements.fsh
-
-varying vec4 v0;
-void main(void)
-{
-  gl_FragColor = vec4(0.5+v0.x,0.5+v0.y,0.5,0.5);
-}
-
 ### 5080 test.grid.elements
 
 r0:=k==0;
@@ -294,7 +217,7 @@ if (r0) {
  geom.shapeop.add.closeness(u0, sop, 0, 1);
  geom.shapeop.add.closeness(u0, sop, 1, 1);
  l0:=0;while(l0<50){l0+=1; 
- geom.shapeop.add.closeness(u0, sop, l0, 1);
+  geom.shapeop.add.closeness(u0, sop, l0, 1);
  };
 
  geom.shapeop.init(u0, sop, 0,1,1,1); 

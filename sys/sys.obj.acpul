@@ -16,7 +16,6 @@ obj.dump
  obj_dump(_0, _1, _2);
 
 # object common ]
-
 # map [
 
 map.new
@@ -39,7 +38,6 @@ it.map.erase
  obj_it_cmd(_0, 101, _1,_2, _3,0,0,0);
 
 # map ]
-
 # object iterator common [
 
 it.begin 
@@ -71,7 +69,6 @@ it.dump
  obj_it_dump(_0, _1,_2, 0);
 
 # object iterator common ]
-
 # buffer [
 
 buffer.new
@@ -90,14 +87,15 @@ buffer.dma
 buffer.str
  # u0, id,i
  obj_str(_0, _1,_2);
-# buffer ]
 
+# buffer ]
 # str [
+
 str.dma
  # u0, dma, id
  it.dma(_0, _1, _2, 0);
-# str ]
 
+# str ]
 # dma [
 
 dma.size
@@ -133,7 +131,6 @@ dma.off
  dma_off(_0, _1);
 
 # dma ]
-
 # dma.ex [
 
 cpu.mode.formula 0;
@@ -163,7 +160,6 @@ dma.sprintf
  dma_sprintf(_0, _1, _2, _3);
 
 # dma.ex ]
-
 # tree [
 
 tree.new

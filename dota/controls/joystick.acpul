@@ -84,7 +84,7 @@ direction.vector.set
 
 # controls ]
 
-radius 80;
+radius 50;
 minimal.move.delta 20;
 
 point.start.x r3;
@@ -109,7 +109,7 @@ point.now.update
  
  a:=if(a==0,if(b==0,0.01,a),a); # prevent nan
 
-radius 50;
+radius 100;
  c:=sqrt(a^2+b^2);
  aa:=asin(a/c);
  bb:=acos(b/c);

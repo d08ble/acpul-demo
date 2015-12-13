@@ -44,7 +44,7 @@ _ @sys.box2d;
 box2d.reset(r0);
 
 # CREATE WORLD [
-gravity.x 0-0.1;
+gravity.x 0-10;
 gravity.y 0; #DOTA reality 0 m/s
 
 if (r0) {

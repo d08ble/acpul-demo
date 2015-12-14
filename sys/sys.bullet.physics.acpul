@@ -43,7 +43,7 @@ bullet.physics
   convex.conservative.distance.threshold 0;
  };
  world.set.dynamics.info {
-  # info :: default.dynamics.info
+  # world, info :: default.dynamics.info
   
  };
 

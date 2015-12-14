@@ -25,7 +25,12 @@ bullet.physics
   io(u0, a+4, _0.broadphase.aabb.max.x, _0.broadphase.aabb.max.y, _0.broadphase.aabb.max.z, _0.max.proxies); 
  };
  default.dynamics.info {
-
+  dispatch {
+   discrete 1;
+   continuous 2;
+  };
+  time.step 0;
+  dispatch.func dispatch.discrete;
  };
  world.set.dynamics.info
 };

@@ -30,20 +30,13 @@ bullet.physics
    continuous 2;
   };
   time.step 0;
+  step.count 0;
   dispatch.func def.dispatch.discrete;
+  
   
  };
  world.set.dynamics.info
 };
-
-#    :air_density((btScalar)1.2),
-#    water_density(0),
-#    water_offset(0),
-#    m_maxDisplacement(1000.f),//avoid soft body from 'exploding' so use some upper threshold of maximum motion that a node can travel per frame
-#    water_normal(0,0,0),
-#    m_broadphase(0),
-#    m_dispatcher(0),
-#    m_gravity(0,-10,0
 
 #      :m_timeStep(btScalar(0.)),
 #    m_stepCount(0),
@@ -57,3 +50,12 @@ bullet.physics
 #    m_allowedCcdPenetration(btScalar(0.04)),
 #    m_useConvexConservativeDistanceUtil(false),
 #    m_convexConservativeDistanceThreshold(0.0f)
+
+#    :air_density((btScalar)1.2),
+#    water_density(0),
+#    water_offset(0),
+#    m_maxDisplacement(1000.f),//avoid soft body from 'exploding' so use some upper threshold of maximum motion that a node can travel per frame
+#    water_normal(0,0,0),
+#    m_broadphase(0),
+#    m_dispatcher(0),
+#    m_gravity(0,-10,0

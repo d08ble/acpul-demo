@@ -39,7 +39,7 @@ bullet.physics
   enable.spu 1;
   use.epa 1;
   allowed.ccd.penetration 0.04;
-  use  
+  use.convex.conservative.distance.util 0;  
  };
  world.set.dynamics.info
 };

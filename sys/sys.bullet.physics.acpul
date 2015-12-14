@@ -31,7 +31,7 @@ bullet.physics
   };
   time.step 0;
   dispatch.func def.dispatch.discrete;
-
+  
  };
  world.set.dynamics.info
 };

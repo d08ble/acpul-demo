@@ -19,10 +19,10 @@ bullet.physics
  create.world.soft {
   # info :: default.soft.body.world.info
   io(u0, a+0, _0.air.density, _0.water.density, _0.water.offset, _0.max.displacement); 
-  io(u0, a+0, _0.water.normal.x, _0.water.normal.y, _0.water.normal.z, 0); 
-  io(u0, a+0, _0.gravity.x, _0.gravity.y, _0.gravity.z, 0); 
-  io(u0, a+0, _0.broadphase.aabb.min.x, _0.broadphase.aabb.min.y, _0.broadphase.aabb.min.z, 0); 
-  io(u0, a+0, _0.broadphase.aabb.max.x, _0.broadphase.aabb.max.y, _0.broadphase.aabb.max.z, _0.max.proxies); 
+  io(u0, a+1, _0.water.normal.x, _0.water.normal.y, _0.water.normal.z, 0); 
+  io(u0, a+2, _0.gravity.x, _0.gravity.y, _0.gravity.z, 0); 
+  io(u0, a+3, _0.broadphase.aabb.min.x, _0.broadphase.aabb.min.y, _0.broadphase.aabb.min.z, 0); 
+  io(u0, a+4, _0.broadphase.aabb.max.x, _0.broadphase.aabb.max.y, _0.broadphase.aabb.max.z, _0.max.proxies); 
  };
 
 };

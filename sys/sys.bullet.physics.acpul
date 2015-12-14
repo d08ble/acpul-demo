@@ -12,8 +12,8 @@ bullet.physics
   gravity {x 0; y 0-10; z 0;};
  };
  create.world.info.soft {
- # 
-  io(u0, a+0, _0,_1,_2,_3); 
+  # info :: default.soft.body.world.info
+  io(u0, a+0, _0.,_1,_2,_3); 
  };
 
 };

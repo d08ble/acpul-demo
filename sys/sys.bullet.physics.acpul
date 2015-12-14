@@ -2,11 +2,13 @@
 
 bullet.physics
 {
+ a 500470;
  default.soft.body.world.info {
-
+  
  };
- create.world.info.soft
-  info
-  ;
+ create.world.info.soft {
+ # 
+  io(u0, a+0, _0,_1,_2,_3); 
+ };
 
 };

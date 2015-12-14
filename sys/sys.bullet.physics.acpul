@@ -33,8 +33,12 @@ bullet.physics
   step.count 0;
   dispatch.func def.dispatch.discrete;
   time.of.impact 1;
-  
-  
+  use.continuous 1;
+  debug.draw 0;
+  enable.sat.convex 0;
+  enable.spu 1;
+  use.epa 1;
+    
  };
  world.set.dynamics.info
 };

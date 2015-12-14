@@ -2,6 +2,11 @@
 
 bullet.physics
 {
- create.world.info.soft;
+ default.soft.body.world.info {
+
+ };
+ create.world.info.soft
+  info
+  ;
 
 };

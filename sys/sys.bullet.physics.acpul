@@ -48,7 +48,6 @@ bullet.physics
   io(u0, a+0, _0.use.continuous, _0.debug.draw, _0.enable.sat.convex, _0.enable.spu); 
   io(u0, a+0, _0.use.epa, _0.allowed.ccd.penetration, 
      _0.use.convex.conservative.distance.util, _0.convex.conservative.distance.threshold); 
-
  };
 
 };

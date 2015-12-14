@@ -22,6 +22,7 @@ bullet.physics
   io(u0, a+0, _0.water.normal.x, _0.water.normal.y, _0.water.normal.z, 0); 
   io(u0, a+0, _0.gravity.x, _0.gravity.y, _0.gravity.z, 0); 
   io(u0, a+0, _0.broadphase.aabb.min.x, _0.broadphase.aabb.min.y, _0.broadphase.aabb.min.z, 0); 
+  io(u0, a+0, _0.broadphase.aabb.max.x, _0.broadphase.aabb.max.y, _0.broadphase.aabb.max.z, 0); 
  };
 
 };

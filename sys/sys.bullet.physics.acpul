@@ -11,7 +11,7 @@ bullet.physics
   water.normal {x 0; y 0; z 0;};
   gravity {x 0; y 0-10; z 0;};
  };
- create.world.info.soft {
+ create.world.soft {
   # info :: default.soft.body.world.info
   io(u0, a+0, _0.air.density, _0.water.density, _0.water.offset, _0.max.displacement); 
  };

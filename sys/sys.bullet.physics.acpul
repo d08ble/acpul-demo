@@ -38,7 +38,8 @@ bullet.physics
   enable.sat.convex 0;
   enable.spu 1;
   use.epa 1;
-    
+  allowed.ccd.penetration 0.04;
+  use  
  };
  world.set.dynamics.info
 };

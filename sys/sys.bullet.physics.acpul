@@ -42,7 +42,11 @@ bullet.physics
   use.convex.conservative.distance.util 0;
   convex.conservative.distance.threshold 0;
  };
- world.set.dynamics.info
+ world.set.dynamics.info {
+  # info :: default.dynamics.info
+  
+ };
+
 };
 
 #      :m_timeStep(btScalar(0.)),

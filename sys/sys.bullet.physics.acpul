@@ -9,6 +9,7 @@ bullet.physics
   water.offset 0;
   water.normal {x:0;y:0z:0};
   max.displacement 0;
+  gravity {x:0;y:0z:0};
  };
  create.world.info.soft {
  # 

@@ -19,6 +19,8 @@ bullet.physics
  create.world.soft {
   # info :: default.soft.body.world.info
   io(u0, a+0, _0.air.density, _0.water.density, _0.water.offset, _0.max.displacement); 
+  io(u0, a+0, _0.water.normal.x, _0.water.normal.y, _0.water.normal.z, 0); 
+  io(u0, a+0, _0.gravity.x, _0.gravity.y, _0.gravity.z, 0); 
  };
 
 };

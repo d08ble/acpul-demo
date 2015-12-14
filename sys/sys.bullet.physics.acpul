@@ -7,7 +7,7 @@ bullet.physics
   air_density 1.2;
   water_density 0;
   water_offset 0;
-  
+  max.displacement 0;
  };
  create.world.info.soft {
  # 

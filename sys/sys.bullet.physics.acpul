@@ -44,7 +44,11 @@ bullet.physics
  };
  world.set.dynamics.info {
   # world, info :: default.dynamics.info
-  
+  io(u0, a+0, _0.time.step, _0.step.count, _0.dispatch.func, _0.time.of.impact); 
+  io(u0, a+0, _0.use.continuous, _0.debug.draw, _0.enable.sat.convex, _0.enable.spu); 
+  io(u0, a+0, _0.use.epa, _0.allowed.ccd.penetration, 
+     _0.use.convex.conservative.distance.util, _0.convex.conservative.distance.threshold); 
+
  };
 
 };

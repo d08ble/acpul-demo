@@ -4,7 +4,10 @@ bullet.physics
 {
  a 500470;
  default.soft.body.world.info {
-  air_density :
+  air_density 1.2;
+  water_density 0;
+  water_offset 0;
+  
  };
  create.world.info.soft {
  # 

@@ -10,6 +10,11 @@ bullet.physics
   max.displacement 0;
   water.normal {x 0; y 0; z 0;};
   gravity {x 0; y 0-10; z 0;};
+  broadphase {
+   aabbMin {x 0-1000; y 0-1000; z 0-1000;};
+   aabbMax {x 1000; y 1000; z 1000;};
+   max.proxies 32766;
+  };
  };
  create.world.soft {
   # info :: default.soft.body.world.info

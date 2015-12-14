@@ -37,4 +37,17 @@ bullet.physics
 #    water_normal(0,0,0),
 #    m_broadphase(0),
 #    m_dispatcher(0),
-#    m_gravity(0,-10,0)
+#    m_gravity(0,-10,0
+
+#      :m_timeStep(btScalar(0.)),
+#    m_stepCount(0),
+#    m_dispatchFunc(DISPATCH_DISCRETE),
+#    m_timeOfImpact(btScalar(1.)),
+#    m_useContinuous(true),
+#    m_debugDraw(0),
+#    m_enableSatConvex(false),
+#    m_enableSPU(true),
+#    m_useEpa(true),
+#    m_allowedCcdPenetration(btScalar(0.04)),
+#    m_useConvexConservativeDistanceUtil(false),
+#    m_convexConservativeDistanceThreshold(0.0f)

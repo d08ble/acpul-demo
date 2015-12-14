@@ -24,7 +24,10 @@ bullet.physics
   io(u0, a+3, _0.broadphase.aabb.min.x, _0.broadphase.aabb.min.y, _0.broadphase.aabb.min.z, 0); 
   io(u0, a+4, _0.broadphase.aabb.max.x, _0.broadphase.aabb.max.y, _0.broadphase.aabb.max.z, _0.max.proxies); 
  };
- 
+ default.dynamics.info {
+
+ };
+ world.set.dynamics.info
 };
 
 #    :air_density((btScalar)1.2),

@@ -251,7 +251,8 @@ bp bullet.physics;
 world.info {
  _ bp.default.soft.body.world.info;
 };
-watch(world.info.air.density);
+l0:=world.info.air.density;
+watch(l0);
 
 k:=1;
 

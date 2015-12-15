@@ -245,6 +245,9 @@ r0:=k==0;
 
 draw(r0, 5101);
 
+_ @1010;
+
+
 k:=1;
 
 ### 5101 test.bullet.physics.draw

@@ -248,3 +248,5 @@ draw(r0, 5101);
 k:=1;
 
 ### 5101 test.bullet.physics.draw
+
+rect(u0, 6, 0,0,200,250);

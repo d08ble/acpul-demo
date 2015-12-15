@@ -257,7 +257,7 @@ world.info.air.density 2;
 world.info1 bp.default.soft.body.world.info;
 
 
-l0:=world.info.air.density;
+l0:=world.info1.air.density;
 watch(l0);
 
 k:=1;

@@ -22,7 +22,7 @@ bullet.physics
   io(u0, a+1, _0.water.normal.x, _0.water.normal.y, _0.water.normal.z, 0); 
   io(u0, a+2, _0.gravity.x, _0.gravity.y, _0.gravity.z, 0); 
   io(u0, a+3, _0.broadphase.aabb.min.x, _0.broadphase.aabb.min.y, _0.broadphase.aabb.min.z, 0); 
-  io(u0, a+10, _0.broadphase.aabb.max.x, _0.broadphase.aabb.max.y, _0.broadphase.aabb.max.z, _0.max.proxies); 
+  io(u0, a+10, _0.broadphase.aabb.max.x, _0.broadphase.aabb.max.y, _0.broadphase.aabb.max.z, _0.broadphase.max.proxies); 
  };
  default.dispatch.info {
   def.dispatch {

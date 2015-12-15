@@ -2,7 +2,7 @@
 
 bullet.physics
 {
- a 500470;
+ a 501100;
  default.soft.body.world.info {
   air.density 1.2;
   water.density 0;

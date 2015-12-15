@@ -253,7 +253,7 @@ world.info {
  air.density 2;
 };
 l0:=world.info.air.density;
-watch(l0);
+#watch(l0);
 
 k:=1;
 

@@ -236,3 +236,6 @@ k:=1;
 
 ### 5091 test.shapeop.draw
 
+### 5100 test.bullet.physics
+
+### 5101 test.bullet.physics.draw

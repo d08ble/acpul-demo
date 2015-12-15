@@ -246,9 +246,8 @@ r0:=k==0;
 draw(r0, 5101);
 
 _ @1010;
-bp @sys.bullet.physics;
-
-
+_ @sys.bullet.physics;
+bp bullet.physics;
 
 k:=1;
 

@@ -248,7 +248,9 @@ draw(r0, 5101);
 _ @1010;
 _ @sys.bullet.physics;
 bp bullet.physics;
-world.info bp.default.soft.body.world.info;
+world.info {
+ _ bp.default.soft.body.world.info;
+};
 
 k:=1;
 

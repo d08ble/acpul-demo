@@ -49,6 +49,12 @@ bullet.physics
   io(u0, a+11, _0.use.epa, _0.allowed.ccd.penetration, 
      _0.use.convex.conservative.distance.util, _0.convex.conservative.distance.threshold); 
  };
+ default.soft.body.path {
+ 
+ };
+ create.soft.body.path {
+  # world, 
+ };
 
 };
 

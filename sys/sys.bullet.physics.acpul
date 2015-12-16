@@ -71,7 +71,7 @@ bullet.physics
   io(u0, a+2, _1.corner.c10.x, _1.corner.c10.y, _1.corner.c10.z, 0);
   io(u0, a+3, _1.corner.c11.x, _1.corner.c11.y, _1.corner.c11.z, 0);
   io(u0, a+4, _1.res.x, _1.res.y, _1.fixeds, _1.gendiags);
-  io(u0, a+12, _0, 0,0,0);
+  io(u0, a+12, _0, 1,0,0);
  };
 
 };

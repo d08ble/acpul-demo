@@ -53,7 +53,8 @@ bullet.physics
  
  };
  create.soft.body.path {
-  # world, 
+  # world, path :: default.soft.body.path
+  
  };
 
 };

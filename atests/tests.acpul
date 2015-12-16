@@ -252,13 +252,13 @@ bp bullet.physics;
 world.info bp.default.soft.body.world.info;
 #world.info.air.density 2;
 
-soft.body.path.info default.soft.body.path.info;
+sbpath.info default.soft.body.path.info;
 
 if (r0) {
  bw r7;
  bw:=bp.create.soft.world(world.info);
  body r6;
- body:=create.soft.body.path(soft.body.path.info);
+ body:=create.soft.body.path(sbpath.info);
 };
 
 #l0:=world.info.air.density;

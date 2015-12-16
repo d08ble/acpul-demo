@@ -252,7 +252,7 @@ bp bullet.physics;
 world.info bp.default.soft.body.world.info;
 #world.info.air.density 2;
 
-sbpath.info default.soft.body.path.info;
+sbpath.info bp.default.soft.body.path.info;
 
 if (r0) {
  bw r7;

@@ -65,7 +65,7 @@ bullet.physics
   gendiags 1;
  };
  create.soft.body.path {
-  # world, path :: default.soft.body.path
+  # world, path :: default.soft.body.path -> sbody
   io(u0, a+0, _1.corner.c00.x, _1.corner.c00.y, _1.corner.c00.z, 0);
   io(u0, a+1, _1.corner.c01.x, _1.corner.c01.y, _1.corner.c01.z, 0);
   io(u0, a+2, _1.corner.c10.x, _1.corner.c10.y, _1.corner.c10.z, 0);

@@ -44,13 +44,20 @@ bullet.physics
  };
  world.set.dispatch.info {
   # world, info :: default.dispatch.info
-  io(u0, a+0, _0.time.step, _0.step.count, _0.dispatch.func, _0.time.of.impact); 
-  io(u0, a+1, _0.use.continuous, _0.debug.draw, _0.enable.sat.convex, _0.enable.spu); 
-  io(u0, a+11, _0.use.epa, _0.allowed.ccd.penetration, 
-     _0.use.convex.conservative.distance.util, _0.convex.conservative.distance.threshold); 
+  io(u0, a+0, _1.time.step, _1.step.count, _1.dispatch.func, _1.time.of.impact); 
+  io(u0, a+1, _1.use.continuous, _1.debug.draw, _1.enable.sat.convex, _1.enable.spu); 
+  io(u0, a+2, _1.use.epa, _1.allowed.ccd.penetration, 
+     _1.use.convex.conservative.distance.util, _1.convex.conservative.distance.threshold); 
+  io(u0, a+11, _0, 0,0,0);
  };
  default.soft.body.path {
- 
+  corner {
+   c00 {x 0-5; y 0; z 0-5*3;};
+   c01 {x 0+5; y 0; z 0-5*3;};
+   c10 {x 0-5; y 0; z 0+5;};
+   c11 {x 0+5; y 0; z 0+5;};
+  };
+  
  };
  create.soft.body.path {
   # world, path :: default.soft.body.path

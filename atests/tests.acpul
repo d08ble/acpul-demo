@@ -258,7 +258,7 @@ if (r0) {
  bw r7;
  bw:=bp.create.soft.world(world.info);
  body r6;
- body:=create.soft.body.path(sbpath.info);
+ body:=bp.create.soft.body.path(sbpath.info);
 };
 
 #l0:=world.info.air.density;

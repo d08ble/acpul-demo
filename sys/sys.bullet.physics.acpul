@@ -52,12 +52,15 @@ bullet.physics
  };
  default.soft.body.path {
   corner {
-   c00 {x 0-5; y 0; z 0-5*3;};
-   c01 {x 0+5; y 0; z 0-5*3;};
+   c00 {x 0-5; y 0; z 0-5*2;};
+   c01 {x 0+5; y 0; z 0-5*2;};
    c10 {x 0-5; y 0; z 0+5;};
    c11 {x 0+5; y 0; z 0+5;};
   };
-  
+  res {
+   x 10;
+   y 10*2;
+  };
  };
  create.soft.body.path {
   # world, path :: default.soft.body.path

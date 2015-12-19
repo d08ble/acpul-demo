@@ -75,7 +75,7 @@ bullet.physics
   io(u0, a+12, _0, test,0,0);
  };
 
- debug.draw {
+ draw.world {
   # o
   io(u0, a+45, _0, 0,0,0);
  };

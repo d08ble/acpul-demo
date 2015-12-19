@@ -75,7 +75,7 @@ bullet.physics
   io(u0, a+12, _0, test,0,0);
  };
 
- draw.world.dma {
+ draw.world {
   # world, mode, dma(p0,p1)
   io(u0, a+45, _0, _1, _2,_3);
  };

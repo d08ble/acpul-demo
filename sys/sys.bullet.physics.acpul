@@ -76,7 +76,7 @@ bullet.physics
  };
 
  draw.world {
-  # world, opts
+  # world, mode
   io(u0, a+45, _0, _1, 0,0);
  };
 };

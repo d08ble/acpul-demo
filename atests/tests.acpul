@@ -270,3 +270,16 @@ k:=1;
 ### 5101 test.bullet.physics.draw
 
 rect(u0, 6, 0,0,200,250);
+
+_ @1010;
+_ @sys.obj;
+_ @sys.bullet.physics;
+bp bullet.physics;
+
+bw r7;
+
+r9:=buffer.new(u0, 1000, 100000);
+buffer.dma(u0, 0, r9,0);
+
+dma.off(0);
+

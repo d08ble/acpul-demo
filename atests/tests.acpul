@@ -265,6 +265,8 @@ if (r0) {
 #l0:=world.info.air.density;
 #watch(l0);
 
+#bp.step(bw, dt);
+
 k:=1;
 
 ### 5101 test.bullet.physics.draw
@@ -280,6 +282,8 @@ bw r7;
 
 r9:=buffer.new(u0, 1000, 100000);
 buffer.dma(u0, 0, r9,0);
+
+bp.draw.world(bw, 0, 0,-1);
 
 dma.off(0);
 

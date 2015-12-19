@@ -76,7 +76,8 @@ bullet.physics
  };
 
  debug.draw {
-  io(u0, a+45, 0,0,0,0);
+  # dma0
+  io(u0, a+45, _0, 0,0,0);
  };
 };
 

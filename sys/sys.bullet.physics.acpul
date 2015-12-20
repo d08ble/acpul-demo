@@ -61,7 +61,7 @@ bullet.physics
    x 10;
    y 10*3;
   };
-  fixeds 0;
+  fixeds 1+2;
   gendiags 1;
  };
  create.soft.body.path {

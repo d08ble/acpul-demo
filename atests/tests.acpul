@@ -253,15 +253,15 @@ world.info bp.default.soft.body.world.info;
 #world.info.air.density 2;
 
 sbpath.info bp.default.soft.body.path.info;
+ sbpath.info {_;
+  res.y 2*3;
+ };
 
 if (r0) {
  bw r7;
  bw:=bp.create.soft.world(world.info);
  body r6;
 # sbpath.info.res.x 2;
- sbpath.info {_;
-  res.y 2*3;
- };
 # body:=bp.create.soft.body.path(bw, sbpath.info);
 # l0:=sbpath.info.fixeds;
  aa {

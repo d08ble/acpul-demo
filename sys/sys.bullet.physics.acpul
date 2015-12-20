@@ -81,8 +81,9 @@ bullet.physics
  };
 
  draw.mode {
-   wireframe 1;
-   aabb 2;
+  wireframe 1;
+  aabb 2;
+  contact.points 8;
  };
  draw.world {
   # world, mode, dma(p0,p1)

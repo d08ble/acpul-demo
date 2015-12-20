@@ -254,8 +254,9 @@ world.info bp.default.soft.body.world.info;
 
 sbpath.info {
  _ bp.default.soft.body.path.info;
- res.y 2*3;
+# res.y 2*3;
 };
+sbpath.info.res.x 2;
 
 if (r0) {
  bw r7;

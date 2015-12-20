@@ -262,13 +262,13 @@ if (r0) {
  bw r7;
  bw:=bp.create.soft.world(world.info);
  body r6;
-# body:=bp.create.soft.body.path(bw, sbpath.info);
+ body:=bp.create.soft.body.path(bw, sbpath.info);
 # l0:=sbpath.info.fixeds;
- aa {
-  l0:=_0.res.x;
-  watch(l0);
- };
- aa(sbpath.info);
+# aa {
+#  l0:=_0.res.x;
+#  watch(l0);
+# };
+# aa(sbpath.info);
 };
 
 #l0:=world.info.air.density;

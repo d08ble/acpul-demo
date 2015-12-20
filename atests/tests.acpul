@@ -326,7 +326,7 @@ obj.delete(u0, l0);
 dma.off(u0, 0);
 dma.off(u0, 1);
 
-### 5104:S test.grid.elements.vsh
+### 5104:S test.bullet.physics.vsh
 #define a_position a0
 attribute vec4 a_position;
 varying vec4 v0;
@@ -338,7 +338,7 @@ void main(void)
   v0 = pos;
 }
 
-### 5105:S test.grid.elements.fsh
+### 5105:S test.bullet.physics.fsh
 
 varying vec4 v0;
 void main(void)

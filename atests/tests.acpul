@@ -274,7 +274,7 @@ if (r0) {
 
 #l0:=world.info.air.density;
 #watch(l0);
-bp.step(bw, dt*10);
+bp.step(bw, dt*100);
 
 k:=1;
 

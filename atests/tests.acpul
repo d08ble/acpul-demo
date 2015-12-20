@@ -299,6 +299,38 @@ bp.draw.world(bw, 0, 0,1);
 #obj.dump(u0, 0, r8);
 #obj.dump(u0, 0, r9);
 
+vsh 5104;
+fsh 5105;
+node.ex.shader.use(u0, vsh, fsh);
+#obj.dump(u0, 0, r7);
+# r0, i, dma,o,esize,stride,count, type,normalized
+node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,count.points, 0,0);
+# r0, dma, count -> ibuf::object
+l0:=node.ex.shader.indices.dma(u0, 1, count.indices);
+# r0, type, ibuf
+node.ex.gl.draw.elements(u0, 3, l0);
+obj.delete(u0, l0);
+
+
 dma.off(u0, 0);
 dma.off(u0, 1);
+
+### 5104:S test.grid.elements.vsh
+
+#define a_position a0
+attribute vec4 a_position;
+varying vec4 v0;
+void main(void)
+{
+  gl_Position = CC_MVPMatrix * a_position;
+  v0 = gl_Position;
+}
+
+### 5015:S test.grid.elements.fsh
+
+varying vec4 v0;
+void main(void)
+{
+  gl_FragColor = vec4(0.+v0.x,0.5+v0.y,0.5,0.5);
+}
 

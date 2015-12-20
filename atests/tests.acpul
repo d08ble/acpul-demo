@@ -265,7 +265,7 @@ sbpath.info {
  };
 };
 l0:=sbpath.info.corner.c00;
-watch(l0);
+#watch(l0);
 bw r7;
 body r6;
 points r8;

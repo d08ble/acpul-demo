@@ -304,8 +304,8 @@ vsh 5104;
 fsh 5105;
 node.ex.shader.use(u0, vsh, fsh);
 #obj.dump(u0, 0, r7);
-count.points obj.count(u0, r9);
-count.indices obj.count(u0, r8);
+count.points dma.size(u0, 0);
+count.indices dma.size(u0, 1);
 # r0, i, dma,o,esize,stride,count, type,normalized
 node.ex.shader.attribute.dma(u0, 0, 0,0,2,0,count.points, 0,0);
 # r0, dma, count -> ibuf::object

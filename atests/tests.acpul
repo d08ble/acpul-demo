@@ -297,9 +297,6 @@ buffer.dma(u0, 1, r9,0);
 
 bp.draw.world(bw, 0, 0,1);
 
-#obj.dump(u0, 0, r8);
-#obj.dump(u0, 0, r9);
-
 vsh 5104;
 fsh 5105;
 node.ex.shader.use(u0, vsh, fsh);
@@ -313,6 +310,9 @@ l0:=node.ex.shader.indices.dma(u0, 1, count.indices);
 # r0, type, ibuf
 node.ex.gl.draw.elements(u0, 3, l0);
 obj.delete(u0, l0);
+
+#obj.dump(u0, 0, r8);
+obj.dump(u0, 0, r9);
 
 dma.off(u0, 0);
 dma.off(u0, 1);

@@ -252,7 +252,9 @@ bp bullet.physics;
 world.info bp.default.soft.body.world.info;
 #world.info.air.density 2;
 
-sbpath.info bp.default.soft.body.path.info;
+sbpath.info {
+ _ bp.default.soft.body.path.info;
+};
 # sbpath.info {_;
 #  res.y 2*3;
 # };

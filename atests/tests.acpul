@@ -291,8 +291,8 @@ bw r7;
 points r8;
 indices r9;
 
-buffer.dma(u0, 0, r8,0);
-buffer.dma(u0, 1, r9,0);
+buffer.dma(u0, 0, points,0);
+buffer.dma(u0, 1, indices,0);
 
 bp.draw.world(bw, 0, 0,1);
 

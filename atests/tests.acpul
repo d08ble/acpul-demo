@@ -280,10 +280,12 @@ bp bullet.physics;
 
 bw r7;
 
+r8:=buffer.new(u0, 1000, 100000);
+buffer.dma(u0, 0, r8,0);
 r9:=buffer.new(u0, 1000, 100000);
-buffer.dma(u0, 0, r9,0);
+buffer.dma(u0, 1, r9,0);
 
-bp.draw.world(bw, 0, 0,-1);
+bp.draw.world(bw, 0, 0,1);
 
 obj.dump(u0, 0, r9);
 

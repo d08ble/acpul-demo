@@ -83,9 +83,12 @@ bullet.physics
  draw.mode {
   wireframe 1;
   aabb 2;
+  # not tested [
   contact.points 8;
   no.deactivation 16;
-  
+  enable.sat.comparasion 256;
+  disable.bullet.lcp
+  # not tested ]
  };
  draw.world {
   # world, mode, dma(p0,p1)

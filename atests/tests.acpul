@@ -301,7 +301,8 @@ indices r9;
 buffer.dma(u0, 0, points,0);
 buffer.dma(u0, 1, indices,0);
 
-bp.draw.world(bw, bp.draw.mode.wireframe, 0,1);
+dmode bp.draw.mode.wireframe+2;
+bp.draw.world(bw, dmode, 0,1);
 
 vsh 5104;
 fsh 5105;

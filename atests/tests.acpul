@@ -243,7 +243,7 @@ k:=1;
 
 r0:=k==0;
 
-draw(r0, 5101);
+#draw(r0, 5101);
 
 _ @1010;
 _ @sys.bullet.physics;

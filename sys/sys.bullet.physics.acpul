@@ -90,6 +90,9 @@ bullet.physics
   disable.bullet.lcp 512;
   enable.ccd 1024;
   constraints 2048;
+  constraints.limits 4096;
+  fast.wireframe 8192;
+  normals 16384;
   # not tested ]
  };
  draw.world {

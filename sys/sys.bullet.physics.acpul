@@ -81,6 +81,10 @@ bullet.physics
  };
 
  draw.world {
+  m {
+   wireframe 1;
+   
+  };
   # world, mode, dma(p0,p1)
   io(u0, a+45, _0, _1, _2,_3);
  };

@@ -84,6 +84,8 @@ bullet.physics
   wireframe 1;
   aabb 2;
   contact.points 8;
+  no.deactivation 16;
+  
  };
  draw.world {
   # world, mode, dma(p0,p1)

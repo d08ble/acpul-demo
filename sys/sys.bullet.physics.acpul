@@ -82,7 +82,7 @@ bullet.physics
 
  draw.mode {
    wireframe 1;
-   
+   aabb 2;
  };
  draw.world {
   # world, mode, dma(p0,p1)

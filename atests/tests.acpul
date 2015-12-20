@@ -325,7 +325,8 @@ attribute vec4 a_position;
 varying vec4 v0;
 void main(void)
 {
-  gl_Position = CC_MVPMatrix * a_position;
+  vec2 pos = a_position;
+  gl_Position = CC_MVPMatrix * pos;
   v0 = gl_Position;
 }
 

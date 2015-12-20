@@ -312,7 +312,7 @@ node.ex.gl.draw.elements(u0, 3, l0);
 obj.delete(u0, l0);
 
 #obj.dump(u0, 0, r8);
-obj.dump(u0, 0, r9);
+#obj.dump(u0, 0, r9);
 
 dma.off(u0, 0);
 dma.off(u0, 1);

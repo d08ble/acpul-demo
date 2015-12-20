@@ -265,6 +265,7 @@ sbpath.info {
 # };
  corner.c00 {x 0-15; y 0; z 0-5*3;};
 };
+
 l0:=sbpath.info.corner.c00.x;
 #watch(l0);
 bw r7;

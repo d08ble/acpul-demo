@@ -290,4 +290,5 @@ bp.draw.world(bw, 0, 0,1);
 obj.dump(u0, 0, r9);
 
 dma.off(0);
+dma.off(1);
 

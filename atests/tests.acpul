@@ -256,6 +256,10 @@ sbpath.info bp.default.soft.body.path.info;
  sbpath.info {_;
   res.y 2*3;
  };
+sbpath.info.q 1;
+# {_;
+#  res.y 2*3;
+# };
 
 if (r0) {
  bw r7;

@@ -284,6 +284,7 @@ rect(u0, 6, 0,0,200,250);
 
 _ @1010;
 _ @sys.obj;
+_ @sys.node;
 _ @sys.bullet.physics;
 bp bullet.physics;
 

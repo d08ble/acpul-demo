@@ -259,9 +259,9 @@ sbpath.info {
  res.y 50;#2*3;
  # 50 fps iPad Air 100*50=5000
  # 25 fps iPad Air 200*50=10000
- corner.c00 {x 0-55; y 0-50; z 0-5*3;};
+# corner.c00 {x 0-55; y 0-50; z 0-5*3;};
 # corner.c01 {x 0+5; y 0; z 0-5*3;};
- corner.c10 {x 0-55; y 0-150; z 0+5;};
+# corner.c10 {x 0-55; y 0-150; z 0+5;};
 # corner.c11 {x 0+15; y 0; z 0+5;};
 };
 

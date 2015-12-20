@@ -62,7 +62,7 @@ bullet.physics
    y 10*3;
   };
   fixeds 1+2;
-  gendiags 0;
+  gendiags 1;
  };
  create.soft.body.path {
   # world, path :: default.soft.body.path.info -> body

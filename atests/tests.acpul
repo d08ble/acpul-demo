@@ -256,7 +256,7 @@ world.info bp.default.soft.body.world.info;
 sbpath.info {
  _ bp.default.soft.body.path.info;
  res.x 10;
- res.y 100; #2*3;
+ res.y 30; #2*3;
  corner.c00 {x 0-55; y 0; z 0-5*3;};
 # corner.c01 {x 0+5; y 0; z 0-5*3;};
  corner.c10 {x 0-55; y 0; z 0+5;};

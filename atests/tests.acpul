@@ -255,7 +255,7 @@ world.info bp.default.soft.body.world.info;
 
 sbpath.info {
  _ bp.default.soft.body.path.info;
- res.x 100;
+ res.x 10;
  res.y 50;#2*3;
  # 50 fps iPad Air 100*50=5000
  # 25 fps iPad Air 200*50=10000

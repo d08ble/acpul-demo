@@ -256,9 +256,9 @@ sbpath.info {
  _ bp.default.soft.body.path.info;
 # res.y 2*3;
 };
-sbpath.info {
- _ bp.default.soft.body.path.info;
- };
+sbpath.info 
+ bp.default.soft.body.path.info;
+ 
 sbpath.info.res.y 2;
 
 if (r0) {

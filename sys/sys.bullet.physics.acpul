@@ -87,7 +87,9 @@ bullet.physics
   contact.points 8;
   no.deactivation 16;
   enable.sat.comparasion 256;
-  disable.bullet.lcp
+  disable.bullet.lcp 512;
+  enable.ccd 1024;
+  constraints 2048;
   # not tested ]
  };
  draw.world {

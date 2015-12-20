@@ -260,9 +260,12 @@ if (r0) {
  body r6;
  sbpath.info.res.x 2;
  sbpath.info.res.y 2*3;
- body:=bp.create.soft.body.path(bw, sbpath.info);
+# body:=bp.create.soft.body.path(bw, sbpath.info);
 # l0:=sbpath.info.fixeds;
+ l0:=sbpath.info.res.x;
+ watch(l0);
 };
+
 
 #l0:=world.info.air.density;
 #watch(l0);

@@ -257,9 +257,9 @@ sbpath.info {
  _ bp.default.soft.body.path.info;
  res.x 200;
  res.y 2*3;
- corner.c00 {x 0-15; y 0; z 0-5*3;};
-# corner.c01 {x 0+15; y 0; z 0-5*3;};
- corner.c10 {x 0-15; y 0; z 0+5;};
+ corner.c00 {x 0-25; y 0; z 0-5*3;};
+# corner.c01 {x 0+5; y 0; z 0-5*3;};
+ corner.c10 {x 0-25; y 0; z 0+5;};
 # corner.c11 {x 0+15; y 0; z 0+5;};
 };
 

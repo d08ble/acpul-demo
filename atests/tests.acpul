@@ -257,11 +257,12 @@ sbpath.info {
  res.x 2;
  res.y 2*3;
 };
+
+bw r7;
+body r6;
  
 if (r0) {
- bw r7;
  bw:=bp.create.soft.world(world.info);
- body r6;
  body:=bp.create.soft.body.path(bw, sbpath.info);
 # l0:=sbpath.info.fixeds;
 # aa {

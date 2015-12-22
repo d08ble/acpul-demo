@@ -114,10 +114,10 @@ new.Edit1
 #!node.new.this.ex(r0, 11000, 0);
 
 DOTA.MAIN 3202;
-node.new.this.ex(r0, DOTA.MAIN, 0);
+#node.new.this.ex(r0, DOTA.MAIN, 0);
 
 SHADER.TEST 37000;
-node.new.this.ex(r0, SHADER.TEST, 0);
+#node.new.this.ex(r0, SHADER.TEST, 0);
 
 FILTERS 7000;
 #node.new.this.ex(r0, FILTERS, 0);
@@ -129,7 +129,7 @@ TEXTUREMAN.TEST 7200;
 #node.new.this.ex(r0, TEXTUREMAN.TEST, 0);
 
 IMGNODE 7040;
-#node.new.this.ex(r0, IMGNODE, 0);
+node.new.this.ex(r0, IMGNODE, 0);
 
 Арестович 788;
 #node.new.this.ex(r0, Арестович, 0);

@@ -344,7 +344,7 @@ void main(void)
 varying vec4 v0;
 void main(void)
 {
-  gl_FragColor = vec4(0.9,0.9,0.,0.1);
+  gl_FragColor = vec4(0.9,0.4,0.,0.1);
 //  gl_FragColor = vec4(0.9, 0.+v0.x,0.8+v0.y,0.9);
 //  gl_FragColor = vec4(0, 0.-v0.z/50.,0.8,0.9);
 }

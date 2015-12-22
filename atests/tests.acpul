@@ -318,7 +318,7 @@ node.ex.shader.attribute.dma(u0, 0, 0,0,3,0,count.points, 0,0);
 l0:=node.ex.shader.indices.dma(u0, 1, count.indices);
 # r0, type, ibuf
 psize1(u0, 1);
-node.ex.gl.draw.elements(u0, 6, l0);
+node.ex.gl.draw.elements(u0, 5, l0);
 obj.delete(u0, l0);
 
 #obj.dump(u0, 0, r8);

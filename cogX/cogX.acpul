@@ -100,7 +100,7 @@ precision mediump float;
 //uniform float time;
 
 //uniform vec2 resolution;
-uniform vec2 p0;
+uniform vec4 p0;
 #define resolution p0
 
 #define PI 90

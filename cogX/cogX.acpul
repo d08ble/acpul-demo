@@ -36,7 +36,7 @@ rect(u0, 6, 0,0,500,500);
 _ @1010;
 _ @sys.node;
 _ @sys.display;
-node.ex.shader.use(u0, 6004, 37033);
+node.ex.shader.use(u0, 6004, 6005);
 node.ex.gl.rect(u0, -40,77, 200,400);
 
 
@@ -50,7 +50,7 @@ varying mediump vec2 v_texCoord;
 void main()
 {
   gl_Position = CC_MVPMatrix * a_position;
-#    v_texCoord = a_texCoord;
+    v_texCoord = a_texCoord;
 }
 
 ### 6005 cogX.eq.icon.fsh

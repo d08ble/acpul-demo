@@ -40,6 +40,8 @@ node.ex.shader.use(u0, 6004, 6006);
 w 32;
 h 32;
 node.ex.shader.uniform.f2(u0, 0, w*2,h);
+px 0; py 0;
+node.ex.shader.uniform.f2(u0, 0, px,py);
 node.ex.gl.rect(u0, 0,0, w,h);
 
 
@@ -102,14 +104,16 @@ precision mediump float;
 //uniform vec2 resolution;
 uniform vec2 p0;
 #define resolution p0
+uniform vec2 p1;
+#define offset p1
 
 #define PI 90
 
 void main( void ) {
 
     
-    vec2 p = ( gl_FragCoord.xy / resolution.xy ) - 0.0; //nosaka vilnu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
-    vec2 p2 = ( gl_FragCoord.xy / resolution.xy ) - 0.0; //nosaka šautrinu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
+    vec2 p = ( gl_FragCoord.xy / resolution.xy ) - offset.x; //nosaka vilnu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
+    vec2 p2 = ( gl_FragCoord.xy / resolution.xy ) - offset.y; //nosaka šautrinu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
     
     // pirmais 0.5 - atrašanas vieta: <0.5 - zem viduslinijas, >0.5 - virs
     // otrais 0.5 - vilnu augstums

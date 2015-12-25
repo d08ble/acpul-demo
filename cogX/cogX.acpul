@@ -39,7 +39,7 @@ _ @sys.display;
 node.ex.shader.use(u0, 6004, 6006);
 w 200;
 h 200;
-node.ex.shader.uniform.f2(u0, 0, w/2,h);
+node.ex.shader.uniform.f2(u0, 0, w*2,h);
 node.ex.gl.rect(u0, 0,0, w,h);
 
 

@@ -133,5 +133,4 @@ void main( void ) {
     
     vec4 o = (otrais + pirmais);
     gl_FragColor = o;
-
 }

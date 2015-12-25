@@ -2,7 +2,7 @@
 
 draw(u0, k==0);
 k:=1;
-watch(r0);
+watch(k==0);
 
 ### 6001 cogX.main.draw
 

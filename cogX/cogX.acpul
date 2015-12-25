@@ -123,8 +123,8 @@ void main( void ) {
     // 2.  - nosaka fona gaišumu, jo lielaks skaitlis, jo gaišas fons
     // p.y vai p2.y - nosaka no kuras puses spides gaisma, ja y, tad no kreisa stura, ja x, tad no apakšas
     // 0. - nosaka krasu
-    dy += 2./ (15. * length(p - vec2(p.y, 2.)));
-    dy2 += 2./ (15. * length(p2 - vec2(p2.y, 2.)));
+    dy += 2./ (15. * length(p - vec2(p.y, 0.)));
+    dy2 += 2./ (15. * length(p2 - vec2(p2.y, 0.)));
     
     // p.y vai p2.y + 0.3- nosaka no kuras puses veidosies krasu maina un kada toni ta bus
     // parejie parametri nosaka krasas spožumu, toni un virzienu

@@ -1,6 +1,6 @@
 ### 6000 cogX.main
 
-draw(u0, k==0);
+draw(k==0, 6001);
 k:=1;
 
 ### 6001 cogX.main.draw

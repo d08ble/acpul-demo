@@ -14,6 +14,12 @@ a:=0;
 
 ### 6002 cogX.eq.icon
 
+r0:=k==0;
+
+draw(r0, 6003);
+
+k:=1;
+
 ### 6003 cogX.eq.icon.draw
 
 ### 6004 cogX.eq.icon.vsh

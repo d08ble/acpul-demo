@@ -37,7 +37,7 @@ _ @1010;
 _ @sys.node;
 _ @sys.display;
 node.ex.shader.use(u0, 6004, 6006);
-node.ex.gl.rect(u0, 0,0, 50,50);
+node.ex.gl.rect(u0, 0,0, 500,500);
 
 
 ### 6004:S cogX.eq.icon.vsh

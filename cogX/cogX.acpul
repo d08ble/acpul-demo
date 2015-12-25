@@ -1,7 +1,8 @@
 ### 6000 cogX.main
 
-draw(k==0, 6001);
-k:=1;
+r0:=k==0;
+
+draw(r0, 6001);
 
 s:=0.5;
 #x:=-90;
@@ -11,6 +12,8 @@ _ @sys.node;
 
 eq.icon 6002;
 node.new.this.ex(r0, eq.icon, 0);
+
+k:=1;
 
 ### 6001 cogX.main.draw
 

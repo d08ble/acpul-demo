@@ -40,7 +40,7 @@ node.ex.shader.use(u0, 6004, 6006);
 w 16;
 h 13;
 node.ex.shader.uniform.f2(u0, 0, w*5,h);
-px 200;
+px 100;
 py 0;
 node.ex.shader.uniform.f2(u0, 1, px-5,py);
 node.ex.gl.rect(u0, px,py, w,h);

@@ -42,7 +42,7 @@ h 32;
 node.ex.shader.uniform.f2(u0, 0, w*5,h);
 px 100;
 py 0;
-node.ex.shader.uniform.f2(u0, 1, px-10,py);
+node.ex.shader.uniform.f2(u0, 1, px-20,py);
 node.ex.gl.rect(u0, px,py, w,h);
 
 

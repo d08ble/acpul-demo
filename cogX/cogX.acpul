@@ -36,7 +36,7 @@ rect(u0, 6, 0,0,500,500);
 _ @1010;
 _ @sys.node;
 _ @sys.display;
-node.ex.shader.use(u0, 6004, 6005);
+node.ex.shader.use(u0, 6004, 6006);
 node.ex.gl.rect(u0, 0,0, 500,500);
 
 

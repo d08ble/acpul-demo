@@ -146,6 +146,6 @@ void main( void ) {
     vec4 otrais = vec4( (p2.y + 0.3) * dy2 , 0.3 * dy2, dy2, 1.1 );
     
     vec4 o = (otrais + pirmais);
-    o = vec4(o.g*2.,o.b,o.r*2.,1.);
+    o = vec4(o.g*2.,o.b,o.r*4.,1.);
     gl_FragColor = o;
 }

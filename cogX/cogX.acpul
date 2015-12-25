@@ -9,6 +9,8 @@ s:=0.5;
 _ @1010;
 _ @sys.node;
 
+eq.icon 6002;
+node.new.this.ex(r0, eq.icon, 0);
 
 ### 6001 cogX.main.draw
 

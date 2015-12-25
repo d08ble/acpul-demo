@@ -39,7 +39,7 @@ _ @sys.display;
 node.ex.shader.use(u0, 6004, 6006);
 w 500;
 h 500;
-node.ex.shader.uniform.f3(u0, 0, w,h,5);
+node.ex.shader.uniform.f2(u0, 0, w,h);
 node.ex.gl.rect(u0, 0,0, w,h);
 
 
@@ -100,7 +100,7 @@ precision mediump float;
 //uniform float time;
 
 //uniform vec2 resolution;
-uniform vec3 p0;
+uniform vec2 p0;
 #define resolution p0
 
 #define PI 90

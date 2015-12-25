@@ -33,6 +33,24 @@ k:=1;
 color(u0, 1,0,1,1);
 rect(u0, 6, 0,0,500,500);
 
-### 6004 cogX.eq.icon.vsh
+_ @1010;
+_ @sys.node;
+_ @sys.display;
+node.ex.shader.use(u0, 37100, 37033);
+node.ex.gl.rect(u0, -40,77, 200,400);
+
+
+### 6004:S cogX.eq.icon.vsh
+
+attribute vec4 a_position;
+#attribute vec2 a_texCoord;
+
+#varying mediump vec2 v_texCoord;
+
+void main()
+{
+  gl_Position = CC_MVPMatrix * a_position;
+#    v_texCoord = a_texCoord;
+}
 
 ### 6004 cogX.eq.icon.fsh

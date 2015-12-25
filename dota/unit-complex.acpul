@@ -40,7 +40,6 @@ if (r7==bt.tower) {
  b(4,3,1,1);
 };
 
-
 if (r7==bt.homebase) {
  b(-1,0,7,3);
  b(0,3,1,1);
@@ -53,10 +52,9 @@ if (r7==bt.shop) {
 
  _ @1010;
  _ @sys.node;
- _ @sys.display;     
+ _ @sys.display;
  node.ex.shader.use(u0, 37100, 37033);
  node.ex.gl.rect(u0, -40,77, 200,400);
-
 };
 
 if (r7==bt.homehealth) {

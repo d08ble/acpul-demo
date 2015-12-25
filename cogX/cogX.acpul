@@ -133,7 +133,7 @@ void main( void ) {
     
     // 1.0 -  nosaka vilna spilgtumu - ja mazaks skaitlis, tad vilnis sastav no punktiniem, ja lielaks, tad saplust linijas
     // 1000. - ari nosaka vilna spilgtumu, ja lielaks skaitlis, tad sastav no punktiem, ja mazaks, tad linijas
-    float dy = 1.0/ ( 100. * abs(p.y - sx));
+    float dy = 1.0/ ( 1000. * abs(p.y - sx));
     float dy2 = 1.0/ ( 100. * abs(p2.y - sx2));
     
     // 2.  - nosaka fona gaišumu, jo lielaks skaitlis, jo gaišas fons

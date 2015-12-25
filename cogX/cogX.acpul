@@ -46,7 +46,7 @@ node.ex.shader.uniform.f2(u0, 1, px-5,py);
 node.ex.gl.rect(u0, px,py, w,h);
 
 
-color(u0, 1,1,1,0.5);
+color(u0, 0.5,0.7,0.2,0.5);
 rect(u0, 2, px,py,w,h);
 
 ### 6004:S cogX.eq.icon.vsh

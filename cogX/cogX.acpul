@@ -66,8 +66,8 @@ void main()
 
 ### 6005:S cogX.eq.icon.fsh
 
-#define time 1.
-//#define time CC_Time[3]
+//#define time 1.
+#define time CC_Time[3]
 #define resolution vec2(200.0)
 #define mouse vec2(0.5)
 

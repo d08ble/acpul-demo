@@ -62,7 +62,7 @@ _ @sys.display;
 #node.ex.shader.use(u0, 37100, 37040);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 
-#node.ex.shader.use(u0, 37100, 37046);
+node.ex.shader.use(u0, 37100, 37046);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 
 b display.gl.blend;                         #   b is display.gl.blend
@@ -74,7 +74,7 @@ b display.gl.blend;                         #   b is display.gl.blend
 #b.func(u0, 6, 2);
 
 
-node.ex.shader.use(u0, 37100, 37048);
+#node.ex.shader.use(u0, 37100, 37048);
 #node.ex.gl.rect(u0, 0,0, 200,200);
 node.ex.gl.rect(u0, 200,0, 200,200);
 

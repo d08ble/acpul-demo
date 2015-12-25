@@ -114,8 +114,8 @@ void main( void ) {
 
     vec2 pp = gl_FragCoord.xy - offset;
 
-    vec2 p = ( gl_FragCoord.xy / resolution.xy ) - 0.; //nosaka vilnu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
-    vec2 p2 = ( gl_FragCoord.xy / resolution.xy ) - 0.; //nosaka šautrinu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
+    vec2 p = ( pp / resolution.xy ) - 0.; //nosaka vilnu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
+    vec2 p2 = ( pp / resolution.xy ) - 0.; //nosaka šautrinu atrašanas vietu, xy - horizontali vilni, yx - vertikali, 0.0 - centra/viduslinija
     
     // pirmais 0.5 - atrašanas vieta: <0.5 - zem viduslinijas, >0.5 - virs
     // otrais 0.5 - vilnu augstums

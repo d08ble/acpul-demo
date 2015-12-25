@@ -126,8 +126,8 @@ void main( void ) {
     // sin( 2.0.. - nosaka vilnu amplitudu - jo lielaks skaitlis, jo mazaka amplituda
     // p.x vai p2.x - nosaka amplitudas virzienu
     // 1. * pow(time, 0.9)*5. - nosaka vilnu atrumu
-    float sx = 0.5 + 0.5 * sin( 100.0 * p.x - 1. * pow(time, 0.5)*2.) * sin( 2.0 * p.x - 1. * pow(time, 0.9)*5.);
-    float sx2 = 0.5 + 0.5 * sin( 100.0 * p2.y - 1. * pow(time, 0.5)*2.) * sin( 2.0 * p2.x - 1. * pow(time, 0.9)*5.);
+    float sx = 0.5 + 0.5 * sin( 1000.0 * p.x - 1. * pow(time, 0.5)*2.) * sin( 2.0 * p.x - 1. * pow(time, 0.9)*5.);
+    float sx2 = 0.5 + 0.5 * sin( 1000.0 * p2.y - 1. * pow(time, 0.5)*2.) * sin( 2.0 * p2.x - 1. * pow(time, 0.9)*5.);
     
     // 1.0 -  nosaka vilna spilgtumu - ja mazaks skaitlis, tad vilnis sastav no punktiniem, ja lielaks, tad saplust linijas
     // 1000. - ari nosaka vilna spilgtumu, ja lielaks skaitlis, tad sastav no punktiem, ja mazaks, tad linijas

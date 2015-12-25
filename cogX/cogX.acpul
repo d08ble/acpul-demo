@@ -131,5 +131,5 @@ void main( void ) {
     vec4 pirmais = vec4( (p.y + 0.3) * dy , 0.9 * dy, dy, 1.1 );
     vec4 otrais = vec4( (p2.y + 0.3) * dy2 , 0.3 * dy2, dy2, 1.1 );
     
-    gl_FragColor = (otrais + 0.5*pirmais);
+    gl_FragColor = (otrais + 2.*pirmais);
 }

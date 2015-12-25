@@ -81,3 +81,5 @@ void main( void ) {
 
     gl_FragColor = mix(vsaule, vstari, abs(sin(time)));
 }
+
+### 6006:S cogX.eq.icon1.fsh

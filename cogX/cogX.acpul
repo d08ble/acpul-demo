@@ -53,7 +53,7 @@ void main()
     v_texCoord = a_texCoord;
 }
 
-### 6005 cogX.eq.icon.fsh
+### 6005:S cogX.eq.icon.fsh
 
 #define time CC_Time[3]
 #define resolution vec2(200.0)

@@ -139,6 +139,17 @@ node {_;
  ex.shader.uniform.f1
   # u0, n, f
   io(_0, 7102, _1, _2, 0,0);
+ ex.shader.uniform.f2
+  # u0, n, f0,f1
+  io(_0, 7103, _1, _2,_3, 0);
+ ex.shader.uniform.f3
+  # u0, n, f0-f2
+  io(_0, 7104, _1, _2,_3,_4);
+ ex.shader.uniform.f4 {
+  # u0, n, f0-f3
+  io(_0, 7105, _5, 0,0,0);
+  io(_0, 7106, _1, _2,_3,_4);
+ };
  ex.gl.fbo
   # u0, texture
   io(_0, 7200, _1, 0,0,0);

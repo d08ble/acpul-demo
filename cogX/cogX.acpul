@@ -30,7 +30,7 @@ k:=1;
 
 ### 6003 cogX.eq.icon.draw
 
-color(u0, 0,0.5,0.7,0.5);
+color(u0, 1,0.5,0,0.5);
 rect(u0, 6, 0,0,50,50);
 
 ### 6004 cogX.eq.icon.vsh

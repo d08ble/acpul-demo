@@ -36,7 +36,7 @@ rect(u0, 6, 0,0,500,500);
 _ @1010;
 _ @sys.node;
 _ @sys.display;
-node.ex.shader.use(u0, 6004, 6005);
+node.ex.shader.use(u0, 6004, 6006);
 #w 15;
 #h 13;
 w 500;
@@ -46,7 +46,6 @@ px 100;
 py 2;
 node.ex.shader.uniform.f2(u0, 1, px-5,py);
 node.ex.gl.rect(u0, px,py, w,h);
-
 
 color(u0, 0.5,0.5,0.5,1);
 rect(u0, 2, px,py,w,h);

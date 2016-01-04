@@ -30,3 +30,6 @@ k:=1;
 
 ### 8101 editor.main.draw
 
+### 8200 panel.main
+
+### 8201 panel.main.draw

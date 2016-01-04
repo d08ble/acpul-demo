@@ -58,6 +58,8 @@ rect(u0, 2, 0,0,w,h);
 
 r0:=k==0;
 
+_ @8010;
+
 draw(r0, 8201);
 
 w:=100;
@@ -71,5 +73,4 @@ psize(u0, 3);
 color(u0, 0,0,1,1);
 rect(u0, 2, 0,0,w,h);
 
-### 8300 button.basic
 ### 8300 button.basic

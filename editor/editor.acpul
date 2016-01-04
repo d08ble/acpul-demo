@@ -2,6 +2,15 @@
 # 8000-8099 reserved
 # 8010 base.node
 
+r0:=k==0;
+
+_ @1010;
+_ @sys.node;
+
+
+
+k:=0;
+
 ### 8010 base.node
 
 _ @1010;

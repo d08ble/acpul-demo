@@ -10,5 +10,13 @@ _ @sys.touch;
 
 ### 8100 editor.main
 
-### 8100 editor.main.draw
+_ @8010;
+
+r0:=k==0;
+
+draw(r0, 8101);
+
+k:=1;
+
+### 8101 editor.main.draw
 

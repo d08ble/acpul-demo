@@ -55,11 +55,15 @@ rect(u0, 2, 0,0,w,h);
 
 r0:=k==0;
 
-#draw(r0, 8201);
+draw(r0, 8201);
 
-w:=500;
+w:=100;
 h:=300;
 
 k:=1;
 
 ### 8201 panel.main.draw
+
+psize(u0, 3);
+color(u0, 0,0,1,1);
+rect(u0, 2, 0,0,w,h);

@@ -44,7 +44,7 @@ k:=1;
 ### 8101 editor.main.draw
 
 color(u0, 0,1,0,1);
-rect(u0, 4, 0,0,w,h);
+rect(u0, 4, 0,0,w,100);
 
 ### 8200 panel.main
 

@@ -135,7 +135,10 @@ TESTS 5000;
 
 COGX 6000;
 node.new.this.ex(r0, COGX, 0);
-#
+
+EDITOR 8000;
+node.new.this.ex(r0, EDITOR, 0);
+
 # touch debug should be lastest node [
 TOUCH.DEBUG 1006;
 #node.new.this.ex(r0, TOUCH.DEBUG, 0);

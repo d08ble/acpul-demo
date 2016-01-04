@@ -4,3 +4,6 @@
 
 ### 8010 base.node
 
+_ @1010;
+_ @sys.node;
+_ @sys.touch;

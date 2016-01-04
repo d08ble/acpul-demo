@@ -74,7 +74,7 @@ if (r0) {
 buffer.put {
  # dma, buffer,i, v
  buffer.dma(u0, _0, _1,_2);
- buffer.set(u0, _0,dma.size(u0, _0), _3);
+ dma.set(u0, _0,dma.size(u0, _0), _3);
 };
 buffer.put2 {
  # dma, buffer,i, v0,v1

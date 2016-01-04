@@ -43,6 +43,7 @@ k:=1;
 
 ### 8101 editor.main.draw
 
+psize(u0, 3);
 color(u0, 0,1,0,1);
 rect(u0, 3, 0,0,w,h);
 

@@ -48,7 +48,7 @@ k:=1;
 
 psize(u0, 3);
 color(u0, 0,1,0,1);
-rect(u0, 3, 0,0,w,h);
+rect(u0, 2, 0,0,w,h);
 
 ### 8200 panel.main
 

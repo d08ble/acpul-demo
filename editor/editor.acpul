@@ -1,5 +1,6 @@
 ### 8000 editor/root
-# 8000-8100 reserved
+# 8000-8099 reserved
 # 8010 base.node
 
 ### 8010 base.node
+

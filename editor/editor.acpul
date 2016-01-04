@@ -91,6 +91,7 @@ buffer.put4 {
 button.basic 8300;
 button.add {
  node.new.this.ex(r0, _0, 0);
+ l0:=1;
  buffer.put(0, buttons,0, l0);
 };
 

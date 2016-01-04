@@ -26,10 +26,17 @@ r0:=k==0;
 
 draw(r0, 8101);
 
+panel.main 8200;
+node.new.this.ex(r0, panel.main, 0);
+
 k:=1;
 
 ### 8101 editor.main.draw
 
 ### 8200 panel.main
+
+r0:=k==0;
+
+k:=0;
 
 ### 8201 panel.main.draw

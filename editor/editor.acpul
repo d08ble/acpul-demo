@@ -74,3 +74,19 @@ color(u0, 0,0,1,1);
 rect(u0, 2, 0,0,w,h);
 
 ### 8300 button.basic
+
+r0:=k==0;
+
+_ @8010;
+
+draw(r0, 8301);
+
+w:=100;
+h:=100;
+
+k:=1;
+
+### 8301 button.basic.draw
+
+color(u0, 0,1,1,1);
+rect(u0, 6, 10,10,w-20,h-20);

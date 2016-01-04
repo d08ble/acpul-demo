@@ -31,6 +31,7 @@ rect(u0, 2, 0,0,100,100);
 _ @1010;
 _ @sys.node;
 _ @sys.touch;
+_ @sys.obj;
 
 ### 8100 editor.main
 
@@ -62,8 +63,13 @@ _ @8010;
 
 draw(r0, 8201);
 
+if (r0) {
+ buttons:=
+};
+
 button.basic 8300;
 node.new.this.ex(r0, button.basic, 0);
+
 
 w:=100;
 h:=300;

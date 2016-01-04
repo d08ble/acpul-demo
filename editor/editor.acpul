@@ -69,6 +69,17 @@ if (r0) {
 
 };
 
+buffer.put {
+ # dma, buffer,i, v
+ buffer.dma(u0, _0, _1,_2);
+ buffer.set(u0, _0,dma.size(_0), _3);
+};
+buffer.put2 {
+ # dma, buffer,i, v0,v1
+ buffer.put();
+};
+buffer.put4
+
 button.basic 8300;
 button.add {
  node.new.this.ex(r0, _0, 0);

@@ -33,6 +33,25 @@ _ @sys.node;
 _ @sys.touch;
 _ @sys.obj;
 
+# buffer.put [
+
+buffer.put {
+ # dma, buffer,i, v
+ buffer.dma(u0, _0, _1,_2);
+ dma.set(u0, _0,dma.size(u0, _0), _3);
+};
+buffer.put2 {
+ # dma, buffer,i, v0,v1
+ buffer.put(_0, _1,_2, _3);
+ buffer.put(_0, _1,_2, _4);
+};
+buffer.put4 {
+ # dma, buffer,i, v0,v1,v2,v3
+ buffer.put2(_0, _1,_2, _3,_4);
+ buffer.put2(_0, _1,_2, _5,_6);
+};
+
+# buffer.put ]
 
 ### 8100 editor.main
 
@@ -72,21 +91,6 @@ if (r0) {
  obj.dump(u0, 0, 0);
 };
 
-buffer.put {
- # dma, buffer,i, v
- buffer.dma(u0, _0, _1,_2);
- dma.set(u0, _0,dma.size(u0, _0), _3);
-};
-buffer.put2 {
- # dma, buffer,i, v0,v1
- buffer.put(_0, _1,_2, _3);
- buffer.put(_0, _1,_2, _4);
-};
-buffer.put4 {
- # dma, buffer,i, v0,v1,v2,v3
- buffer.put2(_0, _1,_2, _3,_4);
- buffer.put2(_0, _1,_2, _5,_6);
-};
 
 button.basic 8300;
 button.add {

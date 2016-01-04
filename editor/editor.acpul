@@ -72,7 +72,7 @@ button.basic 8300;
 button.add {
  node.new.this.ex(r0, _0, 0);
 };
-#button.add(button.basic);
+button.add(button.basic);
 
 w:=100;
 h:=300;

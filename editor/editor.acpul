@@ -1,6 +1,9 @@
 ### 8000 editor/root
 # 8000-8099 reserved
 # 8010      base.node
+# 8100      editor
+# 8200      panel
+# 8300      button
 
 r0:=k==0;
 
@@ -67,3 +70,6 @@ k:=1;
 psize(u0, 3);
 color(u0, 0,0,1,1);
 rect(u0, 2, 0,0,w,h);
+
+### 8300 button.basic
+### 8300 button.basic

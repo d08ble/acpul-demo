@@ -7,7 +7,8 @@ r0:=k==0;
 _ @1010;
 _ @sys.node;
 
-
+editor.main 8100;
+node.new.this.ex(r0, editor.main, 0);
 
 k:=0;
 

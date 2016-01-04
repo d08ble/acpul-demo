@@ -33,7 +33,7 @@ _ @sys.node;
 _ @sys.touch;
 _ @sys.obj;
 
-# buffer.put [
+# buffer.put extra [
 
 buffer.put {
  # dma, buffer,i, v
@@ -51,7 +51,7 @@ buffer.put4 {
  buffer.put2(_0, _1,_2, _5,_6);
 };
 
-# buffer.put ]
+# buffer.put extra ]
 
 ### 8100 editor.main
 

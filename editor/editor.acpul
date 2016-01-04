@@ -64,7 +64,8 @@ _ @8010;
 draw(r0, 8201);
 
 if (r0) {
- buttons:=
+ buttons:=buffer.new(r0, 100, 10000);
+ 
 };
 
 button.basic 8300;

@@ -14,7 +14,7 @@ _ @sys.node;
 
 editor.main 8100;
 #node.new.this.ex(r0, editor.main, 0);
-
+watch(r0);
 x:=10;
 y:=200;
 

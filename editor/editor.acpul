@@ -64,9 +64,11 @@ _ @8010;
 
 draw(r0, 8201);
 
+buttons r7;
+
 if (r0) {
  buttons:=buffer.new(r0, 100, 10000);
-
+ button.add(button.basic);
 };
 
 buffer.put {
@@ -88,8 +90,8 @@ buffer.put4 {
 button.basic 8300;
 button.add {
  node.new.this.ex(r0, _0, 0);
+ buffer.put(0, buttons,0, l0);
 };
-button.add(button.basic);
 
 w:=100;
 h:=300;

@@ -99,7 +99,7 @@ if (r0) {
 button.basic 8300;
 button.add {
  l0:=node.new.this.ex(r0, _0, 0);
- node.prop.y.s(u0, l0, buffer.dma.size(0, buttons,0) * 100);
+ node.prop.y.s(u0, l0, buffer.dma.size(0, buttons,0) * 100+100);
  buffer.put(0, buttons,0, l0);
  watch(buffer.dma.size(0, buttons,0));
 

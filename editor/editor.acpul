@@ -130,7 +130,7 @@ touch.ev {
  began {
   # x,y 
 #  pressed:=1;
-  s:=2;
+  s:=1.2;
  };
  moved {
   # x,y

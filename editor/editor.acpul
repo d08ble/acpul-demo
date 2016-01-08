@@ -91,9 +91,9 @@ buttons r7;
 
 if (r0) {
  buttons:=buffer.new(r0, 100, 10000);
-# button.add(button.basic);
-# button.add(button.basic);
-# button.add(button.basic);
+ button.add(button.basic);
+ button.add(button.basic);
+ button.add(button.basic);
  obj.dump(u0, 0, 0);
 };
 

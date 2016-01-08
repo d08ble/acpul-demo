@@ -53,7 +53,7 @@ buffer.put4 {
 buffer.dma.size {
  # dma, buffer.i
  buffer.dma(u0, _0, _1,_2);
- dma.size(u0, _0);
+ dma_size(u0, _0);
 };
 # buffer.put extra ]
 
@@ -102,7 +102,7 @@ button.add {
  node.prop.y.s(u0, n0, buffer.dma.size(0, buttons,0) * 100);
  buffer.put(0, buttons,0, l0);
  watch(buffer.dma.size(0, buttons,0));
- 
+
 };
 
 w:=100;

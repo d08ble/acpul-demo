@@ -143,12 +143,12 @@ touch.ev {
 
 touch.id r1;
 touch.b0 r2;
+
 touch.rect(touch.id, 0,0,100,100);
+
 _ @sys.touch.ev.process.once;
 touch.b0:=1;
 while(touch.b0) {touch.ev.process.once(touch.id, touch.b0);};
-
-
 
 # touch ]
 

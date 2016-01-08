@@ -152,7 +152,7 @@ while(touch.b0) {touch.ev.process.once(touch.id, touch.b0);};
 
 # touch ]
 
-node.anchor.point.s(r0, 0,0);
+node.anchor.point.s(r0, 0.5,0);
   # u0, x,y
 #  io(_0, 3, _1,_2, 0,0);
 

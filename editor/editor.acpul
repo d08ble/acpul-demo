@@ -50,11 +50,11 @@ buffer.put4 {
  buffer.put2(_0, _1,_2, _3,_4);
  buffer.put2(_0, _1,_2, _5,_6);
 };
-buffer.dma.size {
+#buffer.dma.size {
  # dma, buffer.i
- buffer.dma(u0, _0, _1,_2);
- dma.size(u0, _0);
-};
+# buffer.dma(u0, _0, _1,_2);
+# dma.size(u0, _0);
+#};
 # buffer.put extra ]
 
 ### 8100 editor.main

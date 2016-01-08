@@ -130,7 +130,7 @@ draw(r0, 8301);
 touch.ev {
  began {
   # x,y 
-  pressed:=1;
+#  pressed:=1;
   s:=2;
  };
  moved {
@@ -138,7 +138,7 @@ touch.ev {
  };
  ended {
   # x,y
-  pressed:=0;
+#  pressed:=0;
  };
 };
 

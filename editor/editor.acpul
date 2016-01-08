@@ -126,21 +126,23 @@ _ @8010;
 draw(r0, 8301);
 
 # touch [
+
 touch.ev {
  began {
-  # x, y 
+  # x,y 
   pressed:=1;
  };
  moved {
-  # x, y
+  # x,y
  };
  ended {
-  # x, y
+  # x,y
   pressed:=0;
  };
 };
 
 # touch ]
+
 w:=100;
 h:=100;
 

@@ -214,7 +214,7 @@ touch.ev {
 touch.id r1;
 touch.b0 r2;
 
-touch.rect(touch.id, 0-50,0-50,100,100);
+touch.rect(touch.id, 0,0,300,300);
 
 _ @sys.touch.ev.process.once;
 touch.b0:=1;

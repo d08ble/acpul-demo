@@ -198,7 +198,7 @@ draw(r0, 8351);
 
 touch.ev {
  began {
-  # x,y 
+  # x,y
  };
  moved {
   # x,y

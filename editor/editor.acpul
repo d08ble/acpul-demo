@@ -196,6 +196,20 @@ r0:=k==0;
 
 draw(r0, 8351);
 
+touch.ev {
+ began {
+  # x,y 
+ };
+ moved {
+  # x,y
+ };
+ ended {
+  # x,y
+  pressed:=0;
+#  s:=1;
+ };
+};
+
 k:=1;
 
 ### 8351 view.draw

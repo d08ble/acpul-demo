@@ -203,6 +203,7 @@ touch.ev {
  began {
   # x,y
   r3:=1;
+  new.line(_0,_1);
  };
  moved {
   # x,y
@@ -211,6 +212,9 @@ touch.ev {
   # x,y
  };
 };
+
+new.line
+ events.push(u0, 8000,8350, _0,_1, 0,0,0,0);
 
 touch.id r1;
 touch.b0 r2;

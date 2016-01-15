@@ -182,7 +182,7 @@ _ @8303;
 
 r0:=k==0;
 
-watch(zzz);
+if (r0, watch(zzz), 0);
 
 k:=1;
 

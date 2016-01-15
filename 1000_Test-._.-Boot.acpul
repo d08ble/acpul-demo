@@ -2,7 +2,6 @@
 
 # test needCompile [
 a1001 @1001;
-
 # test needCompile ]
 
 r0:=k==0;

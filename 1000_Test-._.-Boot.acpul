@@ -4,9 +4,41 @@
 a1001 @1001;
 # test needCompile ]
 
+_ @sys.node;
+_ @sys.touch;
+
+# NETWORKING [
+
+_ @sys.net;
+
+#net.host(192,168,7,225, 8077);
+net.host(192,168,1,102, 8077);
+net.editor.update(1);
+net.reset.after.update(1, 1000);
+
+# NETWORKING ]
+
 r0:=k==0;
 
 draw(r0, 1001);
+
+_ @1010;
+_ @sys.display;
+
+vw 768; vh 1024;
+
+l0:=display.orientation.get() - display.orientation.landscape;
+if (l0>0) {
+ w:=vh/2;
+ h:=vw/2;
+ s:=1;
+};
+if (l0<=0) {
+ w:=vw;
+ h:=vh;
+ s:=0.65;
+};
+
 
 # INIT [
 #
@@ -33,21 +65,6 @@ music.stop(r0);
 # INIT ]
 
 # BOOT [
-
-_ @1010;
-_ @sys.node;
-_ @sys.touch;
-
-# NETWORKING [
-
-_ @sys.net;
-
-#net.host(192,168,7,225, 8077);
-net.host(192,168,1,102, 8077);
-net.editor.update(1);
-net.reset.after.update(1, 1000);
-
-# NETWORKING ]
 
 touch.start();
 

@@ -198,6 +198,7 @@ draw(r0, 8351);
 
 _ @1010;
 _ @sys.touch;
+_ @sys.events;
 
 touch.ev {
  began {

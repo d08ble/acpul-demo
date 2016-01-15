@@ -197,7 +197,7 @@ r0:=k==0;
 draw(r0, 8351);
 
 _ @1010;
-_ sys.touch;
+_ @sys.touch;
 
 touch.ev {
  began {

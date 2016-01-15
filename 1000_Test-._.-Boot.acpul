@@ -39,7 +39,6 @@ if (l0<=0) {
  s:=0.65;
 };
 
-
 # INIT [
 #
 ide.setup

@@ -73,7 +73,7 @@ node.new.this.ex(r0, panel.main, 0);
 
 view 8350;
 l0:=node.new.this.ex(r0, view);
-node.prop.y.s(u0, l0, 100);
+node.prop.x.s(u0, l0, 100);
 
 w:=500;
 h:=300;

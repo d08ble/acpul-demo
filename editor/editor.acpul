@@ -224,6 +224,9 @@ line.move
 line.end
  events.push(u0, 8000,8350, 2, _0,_1,0,0,0);
 
+l0:=events.pop(u0, 8000,8350);
+if (l0, watch(l0), 0);
+
 # simple interactive line ]
 
 touch.id r1;

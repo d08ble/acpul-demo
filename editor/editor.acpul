@@ -71,6 +71,9 @@ draw(r0, 8101);
 panel.main 8200;
 node.new.this.ex(r0, panel.main, 0);
 
+view 8350;
+node.new.this.ex(r0, view);
+
 w:=500;
 h:=300;
 
@@ -186,10 +189,15 @@ zzz l0;
 zzz:=11;
 #-#
 
-### 8304 view
+### 8350 view
+
 r0:=k==0;
-draw(r0, 8305);
+
+draw(r0, 8351);
+
 k:=1;
-### 8305 view.draw
+
+### 8351 view.draw
+
 color(u0, 1,1,1,1);
 rect(u0, 6, 0,0,100,100);

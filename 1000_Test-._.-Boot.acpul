@@ -32,12 +32,12 @@ l0:=display.orientation.get() - display.orientation.landscape;
 if (l0>0) {
  w:=vh/2;
  h:=vw/2;
- s:=1;
+# s:=1;
 };
 if (l0<=0) {
  w:=vw;
  h:=vh;
- s:=0.65;
+# s:=0.65;
 };
 
 # INIT [

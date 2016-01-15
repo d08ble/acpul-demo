@@ -4,6 +4,7 @@
 a1001 @1001;
 # test needCompile ]
 
+_ @1010;
 _ @sys.node;
 _ @sys.touch;
 

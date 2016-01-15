@@ -16,7 +16,7 @@ editor.main 8100;
 node.new.this.ex(r0, editor.main, 0);
 
 e.test
-node.new.this.ex(r0, 8302);
+node.new.this.ex(r0, );
 
 x:=10;
 y:=200;

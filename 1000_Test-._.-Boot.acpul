@@ -8,7 +8,6 @@ r0:=k==0;
 
 draw(r0, 1001);
 
-
 # INIT [
 #
 ide.setup

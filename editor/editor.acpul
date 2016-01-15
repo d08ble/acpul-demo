@@ -215,8 +215,16 @@ touch.ev {
  };
 };
 
+# simple interactive line [
+
 new.line
- events.push(u0, 8000,8350, _0,_1, 0,0,0,0);
+ events.push(u0, 8000,8350, 0, _0,_1,0,0,0);
+new.line
+ events.push(u0, 8000,8350, 1, _0,_1,0,0,0);
+new.line
+ events.push(u0, 8000,8350, 2, _0,_1,0,0,0);
+
+# simple interactive line ]
 
 touch.id r1;
 touch.b0 r2;

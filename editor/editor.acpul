@@ -211,7 +211,7 @@ touch.ev {
  };
  ended {
   # x,y
-  line.ned(_0,_1);
+  line.end(_0,_1);
  };
 };
 
@@ -219,9 +219,9 @@ touch.ev {
 
 new.line
  events.push(u0, 8000,8350, 0, _0,_1,0,0,0);
-new.line
+line.move
  events.push(u0, 8000,8350, 1, _0,_1,0,0,0);
-new.line
+line.end
  events.push(u0, 8000,8350, 2, _0,_1,0,0,0);
 
 # simple interactive line ]

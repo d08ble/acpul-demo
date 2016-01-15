@@ -205,8 +205,6 @@ touch.ev {
  };
  ended {
   # x,y
-  pressed:=0;
-#  s:=1;
  };
 };
 

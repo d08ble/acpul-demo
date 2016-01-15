@@ -219,11 +219,11 @@ touch.ev {
 # simple interactive line [
 
 new.line
- events.push(u0, 8000,8350, 0, _0,_1,0,0,0);
-line.move
  events.push(u0, 8000,8350, 1, _0,_1,0,0,0);
-line.end
+line.move
  events.push(u0, 8000,8350, 2, _0,_1,0,0,0);
+line.end
+ events.push(u0, 8000,8350, 3, _0,_1,0,0,0);
 
 l0:=events.pop(u0, 8000,8350);
 if (l0, watch(l0), 0);

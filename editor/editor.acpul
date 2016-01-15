@@ -207,9 +207,11 @@ touch.ev {
  };
  moved {
   # x,y
+  line.move(_0,_1);
  };
  ended {
   # x,y
+  line.ned(_0,_1);
  };
 };
 

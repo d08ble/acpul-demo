@@ -32,6 +32,17 @@ _ @1010;
 _ @sys.node;
 _ @sys.touch;
 
+# NETWORKING [
+
+_ @sys.net;
+
+#net.host(192,168,7,225, 8077);
+net.host(192,168,1,102, 8077);
+net.editor.update(1);
+net.reset.after.update(1, 1000);
+
+# NETWORKING ]
+
 touch.start();
 
 _ @sys.events;
@@ -180,17 +191,6 @@ _ @sys.stack.base;
 _ @sys.heap;
 
 heap.start;
-
-# NETWORKING [
-
-_ @sys.net;
-
-#net.host(192,168,7,225, 8077);
-net.host(192,168,1,102, 8077);
-net.editor.update(1);
-net.reset.after.update(1, 1000);
-
-# NETWORKING ]
 
 #x:=500;
 #y:=500;

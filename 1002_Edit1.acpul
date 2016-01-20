@@ -144,7 +144,7 @@ if (l15 < 30*1)
 #stream.close(r0, sid);
 # H8-240814 test stream ]
 
-# H9-250714 [
+# H9-250714 test profile [
 _ @sys.cpu;
 
 #cpu.frame.dt(u0, 0.0);
@@ -153,4 +153,4 @@ _ @sys.cpu;
 #cpu.profile.begin(u0, 3);
 #cpu.profile.end(u0, 3);
 #watch(o0);
-# H9-250714 ]
+# H9-250714 test profile ]

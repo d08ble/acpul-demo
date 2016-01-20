@@ -123,7 +123,7 @@ v2a.add(100, 400);
 #v2a.add(100-11, 400+11);
 #v2a.add(100+11, 400-11);
 
-# H8-240814 [
+# H8-240814 test stream [
 # test stream
 _ @sys.stream;
 stream.reset(r0);
@@ -142,7 +142,7 @@ if (l15 < 30*1)
 };
 #watch(t);
 #stream.close(r0, sid);
-# H8-240814 ]
+# H8-240814 test stream ]
 
 # H9-250714 [
 _ @sys.cpu;

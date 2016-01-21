@@ -9,6 +9,11 @@ _ @sys.node;
 _ @sys.touch;
 _ @sys.net;
 
+_ @1010;
+_ @sys.node;
+
+node.new.this.ex(0, 0, 1);
+s:=0.7;
 
 # NETWORKING [
 

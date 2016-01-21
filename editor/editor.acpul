@@ -232,6 +232,7 @@ if (l0, watch(l0), 0);
 
 # create filter [
 
+_ @1010;
 _ @sys.node;
 
 create.filter {

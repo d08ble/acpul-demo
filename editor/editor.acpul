@@ -232,6 +232,8 @@ if (l0, watch(l0), 0);
 
 # create filter [
 
+_ @sys.node;
+
 create.filter {
  FILTERS 7000;
  node.new.this.ex(u0, FILTERS, 1);

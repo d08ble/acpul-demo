@@ -241,7 +241,7 @@ new.filter {
 };
 
 if (l0==1) {
- create.filter(o0, o1);
+ new.filter(o0, o1);
 };
 
 # create filter ]

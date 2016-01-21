@@ -192,6 +192,13 @@ zzz:=11;
 
 ### 8350 view
 
+_ @1010;
+_ @sys.node;
+
+node.new.this.ex(0, 0, 1);
+s:=0.7;
+
+
 r0:=k==0;
 
 draw(r0, 8351);
@@ -231,11 +238,6 @@ l0:=events.pop(u0, 8000,8350);
 if (l0, watch(l0), 0);
 
 # create filter [
-_ @1010;
-_ @sys.node;
-
-node.new.this.ex(0, 0, 1);
-s:=0.7;
 create.filter {
 
  FILTERS 7000;

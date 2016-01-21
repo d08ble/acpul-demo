@@ -192,12 +192,6 @@ zzz:=11;
 
 ### 8350 view
 
-_ @1010;
-_ @sys.node;
-
-node.new.this.ex(0, 0, 1);
-s:=0.7;
-
 r0:=k==0;
 
 draw(r0, 8351);

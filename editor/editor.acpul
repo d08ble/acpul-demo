@@ -223,8 +223,6 @@ touch.ev {
   line.end(_0,_1);
  };
 };
-### 8353 qqq
-
 
 # touch event ]
 # simple interactive line [
@@ -235,6 +233,8 @@ line.move
  events.push(u0, 8000,8350, 2, _0,_1,0,0,0);
 line.end
  events.push(u0, 8000,8350, 3, _0,_1,0,0,0);
+
+### 8353 qqq
 
 l0:=events.pop(u0, 8000,8350);
 if (l0, watch(l0), 0);

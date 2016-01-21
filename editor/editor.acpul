@@ -235,6 +235,7 @@ _ @1010;
 _ @sys.node;
 
 node.new.this.ex(0, 0, 1);
+s:=0.7;
 create.filter {
 
  FILTERS 7000;

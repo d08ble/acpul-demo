@@ -203,8 +203,6 @@ node.new.this.ex(0, 0, 1);
 s:=0.7;
 
 
-### 8353 qqq
-
 _ @1010;
 _ @sys.touch;
 _ @sys.events;
@@ -225,6 +223,8 @@ touch.ev {
   line.end(_0,_1);
  };
 };
+### 8353 qqq
+
 
 # touch event ]
 # simple interactive line [

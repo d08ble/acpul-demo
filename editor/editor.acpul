@@ -18,6 +18,13 @@ node.new.this.ex(r0, editor.main, 0);
 e.test 8302;
 node.new.this.ex(r0, e.test);
 
+_ @1010;
+_ @sys.node;
+
+node.new.this.ex(0, 0, 1);
+s:=0.7;
+
+
 x:=10;
 y:=200;
 

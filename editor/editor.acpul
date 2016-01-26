@@ -251,8 +251,7 @@ if (l0==1) {
 };
 
 if (r0) {
- o0:=0;o1:=100;
- new.filter(o0, o1);
+ new.filter(100, 100);
 };
 
 # create filter ]

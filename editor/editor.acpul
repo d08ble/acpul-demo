@@ -250,6 +250,11 @@ if (l0==1) {
  new.filter(o0, o1);
 };
 
+if (r0) {
+ o0:=0;o1:=1;
+ new.filter(o0, o1);
+};
+
 # create filter ]
 
 # custom [

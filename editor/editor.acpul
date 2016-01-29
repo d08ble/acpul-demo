@@ -112,7 +112,6 @@ button.add {
  buffer.put(0, buttons,0, l0);
 };
 
-
 w:=100;
 h:=300;
 

@@ -98,7 +98,7 @@ cpu.init
 };
 
 cpu.step
- # todo: move to 
+ # for internal events
  io(u0, 500420, 0,0,0,0);
 
 # core [

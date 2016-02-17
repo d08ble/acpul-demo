@@ -101,7 +101,7 @@ cpu.init
 
 cpu.e.pool 505;
 cpu.e { _;
- photo.loaded 1; # -> type, pool, uid, i
+ formula.compiled 1; # -> fid
 };
 
 # core ]

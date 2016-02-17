@@ -97,7 +97,7 @@ cpu.init
  };
 };
 
-cpu.step
+cpu.step 
  # for internal events
  io(u0, 500420, 0,0,0,0);
 

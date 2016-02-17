@@ -31,6 +31,7 @@ cpu.debug.errors.console io(_0, 500401, _1,0,0,0);
 cpu.debug.errors.enabled io(_0, 500402, _1,0,0,0);
 cpu.debug.log.to.xcode.console io(_0, 500403, _1,0,0,0);
 cpu.debug.log.to.console io(_0, 500404, _1,0,0,0);
+
 # H9-250714 [
 cpu.frame.dt
  #u0, dt
@@ -96,7 +97,11 @@ cpu.init
  };
 };
 
-cpu.e.pool 1500;
+# core [
+
+cpu.e.pool 505;
 cpu.e { _;
  photo.loaded 1; # -> type, pool, uid, i
 };
+
+# core ]

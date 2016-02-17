@@ -95,3 +95,8 @@ cpu.init
   u31:=0;
  };
 };
+
+cpu.e.pool 1500;
+cpu.e { _;
+ photo.loaded 1; # -> type, pool, uid, i
+};

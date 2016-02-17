@@ -1,5 +1,11 @@
 ### 1034 sys.events
 
+# pools [
+# storage 500
+# net 501
+# cpu 1500
+# pools ]
+
 events.pool.hwkeyboard 900;
 
 events.step 

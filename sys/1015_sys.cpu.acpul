@@ -104,4 +104,8 @@ cpu.e { _;
  formula.compiled 1; # -> fid
 };
 
+cpu.formula.info.type {
+ error.undefined.name 1;
+};
+
 # core ]

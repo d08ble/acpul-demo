@@ -97,6 +97,10 @@ cpu.init
  };
 };
 
+cpu.step
+ # todo: move to 
+ io(u0, 500420, 0,0,0,0);
+
 # core [
 
 cpu.e.pool 505;

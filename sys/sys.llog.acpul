@@ -1,0 +1,11 @@
+livelog {
+ begin
+  # u0, s
+  io(_0, 500420, _1,0,0,0);
+ end
+  # u0
+  io(_0, 500420, 0,0,0,0);
+ 
+};
+
+llog livelog;

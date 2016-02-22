@@ -6,7 +6,6 @@ node.p
  target 0-30000;
 };
 
-
 node.d
 {
  render.texture 7777777;

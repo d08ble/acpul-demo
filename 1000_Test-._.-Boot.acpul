@@ -172,7 +172,7 @@ node.new.this.ex(r0, COGX, 0);
 EDITOR 8000;
 #node.new.this.ex(r0, EDITOR, 0);
 
-#asf          
+#asf         
 
 # touch debug should be lastest node [
 TOUCH.DEBUG 1006;

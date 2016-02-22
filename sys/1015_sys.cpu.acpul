@@ -102,7 +102,7 @@ cpu.init
 
 # core [
 
-#cpu.e.pool 505;
+cpu.e.pool 505;
 #cpu.e { _;
 # formula.compiled 1; # -> fid
 #};

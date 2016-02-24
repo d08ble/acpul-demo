@@ -113,8 +113,8 @@ cpu.formula.info.type {
 };
 
 cpu.get.formulas.info
- # u0 -> formulas.info
+ # u0, mode -> formulas.info
  # formulas.info: map[<formulaId>] -> items: list[] -> type:, object: (string|map...)
- io(_0, 500430, 0,0,0,0);
+ io(_0, 500430, _1,0,0,0);
 
 # core ]

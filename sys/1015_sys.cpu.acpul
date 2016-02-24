@@ -111,9 +111,9 @@ cpu.formula.info.type {
  error.undefined.name 1;
 };
 
-#cpu.get.formulas.info
+cpu.get.formulas.info
  # u0 -> formulas.info
  # formulas.info: map[<formulaId>] -> items: list[] -> type:, object: (string|map...)
-# io(_0, 500420, 0,0,0,0);
+ io(_0, 500420, 0,0,0,0);
 
 # core ]

@@ -97,10 +97,11 @@ cpu.init
  };
 };
 
-cpu.step 
- io(u0, 500406, 0,0,0,0); # for internal events
-
 # core [
+
+cpu.step 
+ # u0
+ io(_0, 500429, 0,0,0,0); # for internal events
 
 cpu.e.pool 505;
 cpu.e { _;

@@ -361,8 +361,8 @@ x:=100;
 _ @1010;
 _ @sys.cpu;
 _ @sys.events;
-events.pop(cpu.e.pool, 0);
-
+l0:=events.pop(u0, cpu.e.pool, 0);
+if (l0==)
 
 _ @1010;
 _ @sys.llog;

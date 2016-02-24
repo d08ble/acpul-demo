@@ -362,7 +362,9 @@ _ @1010;
 _ @sys.cpu;
 _ @sys.events;
 l0:=events.pop(u0, cpu.e.pool, 0);
-if (l0==)
+if (l0==cpu.e.formula.compiled) {
+ 
+};
 
 _ @1010;
 _ @sys.llog;

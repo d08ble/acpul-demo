@@ -1,21 +1,45 @@
 livelog {
  step
-  io(u0, 500420, _1,0,0,0);
+  # u0
+  io(_0, 500420, _1,0,0,0);
  begin
-  # str
-  io(u0, 500420, _1,0,0,0);
+  # u0, str
+  io(_0, 500420, _1,0,0,0);
  end
-  io(u0, 500420, 0,0,0,0);
+  # u0
+  io(_0, 500420, 0,0,0,0);
  print
-  io(u0, 500420, 0,0,0,0);
-
+  # u0, fmt
+  io(_0, 500420, _1,0,0,0);
+ printv
+  # u0, fmt, v
+  io(_0, 500420, _1, _2, 0,0);
+ printv2
+  # u0, fmt, v0,v1
+  io(_0, 500420, _1, _2,_3, 0);
+ printv3
+  # u0, fmt, v0,v1,v2
+  io(_0, 500420, _1, _2,_3,_4);
+ printv4 {
+  # u0, fmt, v0,v1,v2,v4
+  io(_0, 500420, _5,0,0,0);
+  io(_0, 500420, _1, _2,_3,_4);
+ };
+ printo {
+  # u0, fmt, object||dma
+  io(_0, 500420, _1, _2, 0,0);
+ }
  p print(__);
  pv printv(__);
+ pv2 printv(__);
+ pv3 printv(__);
+ pv4 printv(__);
+ po printv(__);
 };
 
 llog livelog;
-llog.print(fmt);
-llog.printv(fmt, v);
-llog.printv2(fmt, v0, v1);
-llog.printo(fmt, o||dma);
-llog.pv2(value.is.one, v2);
+#llog.print(fmt);
+#llog.printv(fmt, v);
+#llog.printv2(fmt, v0, v1);
+#llog.printo(fmt, o||dma);
+#llog.pv2(value.is.one, v2);

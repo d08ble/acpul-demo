@@ -363,7 +363,8 @@ _ @sys.cpu;
 _ @sys.events;
 l0:=events.pop(u0, cpu.e.pool, 0);
 if (l0==cpu.e.formula.compiled) {
- 
+ watch(l0);
+ cpu.
 };
 
 _ @1010;

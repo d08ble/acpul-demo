@@ -351,3 +351,15 @@ void main(void)
 //  gl_FragColor = vec4(0, 0.-v0.z/50.,0.8,0.9);
 }
 
+### 5200 test.api.llog
+
+r0:=k==0;
+
+draw(r0, 5201);
+
+k:=1;
+
+### 5201 test.api.llog
+
+ circle(u0, 6, 0,0, 100, 0, 20, 0);
+ 

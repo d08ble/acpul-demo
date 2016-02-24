@@ -1,7 +1,6 @@
+# livelogging [
+
 livelog {
- step
-  # u0
-  io(_0, 500420, _1,0,0,0);
  begin
   # u0, str
   io(_0, 500420, _1,0,0,0);
@@ -29,6 +28,11 @@ livelog {
   # u0, fmt, object||dma
   io(_0, 500420, _1, _2, 0,0);
  }
+
+ step
+  # u0
+  io(_0, 500420, _1,0,0,0);
+
  p print(__);
  pv printv(__);
  pv2 printv(__);
@@ -43,3 +47,5 @@ llog livelog;
 #llog.printv2(fmt, v0, v1);
 #llog.printo(fmt, o||dma);
 #llog.pv2(value.is.one, v2);
+
+# livelogging ]

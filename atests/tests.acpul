@@ -361,7 +361,7 @@ x:=100;
 _ @1010;
 _ @sys.cpu;
 _ @sys.events;
-events.pop()
+events.pop(cpu.e.pool, 0);
 
 
 _ @1010;

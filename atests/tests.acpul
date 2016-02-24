@@ -361,9 +361,9 @@ x:=100;
 _ @1010;
 _ @sys.llog;
 
-llog.begin(S.livelogging.main);
+llog.begin(u0, S.livelogging.main);
 
-llog.end();
+llog.end(u0);
 
 k:=1;
 

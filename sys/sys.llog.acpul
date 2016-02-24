@@ -1,11 +1,21 @@
 livelog {
+ step
+  io(u0, 500420, _1,0,0,0);
  begin
-  # u0, s
-  io(_0, 500420, _1,0,0,0);
+  # str
+  io(u0, 500420, _1,0,0,0);
  end
-  # u0
-  io(_0, 500420, 0,0,0,0);
- 
+  io(u0, 500420, 0,0,0,0);
+ print
+  io(u0, 500420, 0,0,0,0);
+
+ p print(__);
+ pv printv(__);
 };
 
 llog livelog;
+llog.print(fmt);
+llog.printv(fmt, v);
+llog.printv2(fmt, v0, v1);
+llog.printo(fmt, o||dma);
+llog.pv2(value.is.one, v2);

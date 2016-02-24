@@ -359,6 +359,12 @@ draw(r0, 5201);
 x:=100;
 
 _ @1010;
+_ @sys.cpu;
+_ @sys.events;
+events.pop()
+
+
+_ @1010;
 _ @sys.llog;
 
 llog.begin(u0, S.livelogging.main);

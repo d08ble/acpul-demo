@@ -107,9 +107,9 @@ cpu.e { _;
  formula.compiled 1; # -> fid
 };
 
-#cpu.formula.info.type {
-# error.undefined.name 1;
-#};
+cpu.formula.info.type {
+ error.undefined.name 1;
+};
 
 #cpu.get.formulas.info
  # u0 -> formulas.info

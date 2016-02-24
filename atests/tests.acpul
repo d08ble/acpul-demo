@@ -359,6 +359,15 @@ draw(r0, 5201);
 x:=100;
 
 _ @1010;
+_ @sys.llog;
+
+llog.begin(u0, S.livelogging.main);
+llog.p(S.Hello.World);
+llog.end(u0);
+
+# cpu info [
+
+_ @1010;
 _ @sys.cpu;
 _ @sys.events;
 l0:=events.pop(u0, cpu.e.pool, 0);
@@ -368,12 +377,7 @@ if (l0==cpu.e.formula.compiled) {
  cpu.get.formulas.info(u0, o0, 0);
 };
 
-_ @1010;
-_ @sys.llog;
-
-llog.begin(u0, S.livelogging.main);
-llog.p(S.Hello.World);
-llog.end(u0);
+# cpu info ]
 
 k:=1;
 

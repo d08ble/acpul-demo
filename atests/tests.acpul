@@ -361,6 +361,8 @@ x:=100;
 _ @1010;
 _ @sys.llog;
 
+llog.begin();
+
 k:=1;
 
 ### 5201 test.api.llog

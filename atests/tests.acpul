@@ -365,7 +365,7 @@ _ @sys.llog;
 #livelog.begin(u0,555);
 llog livelog;
 llog.begin(u0, S.livelogging.main);
-llog.p(u0, S.Hello.World);
+llog.print(u0, S.Hello.World);
 llog.end(u0);
 
 # cpu info [

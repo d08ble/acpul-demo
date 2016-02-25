@@ -363,11 +363,11 @@ _ @sys.llog;
 
 #l0:=livelog.a;
 #livelog.begin(u0,555);
-llog livelog;
-l0:=S.livelogging.main;
-llog.begin(u0, l0);
-llog.print(u0, S.Hello.World);
-llog.end(u0);
+#llog livelog;
+#l0:=S.livelogging.main;
+#llog.begin(u0, l0);
+#llog.print(u0, S.Hello.World);
+#llog.end(u0);
 
 # cpu info [
 

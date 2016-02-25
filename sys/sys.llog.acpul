@@ -38,7 +38,7 @@ livelog {
   # u0
   io(_0, a+5, _1,0,0,0);
 
- p print;
+ p print(__);
  pv printv(__);
  pv2 printv(__);
  pv3 printv(__);

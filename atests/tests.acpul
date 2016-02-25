@@ -375,9 +375,9 @@ www:=1;
 
 # cpu info [
 
-_ @1010;
-_ @sys.cpu;
-_ @sys.events;
+#_ @1010;
+#_ @sys.cpu;
+#_ @sys.events;
 #l0:=events.pop(u0, cpu.e.pool, 0);
 #if (l0==cpu.e.formula.compiled) {
 # watch(l0);

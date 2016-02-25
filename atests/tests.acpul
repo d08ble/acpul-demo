@@ -370,9 +370,6 @@ llog.begin(u0, l0);
 #llog.print(u0, S.Hello.World);
 llog.end(u0);
 
-
-
-
 # cpu info [
 
 #_ @1010;

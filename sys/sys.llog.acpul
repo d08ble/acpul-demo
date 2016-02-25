@@ -48,8 +48,6 @@ livelog {
 
 #llog livelog;
 
-www r0;
-
 
 
 #llog.print(fmt);

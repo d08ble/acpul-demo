@@ -368,6 +368,7 @@ _ @1038;
 #l0:=S.livelogging.main;
 llog.begin(u0, l0);
 #llog.print(u0, S.Hello.World);
+llog.print(u0, 0);
 llog.end(u0);
 
 # cpu info [

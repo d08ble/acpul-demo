@@ -46,7 +46,7 @@ livelog {
  po printv(__);
 };
 
-#llog livelog;
+llog livelog;
 
 
 www r7;

@@ -48,7 +48,7 @@ livelog {
 
 #llog livelog;
 
-llog1 {l0:=1;};
+www r0;
 
 #llog.print(fmt);
 #llog.printv(fmt, v);

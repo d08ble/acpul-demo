@@ -360,7 +360,7 @@ x:=100;
 
 #_ @1010;
 #_ @sys.llog;
-_ @1038;
+#_ @1038;
 
 #l0:=livelog.a;
 #livelog.begin(u0,555);
@@ -370,7 +370,7 @@ _ @1038;
 #llog.print(u0, S.Hello.World);
 #llog.end(u0);
 
-www r0;
+_ @5202;
 www:=1;
 
 
@@ -399,4 +399,8 @@ k:=1;
 ### 5201 test.api.llog
 
 circle(u0, 6, 0,0, 50, 0, 20, 0);
+
+### 5202
+
+www r0;
 

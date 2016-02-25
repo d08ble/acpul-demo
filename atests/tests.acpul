@@ -367,6 +367,7 @@ _ @sys.llog;
 llog.begin(r0, S.livelogging.main);
 llog.print(r0, S.Hello.World);
 llog.printv(r0, S.fn.rnd, rnd(u0));
+llog.printv4(r0, S.fn.rnd4, rnd(u0), rnd(u0), rnd(u0), rnd(u0));
 llog.end(r0);
 
 

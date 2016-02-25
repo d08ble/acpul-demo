@@ -370,6 +370,7 @@ _ @1038;
 #llog.print(u0, S.Hello.World);
 #llog.end(u0);
 
+www r0;
 www:=1;
 
 

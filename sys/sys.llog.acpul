@@ -49,6 +49,7 @@ livelog {
 #llog livelog;
 
 
+www r7;
 
 #llog.print(fmt);
 #llog.printv(fmt, v);

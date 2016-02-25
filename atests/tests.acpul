@@ -371,7 +371,6 @@ llog.end(u0);
 
 llog1.begin;
 
-x+=1;
 
 # cpu info [
 

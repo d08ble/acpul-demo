@@ -367,10 +367,10 @@ _ @1038;
 #l0:=livelog.a;
 #livelog.begin(u0,555);
 #llog livelog;
-llog.begin(u0, S.livelogging.main);
-llog.print(u0, S.Hello.World);
+llog.begin(r0, S.livelogging.main);
+llog.print(r0, S.Hello.World);
 #llog.print(u0, 0);
-llog.end(u0);
+llog.end(r0);
 
 # cpu info [
 

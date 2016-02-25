@@ -363,7 +363,7 @@ _ @sys.llog;
 
 l0:=livelog.a;
 livelog.begin(u0,555);
-
+llog livelog;
 llog.begin(u0, S.livelogging.main);
 llog.p(S.Hello.World);
 llog.end(u0);

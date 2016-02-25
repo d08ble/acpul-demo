@@ -46,7 +46,7 @@ livelog {
  po printv(__);
 };
 
-llog livelog;
+#llog livelog;
 llog.begin 1;
 #llog.print(fmt);
 #llog.printv(fmt, v);

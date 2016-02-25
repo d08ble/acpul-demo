@@ -370,15 +370,16 @@ llog.end(u0);
 _ @1010;
 _ @sys.cpu;
 _ @sys.events;
-l0:=events.pop(u0, cpu.e.pool, 0);
-if (l0==cpu.e.formula.compiled) {
- watch(l0);
- fid o0;
- l1:=cpu.get.formulas.info(u0, fid, 0);
- watch(l1);
- llog.pv(S.formula.compiled, fid);
- llog.p(l1);
-};
+#l0:=events.pop(u0, cpu.e.pool, 0);
+#if (l0==cpu.e.formula.compiled) {
+# watch(l0);
+# fid o0;
+# l1:=cpu.get.formulas.info(u0, fid, 0);
+# watch(l1);
+# llog.pv(S.formula.compiled, fid);
+# llog.p(l1);
+#};
+
 
 # cpu info ]
 

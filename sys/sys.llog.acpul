@@ -32,7 +32,7 @@ livelog {
  printo {
   # u0, fmt, mode, object||dma
   io(_0, a+4, _1, _2, _3, 0);
- }
+ };
 
  step
   # u0

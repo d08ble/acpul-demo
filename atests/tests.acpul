@@ -405,6 +405,39 @@ circle(u0, 6, 0,0, 50, 0, 20, 0);
 
 livelog {
  a 502000;
+ begin
+  # u0, str
+  io(_0, a+0, _1,0,0,0);
+ end
+  # u0
+  io(_0, a+1, 0,0,0,0);
+ print
+  # u0, fmt
+  io(_0, a+2, _1,0,0,0);
+ printv
+  # u0, fmt, v
+  io(_0, a+2, _1, 1, _2, 0);
+ printv2
+  # u0, fmt, v0,v1
+  io(_0, a+2, _1, 2, _2,_3);
+ printv3 {
+  # u0, fmt, v0,v1,v2
+  io(_0, a+3, _4,0,0,0);
+  io(_0, a+2, _1, 3, _2,_3);
+ };
+ printv4 {
+  # u0, fmt, v0,v1,v2,v4
+  io(_0, a+3, _4,_5, 0,0);
+  io(_0, a+2, _1, 4, _2,_3);
+ };
+ printo {
+  # u0, fmt, mode, object||dma
+  io(_0, a+4, _1, _2, _3, 0);
+ };
+
+ step
+  # u0
+  io(_0, a+5, _1,0,0,0);
 };
 
 www r1;

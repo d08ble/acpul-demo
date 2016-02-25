@@ -360,16 +360,12 @@ r0:=k==0;
 draw(r0, 5201);
 x:=100;
 
-#_ @1010;
-#_ @sys.llog;
-_ @1038;
+_ @1010;
+_ @sys.llog;
+#_ @1038;
 
-#l0:=livelog.a;
-#livelog.begin(u0,555);
-#llog livelog;
 llog.begin(r0, S.livelogging.main);
 llog.print(r0, S.Hello.World);
-#llog.print(u0, 0);
 llog.end(r0);
 
 # cpu info [

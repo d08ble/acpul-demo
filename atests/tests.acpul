@@ -358,8 +358,9 @@ r0:=k==0;
 draw(r0, 5201);
 x:=100;
 
-_ @1010;
-_ @sys.llog;
+#_ @1010;
+#_ @sys.llog;
+_ @1038;
 
 #l0:=livelog.a;
 #livelog.begin(u0,555);

@@ -369,6 +369,8 @@ llog.begin(u0, l0);
 llog.print(u0, S.Hello.World);
 llog.end(u0);
 
+io(u0, 3453456, QQQ,0,0,0);
+
 # cpu info [
 
 _ @1010;

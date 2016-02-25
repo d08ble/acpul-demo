@@ -316,8 +316,8 @@ count.points dma.size(u0, 0) / 3;
 count.indices dma.size(u0, 1);
 # r0, i, dma,o,esize,stride,count, type,normalized
 node.ex.shader.attribute.dma(u0, 0, 0,0,3,0,count.points, 0,0);
-# r0, dma, count -> ibuf::object
 if (r0) {
+ # r0, dma, count -> ibuf::object
  l10:=node.ex.shader.indices.dma(u0, 1, count.indices);
 };
 # r0, type, ibuf

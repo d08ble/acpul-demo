@@ -176,7 +176,7 @@ _ @1010;
 _ @sys.llog;
 
 llog.begin(u0, S.livelogging.main);
-llog.print(u0, S.Hello.World);
+llog.print(u0, S.BOOT);
 llog.end(u0);
 
 #asf        

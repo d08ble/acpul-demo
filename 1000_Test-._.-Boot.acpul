@@ -47,7 +47,7 @@ ide.setup
 syntax.highlight.init
  call(_0, -1, 0,0,0,0, 0,0,0,0);
 
-#ide.setup(u0);
+ide.setup(u0);
 syntax.highlight.init(u0);
 
 music.play

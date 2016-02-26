@@ -392,7 +392,7 @@ llog.end(u0);
 
 k:=1;
 
-### 5201 test.api.llog
+### 5201 test.api.llog.draw
 
 circle(u0, 6, 0,0, 50, 0, 20, 0);
 

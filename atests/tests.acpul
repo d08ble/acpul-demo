@@ -38,16 +38,6 @@ l0:=node.new.this.ex(r0, test.bullet.physics, 0);
 test.api.llog 5200; # new api: llog, cpu.formula.info, draw text
 l0:=node.new.this.ex(r0, test.api.llog, 0);
 
-_ @1010;
-_ @sys.llog;
-
-llog.begin(u0, S.livelogging.main);
-llog.print(u0, S.Hello.World);
-llog.printv(u0, S.fn.rnd, rnd(u0));
-llog.printv4(u0, S.fn.rnd4, rnd(u0), rnd(u0), rnd(u0), rnd(u0));
-llog.printv4(u0, S.fn.v4, 1,2,3,4);
-llog.end(u0);
-
 k:=1;
 
 ### 5001 tests.draw

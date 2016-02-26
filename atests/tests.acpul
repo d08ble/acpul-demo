@@ -363,12 +363,12 @@ x:=100;
 _ @1010;
 _ @sys.llog;
 
-llog.begin(r0, S.livelogging.main);
-llog.print(r0, S.Hello.World);
-llog.printv(r0, S.fn.rnd, rnd(u0));
-llog.printv4(r0, S.fn.rnd4, rnd(u0), rnd(u0), rnd(u0), rnd(u0));
-llog.printv4(r0, S.fn.v4, 1,2,3,4);
-llog.end(r0);
+llog.begin(u0, S.livelogging.main);
+llog.print(u0, S.Hello.World);
+llog.printv(u0, S.fn.rnd, rnd(u0));
+llog.printv4(u0, S.fn.rnd4, rnd(u0), rnd(u0), rnd(u0), rnd(u0));
+llog.printv4(u0, S.fn.v4, 1,2,3,4);
+llog.end(u0);
 
 
 # cpu info [

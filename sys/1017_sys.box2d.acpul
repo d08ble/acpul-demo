@@ -23,13 +23,11 @@ box2d
   gravity.scale 1.0;
  };
  reset
- {
   io(_0, 500300, 0,0,0,0);
- };
  step
- {
+ # dt, velocityIteractions, positionIteractions
   io(_0, 500301, _1,_2,_3,0);
- };
+ 
  world
  {
   io(_0, 500302, _1,_2,0,0);
@@ -86,7 +84,7 @@ box2d
  };
 
  body.create2 {
-  # world, info :: default.*.body.info -> body
+ # world, info :: default.*.body.info -> body
   #body.def0()
   #body.def.type.position.angle
   body.create(u0, _0);

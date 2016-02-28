@@ -40,7 +40,24 @@ box2d
   };
  };
 
- # BODY
+ # BODY [
+
+ default.dynamic.body.info {
+  type box2d.dynamic;
+  x 0;
+  y 0;
+  velocity.linear {x 0; y 0;};
+  velocity.angular {x 0; y 0;};
+  damping.linear 0;
+  damping.angular 0;
+  allow.sleep 0;
+  awake 0;
+  fixed.rotation 0;
+  bullet 0;
+  active 1;
+  gravity.scale 1;
+ };
+ 
 
  body.def.type.position.angle
  {
@@ -68,6 +85,8 @@ box2d
  {
   io(_0, 500307, _1, 0,0,0);
  };
+
+ # create ]
  body.group.add # body, group
  {
   io(_0, 500308, _1, _2, 0,0);
@@ -124,14 +143,16 @@ box2d
   io(_0, 500375, _1, 0,0,0);
  };
 
- # COLLISION
+ # BODY ]
+ # COLLISION [
   
  collision.group.rule # world, a, b, enableEvent
  {
   io(_0, 500320, _1, _2, _3, _4);
  };
 
- # SHAPE
+ # COLLISION ]
+ # SHAPE [
 
  # type:  
  polygon 0;
@@ -194,7 +215,8 @@ box2d
   io(_0, 500341, _1, _2,_3, 0);
  };
 
- # FIXTURE
+ # SHAPE ]
+ # FIXTURE [
 
  fixture.def
  # friction, restitution, density, isSensor
@@ -206,4 +228,6 @@ box2d
  {
   io(_0, 500351, _1, _2, 0,0);
  };
+
+ # FIXTURE ]
 };

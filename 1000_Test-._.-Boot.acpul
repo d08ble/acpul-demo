@@ -175,9 +175,10 @@ node.new.this.ex(r0, EDITOR, 0);
 _ @1010;
 _ @sys.llog;
 
-llog.begin(r0, S.livelogging.main);
-llog.print(r0, S.BOOT);
-llog.end(r0);
+ll0 r0;
+llog.begin(ll0, S.livelogging.main);
+llog.print(ll0, S.BOOT);
+llog.end(ll0);
 
 
 #asf        

@@ -40,12 +40,14 @@ livelog {
   # u0
   io(_0, a+5, _1,0,0,0);
 
+ b begin(u0, __);
+ e end(u0, __);
  p print(u0, __);
  pv printv(u0, __);
- pv2 printv(__);
- pv3 printv(__);
- pv4 printv(__);
- po printv(__);
+ pv2 printv(u0, __);
+ pv3 printv(u0, __);
+ pv4 printv(u0, __);
+ po printv(u0, __);
 };
 
 llog livelog;

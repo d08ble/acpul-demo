@@ -74,10 +74,9 @@ box2d
  body.def2 body.def.damping.linear.angular.allowSleep.awake;
  body.def3 body.def.fixed.rotation.bullet.active.gravity.scale;
 
- body.create # world
- {
+ body.create 
+ # u0, world
   io(_0, 500307, _1, 0,0,0);
- };
 
  body.create2 {
  # world, info :: default.*.body.info -> body

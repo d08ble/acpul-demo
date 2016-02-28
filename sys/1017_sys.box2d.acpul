@@ -85,6 +85,7 @@ box2d
  };
 
  # create ]
+ 
  body.group.add # body, group
  {
   io(_0, 500308, _1, _2, 0,0);

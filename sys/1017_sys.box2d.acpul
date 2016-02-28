@@ -61,10 +61,9 @@ box2d
   io(_0, 500303, _1, _2,_3, _4);
  body.def.velocity.linear.angular
  # u0, v(x,y), angle
- {
   io(_0, 500304, _1,_2, _3, 0);
- };
  body.def.damping.linear.angular.allowSleep.awake
+ # u0, damping.v(x,y), damping.a, allowSleep, awake
  {
   io(_0, 500305, _1, _2, _3, _4);
  };

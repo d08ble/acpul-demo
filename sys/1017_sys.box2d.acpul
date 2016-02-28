@@ -57,10 +57,10 @@ box2d
  };
 
  body.def.type.position.angle
- {
+ # u0, type, x,y, angle
   io(_0, 500303, _1, _2,_3, _4);
- };
  body.def.velocity.linear.angular
+ # u0, v(x,y), angle
  {
   io(_0, 500304, _1,_2, _3, 0);
  };

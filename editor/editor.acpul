@@ -13,10 +13,10 @@ _ @1010;
 _ @sys.node;
 
 editor.main 8100;
-#node.new.this.ex(r0, editor.main, 0);
+node.new.this.ex(r0, editor.main, 0);
 
 e.test 8302;
-node.new.this.ex(r0, e.test);
+#node.new.this.ex(r0, e.test);
 
 x:=10;
 y:=200;

@@ -78,14 +78,14 @@ box2d
   io(_0, 500307, _1, 0,0,0);
 
  body.create2 {
- # world, info :: default.*.body.info -> body
+ # u0, world, info :: default.*.body.info -> body
   #body.def0()
-  #body.def.type.position.angle
-  body.create(u0, _0);
+#  body.def.type.position.angle(u0, _0)
+  body.create(_0, _1);
  };
 
  # create ]
- 
+
  body.group.add # body, group
  {
   io(_0, 500308, _1, _2, 0,0);

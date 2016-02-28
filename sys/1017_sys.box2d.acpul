@@ -81,7 +81,7 @@ box2d
  body.create2 {
  # u0, world, info :: default.*.body.info -> body
   #body.def0()
-  watch(_2.type);
+  watch(_1.type);
   body.def.type.position.angle(u0, _2.type, _2.x,_2.y, _2.angle);
   body.create(_0, _1);
  };

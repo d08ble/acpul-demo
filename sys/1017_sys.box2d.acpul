@@ -57,7 +57,6 @@ box2d
   active 1;
   gravity.scale 1;
  };
- 
 
  body.def.type.position.angle
  {
@@ -84,6 +83,13 @@ box2d
  body.create # world
  {
   io(_0, 500307, _1, 0,0,0);
+ };
+
+ body.create2 {
+  # world, info :: default.*.body.info -> body
+  #body.def0()
+  #body.def.type.position.angle
+  body.create(u0, _0);
  };
 
  # create ]

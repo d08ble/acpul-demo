@@ -40,7 +40,7 @@ box2d
  # BODY [
 
  default.dynamic.body.info {
-  type box2d.dynamic;
+  #type box2d.dynamic;
   x 0;
   y 0;
   angle 0;

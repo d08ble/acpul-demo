@@ -175,9 +175,9 @@ EDITOR 8000;
 _ @1010;
 _ @sys.llog;
 
-#llog.begin(u0, S.livelogging.main);
-#llog.print(u0, S.BOOT);
-#llog.end(u0);
+llog.begin(u0, S.livelogging.main);
+llog.print(u0, S.BOOT);
+llog.end(u0);
 
 
 #asf        

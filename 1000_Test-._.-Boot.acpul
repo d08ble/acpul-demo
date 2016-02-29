@@ -164,7 +164,7 @@ IMGNODE 7040;
 #node.new.this.ex(r0, Арестович, 0);
 
 COGX 6000;
-#node.new.this.ex(r0, COGX, 0);
+node.new.this.ex(r0, COGX, 0);
 
 TESTS 5000;
 #node.new.this.ex(r0, TESTS, 0);

@@ -13,6 +13,7 @@ _ @sys.node;
 
 abot.host(192,168,1,102, 19789);
 
+
 abot.stream.setup(r0, 0,0,0,0);
 abot.stream.start(r0);
 

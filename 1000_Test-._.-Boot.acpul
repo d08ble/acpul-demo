@@ -185,7 +185,7 @@ llog.begin(ll0, S.livelogging.main);
 llog.print(ll0, S.BOOT);
 llog.end(ll0);
 };
-
+dump;
 
 #asf        
 

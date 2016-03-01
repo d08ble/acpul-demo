@@ -181,7 +181,6 @@ _ @sys.llog;
 ll0 r0;
 llog.begin(ll0, S.livelogging.main);
 llog.print(ll0, S.BOOT);
-llog.print(ll0, GG);
 llog.end(ll0);
 
 

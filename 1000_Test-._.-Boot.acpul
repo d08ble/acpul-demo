@@ -170,10 +170,10 @@ TESTS 5000;
 #node.new.this.ex(r0, TESTS, 0);
 
 EDITOR 8000;
-node.new.this.ex(r0, EDITOR, 0);
+#node.new.this.ex(r0, EDITOR, 0);
 
 #BOT 7350;
-#node.new.this.ex(r0, BOT, 0);
+node.new.this.ex(r0, BOT, 0);
 
 _ @1010;
 _ @sys.llog;

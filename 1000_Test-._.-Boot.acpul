@@ -173,18 +173,19 @@ EDITOR 8000;
 #node.new.this.ex(r0, EDITOR, 0);
 
 BOT 7350;
-#node.new.this.ex(r0, BOT, 0);
+node.new.this.ex(r0, BOT, 0);
 
 _ @1010;
 _ @sys.llog;
 
 ll0 r0;
 dump {
+_ @sys.llog;
 llog.begin(ll0, S.livelogging.main);
 llog.print(ll0, S.BOOT);
 llog.end(ll0);
 };
-dump;
+
 
 #asf        
 

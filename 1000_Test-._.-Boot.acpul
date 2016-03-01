@@ -179,10 +179,12 @@ _ @1010;
 _ @sys.llog;
 
 ll0 r0;
+dump {
 llog.begin(ll0, S.livelogging.main);
 llog.print(ll0, S.BOOT);
 llog.end(ll0);
-
+};
+dump;
 
 #asf        
 

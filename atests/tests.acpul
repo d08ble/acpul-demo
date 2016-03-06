@@ -399,7 +399,7 @@ k:=1;
 
 circle(u0, 6, 0,0, 50, 0, 20, 0);
 
-### 5250 test.box2d
+### 5250 test.dsp
 
 r0:=k==0;
 
@@ -411,7 +411,7 @@ t+=dt;
 
 k:=1;
 
-### 5251 test.box2d.draw
+### 5251 test.dsp.draw
 
 color(u0, 0,0,1,0.9);
 rect(u0, 2, 0,0, 270,145);

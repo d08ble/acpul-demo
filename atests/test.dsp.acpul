@@ -75,6 +75,7 @@ dsp.default.module.delay.info {
  repeats 1;
  amplitude.drop 0.2;
  delay.time 1;
+ new dsp.module.delay.create2(__);
 };
 
 # A [

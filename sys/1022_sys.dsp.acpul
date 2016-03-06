@@ -137,20 +137,16 @@ dsp {
  # TRACK [
 
  track.create
- {
   io(u0, 500020, 0,0,0,0);
- };
- track.add.note
+
+ track.add.note {
  # track, note, time, length, volume, pitch
- {
   io(u0, 500021, _2, _3, _4, _5);
   io(u0, 500022, _0, _1, 0,0);
  };
  track.set.linker
  # track, linker
- {
   io(u0, 500023, _0, _1, 0,0);
- };
 
  # TRACK ]
  # LINKER [

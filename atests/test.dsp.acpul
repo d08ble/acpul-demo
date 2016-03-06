@@ -51,7 +51,7 @@ gen0 { _ dsp.default.module.generator.info;
 dsp.module.generator.create.harmonic(am0, 555,1);
 
 q0 {
- q00.q000 r7;
+ q00.q000.q0000 r7;
 };
 q0.q00.q001 r8;
 

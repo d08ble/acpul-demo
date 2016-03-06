@@ -4,6 +4,26 @@ r0:=k==0;
 
 draw(r0, 5251);
 
+# DSP [
+
+dsp.module.generator.create {
+ # m0dule
+ _0:=dsp.module.create(dsp.module.type.generator);
+ ps dsp.module.prop.set(__);
+ p dsp.module.props.generator(__);
+
+ ps(_0, p.type, _1.type);
+ ps(_0, p.frequency, _1.frequency);
+ ps(_0, p.amplitude, _1.amplitude);
+ ps(_0, p.envelope.attack, _1.envelope.attack);
+ ps(_0, p.envelope.decay, _1.envelope.decay);
+ ps(_0, p.envelope.sustain, _1.envelope.sustain);
+ ps(_0, p.envelope.release, _1.envelope.release);
+};
+
+
+# DSP ]
+
 x:=100;
 
 t+=dt;

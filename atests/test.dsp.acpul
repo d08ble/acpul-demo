@@ -14,7 +14,7 @@ _ @sys.llog;
 
 ll0 r0;
 llog.begin(ll0, S.livelogging.tests);
-llog.begin(ll0, test.dsp);
+llog.begin(ll0, S.test.dsp);
 llog.erase(ll0, 0);
 llog.print(ll0, S.TEST.DSP);
 

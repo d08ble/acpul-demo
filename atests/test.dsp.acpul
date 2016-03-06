@@ -107,6 +107,9 @@ dly1;
 #dsp.module.delay.create(dly1, 0, 100, 101);
 
 # C ]
+# D [
+
+# D ]
 # DSP ]
 
 llog.end(ll0);

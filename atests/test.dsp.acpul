@@ -24,7 +24,21 @@ dsp.module.generator.create {
  ps(_0, p.envelope.release, _1.envelope.release);
 };
 
-
+dsp.default.module.generator.info {
+ p dsp.module.props.generator;
+ type p.types.sine;
+ frequency 1;
+ amplitude 0.5;
+ envelope {
+  attack 0.1;
+  decay 0.2;
+  sustain 0.1;
+  release 0.1;
+ };
+ add.harmonic dsp.module.generator.create.harmonic(__);
+ mixer.volume dsp.module.mixer.volume(__);
+ new dsp.module.generator.create(__);
+};
 
 # DSP ]
 

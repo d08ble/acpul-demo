@@ -80,34 +80,29 @@ dsp {
  };
  module.prop.set
  # module, prop, value
- {
   io(u0, 500002, _0, _1, _2, 0);
- };
+
  module.prop.get
  # module, prop
- {
   io(u0, 500003, _0, _1, 0,0);
- };
+
  module.generator.create.harmonic
  # module, frequency, amplitude
- {
   io(u0, 500004, _0, _1, _2, 0);
- };
+
  module.note.on
  # module, note
- {
+
   io(u0, 500005, _0, _1, 0,0);
- };
+
  module.note.off
  # module, note
- {
   io(u0, 500006, _0, _1, 0,0);
- };
+
  module.mixer.volume
  # module, volume
- {
   io(u0, 500040, _0, _1, 0,0);
- };
+
  module.mixer.pan
  # module, pan R:-1 L:1
  {

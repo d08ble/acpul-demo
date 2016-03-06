@@ -152,34 +152,27 @@ dsp {
  # LINKER [
 
  linker.create
- {
   io(u0, 500010, 0,0,0,0);
- };
+
  linker.add.module.prop
  # linker, module, prop
- {
   io(u0, 500011, _0, _1, _2, 0);
- };
+
  linker.note.on
  # linker, note
- {
   io(u0, 500012, _0, _1, 0,0);
- };
+
  linker.note.off
  # linker, note
- {
   io(u0, 500013, _0, _1, 0,0);
- };
+
  linker.set.control
  # linker, value
- {
   io(u0, 500014, _0, _1, 0,0);
- };
+
  linker.set.pitch
  # linker, value
- {
   io(u0, 500015, _0, _1, 0,0);
- };
 
  # LINKER ]
 

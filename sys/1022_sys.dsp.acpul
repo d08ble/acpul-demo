@@ -1,14 +1,12 @@
 ### 1022 sys.dsp
 
-dsp
-{
+dsp {
  reset
   io(u0, 500000, 0,0,0,0);
 
  # MODULE [
 
- module.type
- {
+ module.type {
   generator 1;
   delay 3;
   filter 5;

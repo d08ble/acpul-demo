@@ -102,6 +102,7 @@ dsp.default.module.filter.info {
  bandwidth 500;
  gain 0.5;
  type 1000;
+ new dsp.module.filter.create2(__);
 };
 
 # filter ]

@@ -4,7 +4,7 @@ dsp
  reset
   io(u0, 500000, 0,0,0,0);
 
- # MODULE
+ # MODULE [
 
  module.type
  {
@@ -115,7 +115,8 @@ dsp
   io(u0, 500041, _0, _1, 0,0);
  };
 
- # COMPOSITION
+ # MODULE ]
+ # COMPOSITION [
 
  composition.create
  {
@@ -146,6 +147,9 @@ dsp
   io(u0, 500034, _0, 0,0,0);
  };
 
+ # COMPOSITION ]
+ # TRACK [
+
  track.create
  {
   io(u0, 500020, 0,0,0,0);
@@ -162,7 +166,8 @@ dsp
   io(u0, 500023, _0, _1, 0,0);
  };
 
- # LINKER
+ # TRACK ]
+ # LINKER [
 
  linker.create
  {
@@ -193,4 +198,7 @@ dsp
  {
   io(u0, 500015, _0, _1, 0,0);
  };
+
+ # LINKER ]
+ 
 };

@@ -407,7 +407,7 @@ draw(r0, 5251);
 
 k:=1;
 
-### 5250 test.box2d.draw
+### 5251 test.box2d.draw
 
 circle(u0, 6, 0,0, 25, 0, 8, 0);
 circle(u0, 6, 25,0, 25, 0, 8, 0);

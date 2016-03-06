@@ -2,9 +2,7 @@
 dsp
 {
  reset
- {
   io(u0, 500000, 0,0,0,0);
- };
 
  # MODULE
 

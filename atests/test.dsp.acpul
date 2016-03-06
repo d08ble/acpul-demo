@@ -169,6 +169,15 @@ if (r0) {
 };
 
 # D ]
+# A1 [
+
+module.note.on(am0, 12*5);
+
+# module.note.on(m1, 12*5);
+
+
+# A1 ]
+
 # DSP ]
 
 llog.end(ll0);

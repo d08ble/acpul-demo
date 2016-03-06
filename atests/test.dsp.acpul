@@ -50,7 +50,7 @@ dsp.default.module.generator.info {
  new module.generator.create2(__);
 };
 
-dsp.module.delay.create {
+dsp.module.delay.create2 {
  # m0dule, info :: delay.info
  _0:=dsp.module.create(dsp.module.type.delay);
  ps dsp.module.prop.set(__);
@@ -104,7 +104,6 @@ dly1 { _ dsp.default.module.delay.info;
  dsp.module.delay.create(self, dly1);
 };
 dly1;
-#dsp.module.delay.create(dly1, 0, 100, 101);
 
 # C ]
 # D [

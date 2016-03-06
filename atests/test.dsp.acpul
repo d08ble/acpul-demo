@@ -157,7 +157,7 @@ if (r0) {
 filt1 { _ dsp.default.module.filter.info;
  frequency 3;
  self r10;
- new(self, filt11);
+ new(self, filt1);
 };
 if (r0) {
  filt1;

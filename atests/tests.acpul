@@ -38,6 +38,9 @@ l0:=node.new.this.ex(r0, test.bullet.physics, 0);
 test.api.llog 5200; # new api: llog, cpu.formula.info, draw text
 l0:=node.new.this.ex(r0, test.api.llog, 0);
 
+test.dsp 5250;
+l0:=node.new.this.ex(r0, test.dsp, 0);
+
 k:=1;
 
 ### 5001 tests.draw
@@ -396,3 +399,17 @@ k:=1;
 
 circle(u0, 6, 0,0, 50, 0, 20, 0);
 
+### 5250 test.box2d
+
+r0:=k==0;
+
+draw(r0, 5251);
+
+k:=1;
+
+### 5250 test.box2d.draw
+
+circle(u0, 6, 0,0, 25, 0, 8, 0);
+circle(u0, 6, 25,0, 25, 0, 8, 0);
+circle(u0, 6, 25,25, 25, 0, 8, 0);
+circle(u0, 6, 0,25, 25, 0, 8, 0);

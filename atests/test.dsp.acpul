@@ -94,7 +94,7 @@ dsp.module.filter.create {
 
 dsp.module.filter.create2 {
  # m0dule, info :: dsp.default.module.filter.info
- dsp.module.delay.create2(_0, _1.frequency, _1.bandwidth, _1.gain, _1.type);
+ dsp.module.filter.create2(_0, _1.frequency, _1.bandwidth, _1.gain, _1.type);
 };
 
 dsp.default.module.filter.info {

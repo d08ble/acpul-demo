@@ -147,7 +147,7 @@ if (r0) {
  llog.printv(ll0, S.dly1, r12);
 
  dsp.module.delay.create(r11, 2, 0.1, 1);
- llog.printv(ll0, S.dly1a, r11);
+ llog.printv(ll0, S.dly1.short, r11);
 };
 
 

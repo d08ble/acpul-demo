@@ -9,6 +9,13 @@ draw(r0, 5251);
 _ @1010;
 _ @sys.dsp;
 
+_ @1010;
+_ @sys.llog;
+
+ll0 r0;
+llog.begin(ll0, S.livelogging.tests);
+llog.print(ll0, S.TEST.DSP);
+
 dsp.module.generator.create2 {
  # m0dule
  _0:=dsp.module.create(dsp.module.type.generator);
@@ -65,17 +72,12 @@ gen1 { _ dsp.default.module.generator.info;
 if (r0) {
  gen1; # THE BEST!!! mean 'define gen1'
  watch(r14);
+ llog.p(ll0, S.gen1);
 };
 
 # B ]
 # DSP ]
 
-_ @1010;
-_ @sys.llog;
-
-ll0 r0;
-llog.begin(ll0, S.livelogging.tests);
-llog.print(ll0, S.TEST.DSP);
 llog.end(ll0);
 
 x:=100;

@@ -81,7 +81,7 @@ dsp.default.module.delay.info {
 # delay ]
 # filter [
 
-dsp.module.delay.create {
+dsp.module.filter.create {
  # m0dule, frequency, bandwidth, gain, type
  _0:=dsp.module.create(dsp.module.type.filter);
  ps dsp.module.prop.set(__);

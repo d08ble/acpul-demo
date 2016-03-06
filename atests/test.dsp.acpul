@@ -35,9 +35,9 @@ dsp.default.module.generator.info {
   sustain 0.1;
   release 0.1;
  };
- add.harmonic dsp.module.generator.create.harmonic(__);
- mixer.volume dsp.module.mixer.volume(__);
- new dsp.module.generator.create(__);
+ add.harmonic module.generator.create.harmonic(__);
+ mixer.volume module.mixer.volume(__);
+ new module.generator.create(__);
 };
 
 # A [

@@ -116,6 +116,8 @@ dly1 { _ dsp.default.module.delay.info;
 };
 dly1;
 
+dsp.module.delay.create(r11, 2, 0.1, 1);
+
 # C ]
 # D [
 

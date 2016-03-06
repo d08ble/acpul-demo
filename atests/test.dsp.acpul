@@ -40,6 +40,7 @@ dsp.default.module.generator.info {
  new dsp.module.generator.create(__);
 };
 
+# A [
 am0 r15;
 gen0 { _ dsp.default.module.generator.info;
  type p.types.saw;
@@ -48,6 +49,19 @@ gen0.new(am0, gen0);
 gen0.add.harmonic(am0, 400, 1);
 gen0.mixer.volume(am0, 0.9);
 
+# A ]
+# B [
+
+gen1 { _ dsp.default.module.generator.info;
+ type p.types.sine;
+ self r14;
+ new(self, gen1);
+ add.harmonic(self, 400, 1);
+ mixer.volume(self, 0.9);
+};
+gen1; # THE BEST!!! mean 'define gen1'
+
+# B ]
 # DSP ]
 
 _ @1010;

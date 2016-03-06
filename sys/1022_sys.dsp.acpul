@@ -17,10 +17,9 @@ dsp
  };
  
  module.create
- # type
- {
+  # type
   io(u0, 500001, _0, 0,0,0);
- };
+
  module.props
  {
   note 1;

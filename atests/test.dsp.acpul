@@ -46,9 +46,11 @@ am0 r15;
 gen0 { _ dsp.default.module.generator.info;
  type p.types.saw;
 };
-gen0.new(am0, gen0);
-gen0.add.harmonic(am0, 400, 1);
-gen0.mixer.volume(am0, 0.9);
+if (r0) {
+ gen0.new(am0, gen0);
+ gen0.add.harmonic(am0, 400, 1);
+ gen0.mixer.volume(am0, 0.9);
+};
 
 # A ]
 # B [
@@ -60,7 +62,9 @@ gen1 { _ dsp.default.module.generator.info;
  add.harmonic(self, 400, 1);
  mixer.volume(self, 0.9);
 };
-gen1; # THE BEST!!! mean 'define gen1'
+if (r0) {
+ gen1; # THE BEST!!! mean 'define gen1'
+};
 
 # B ]
 # DSP ]

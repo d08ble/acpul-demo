@@ -56,7 +56,7 @@ dsp.module.delay.create {
  _0:=dsp.module.create(dsp.module.type.delay);
  ps dsp.module.prop.set(__);
  ps(_0, p.repeats, _1.repeats);
- ps(_0, p.amplitude.drop, _2.amplitude.drop);
+ ps(_0, p.amplitude.drop, _1.amplitude.drop);
  ps(_0, p.delay.time, _1.delay.time); 
 };
 

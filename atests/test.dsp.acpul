@@ -83,8 +83,9 @@ if (r0) {
 # D ]
 # A1 [
 
-dsp.module.note.on(am0, 12*5);
-
+if (r0) {
+ dsp.module.note.on(am0, 12*5);
+};
 # module.note.on(m1, 12*5);
 
 

@@ -80,6 +80,9 @@ dsp.default.module.delay.info {
 };
 
 # delay ]
+# filter [
+
+# filter ]
 # A [
 
 am0 r15;

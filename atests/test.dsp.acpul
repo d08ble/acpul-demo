@@ -101,7 +101,7 @@ if (r0) {
 # C [
 
 dly1 r12;
-dsp.module.delay.create(dly1, 0, 100, 101);
+#dsp.module.delay.create(dly1, 0, 100, 101);
 
 # C ]
 # DSP ]

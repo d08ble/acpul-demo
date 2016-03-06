@@ -51,7 +51,7 @@ if (r0) {
 
 dly1 { _ dsp.default.module.delay.info;
  repeats 3;
- amplitude.drop 0.5;
+ amplitude.drop 0.1;
  self r12;
  new(self, dly1);
 };

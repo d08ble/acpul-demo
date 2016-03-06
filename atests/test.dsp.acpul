@@ -40,6 +40,13 @@ dsp.default.module.generator.info {
  new dsp.module.generator.create(__);
 };
 
+am0 r15;
+gen0 { _ dsp.default.module.generator.info;
+ type p.types.saw;
+};
+gen0.new(am0, gen0);
+gen0.add.harmonic(am0, 400, 1);
+gen0.mixer.volume(am0, 0.9);
 
 # DSP ]
 

@@ -118,7 +118,9 @@ dly1 { _ dsp.default.module.delay.info;
  self r12;
  new(self, dly1);
 };
-dly1;
+if (r0) {
+ dly1;
+};
 
 dsp.module.delay.create(r11, 2, 0.1, 1);
 

@@ -63,8 +63,12 @@ dsp.module.delay.create {
 # generator ]
 
 dsp.default.module.generator.info {
+ repeats 0;
+ amplitude 0;
+ drop 0;
+ delay 0;
+};
 
-repeats, amplitude.drop, delay
 # A [
 
 am0 r15;

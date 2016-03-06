@@ -68,7 +68,7 @@ dsp.module.delay.create2 {
 # _0:=dsp.module.create(dsp.module.type.delay);
 # ps dsp.module.prop.set(__);
 # p dsp.module.props.delay; 
-# dsp.module.delay.create(_0, _1.repeats, _1.amplitude.drop, _1.delay.time);
+ dsp.module.delay.create(_0, _1.repeats, _1.amplitude.drop, _1.delay.time);
 };
 
 dsp.default.module.delay.info {

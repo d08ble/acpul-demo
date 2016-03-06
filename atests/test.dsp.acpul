@@ -9,7 +9,8 @@ draw(r0, 5251);
 _ @1010;
 _ @sys.dsp;
 
-dsp.module.generator1.create {
+dsp.module.generator.create {
+ _;
 # # m0dule
 # _0:=dsp.module.create(dsp.module.type.generator);
 # ps dsp.module.prop.set(__);

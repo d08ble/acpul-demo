@@ -62,7 +62,7 @@ dsp.module.delay.create {
 
 # generator ]
 
-dsp.default.module.generator.info {
+dsp.default.module.delay.info {
  repeats 0;
  amplitude 0;
  drop 0;
@@ -100,7 +100,7 @@ if (r0) {
 # B ]
 # C [
 
-dly1 r12;
+#dly1 r12;
 #dsp.module.delay.create(dly1, 0, 100, 101);
 
 # C ]

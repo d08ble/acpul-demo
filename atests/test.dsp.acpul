@@ -32,7 +32,7 @@ _ @1010;
 _ @sys.llog;
 
 ll0 r0;
-llog.begin(ll0, S.livelogging.main);
+llog.begin(ll0, S.livelogging.tests);
 llog.print(ll0, S.TEST.DSP);
 llog.end(ll0);
 

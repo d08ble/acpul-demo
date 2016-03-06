@@ -178,7 +178,7 @@ dsp {
 
 };
 
- generator [
+# generator [
 
 dsp.module.generator.create2 {
  # m0dule, info :: dsp.default.module.generator.info

@@ -147,7 +147,7 @@ if (r0) {
  llog.printv(ll0, S.dly1, r12);
 
  dsp.module.delay.create(r11, 2, 0.1, 1);
- llog.printv(ll0, S.dly1.short, r11);
+ llog.printv(ll0, S.filter.short, r11);
 };
 
 
@@ -156,16 +156,15 @@ if (r0) {
 
 filt1 { _ dsp.default.module.filter.info;
  frequency 3;
- amplitude.drop 0.5;
- self r12;
- new(self, dly1);
+ self r10;
+ new(self, filt11);
 };
 if (r0) {
- dly1;
- llog.printv(ll0, S.dly1, r12);
+ filt1;
+ llog.printv(ll0, S.filt1, r10);
 
- dsp.module.delay.create(r11, 2, 0.1, 1);
- llog.printv(ll0, S.dly1.short, r11);
+ dsp.module.filter.create(r9, 1000, 500, 0.5, 1000);
+ llog.printv(ll0, S.filter.short, r9);
 };
 
 # D ]

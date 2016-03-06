@@ -55,18 +55,17 @@ dsp.module.delay.create {
  # m0dule, info :: delay.info
  _0:=dsp.module.create(dsp.module.type.delay);
  ps dsp.module.prop.set(__);
- ps(_0, p.repeats, _1);
- ps(_0, p.amplitude.drop, _2);
- ps(_0, p.delay.time, _3); 
+ ps(_0, p.repeats, _1.repeats);
+ ps(_0, p.amplitude.drop, _2.amplitude.drop);
+ ps(_0, p.delay.time, _1.delay.time); 
 };
 
 # generator ]
 
 dsp.default.module.delay.info {
- repeats 0;
- amplitude 0;
- drop 0;
- delay 0;
+ repeats 1;
+ amplitude.drop 0.2;
+ delay.time 1;
 };
 
 # A [

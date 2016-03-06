@@ -13,7 +13,7 @@ dsp.module.generator.create {
  # m0dule
  _0:=dsp.module.create(dsp.module.type.generator);
  ps dsp.module.prop.set(__);
- p dsp.module.props.generator(__);
+ p dsp.module.props.generator;
 
  ps(_0, p.type, _1.type);
  ps(_0, p.frequency, _1.frequency);

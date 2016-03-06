@@ -82,6 +82,10 @@ dsp.default.module.delay.info {
 # delay ]
 # filter [
 
+dsp.default.module.filter.info {
+ frequency 1000;
+};
+
 # filter ]
 # A [
 
@@ -115,6 +119,8 @@ if (r0) {
 # C [
 
 dly1 { _ dsp.default.module.delay.info;
+ repeats 3;
+ amplitude.drop 0.5;
  self r12;
  new(self, dly1);
 };

@@ -105,9 +105,7 @@ dsp {
 
  module.mixer.pan
  # module, pan R:-1 L:1
- {
   io(u0, 500041, _0, _1, 0,0);
- };
 
  # MODULE ]
  # COMPOSITION [

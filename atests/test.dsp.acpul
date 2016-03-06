@@ -106,8 +106,8 @@ if (r0) {
 # C ]
 # DSP ]
 
-llog.end(ll0);
-llog.end(ll0);
+#llog.end(ll0);
+#llog.end(ll0);
 
 x:=100;
 

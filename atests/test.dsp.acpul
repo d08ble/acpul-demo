@@ -9,7 +9,7 @@ draw(r0, 5251);
 _ @1010;
 _ @sys.dsp;
 
-dsp.module.generator.create {
+dsp.module1.generator.create {
  # m0dule
  _0:=dsp.module.create(dsp.module.type.generator);
  ps dsp.module.prop.set(__);
@@ -42,7 +42,7 @@ dsp.default.module.generator.info {
 
 # A [
 am0 r15;
-gen0 { _ dsp.default.module.generator.info;
+gen0 { _ dsp.default.module1.generator.info;
  type p.types.saw;
 };
 gen0.new(am0, gen0);

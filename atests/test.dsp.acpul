@@ -112,7 +112,7 @@ if (r0) {
 
 dly1 { _ dsp.default.module.delay.info;
  self r12;
- dsp.module.delay.create(self, dly1);
+ dsp.module.delay.create2(self, dly1);
 };
 dly1;
 

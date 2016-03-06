@@ -72,7 +72,7 @@ gen1 { _ dsp.default.module.generator.info;
 if (r0) {
  gen1; # THE BEST!!! mean 'define gen1'
  watch(r14);
- llog.print(ll0, S.gen1);
+ llog.printv(ll0, S.gen1, r14);
 };
 
 # B ]

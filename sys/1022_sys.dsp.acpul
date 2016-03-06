@@ -111,33 +111,27 @@ dsp {
  # COMPOSITION [
 
  composition.create
- {
   io(u0, 500030, 0,0,0,0);
- };
+
  composition.add.track
  # composition, track
- {
   io(u0, 500031, _0, _1, 0,0);
- };
+
  composition.time.length
  # composition
- {
   io(u0, 500032, _0, 0,0,0);
- };
+
 # composition.remove.track
  # composition, track
 # {
 # };
  composition.play
  # composition, tempo, position, loop
- {
   io(u0, 500033, _0, _1, _2, _3);
- };
+
  composition.stop
  # composition
- {
   io(u0, 500034, _0, 0,0,0);
- };
 
  # COMPOSITION ]
  # TRACK [

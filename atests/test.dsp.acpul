@@ -84,6 +84,9 @@ dsp.default.module.delay.info {
 
 dsp.default.module.filter.info {
  frequency 1000;
+ bandwidth 500;
+ gain 0.5;
+ type 1000;
 };
 
 # filter ]

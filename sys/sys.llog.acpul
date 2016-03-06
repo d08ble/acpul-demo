@@ -10,6 +10,7 @@ livelog {
  end
   # u0
   io(_0, a+1, 0,0,0,0);
+
  print
   # u0, fmt
   io(_0, a+2, 0, _1, 0,0);
@@ -39,6 +40,10 @@ livelog {
  step
   # u0
   io(_0, a+5, _1,0,0,0);
+
+ erase
+  # u0, str
+  io(_0, a+6, _1,0,0,0);
 
  b begin(u0, __);
  e end(u0, __);

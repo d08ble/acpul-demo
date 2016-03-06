@@ -178,6 +178,7 @@ BOT 7350;
 _ @1010;
 _ @sys.llog;
 
+llog.step(u0);
 ll0 r0;
 llog.begin(ll0, S.livelogging.main);
 llog.print(ll0, S.BOOT);

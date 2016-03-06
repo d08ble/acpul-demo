@@ -87,6 +87,10 @@ if (r0) {
 };
 
 # B ]
+# C [
+dly1 r12;
+dsp.module.delay.create2
+# C ]
 # DSP ]
 
 llog.end(ll0);

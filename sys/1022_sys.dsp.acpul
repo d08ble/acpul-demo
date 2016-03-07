@@ -178,6 +178,7 @@ dsp {
 
 };
 
+# new module [
 # generator [
 
 dsp.module.generator.create2 {
@@ -263,3 +264,4 @@ dsp.default.module.filter.info {
 };
 
 # filter ]
+# new module ]

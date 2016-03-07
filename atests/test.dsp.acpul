@@ -96,6 +96,8 @@ llog.end(ll0);
 llog.end(ll0);
 
 x:=100;
+w:=270;
+h:=145;
 
 t+=dt;
 
@@ -104,7 +106,7 @@ k:=1;
 ### 5251 test.dsp.draw
 
 color(u0, 0,0,1,0.9);
-rect(u0, 2, 0,0, 270,145);
+rect(u0, 2, 0,0, w,h);
 
 fx sin((_0+0.5)*pi/2+t)*25;
 fy cos((_0+0.5)*pi/2+t)*25;

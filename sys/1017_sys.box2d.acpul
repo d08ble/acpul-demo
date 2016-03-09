@@ -239,5 +239,11 @@ box2d
   io(_0, 500351, _1, _2, 0,0);
  };
 
+# collision [
+ fixture.filter
+ # u0, fixture, category, mask, groupIndex
+  io(_0, 500352, _1, _2, _3, _4);
+
+# collision ]
  # FIXTURE ]
 };

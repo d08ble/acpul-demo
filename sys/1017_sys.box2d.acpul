@@ -56,7 +56,7 @@ box2d
   gravity.scale 1;
  };
 
- box2d.default.static.body.info {
+ default.static.body.info {
   _ default.dynamic.body.info;
   type box2d.static;
  };

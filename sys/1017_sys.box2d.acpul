@@ -150,21 +150,16 @@ box2d
  # body [ 
 
  body.group.add # body, group
- {
   io(_0, 500308, _1, _2, 0,0);
- };
+
  body.group.remove # body, group
- {
   io(_0, 500309, _1, _2,0,0);
- };
 
  # body ]
  # world [
 
  collision.group.rule # world, a, b, enableEvent
- {
   io(_0, 500320, _1, _2, _3, _4);
- };
 
  # world ]
  # COLLISION ]

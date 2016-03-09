@@ -56,6 +56,11 @@ box2d
   gravity.scale 1;
  };
 
+ box2d.default.static.body.info {
+  _ default.dynamic.body.info;
+  type box2d.static;
+ };
+
  body.def.type.position.angle
  # u0, type, x,y, angle
   io(_0, 500303, _1, _2,_3, _4);

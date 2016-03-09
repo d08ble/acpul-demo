@@ -94,14 +94,6 @@ box2d
 
  # create ]
 
- body.group.add # body, group
- {
-  io(_0, 500308, _1, _2, 0,0);
- };
- body.group.remove # body, group
- {
-  io(_0, 500309, _1, _2,0,0);
- };
  body.data.values4 # data[4]
  {
   io(_0, 500310, _1, _2, _3, _4);
@@ -155,12 +147,26 @@ box2d
 # velocity ]
 # BODY ]
  # COLLISION [
-  
+ # body [ 
+
+ body.group.add # body, group
+ {
+  io(_0, 500308, _1, _2, 0,0);
+ };
+ body.group.remove # body, group
+ {
+  io(_0, 500309, _1, _2,0,0);
+ };
+
+ # body ]
+ # world [
+
  collision.group.rule # world, a, b, enableEvent
  {
   io(_0, 500320, _1, _2, _3, _4);
  };
 
+ # world ]
  # COLLISION ]
  # SHAPE [
 

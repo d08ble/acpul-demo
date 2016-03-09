@@ -49,7 +49,7 @@ box2d
   damping.linear 0;
   damping.angular 0;
   allow.sleep 0;
-  awake 0;
+  awake 1;
   fixed.rotation 0;
   bullet 0;
   active 1;

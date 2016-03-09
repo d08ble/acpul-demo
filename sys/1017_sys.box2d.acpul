@@ -242,9 +242,27 @@ box2d
 # collision [
  
  fixture.filter
- # u0, fixture, category, mask, groupIndex
+  # u0, fixture, category, mask, groupIndex
+  # collide = (filterA.maskBits & filterB.categoryBits) != 0 &&
+  #           (filterA.categoryBits & filterB.maskBits) != 0
+  
   io(_0, 500352, _1, _2, _3, _4);
 
+# events [
+ e.pool 507;
+ e { _;
+  contact.begin 1; # -> body0, body1
+  contact.end 1;   # -> body0, body1
+ };
+
+storage.t {
+ default 0
+ image 1;
+ sound 2;
+ font 3;
+ data 4;
+};
+# events ]
 # collision ]
  # FIXTURE ]
 };

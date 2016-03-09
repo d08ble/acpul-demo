@@ -86,8 +86,8 @@ box2d
  body.create2 {
  # u0, world, info :: default.*.body.info -> body
   body.def0(u0, _2.type, _2.x,_2.y, _2.angle);
-  body.def1(u0, _2.velocity.linear.x,_2.velocity.linear.y, _2.velocity.angular);
-  body.def2(u0, _2.damping.linear, _2.damping.angular, _2.allow.sleep, _2.awake);
+#  body.def1(u0, _2.velocity.linear.x,_2.velocity.linear.y, _2.velocity.angular);
+#  body.def2(u0, _2.damping.linear, _2.damping.angular, _2.allow.sleep, _2.awake);
 #  body.def3(u0, _2.fixed.rotation, _2.bullet, _2.active, _2.gravity.scale);
   body.create(_0, _1);
  };

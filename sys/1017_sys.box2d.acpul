@@ -86,7 +86,7 @@ box2d
  body.create2 {
  # u0, world, info :: default.*.body.info -> body
   body.def.type.position.angle(u0, _2.type, _2.x,_2.y, _2.angle);
-  body.def.velocity.linear.angular(u0, _2.velocity.linear.x,_2.velocity.linear.y, _2.velocity.linear, _2.angle);
+  body.def.velocity.linear.angular(u0, _2.velocity.linear.x,_2.velocity.linear.y, _2.velocity.angular);
   body.create(_0, _1);
  };
 

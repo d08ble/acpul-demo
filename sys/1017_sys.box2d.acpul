@@ -108,6 +108,9 @@ box2d
  {
   io(_0, 500312, _1, _2, 0,0);
  };
+
+ # position, angle [
+ 
  body.set.transform
  # u0, x,y, angle
  {
@@ -123,6 +126,10 @@ box2d
  {
   io(_0, 500372, _1, 0,0,0);
  };
+ 
+ # position, angle ]
+ # velocity [
+
  body.set.linear.velocity
  # u0, vx,vy
  {
@@ -144,7 +151,8 @@ box2d
   io(_0, 500375, _1, 0,0,0);
  };
 
- # BODY ]
+# velocity ]
+# BODY ]
  # COLLISION [
   
  collision.group.rule # world, a, b, enableEvent

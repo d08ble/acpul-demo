@@ -243,9 +243,14 @@ box2d
  
  fixture.filter
   # u0, fixture, category, mask, groupIndex
-  # collide = (filterA.maskBits & filterB.categoryBits) != 0 &&
-  #           (filterA.categoryBits & filterB.maskBits) != 0
-  
+  # categoryBits/maskBits:
+  #   collide = (filterA.maskBits & filterB.categoryBits) != 0 &&
+  #             (filterA.categoryBits & filterB.maskBits) != 0
+  # groupIndex:
+  #  if either fixture has a groupIndex of zero, use the category/mask rules as above
+  #  if both groupIndex values are non-zero but different, use the category/mask rules as above
+  #  if both groupIndex values are the same and positive, collide
+  #  if both groupIndex values are the same and negative, don't collide
   io(_0, 500352, _1, _2, _3, _4);
 
 # events [

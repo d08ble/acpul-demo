@@ -241,7 +241,7 @@ box2d
 
 # collision [
  
- fixture.filter
+ fixture.filter.collision
   # u0, fixture, category, mask, groupIndex
   # categoryBits/maskBits:
   #   collide = (filterA.maskBits & filterB.categoryBits) != 0 &&

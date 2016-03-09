@@ -45,7 +45,7 @@ box2d
   y 0;
   angle 0;
   velocity.linear {x 0; y 0;};
-  velocity.angular {x 0; y 0;};
+  velocity.angular 0;
   damping.linear 0;
   damping.angular 0;
   allow.sleep 0;
@@ -85,9 +85,8 @@ box2d
 
  body.create2 {
  # u0, world, info :: default.*.body.info -> body
-  #body.def0()
-#  watch(_2.type);
   body.def.type.position.angle(u0, _2.type, _2.x,_2.y, _2.angle);
+  body.def.velocity.linear.angular(u0, _2.velocity.linear.x,_2.velocity.linear.y, _2.velocity.linear, _2.angle);
   body.create(_0, _1);
  };
 

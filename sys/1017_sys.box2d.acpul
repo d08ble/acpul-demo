@@ -74,7 +74,7 @@ box2d
  # u0, fixedRotation, bullet, active, gravityScale 
   io(_0, 500306, _1, _2, _3, _4);
 
- body.def0 body.def.type.position.angle;
+ body.def0 body.def.type.position.angle(__);
  body.def1 body.def.velocity.linear.angular;
  body.def2 body.def.damping.linear.angular.allowSleep.awake;
  body.def3 body.def.fixed.rotation.bullet.active.gravity.scale;

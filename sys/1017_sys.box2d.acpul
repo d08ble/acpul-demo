@@ -142,7 +142,7 @@ box2d
 
 # velocity ]
 # BODY ]
- # COLLISION [
+ # COLLISION - old api!!! [
  # body [ 
 
  body.group.add 
@@ -161,7 +161,7 @@ box2d
   io(_0, 500320, _1, _2, _3, _4);
 
  # world ]
- # COLLISION ]
+ # COLLISION - old api!!! ]
  # SHAPE [
 
  # type:  

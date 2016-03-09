@@ -257,7 +257,7 @@ box2d
  e.pool 507;
  e { _;
   contact.begin 1; # -> body0, body1
-  contact.end 1;   # -> body0, body1
+  contact.end 2;   # -> body0, body1
  };
 
 storage.t {

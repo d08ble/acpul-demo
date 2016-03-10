@@ -26,7 +26,7 @@ gen0 { _ dsp.default.module.generator.info;
 };
 if (r0) {
  gen0.new(am0, gen0);
- gen0.add.harmonic(am0, 400, 0.1);
+ gen0.add.harmonic(am0, 1400, 0.1);
  gen0.add.harmonic(am0, 1500, 0.1);
  gen0.mixer.volume(am0, 0.9);
  llog.printv(ll0, S.gen0, r15);

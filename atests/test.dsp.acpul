@@ -22,12 +22,12 @@ llog.print(ll0, S.TEST.DSP);
 
 am0 r15;
 gen0 { _ dsp.default.module.generator.info;
- type 4;#p.types.saw;
+ type 0;#p.types.saw;
 };
 if (r0) {
  gen0.new(am0, gen0);
- gen0.add.harmonic(am0, 140, 0.1);
- gen0.add.harmonic(am0, 150, 0.1);
+ gen0.add.harmonic(am0, 1400, 0.1);
+ gen0.add.harmonic(am0, 1500, 0.1);
  gen0.mixer.volume(am0, 0.9);
  llog.printv(ll0, S.gen0, r15);
 };

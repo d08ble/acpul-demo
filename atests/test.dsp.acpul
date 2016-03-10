@@ -22,7 +22,7 @@ llog.print(ll0, S.TEST.DSP);
 
 am0 r15;
 gen0 { _ dsp.default.module.generator.info;
- type 1;#p.types.saw;
+ type 2;#p.types.saw;
 };
 if (r0) {
  gen0.new(am0, gen0);

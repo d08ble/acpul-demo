@@ -125,19 +125,19 @@ box2d
  # velocity [
 
  body.set.linear.velocity
- # u0, vx,vy
+ # u0, body, vx,vy
   io(_0, 500373, _1, _2,_3, 0);
 
  body.get.linear.velocity
- # u0 -> o0,o1
+ # u0, body -> o0,o1
   io(_0, 500374, _1, 0,0,0);
 
  body.set.angular.velocity
- # u0, va
+ # u0, body, va
   io(_0, 500374, _1, _2, 0,0);
 
  body.get.angular.velocity
- # u0
+ # u0, body -> va
   io(_0, 500375, _1, 0,0,0);
 
 # velocity ]

@@ -49,7 +49,7 @@ livelog {
  e end(u0, __);
  p print(u0, __);
  pv printv(u0, __);
- pv2 printv(u0, __);
+ pv2 printv2(u0, __);
  pv3 printv(u0, __);
  pv4 printv(u0, __);
  po printv(u0, __);

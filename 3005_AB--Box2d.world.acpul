@@ -27,7 +27,7 @@ if (r0)
 velocity.iteractions 8;
 position.iteractions 3;
 
-box2d.step(u0, 1/60, velocity.iteractions, position.iteractions);
+box2d.step(u0, world, 1/60, velocity.iteractions, position.iteractions);
 
 
 

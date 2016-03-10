@@ -95,7 +95,7 @@ note.dt r7;
 ev0 r8;
 ev0:=events.pop(u0, 5250, 0);
 if (ev0) {
- dsp.module.note.on(am0, 12*5 - 10*4*rnd(u0));
+ dsp.module.note.on(am0, 12*5 - 5*4*rnd(u0));
  note.dt:=1;
 };
 if (note.dt > 0) {

@@ -84,9 +84,12 @@ if (r0) {
 # A1 [
 
 if (r0) {
- dsp.module.note.on(am0, 12*5);
+# dsp.module.note.on(am0, 12*5);
 };
 # module.note.on(m1, 12*5);
+
+ev0:=events.pop(u0, 5370, 0);
+if (ev)
 
 # A1 ]
 

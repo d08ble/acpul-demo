@@ -50,6 +50,12 @@ syntax.highlight.init
 ide.setup(u0);
 syntax.highlight.init(u0);
 
+_ @sys.dsp;
+
+if (r0) {
+ dsp.reset();
+};
+
 music.play
  # r0, melody, time, loop
  io(_0, 500090, _1,_2,_3,0);

@@ -21,7 +21,7 @@ box2d.test
  velocity.iteractions 8;
  position.iteractions 3;
 
- box2d.step(u0, dt, velocity.iteractions, position.iteractions);
+ box2d.step(u0, world, dt, velocity.iteractions, position.iteractions);
 
  # COLLISION RULE
  collision.groups

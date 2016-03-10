@@ -25,8 +25,8 @@ box2d
  # u0
   io(_0, 500300, 0,0,0,0);
  step
- # u0, dt, velocityIteractions, positionIteractions
-  io(_0, 500301, _1,_2,_3,0);
+ # u0, world, dt, velocityIteractions, positionIteractions
+  io(_0, 500301, _1,_2,_3,_4);
  
  world {
  # u0, gravity(x,y)

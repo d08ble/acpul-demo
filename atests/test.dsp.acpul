@@ -88,6 +88,7 @@ if (r0) {
 };
 # module.note.on(m1, 12*5);
 
+_ @sys.events;
 note.dt r7;
 ev0 r8;
 ev0:=events.pop(u0, 5370, 0);

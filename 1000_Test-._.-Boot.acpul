@@ -181,6 +181,9 @@ node.new.this.ex(r0, EDITOR, 0);
 BOT 7350;
 node.new.this.ex(r0, BOT, 0);
 
+GAME.CRAZY.BIRD 100000000;
+node.new.this.ex(r0, GAME.CRAZY.BIRD, 0);
+
 # old test [
 
 #node.new.this.ex(r0, -1000, 0);

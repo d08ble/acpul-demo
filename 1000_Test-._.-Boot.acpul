@@ -275,15 +275,15 @@ k:=1;
 
 # old ]
 
-### 100000000 CrazyBird Game
+### 10008000 CrazyBird Game
 
 r0:=k==0;
 
-draw(r0, 100000001);
+draw(r0, 10008001);
 
 k:=1;
 
-### 100000001 CrazyBird Game.draw
+### 10008001 CrazyBird Game.draw
 
 rect(u0, 6, 0,0, 555,788); 
 

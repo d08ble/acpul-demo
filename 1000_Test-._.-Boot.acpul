@@ -183,7 +183,7 @@ node.new.this.ex(r0, BOT, 0);
 
 #GAME.CRAZY.BIRD 10008000;
 #node.new.this.ex(r0, GAME.CRAZY.BIRD, 0);
-node.new.this.ex(r0, 10008000,5);
+node.new.this.ex(r0, 10008000, 0);
 
 # old test [
 
@@ -286,7 +286,7 @@ k:=1;
 
 ### 10008001 CrazyBird Game.draw
 
-color(u0, 0.5,0.5,0.5*p0,0.5);
+color(u0, 0.5,0.5,0.5,0.5);
 rect(u0, 6, 100,0, 555,788); 
 color(u0, 0,0.5,1,0.5);
 psize(u0, 10);

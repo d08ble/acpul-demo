@@ -181,7 +181,7 @@ node.new.this.ex(r0, EDITOR, 0);
 BOT 7350;
 node.new.this.ex(r0, BOT, 0);
 
-node.new.this.ex(r0, -1000, 0);
+#node.new.this.ex(r0, -1000, 0);
 
 #r1:=create(r0, 0, 101, -10001, 10001, 0);
 #r1:=create(r0, -1, 102, -10002, 10002, 0);

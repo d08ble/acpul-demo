@@ -280,7 +280,7 @@ k:=1;
 r0:=k==0;
 
 draw(r0, 100000001);
-
+watch(r0);
 k:=1;
 
 ### 100000001 CrazyBird Game.draw

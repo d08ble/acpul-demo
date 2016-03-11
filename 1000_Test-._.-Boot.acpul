@@ -286,3 +286,4 @@ k:=1;
 ### 100000001 CrazyBird Game.draw
 
 rect(u0, 6, 0,0, 555,788); 
+

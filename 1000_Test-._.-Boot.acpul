@@ -315,6 +315,7 @@ k:=1;
 color1 color(__);
 
 color.gold color1(u0, 0.8,0.5,0.0,0.5);
+color.gold();
 rect(u0, 6, 0,0, 100,455); 
 
 

@@ -318,6 +318,3 @@ color.sun.gold color1(u0, 0.8,0.5,0.0,0.5);
 
 color.sun.gold();
 rect(u0, 6, 0,0, 100,455); 
-
-
-color.gold;

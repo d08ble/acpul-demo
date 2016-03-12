@@ -331,6 +331,9 @@ r0:=k==0;
 
 draw(r0, 10009003);
 
+_ @1010;
+_ @sys.node;
+
 HL.olymp 10009004;
 node.new.this.ex(r0, HL.olymp, 0);
 k:=1;

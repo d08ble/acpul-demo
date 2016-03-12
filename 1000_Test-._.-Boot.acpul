@@ -308,6 +308,9 @@ r0:=k==0;
 
 draw(r0, 10009001);
 
+_ @1010;
+_ @sys.node;
+
 HL.world 10009002;
 node.new.this.ex(r0, HL.world, 0);
 

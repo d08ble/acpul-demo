@@ -312,3 +312,10 @@ k:=1;
 
 ### 10009001 Herolessus.draw
 
+color color1(__);
+
+color.gold color1(u0, 0.8,0.5,0.0,0.5);
+rect(u0, 6, 0,0, 100,455); 
+
+
+color.gold

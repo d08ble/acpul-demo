@@ -331,6 +331,8 @@ r0:=k==0;
 
 draw(r0, 10009003);
 
+HL.olymp 10009004;
+node.new.this.ex(r0, HL.olymp, 0);
 k:=1;
 
 ### 10009003 HL.world.draw

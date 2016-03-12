@@ -320,4 +320,4 @@ color.sun.gold();
 rect(u0, 6, 0,0, 100,455); 
 
 
-color.gold
+color.gold;

@@ -308,6 +308,9 @@ r0:=k==0;
 
 draw(r0, 10009001);
 
+HL.world 10009002;
+node.new.this.ex(r0, HL.world, 0);
+
 k:=1;
 
 ### 10009001 Herolessus.draw
@@ -318,3 +321,17 @@ color.sun.gold color1(u0, 0.8,0.5,0.0,0.5);
 
 color.sun.gold();
 rect(u0, 6, 0,0, 100,455); 
+
+### 10009002 HL.world
+
+r0:=k==0;
+
+draw(r0, 10009003);
+
+k:=1;
+
+### 10009003 Herolessus.draw
+
+color(u0, 0,0,0.5,0.5);
+rect(u0, 6, 0,0, 768,1024); 
+

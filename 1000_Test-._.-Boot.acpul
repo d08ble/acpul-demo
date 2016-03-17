@@ -173,20 +173,20 @@ COGX 6000;
 #node.new.this.ex(r0, COGX, 0);
 
 TESTS 5000;
-node.new.this.ex(r0, TESTS, 0);
+#node.new.this.ex(r0, TESTS, 0);
 
 EDITOR 8000;
-node.new.this.ex(r0, EDITOR, 0);
+#node.new.this.ex(r0, EDITOR, 0);
 
 BOT 7350;
-node.new.this.ex(r0, BOT, 0);
+#node.new.this.ex(r0, BOT, 0);
 
 #GAME.CRAZY.BIRD 10008000;
 #node.new.this.ex(r0, GAME.CRAZY.BIRD, 0);
-node.new.this.ex(r0, 10008000, 0);
+#node.new.this.ex(r0, 10008000, 0);
 
 HEROLESSUS 10009000;
-node.new.this.ex(r0, HEROLESSUS, 0);
+#node.new.this.ex(r0, HEROLESSUS, 0);
 
 AWESOME.NOTES 10010000;
 node.new.this.ex(r0, AWESOME.NOTES, 0);

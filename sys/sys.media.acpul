@@ -11,7 +11,13 @@ media.init
 # (0) type,count
 #     mixX,minY,minZ,maxX,maxY,maxZ
 # type: 0
-# (1) texCoord(x,y), vertex(x,y)
+# (1) item {
+#  0: texCoord(x,y)
+#  2: vertex(x,y)
+#  3: charCode
+#  4: texture
+#  3: position, length
+# }
 
 media.ft.mode {
  texture 0;

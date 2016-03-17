@@ -16,7 +16,7 @@ media.init
 #  2: vertex(x,y)
 #  3: charCode
 #  4: texture
-#  3: position, length
+#  5: position, length
 # }
 
 media.ft.mode {

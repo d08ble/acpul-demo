@@ -19,7 +19,7 @@ media.init
 #  2: position, length
 #  4: _size_
 # }
-# (1) item {
+# (1) drawItem {
 #  0: texCoord(x,y)*4
 #  8: vertex(x,y)*4
 #  16: _size_

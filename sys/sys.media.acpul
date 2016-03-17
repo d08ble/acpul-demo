@@ -8,21 +8,21 @@ media.init
 # io(_0, 500810, 0,0, 0,0);
 
 # dmaOut
-# (0) type,count
+# (0) <drawItem>
+# (1) type,count
 #     mixX,minY,minZ,maxX,maxY,maxZ
 #     <infoChars>
-# (1) <drawItem>
 # type: 0
-# (0) infoChar {
+# (0) drawItem {
+#  0: texCoord(x,y)*4
+#  8: vertex(x,y)*4
+#  16: _size_
+# }
+# (1) infoChar {
 #  0: charCode
 #  1: texture
 #  2: position, length
 #  4: _size_
-# }
-# (1) drawItem {
-#  0: texCoord(x,y)*4
-#  8: vertex(x,y)*4
-#  16: _size_
 # }
 
 media.ft.mode {

@@ -7,10 +7,16 @@ media.init
 # # u0, pool,id,i
 # io(_0, 500810, 0,0, 0,0);
 
+# dmaOut
+# (0) type,count
+#     mixX,minY,minZ,maxX,maxY,maxZ
+# type: 0
+# (1) texCoord(x,y), 
+
 media.ft.mode {
-  texture 0; 
-  outline 1; 
-  polygon 2;
+ texture 0;
+ outline 1; 
+ polygon 2;
 };
 
 media.ft.load.font

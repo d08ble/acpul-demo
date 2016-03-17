@@ -10,14 +10,19 @@ media.init
 # dmaOut
 # (0) type,count
 #     mixX,minY,minZ,maxX,maxY,maxZ
+#     <infoChars>
+# (1) <drawItem>
 # type: 0
+# (0) infoChar {
+#  0: charCode
+#  1: texture
+#  2: position, length
+#  4: _size_
+# }
 # (1) item {
 #  0: texCoord(x,y)*4
 #  8: vertex(x,y)*4
-#  16: charCode
-#  17: texture
-#  18: position, length
-#  size: 20
+#  16: _size_
 # }
 
 media.ft.mode {

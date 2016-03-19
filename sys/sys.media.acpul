@@ -5,8 +5,8 @@ media.init
  io(_0, 500800, 0,0, 0,0);
 
 media.step
- # u0
- io(_0, 500904, 0,0,0, 0);
+ # u0, dt
+ io(_0, 500904, _0,0,0, 0);
 
 #media.nvg.load.font
 # # u0, pool,id,i

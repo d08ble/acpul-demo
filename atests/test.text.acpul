@@ -1,4 +1,5 @@
 # test.text
+
 r0:=k==0;
 
 draw(r0, );
@@ -6,5 +7,6 @@ draw(r0, );
 k:=1;
 
 # test.text.draw
+
 color(u0, 0,1,0,0);
 rect(u0, 6, 0,0, 1001,100);

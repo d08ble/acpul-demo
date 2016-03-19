@@ -49,3 +49,50 @@ k:=1;
 
 color(u0, 0,1,0,0);
 rect(u0, 6, 0,0, 1001,100);
+
+# font draw [
+
+font0 r3;
+fchars r4;
+
+_ @1010;
+_ @sys.node;
+_ @sys.obj;
+
+#node.ex.shader.use(u0, 10010020, 10010021);
+node.ex.shader.use(u0, 10010020, 10010022);
+
+buffer.dma(u0, 0, fchars,0);
+buffer.dma(u0, 1, fchars,1);
+
+offscount 1;
+l1:=dma.get(u0, 1, offscount);
+
+startitems 8;
+itemsize 4;
+offstexture 1;
+l0:=dma.get(u0, 1, startitems+offstexture);
+node.ex.shader.uniform.texture(u0, 0, l0, 0);
+if (r0) {
+# _ @1010; _ @sys.llog; llog.b(Q.a.notes); llog.pv(Q.texture, l0); llog.e();
+ _ @1010; _ @sys.llog; llog.b(Q.a.notes); llog.pv(Q.count, l1); llog.e();
+};
+
+l2:=0;
+while (l2 < l1) {
+ # r0, i, dma,o,esize,stride,count, type,normalized
+ a0 0; # verts
+ a1 1; # texCoords
+ dma0 0;
+ eoffs 4*4*l2;
+ node.ex.shader.attribute.dma(u0, a1, dma0,eoffs,  2,4,4, 0,0);
+ node.ex.shader.attribute.dma(u0, a0, dma0,eoffs+2,2,4,4, 0,0);
+
+ node.ex.gl.draw(u0, 6, 4);
+ l2+=1;
+};
+
+dma.off(u0, 0);
+dma.off(u0, 1);
+
+# font draw ]

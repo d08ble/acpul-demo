@@ -3,6 +3,10 @@
 media.init
  io(_0, 500800, 0,0, 0,0);
 
+media.step
+ # u0
+ io(_0, 500904, 0,0,0, 0);
+
 #media.nvg.load.font
 # # u0, pool,id,i
 # io(_0, 500810, 0,0, 0,0);
@@ -45,7 +49,4 @@ media.ft.draw
  # u0, dma(p0,p1,p2)
  io(_0, 500903, _1,_2,_3, 0);
 
-media.ft.step
- # u0, dt
- io(_0, 500904, _1,0,0, 0);
 

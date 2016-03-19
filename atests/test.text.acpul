@@ -4,6 +4,45 @@ r0:=k==0;
 
 draw(r0, );
 
+# font [
+
+_ @1010;
+_ @sys.media;
+_ @sys.obj;
+
+font0 r3;
+fchars r4;
+fnt.load {
+ font0:=media.ft.load.font(u0, 0, 1000,0,0);
+};
+if (r0) {
+ fnt.load;
+
+ fchars:=buffer.new(u0, 10000*3*4, 100000*3*4); # x,y,z [+ shape] ;
+ buffer.add(u0, fchars, 1000*4, 100000*4); # char, texture, offs0,offs1
+ buffer.dma(u0, 0, fchars,0);
+ buffer.dma(u0, 1, fchars,1);
+
+# media.ft.text.dma(u0, font0,200, S.test.text777, 0,1,-1);
+# media.ft.text.dma(u0, font0,150, St.Patrick, 0,1,-1);
+# media.ft.text.dma(u0, font0,165, o.ACPU.o, 0,1,-1);
+ media.ft.text.dma(u0, font0,200, ACPU, 0,1,-1);
+
+ _ @1010; _ @sys.llog; llog.b(Q.test.font); 
+ llog.erase(u0, 0);
+ llog.pv(Q.font0, font0); 
+ llog.pv(Q.fchars, fchars); 
+ llog.pv(Q.text.dma0.size, dma.size(u0, 0)); 
+ llog.pv(Q.text.dma1.size, dma.size(u0, 1)); 
+ llog.e();
+
+ dma.off(u0, 0);
+ dma.off(u0, 1);
+};
+
+# font ]
+
+
 k:=1;
 
 # test.text.draw

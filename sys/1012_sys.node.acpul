@@ -135,7 +135,7 @@ node {_;
   io(_0, 7101, _1, _2, _3, 0);
  ex.shader.uniform.texture.name # for internal
   # u0, param, name, textureUnit
-  io(_0, 7101, _1, _2, _3, 0);
+  io(_0, 7101, _1, _2, _3, 1);
 # ex.shader.uniform.i1
 #  # u0, n, i
 #  io(_0, 7101, _1, _2, 0,0);

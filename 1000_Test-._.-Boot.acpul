@@ -80,6 +80,7 @@ events.step();
 _ @sys.media;
 
 media.init(r0);
+media.step(u0);
 
 t+=dt;
 

@@ -102,9 +102,9 @@ dma.size
  # u0, dma
  dma_size(_0, _1);
 
-dma.resize
+dma.strip.size
  # u0, dma, size
- dma_resize(_0, _1, _2);
+ dma_strip_size(_0, _1, _2);
 
 dma.set
  # u0, dma, offset, v

@@ -1,5 +1,9 @@
 ### 5400 test.media.texture
 
+r0:=k==0;
 
+draw(r0, 5401);
 
-### 5400 test.media.texture.draw
+### 5401 test.media.texture.draw
+
+#color()

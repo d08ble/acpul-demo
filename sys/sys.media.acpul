@@ -50,4 +50,7 @@ media.ft.draw
  # u0, dma(p0,p1,p2)
  io(_0, 500903, _1,_2,_3, 0);
 
+media.video.recorder.texture
+ # u0, width,height, mode -> tex
+ io(_0, 500903, _1,_2, _3, 0);
 

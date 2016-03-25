@@ -43,5 +43,6 @@ _ @sys.node;
 tex r8;
 node.ex.gl.fbo(u0, tex);
 
+node.ex.gl.clear(r0, rnd(u0),rnd(u0),rnd(u0),1);  
 
 node.ex.gl.fbo(u0, -1);

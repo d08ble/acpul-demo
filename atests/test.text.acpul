@@ -75,8 +75,8 @@ offstexture 1;
 l0:=dma.get(u0, 1, startitems+offstexture);
 node.ex.shader.uniform.texture(u0, 0, l0, 0);
 if (r0) {
-# _ @1010; _ @sys.llog; llog.b(Q.a.notes); llog.pv(Q.texture, l0); llog.e();
- _ @1010; _ @sys.llog; llog.b(Q.a.notes); llog.pv(Q.count, l1); llog.e();
+# _ @1010; _ @sys.llog; llog.b(Q.a.text.test); llog.pv(Q.texture, l0); llog.e();
+ _ @1010; _ @sys.llog; llog.b(Q.a.text.test); llog.pv(Q.count, l1); llog.e();
 };
 
 l2:=0;

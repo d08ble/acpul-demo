@@ -4,6 +4,9 @@ r0:=k==0;
 
 draw(r0, 5401);
 
+_ @1010;
+_ @sys.media;
+
 k:=1;
 
 ### 5401 test.media.texture.draw

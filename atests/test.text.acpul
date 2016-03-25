@@ -75,7 +75,7 @@ startitems 8;
 itemsize 4;
 offstexture 1;
 l0:=dma.get(u0, 1, startitems+offstexture);
-node.ex.shader.uniform.texture(u0, 0, l0, 0);
+node.ex.shader.uniform.texture.name(u0, 0, l0, 0);
 if (r0) {
  _ @1010; _ @sys.llog; llog.b(Q.test.text); llog.pv(Q.texture, l0); llog.e();
  _ @1010; _ @sys.llog; llog.b(Q.test.text); llog.pv(Q.count, l1); llog.e();

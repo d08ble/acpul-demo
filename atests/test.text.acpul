@@ -61,7 +61,7 @@ _ @sys.node;
 _ @sys.obj;
 
 #node.ex.shader.use(u0, 10010020, 10010021);
-node.ex.shader.use(u0, 10010020, 10010022);
+node.ex.shader.use(u0, 5302, 5303);
 
 buffer.dma(u0, 0, fchars,0);
 buffer.dma(u0, 1, fchars,1);
@@ -112,5 +112,19 @@ void main()
 {
   gl_Position = CC_MVPMatrix * a_position;
   v_texCoord = a_texCoord;
+}
+
+### 5303:S text.fill.vsh
+
+varying vec2 v_texCoord;
+
+uniform sampler2D p0;
+
+void main()
+{
+  vec4 c = texture2D(p0, v_texCoord);
+  c = c.a * vec4(0.3,1.,0.+sin(v_texCoord.x*2.),1.);
+  gl_FragColor = c;
+//  gl_FragColor = vec4(0.5);
 }
 

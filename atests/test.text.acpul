@@ -97,3 +97,20 @@ dma.off(u0, 0);
 dma.off(u0, 1);
 
 # font draw ]
+
+### 5302:S text.main.vsh
+
+#define a_position a0
+#define a_texCoord a1
+
+attribute vec4 a_position;
+attribute vec2 a_texCoord;
+
+varying mediump vec2 v_texCoord;
+ 
+void main()
+{
+  gl_Position = CC_MVPMatrix * a_position;
+  v_texCoord = a_texCoord;
+}
+

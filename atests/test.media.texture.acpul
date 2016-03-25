@@ -23,4 +23,4 @@ n 3;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
 n 4;m 1;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
 n 5;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
 
-n 2.5;m 1.7;triangle(u0, 5, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+n 2.5;m 1.7;triangle(u0, 4, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));

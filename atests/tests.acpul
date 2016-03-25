@@ -41,6 +41,9 @@ l0:=node.new.this.ex(r0, test.api.llog, 0);
 test.dsp 5250;
 l0:=node.new.this.ex(r0, test.dsp, 0);
 
+test.text 5300;
+l0:=node.new.this.ex(r0, test.text, 0);
+
 k:=1;
 
 ### 5001 tests.draw

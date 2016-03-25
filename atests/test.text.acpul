@@ -29,7 +29,7 @@ if (r0) {
 # media.ft.text.dma(u0, font0,165, o.ACPU.o, 0,1,-1);
  media.ft.text.dma(u0, font0,200, ACPU, 0,1,-1);
 
- _ @1010; _ @sys.llog; llog.b(Q.test.font); 
+ _ @1010; _ @sys.llog; llog.b(Q.test.text); 
  llog.erase(u0, 0);
  llog.pv(Q.font0, font0); 
  llog.pv(Q.fchars, fchars); 
@@ -75,8 +75,8 @@ offstexture 1;
 l0:=dma.get(u0, 1, startitems+offstexture);
 node.ex.shader.uniform.texture(u0, 0, l0, 0);
 if (r0) {
- _ @1010; _ @sys.llog; llog.b(Q.a.text.test); llog.pv(Q.texture, l0); llog.e();
- _ @1010; _ @sys.llog; llog.b(Q.a.text.test); llog.pv(Q.count, l1); llog.e();
+ _ @1010; _ @sys.llog; llog.b(Q.test.text); llog.pv(Q.texture, l0); llog.e();
+ _ @1010; _ @sys.llog; llog.b(Q.test.text); llog.pv(Q.count, l1); llog.e();
 };
 
 l2:=0;

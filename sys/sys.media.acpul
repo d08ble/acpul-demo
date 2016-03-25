@@ -51,6 +51,6 @@ media.ft.draw
  io(_0, 500903, _1,_2,_3, 0);
 
 media.video.recorder.texture
- # u0, width,height, mode -> tex
- io(_0, 500903, _1,_2, _3, 0);
+ # u0, mode, width,height -> tex
+ io(_0, 500903, _1, _2,_3, 0);
 

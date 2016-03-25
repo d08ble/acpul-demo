@@ -62,8 +62,8 @@ _ @1010;
 _ @sys.node;
 _ @sys.obj;
 
-node.ex.shader.use(u0, 10010020, 10010021);
-#node.ex.shader.use(u0, 5302, 5303);
+#node.ex.shader.use(u0, 10010020, 10010021);
+node.ex.shader.use(u0, 5302, 5303);
 
 buffer.dma(u0, 0, fchars,0);
 buffer.dma(u0, 1, fchars,1);

@@ -97,7 +97,6 @@ while (l2 < l1) {
 
 dma.off(u0, 0);
 dma.off(u0, 1);
-watch(l1);
 
 # font draw ]
 

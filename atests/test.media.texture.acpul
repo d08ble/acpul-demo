@@ -74,6 +74,6 @@ record.frame {
  media.video.recorder.frame.ready(u0, tex, dt);
 };
 
-#if (recording) {
+if (recording) {
  record.frame;
-#};
+};

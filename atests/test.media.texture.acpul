@@ -39,7 +39,7 @@ if (r0) {
 # node.prop.s.s(u0, n0, 0.2);
 # node.prop.x.s(u0, n0, 200-cos(t)*50);
 # node.prop.y.s(u0, n0, 200+sin(t)*50);
- node.prop.x.s(u0, n0, 100);
+ node.prop.x.s(u0, n0, 0);
 
 t+=dt;
 

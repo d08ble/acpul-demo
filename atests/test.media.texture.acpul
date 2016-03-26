@@ -62,7 +62,7 @@ record.frame {
  node.ex.gl.clear(u0, 0,0,0,0);  
 # node.ex.gl.clear(u0, rnd(u0),rnd(u0),rnd(u0),1);  
 
- 
+ form;
 
  node.ex.gl.fbo(u0, -1);
 

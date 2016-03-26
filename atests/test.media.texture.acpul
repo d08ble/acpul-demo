@@ -25,6 +25,7 @@ if (t > 5) {
 BIRD 7340;
 if (r0) {
  r6:=node.new.this.ex(r0, BIRD, 0);
+  _ @1010; _ @sys.llog; llog.b(Q.test.media.texture); llog.pv(Q.r6, r6); llog.e();
 };
 #watch(r6);
 

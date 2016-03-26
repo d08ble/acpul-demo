@@ -14,7 +14,7 @@ if (r0) {
  pool 5400;
  id 0;
  tex:=media.video.recorder.texture(r0, pool,id, 0, 640,480);
- recording:=1;
+ recording:=111;
 };
 
 t+=dt;

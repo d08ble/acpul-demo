@@ -23,7 +23,10 @@ if (t > 5) {
 };
 
 BIRD 7340;
-r6:=node.new.this.ex(r0, BIRD, 0);
+if (r0) {
+ r6:=node.new.this.ex(r0, BIRD, 0);
+};
+watch(r6);
 
 t+=dt;
 

@@ -22,6 +22,9 @@ if (t > 5) {
  recording:=0;
 };
 
+BIRD 7340;
+r6:=node.new.this.ex(r0, BIRD, 0);
+
 t+=dt;
 
 k:=1;
@@ -29,21 +32,22 @@ k:=1;
 ### 5401 test.media.texture.draw
 
 color(u0, 1,0,0,1);
-x0 0+50*_0;
-y0 0+50*_0;
-x1 50+50*_0;
-y1 50+50*_0+rnd(u0)*50;
-x2 100+50*_0;
-y2 0+50*_0;
-n 0;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-n 1;m 1;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-n 2;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-
-n 3;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-n 4;m 1;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-n 5;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-
-n 2.5;m 1.7;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+form {
+ x0 0+50*_0;
+ y0 0+50*_0;
+ x1 50+50*_0;
+ y1 50+50*_0+rnd(u0)*50;
+ x2 100+50*_0;
+ y2 0+50*_0;
+ n 0;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+ n 1;m 1;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+ n 2;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+ n 3;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+ n 4;m 1;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+ n 5;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+ n 2.5;m 1.7;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+};
+form;
 
 _ @1010;
 _ @sys.node;
@@ -58,15 +62,7 @@ record.frame {
  node.ex.gl.clear(u0, 0,0,0,0);  
 # node.ex.gl.clear(u0, rnd(u0),rnd(u0),rnd(u0),1);  
 
-n 0;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-n 1;m 1;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-n 2;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-
-n 3;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-n 4;m 1;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-n 5;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
-
-n 2.5;m 1.7;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+ 
 
  node.ex.gl.fbo(u0, -1);
 

@@ -57,10 +57,10 @@ record.frame {
  media.video.recorder.frame.ready(u0, tex, dt);
 };
 
-if (t < 100) {
+if (t < 1) {
  record.frame;
 };
-if (t > 100) {
+if (t > 1) {
  media.video.recorder.stop(recording, tex);
  recording:=0;
 };

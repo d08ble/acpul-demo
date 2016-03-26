@@ -8,11 +8,13 @@ _ @1010;
 _ @sys.media;
 
 tex r8;
+recording r7;
 
 if (r0) {
  pool 5400;
  id 0;
  tex:=media.video.recorder.texture(r0, pool,id, 0, 640,480);
+ recording:=1;
 };
 
 t+=dt;
@@ -58,5 +60,6 @@ if (t < 10) {
  record.frame;
 };
 if (t > 10) {
- media.video.recorder.stop(u0, tex);
+ media.video.recorder.stop(recording, tex);
+ recording:=0;
 };

@@ -29,7 +29,7 @@ if (r0) {
  r6:=node.new.this.ex(r0, BIRD, 0);
  n0 r6;
  node.prop.s.s(u0, n0, 0.5);
- node.prop.x.s(u0, n0, 100);
+ node.prop.x.s(u0, n0, 200);
  node.prop.y.s(u0, n0, 100);
 
   _ @1010; _ @sys.llog; llog.b(Q.test.media.texture); llog.erase(u0, 0); llog.pv(Q.r6, r6); llog.e();

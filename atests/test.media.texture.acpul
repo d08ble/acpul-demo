@@ -17,6 +17,11 @@ if (r0) {
  recording+=1;
 };
 
+if (t > 1) {
+ media.video.recorder.stop(recording, tex);
+ recording:=0;
+};
+
 t+=dt;
 
 k:=1;
@@ -59,9 +64,4 @@ record.frame {
 
 if (t < 1) {
  record.frame;
-};
-if (t > 1) {
- media.video.recorder.stop(recording, tex);
-# recording:=0;
-# watch(recording);
 };

@@ -55,6 +55,7 @@ recording r5;
 record.frame {
  node.ex.gl.fbo(u0, tex);
 
+ node.ex.gl.clear(u0, 0,0,0,0);  
 # node.ex.gl.clear(u0, rnd(u0),rnd(u0),rnd(u0),1);  
 
 n 0;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));

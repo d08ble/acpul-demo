@@ -27,10 +27,10 @@ _ @sys.node;
 if (r0) {
 # BIRD 7340;
 # r6:=node.new.this.ex(r0, BIRD, 1);
-# BIRD 7340;
-# r6:=node.new.this.ex(r0, BIRD, 1);
+ AWESOME.NOTES 10010000;
+ node.new.this.ex(r0, AWESOME.NOTES, 0);
 
-  _ @1010; _ @sys.llog; llog.b(Q.test.media.texture); llog.erase(u0, 0); llog.pv(Q.r6, r6); llog.e();
+ _ @1010; _ @sys.llog; llog.b(Q.test.media.texture); llog.erase(u0, 0); llog.pv(Q.r6, r6); llog.e();
 };
 
  n0 r6;

@@ -22,6 +22,8 @@ if (t > 5) {
  recording:=0;
 };
 
+_ @sys.node;
+
 BIRD 7340;
 if (r0) {
  r6:=node.new.this.ex(r0, BIRD, 0);

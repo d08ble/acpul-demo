@@ -61,7 +61,7 @@ if (t < 1) {
  record.frame;
 };
 if (t > 1) {
- media.video.recorder.stop(recording, tex);
+ media.video.recorder.stop(r7, tex);
  recording:=0;
  watch(recording);
 };

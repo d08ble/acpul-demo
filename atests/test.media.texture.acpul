@@ -45,3 +45,5 @@ node.ex.gl.fbo(u0, tex);
 node.ex.gl.clear(r0, rnd(u0),rnd(u0),rnd(u0),1);  
 
 node.ex.gl.fbo(u0, -1);
+
+media.video.recorder.frame.ready(u0, tex, dt);

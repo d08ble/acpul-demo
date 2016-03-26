@@ -30,7 +30,7 @@ if (r0) {
  AWESOME.NOTES 10010000;
  r6:=node.new.this.ex(r0, AWESOME.NOTES, 0);
  TEST.TEXT 5300;
- #r6:=node.new.this.ex(r0, AWESOME.NOTES, 0);
+# r6:=node.new.this.ex(r0, AWESOME.NOTES, 0);
 
  _ @1010; _ @sys.llog; llog.b(Q.test.media.texture); llog.erase(u0, 0); llog.pv(Q.r6, r6); llog.e();
 };

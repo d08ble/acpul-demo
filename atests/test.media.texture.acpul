@@ -62,6 +62,6 @@ record.frame {
  media.video.recorder.frame.ready(u0, tex, dt);
 };
 
-if (t < 1) {
+if (recording) {
  record.frame;
 };

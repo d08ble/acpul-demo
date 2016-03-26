@@ -17,7 +17,7 @@ if (r0) {
  recording+=1;
 };
 
-if (t > 5) {
+if (t > 15) {
  media.video.recorder.stop(recording, tex);
  recording:=0;
 };

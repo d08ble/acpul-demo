@@ -26,7 +26,7 @@ BIRD 7340;
 if (r0) {
  r6:=node.new.this.ex(r0, BIRD, 0);
 };
-watch(r6);
+#watch(r6);
 
 t+=dt;
 

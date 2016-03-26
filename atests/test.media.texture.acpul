@@ -57,6 +57,8 @@ record.frame {
 
  node.ex.gl.clear(u0, rnd(u0),rnd(u0),rnd(u0),1);  
 
+ n 2.5;m 1.7;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+
  node.ex.gl.fbo(u0, -1);
 
  media.video.recorder.frame.ready(u0, tex, dt);

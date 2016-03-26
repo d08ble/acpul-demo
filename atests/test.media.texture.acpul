@@ -42,6 +42,7 @@ n 2.5;m 1.7;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
 
 _ @1010;
 _ @sys.node;
+_ @sys.media;
 
 tex r8;
 recording r7;

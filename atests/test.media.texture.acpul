@@ -74,6 +74,7 @@ record.frame {
  node.ex.gl.clear(u0, 1,1,0,1);
 # node.ex.gl.clear(u0, rnd(u0),rnd(u0),rnd(u0),1);  
 
+
  form;
 
  node.ex.gl.child.draw(u0);

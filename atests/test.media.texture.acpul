@@ -29,6 +29,7 @@ if (r0) {
  r6:=node.new.this.ex(r0, BIRD, 0);
   _ @1010; _ @sys.llog; llog.b(Q.test.media.texture); llog.erase(u0, 0); llog.pv(Q.r6, r6); llog.e();
 };
+s:=0.5;
 
 t+=dt;
 

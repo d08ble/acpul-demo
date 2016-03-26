@@ -56,10 +56,10 @@ media.video.recorder.texture {
  io(_0, 500831, _3, _4,_5, 0);
 };
 
-#media.video.recorder.frame.ready
+media.video.recorder.frame.ready
  # u0, tex, dt
-# io(_0, 500832, _1, _2, 0,0);
+ io(_0, 500832, _1, _2, 0,0);
 
-#media.video.recorder.stop
+media.video.recorder.stop
  # u0, tex
-# io(_0, 500833, _1, 0,0,0);
+ io(_0, 500833, _1, 0,0,0);

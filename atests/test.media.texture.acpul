@@ -55,9 +55,17 @@ recording r5;
 record.frame {
  node.ex.gl.fbo(u0, tex);
 
- node.ex.gl.clear(u0, rnd(u0),rnd(u0),rnd(u0),1);  
+# node.ex.gl.clear(u0, rnd(u0),rnd(u0),rnd(u0),1);  
 
- n 2.5;m 1.7;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+n 0;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+n 1;m 1;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+n 2;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+
+n 3;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+n 4;m 1;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+n 5;m 0;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
+
+n 2.5;m 1.7;triangle(u0, 6, x0(n),y0(m), x1(n),y1(m), x2(n),y2(m));
 
  node.ex.gl.fbo(u0, -1);
 

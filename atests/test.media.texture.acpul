@@ -60,7 +60,7 @@ record.frame {
 if (t < 10) {
  record.frame;
 };
-if (t > 10) {
+if (t > 100) {
  media.video.recorder.stop(recording, tex);
  recording:=0;
 };

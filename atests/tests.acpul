@@ -46,12 +46,6 @@ test.text 5300;
 
 test.media.texture 5400;
 l0:=node.new.this.ex(r0, test.media.texture, 0);
-test.media.texture 5400;
-l0:=node.new.this.ex(r0, test.media.texture, 0);
-test.media.texture 5400;
-l0:=node.new.this.ex(r0, test.media.texture, 0);
-test.media.texture 5400;
-l0:=node.new.this.ex(r0, test.media.texture, 0);
 
 k:=1;
 

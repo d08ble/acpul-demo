@@ -2,21 +2,22 @@
 
 sharedobj.self u55;
 sharedobj.init {
+ # r0
  _ @1010;
  _ @sys.obj;
- u55:=map.new(u0, 1024, 1000000);
- it.key.new(u0, u55,0, 0);
- it.dma(u0, 0, u55,0);
- dma.set(u0, 0,0, 55); # set identity - js operator: u55={0:55}
+ u55:=map.new(_0, 1024, 1000000);
+ it.key.new(_0, u55,0, 0);
+ it.dma(_0, 0, u55,0);
+ dma.set(_0, 0,0, 55); # set identity - js operator: u55={0:55}
 };
 sharedobj.key {
- # dma, key
- if (it.key(u0, u55,_0, _1)>0,
-  it.dma(u0, 0, u55,_0),
+ # r0, dma, key
+ if (it.key(_0, u55,_1, _2)>0,
+  it.dma(_0, 0, u55,_1),
   -1);
 };
 sharedobj.key.new {
- # dma, key
- it.key.new(u0, u55,_0, _1);
- it.dma(u0, 0, u55,_0);
+ # r0, dma, key
+ it.key.new(_0, u55,_1, _2);
+ it.dma(_0, 0, u55,_1);
 };

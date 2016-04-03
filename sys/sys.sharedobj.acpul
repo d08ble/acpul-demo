@@ -8,11 +8,12 @@ sharedobj {
  _ @1010;
  _ @sys.obj;
  init {
-  # r0
+  # r0; use:dma0
   self:=map.new(_0, 1024, 1000000);
   it.key.new(_0, self,0, 0);
   it.dma(_0, 0, self,0);
   dma.set(_0, 0,0, 55); # set identity - js operator: u55={0:55}
+  dma.off(_0, 0);
  };
  key {
   # r0, dma, key ->

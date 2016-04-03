@@ -204,8 +204,11 @@ node {_;
   # r0, x,y, w,h
   io(_0, 7208, _1,_2,_3,_4);
  ex.gl.node.draw
-  # r0, uid
+  # r0, nid
   io(_0, 7209, _1,0,0,0);
+ ex.this.id
+  # r0 -> nid
+  io(_0, 7217, 0,0,0,0);
 
  prop.x.s 
   # u0, nid, v

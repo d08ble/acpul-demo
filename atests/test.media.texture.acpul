@@ -51,7 +51,7 @@ anotes.position {
  node.prop.y.s(u0, n0, -100);
  node.prop.s.s(u0, n0, 0.95);
 };
-anotes.position;
+#anotes.position;
 
 
 t+=dt;

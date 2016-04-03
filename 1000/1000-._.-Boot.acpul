@@ -23,8 +23,8 @@ sharedobj.init(r0, dma0);
 
 test.shrobj {
  _ @sys.obj;
- l0:=sharedobj.key(r0, dma0,0);
- #l0:=dma.get(r0, dma0,0);
+ sharedobj.key(r0, dma0,0);
+ l0:=dma.get(r0, dma0,0);
  dma.off(r0, dma0);
  _ @sys.llog;
  llog.begin(r0, S.sharedobj);

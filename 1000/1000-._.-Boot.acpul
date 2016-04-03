@@ -27,6 +27,7 @@ setup.shared.object {
   dma.set(r0, dma0,0, 88);
   dma.off(r0, dma0);
  };
+ share.boot.node.id;
 };
 setup.shared.object;
 

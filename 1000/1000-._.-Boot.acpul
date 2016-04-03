@@ -21,6 +21,15 @@ _ @sys.sharedobj;
 dma0 0;
 sharedobj.init(r0, dma0);
 
+setup.shared.object {
+ share.boot.node.id {
+  sharedobj.key.new(r0, dma0,1000);
+  dma.set(r0, dma0,0, 88);
+  dma.off(r0, dma0);
+ };
+};
+setup.shared.object;
+
 test.shrobj {
  _ @sys.obj;
  sharedobj.key.new(r0, dma0,1);

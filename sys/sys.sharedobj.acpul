@@ -20,7 +20,7 @@ sharedobj {
  };
  key {
   # r0, dma, key -> -1 || <dma>
-  if (it.key(_0, self,it0, _2)>0,
+  if (it.key(_0, self,it0, _1)>0,
    it.dma(_0, 0, self,it),
    -1);
  };

@@ -20,13 +20,13 @@ sharedobj {
  };
  key {
   # r0, dma, key -> -1 || <dma>
-  if (it.key(_0, self,it0, _1)>0,
-   it.dma(_0, 0, self,it),
+  if (it.key(_0, self,it0, _2)>0,
+   it.dma(_0, _1, self,it),
    -1);
  };
  key.new {
   # r0, dma, key -> <dma>
   it.key.new(_0, self,it0, _2);
-  it.dma(_0, 0, self,it0);
+  it.dma(_0, _1, self,it0);
  };
 };

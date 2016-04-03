@@ -27,14 +27,18 @@ if (t > 60) {
 
 _ @sys.node;
 
+n0 r6;
+
 if (r0) {
 # BIRD 7340;
 # r6:=node.new.this.ex(r0, BIRD, 1);
 # AWESOME.NOTES 10010000;
 # r6:=node.new.this.ex(r0, AWESOME.NOTES, 0);
- ACPU.STUDIO 10019000;
- r6:=node.new.this.ex(r0, ACPU.STUDIO, 0);
- node.prop.s.s(u0, r6, 0.1);
+# ACPU.STUDIO 10019000;
+# r6:=node.new.this.ex(r0, ACPU.STUDIO, 0);
+# node.prop.s.s(u0, r6, 0.1);
+ BOOT 1000;
+ n0:=node.new.this.ex(r0, BOOT, 0);
 
  TEST.TEXT 5300;
 # r6:=node.new.this.ex(r0, TEST.TEXT, 0);
@@ -42,13 +46,16 @@ if (r0) {
  _ @1010; _ @sys.llog; llog.b(Q.test.media.texture); llog.erase(u0, 0); llog.pv(Q.r6, r6); llog.e();
 };
 
- n0 r6;
+anotes.position {
 # node.prop.s.s(u0, n0, 0.2);
 # node.prop.x.s(u0, n0, 200-cos(t)*50);
 # node.prop.y.s(u0, n0, 200+sin(t)*50);
  node.prop.x.s(u0, n0, -50);
  node.prop.y.s(u0, n0, -100);
  node.prop.s.s(u0, n0, 0.95);
+};
+anotes.position;
+
 
 t+=dt;
 

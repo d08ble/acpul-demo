@@ -26,9 +26,9 @@ test.shrobj {
  l0:=dma.get(r0, 0);
  dma.off(r0, dma0);
  _ @sys.llog;
- llog.begin(ll0, S.sharedobj);
- llog.printv(ll0, S.i0, l0);
- llog.end(ll0);
+ llog.begin(r0, S.sharedobj);
+ llog.printv(r0, S.i0, l0);
+ llog.end(r0);
 };
 test.shrobj;
 

@@ -1,0 +1,22 @@
+### 1039 sys.sharedobj
+
+sharedobj.self u55;
+sharedobj.init {
+ _ @1010;
+ _ @sys.obj;
+ u55:=map.new(u0, 1024, 1000000);
+ it.key.new(u0, u55,0, 0);
+ it.dma(u0, 0, u55,0);
+ dma.set(u0, 0,0, 55); # set identity - js operator: u55={0:55}
+};
+sharedobj.key {
+ # dma, key
+ if (it.key(u0, u55,_0, _1)>0,
+  it.dma(u0, 0, u55,_0),
+  -1);
+};
+sharedobj.key.new {
+ # dma, key
+ it.key.new(u0, u55,_0, _1);
+ it.dma(u0, 0, u55,_0);
+};

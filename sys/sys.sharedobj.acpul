@@ -1,4 +1,7 @@
 ### 1039 sys.sharedobj
+# default ids:
+# 0    self
+# 1000 boot
 
 sharedobj {
  self u55;

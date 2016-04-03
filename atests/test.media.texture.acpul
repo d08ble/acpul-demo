@@ -37,7 +37,7 @@ if (r0) {
 # ACPU.STUDIO 10019000;
 # r6:=node.new.this.ex(r0, ACPU.STUDIO, 0);
 
- TEST.TEXT 5300;
+# TEST.TEXT 5300;
 # r6:=node.new.this.ex(r0, TEST.TEXT, 0);
 
  _ @1010; _ @sys.llog; llog.b(Q.test.media.texture); llog.erase(u0, 0); llog.pv(Q.r6, r6); llog.e();

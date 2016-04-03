@@ -192,6 +192,9 @@ HEROLESSUS 10009000;
 AWESOME.NOTES 10010000;
 #node.new.this.ex(r0, AWESOME.NOTES, 0);
 
+ACPU.STUDIO 10019000;
+node.new.this.ex(r0, ACPU.STUDIO, 0);
+
 # old test [
 
 #node.new.this.ex(r0, -1000, 0);

@@ -51,7 +51,9 @@ sys.bullet.physics 1037;
 
 sys.llog 1038;
 
-sys.modules.a.MAX 1039;
+sys.sharedobj 1039;
+
+sys.modules.a.MAX 1040;
 
 # sys.def ]
 

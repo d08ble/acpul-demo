@@ -18,7 +18,7 @@ net.reset.after.update(1, 1000);
 
 _ @sys.sharedobj;
 
-sharedobj.init(r0);
+sharedobj.init(r0, 0);
 
 # NETWORKING ]
   

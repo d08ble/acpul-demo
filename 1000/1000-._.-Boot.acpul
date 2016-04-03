@@ -25,7 +25,7 @@ test.shrobj {
  _ @sys.obj;
  sharedobj.key.new(r0, dma0,1);
  dma.set(r0, dma0,0, 88);
- sharedobj.key(r0, dma0,1);
+ sharedobj.key(r0, dma0,0);
  l0:=dma.get(r0, dma0,0);
  dma.off(r0, dma0);
  _ @sys.llog;

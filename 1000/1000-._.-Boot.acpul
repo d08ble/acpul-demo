@@ -22,6 +22,7 @@ dma0 0;
 sharedobj.init(r0, dma0);
 
 test.shrobj {
+ _ @sys.obj;
  sharedobj.key(r0, dma0,0);
  l0:=dma.get(r0, 0);
  dma.off(r0, dma0);

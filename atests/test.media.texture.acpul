@@ -34,6 +34,8 @@ if (r0) {
 # r6:=node.new.this.ex(r0, AWESOME.NOTES, 0);
  ACPU.STUDIO 10019000;
  r6:=node.new.this.ex(r0, ACPU.STUDIO, 0);
+ node.prop.s.s(u0, r6, 0.2);
+
  TEST.TEXT 5300;
 # r6:=node.new.this.ex(r0, TEST.TEXT, 0);
 

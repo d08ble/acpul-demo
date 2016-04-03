@@ -16,6 +16,10 @@ net.host(192,168,1,102, 8077);
 net.editor.update(1);
 net.reset.after.update(1, 1000);
 
+_ @sys.sharedobj;
+
+sharedobj.init(r0);
+
 # NETWORKING ]
   
 r0:=k==0;

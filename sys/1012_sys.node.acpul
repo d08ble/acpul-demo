@@ -201,7 +201,7 @@ node {_;
   # r0, x,y,w,h
   io(_0, 7207, _1,_2,_3,_4);
  ex.gl.node.transform
-  # r0, x,y, w,h
+  # r0, x,y, r, s
   io(_0, 7208, _1,_2,_3,_4);
  ex.gl.node.draw
   # r0, nid

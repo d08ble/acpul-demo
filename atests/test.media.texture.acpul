@@ -13,7 +13,8 @@ recording r5;
 if (r0) {
  pool 5400;
  id 0;
- tex:=media.video.recorder.texture(r0, pool,id, 0, 640,480);
+# tex:=media.video.recorder.texture(r0, pool,id, 0, 640,480);
+ tex:=media.video.recorder.texture(r0, pool,id, 0, 768,1024);
  recording+=1;
 };
 
@@ -89,7 +90,7 @@ draw.boot {
  dma0 0;
  sharedobj.key(u0, dma0,1000);
  l0:=dma.get(u0, dma0,0);
- node.ex.gl.node.set.draw.transform(u0, 0,0, 0, 0.5);
+# node.ex.gl.node.set.draw.transform(u0, 0,0, 0, 0.5);
  node.ex.gl.node.draw(u0, l0);
 };
 

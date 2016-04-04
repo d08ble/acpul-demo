@@ -17,6 +17,7 @@ net.editor.update(1);
 net.reset.after.update(1, 1000);
 
 _ @sys.sharedobj;
+_ @sys.obj;
 
 dma0 0;
 sharedobj.init(r0, dma0);
@@ -32,7 +33,6 @@ setup.shared.object {
 setup.shared.object;
 
 test.shrobj {
- _ @sys.obj;
  sharedobj.key.new(r0, dma0,1);
  dma.set(r0, dma0,0, 88);
  sharedobj.key(r0, dma0,0);

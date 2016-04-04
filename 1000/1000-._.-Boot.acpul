@@ -34,7 +34,7 @@ setup.shared.object;
 
 node.ex.gl.clip.rect(u0,0,0,0,0);
 io(u0, 7216, 0,0,0,0);
-watch(r0);
+#watch(r0);
 
 test.shrobj {
  sharedobj.key.new(r0, dma0,1);

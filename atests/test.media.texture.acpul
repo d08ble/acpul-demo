@@ -85,6 +85,14 @@ _ @sys.media;
 tex r8;
 recording r5;
 
+draw.boot {
+ dma0 0;
+ sharedobj.key(u0, dma0,1000);
+ l0:=dma.get(u0, dma0,0);
+ node.ex.gl.node.set.draw.transform(u0, 0,0, 0, 0.5);
+ node.ex.gl.node.draw(u0, l0);
+};
+
 record.frame {
  node.ex.gl.fbo(u0, tex);
 
@@ -105,11 +113,6 @@ record.frame {
 _ @sys.sharedobj;
 _ @sys.obj;
 
-dma0 0;
-sharedobj.key(u0, dma0,1000);
-l0:=dma.get(u0, dma0,0);
-node.ex.gl.node.set.draw.transform(u0, 0,0, 0, 0.5);
-node.ex.gl.node.draw(u0, l0);
 
 if (recording) {
  record.frame;

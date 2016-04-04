@@ -97,10 +97,10 @@ draw.self l15;
 
 record.frame {
  if (draw.self == 0) {
-  draw.self:=1;
   l0:=77;
  watch(l0);
  watch(draw.self);
+  draw.self:=1;
   node.ex.gl.fbo(u0, tex);
 
 # node.ex.gl.clear(u0, 0,0,0,0);  

@@ -3,7 +3,7 @@
 color(u0, 1,1,1,1);
 rect(u0, 3, 0,0,w,h);
 l0:=0;
-c 5;
+c 8;
 while(l0<c) {
   #rect(u0, 3, l0*w/c,0, w/c,10);
   rect(u0, 3, l0*w/c,h-10, w/c,10);

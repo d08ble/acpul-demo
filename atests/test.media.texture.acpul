@@ -103,6 +103,7 @@ record.frame {
 };
 
 _ @sys.sharedobj;
+_ @sys.obj;
 
 dma0 0;
 sharedobj.key(u0, dma0,1000);

@@ -98,6 +98,8 @@ draw.self l15;
 record.frame {
  if (draw.self == 0) {
   draw.self:=1;
+  l0:=77;
+ watch(l0);
  watch(draw.self);
   node.ex.gl.fbo(u0, tex);
 

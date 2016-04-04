@@ -32,8 +32,8 @@ n0 r6;
 if (r0) {
 # BIRD 7340;
 # r6:=node.new.this.ex(r0, BIRD, 1);
-# AWESOME.NOTES 10010000;
-# r6:=node.new.this.ex(r0, AWESOME.NOTES, 0);
+ AWESOME.NOTES 10010000;
+ r6:=node.new.this.ex(r0, AWESOME.NOTES, 0);
 # ACPU.STUDIO 10019000;
 # r6:=node.new.this.ex(r0, ACPU.STUDIO, 0);
 

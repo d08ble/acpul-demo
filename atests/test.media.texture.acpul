@@ -94,7 +94,7 @@ draw.boot {
 };
 
 record.frame {
-# node.ex.gl.fbo(u0, tex);
+ node.ex.gl.fbo(u0, tex);
 
 # node.ex.gl.clear(u0, 0,0,0,0);  
 # node.ex.gl.clear(u0, 1,1,0,1);

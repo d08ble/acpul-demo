@@ -108,7 +108,7 @@ dma0 0;
 sharedobj.key(r0, dma0,1000);
 l0:=dma.get(r0, dma0,0);
 
-
+watch(l0);
 
 if (recording) {
  record.frame;

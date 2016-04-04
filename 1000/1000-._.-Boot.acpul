@@ -16,9 +16,13 @@ net.host(192,168,1,102, 8077);
 net.editor.update(1);
 net.reset.after.update(1, 1000);
 
+# NETWORKING ]
+
 r0:=k==0;
 
 draw(r0, 1001);
+
+# sharedobj [
 
 _ @sys.sharedobj;
 _ @sys.obj;
@@ -60,8 +64,7 @@ test.shrobj {
 };
 test.shrobj;
 
-# NETWORKING ]
-  
+# sharedobj ]
 
 _ @1010;
 _ @sys.display;

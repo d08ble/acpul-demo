@@ -102,6 +102,14 @@ record.frame {
  media.video.recorder.frame.ready(u0, tex, dt);
 };
 
+_ @sys.sharedobj;
+
+dma0 0;
+sharedobj.key(r0, dma0,1000);
+l0:=dma.get(r0, dma0,0);
+
+
+
 if (recording) {
  record.frame;
 };

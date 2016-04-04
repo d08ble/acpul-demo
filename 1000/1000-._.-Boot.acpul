@@ -1,5 +1,7 @@
 ### 1000  ._. Boot
 
+r0:=k==0;
+
 # test needCompile [
 a1001 @1001;
 # test needCompile ]
@@ -58,8 +60,6 @@ test.shrobj;
 
 # NETWORKING ]
   
-r0:=k==0;
-
 draw(r0, 1001);
 
 _ @1010;

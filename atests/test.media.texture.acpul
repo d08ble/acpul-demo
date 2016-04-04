@@ -105,7 +105,7 @@ record.frame {
 
 # node.ex.gl.child.draw(u0);
 
-# node.ex.gl.fbo(u0, -1);
+ node.ex.gl.fbo(u0, -1);
 
  media.video.recorder.frame.ready(u0, tex, dt);
 };

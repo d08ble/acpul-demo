@@ -51,7 +51,8 @@ test.shrobj {
  l2:=dma.get(r0, dma0,0);
  dma.off(r0, dma0);
  _ @sys.llog;
- llog.begin(r0, S.sharedobj);
+ llog.begin(r0, S.boot.sharedobj);
+ llog.erase(r0);
  llog.printv(r0, S.i0, l0);
  llog.printv(r0, S.i1, l1);
  llog.printv(r0, S.i1000, l2);

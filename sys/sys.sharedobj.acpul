@@ -1,7 +1,7 @@
 ### 1039 sys.sharedobj
 # default ids:
-# 0    self   {0:55}
-# 1000 boot   {1000:nodeid}
+# 0    self   {0:(55)}
+# 1000 boot   {1000:(nodeid)}
 
 sharedobj {
  self u55;

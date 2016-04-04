@@ -209,6 +209,9 @@ node {_;
  ex.this.id
   # r0 -> nid
   io(_0, 7217, 0,0,0,0);
+ ex.is.this.drawing
+  # r0 -> bool
+  io(_0, 7218, 0,0,0,0);
 
  prop.x.s 
   # u0, nid, v

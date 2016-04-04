@@ -93,11 +93,8 @@ draw.boot {
  node.ex.gl.node.draw(u0, l0);
 };
 
-draw.self l10;
-
 record.frame {
-# l0:=if(r0,0,draw.self==0);
-l0:=draw.self==0;
+ l0:=node.ex.is.this.drawing(u0);
  if (l0) {
   l0:=77;
  watch(l0);

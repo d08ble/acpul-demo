@@ -96,7 +96,8 @@ draw.boot {
 draw.self l15;
 
 record.frame {
- if (draw.self == 0) {
+ l0:=if(r0,0,draw.self);
+ if (l0) {
   l0:=77;
  watch(l0);
  watch(r0);

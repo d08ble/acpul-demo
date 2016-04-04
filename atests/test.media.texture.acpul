@@ -95,7 +95,7 @@ draw.boot {
 
 record.frame {
  l0:=node.ex.is.this.drawing(u0);
- if (l0) {
+ if (l0 == 0) {
   l0:=77;
  watch(l0);
  watch(r0);

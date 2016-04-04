@@ -102,7 +102,7 @@ record.frame {
   draw.self:=1;
   node.ex.gl.fbo(u0, tex);
 
-# node.ex.gl.clear(u0, 0,0,0,0);  
+ node.ex.gl.clear(u0, 0,0,0,0);  
 # node.ex.gl.clear(u0, 1,1,0,1);
 # node.ex.gl.clear(u0, rnd(u0),rnd(u0),rnd(u0),1);  
 

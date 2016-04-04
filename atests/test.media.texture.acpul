@@ -89,7 +89,7 @@ draw.boot {
  dma0 0;
  sharedobj.key(u0, dma0,1000);
  l0:=dma.get(u0, dma0,0);
- node.ex.gl.node.set.draw.transform(u0, 0,0, 0, 0.2);
+ node.ex.gl.node.set.draw.transform(u0, 0,0, 0, 0.1);
  node.ex.gl.node.draw(u0, l0);
 };
 

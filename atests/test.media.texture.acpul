@@ -54,11 +54,11 @@ anotes.position {
  node.prop.s.s(u0, n0, 0.95);
 };
 #anotes.position;
-livecomment.position {
+#livecomment.position {
 # node.prop.x.s(u0, n0, -50);
 # node.prop.y.s(u0, n0, -100);
 # node.prop.s.s(u0, n0, 0.95);
-};
+#};
 #livecomment.position;
 
 t+=dt;

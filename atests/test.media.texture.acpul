@@ -14,8 +14,9 @@ if (r0) {
  pool 5400;
  id 0;
 # tex:=media.video.recorder.texture(r0, pool,id, 0, 640,480);
- tex:=media.video.recorder.texture(r0, pool,id, 0, 768,1024/2);
+# tex:=media.video.recorder.texture(r0, pool,id, 0, 768,1024/2);
 # tex:=media.video.recorder.texture(r0, pool,id, 0, 800/2,150/2+10);
+ tex:=media.video.recorder.texture(r0, pool,id, 0, 800,150);
  recording+=1;
 };
 

@@ -61,7 +61,7 @@ livecomment.position {
 # node.prop.y.s(u0, n0, -100);
  node.prop.s.s(u0, n0, 0.25);
 };
-#livecomment.position;
+livecomment.position;
 
 t+=dt;
 

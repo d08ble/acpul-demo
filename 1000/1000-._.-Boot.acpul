@@ -236,6 +236,9 @@ AWESOME.NOTES 10010000;
 ACPU.STUDIO 10019000;
 node.new.this.ex(r0, ACPU.STUDIO, 0);
 
+LIVECOMMENT 10018000;
+node.new.this.ex(r0, LIVECOMMENT, 0);
+
 # old test [
 
 #node.new.this.ex(r0, -1000, 0);

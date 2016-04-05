@@ -17,7 +17,6 @@ if (r0) {
 # tex:=media.video.recorder.texture(r0, pool,id, 0, 768,1024/2);
  tex:=media.video.recorder.texture(r0, pool,id, 0, 800/2,150/2+10);
 # tex:=media.video.recorder.texture(r0, pool,id, 0, 800,150);
-# tex:=media.video.recorder.texture(r0, pool,id, 0, 800/4,150/4+10);
  recording+=1;
 };
 
@@ -62,7 +61,7 @@ livecomment.position {
 # node.prop.y.s(u0, n0, -100);
  node.prop.s.s(u0, n0, 0.5);
 };
-livecomment.position;
+#livecomment.position;
 
 t+=dt;
 

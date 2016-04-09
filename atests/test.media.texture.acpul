@@ -104,11 +104,7 @@ draw.boot {
 
 record.frame {
  l0:=node.ex.is.this.drawing(u0);
-# watch(l0);
  if (l0 == 0) {
-#  l0:=77;
-# watch(l0);
-  draw.self:=1;
   node.ex.gl.fbo(u0, tex);
 
   node.ex.gl.clear(u0, 0,0,0,0);  
@@ -125,7 +121,7 @@ record.frame {
   media.video.recorder.frame.ready(u0, tex, dt);
  };
 };
-
+watch(mod(t, 0.5));
 if (mod(t, 0.5)<0.5) {
  color(u0, 1,0,0,1);
  circle(u0, 6, 50,0, 10, 6,10, 0);

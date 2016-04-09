@@ -6,6 +6,7 @@ storage.e.pool 500;
 storage.e { _;
  photo.loaded 1; # -> type, pool,uid,i
  file.moved 2; # old(pool,uid,i) -> new(pool,uid,i)
+ file.deleted 3; # pool,uid,i
 };
 
 storage.t {

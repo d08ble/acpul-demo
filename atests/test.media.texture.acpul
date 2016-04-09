@@ -122,13 +122,10 @@ record.frame {
  };
 };
 
-if (mod(t, 1)<0.5) {
- if (recording) {
-  color(u0, 0.9,0,0.2,0.9);
-  circle(u0, 6, 50,150, 10, 6,10, 0);
-  circle(u0, 3, 50,150, 15, 6,10, 0);
- };
-};
+rr0 mod(t, 1)<0.5) * recording;
+color(rr0, 0.9,0,0.2,0.9);
+circle(rr0, 6, 50,150, 10, 6,10, 0);
+circle(rr0, 3, 50,150, 15, 6,10, 0);
 
 _ @sys.sharedobj;
 _ @sys.obj;

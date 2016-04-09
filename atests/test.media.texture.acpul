@@ -121,8 +121,8 @@ record.frame {
   media.video.recorder.frame.ready(u0, tex, dt);
  };
 };
-watch(mod(t, 0.5));
-if (mod(t, 0.5)<0.5) {
+
+if (mod(t, 1)<0.5) {
  color(u0, 1,0,0,1);
  circle(u0, 6, 50,0, 10, 6,10, 0);
 };

@@ -124,7 +124,7 @@ record.frame {
 
 if (mod(t, 1)<0.5) {
  color(u0, 1,0,0,1);
- circle(u0, 6, 50,100, 10, 6,10, 0);
+ circle(u0, 6, 50,150, 10, 6,10, 0);
 };
 
 _ @sys.sharedobj;

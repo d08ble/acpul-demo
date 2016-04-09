@@ -126,10 +126,10 @@ record.frame {
  };
 };
 
-#if (fmod(t, 1)<0.5) {
+if (fmod(t, 1)<0.5) {
  color(u0, 1,0,0,1);
  circle(u0, 6, 50,0, 10, 6,10, 0);
-#};
+};
 
 _ @sys.sharedobj;
 _ @sys.obj;

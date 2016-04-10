@@ -117,7 +117,7 @@ cpu.get.formulas.info
  # formulas.info: map[<formulaId>] -> items: list[] -> type:, object: (string|map...)
  io(_0, 500430, _1,0,0,0);
 
-cpu.get.memory.info
+cpu.get.memory.usage
  # u0
  io(_0, 500431, 0,0,0,0);
 

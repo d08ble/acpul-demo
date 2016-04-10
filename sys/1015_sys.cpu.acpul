@@ -117,8 +117,16 @@ cpu.get.formulas.info
  # formulas.info: map[<formulaId>] -> items: list[] -> type:, object: (string|map...)
  io(_0, 500430, _1,0,0,0);
 
-cpu.get.memory.usage
- # u0
+cpu.get.memory.info
+ # u0 -> o0-o2: total, free, used
  io(_0, 500431, 0,0,0,0);
+
+cpu.get.disk.info
+ # u0 -> o0-o1: total, free
+ io(_0, 500432, 0,0,0,0);
+
+cpu.get.battery.info
+ # u0 -> o0-o1: level, status
+ io(_0, 500433, 0,0,0,0);
 
 # core ]

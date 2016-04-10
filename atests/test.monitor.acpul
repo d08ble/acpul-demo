@@ -39,8 +39,13 @@ dma.set(u0, dma0, size, ratio);
 
 # dma.push() - todo: refactor ]
 
-dma.off(u0, 0);
+if (t>1) {
+  qq r2==0;
+  dma.dump(qq, 0, 0);
+  r2:=1;
+};
 
+dma.off(u0, 0);
 
 t+=dt;
 x:=500;

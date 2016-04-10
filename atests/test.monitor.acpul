@@ -8,6 +8,11 @@ k:=1;
 
 ### 5501 monitor.draw
 
+color(u0, 0.2,1,0.8,1);
+rw 500;
+rh 500;
+rect(u0, 6, 0,0,rw,rh);
+
 ### 5502 monitor.memory
 
 r0:=k==0;

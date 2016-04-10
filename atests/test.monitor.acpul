@@ -27,15 +27,13 @@ i:=0;while(i<size-1){
  i+=1;
 };
 
-l0:=cpu.get.battery.info(u0);
+#l0:=cpu.get.battery.info(u0);
+#level o1;
+#dma.set(u0, dma0, size-1, level);
+l0:=cpu.get.disk.info(u0);
 #watch(o0);
 #watch(o1);
-level o1;
-dma.set(u0, dma0, size-1, level);
-#l0:=cpu.get.disk.info(u0);
-#watch(o0);
-#watch(o1);
-l0:=cpu.get.memory.info(u0);
+#l0:=cpu.get.memory.info(u0);
 total o0;
 free o1;
 ratio free/total;

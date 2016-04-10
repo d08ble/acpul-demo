@@ -5,6 +5,15 @@ r0:=k==0;
 
 draw(r0, 5501);
 
+_ @sys.obj;
+
+points r1;
+
+if (r0) {
+ points:=buffer.new(u0, 100, 100);
+};
+
+
 t+=dt;
 x:=500;
 k:=1;

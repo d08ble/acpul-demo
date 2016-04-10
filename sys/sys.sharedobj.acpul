@@ -34,7 +34,7 @@ sharedobj {
  
  # key>1000000+sid 
  # ? - shared object key never > 1000000
- # 1000000 is too much to human brain
+ # by theory when 1000000 is too much to human brain
  skey.new 
   key.new(_0, _1, _2+1000000);
  skey

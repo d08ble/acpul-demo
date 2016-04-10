@@ -137,8 +137,12 @@ if (recording) {
 
 ### 5402 tmt.particle
 
+r0:=k==0;
 
+draw(r0, 5402);
+
+k:=1;
 
 ### 5403 tmt.particle.draw
 
-
+rect(u0, 6, 0,0, 100,100);

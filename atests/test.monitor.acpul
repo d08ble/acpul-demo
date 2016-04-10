@@ -31,7 +31,7 @@ l0:=cpu.get.battery.info(u0);
 #watch(o0);
 #watch(o1);
 level o1;
-dma.set(u0, dma0, size-1, 0);
+dma.set(u0, dma0, size-1, level);
 #l0:=cpu.get.disk.info(u0);
 #watch(o0);
 #watch(o1);

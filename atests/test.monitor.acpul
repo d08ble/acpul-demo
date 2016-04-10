@@ -5,6 +5,7 @@ r0:=k==0;
 
 draw(r0, 5501);
 
+_ @1010;
 _ @sys.obj;
 
 points r1;
@@ -35,6 +36,22 @@ rect(u0, 2, x0,y0,rw,rh);
 rect(u0, 2, x0-2,y0-2,rw+4,rh+4);
 rect(u0, 2, x0-4,y0-4,rw+8,rh+8);
 rect(u0, 2, x0-6,y0-6,rw+12,rh+12);
+
+_ @1010;
+_ @sys.obj;
+
+points r1;
+
+dma0 0;
+buffer.dma(u0, dma0, points,0);
+size l14;
+size:=100;
+l15:=0;while(l15<size-1){
+ l0:=dma.get(u0, dma0, l15+1);
+ dma.set(u0, dma0, l15, l0);
+};
+
+dma.off(u0, 0);
 
 ### 5502 monitor.memory
 

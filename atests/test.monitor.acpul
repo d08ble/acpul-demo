@@ -65,8 +65,8 @@ buffer.dma(u0, dma0, points,0);
 
 fill {
  size 100;
- l15:=0;while(l15<size){
-  l15+=1;
+ i:=0;while(i<size){
+  i+=1;
  };
 };
 

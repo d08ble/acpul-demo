@@ -71,7 +71,7 @@ rect(u0, 2, x0-4,y0-4,rw+8,rh+8);
 rect(u0, 2, x0-6,y0-6,rw+12,rh+12);
 
 color(u0, 1,0,0,1);
-psize(u0, 2);
+
 _ @1010;
 _ @sys.obj;
 
@@ -85,7 +85,7 @@ fill {
  i:=0;while(i<size){
   py dma.get(u0, dma0, i);
   #point(u0, i,py*100);
-  point(u0,i,rh-py*rh+6);
+  point(u0,x0+i,rh-py*rh+6);
   i+=1;
  };
 };

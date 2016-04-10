@@ -172,5 +172,6 @@ cgm 1; cgo 1; cgs 0.1;
 r 0.5+0.5*sin(t); #(c+t)*cgm*pi+cgo)*cgs;
 g 0; b 0.5+0.5*sin(t*100000);
 color(u0, r,g,b,0);
-rect(u0, 6, 0,0, 100,100);
+#rect(u0, 6, 0,0, 100,100);
+circle(rr0, 3, 50,150, 15, 6,10, 0);
 

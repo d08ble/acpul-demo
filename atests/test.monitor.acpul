@@ -19,7 +19,7 @@ rh 200;
 rect(u0, 6, x0,y0,rw,rh);
 l 0.5+dt*10;
 r 0.5+dt*2;
-psize(u0, l*2);
+psize(u0, l);
 color(u0, l,l,r,1);
 rect(u0, 2, x0,y0,rw,rh);
 rect(u0, 2, x0-2,y0-2,rw+4,rh+4);

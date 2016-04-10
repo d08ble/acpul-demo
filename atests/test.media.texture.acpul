@@ -148,12 +148,14 @@ draw(r0, 5403);
 
 dx r1;
 dy r2;
+c r3;
 
 if(r0){
  x:=p0;
  y:=p1;
  dx:=rnd(u0)-0.5;
  dy:=rnd(u0)-0.5;
+ c:=rnd(u0);
  lt:=1;
 };
 
@@ -164,6 +166,7 @@ k:=1;
 
 ### 5403 tmt.particle.draw
 
-color(u0, r1+0.5,1-r2,0,1);
+cs 1; cg 1;
+color(u0, sin(c+cg)*cs,sin(c+cg)*cs,sin(c+cg)*cs,1);
 rect(u0, 6, 0,0, 100,100);
 

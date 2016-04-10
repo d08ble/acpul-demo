@@ -28,9 +28,9 @@ i:=0;while(i<size-1){
 };
 
 l0:=cpu.get.disk.info(u0);
-watch(o0);
-watch(o1);
-l0:=cpu.get.memory.info(u0);
+#watch(o0);
+#watch(o1);
+#l0:=cpu.get.memory.info(u0);
 total o0;
 free o1;
 ratio free/total;

@@ -167,6 +167,8 @@ k:=1;
 ### 5403 tmt.particle.draw
 
 cs 1; cg 1;
-color(u0, sin(c+cg)*cs,sin(c+cg)*cs,sin(c+cg)*cs,1);
+r 0.5+0.5*sin(c+cg)*cgs;
+g r; b r;
+color(u0, r,g,b,1);
 rect(u0, 6, 0,0, 100,100);
 

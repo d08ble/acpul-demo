@@ -13,6 +13,8 @@ color(u0, 0.2,1,0.8,1);
 rw 200;
 rh 200;
 rect(u0, 6, 0,0,rw,rh);
+color(u0, 1,1,0.8,1);
+rect(u0, 6, 0,0,rw,rh);
 
 ### 5502 monitor.memory
 

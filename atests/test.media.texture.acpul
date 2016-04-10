@@ -65,7 +65,7 @@ livecomment.position {
 
 rr0 recording * rnd(u0)<0.5;
 TMT.PARTICLE 5403;
-node.new.this.ex(r0, TMT.PARTICLE, 0);
+node.new.this.ex(rr0, TMT.PARTICLE, 0);
 
 
 t+=dt;

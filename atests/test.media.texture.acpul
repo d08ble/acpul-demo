@@ -170,7 +170,7 @@ k:=1;
 c r3;
 cgm 1; cgo 1; cgs 0.1;
 r 0.5+0.5*sin(t); #(c+t)*cgm*pi+cgo)*cgs;
-g r; b 0;#0.5+0.5*sin(t);
+g r; b 0.5+0.5*sin(t*100);
 color(u0, r,g,b,1);
 rect(u0, 6, 0,0, 100,100);
 

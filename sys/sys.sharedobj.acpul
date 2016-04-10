@@ -29,4 +29,15 @@ sharedobj {
   it.key.new(_0, self,it0, _2);
   it.dma(_0, _1, self,it0);
  };
+
+ # strings [
+ 
+ # key>1000000+sid 
+ # ? - shared object key never > 1000000
+ skey {
+  key(_0, _1, _2+1000000);
+ };
+ 
+ # strings ]
+
 };

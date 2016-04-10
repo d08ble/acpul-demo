@@ -153,3 +153,5 @@ k:=1;
 ### 5403 tmt.particle.draw
 
 rect(u0, 6, 0,0, 100,100);
+
+watch(u0);

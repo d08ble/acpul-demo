@@ -10,11 +10,13 @@ k:=1;
 ### 5501 monitor.draw
 
 color(u0, 0.2,1,0.8,1);
+x0 0;
+y0 0;
 rw 200;
 rh 200;
-rect(u0, 6, 0,0,rw,rh);
+rect(u0, 6, x0,y0,rw,rh);
 color(u0, 1,1,0.8,1);
-rect(u0, 2, 0,0,rw,rh);
+rect(u0, 2, x0,x0,rw,rh);
 
 ### 5502 monitor.memory
 

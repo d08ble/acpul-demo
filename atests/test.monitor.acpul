@@ -1,0 +1,29 @@
+### 5500 monitor
+
+r0:=k==0;
+
+draw(r0, 5501);
+
+k:=1;
+
+### 5501 monitor.draw
+
+### 5502 monitor.memory
+
+r0:=k==0;
+
+draw(r0, 5503);
+
+k:=1;
+
+### 5503 monitor.memory.draw
+
+### 5504 monitor.performance
+
+r0:=k==0;
+
+draw(r0, 5505);
+
+k:=1;
+
+### 5505 monitor.performance.draw

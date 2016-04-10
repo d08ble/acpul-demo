@@ -42,7 +42,7 @@ dma.set(u0, dma0, size, ratio);
 if (t<60) {
   if (r2==0) {
    dma.dump(u0, 0, 0);
-   r2:=50;
+   r2:=20;
   };
 };
 r2-=r2!=0;

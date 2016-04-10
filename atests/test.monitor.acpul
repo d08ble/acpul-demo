@@ -12,6 +12,7 @@ points r1;
 
 if (r0) {
  points:=buffer.new(u0, 100, 100);
+ #cpu.get.memory.usage
 };
 
 

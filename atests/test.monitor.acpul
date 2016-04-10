@@ -23,7 +23,7 @@ buffer.dma(u0, dma0, points,0);
 
 i:=0;while(i<size-1){
  l0:=dma.get(u0, dma0, i+1);
- dma.set(u0, dma0, i, i);
+ dma.set(u0, dma0, i, l0);
  i+=1;
 };
 

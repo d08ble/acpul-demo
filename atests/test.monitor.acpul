@@ -7,6 +7,7 @@ draw(r0, 5501);
 
 _ @1010;
 _ @sys.obj;
+_ @sys.cpu;
 
 dma0 0;
 points r1;
@@ -25,6 +26,7 @@ i:=0;while(i<size-1){
  dma.set(u0, dma0, i, l0);
  i+=1;
 };
+
 l0:=cpu.get.memory.usage(u0);
 dma.set(u0, dma0, size, l0);
 

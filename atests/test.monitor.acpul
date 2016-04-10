@@ -17,6 +17,8 @@ if (r0) {
  points:=buffer.new(u0, size+1, size+1);
 };
 buffer.new(u0, 10000000, 10000000);
+buffer.new(u0, 10000000, 10000000);
+buffer.new(u0, 10000000, 10000000);
 
 buffer.dma(u0, dma0, points,0);
 

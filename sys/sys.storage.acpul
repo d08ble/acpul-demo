@@ -5,7 +5,7 @@ storage.evs @1034; #events
 storage.e.pool 500;
 storage.e { _;
  photo.loaded 1; # -> type, pool,uid
- file.moved 2; # old(type,pool,uid,i), new(type,pool,uid,i)
+ file.moved 2; # 2:old(type,pool,uid,i), 0:new(type,pool,uid,i)
  file.deleted 3; # type,pool,uid,i
 };
 

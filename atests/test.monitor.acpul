@@ -75,9 +75,9 @@ buffer.dma(u0, dma0, points,0);
 fill {
  size 100;
  i:=0;while(i<size){
-  #py dma.get(u0, dma0, i);
+  py dma.get(u0, dma0, i);
   #point(u0, i,py*100);
-  point(u0,i,i);
+  point(u0,i,py*100);
   i+=1;
  };
 };

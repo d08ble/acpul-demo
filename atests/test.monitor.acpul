@@ -36,8 +36,8 @@ free o1;
 ratio free/total;
 #watch(ratio);
 dma.set(u0, dma0, 0, 1);
-dma.set(u0, dma0, 0, 2);
-dma.set(u0, dma0, 0, 11);
+dma.set(u0, dma0, 1, 2);
+dma.set(u0, dma0, 4, 11);
 dma.set(u0, dma0, size, ratio);
 
 # dma.push() - todo: refactor ]

@@ -80,6 +80,7 @@ fill {
   i+=1;
  };
 };
+fill;
 
 dma.off(u0, 0);
 

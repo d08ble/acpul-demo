@@ -34,9 +34,10 @@ sharedobj {
  
  # key>1000000+sid 
  # ? - shared object key never > 1000000
- skey {
+ skey.new 
+  key.new(_0, _1, _2+1000000);
+ skey
   key(_0, _1, _2+1000000);
- };
  
  # strings ]
 

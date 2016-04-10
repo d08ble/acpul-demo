@@ -119,6 +119,6 @@ cpu.get.formulas.info
 
 cpu.get.memory.info
  # u0
- io(_0, 500430, 0,0,0,0);
+ io(_0, 500431, 0,0,0,0);
 
 # core ]

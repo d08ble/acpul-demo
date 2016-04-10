@@ -146,6 +146,8 @@ r0:=k==0;
 
 draw(r0, 5402);
 
+y+=1;
+
 k:=1;
 
 ### 5403 tmt.particle.draw

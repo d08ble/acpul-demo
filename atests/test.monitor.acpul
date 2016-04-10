@@ -18,7 +18,7 @@ rw 200;
 rh 200;
 rect(u0, 6, x0,y0,rw,rh);
 l 0.5+dt*10;
-psize(u0, 1);
+psize(u0, 2);
 color(u0, l,l,l,1);
 rect(u0, 2, x0,y0,rw,rh);
 rect(u0, 2, x0-2,y0-2,rw+4,rh+4);

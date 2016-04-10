@@ -16,9 +16,9 @@ size 100;
 if (r0) {
  points:=buffer.new(u0, size+1, size+1);
 };
-l0:=buffer.new(u0, 1000000, 1000000);
-buffer.dma(u0, dma0, l0,0);
-dma.set(u0, dma0, 1000000-1, rnd(u0));
+#l0:=buffer.new(u0, 100000, 100000);
+#buffer.dma(u0, dma0, l0,0);
+#dma.set(u0, dma0, 100000-1, rnd(u0));
 
 buffer.dma(u0, dma0, points,0);
 
@@ -34,11 +34,13 @@ i:=0;while(i<size-1){
 #level o1;
 #dma.set(u0, dma0, size-1, level);
 #l0:=cpu.get.disk.info(u0);
-#watch(o0);
-#watch(o1);
+#total o0;
+#free o1;
+#ratio free/total;
 l0:=cpu.get.memory.info(u0);
 total o0;
 free o1;
+used o2;
 ratio free/total;
 dma.set(u0, dma0, size-1, 1-ratio);
 

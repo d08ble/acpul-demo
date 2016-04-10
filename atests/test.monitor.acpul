@@ -5,6 +5,8 @@ r0:=k==0;
 
 draw(r0, 5501);
 
+t+=dt;
+
 k:=1;
 
 ### 5501 monitor.draw
@@ -15,7 +17,7 @@ y0 0;
 rw 200;
 rh 200;
 rect(u0, 6, x0,y0,rw,rh);
-color(u0, 1,1,0.8,1);
+color(u0, 1,1-dt,0.8,1);
 rect(u0, 2, x0,y0,rw,rh);
 
 ### 5502 monitor.memory

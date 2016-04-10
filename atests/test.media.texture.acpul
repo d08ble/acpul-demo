@@ -168,7 +168,7 @@ k:=1;
 
 c r3;
 cgm 1; cgo 1; cgs 0.1;
-r 0.5+0.5*sin(c*cgm+cgo)*cgs;
+r 0.5+0.5*sin(c*cgm+cgo+t)*cgs;
 g r; b r;
 color(u0, r,g,b,1);
 rect(u0, 6, 0,0, 100,100);

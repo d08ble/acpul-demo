@@ -27,8 +27,14 @@ i:=0;while(i<size-1){
  i+=1;
 };
 
-l0:=cpu.get.memory.usage(u0);
-dma.set(u0, dma0, size, l0);
+cpu.get.memory.info(u0);
+total o0;
+free o1;
+watch(total);
+watch(free);
+ratio free/total;
+watch(ratio);
+dma.set(u0, dma0, size, ratio);
 
 # dma.push() - todo: refactor ]
 

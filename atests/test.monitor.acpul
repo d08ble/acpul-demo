@@ -37,7 +37,7 @@ l0:=cpu.get.disk.info(u0);
 total o0;
 free o1;
 ratio free/total;
-dma.set(u0, dma0, size-1, 0);#1-ratio);
+dma.set(u0, dma0, size-1, 1);#1-ratio);
 
 # dma.push() - todo: refactor ]
 

@@ -99,7 +99,7 @@ _ @sys.obj;
 
 dma0 0;
 points r1;
-watch(p0);
+
 buffer.dma(u0, dma0, points,0);
 
 fill {

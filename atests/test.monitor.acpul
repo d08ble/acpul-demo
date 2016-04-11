@@ -11,7 +11,7 @@ _ @sys.cpu;
 
 dma0 0;
 points r1;
-size 10;
+size 50;
 
 if (r0) {
  points:=buffer.new(u0, size+1, size+1);
@@ -103,7 +103,7 @@ points r1;
 buffer.dma(u0, dma0, points,0);
 
 fill {
- size 10;
+ size 50;
  i:=0;while(i<size){
   py dma.get(u0, dma0, i);
   #point(u0, i,py*100);

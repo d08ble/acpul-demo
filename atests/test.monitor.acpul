@@ -1,6 +1,5 @@
 ### 5500 monitor
 # p0 - mode: 0-mem 1-disk 2-battery
-# p1-p3 - x,y,s
 
 r0:=k==0;
 

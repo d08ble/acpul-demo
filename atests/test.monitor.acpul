@@ -71,7 +71,7 @@ if (p0==2) {battery;};
 dma.off(u0, 0);
 
 t+=dt;
-x:=500;
+#x:=500;
 k:=1;
 
 ### 5501 monitor.draw

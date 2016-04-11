@@ -34,9 +34,11 @@ i:=0;while(i<size-1){
  i+=1;
 };
 
-#l0:=cpu.get.battery.info(u0);
-#level o1;
-#dma.set(u0, dma0, size-1, level);
+battery {
+ l0:=cpu.get.battery.info(u0);
+ level o1;
+ dma.set(u0, dma0, size-1, level);
+};
 disk {
  l0:=cpu.get.disk.info(u0);
  total o0;
@@ -52,7 +54,8 @@ memory {
  ratio free/total;
  dma.set(u0, dma0, size-1, 1-ratio);
 };
-disk;
+battery;
+#disk;
 #memory;
 
 # dma.push() - todo: refactor ]

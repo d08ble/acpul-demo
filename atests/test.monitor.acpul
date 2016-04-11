@@ -108,8 +108,8 @@ fill {
   py dma.get(u0, dma0, i);
   #point(u0, i,py*100);
   h rh-2;
-#  point(u0,x0+i,y0+py*h);
-  line(u0,3,x0+i*rw/size,y0+py*h,x0+i*rw/size,y0);
+  point(u0,x0+i,y0+py*h);
+#  line(u0,3,x0+i*rw/size,y0+py*h,x0+i*rw/size,y0);
   i+=1;
  };
 };

@@ -251,7 +251,7 @@ system.monitor {
  };
  if (r0) {
   new.monitor(0, 450,10);
-  new.monitor(1, 400,10);
+  new.monitor(1, 350,10);
  };
 };
 system.monitor;

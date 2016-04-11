@@ -41,7 +41,7 @@ l0:=cpu.get.memory.info(u0);
 total o0;
 free o1;
 used o2;
-ratio free/total;
+ratio used/total;
 #watch(free);
 dma.set(u0, dma0, size-1, 1-ratio);
 

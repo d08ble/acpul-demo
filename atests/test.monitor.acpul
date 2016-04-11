@@ -1,5 +1,6 @@
 ### 5500 monitor
-# p0 - mode: 0-default
+# p0 - mode: 0-mem 1-disk 2-battery
+# p1-p3 - x,y,s
 
 r0:=k==0;
 
@@ -54,9 +55,9 @@ memory {
  ratio free/total;
  dma.set(u0, dma0, size-1, 1-ratio);
 };
-battery;
-#disk;
-#memory;
+if (p0==0) {memory;};
+if (p0==1) {disk;};
+if (p0==2) {battery;};
 
 # dma.push() - todo: refactor ]
 

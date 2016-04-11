@@ -23,7 +23,8 @@ if (r0) {
 # dma.set(u0, dma0, i, rnd(u0));
 # i+=1;
 #};
-#buffer.dma(u0, dma0, points,0);
+
+buffer.dma(u0, dma0, points,0);
 
 # dma.push() - todo: refactor [
 

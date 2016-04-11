@@ -109,7 +109,7 @@ fill {
   #point(u0, i,py*100);
   h rh-2;
 #  point(u0,x0+i,y0+py*h);
-  line(u0,3,x0+i*10,y0+py*h,x0+i*10,y0);
+  line(u0,3,x0+i*rw/size,y0+py*h,x0+i*rw/size,y0);
   i+=1;
  };
 };

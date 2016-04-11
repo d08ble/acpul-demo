@@ -252,6 +252,7 @@ system.monitor {
  if (r0) {
   new.monitor(0, 450,10);
   new.monitor(1, 350,10);
+  new.monitor(2, 250,10);
  };
 };
 system.monitor;

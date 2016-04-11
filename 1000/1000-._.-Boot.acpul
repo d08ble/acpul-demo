@@ -239,6 +239,16 @@ node.new.this.ex(r0, ACPU.STUDIO, 0);
 LIVECOMMENT 10018000;
 #node.new.this.ex(r0, LIVECOMMENT, 0);
 
+
+system.monitor {
+ test.monitor 5500;
+ l0:=node.new.this.ex(r0, test.monitor, 0);
+ node.prop.x.s(r0, l0, 500);
+ node.prop.y.s(r0, l0, 0);
+ node.prop.s.s(r0, l0, 1);
+};
+system.monitor;
+
 # old test [
 
 #node.new.this.ex(r0, -1000, 0);

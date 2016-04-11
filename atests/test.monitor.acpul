@@ -43,7 +43,7 @@ free o1;
 used o2;
 ratio used/total;
 #watch(free);
-dma.set(u0, dma0, size-1, 1-ratio);
+dma.set(u0, dma0, size-1, ratio);
 
 # dma.push() - todo: refactor ]
 

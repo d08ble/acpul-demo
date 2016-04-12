@@ -170,12 +170,10 @@ queue.count o2;
 
 progress if(syncing, size/total, 0);
 
-#if (progress) {
 #t tt;
 t1 t*2;
- color(u0, 0,sin(t1)*0.5+0.5,sin(t1)*0.2+0.2,1);
- circle(u0, 6, 0,0, 50, 0,50, 0);
-#};
+color(progress, 0,sin(t1)*0.5+0.5,sin(t1)*0.2+0.2,1);
+circle(progress, 6, 0,0, 50, 0,50, 0);
 color(u0, progress,progress,0.9,0.9);
 psize(u0, 2);
 point(u0, -4,0);

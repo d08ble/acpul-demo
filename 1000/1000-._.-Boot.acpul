@@ -243,8 +243,8 @@ LIVECOMMENT 10018000;
 system.monitor {
  new.monitor {
   # t, x,y
-  test.monitor 5500;
-  l0:=node.new.this.ex(r0, test.monitor, _0);
+  monitor 5500;
+  l0:=node.new.this.ex(r0, monitor, _0);
   node.prop.x.s(r0, l0, _1);
   node.prop.y.s(r0, l0, _2);
   node.prop.s.s(r0, l0, 0.8);
@@ -253,6 +253,13 @@ system.monitor {
   new.monitor(0, 450,10);
   new.monitor(1, 350,10);
   new.monitor(2, 250,10);
+
+  monitor.sync.status 5510;
+  l0:=node.new.this.ex(r0, monitor.sync.status, _0);
+  node.prop.x.s(r0, l0, 150);
+  node.prop.y.s(r0, l0, 10);
+  #node.prop.s.s(r0, l0, 0.8);
+
  };
 };
 system.monitor;

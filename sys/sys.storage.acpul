@@ -52,3 +52,7 @@ storage.process.event {
  # fn (event, handle ...o0,o1,o2,o3)
  if (_0, _2(_0, _1), 0);
 };
+
+storage.get.sync.status {
+ 
+};

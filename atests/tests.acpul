@@ -54,8 +54,8 @@ test.monitor 5500;
 #node.prop.s.s(r0, l0, 1);
 
 test.monitor.sync.status 5510;
-l0:=node.new.this.ex(r0, test.monitor.sync.status, 0);
-node.prop.x.s(r0, l0, 500);
+#l0:=node.new.this.ex(r0, test.monitor.sync.status, 0);
+#node.prop.x.s(r0, l0, 500);
 
 
 k:=1;

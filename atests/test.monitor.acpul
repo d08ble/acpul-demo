@@ -154,5 +154,5 @@ k:=1;
 ### 5511 monitor.sync.status.draw
 
 color(u0, 0.9,0,0.2,0.9);
-psize(u0, 5);
+psize(u0, 2);
 circle(u0, 0, 50,150, 20, 6,10, 0);

@@ -141,3 +141,7 @@ draw(r0, 5505);
 k:=1;
 
 ### 5505 monitor.performance.draw
+
+### 5510 
+storage.get.sync.status 
+### 5510 

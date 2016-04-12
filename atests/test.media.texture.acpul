@@ -23,8 +23,8 @@ if (r0) {
 
 #if (t > 300) {
 #if (t > 150) {
-if (t > 60) {
-#if (t > 1) {
+#if (t > 60) {
+if (t > 1) {
 #if (t > 10) {
  media.video.recorder.stop(recording, tex);
  recording:=0;

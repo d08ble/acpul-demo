@@ -53,6 +53,10 @@ test.monitor 5500;
 #node.prop.y.s(r0, l0, 0);
 #node.prop.s.s(r0, l0, 1);
 
+test.monitor.sync.status 5510;
+l0:=node.new.this.ex(r0, test.monitor.sync.status, 0);
+
+
 k:=1;
 
 ### 5001 tests.draw

@@ -161,7 +161,7 @@ _ @sys.storage;
 tt t;
 
 t l0;
-t:=if(storage.get.sync.status(), 0, tt);
+t:=if(storage.get.sync.status(u0, 0), 0, tt);
 size o0;
 total o1;
 queue.count o2;

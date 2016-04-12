@@ -155,6 +155,11 @@ k:=1;
 #storage.get.sync.status 
 ### 5511 monitor.sync.status.draw
 
+_ @1010;
+_ @sys.storage;
+
+
+
 color(u0, 0.9,0,0.2,0.9);
 psize(u0, 2);
 point(u0, -4,0);

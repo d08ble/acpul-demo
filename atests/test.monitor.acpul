@@ -158,7 +158,9 @@ k:=1;
 _ @1010;
 _ @sys.storage;
 
-t 0;
+tt t;
+
+t tt;
 
 color(u0, 0.9,0,0.2,0.9);
 psize(u0, 2);

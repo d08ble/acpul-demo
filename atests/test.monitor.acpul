@@ -168,7 +168,7 @@ queue.count o2;
 
 progress size/total;
 
-color(u0, 0.9,1,0.2,0.9);
+color(u0, 0.9,progress,0.2,0.9);
 psize(u0, 2);
 point(u0, -4,0);
 point(u0, 4,0);

@@ -151,6 +151,7 @@ draw(r0, 5511);
 x:=500;
 t+=dt;
 k:=1;
+s:=0.5;
 
 #storage.get.sync.status 
 ### 5511 monitor.sync.status.draw

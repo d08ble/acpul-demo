@@ -166,7 +166,7 @@ size o0;
 total o1;
 queue.count o2;
 
-progress size/total;
+progress size/total+1;
 
 color(u0, progress,progress,0.9,0.9);
 psize(u0, 2);

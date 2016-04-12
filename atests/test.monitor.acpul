@@ -143,5 +143,16 @@ k:=1;
 ### 5505 monitor.performance.draw
 
 ### 5510 monitor.sync.status
-storage.get.sync.status 
-### 5510 
+
+r0:=k==0;
+
+draw(r0, 5511);
+
+k:=1;
+
+#storage.get.sync.status 
+### 5511 monitor.sync.status.draw
+
+color(u0, 0.9,0,0.2,0.9);
+psize(u0, 5);
+circle(u0, 0, 50,150, 20, 6,10, 0);

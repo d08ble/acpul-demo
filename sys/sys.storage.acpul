@@ -55,4 +55,5 @@ storage.process.event {
 
 storage.get.sync.status 
  # u0, mode -> 0||1: o0-o2: offset,size, queue.count
- io(u0, 500512, 0,0,0,0);
+ # mode: 0-up, 1-down
+ io(u0, 500512, _0,0,0,0);

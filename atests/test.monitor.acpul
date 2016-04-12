@@ -168,7 +168,7 @@ size o0;
 total o1;
 queue.count o2;
 
-progress if(syncing, size/total, 0);
+progress if(syncing, size/total, 1);
 
 color(u0, 1,1,1,1);
 circle(u0, 6, 0,0, 50, 0,50, 0);

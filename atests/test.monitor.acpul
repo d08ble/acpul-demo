@@ -161,12 +161,14 @@ _ @sys.storage;
 tt t;
 
 t l0;
-t:=if(storage.get.sync.status(u0, 0), tt, 0);
+syncing l1; 
+syncing:=storage.get.sync.status(u0, 0);
+t:=if(syncing, tt, 0);
 size o0;
 total o1;
 queue.count o2;
 
-progress size/total;
+progress if(syncing, size/total, 0);
 
 color(u0, progress,progress,0.9,0.9);
 psize(u0, 2);

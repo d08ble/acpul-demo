@@ -239,6 +239,9 @@ node.new.this.ex(r0, ACPU.STUDIO, 0);
 LIVECOMMENT 10018000;
 #node.new.this.ex(r0, LIVECOMMENT, 0);
 
+UNLIMITED.LIFE 70000;
+node.new.this.ex(r0, UNLIMITED.LIFE, 0);
+
 
 system.monitor {
  new.monitor {

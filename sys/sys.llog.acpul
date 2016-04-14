@@ -35,7 +35,7 @@ livelog {
  printo {
   # u0, fmt, mode, object||dma, i
   io(_0, a+3, 0,0,0,0);
-  io(_0, a+4, _1, _2, _3, _4);
+  io(_0, a+4, _1, _2, _3, -1);
  };
 
  step

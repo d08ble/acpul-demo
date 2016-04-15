@@ -234,7 +234,7 @@ AWESOME.NOTES 10010000;
 node.new.this.ex(r0, AWESOME.NOTES, 0);
 
 ACPU.STUDIO 10019000;
-#node.new.this.ex(r0, ACPU.STUDIO, 0);
+node.new.this.ex(r0, ACPU.STUDIO, 0);
 
 LIVECOMMENT 10018000;
 #node.new.this.ex(r0, LIVECOMMENT, 0);

@@ -150,6 +150,8 @@ draw(r0, 5511);
 
 if (r0) {
  if (p0<5) {
+  _ @1010;
+  _ @sys.node;
   ACPU.STUDIO 10019000;
 #node.new.this.ex4(r0, ACPU.STUDIO, 10,11,55,77);#p0+1);
   node.new.this.ex(r0, ACPU.STUDIO, p0+1);

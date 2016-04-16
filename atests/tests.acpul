@@ -45,7 +45,7 @@ test.text 5300;
 #l0:=node.new.this.ex(r0, test.text, 0);
 
 test.media.texture 5400;
-l0:=node.new.this.ex(r0, test.media.texture, 0);
+#l0:=node.new.this.ex(r0, test.media.texture, 0);
 
 test.monitor 5500;
 #l0:=node.new.this.ex(r0, test.monitor, 0);

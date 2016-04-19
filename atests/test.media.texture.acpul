@@ -102,6 +102,7 @@ _ @sys.node;
 _ @sys.media;
 
 tex r8;
+texflip r9;
 recording r5;
 
 draw.boot {
@@ -115,7 +116,6 @@ draw.boot {
 record.frame {
  l0:=node.ex.is.this.drawing(u0);
  if (l0 == 0) {
- watch(texflip);
   node.ex.gl.fbo(u0, texflip);
 
   node.ex.gl.clear(u0, 0,0,0,0);  

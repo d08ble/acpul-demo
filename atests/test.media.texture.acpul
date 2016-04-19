@@ -131,7 +131,7 @@ record.frame {
 
   node.ex.gl.fbo(u0, tex);
 
-  shader node.shader;
+  shader node.ex.shader;
   vsh 5404; fsh 5405;
   shader.use(u0, vsh,fsh);
   shader.uniform.texture(u0, 0, texflip, 0);

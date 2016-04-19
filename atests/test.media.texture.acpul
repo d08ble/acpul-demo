@@ -116,8 +116,6 @@ draw.boot {
 record.frame {
  l0:=node.ex.is.this.drawing(u0);
  if (l0 == 0) {
- watch(tex);
- watch(texflip);
   node.ex.gl.fbo(u0, texflip);
 
   node.ex.gl.clear(u0, 0,0,0,0);  
@@ -194,7 +192,7 @@ color(u0, r,g,b,0);
 rect(u0, 6, 0,0, 100,100);
 circle(rr0, 3, 50,150, 150, 6,10, 0);
 
-### 5404 test.media.texture.vsh
+### 5404:S test.media.texture.vsh
 
 attribute vec4 a_position;
 attribute vec2 a_texCoord;
@@ -205,7 +203,7 @@ void main()
   v_texCoord = a_texCoord;
 }
 
-### 5405 test.media.texture.fsh
+### 5405:S test.media.texture.fsh
 
 varying vec2 v_texCoord;
 uniform sampler2D p0;

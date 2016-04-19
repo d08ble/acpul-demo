@@ -115,7 +115,7 @@ draw.boot {
 record.frame {
  l0:=node.ex.is.this.drawing(u0);
  if (l0 == 0) {
-  node.ex.gl.fbo(u0, tex);
+  node.ex.gl.fbo(u0, texflip);
 
   node.ex.gl.clear(u0, 0,0,0,0);  
 # node.ex.gl.clear(u0, 1,1,0,1);
@@ -125,6 +125,12 @@ record.frame {
   draw.boot;
 
 #  node.ex.gl.child.draw(u0);
+
+  node.ex.gl.fbo(u0, -1);
+
+  node.ex.gl.fbo(u0, tex);
+
+  
 
   node.ex.gl.fbo(u0, -1);
 

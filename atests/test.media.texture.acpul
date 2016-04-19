@@ -130,7 +130,12 @@ record.frame {
 
   node.ex.gl.fbo(u0, tex);
 
-  
+  shader node.shader;
+  vsh 5404; fsh 5405;
+  shader.use(u0, vsh,fsh);
+  shader.uniform.texture(u0, 0, texflip, 0);
+
+  node.ex.gl.point4tex4(u0, 5, 0,0,w,0,0,h,w,h, 0,0, 1,0, 0,1, 1,1);
 
   node.ex.gl.fbo(u0, -1);
 
@@ -186,3 +191,6 @@ color(u0, r,g,b,0);
 rect(u0, 6, 0,0, 100,100);
 circle(rr0, 3, 50,150, 150, 6,10, 0);
 
+### 5404 test.media.texture.fsh
+
+### 5405 test.media.texture.vsh

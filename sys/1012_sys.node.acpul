@@ -156,6 +156,9 @@ node {_;
  ex.gl.fbo
   # u0, texture
   io(_0, 7200, _1, 0,0,0);
+ ex.gl.fbo.flip
+  # u0, texture, flip
+  io(_0, 7200, _1, _2,0,0);
  ex.gl.child.draw
   # u0
   io(_0, 7201, 0,0,0,0);

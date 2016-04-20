@@ -155,7 +155,6 @@ circle(rr0, 3, 50,150, 15, 6,10, 0);
 _ @sys.sharedobj;
 _ @sys.obj;
 
-
 if (recording) {
  record.frame;
 };

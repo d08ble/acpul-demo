@@ -206,7 +206,7 @@ TEXTUREMAN.TEST 7200;
 #node.new.this.ex(r0, TEXTUREMAN.TEST, 0);
 
 IMGNODE 7040;
-node.new.this.ex(r0, IMGNODE, 0);
+#node.new.this.ex(r0, IMGNODE, 0);
 
 Арестович 788;
 #node.new.this.ex(r0, Арестович, 0);
@@ -231,7 +231,7 @@ HEROLESSUS 10009000;
 #node.new.this.ex(r0, HEROLESSUS, 0);
 
 AWESOME.NOTES 10010000;
-#node.new.this.ex(r0, AWESOME.NOTES, 0);
+node.new.this.ex(r0, AWESOME.NOTES, 0);
 
 ACPU.STUDIO 10019000;
 node.new.this.ex(r0, ACPU.STUDIO, 0);

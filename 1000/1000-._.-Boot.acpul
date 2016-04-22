@@ -228,7 +228,7 @@ GAME.CRAZY.BIRD 10008000;
 #node.new.this.ex(r0, 10008000, 0);
 
 HEROLESSUS 10009000;
-node.new.this.ex(r0, HEROLESSUS, 0);
+#node.new.this.ex(r0, HEROLESSUS, 0);
 
 AWESOME.NOTES 10010000;
 node.new.this.ex(r0, AWESOME.NOTES, 0);
@@ -240,7 +240,7 @@ LIVECOMMENT 10018000;
 #node.new.this.ex(r0, LIVECOMMENT, 0);
 
 UNLIMITED.LIFE 70000;
-#node.new.this.ex(r0, UNLIMITED.LIFE, 0);
+node.new.this.ex(r0, UNLIMITED.LIFE, 0);
 
 
 system.monitor {

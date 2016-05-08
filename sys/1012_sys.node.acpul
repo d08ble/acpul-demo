@@ -122,8 +122,8 @@ node {_;
   ai88 5;     # 16-bit textures used as masks
   rgba444 6;  # 16-bit textures: RGBA4444
   rgb5a1 7;   # 16-bit textures: RGB5A1
-  pvrtc4 8;   # 4-bit PVRTC-compressed texture: PVRTC4
-  pvrtc2 9;   # 2-bit PVRTC-compressed texture: PVRTC2
+  #pvrtc4 8;   # 4-bit PVRTC-compressed texture: PVRTC4
+  #pvrtc2 9;   # 2-bit PVRTC-compressed texture: PVRTC2
  };
  
 

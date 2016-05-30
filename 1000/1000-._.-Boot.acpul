@@ -242,6 +242,8 @@ LIVECOMMENT 10018000;
 UNLIMITED.LIFE 70000;
 node.new.this.ex(r0, UNLIMITED.LIFE, 0);
 
+NOOBMAN 10007000;
+node.new.this.ex(r0, NOOBMAN, 0);
 
 system.monitor {
  new.monitor {

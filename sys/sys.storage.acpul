@@ -35,8 +35,8 @@ storage.get.load.file
  io(u0, 500502, _0,0,0,0);
 
 storage.image.save.texture
- # 
- io(u0, 500510, 0,0,0,0);
+ # pool,uid
+ io(u0, 500510, _0,_1,0,0);
 
 storage.image.load.texture
  # pool,id,i

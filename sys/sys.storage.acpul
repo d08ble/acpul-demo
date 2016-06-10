@@ -36,8 +36,8 @@ storage.get.load.file
 
 storage.image.save.texture {
  # pool,uid, texture, rect(x,y,w,h)
- io(u0, 500514, _4,_5, _6,_7);
- io(u0, 500510, _0,_1, _3, 0);
+ io(u0, 500514, _3,_4, _5,_6);
+ io(u0, 500510, _0,_1, _2, 0);
 };
 
 storage.image.load.texture

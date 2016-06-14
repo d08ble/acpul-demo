@@ -200,7 +200,7 @@ COGX 6000;
 #node.new.this.ex(r0, COGX, 0);
 
 FILTERS 7000;
-node.new.this.ex(r0, FILTERS, 0);
+#node.new.this.ex(r0, FILTERS, 0);
 
 ABOT 1500;
 #node.new.this.ex(r0, ABOT, 0);

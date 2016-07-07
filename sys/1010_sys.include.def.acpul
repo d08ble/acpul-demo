@@ -77,6 +77,8 @@ color1
  line(u0, 3, 0,0, 1,1);
 };
 
+dbg gdbg(u0, _0);
+
 # __bugfix ]
 
 # math.future [

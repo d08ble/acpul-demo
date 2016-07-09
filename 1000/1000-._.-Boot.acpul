@@ -251,6 +251,8 @@ NOOBSMILE 10024000;
 HIPSTER.BANNER 10025000;
 #node.new.this.ex(r0, HIPSTER.BANNER, 0);
 
+#10150000
+
 system.monitor {
  new.monitor {
   # t, x,y

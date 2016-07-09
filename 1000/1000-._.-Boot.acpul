@@ -237,10 +237,10 @@ ACPU.STUDIO 10019000;
 #node.new.this.ex(r0, ACPU.STUDIO, 0);
 
 LIVECOMMENT 10018000;
-node.new.this.ex(r0, LIVECOMMENT, 0);
+#node.new.this.ex(r0, LIVECOMMENT, 0);
 
 UNLIMITED.LIFE 70000;
-node.new.this.ex(r0, UNLIMITED.LIFE, 0);
+#node.new.this.ex(r0, UNLIMITED.LIFE, 0);
 
 NOOBMAN 10007000;
 #node.new.this.ex(r0, NOOBMAN, 0);
@@ -249,7 +249,7 @@ NOOBSMILE 10024000;
 #node.new.this.ex(r0, NOOBSMILE, 0);
 
 HIPSTER.BANNER 10025000;
-node.new.this.ex(r0, HIPSTER.BANNER, 0);
+#node.new.this.ex(r0, HIPSTER.BANNER, 0);
 
 CORE.VG.TEST0 10125010;
 #node.new.this.ex(r0, CORE.VG.TEST0, 0);
@@ -257,7 +257,6 @@ CORE.VG.TEST1 10125012;
 #node.new.this.ex(r0, CORE.VG.TEST1, 0);
 CORE.VG.TEST2 10125014;
 node.new.this.ex(r0, CORE.VG.TEST2, 0);
-
 
 #10150000
 

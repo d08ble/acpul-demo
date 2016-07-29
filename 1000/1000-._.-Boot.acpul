@@ -277,10 +277,13 @@ system.monitor {
  };
 
  init {
+  # dx,dy
+  dx _0;
+  dy _1;
   if (r0) {
-   new.monitor(0, 450,10);
-   new.monitor(1, 350,10);
-   new.monitor(2, 250,10);
+   new.monitor(0, 450+dx,10+dy);
+   new.monitor(1, 350+dx,10+dy);
+   new.monitor(2, 250+dx,10+dy);
 
    monitor.sync.status 5510;
    l0:=node.new.this.ex(r0, monitor.sync.status, _0);
@@ -290,7 +293,7 @@ system.monitor {
   };
  };
 };
-system.monitor.init;
+system.monitor.init(100, 200);
 
 # old test [
 

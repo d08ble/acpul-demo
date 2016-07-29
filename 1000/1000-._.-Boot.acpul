@@ -275,6 +275,7 @@ system.monitor {
   node.prop.y.s(r0, l0, _2);
   node.prop.s.s(r0, l0, 0.8);
  };
+ 
  if (r0) {
   new.monitor(0, 450,10);
   new.monitor(1, 350,10);

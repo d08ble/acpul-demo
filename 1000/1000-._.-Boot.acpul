@@ -293,7 +293,8 @@ system.monitor {
   };
  };
 };
-system.monitor.init(0, 800);
+system.monitor.init(0, 900);
+#system.monitor.init(0, 0);
 
 # old test [
 

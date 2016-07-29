@@ -20,7 +20,7 @@ net.reset.after.update(1, 1000);
 
 r0:=k==0;
 
-#draw(r0, 1001);
+draw(r0, 1001);
 
 # sharedobj [
 

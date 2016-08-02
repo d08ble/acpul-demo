@@ -258,7 +258,7 @@ CORE.VG.TEST1 10125012;
 CORE.VG.TEST2 10125014;
 #node.new.this.ex(r0, CORE.VG.TEST2, 0);
 CORE.VG.TEST3 10125016;
-#node.new.this.ex(r0, CORE.VG.TEST3, 0);
+node.new.this.ex(r0, CORE.VG.TEST3, 0);
 
 SNAKE 10150000;
 node.new.this.ex(r0, SNAKE, 0); 

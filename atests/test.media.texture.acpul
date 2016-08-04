@@ -26,8 +26,8 @@ if (r0) {
 # tex:=media.video.recorder.texture(r0, pool,id, 0, 800/2,150/2+10);
 # tex:=media.video.recorder.texture(r0, pool,id, 0, 800,150);
 # texflip:=node.ex.texture.create(u0, 768,1024);
- tex:=media.video.recorder.texture(r0, pool,id, 0, 768,1024);
- texflip:=node.ex.texture.create(u0, o0,o1);
+ tex:=media.video.recorder.texture(r0, pool,id, 0, o0,o1);
+ texflip:=node.ex.texture.create(u0, 768,1024);
  recording+=1;
 };
 

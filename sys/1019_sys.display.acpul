@@ -47,8 +47,7 @@ display
  };
  orientation.get io(u0, 500240, 0,0,0,0);
 
- size {
-  # display
-  #io(u0, 500240, 0,0,0,0);
- };
+ size
+  # display.id -> w,h
+  io(u0, 500241, _0,0,0,0);
 };

@@ -49,5 +49,5 @@ display
 
  size
   # display.id -> w,h
-  io(u0, 500241, _0,0,0,0);
+  io(u0, 500250, _0,0,0,0);
 };

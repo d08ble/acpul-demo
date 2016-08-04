@@ -7,12 +7,17 @@ draw(r0, 5401);
 _ @1010;
 _ @sys.media;
 _ @sys.node;
+_ @sys.display;
 
 tex r8;
 texflip r9;
 recording r5;
 
 if (r0) {
+ display.size(0);
+ watch(o0);
+ watch(o1);
+
  pool 5400;
  id 0;
 # tex:=media.video.recorder.texture(r0, pool,id, 0, 640,480);

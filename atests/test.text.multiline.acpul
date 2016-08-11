@@ -60,6 +60,13 @@ if (r0) {
  fnt.load;
 };
 
+state {
+ start.x r4;
+ start.y r5;
+ lines r6;
+ cols r7;
+};
+
 k:=1;
 
 ### 5351 test.text.multiline.draw

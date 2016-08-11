@@ -1,3 +1,11 @@
 ### 5350 test.text.multiline
 
+lines.vec {
+  
+};
+
+document {
+  
+};
+
 ### 5351 test.text.multiline.draw

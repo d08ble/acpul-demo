@@ -73,6 +73,7 @@ options.info {
 # font.size 100;
   #font0 v0;
   #fchars0 v1;
+# fchars0 
  dma0 0;
  dma1 1;
  b0 l0;
@@ -88,7 +89,7 @@ options.info {
   # r0, options
   r0 _0;
 
-  font0 _1.font0;
+  #font0 _1.font0;
   fchars0 _1.fchars0;
   dma0 _1.dma0;
   dma1 _1.dma1;
@@ -103,8 +104,8 @@ options.info {
 
   node.ex.shader.use(u0, vsh,fsh);
 
-  buffer.dma(u0, dma0, fchars0,0);
-  buffer.dma(u0, dma1, fchars0,1);
+#  buffer.dma(u0, dma0, fchars0,0);
+#  buffer.dma(u0, dma1, fchars0,1);
 
   offscount 1;
   l1:=dma.get(u0, 1, offscount);
@@ -114,10 +115,10 @@ options.info {
   offstexture 1;
   l0:=dma.get(u0, 1, startitems+offstexture);
   node.ex.shader.uniform.texture.name(u0, texattr0, l0, texunit0);
-  if (r0) {
-   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.texture, l0); llog.e();
-   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.count, l1); llog.e();
-  };
+#  if (r0) {
+#   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.texture, l0); llog.e();
+#   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.count, l1); llog.e();
+#  };
 
   render.chars {
    l2:=0;

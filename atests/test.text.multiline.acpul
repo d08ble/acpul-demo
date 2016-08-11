@@ -103,7 +103,7 @@ options.info {
   #, r0
   #r0 _0;
   #font0 _0.font0;
-  
+
   fchars0 _0.fchars0;
   dma0 _0.dma0;
   dma1 _0.dma1;
@@ -156,4 +156,4 @@ options.info {
   dma.off(u0, dma1);
  };
 
-#draw()
+# draw(options.info);

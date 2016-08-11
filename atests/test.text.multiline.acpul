@@ -82,7 +82,7 @@ state {
 lvec0 r2;
 
 llog.begin(u0, S.test.text.multiline);
-llog.erase(r0);
+llog.erase(r0, 0);
 
 if (r0) {
  fnt.load;

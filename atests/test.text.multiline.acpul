@@ -44,6 +44,14 @@ lines.vec {
  };
 };
 
+font0 r3;
+fnt.load {
+ font0:=media.ft.load.font(u0, 0, 1000,0,0);
+};
+if (r0) {
+ fnt.load;
+};
+
 ### 5351 test.text.multiline.draw
 
 

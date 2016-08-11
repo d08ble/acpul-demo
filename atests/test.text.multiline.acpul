@@ -24,6 +24,7 @@ lines.vec {
     buffer.dma(u0, dma0, b0,0);
     buffer.dma(u0, dma1, b0,0);
   };
+  
   if (b0==0) {
    fchars b0;
    fchars:=buffer.new(u0, 10000*3*4, 100000*3*4); # x,y,z [+ shape] ;

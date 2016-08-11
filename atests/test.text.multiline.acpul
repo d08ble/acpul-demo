@@ -97,9 +97,9 @@ if (r0) {
  i:=0;
  while(i<stat.view.rows) {
   lines.vec.select(i, dma0,dma1);
-  llog.printo(u0, S.dma0, 0, dma0,-1);
-  llog.printo(u0, S.dma1, 0, dma1,-1);
-  
+  #llog.printo(u0, S.dma0, 0, dma0,-1);
+  #llog.printo(u0, S.dma1, 0, dma1,-1);
+
   i+=1;
  };
  lines.vec.end(lvec0);

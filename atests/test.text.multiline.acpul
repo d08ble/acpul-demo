@@ -8,6 +8,7 @@ lines.vec {
  dma0 5;
  use {
   # o
+  buffer.dma(u0, dma0, _0,0);
  };
  end {
   dma.off(u0, dma0);

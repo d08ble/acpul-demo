@@ -56,15 +56,18 @@ font0 r3;
 fnt.load {
  font0:=media.ft.load.font(u0, 0, 1000,0,0);
 };
-if (r0) {
- fnt.load;
-};
 
 state {
  start.x r4;
  start.y r5;
  lines r6;
  cols r7;
+};
+
+if (r0) {
+ fnt.load;
+ lines:=10;
+ cols:=50;
 };
 
 k:=1;

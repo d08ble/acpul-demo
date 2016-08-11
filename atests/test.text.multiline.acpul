@@ -66,8 +66,8 @@ state {
 
 if (r0) {
  fnt.load;
- lines:=10;
- cols:=50;
+ state.lines:=10;
+ state.cols:=50;
 };
 
 k:=1;

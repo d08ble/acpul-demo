@@ -83,7 +83,7 @@ if (r0) {
 
  lvec0:=lines.vec.new;
  lines.vec.use(lvec0);
- 
+
 # i:=0;
 # while(i<stat.view.rows) {
 #  select(i, dma0,dma1);
@@ -96,6 +96,10 @@ if (r0) {
 k:=1;
 
 ### 5351 test.text.multiline.draw
+
+_ @1010;
+_ @sys.media;
+_ @sys.obj;
 
 options.info {
 # file {

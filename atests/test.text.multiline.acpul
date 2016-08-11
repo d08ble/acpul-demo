@@ -8,6 +8,9 @@ _ @1010;
 _ @sys.media;
 _ @sys.obj;
 
+dma0 0;
+dma1 1;
+
 document {
  
 };
@@ -84,6 +87,8 @@ if (r0) {
  lvec0:=lines.vec.new;
  lines.vec.use(lvec0);
 
+ select(i, dma0,dma1);
+ 
 # i:=0;
 # while(i<stat.view.rows) {
 #  select(i, dma0,dma1);

@@ -7,6 +7,7 @@ draw(r0, 5351);
 _ @1010;
 _ @sys.media;
 _ @sys.obj;
+_ @sys.llog;
 
 dma0 0;
 dma1 1;
@@ -78,6 +79,8 @@ state {
 
 lvec0 r2;
 
+llog.begin(u0, S.test.text.multiline);
+
 if (r0) {
  fnt.load;
 
@@ -97,6 +100,7 @@ if (r0) {
  lines.vec.end(lvec0);
 };
 
+llog.end(u0);
 
 k:=1;
 

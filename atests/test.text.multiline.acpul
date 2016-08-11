@@ -1,5 +1,11 @@
 ### 5350 test.text.multiline
 
+r0:=k==0;
+
+_ @1010;
+_ @sys.media;
+_ @sys.obj;
+
 document {
  
 };
@@ -51,6 +57,8 @@ fnt.load {
 if (r0) {
  fnt.load;
 };
+
+k:=1;
 
 ### 5351 test.text.multiline.draw
 

@@ -98,21 +98,23 @@ options.info {
 };
 
  draw {
-  # r0, options
-  r0 _0;
+  # options
 
-  #font0 _1.font0;
-  fchars0 _1.fchars0;
-  dma0 _1.dma0;
-  dma1 _1.dma1;
-  vsh _1.vsh;
-  fsh _1.fsh;
-  texattr0 _1.texattr0;
-  texunit0 _1.texunit0;
+  #, r0
+  #r0 _0;
+  #font0 _0.font0;
+  
+  fchars0 _0.fchars0;
+  dma0 _0.dma0;
+  dma1 _0.dma1;
+  vsh _0.vsh;
+  fsh _0.fsh;
+  texattr0 _0.texattr0;
+  texunit0 _0.texunit0;
 
-  l0 _1.b0;
-  l1 _1.b1;
-  l2 _1.b2;
+  l0 _0.b0;
+  l1 _0.b1;
+  l2 _0.b2;
 
   node.ex.shader.use(u0, vsh,fsh);
 

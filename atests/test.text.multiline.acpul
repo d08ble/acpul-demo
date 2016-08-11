@@ -68,7 +68,7 @@ state {
  view {
   start.x r4;
   start.y r5;
-  lines r6;
+  rows r6;
   cols r7;
  };
 };
@@ -78,12 +78,17 @@ lvec0 r2;
 if (r0) {
  fnt.load;
 
- state.view.lines:=10;
+ state.view.rows:=10;
  state.view.cols:=50;
 
  lvec0:=lines.vec.new;
  lines.vec.use(lvec0);
  
+# i:=0;
+# while(i<stat.view.rows) {
+#  select(i, dma0,dma1);
+#  i+=1;
+# };
  lines.vec.end(lvec0);
 };
 

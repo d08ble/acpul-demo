@@ -58,16 +58,18 @@ fnt.load {
 };
 
 state {
- start.x r4;
- start.y r5;
- lines r6;
- cols r7;
+ view {
+  start.x r4;
+  start.y r5;
+  lines r6;
+  cols r7;
+ };
 };
 
 if (r0) {
  fnt.load;
- state.lines:=10;
- state.cols:=50;
+ state.view.lines:=10;
+ state.view.cols:=50;
 };
 
 k:=1;

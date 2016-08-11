@@ -62,4 +62,81 @@ k:=1;
 
 ### 5351 test.text.multiline.draw
 
+options.info {
+# file {
+#  pool 1000;
+#  id 0;
+#  i 0;
+# };
+# font.size 100;
+  #font0 v0;
+  #fchars0 v1;
+ dma0 0;
+ dma1 1;
+ b0 l0;
+ b1 l1;
+ b2 l2;
+ vsh 10018020;
+ fsh 10018021;
+ texattr0 0;
+ texunit0 0;
+};
 
+ draw {
+  # r0, options
+  r0 _0;
+
+  font0 _1.font0;
+  fchars0 _1.fchars0;
+  dma0 _1.dma0;
+  dma1 _1.dma1;
+  vsh _1.vsh;
+  fsh _1.fsh;
+  texattr0 _1.texattr0;
+  texunit0 _1.texunit0;
+
+  l0 _1.b0;
+  l1 _1.b1;
+  l2 _1.b2;
+
+  node.ex.shader.use(u0, vsh,fsh);
+
+  buffer.dma(u0, dma0, fchars0,0);
+  buffer.dma(u0, dma1, fchars0,1);
+
+  offscount 1;
+  l1:=dma.get(u0, 1, offscount);
+
+  startitems 8;
+  itemsize 4;
+  offstexture 1;
+  l0:=dma.get(u0, 1, startitems+offstexture);
+  node.ex.shader.uniform.texture.name(u0, texattr0, l0, texunit0);
+  if (r0) {
+   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.texture, l0); llog.e();
+   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.count, l1); llog.e();
+  };
+
+  render.chars {
+   l2:=0;
+   while (l2 < l1) {
+   # r0, i, dma,o,esize,stride,count, type,normalized
+    a0 0; # verts
+    a1 1; # texCoords
+#   dma0 0;
+    eoffs 4*4*l2;
+    node.ex.shader.attribute.dma(u0, a1, dma0,eoffs,  2,4,4, 0,0);
+    node.ex.shader.attribute.dma(u0, a0, dma0,eoffs+2,2,4,4, 0,0);
+
+    node.ex.gl.draw(u0, 6, 4);
+    l2+=1;
+   };
+  };
+
+  render.chars;
+
+  dma.off(u0, dma0);
+  dma.off(u0, dma1);
+ };
+
+#draw()

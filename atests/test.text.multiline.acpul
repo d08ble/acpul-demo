@@ -41,6 +41,8 @@ lines.vec {
   dma1 _2;
   b0:=dma.get(u0, dma5,_0);
 
+  llog.printv(u0, S.select.b0, b0);
+
   if (b0<=0) {
     buffer.dma(u0, dma0, b0,0);
     buffer.dma(u0, dma1, b0,0);

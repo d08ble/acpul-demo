@@ -2,6 +2,8 @@
 
 r0:=k==0;
 
+draw(r0, 5351);
+
 _ @1010;
 _ @sys.media;
 _ @sys.obj;

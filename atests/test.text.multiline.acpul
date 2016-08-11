@@ -73,13 +73,20 @@ state {
  };
 };
 
+lvec0 r2;
+
 if (r0) {
  fnt.load;
+
  state.view.lines:=10;
  state.view.cols:=50;
+
+ lvec0:=lines.vec.new;
+ lines.vec.use(lvec0);
+ 
+ lines.vec.end(lvec0);
 };
 
-lines.vec.use()
 
 k:=1;
 

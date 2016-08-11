@@ -17,6 +17,9 @@ lines.vec {
  select {
   # dma, i
   b0:=dma.get(u0, dma0,_1);
+  if (b0==0) {
+   
+  };
   buffer.dma(u0, _0, b0,0);
  };
 };

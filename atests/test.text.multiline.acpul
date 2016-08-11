@@ -1,10 +1,10 @@
 ### 5350 test.text.multiline
 
-lines.vec {
+document {
  
 };
 
-document {
+lines.vec {
  
 };
 

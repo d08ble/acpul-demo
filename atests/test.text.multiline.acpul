@@ -14,9 +14,12 @@ document {
 
 lines.vec {
  dma5 5;
+ b0 l0;
+
  new {
   # -> o
-  buffer.new(u0, 100000,1000000);
+  b0:=buffer.new(u0, 100000,1000000);
+  buffer.dma(u0, dma5, b0,0);
  };
  use {
   # o

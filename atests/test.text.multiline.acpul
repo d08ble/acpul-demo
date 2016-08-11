@@ -13,6 +13,12 @@ lines.vec {
  end {
   dma.off(u0, dma0);
  };
+ 
+ select {
+  # dma, i
+  b0:=dma.get(u0, dma0,_1);
+  buffer.dma(u0, _0, b0,0);
+ };
 };
 
 ### 5351 test.text.multiline.draw

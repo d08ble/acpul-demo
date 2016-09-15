@@ -116,6 +116,10 @@ k:=1;
 
 ### 5351 test.text.multiline.draw
 
+color(u0, 0,0,1,1);
+#rect(u0, 6, 0-1000,0-1000, 10000,10000);
+rect(u0, 6, 0,0, 500,500);
+
 _ @1010;
 _ @sys.media;
 _ @sys.obj;
@@ -243,8 +247,4 @@ while(i<state.view.rows) {
 lines.vec.end(lvec0);
 
 llog.end(u0);
-
-color(u0, 0,0,1,1);
-#rect(u0, 6, 0-1000,0-1000, 10000,10000);
-rect(u0, 6, 0,0, 500,500);
 

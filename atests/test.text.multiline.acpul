@@ -148,7 +148,11 @@ options.info {
   l1 _0.b1;
   l2 _0.b2;
 
-  node.ex.shader.use(u0, vsh,fsh);
+  shader node.ex.shader;
+  
+  shader.use(u0, vsh,fsh);
+
+  shader.uniform.f2(u0, 0, 0,0);
 
   offscount 1;
   l1:=dma.get(u0, 1, offscount);
@@ -157,7 +161,7 @@ options.info {
   itemsize 4;
   offstexture 1;
   l0:=dma.get(u0, 1, startitems+offstexture);
-  node.ex.shader.uniform.texture.name(u0, texattr0, l0, texunit0);
+  shader.uniform.texture.name(u0, texattr0, l0, texunit0);
 #  if (r0) {
 #   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.texture, l0); llog.e();
 #   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.count, l1); llog.e();
@@ -170,8 +174,8 @@ options.info {
     a1 1; # texCoords
     eoffs 4*4*l2;
     # r0, i, dma,o,esize,stride,count, type,normalized
-    node.ex.shader.attribute.dma(u0, a1, dma0,eoffs,  2,4,4, 0,0);
-    node.ex.shader.attribute.dma(u0, a0, dma0,eoffs+2,2,4,4, 0,0);
+    shader.attribute.dma(u0, a1, dma0,eoffs,  2,4,4, 0,0);
+    shader.attribute.dma(u0, a0, dma0,eoffs+2,2,4,4, 0,0);
 
     node.ex.gl.draw(u0, 6, 4);
     l2+=1;

@@ -45,7 +45,7 @@ lines.vec {
   
   fchars:=dma.get(u0, dma5,i);
 
-#  llog.printv(r0, S.select.fchars, fchars);
+  llog.printv(r0, S.select.fchars, fchars);
 
   if (fchars>0) {
     buffer.dma(u0, dma0, fchars,0);
@@ -122,6 +122,15 @@ _ @sys.obj;
 _ @sys.node;
 
 options.info {
+# file {
+#  pool 1000;
+#  id 0;
+#  i 0;
+# };
+# font.size 100;
+  #font0 v0;
+  #fchars0 v1;
+# fchars0 
  dma0 0;
  dma1 1;
  b0 l0;
@@ -136,6 +145,10 @@ options.info {
  draw {
   # options
 
+  #, r0
+  #r0 _0;
+  #font0 _0.font0;
+
   fchars0 _0.fchars0;
   dma0 _0.dma0;
   dma1 _0.dma1;
@@ -149,6 +162,9 @@ options.info {
   l2 _0.b2;
 
   node.ex.shader.use(u0, vsh,fsh);
+
+#  buffer.dma(u0, dma0, fchars0,0);
+#  buffer.dma(u0, dma1, fchars0,1);
 
   offscount 1;
   l1:=dma.get(u0, 1, offscount);
@@ -168,6 +184,7 @@ options.info {
    while (l2 < l1) {
     a0 0; # verts
     a1 1; # texCoords
+#   dma0 0;
     eoffs 4*4*l2;
     # r0, i, dma,o,esize,stride,count, type,normalized
     node.ex.shader.attribute.dma(u0, a1, dma0,eoffs,  2,4,4, 0,0);
@@ -218,6 +235,8 @@ while(i<state.view.rows) {
   llog.printo(r0, S.dma0, 0, dma0,-1);
   llog.printo(r0, S.dma1, 0, dma1,-1);
  draw(options.info);
+  llog.printo(r0, S.dma0, 0, dma0,-1);
+  llog.printo(r0, S.dma1, 0, dma1,-1);
  
  i+=1;
 };

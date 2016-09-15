@@ -220,7 +220,7 @@ while(i<state.view.rows) {
 #  llog.printv(u0, S.select.i, i);
 #  llog.printo(r0, S.dma0, 0, dma0,-1);
 #  llog.printo(r0, S.dma1, 0, dma1,-1);
- draw(options.info, 0, i*50+sin(t*10)*10);
+ draw(options.info, 0, i*50+i*sin(t*10)*10);
  
  i+=1;
 };

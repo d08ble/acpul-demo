@@ -152,7 +152,8 @@ options.info {
   
   shader.use(u0, vsh,fsh);
 
-  shader.uniform.f2(u0, 0, 0,0); 
+  uniform1 1;
+  shader.uniform.f2(u0, uniform1, 0,0); 
 
   offscount 1;
   l1:=dma.get(u0, 1, offscount);
@@ -236,7 +237,7 @@ varying mediump vec2 v_texCoord;
 
 varying highp vec4 v_position;
 
-uniform vec2 p0;
+uniform vec2 p1;
 
 void main()
 {

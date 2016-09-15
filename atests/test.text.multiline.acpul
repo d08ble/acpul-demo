@@ -105,6 +105,7 @@ if (r0) {
  };
  lines.vec.end(lvec0);
 };
+watch(r0);
 
 llog.end(u0);
 

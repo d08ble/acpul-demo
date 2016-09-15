@@ -24,6 +24,7 @@ lines.vec {
   # -> o
   b0:=buffer.new(u0, 10000,1000000);
   buffer.dma(u0, dma5, b0,0);
+  b0;
  };
  use {
   # o

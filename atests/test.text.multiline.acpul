@@ -117,8 +117,6 @@ _ @sys.media;
 _ @sys.obj;
 _ @sys.node;
 
-own @5350;
-
 options.info {
 # file {
 #  pool 1000;
@@ -199,10 +197,14 @@ options.info {
   dma.off(u0, dma1);
  };
 
+own @5350;
+lines.vec own.lines.vec;
+state own.state;
+
 lines.vec.use(lvec0);
 i:=0;
 while(i<state.view.rows) {
-  lines.vec.select(i, dma0,dma1);
+ lines.vec.select(i, dma0,dma1);
 #  llog.printv(u0, S.select.i, i);
 #  llog.printo(u0, S.dma0, 0, dma0,-1);
 #  llog.printo(u0, S.dma1, 0, dma1,-1);

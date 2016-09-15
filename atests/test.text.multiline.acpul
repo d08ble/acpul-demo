@@ -212,6 +212,7 @@ while(i<state.view.rows) {
  
  i+=1;
 };
+
 dma.off(u0, dma0);
 dma.off(u0, dma1);
 lines.vec.end(lvec0);

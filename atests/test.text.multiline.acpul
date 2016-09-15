@@ -63,7 +63,7 @@ lines.vec {
 
    text S.TEST.TEXT;
 
-   media.ft.text.dma(u0, font0,100, text, dma0,dma1,-1);
+   media.ft.text.dma(u0, font0,10, text, dma0,dma1,-1);
   };
  };
 };

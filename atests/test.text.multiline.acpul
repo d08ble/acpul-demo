@@ -107,9 +107,6 @@ if (r0) {
  lines.vec.end(lvec0);
 };
 
-llog.printv(r0, S.r2, r2);
-llog.printo(r0, S.r2o, 0, r2,-1);
-
 llog.end(u0);
 
 k:=1;

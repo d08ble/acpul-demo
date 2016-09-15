@@ -236,7 +236,7 @@ uniform vec2 p0;
 
 void main()
 {
-  vec4 p = a_position + vec4(100., 37., 0.,0.);
+  vec4 p = a_position + vec4(p0, 0.,0.);
   gl_Position = CC_MVPMatrix * p;
   v_texCoord = a_texCoord;
   v_position = a_position;

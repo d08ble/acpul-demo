@@ -204,21 +204,11 @@ llog.printo(r0, S.dma5, 0, dma5,-1);
 
 i:=0;
 while(i<state.view.rows) {
- fchars l0;
- fchars:=dma.get(u0, dma5,i);
-
- llog.printv(r0, S.select.fchars, fchars);
-
- buffer.dma(u0, dma0, fchars,0);
- buffer.dma(u0, dma1, fchars,1);
-
-# lines.vec.select(i, dma0,dma1); 
+ lines.vec.select(i, dma0,dma1); 
 #  llog.printv(u0, S.select.i, i);
 #  llog.printo(r0, S.dma0, 0, dma0,-1);
 #  llog.printo(r0, S.dma1, 0, dma1,-1);
  draw(options.info);
-#  llog.printo(r0, S.dma0, 0, dma0,-1);
-#  llog.printo(r0, S.dma1, 0, dma1,-1);
  
  i+=1;
 };

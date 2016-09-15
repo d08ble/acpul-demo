@@ -44,7 +44,7 @@ lines.vec {
   
   fchars:=dma.get(u0, dma5,i);
 
-  llog.printv(u0, S.select.fchars, fchars);
+  llog.printv(r0, S.select.fchars, fchars);
 
   if (fchars>0) {
     buffer.dma(u0, dma0, fchars,0);

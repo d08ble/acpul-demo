@@ -43,17 +43,18 @@ lines.vec {
 #  font0size
   dma0 _1;
   dma1 _2;
-  b0:=dma.get(u0, dma5,a.fchars);
+  fchars b0;
+  
+  fchars:=dma.get(u0, dma5,a.fchars);
 
   llog.printv(u0, S.select.b0, b0);
 
   if (b0>0) {
     buffer.dma(u0, dma0, b0,0);
-    buffer.dma(u0, dma1, b0,0);
+    buffer.dma(u0, dma1, b0,1);
   };
 
   if (b0<=0) {
-   fchars b0;
    fchars:=buffer.new(u0, 10000*3*4, 100000*3*4); # x,y,z [+ shape] ;
    buffer.add(u0, fchars, 1000*4, 100000*4); # char, texture, offs0,offs1
 

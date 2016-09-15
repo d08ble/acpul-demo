@@ -152,7 +152,7 @@ options.info {
   
   shader.use(u0, vsh,fsh);
 
-  shader.uniform.f2(u0, 0, 0,0);
+  shader.uniform.f2(u0, 0, 0,0); 
 
   offscount 1;
   l1:=dma.get(u0, 1, offscount);

@@ -61,7 +61,8 @@ lines.vec {
    buffer.dma(u0, dma0, fchars,0);
    buffer.dma(u0, dma1, fchars,1);
 
-   text S.TEST.TEXT;
+#   text S.TEST.TEXT;
+   text MATRIX.MATRIX.MATRIX;
 
    media.ft.text.dma(u0, font0,50, text, dma0,dma1,-1);
   };
@@ -345,7 +346,7 @@ void main( void ) {
       o*=vec4(vec3(2.2),1.);
     }
     else*/
-//      o*=vec4(vec3(0.4,3.,0.3),1.);
-      o*=vec4(vec3(1.5,1.,3.4),1.);
+      o*=vec4(vec3(0.4,3.,0.3),1.);
+//      o*=vec4(vec3(1.5,1.,3.4),1.);
     gl_FragColor = o;
 }

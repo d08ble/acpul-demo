@@ -251,6 +251,7 @@ NOOBSMILE 10024000;
 HIPSTER.BANNER 10025000;
 #node.new.this.ex(r0, HIPSTER.BANNER, 0);
 
+VG {
 CORE.VG.TEST0 10125010;
 #node.new.this.ex(r0, CORE.VG.TEST0, 0);
 CORE.VG.TEST1 10125012;
@@ -265,6 +266,8 @@ node.new.this.ex(r0, SNAKE, 0);
 
 PAINT 10160000;
 node.new.this.ex(r0, PAINT, 0);
+};
+VG;
 
 system.monitor {
  new.monitor {

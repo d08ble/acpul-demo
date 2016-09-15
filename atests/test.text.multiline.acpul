@@ -197,9 +197,10 @@ options.info {
   dma.off(u0, dma1);
  };
 
-own @5350;
-lines own.lines;
-state own.state;
+q @5350;
+lines q.lines;
+state q.state;
+lvec0 q.lvec0;
 
 dma0 0;
 dma1 1;

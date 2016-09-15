@@ -214,7 +214,7 @@ while(i<state.view.rows) {
 #  llog.printv(u0, S.select.i, i);
 #  llog.printo(u0, S.dma0, 0, dma0,-1);
 #  llog.printo(u0, S.dma1, 0, dma1,-1);
-# draw(options.info);
+ draw(options.info);
  
  i+=1;
 };

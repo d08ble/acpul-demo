@@ -123,15 +123,6 @@ _ @sys.obj;
 _ @sys.node;
 
 options.info {
-# file {
-#  pool 1000;
-#  id 0;
-#  i 0;
-# };
-# font.size 100;
-  #font0 v0;
-  #fchars0 v1;
-# fchars0 
  dma0 0;
  dma1 1;
  b0 l0;
@@ -144,12 +135,6 @@ options.info {
 };
 
  draw {
-  # options
-
-  #, r0
-  #r0 _0;
-  #font0 _0.font0;
-
   fchars0 _0.fchars0;
   dma0 _0.dma0;
   dma1 _0.dma1;

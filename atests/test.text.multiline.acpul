@@ -213,6 +213,7 @@ llog.begin(u0, S.test.text.multiline);
 lines.vec.use(lvec0);
 
 llog.printv(r0, S.r2, r2);
+llog.printo(r0, S.r2o, 0, r2,-1);
 llog.printo(r0, S.dma5, 0, dma5,-1);
 
 i:=0;

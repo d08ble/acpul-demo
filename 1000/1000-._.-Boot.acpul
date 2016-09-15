@@ -267,7 +267,7 @@ node.new.this.ex(r0, SNAKE, 0);
 PAINT 10160000;
 node.new.this.ex(r0, PAINT, 0);
 };
-VG;
+#VG;
 
 system.monitor {
  new.monitor {

@@ -198,8 +198,11 @@ options.info {
  };
 
 own @5350;
-lines.vec own.lines.vec;
+lines own.lines;
 state own.state;
+
+dma0 0;
+dma1 1;
 
 lines.vec.use(lvec0);
 i:=0;

@@ -128,7 +128,8 @@ options.info {
  b0 l0;
  b1 l1;
  b2 l2;
- vsh 10018020;
+ #vsh 10018020;
+ vsh 5352;
  fsh 10018021;
  texattr0 0;
  texunit0 0;
@@ -218,4 +219,24 @@ dma.off(u0, dma1);
 lines.vec.end(lvec0);
 
 llog.end(u0);
+
+### 5352:S test.text.multiline.vsh
+
+#define a_position a0
+#define a_texCoord a1
+
+attribute vec4 a_position;
+attribute vec2 a_texCoord;
+
+varying mediump vec2 v_texCoord;
+
+varying highp vec4 v_position; 
+
+void main()
+{
+  vec4 p = a_position + vec4(50., 37., 0.,0.);
+  gl_Position = CC_MVPMatrix * p;
+  v_texCoord = a_texCoord;
+  v_position = a_position;
+}
 

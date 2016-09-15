@@ -95,7 +95,6 @@ if (r0) {
  lvec0:=lines.vec.new;
  lines.vec.use(lvec0);
 
-
  i:=0;
  while(i<state.view.rows) {
   lines.vec.select(i, dma0,dma1);
@@ -117,6 +116,8 @@ _ @1010;
 _ @sys.media;
 _ @sys.obj;
 _ @sys.node;
+
+own @5350;
 
 options.info {
 # file {
@@ -198,7 +199,18 @@ options.info {
   dma.off(u0, dma1);
  };
 
-draw(options.info);
+lines.vec.use(lvec0);
+i:=0;
+while(i<state.view.rows) {
+  lines.vec.select(i, dma0,dma1);
+#  llog.printv(u0, S.select.i, i);
+#  llog.printo(u0, S.dma0, 0, dma0,-1);
+#  llog.printo(u0, S.dma1, 0, dma1,-1);
+ draw(options.info);
+
+ i+=1;
+};
+lines.vec.end(lvec0);
 
 color(u0, 0,0,1,1);
 #rect(u0, 6, 0-1000,0-1000, 10000,10000);

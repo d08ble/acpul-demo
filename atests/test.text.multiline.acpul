@@ -205,7 +205,7 @@ lvec0 q.lvec0;
 dma0 0;
 dma1 1;
 
-lines.vec.use(r2);
+lines.vec.use(lvec0);
 i:=0;
 while(i<state.view.rows) {
  lines.vec.select(i, dma0,dma1);

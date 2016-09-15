@@ -185,7 +185,7 @@ options.info {
     shader.attribute.dma(u0, a1, dma0,eoffs,  2,4,4, 0,0);
     shader.attribute.dma(u0, a0, dma0,eoffs+2,2,4,4, 0,0);
 
-  shader.uniform.f2(u0, uniform1, x,y+sin((l2+y+t*10)*1)*5); 
+  shader.uniform.f2(u0, uniform1, x,y+sin((l2+y*0.1+t*10)*1)*5); 
 
     node.ex.gl.draw(u0, 6, 4);
     l2+=1;

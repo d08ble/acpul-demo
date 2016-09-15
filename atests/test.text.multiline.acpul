@@ -211,6 +211,9 @@ dma5 5;
 llog.begin(u0, S.test.text.multiline);
 
 lines.vec.use(lvec0);
+
+llog.printo(r0, S.dma5, 0, dma5,-1);
+
 i:=0;
 while(i<state.view.rows) {
  fchars l0;

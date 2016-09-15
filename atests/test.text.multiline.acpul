@@ -128,8 +128,8 @@ options.info {
  b0 l0;
  b1 l1;
  b2 l2;
- vsh 10018020;
- #vsh 5352;
+ #vsh 10018020;
+ vsh 5352;
  fsh 10018021;
  texattr0 0;
  texunit0 0;

@@ -11,13 +11,13 @@ _ @sys.llog;
 
 dma0 0;
 dma1 1;
+dma5 5;
 
 document {
  
 };
 
 lines.vec {
- dma5 5;
  b0 l0;
 
  new {

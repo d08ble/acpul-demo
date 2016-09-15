@@ -136,6 +136,7 @@ options.info {
 };
 
  draw {
+  # x,y
   fchars0 _0.fchars0;
   dma0 _0.dma0;
   dma1 _0.dma1;
@@ -148,12 +149,15 @@ options.info {
   l1 _0.b1;
   l2 _0.b2;
 
+  x _1;
+  y _2;
+
   shader node.ex.shader;
   
   shader.use(u0, vsh,fsh);
 
   uniform1 1;
-  shader.uniform.f2(u0, uniform1, 0,0); 
+  shader.uniform.f2(u0, uniform1, x,y); 
 
   offscount 1;
   l1:=dma.get(u0, 1, offscount);
@@ -214,7 +218,7 @@ while(i<state.view.rows) {
 #  llog.printv(u0, S.select.i, i);
 #  llog.printo(r0, S.dma0, 0, dma0,-1);
 #  llog.printo(r0, S.dma1, 0, dma1,-1);
- draw(options.info);
+ draw(options.info, 0, i*10);
  
  i+=1;
 };

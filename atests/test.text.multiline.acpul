@@ -202,6 +202,8 @@ lines q.lines;
 state q.state;
 lvec0 q.lvec0;
 
+_ @sys.llog;
+
 dma0 0;
 dma1 1;
 

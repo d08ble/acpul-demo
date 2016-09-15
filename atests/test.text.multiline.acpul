@@ -32,7 +32,11 @@ lines.vec {
  end {
   dma.off(u0, dma5);
  };
- 
+
+ a {
+  fchars 0;
+ };
+
  select {
   # i, dma0,dma1
 #  font0

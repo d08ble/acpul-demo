@@ -206,6 +206,7 @@ _ @sys.llog;
 
 dma0 0;
 dma1 1;
+dma5 5;
 
 llog.begin(u0, S.test.text.multiline);
 

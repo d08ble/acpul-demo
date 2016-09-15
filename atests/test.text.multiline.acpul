@@ -102,10 +102,11 @@ if (r0) {
 #  llog.printo(u0, S.dma0, 0, dma0,-1);
 #  llog.printo(u0, S.dma1, 0, dma1,-1);
   i+=1;
+watch(r0);
+watch(i);
  };
  lines.vec.end(lvec0);
 };
-watch(r0);
 
 llog.end(u0);
 

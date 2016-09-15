@@ -334,15 +334,16 @@ void main( void ) {
 //    o += vec4(0.3+sin(coord.x*20.+time*10.)*0.5,1.,0.,1.)*0.7;
     o += vec4(0.3+sin(coord.x*20.+time*10.)*0.5,0.5+sin((coord.x*10.+time)*10.)*0.4,1.,1.)*0.7;
     o=vec4(2.,0.5,0.0,1)*0.2*exp(o);
-    o.g=0.5+cos(o.r/2.*3.14);
-    o.b=o.r/2.;
+    o.b=0.5+cos(o.r/2.*3.14);
+    o.g=o.r/2.;
     o = c.a * o;
 
-    if (v_position.x > 200.) {
+/*    if (v_position.x > 200.) {
       o.r=o.b=o.g;
       o*=vec4(vec3(2.2),1.);
     }
-    else
-      o*=vec4(vec3(0.4,3.,0.3),1.);
+    else*/
+//      o*=vec4(vec3(0.4,3.,0.3),1.);
+      o*=vec4(vec3(0.2,3.,0.8),1.);
     gl_FragColor = o;
 }

@@ -106,6 +106,6 @@ cpu.get.battery.info
 
 cpu.get.formula.info.source
  # u0, fid, buffer -> buffer
- io(_0, 500430, _1, _2, 0,0);
+ io(_0, 500434, _1, _2, 0,0);
 
 # core ]

@@ -108,4 +108,11 @@ cpu.get.formula.info.source
  # u0, fid, buffer -> buffer
  io(_0, 500434, _1, _2, 0,0);
 
+cpu.get.formula.info.text.matrix.attribute
+ # u0, fid, line,col, aid -> v
+ io(_0, 500435, _1, _2,_3, _4);
+
+src:=cpu.get.formula.info.source(u0, fid, src);
+cpu.get.formula.info.text.matrix.attribute(u0, line,col, 0);
+
 # core ]

@@ -106,6 +106,9 @@ if (r0) {
   i+=1;
  };
  lines.vec.end(lvec0);
+
+_ @sys.cpu;
+
 fid 5350;
 src r1;
 src:=cpu.get.formula.info.source(u0, fid, src);

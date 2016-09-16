@@ -104,4 +104,8 @@ cpu.get.battery.info
  # u0 -> o0-o1: level, status
  io(_0, 500433, 0,0,0,0);
 
+cpu.get.formula.info.source
+ # u0, fid, buffer -> buffer
+ io(_0, 500430, _1, _2, 0,0);
+
 # core ]

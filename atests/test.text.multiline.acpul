@@ -106,7 +106,19 @@ if (r0) {
   i+=1;
  };
  lines.vec.end(lvec0);
+fid 5350;
+src r1;
+src:=cpu.get.formula.info.source(u0, fid, src);
+llog.printv(u0, S.formula.info.fid, fid);
+llog.printo(u0, S.formula.info.src, 0, src,-1);
+line 1;
+col 0;
+l0:=cpu.get.formula.info.text.matrix.attribute(u0, line,col, 0);
+llog.printv(u0, S.formula.info.attr, l0);
+
 };
+
+
 
 llog.end(u0);
 

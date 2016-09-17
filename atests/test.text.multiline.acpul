@@ -98,7 +98,7 @@ if (r0) {
 
 #  text S.TEST.TEXT;
   text MATRIX.MATRIX.MATRIX;
-  media.ft.text.dma(u0, font0,50, text, dma0,dma1,-1);
+  #media.ft.text.dma(u0, font0,50, text, dma0,dma1,-1);
 
   llog.printv(u0, S.select.i, i);
 #  llog.printo(u0, S.dma0, 0, dma0,-1);

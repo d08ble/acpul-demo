@@ -147,7 +147,7 @@ update0 {
 
 if (r0) {
  load.formula(5350);
- update0;
+ #update0;
 };
 
 # ide ]

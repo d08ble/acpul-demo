@@ -60,11 +60,6 @@ lines.vec {
 
    buffer.dma(u0, dma0, fchars,0);
    buffer.dma(u0, dma1, fchars,1);
-
-#   text S.TEST.TEXT;
-   text MATRIX.MATRIX.MATRIX;
-
-   media.ft.text.dma(u0, font0,50, text, dma0,dma1,-1);
   };
  };
 };
@@ -100,6 +95,11 @@ if (r0) {
  i:=0;
  while(i<state.view.rows) {
   lines.vec.select(i, dma0,dma1);
+
+#  text S.TEST.TEXT;
+  text MATRIX.MATRIX.MATRIX;
+  media.ft.text.dma(u0, font0,50, text, dma0,dma1,-1);
+
   llog.printv(u0, S.select.i, i);
 #  llog.printo(u0, S.dma0, 0, dma0,-1);
 #  llog.printo(u0, S.dma1, 0, dma1,-1);
@@ -125,15 +125,29 @@ load.formula {
 
 update0 {
 
-line 1;
-col 0;
-l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 0);
-llog.printv(u0, S.formula.info.attr, l0);
+ lines.vec.use(lvec0);
+
+ i:=0;
+ while(i<state.view.rows) {
+  lines.vec.select(i, dma0,dma1);
+  media.ft.text.dma(u0, font0,50, text, dma0,dma1,-1);
+  llog.printv(u0, S.select.i, i);
+#  llog.printo(u0, S.dma0, 0, dma0,-1);
+#  llog.printo(u0, S.dma1, 0, dma1,-1);
+  i+=1;
+ };
+ lines.vec.end(lvec0);
+
+ line 1;
+ col 0;
+ l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 0);
+ llog.printv(u0, S.formula.info.attr, l0);
 
 };
 
 if (r0) {
  load.formula(5350);
+ update0;
 };
 
 # ide ]

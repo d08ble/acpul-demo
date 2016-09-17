@@ -107,13 +107,23 @@ if (r0) {
  };
  lines.vec.end(lvec0);
 
+};
+
+# ide [
+
 _ @sys.cpu;
 
-fid 5350;
 src r1;
-src:=cpu.get.formula.info.source(u0, fid, src);
-llog.printv(u0, S.formula.info.fid, fid);
-llog.printo(u0, S.formula.info.src, 0, src,-1);
+
+load.formula {
+ # fid  
+ fid _0;
+ src:=cpu.get.formula.info.source(u0, fid, src);
+ llog.printv(u0, S.formula.info.fid, fid);
+ llog.printo(u0, S.formula.info.src, 0, src,-1);
+};
+
+update0 {
 
 line 1;
 col 0;
@@ -122,7 +132,11 @@ llog.printv(u0, S.formula.info.attr, l0);
 
 };
 
+if (r0) {
+ load.formula(5350);
+};
 
+# ide ]
 
 llog.end(u0);
 

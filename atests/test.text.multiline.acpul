@@ -234,7 +234,8 @@ options.info {
     shader.attribute.dma(u0, a1, dma0,eoffs,  2,4,4, 0,0);
     shader.attribute.dma(u0, a0, dma0,eoffs+2,2,4,4, 0,0);
 
-  shader.uniform.f2(u0, uniform1, x,y+sin((l2+y*0.1+t*20)*20)*300); 
+#  shader.uniform.f2(u0, uniform1, x,y+sin((l2+y*0.1+t*20)*20)*300); 
+  shader.uniform.f2(u0, uniform1, x,y); 
 
     node.ex.gl.draw(u0, 6, 4);
     l2+=1;
@@ -272,8 +273,8 @@ while(i<state.view.rows) {
 #  llog.printv(u0, S.select.i, i);
 #  llog.printo(r0, S.dma0, 0, dma0,-1);
 #  llog.printo(r0, S.dma1, 0, dma1,-1);
-# draw(options.info, 0, i*50+i*sin(t*2)*20);
- draw(options.info, 0, i*50);
+ draw(options.info, 0, i*50+i*sin(t*2)*20);
+# draw(options.info, 0, i*50);
  
  i+=1;
 };

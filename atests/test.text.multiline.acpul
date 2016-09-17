@@ -114,7 +114,6 @@ src r1;
 src:=cpu.get.formula.info.source(u0, fid, src);
 llog.printv(u0, S.formula.info.fid, fid);
 llog.printo(u0, S.formula.info.src, 0, src,-1);
-llog.printv(u0, S.qqq, i);
 
 line 1;
 col 0;

@@ -112,4 +112,23 @@ cpu.get.formula.info.text.matrix.attribute
  # u0, fid, line,col, aid -> v
  io(_0, 500435, _1, _2,_3, _4);
 
+cpu.source.attribute {
+ main 0;
+ statement 1;
+ name 2;
+ ident 3;
+ number 4;
+ object 5;
+ object.declaration 6;
+ expressions 7;
+ expression.simple 8;
+ expression.assign 9;
+ term 10;
+ operator 11;
+ function 12;
+ block 13;
+ file 14;
+ expression.compound 15;
+};
+
 # core ]

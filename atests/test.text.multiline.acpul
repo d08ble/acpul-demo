@@ -134,7 +134,7 @@ update0 {
 
   buffer.dma(u0, dma2, src,i+50);
 
-  media.ft.text.dma(u0, font0,12, dma2, dma0,dma1,-1);
+  media.ft.text.dma(u0, font0,25, dma2, dma0,dma1,-1);
   llog.printv(u0, S.select.i, i);
 #  llog.printo(u0, S.font.dma0, 0, dma0,-1);
 #  llog.printo(u0, S.font.dma1, 0, dma1,-1);
@@ -300,7 +300,7 @@ while(i<state.view.rows) {
 #  llog.printo(r0, S.dma0, 0, dma0,-1);
 #  llog.printo(r0, S.dma1, 0, dma1,-1);
  row state.view.rows-i;
- draw(options.info, 0, row*12+row*sin(t*2)*20);
+ draw(options.info, 0, row*25+row*sin(t*2)*20);
 # draw(options.info, 0, i*50);
  
  i+=1;

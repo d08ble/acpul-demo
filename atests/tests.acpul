@@ -60,9 +60,12 @@ test.monitor.sync.status 5510;
 #l0:=node.new.this.ex(r0, test.monitor.sync.status, 0);
 #node.prop.x.s(r0, l0, 500);
 
-_ @sys.cpu;
-cpu.profile.global.ticks(u0);
-cpu.profile.global.ticks.frame(u0);
+test.profile.global {
+ _ @sys.cpu;
+ cpu.profile.global.ticks(u0);
+ cpu.profile.global.ticks.frame(u0);
+};
+test.profile.global;
 
 k:=1;
 

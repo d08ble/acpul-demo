@@ -360,6 +360,7 @@ uniform float p2;
 varying highp vec4 v_position; 
 
 void main( void ) {
+#define p2 p2qq
 
     vec2 pp = gl_FragCoord.xy - offset;
 

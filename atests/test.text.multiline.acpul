@@ -237,7 +237,7 @@ options.info {
     };
      shader.uniform.f1(u0, uniform2, 1); 
 
-    update.percent;
+#    update.percent;
 
     node.ex.gl.draw(u0, 6, 4);
     l2+=1;

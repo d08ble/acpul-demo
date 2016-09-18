@@ -166,6 +166,7 @@ _ @1010;
 _ @sys.media;
 _ @sys.obj;
 _ @sys.node;
+_ @sys.cpu;
 
 options.info {
  dma0 0;

@@ -418,9 +418,9 @@ void main( void ) {
     o.g=o.r/2.;
     o = c.a * o;
 
-    o.r += p2;
-    o.g -= p2;
-    o.b -= p2;
+    o.r *= p2;
+    o.g /= p2;
+    o.b /= p2;
 
 /*    if (v_position.x > 200.) {
       o.r=o.b=o.g;

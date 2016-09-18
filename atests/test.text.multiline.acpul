@@ -420,8 +420,8 @@ void main( void ) {
     o = c.a * o;
 
     o.r = o.r > 0. ? o.r + p2 : 0.;
-    o.g /= p2*10.;
-    o.b /= p2;
+    o.g /= p2*5.;
+    o.b /= p2*5.;
 
 /*    if (v_position.x > 200.) {
       o.r=o.b=o.g;

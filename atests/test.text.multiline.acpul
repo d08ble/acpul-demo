@@ -87,7 +87,7 @@ llog.erase(r0, 0);
 if (r0) {
  fnt.load;
 
- state.view.rows:=50;
+ state.view.rows:=10;
  state.view.cols:=50;
 
  lvec0:=lines.vec.new;

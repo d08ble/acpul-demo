@@ -56,11 +56,14 @@ cpu.profile
   io(_0, 500422, _1,1,0,0); # get.now
  };
  global.ticks
-  0;
+  # u0
+  io(_0, 500424, 0,0,0,0);
  global.ticks.frame
-  0;
+  # u0
+  io(_0, 500424, 1,0,0,0);
  reset
-  0;
+  # u0
+  io(_0, 500423, 0,0,0,0);
 };
 # H9-250714 ]
 

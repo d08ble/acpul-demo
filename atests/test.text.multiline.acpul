@@ -235,6 +235,7 @@ options.info {
     update.percent {
      shader.uniform.f1(u0, uniform2, l2); 
     };
+     shader.uniform.f1(u0, uniform2, 1); 
 
     update.percent;
 

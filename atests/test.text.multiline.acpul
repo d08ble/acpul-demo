@@ -181,8 +181,10 @@ options.info {
  texunit0 0;
 };
 
+fid 5351;
+
  draw {
-  # x,y
+  # x,y, line,col
   fchars0 _0.fchars0;
   dma0 _0.dma0;
   dma1 _0.dma1;
@@ -197,6 +199,9 @@ options.info {
 
   x _1;
   y _2;
+
+  line _3;
+  col _4;
 
   shader node.ex.shader;
   
@@ -236,7 +241,13 @@ options.info {
 
     update.percent {
 #     shader.uniform.f1(u0, uniform2, l2/l1); 
-     shader.uniform.f1(u0, uniform2, l2/l1); 
+
+    l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 0);
+# llog.printv(u0, S.formula.info.attr, l0);
+
+     shader.uniform.f1(u0, uniform2, l0); 
+
+#     shader.uniform.f1(u0, uniform2, l2/l1); 
     };
 
     update.percent;
@@ -263,13 +274,9 @@ options.info {
    };
   };
 
-# line 1;
-# col 0;
-# l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 0);
-# llog.printv(u0, S.formula.info.attr, l0);
-
   render.chars0;
 #  render.chars1.rects;
+
 
 #  dma.off(u0, dma0);
 #  dma.off(u0, dma1);
@@ -301,7 +308,7 @@ while(i<state.view.rows) {
 #  llog.printo(r0, S.dma0, 0, dma0,-1);
 #  llog.printo(r0, S.dma1, 0, dma1,-1);
  row state.view.rows-i;
- draw(options.info, 0, row*25+row*sin(t*2)*20);
+ draw(options.info, 0, row*25+row*sin(t*2)*20, row,i);
 # draw(options.info, 0, i*50);
  
  i+=1;

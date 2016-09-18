@@ -65,7 +65,7 @@ test.profile.global {
  l0:=cpu.profile.global.ticks(u0);
  watch(l0);
  l0:=cpu.profile.global.ticks.frame(u0);
-watch(l0);
+ watch(l0);
 };
 test.profile.global;
 

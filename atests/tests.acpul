@@ -61,8 +61,8 @@ test.monitor.sync.status 5510;
 #node.prop.x.s(r0, l0, 500);
 
 _ @sys.cpu;
-cpu.profile.global.ticks(r0);
-cpu.profile.global.ticks.frame(r0);
+cpu.profile.global.ticks(u0);
+cpu.profile.global.ticks.frame(u0);
 
 k:=1;
 

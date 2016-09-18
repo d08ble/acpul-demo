@@ -235,6 +235,7 @@ options.info {
     shader.uniform.f2(u0, uniform1, x,y); 
 
     update.percent {
+#     shader.uniform.f1(u0, uniform2, l2/l1); 
      shader.uniform.f1(u0, uniform2, l2/l1); 
     };
 
@@ -419,8 +420,8 @@ void main( void ) {
     o = c.a * o;
 
     o.r = o.r > 0. ? o.r + p2 : 0.;
-    o.g -= p2/2.;
-    o.b -= p2/2.;
+//    o.g -= p2/2.;
+//    o.b -= p2/2.;
 
 /*    if (v_position.x > 200.) {
       o.r=o.b=o.g;

@@ -237,6 +237,7 @@ options.info {
   };
 
   render.chars1.rects {
+   color(u0, 1,1,1,1);
    l2:=0;
    while (l2 < l1) {
     char.info.sz 8;

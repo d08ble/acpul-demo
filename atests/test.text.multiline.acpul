@@ -435,11 +435,14 @@ void main( void ) {
     o.b=0.5+cos(o.r/2.*3.14);
     o.g=o.r/2.;
     o = c.a * o;
-
+/*
     o.r = o.r > 0. ? o.r + p2 : 0.;
     o.g /= p2*5.;
     o.b /= p2*5.;
-
+*/
+    o.r = p2;
+    o.g = 0.;
+    o.b = 0.;
 /*    if (v_position.x > 200.) {
       o.r=o.b=o.g;
       o*=vec4(vec3(2.2),1.);

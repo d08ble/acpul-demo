@@ -62,8 +62,10 @@ test.monitor.sync.status 5510;
 
 test.profile.global {
  _ @sys.cpu;
- cpu.profile.global.ticks(u0);
- cpu.profile.global.ticks.frame(u0);
+ l0:=cpu.profile.global.ticks(u0);
+ watch(l0);
+ l0:=cpu.profile.global.ticks.frame(u0);
+watch(l0);
 };
 test.profile.global;
 

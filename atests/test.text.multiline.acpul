@@ -242,7 +242,7 @@ options.info {
    while (l2 < l1) {
     char.info.sz 8;
     sz char.info.sz;
-    rectoffs sz*(l2+1);
+    rectoffs sz*(l2+1)+4;
     x0 d0; y0 d1; x1 d2; y1 d3;
     x0:=dma.get(u0, dma1,rectoffs+0);
     y0:=dma.get(u0, dma1,rectoffs+1);

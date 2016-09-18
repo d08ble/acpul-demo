@@ -203,6 +203,8 @@ options.info {
   shader.use(u0, vsh,fsh);
 
   uniform1 1;
+  uniform2 2;
+
   shader.uniform.f2(u0, uniform1, x,y); 
 
   offscount 1;

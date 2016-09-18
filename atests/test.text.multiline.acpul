@@ -136,8 +136,8 @@ update0 {
 
   media.ft.text.dma(u0, font0,50, dma2, dma0,dma1,-1);
   llog.printv(u0, S.select.i, i);
-#  llog.printo(u0, S.dma0, 0, dma0,-1);
-#  llog.printo(u0, S.dma1, 0, dma1,-1);
+  llog.printo(u0, S.dma0, 0, dma0,-1);
+  llog.printo(u0, S.dma1, 0, dma1,-1);
   i+=1;
  };
  lines.vec.end(lvec0);
@@ -224,7 +224,7 @@ options.info {
 #   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.count, l1); llog.e();
 #  };
 
-  render.chars {
+  render.chars0 {
    l2:=0;
    while (l2 < l1) {
     a0 0; # verts
@@ -235,14 +235,31 @@ options.info {
     shader.attribute.dma(u0, a0, dma0,eoffs+2,2,4,4, 0,0);
 
 #  shader.uniform.f2(u0, uniform1, x,y+sin((l2+y*0.1+t*20)*20)*300); 
-  shader.uniform.f2(u0, uniform1, x,y); 
+    shader.uniform.f2(u0, uniform1, x,y); 
 
     node.ex.gl.draw(u0, 6, 4);
     l2+=1;
    };
   };
 
-  render.chars;
+  render.chars1.rects {
+   l2:=0;
+   while (l2 < l1) {
+    char.info.sz 8;
+    sz char.info.sz;
+    rectoffs sz*(l2+1);
+    x0 d0; y0 d1; x1 d2; y1 d3;
+    x0:=dma.get(u0, dma1,rectoffs+0);
+    y0:=dma.get(u0, dma1,rectoffs+1);
+    x1:=dma.get(u0, dma1,rectoffs+2);
+    y1:=dma.get(u0, dma1,rectoffs+3);
+    rect(u0, 6, x0,y0,x1-x0,y1-y0);
+    l2+=1;
+   };
+  };
+
+  render.chars0;
+  render.chars1.rects;
 
 #  dma.off(u0, dma0);
 #  dma.off(u0, dma1);

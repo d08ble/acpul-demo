@@ -217,6 +217,7 @@ options.info {
 #   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.texture, l0); llog.e();
 #   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.count, l1); llog.e();
 #  };
+  shader.uniform.f1(u0, uniform2, 0); 
 
   render.chars0 {
    l2:=0;
@@ -327,9 +328,6 @@ void main()
 
 ### 5353:S test.text.multiline.fsh
 
-//#define time 2.
-//#define time CC_Time[3]
-//uniform float CC_Time[2];
 #define time CC_Time[3]/10.
 //#define resolution vec2(500.0,250.)/vec2(1.)
 #define mouse vec2(0.5)
@@ -344,6 +342,9 @@ precision highp float;
 
 varying vec2 v_texCoord;
 uniform sampler2D p0;
+
+uniform float p2;
+#define percent p2
 
 //uniform vec2 p1;
 //#define resolution p1

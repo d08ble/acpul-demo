@@ -136,8 +136,8 @@ update0 {
 
   media.ft.text.dma(u0, font0,50, dma2, dma0,dma1,-1);
   llog.printv(u0, S.select.i, i);
-#  llog.printo(u0, S.font.dma0, 0, dma0,-1);
-#  llog.printo(u0, S.font.dma1, 0, dma1,-1);
+  llog.printo(u0, S.font.dma0, 0, dma0,-1);
+  llog.printo(u0, S.font.dma1, 0, dma1,-1);
   i+=1;
  };
  lines.vec.end(lvec0);

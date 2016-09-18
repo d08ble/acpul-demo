@@ -55,6 +55,12 @@ cpu.profile
   io(_0, 500421, _1,0,0,0); # end
   io(_0, 500422, _1,1,0,0); # get.now
  };
+ global.ticks
+  0;
+ global.ticks.frame
+  0;
+ reset
+  0;
 };
 # H9-250714 ]
 
@@ -69,6 +75,7 @@ cpu.init
   u20:=0; u21:=0; u22:=0; u23:=0; u24:=0;
   u25:=0; u26:=0; u27:=0; u28:=0; u29:=0;
   u30:=0; u31:=0;
+  cpu.profile.reset;
  };
 };
 

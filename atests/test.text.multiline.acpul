@@ -132,7 +132,7 @@ update0 {
  while(i<state.view.rows) {
   lines.vec.select(i, dma0,dma1);
 
-  buffer.dma(u0, dma2, src,i+50);
+  buffer.dma(u0, dma2, src,i);
 
   media.ft.text.dma(u0, font0,25, dma2, dma0,dma1,-1);
   llog.printv(u0, S.select.i, i);

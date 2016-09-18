@@ -259,7 +259,7 @@ options.info {
 # llog.printv(u0, S.formula.info.attr, l0);
 
   render.chars0;
-  render.chars1.rects;
+#  render.chars1.rects;
 
 #  dma.off(u0, dma0);
 #  dma.off(u0, dma1);

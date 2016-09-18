@@ -245,6 +245,7 @@ fid 5351;
 
      col l2;
      l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 1);
+     l0:=if(l2<2,1,0);
 # llog.printv(u0, S.formula.info.attr, l0);
 
      shader.uniform.f1(u0, uniform2, l0); 

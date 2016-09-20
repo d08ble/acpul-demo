@@ -244,8 +244,7 @@ fid 5351;
 
      col l2;
 #     l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 1);
-line 0; 
-#col 0;
+#line 0; col 0;
      l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 0);
 
      a cpu.source.attribute;
@@ -321,7 +320,7 @@ while(i<state.view.rows) {
 #  llog.printo(r0, S.dma1, 0, dma1,-1);
  row state.view.rows-i;
 # draw(options.info, 0, row*25+row*sin(t*2)*20, row);
- draw(options.info, 0, row*25, row);
+ draw(options.info, 0, row*25, i);
  
  i+=1;
 };

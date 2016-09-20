@@ -245,7 +245,7 @@ fid 5351;
 
      col l2;
      l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 1);
-     l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 0);
+     №l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 0);
 
      a cpu.source.attribute;
 

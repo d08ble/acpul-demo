@@ -337,10 +337,10 @@ TOUCH.DEBUG 1006;
 _ @sys.cpu;
 
 cpu.init(r0);
-cpu.debug.errors.console(r0, 0);
+cpu.debug.errors.console(r0, 1);
 cpu.debug.errors.enabled(r0, 1);
 cpu.debug.log.to.xcode.console(r0, 1);
-cpu.debug.log.to.console(r0, 1);
+cpu.debug.log.to.console(r0, 0);
 
 cpu.step(u0);
 

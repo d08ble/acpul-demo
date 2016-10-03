@@ -226,7 +226,7 @@ fid 5351;
 #  };
   shader.uniform.f1(u0, uniform2, 0); 
 #     u49+=0.001;
-     u49+=1;
+     u49=1;
 
   render.chars0 {
    l2:=0;

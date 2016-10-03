@@ -456,7 +456,7 @@ void main( void ) {
     o.g = o.r;
     o.b = 0.;
 */
-//    o.r = 0.5+0.5sin(p2*pi);
+    o.r = 0.5+0.5*sin(p2*pi);
 //    o.g = 0.5+0.5sin(p2*pi/2.);
 //    o.b = 0.5+0.5sin(p2*pi/4.);
     gl_FragColor = o;

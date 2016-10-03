@@ -128,11 +128,12 @@ update0 {
 
  lines.vec.use(lvec0);
 
+ start.row 10;
  i:=0;
  while(i<state.view.rows) {
   lines.vec.select(i, dma0,dma1);
 
-  buffer.dma(u0, dma2, src,i);
+  buffer.dma(u0, dma2, src,i+start.row);
 
   media.ft.text.dma(u0, font0,15, dma2, dma0,dma1,-1);
   llog.printv(u0, S.select.i, i);

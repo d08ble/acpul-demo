@@ -254,6 +254,7 @@ fid 5351;
      if (l0==a.ident) {l3:=0.5;};
      if (l0==a.name) {l3:=1;};
      l3:=l0;
+     l3:=0.1;
 #     l3:=l0;
 #     l0:=if(l2<3,1,0);
 # llog.printv(u0, S.formula.info.attr, l0);

@@ -128,7 +128,7 @@ update0 {
 
  lines.vec.use(lvec0);
 
- start.row 50;
+ start.row 150;
  i:=0;
  while(i<state.view.rows) {
   lines.vec.select(i, dma0,dma1);

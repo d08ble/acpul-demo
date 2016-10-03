@@ -225,7 +225,7 @@ fid 5351;
 #   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.count, l1); llog.e();
 #  };
   shader.uniform.f1(u0, uniform2, 0); 
-     u49+=0.01;
+     u49+=0.001;
 
   render.chars0 {
    l2:=0;

@@ -225,6 +225,7 @@ fid 5351;
 #   _ @1010; _ @sys.llog; llog.b(Q.tmp.text); llog.pv(Q.count, l1); llog.e();
 #  };
   shader.uniform.f1(u0, uniform2, 0); 
+     u49+=0.01;
 
   render.chars0 {
    l2:=0;
@@ -255,7 +256,6 @@ fid 5351;
      if (l0==a.name) {l3:=1;};
      l3:=l0;
      l3:=u49;
-     u49+=0.01;
 #     l3:=l0;
 #     l0:=if(l2<3,1,0);
 # llog.printv(u0, S.formula.info.attr, l0);

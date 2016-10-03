@@ -255,6 +255,7 @@ fid 5351;
      l3:=0;
      if (l0==a.ident) {l3:=0.5;};
      if (l0==a.name) {l3:=1;};
+     if (l0==a.number) {l3:=0.2;};
      l3:=l0;
 #     l3:=u49;
 #     l3:=l0;

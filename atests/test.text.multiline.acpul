@@ -249,7 +249,7 @@ fid 5351;
 #     line 0; col 0; 
 #     l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 2);
      l0:=cpu.get.formula.info.text.matrix.attribute(u0, fid, line,col, 0);
-#watch(l0);
+watch(l0);
      a cpu.source.attribute;
 
      l3:=0;

@@ -76,7 +76,7 @@ state {
   start.y r5;
   rows r6;
   cols r7;
-  start.row 150;
+  start.row u49; #150;
  };
 };
 
@@ -146,9 +146,9 @@ update0 {
 
 if (r0) {
  load.formula(5351);
- update0;
 };
-
+ update0;
+state.view.start.row = 100; #t/10;
 # ide ]
 
 llog.end(u0);

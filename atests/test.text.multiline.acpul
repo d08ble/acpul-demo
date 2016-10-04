@@ -131,7 +131,7 @@ update0 {
 
  i:=0;
  while(i<state.view.rows) {
-#  lines.vec.select(i, dma0,dma1);
+  lines.vec.select(i, dma0,dma1);
 
 #  buffer.dma(u0, dma2, src,i+state.view.start.row);
 

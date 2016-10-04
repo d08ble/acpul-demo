@@ -80,7 +80,7 @@ rr0 recording * rnd(u0)<0.5;
 TMT.PARTICLE 5402;
 #node.new.this.ex4(rr0, TMT.PARTICLE, 50,150,0,0);
 
-y:=100;
+y:=-200;
 t+=dt;
 
 k:=1;

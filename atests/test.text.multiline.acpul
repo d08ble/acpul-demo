@@ -148,7 +148,7 @@ if (r0) {
  load.formula(5351);
 # update0;
 };
-state.view.start.row:=mod(t*4, obj.count(u0, src)); #100; #t/10;
+state.view.start.row:=mod(t*10, obj.count(u0, src)); #100; #t/10;
  update0;
 
 # ide ]

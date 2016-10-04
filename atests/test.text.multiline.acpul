@@ -459,7 +459,7 @@ void main( void ) {
 //      o*=vec4(vec3(1.5,1.,3.4),1.);
 
     o.r = o.r > 0. ? p2*o.g : 0.;
-    o.g = 1.-o.r;
+    o.g = o.r > 0 ? 1.-o.r : 0.;
 //    o.g = o.r;
 //    o.b = 0.;
 

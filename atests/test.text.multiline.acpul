@@ -146,9 +146,11 @@ update0 {
 
 if (r0) {
  load.formula(5351);
+# update0;
 };
- update0;
 state.view.start.row := t; #100; #t/10;
+ update0;
+
 # ide ]
 
 llog.end(u0);

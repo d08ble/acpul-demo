@@ -290,7 +290,7 @@ fid 5351;
     x1:=dma.get(u0, dma1,rectoffs+2);
     y1:=dma.get(u0, dma1,rectoffs+3);
     rect(u0, 2, x+x0,y+y0,x1-x0,y1-y0);
-    l2+=1;
+    l2+=1; 
    };
   };
 

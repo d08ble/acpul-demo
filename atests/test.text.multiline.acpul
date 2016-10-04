@@ -463,7 +463,7 @@ void main( void ) {
     o.b = 0.;
 */
 #define pi 3.14
-    o.b = o.g; // * o.r;
+    o.b = o.g * o.r;
 //    o = texture2D(p0, coord);
     o.r = o.g = c.a;
 //    o.r = o.r > 0. ? 0.5+0.5*sin(p2*pi) : 0.;

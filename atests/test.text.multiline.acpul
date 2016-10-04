@@ -295,7 +295,7 @@ fid 5351;
   };
 
   render.chars0;
-#  render.chars1.rects;
+  render.chars1.rects;
 
 
 #  dma.off(u0, dma0);

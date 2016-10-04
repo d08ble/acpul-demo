@@ -254,7 +254,7 @@ fid 5351;
      a cpu.source.attribute;
 
      l3:=0;
-     if (l0==a.ident) {l3:=1.5;};
+     if (l0==a.ident) {l3:=2.5;};
      if (l0==a.name) {l3:=1;};
      if (l0==a.number) {l3:=0.2;};
 #     l3:=l0;

@@ -463,15 +463,15 @@ void main( void ) {
     o.b = 0.;
 */
 #define pi 3.14
+    o.b = o.g * o.r;
     o = texture2D(p0, coord);
     o.r = o.g = c.a;
-//    o.b = o.g * o.r;
 //    o.r = o.r > 0. ? 0.5+0.5*sin(p2*pi) : 0.;
     o.r = o.r > 0. ? p2 : 0.;
     o.g = o.g > 0. ? 1.-o.r*10. : 0.;
 //    o.g = o.g > 0. ? 0.5+0.5*sin(p2*pi*8.) : 0.;
 //    o.g = 0.;
-    o.b = 0.;
+//    o.b = 0.;
 
     gl_FragColor = o;
 }

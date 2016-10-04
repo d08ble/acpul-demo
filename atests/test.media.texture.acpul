@@ -71,7 +71,7 @@ anotes.position {
 #anotes.position;
 livecomment.position {
 # node.prop.x.s(u0, n0, -50);
-# node.prop.y.s(u0, n0, -100);
+ node.prop.y.s(u0, n0, -100);
  node.prop.s.s(u0, n0, 0.25);
 };
 #livecomment.position;

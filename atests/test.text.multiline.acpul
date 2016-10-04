@@ -327,7 +327,7 @@ while(i<state.view.rows) {
 #  llog.printo(r0, S.dma1, 0, dma1,-1);
  row state.view.rows-i;
 # draw(options.info, 0, row*25+row*sin(t*2)*20, row);
- draw(options.info, 0,row*25, 150+i);
+ draw(options.info, 0,row*25, state.view.start.row+i);
  
  i+=1;
 };

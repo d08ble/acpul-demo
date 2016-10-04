@@ -131,11 +131,11 @@ update0 {
 
  i:=0;
  while(i<state.view.rows) {
-  lines.vec.select(i, dma0,dma1);
+#  lines.vec.select(i, dma0,dma1);
 
-  buffer.dma(u0, dma2, src,i+state.view.start.row);
+#  buffer.dma(u0, dma2, src,i+state.view.start.row);
 
-  media.ft.text.dma(u0, font0,25, dma2, dma0,dma1,-1);
+#  media.ft.text.dma(u0, font0,25, dma2, dma0,dma1,-1);
   llog.printv(u0, S.select.i, i);
 #  llog.printo(u0, S.font.dma0, 0, dma0,-1);
 #  llog.printo(u0, S.font.dma1, 0, dma1,-1);

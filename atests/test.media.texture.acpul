@@ -33,9 +33,9 @@ if (r0) {
 
 #if (t > 300) {
 #if (t > 150) {
-if (t > 60) {
+#if (t > 60) {
 #if (t > 1) { 
-#if (t > 10) {
+if (t > 10) {
 #if (t > 15) {
  media.video.recorder.stop(recording, tex);
  recording:=0;
@@ -87,7 +87,7 @@ k:=1;
 
 ### 5401 test.media.texture.draw
 
-color(u0, 1,0,0,1);
+color(u0, 1,1,0,1);
 form {
  x0 0+50*_0;
  y0 0+50*_0;

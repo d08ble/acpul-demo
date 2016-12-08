@@ -269,6 +269,10 @@ node.new.this.ex(r0, PAINT, 0);
 };
 #VG;
 
+PHOTONEO 7500;
+node.new.this.ex(r0, PHOTONEO, 0);
+
+
 system.monitor {
  new.monitor {
   # t, x,y

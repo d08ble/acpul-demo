@@ -141,4 +141,8 @@ cpu.source.attribute {
  expression.compound 15;
 };
 
+cpu.get.current.fid
+ # u0 -> fid
+ io(_0, 500436, 0,0,0,0);
+
 # core ]

@@ -7,6 +7,8 @@ storage.e { _;
  photo.loaded 1; # -> type, pool,uid
  file.moved 2; # 2:old(type,pool,uid,i), 0:new(type,pool,uid,i)
  file.deleted 3; # type,pool,uid,i
+ photo.saved 4;
+ file.is.here 5;
 };
 
 storage.t {

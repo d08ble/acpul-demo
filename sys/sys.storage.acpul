@@ -8,7 +8,7 @@ storage.e { _;
  file.moved 2; # 2:old(type,pool,uid,i), 0:new(type,pool,uid,i)
  file.deleted 3; # type,pool,uid,i
  photo.saved 4;
- newfile 5; # -> type, pool,uid
+ new.file 5; # -> type, pool,uid
 };
 
 storage.t {

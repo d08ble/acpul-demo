@@ -131,7 +131,7 @@ node {_;
  ex.texture.set.param
   # u0, tex, p, v
   io(_0, 7224, _1, _2, _3, 0);
- ex.aaa 2;
+ ex.texture.aaa 2;
  ex.texture.p {
   filter.min 0;
   filter.mag 1;

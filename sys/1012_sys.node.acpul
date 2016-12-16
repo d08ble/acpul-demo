@@ -133,12 +133,17 @@ node {_;
   io(_0, 7224, _1, _2, _3, 0);
 
  texture.p {
-  min.filter 0;
-  mag.filter 1;
+  filter.min 0;
+  filter.mag 1;
+  wrap.s 2;
+  wrap.t 3;
  };
  texture.v {
-  linear 0;
-  nearest 1;
+  filter.linear 0;
+  filter.nearest 1;
+  wrap.repeat 2;
+  wrap.clamp.to.edge 3;
+  wrap.mirrored.repeat 4;
  };
 
  # texture param ]

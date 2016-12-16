@@ -139,8 +139,8 @@ node {_;
   wrap.t 3;
  };
  texture.v {
-  filter.linear 0;
-  filter.nearest 1;
+  filter.nearest 0;
+  filter.linear 1;
   wrap.repeat 2;
   wrap.clamp.to.edge 3;
   wrap.mirrored.repeat 4;

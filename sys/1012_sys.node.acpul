@@ -125,7 +125,23 @@ node {_;
   #pvrtc4 8;   # 4-bit PVRTC-compressed texture: PVRTC4
   #pvrtc2 9;   # 2-bit PVRTC-compressed texture: PVRTC2
  };
- 
+
+ # texture param [
+
+ ex.texture.set.param
+  # u0, tex, p, v
+  io(_0, 7224, _1, _2, _3, 0);
+
+ texture.p {
+  min.filter 0;
+  mag.filter 1;
+ };
+ texture.v {
+  linear 0;
+  nearest 1;
+ };
+
+ # texture param ]
 
  ex.shader.use
   # u0, vertex, fragment

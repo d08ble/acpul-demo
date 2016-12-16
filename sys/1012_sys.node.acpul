@@ -132,13 +132,13 @@ node {_;
   # u0, tex, p, v
   io(_0, 7224, _1, _2, _3, 0);
 
- texture.p {
+ ex.texture.p {
   filter.min 0;
   filter.mag 1;
   wrap.s 2;
   wrap.t 3;
  };
- texture.v {
+ ex.texture.v {
   filter.nearest 0;
   filter.linear 1;
   wrap.repeat 2;

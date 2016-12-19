@@ -270,7 +270,7 @@ PAINT 10160000;
 VG;     
 
 PHOTONEO 7500;
-node.new.this.ex(r0, PHOTONEO, 0);
+#node.new.this.ex(r0, PHOTONEO, 0);
 
 
 system.monitor {

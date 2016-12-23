@@ -254,7 +254,7 @@ HIPSTER.BANNER 10025000;
 VG {
 _ @core.vg;
 CORE.VG.TEST0 10125010;
-node.new.this.ex(r0, _ @core.vg.test0, 0);
+node.new.this.ex(r0, core.vg.test0, 0);
 CORE.VG.TEST1 10125012;
 #node.new.this.ex(r0, CORE.VG.TEST1, 0);
 CORE.VG.TEST2 10125014;

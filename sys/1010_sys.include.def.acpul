@@ -61,6 +61,8 @@ sys.modules.a.MAX 1040;
 sys.exp.obj.util.dma 7319;
 # sys.def.exp ]
 
+core.vg 10125000;
+
 # __bugfix [
 
 # bugfix 1. render order

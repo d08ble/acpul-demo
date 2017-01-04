@@ -243,10 +243,10 @@ UNLIMITED.LIFE 70000;
 #node.new.this.ex(r0, UNLIMITED.LIFE, 0);
 
 NOOBMAN 10007000;
-node.new.this.ex(r0, NOOBMAN, 0);
+#node.new.this.ex(r0, NOOBMAN, 0);
 
 NOOBSMILE 10024000;
-#node.new.this.ex(r0, NOOBSMILE, 0);
+node.new.this.ex(r0, NOOBSMILE, 0);
 
 HIPSTER.BANNER 10025000;
 #node.new.this.ex(r0, HIPSTER.BANNER, 0);

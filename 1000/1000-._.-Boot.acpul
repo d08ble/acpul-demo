@@ -246,7 +246,7 @@ NOOBMAN 10007000;
 #node.new.this.ex(r0, NOOBMAN, 0);
 
 NOOBSMILE 10024000;
-node.new.this.ex(r0, NOOBSMILE, 0);
+#node.new.this.ex(r0, NOOBSMILE, 0);
 
 HIPSTER.BANNER 10025000;
 #node.new.this.ex(r0, HIPSTER.BANNER, 0);
@@ -264,7 +264,7 @@ SNAKE 10150000;
 PAINT 10160000;
 node.new.this.ex(r0, PAINT, 0);
 };
-#VG;     
+VG;     
 
 PHOTONEO 7500;
 #node.new.this.ex(r0, PHOTONEO, 0);

@@ -65,6 +65,8 @@ core.vg 10125000;
 
 sys.os 15000;
 
+sys.ul.ui 70100;
+
 # __bugfix [
 
 # bugfix 1. render order

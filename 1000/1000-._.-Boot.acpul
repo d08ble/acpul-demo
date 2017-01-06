@@ -300,6 +300,13 @@ system.monitor {
 system.monitor.init(0, 880);
 #system.monitor.init(0, 0);
 
+_ @sys.os;
+_ @os.main;
+
+if (r0) {
+# os.main.panel.new(l0, 0,500,1, 768,100);
+};
+
 # old test [
 
 #node.new.this.ex(r0, -1000, 0);

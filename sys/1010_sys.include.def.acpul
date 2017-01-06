@@ -63,6 +63,8 @@ sys.exp.obj.util.dma 7319;
 
 core.vg 10125000;
 
+sys.os 15000;
+
 # __bugfix [
 
 # bugfix 1. render order

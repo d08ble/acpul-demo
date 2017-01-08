@@ -132,7 +132,7 @@ dma.off
 
 dma.copy
  # u0, dma0,offset0, dma1,offset1, size
- dma_get4(_0, _1,_2, _3,_4, _5);
+ dma_copy(_0, _1,_2, _3,_4, _5);
 
 dma.fill
  # u0, dma, offset, n, v
@@ -205,7 +205,7 @@ cpu.mode.shader.name 3;
 dma.from.file
  # u0, dma, mode, file
  dma_from_file(_0, _1, _2, _3);
- 
+
 dma.json.to.object
  # u0, dma
  dma_json_to_object(_0, _1);

@@ -116,10 +116,6 @@ dma.set4
  # u0, dma, offset, v0,v1,v2,v3
  dma_set4(_0, _1, _2, _3,_4,_5,_6);
 
-dma.fill
- # u0, dma, offset, n, v
- dma_fill(_0, _1, _2, _3, _4);
-
 dma.get
  # u0, dma, offset
  dma_get(_0, _1, _2);
@@ -130,13 +126,27 @@ dma.get4
  # u0, dma, offset
  dma_get4(_0, _1, _2);
 
+dma.off
+ # u0, dma
+ dma_off(_0, _1);
+
 dma.copy
  # u0, dma0,offset0, dma1,offset1, size
  dma_get4(_0, _1,_2, _3,_4, _5);
 
-dma.off
- # u0, dma
- dma_off(_0, _1);
+dma.fill
+ # u0, dma, offset, n, v
+ dma_fill(_0, _1, _2, _3, _4);
+
+dma.fill2
+ # u0, dma, offset, n, v0,v1
+ dma_fill_v4(_0, _1, _2, _3, 2, _4,_5,0,0);
+dma.fill3
+ # u0, dma, offset, n, v0,v1,v2
+ dma_fill_v4(_0, _1, _2, _3, 3, _4,_5,_6,0);
+dma.fill4
+ # u0, dma, offset, n, v0,v1,v2
+ dma_fill_v4(_0, _1, _2, _3, 4, _4,_5,_6,_7);
 
 # dma ]
 # dma.ex [

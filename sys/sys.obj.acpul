@@ -139,6 +139,7 @@ dma.fill
  dma_fill(_0, _1, _2, _3, _4);
 
 # new extra - not tested! [
+# warning memcpy/memmove != dma_op for reverse same buffer
 
 dma.fill2
  # u0, dma, offset, n, v0,v1

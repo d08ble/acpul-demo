@@ -193,6 +193,11 @@ dma.div.dma
  # u0, dma0,offset0,vstrip0, dma1,offset1,vstrip1, vsize, n
  dma_op_dma(_0, 3, _1,_2,_3, _4,_5,_6, _7, _8);
 
+dma.copy2
+ # u0, dma0,offset0,vstrip0, dma1,offset1,vstrip1, vsize, n
+ dma_op_dma(_0, 4, _1,_2,_3, _4,_5,_6, _7, _8);
+
+
 # new extra - not tested! ]
 # dma ]
 # dma.ex [

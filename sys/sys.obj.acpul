@@ -149,8 +149,8 @@ dma.fill4
  dma_fill_v4(_0, _1, _2, _3, 4,0, _4,_5,_6,_7);
 
 dma.minmax
- # u0, dma, offset, n, vsize
- dma_minmax_v4(_0, _1, _2, _3, _4,0);
+ # u0, dma, offset, n, vsize,vstrip
+ dma_minmax_v4(_0, _1, _2, _3, _4,_5);
 
 # dma ]
 # dma.ex [

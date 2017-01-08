@@ -178,6 +178,10 @@ dma.minmax
  # u0, dma, offset, n, vsize,vstrip
  dma_minmax_v4(_0, _1, _2, _3, _4,_5);
 
+dma.add.dma
+ # u0, dma0,offset0,vstrip0, dma1,offset1,vstrip1, vsize, n
+ dma_minmax_v4(_0, _1, _2, _3, _4,_5);
+
 # dma ]
 # dma.ex [
 

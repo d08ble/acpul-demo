@@ -131,7 +131,7 @@ dma.off
  dma_off(_0, _1);
 
 dma.copy
- # u0, dma0,offset0, dma1,offset1, size
+ # u0, dma0dst,offset0, dma1src,offset1, size
  dma_copy(_0, _1,_2, _3,_4, _5);
 
 dma.fill

@@ -181,20 +181,20 @@ dma.minmax
  dma_minmax_v4(_0, _1, _2, _3, _4,_5);
 
 dma.add.dma
- # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, vsize, n
+ # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, n, vsize
  dma_op_dma(_0, 0, _1,_2,_3, _4,_5,_6, _7, _8);
 dma.sub.dma
- # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, vsize, n
+ # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, n, vsize
  dma_op_dma(_0, 1, _1,_2,_3, _4,_5,_6, _7, _8);
 dma.mul.dma
- # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, vsize, n
+ # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, n, vsize
  dma_op_dma(_0, 2, _1,_2,_3, _4,_5,_6, _7, _8);
 dma.div.dma
- # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, vsize, n
+ # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, n, vsize
  dma_op_dma(_0, 3, _1,_2,_3, _4,_5,_6, _7, _8);
 
 dma.copy2
- # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, vsize, n
+ # u0, dma0d,offset0,vstrip0, dma1s,offset1,vstrip1, n, vsize
  dma_op_dma(_0, 4, _1,_2,_3, _4,_5,_6, _7, _8);
 
 

@@ -145,7 +145,20 @@ dma.fill3
  # u0, dma, offset, n, v0,v1,v2
  dma_fill_v4(_0, _1, _2, _3, 3,0, _4,_5,_6,0);
 dma.fill4
+ # u0, dma, offset, n, v0,v1,v2,v3
+ dma_fill_v4(_0, _1, _2, _3, 4,0, _4,_5,_6,_7);
+
+dma.add
+ # u0, dma, offset, n, v0
+ dma_fill_v4(_0, _1, _2, _3, 1,0, _4,0,0,0);
+dma.add2
+ # u0, dma, offset, n, v0,v1
+ dma_fill_v4(_0, _1, _2, _3, 4,0, _4,_5,0,0);
+dma.add3
  # u0, dma, offset, n, v0,v1,v2
+ dma_fill_v4(_0, _1, _2, _3, 4,0, _4,_5,_6,0);
+dma.add4
+ # u0, dma, offset, n, v0,v1,v2,v3
  dma_fill_v4(_0, _1, _2, _3, 4,0, _4,_5,_6,_7);
 
 dma.minmax

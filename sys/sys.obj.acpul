@@ -54,7 +54,9 @@ it.prev
  obj_it_select(_0, _1, _2, 3);
 
 it.eq
- # u0, id,i,j
+ # u0, id,i,j 
+ # -1=begin
+ # -2=end
  obj_it_eq(_0, _1, _2, _3);
 it.set
  # u0, id,i,j : j

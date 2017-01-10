@@ -29,6 +29,7 @@ it.key
  obj_it_select_key(_0, _1, _2, _3, 0);
 it.key.new
  # u0, id,i, key :::: id.iterator[i] = id[key] = buffer.new
+ # ->  i=found
  obj_it_select_key(_0, _1, _2, _3, 1);
 
 it.map.get.key

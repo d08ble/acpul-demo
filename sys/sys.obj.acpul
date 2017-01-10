@@ -23,8 +23,9 @@ map.new
  obj_new(_0, 0, _1, _2, 0,0);
 
 it.key
- # u0, id,i, key :::: id.iterator[i] = id[key] 
+ # u0, id,i, key :::: id.iterator[i] = id[key]
  # -> -1=not.found
+ # -> i=found
  obj_it_select_key(_0, _1, _2, _3, 0);
 it.key.new
  # u0, id,i, key :::: id.iterator[i] = id[key] = buffer.new

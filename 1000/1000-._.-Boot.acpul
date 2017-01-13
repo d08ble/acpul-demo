@@ -297,7 +297,6 @@ system.monitor {
   };
  };
 };
-system.monitor.init(0, 880);
 #system.monitor.init(0, 0);
 
 _ @sys.os;
@@ -306,6 +305,8 @@ _ @os.main;
 if (r0) {
  os.main.panel.new(l0, 0,890,1, 768,100);
 };
+
+system.monitor.init(0, 880);
 
 # old test [
 

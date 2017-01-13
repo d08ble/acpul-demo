@@ -304,7 +304,7 @@ _ @sys.os;
 _ @os.main;
 
 if (r0) {
- os.main.panel.new(l0, 0,850,1, 768,100);
+ os.main.panel.new(l0, 0,890,1, 768,100);
 };
 
 # old test [

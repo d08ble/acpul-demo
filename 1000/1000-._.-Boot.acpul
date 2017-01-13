@@ -306,7 +306,7 @@ if (r0) {
  os.main.panel.new(l0, 0,890,1, 768,100);
 };
 
-system.monitor.init(0, 880);
+system.monitor.init(0, 890);
 
 # old test [
 

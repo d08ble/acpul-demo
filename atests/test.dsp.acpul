@@ -30,7 +30,7 @@ if (r0) {
  gen0.new(am0, gen0);
  gen0.add.harmonic(am0, 1400, 0.1);
  gen0.add.harmonic(am0, 4250, 0.1);
- gen0.add.harmonic(am0, 11250, 0.1);
+ gen0.add.harmonic(am0, 2250, 0.1);
 # gen0.add.harmonic(am0, 150, 0.1);
  gen0.mixer.volume(am0, 0.9);
  llog.printv(ll0, S.gen0, r15);

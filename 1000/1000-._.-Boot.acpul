@@ -221,7 +221,7 @@ EDITOR 8000;
 #node.new.this.ex(r0, EDITOR, 0);
 
 BOT 7350;
-#node.new.this.ex(r0, BOT, 0);
+node.new.this.ex(r0, BOT, 0);
 
 GAME.CRAZY.BIRD 10008000;
 #node.new.this.ex(r0, GAME.CRAZY.BIRD, 0);

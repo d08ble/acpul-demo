@@ -22,9 +22,9 @@ llog.print(ll0, S.TEST.DSP);
 
 am0 r15;
 gen0 { _ dsp.default.module.generator.info;
- type p.types.sine;
+# type p.types.sine;
 # type p.types.noise;
-# type p.types.saw;
+ type p.types.saw;
 };
 if (r0) {
  gen0.new(am0, gen0);

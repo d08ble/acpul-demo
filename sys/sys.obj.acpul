@@ -240,7 +240,7 @@ dma.split
  # u0, mode, dma, p0
  dma_split_to_object(_0, _2, _1, _3);
 
-dma.sprintf
+dma.print
  # u0, out, format, args
  dma_sprintf(_0, _1, _2, _3);
 

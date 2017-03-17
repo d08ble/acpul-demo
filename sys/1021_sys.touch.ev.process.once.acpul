@@ -6,14 +6,14 @@ touch.ev.process.once
  _1:=touch.event(_0);
  if (_1==touch.e.began)
  {
-  touch.ev.began(o0, o1);
+  touch.ev.began(o0, o1, o2, o3);
  };
  if (_1==touch.e.moved)
  {
-  touch.ev.moved(o0, o1);
+  touch.ev.moved(o0, o1, o2, o3);
  };
  if (_1==touch.e.ended)
  {
-  touch.ev.ended(o0, o1);
+  touch.ev.ended(o0, o1, o2, o3);
  };
 };

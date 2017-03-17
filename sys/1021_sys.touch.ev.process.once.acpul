@@ -17,3 +17,6 @@ touch.ev.process.once
   touch.ev.ended(o0, o1, o2, o3);
  };
 };
+
+touch.ev.process.multi 
+ while(touch.b0) {touch.ev.process.once(touch.id, touch.b0);};

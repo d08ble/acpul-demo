@@ -145,4 +145,49 @@ cpu.get.current.fid
  # u0 -> fid
  io(_0, 500436, 0,0,0,0);
 
+cpu.device.type {
+ iphone 1;
+ ipad 2;
+ isim 3;
+};
+
+cpu.device.model {
+ iphone 1;
+ iphone3g 1;
+ iphone3gs 2;
+ iphone4 3;
+ iphone4s 4;
+ iphone5 5;
+ iphone5c 5;
+ iphone5s 6;
+ iphone6 7;
+ iphone6.plus 7;
+ iphone6s 8;
+ iphone6s.plus 8;
+ iphone.se 8;
+ iphone7 9;
+ iphone7.plus 9;
+
+ ipad1 1;
+ ipad.mini 2;
+ ipad3 3;
+ ipad4 3;
+ ipad.air 4;
+ ipad.mini2 4;
+ ipad.mini3 4;
+ ipad.mini4 5;
+ ipad.air2 5;
+ ipad.pro 6;
+
+ ipod 1;
+ ipod2 2;
+ ipod3 3;
+ ipod4 4;
+ ipod6 7;
+};
+
+cpu.get.device.type
+ # u0 -> type, major, minor
+ io(_0, 500437, 0,0,0,0);
+
 # core ]

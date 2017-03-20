@@ -102,6 +102,8 @@ buffer.set2 buffer_set2(__);
 buffer.set4 buffer_set4(__);
 buffer.set8 buffer_set8(__);
 
+buffer.size buffer_size(__); # u0, buffer,i
+
 # buffer ]
 # str [
 

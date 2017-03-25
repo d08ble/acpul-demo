@@ -104,6 +104,8 @@ buffer.set8 buffer_set8(__);
 
 buffer.size buffer_size(__); # u0, buffer,i
 
+buffer.count obj.count(__); # u0, buffer
+
 # buffer ]
 # str [
 

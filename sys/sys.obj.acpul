@@ -95,6 +95,7 @@ buffer.str
 
 buffer.get1 buffer_get(__); # u0, buffer,i, offset
 buffer.get buffer_get(__); # u0, buffer,i, offset
+buffer.get2a buffer_get(__);
 buffer.get2 buffer_get2(__);
 buffer.get4 buffer_get4(__);
 buffer.get8 buffer_get8(__);

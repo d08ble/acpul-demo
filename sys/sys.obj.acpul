@@ -93,9 +93,7 @@ buffer.str
  # u0, id,i
  obj_str(_0, _1,_2);
 
-#buffer.get1 buffer_get(__); # u0, buffer,i, offset
-#buffer.get buffer_get(__); # u0, buffer,i, offset
-buffer.get buffer_get(__);
+buffer.get buffer_get(__); # u0, buffer,i, offset
 buffer.get2 buffer_get2(__);
 buffer.get4 buffer_get4(__);
 buffer.get8 buffer_get8(__);

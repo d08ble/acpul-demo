@@ -53,7 +53,7 @@ livelog {
  pv2 printv2(u0, __);
  pv3 printv3(u0, __);
  pv4 printv4(u0, __);
- po printv(u0, __);
+ po printo(u0, __);
 };
 
 llog livelog;

@@ -188,7 +188,7 @@ node {_;
  };
  ex.gl.rect
   # u0, x,y, w,h
-  ex.gl.rect0(_0, 0, _1,_2, _3,_4);
+  ex.gl.rect0(_0, 5, _1,_2, _3,_4);
 
  ex.child.draw.s
   # u0, value

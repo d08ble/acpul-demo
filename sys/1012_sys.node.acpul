@@ -180,9 +180,16 @@ node {_;
  ex.gl.child.draw
   # u0
   io(_0, 7201, 0,0,0,0);
+
+ ex.gl.rect0 {
+  # u0, mode, x,y, w,h
+  io(_0, 7105, _1, 0,0,0);
+  io(_0, 7202, _2,_3, _4,_5);
+ };
  ex.gl.rect
   # u0, x,y, w,h
-  io(_0, 7202, _1,_2, _3,_4);
+  ex.gl.rect0(_0, 0, _1,_2, _3,_4);
+
  ex.child.draw.s
   # u0, value
   io(_0, 7203, _1, 0,0,0);

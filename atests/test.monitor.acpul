@@ -162,7 +162,7 @@ tt t;
 
 t l0;
 syncing l1; 
-syncing:=storage.get.sync.status(u0, 0);
+syncing:=storage.get.sync.status(0);
 t:=if(syncing, tt, 0);
 size o0;
 total o1;

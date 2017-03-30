@@ -71,4 +71,8 @@ storage.get.sync.status
 
 storage.list.files
  # dma, type, pool, id
+ # 0            - list types
+ # type,0       - list pools
+ # type,pool,0  - list ids
+ # type,pool,id - list files
   io(u0, 500515, _0,_1,_2,_3);

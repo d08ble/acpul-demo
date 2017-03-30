@@ -70,5 +70,5 @@ storage.get.sync.status
 
 
 storage.list.files
- # dma, mode, pool, id
+ # dma, type, pool, id
   io(u0, 500515, _0,_1,_2,_3);

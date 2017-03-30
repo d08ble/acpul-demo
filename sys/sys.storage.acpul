@@ -71,4 +71,4 @@ storage.get.sync.status
 
 storage.list.files
  # mode, pool, id
-  io(u0, 500512, _0,0,0,0);
+  io(u0, 500515, _0,_1,_2,0);

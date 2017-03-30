@@ -36,6 +36,8 @@ storage.get.load.file
  # handle -> type, pool,uid,i
  io(u0, 500502, _0,0,0,0);
 
+
+
 storage.image.save.texture {
  # pool,uid, texture, rect(x,y,w,h)
  io(u0, 500514, _3,_4, _5,_6);
@@ -45,6 +47,8 @@ storage.image.save.texture {
 storage.image.load.texture
  # pool,id,i
  io(u0, 500511, _0,_1,_2,0);
+
+
 
 storage.get.event
  # handle
@@ -57,7 +61,14 @@ storage.process.event {
  if (_0, _2(_0, _1), 0);
 };
 
+
+
 storage.get.sync.status 
- # u0, mode -> 0||1: o0-o2: offset,size, queue.count
+ # mode -> 0||1: o0-o2: offset,size, queue.count
  # mode: 0-up, 1-down
  io(u0, 500512, _0,0,0,0);
+
+
+storage.list.files
+ # mode, pool, id
+  io(u0, 500512, _0,0,0,0);

@@ -209,11 +209,11 @@ box2d
 
  shape.chain.create.loop
   # u0, shape, dma
-  io(_0, 500338, _1, _2,_3, 0);
+  io(_0, 500338, _1, _2, _3, 0);
 
  shape.chain.create.chain
- # shape, vertecies[mem:offset], size
-  io(_0, 500339, _1, _2,_3, _4);
+  # u0, shape, dma
+  io(_0, 500339, _1, _2, _3, 0);
 
  shape.chain.set.prev.vertex
  # shape, vertex[x,y]

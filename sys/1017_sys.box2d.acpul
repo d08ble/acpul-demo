@@ -362,7 +362,14 @@ box2d
  joint.revolute.get.motor.torque 0;
 
 # joint revolute ]
+# joint prismatic [
+ 
+ default.joint.prismatic.info {
+ };
+ 
+ joint.prismatic.create 0;
 
+# joint prismatic ]
 # joint ] 
 ## rope [
 # 

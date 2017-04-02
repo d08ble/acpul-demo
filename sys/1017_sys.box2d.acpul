@@ -210,8 +210,8 @@ box2d
  };
 
  shape.polygon.vertices
-  # u0, shape, (dma,offset)::vec2*4
-  io(_0, 500335, _1, _2,_3, 0);
+  # u0, shape, (dma,offset,count)::vec2*4
+  io(_0, 500335, _1, _2,_3, _4);
 
  # polygon ]
  # edge [

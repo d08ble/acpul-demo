@@ -174,23 +174,23 @@ box2d
  edge 2;
  chain 3;
 
- shape.create # type(polygon/circle/edge/chain)
- {
+ shape.create 
+  # u0, type::(polygon/circle/edge/chain)
   io(_0, 500330, _1, 0,0,0);
- };
+ 
  shape.create.polygon shape.create(_0, box2d.polygon);
  shape.create.circle shape.create(_0, box2d.circle);
  shape.create.edge shape.create(_0, box2d.edge);
  shape.create.chain shape.create(_0, box2d.chain);
 
- shape.set.radius # shape, radius
- {
+ shape.set.radius 
+  # u0, shape, radius
   io(_0, 500331, _1, _2, 0,0);
- };
- shape.polygon.box # shape, hx, hy
- {
+ 
+ shape.polygon.box
+  # u0, shape, hx, hy
   io(_0, 500332, _1, _2, _3, 0);
- };
+ 
  shape.polygon.box.a
  # shape, hx, hy, center[x,y], angle
  {

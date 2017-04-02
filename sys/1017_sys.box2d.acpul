@@ -191,12 +191,12 @@ box2d
   # u0, shape, hx, hy
   io(_0, 500332, _1, _2, _3, 0);
  
- shape.polygon.box.a
- # shape, hx, hy, center[x,y], angle
- {
+ shape.polygon.box.a {
+  # u0, shape, hx, hy, center[x,y], angle
   io(_0, 500333, _1, _4, _5, _6);
   io(_0, 500334, _1, _2, _3, 0);
  };
+ 
  shape.polygon.vertices
  # shape, vertecies[mem:offset], size
  {

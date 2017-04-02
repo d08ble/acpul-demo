@@ -246,15 +246,28 @@ box2d
  # FIXTURE [
 
  fixture.def
- # friction, restitution, density, isSensor
- {
+  # u0, friction, restitution, density, isSensor
   io(_0, 500350, _1, _2, _3, _4);
- };
+
  fixture.create
- # body, shape
- {
+  # u0, body, shape
   io(_0, 500351, _1, _2, 0,0);
- };
+
+ fixture.friction
+  # u0, fixture, friction
+  io(_0, 500353, _1, _2, 0,0);
+
+ fixture.restitution
+  # u0, fixture, restitution
+  io(_0, 500354, _1, _2, 0,0);
+
+ fixture.sensor
+  # u0, fixture, isSensor
+  io(_0, 500355, _1, _2, 0,0);
+
+ fixture.density
+  # u0, fixture, density
+  io(_0, 500356, _1, _2, 0,0);
 
 # collision [
  

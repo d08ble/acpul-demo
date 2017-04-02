@@ -330,8 +330,8 @@ box2d
   reference.angle 0;
   limit {
    enable 0;
-   lower 0;
-   upper 0;
+   lower.angle 0;
+   upper.angle 0;
   };
   motor {
    enable 0;
@@ -349,8 +349,8 @@ box2d
  joint.revolute.get.joint.speed 0; # -> vec2
  joint.revolute.is.limit.enable 0;
  joint.revolute.set.limit.enable 0;
- joint.revolute.get.limit.lower 0;
- joint.revolute.get.limit.upper 0;
+ joint.revolute.get.limit.lower.angle 0;
+ joint.revolute.get.limit.upper.angle 0;
  joint.revolute.set.limits 0; # lower, upper
  joint.revolute.is.motor.enable 0;
  joint.revolute.set.motor.enable 0;
@@ -365,6 +365,20 @@ box2d
 # joint prismatic [
  
  default.joint.prismatic.info {
+  local.anchor.a {x 0; y 0;};
+  local.anchor.b {x 0; y 0;};
+  local.axis.b {x 0; y 0;};
+  reference.angle 0;
+  limit {
+   enable 0;
+   lower.translation 0;
+   upper.translation 0;
+  };
+  motor {
+   enable 0;
+   speed 0;
+   max.force 0;
+  }; # 11
  };
 
  joint.prismatic.create 0;

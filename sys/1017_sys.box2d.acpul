@@ -183,10 +183,15 @@ box2d
  shape.create.edge shape.create(_0, box2d.edge);
  shape.create.chain shape.create(_0, box2d.chain);
 
+ # circle [
+
  shape.set.radius 
   # u0, shape, radius
   io(_0, 500331, _1, _2, 0,0);
  
+ # circle ]
+ # polygon [
+
  shape.polygon.box
   # u0, shape, hx, hy
   io(_0, 500332, _1, _2, _3, 0);
@@ -201,11 +206,17 @@ box2d
   # u0, shape, dma,offset
   io(_0, 500335, _1, _2,_3, 0);
 
+ # polygon ]
+ # edge [
+
  shape.edge.v0.v1 {
   # u0, shape, v0(x,y), v1(x,y)
   io(_0, 500336, _2,_3, _4,_5);
   io(_0, 500337, _1, 0,0,0);
  };
+
+ # edge ]
+ # chain [
 
  shape.chain.create.loop
   # u0, shape, dma,offset,count
@@ -223,6 +234,7 @@ box2d
   # u0, shape, vertex(x,y)
   io(_0, 500341, _1, _2,_3, 0);
 
+ # chain ]
  # SHAPE ]
  # FIXTURE [
 

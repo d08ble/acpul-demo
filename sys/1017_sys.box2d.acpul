@@ -298,6 +298,12 @@ box2d
 
  joint.def 0;
  joint.create 1;
- 
+
 # joint ]
+# rope [
+ 
+ rope.def 0;
+ rope.create 1;
+
+# rope ]
 };

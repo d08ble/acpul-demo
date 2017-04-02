@@ -183,12 +183,19 @@ box2d
  shape.create.edge shape.create(_0, box2d.edge);
  shape.create.chain shape.create(_0, box2d.chain);
 
- # circle [
+ # common [
 
  shape.set.radius 
   # u0, shape, radius
   io(_0, 500331, _1, _2, 0,0);
  
+ # common ]
+ # circle [
+
+ shape.circle.position
+  # u0, shape, x,y
+  io(_0, 500380, _1, _2,_3, 0);
+
  # circle ]
  # polygon [
 

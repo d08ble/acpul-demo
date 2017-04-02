@@ -213,9 +213,8 @@ box2d
 
  shape.chain.create.chain
  # shape, vertecies[mem:offset], size
- {
   io(_0, 500339, _1, _2,_3, _4);
- };
+
  shape.chain.set.prev.vertex
  # shape, vertex[x,y]
  {

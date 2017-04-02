@@ -449,9 +449,10 @@ box2d
  default.joint.wheel.info { _ default.joint.info;
   local.anchor.a {x 0; y 0;};
   local.anchor.b {x 0; y 0;};
-  reference.angle 0;
-  frequency.hz 0;
-  damping.ratio 0;
+  local.axis {x 1; y 0;};
+  
+  frequency.hz 2;
+  damping.ratio 0.7;
  };
 
  joint.wheel.create 0;
@@ -459,7 +460,12 @@ box2d
 # joint wheel ]
 # joint weld [
 
- default.joint.weld.info {
+ default.joint.weld.info { _ default.joint.info;
+  local.anchor.a {x 0; y 0;};
+  local.anchor.b {x 0; y 0;};
+  reference.angle 0;
+  frequency.hz 0;
+  damping.ratio 0;
  };
 
  joint.weld.create 0;

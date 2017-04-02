@@ -197,7 +197,7 @@ box2d
   io(_0, 500334, _1, _2, _3, 0);
  };
 
- shape.polygon.vertices {
+ shape.polygon.vertices
   # u0, shape, dma
   io(_0, 500335, _1, _2, _3, 0);
 

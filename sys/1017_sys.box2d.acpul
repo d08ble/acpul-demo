@@ -337,7 +337,7 @@ box2d
    enable 0;
    speed 0;
    max.torque 0;
-  };
+  }; # 11
  };
 
  joint.revolute.create 0;

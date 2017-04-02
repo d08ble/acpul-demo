@@ -410,10 +410,30 @@ box2d
  joint.wheel.create 0;
 
 # joint wheel ]
-  wheel 6;
-  weld 7;
-  friction 8;
-  rope 9;
+# joint weld [
+
+ default.joint.weld.info {
+ };
+
+ joint.weld.create 0;
+
+# joint weld ]
+# joint friction [
+
+ default.joint.friction.info {
+ };
+
+ joint.friction.create 0;
+
+# joint friction ]
+# joint rope [
+
+ default.joint.rope.info {
+ };
+
+ joint.rope.create 0;
+
+# joint rope ]
 # joint ] 
 ## rope [
 # 

@@ -354,6 +354,12 @@ box2d
  joint.revolute.set.limits 0; # lower, upper
  joint.revolute.is.motor.enable 0;
  joint.revolute.set.motor.enable 0;
+ joint.revolute.set.motor.speed 0;
+ joint.revolute.set.motor.max.torque 0;
+ joint.revolute.get.motor.max.torque 0;
+ joint.revolute.get.reaction.force 0;
+ joint.revolute.get.reaction.torque 0;
+ joint.revolute.get.motor.torque 0;
 
 # joint revolute ]
 

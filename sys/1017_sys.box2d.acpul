@@ -447,6 +447,7 @@ box2d
 # joint wheel [
 
  default.joint.wheel.info {
+ 
  };
 
  joint.wheel.create 0;

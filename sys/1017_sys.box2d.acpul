@@ -255,19 +255,19 @@ box2d
 
  fixture.friction
   # u0, fixture, friction
-  io(_0, 500353, _1, _2, 0,0);
+  io(_0, 500353, 0, _1, _2, 0);
 
  fixture.restitution
   # u0, fixture, restitution
-  io(_0, 500354, _1, _2, 0,0);
+  io(_0, 500353, 1, _1, _2, 0);
 
  fixture.sensor
-  # u0, fixture, isSensor
-  io(_0, 500355, _1, _2, 0,0);
+  # u0, fixture, sensor
+  io(_0, 500353, 2, _1, _2, 0);
 
  fixture.density
   # u0, fixture, density
-  io(_0, 500356, _1, _2, 0,0);
+  io(_0, 500353, 3, _1, _2, 0);
 
 # collision [
  

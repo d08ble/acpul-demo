@@ -37,6 +37,10 @@ box2d
    io(_0, 500321, _1,0,0,0);
  };
 
+ world.scale
+  # u0, sx,sy
+  io(_0, 500322, _1,_2, 0,0);
+
  # BODY [
 
  default.dynamic.body.info {

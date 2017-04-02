@@ -450,7 +450,11 @@ box2d
   local.anchor.a {x 0; y 0;};
   local.anchor.b {x 0; y 0;};
   local.axis {x 1; y 0;};
-  
+  motor {
+   enable 0;
+   speed 0;
+   max.torque 0;
+  };
   frequency.hz 2;
   damping.ratio 0.7;
  };

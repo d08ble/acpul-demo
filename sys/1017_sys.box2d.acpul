@@ -296,7 +296,7 @@ box2d
  # FIXTURE ]
 # joint [
 
- joint.def 0;
+# joint.def 0;
  joint.create 1;
 
  joint.t {
@@ -310,6 +310,14 @@ box2d
   weld 7;
   friction 8;
   rope 9;
+ };
+
+ default.joint.info {
+  type 0-1;
+  data {v0 0; v1 0; v2 0; v3 0;};
+  body.a 0;
+  body.b 0;
+  collide.connected 0;
  };
 
  joint.get.type 0;
@@ -400,7 +408,14 @@ box2d
 # joint pulley [
 
  default.joint.pulley.info {
-  
+  local.anchor.a {x 0-1; y 0;};
+  local.anchor.b {x 1; y 0;};
+  ground.anchor.a {x 0-1; y 1;};
+  ground.anchor.b {x 1; y 1;};
+  length.a 0;
+  length.b 0;
+  ratio 1;
+  collide.connected 1;
  };
 
  joint.pulley.create 0;

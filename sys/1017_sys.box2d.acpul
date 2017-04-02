@@ -390,7 +390,8 @@ box2d
   local.anchor.a {x 0; y 0;};
   local.anchor.b {x 0; y 0;};
   length 1;
-
+  frequency.hz 0;
+  damping.ratio 0; #7
  };
 
  joint.distance.create 0;
@@ -399,6 +400,7 @@ box2d
 # joint pulley [
 
  default.joint.pulley.info {
+  
  };
 
  joint.pulley.create 0;

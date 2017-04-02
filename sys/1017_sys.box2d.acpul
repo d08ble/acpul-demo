@@ -294,4 +294,9 @@ box2d
 # events ]
 # collision ]
  # FIXTURE ]
+# joint [
+
+ joint 0;
+
+# joint ]
 };

@@ -414,7 +414,7 @@ box2d
   # u0, joint, type, v
    io(_0, 500357, _1, _2, _3, _4);
 
- joint.revolute.get.local.anchor.a 
+ joint.revolute.get.local.anchor.a
   # u0, joint, -> vec2
   vget(_0, _1, local.anchor.a);
 

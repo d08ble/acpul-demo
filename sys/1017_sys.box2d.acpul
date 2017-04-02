@@ -403,20 +403,20 @@ box2d
  };
 
  vget
-  # u0, joint, type
+  # u0, type, joint
    io(_0, 500356, _1, _2,0,0);
 
  vset
-  # u0, joint, type, v
+  # u0, type, joint, v
    io(_0, 500357, _1, _2, _3, 0);
 
  vset2
-  # u0, joint, type, v
+  # u0, type, joint, v0,v1
    io(_0, 500357, _1, _2, _3, _4);
 
  joint.revolute.get.local.anchor.a
   # u0, joint -> vec2
-  vget(_0, _1, local.anchor.a);
+  vget(_0, local.anchor.a, _1);
 
  joint.revolute.get.local.anchor.b 0; # -> vec2
  joint.revolute.get.reference.angle 0;

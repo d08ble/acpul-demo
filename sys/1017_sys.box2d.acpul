@@ -216,16 +216,12 @@ box2d
   io(_0, 500339, _1, _2,_3,_4);
 
  shape.chain.set.prev.vertex
- # shape, vertex[x,y]
- {
-  # u0, shape, dma
+  # u0, shape, vertex(x,y)
   io(_0, 500340, _1, _2,_3, 0);
- };
+
  shape.chain.set.next.vertex
- # shape, vertex[x,y]
- {
+  # u0, shape, vertex(x,y)
   io(_0, 500341, _1, _2,_3, 0);
- };
 
  # SHAPE ]
  # FIXTURE [

@@ -366,10 +366,12 @@ box2d
  
  default.joint.prismatic.info {
  };
- 
+
  joint.prismatic.create 0;
 
 # joint prismatic ]
+# joint distance [
+# joint distance ]
 # joint ] 
 ## rope [
 # 

@@ -332,7 +332,7 @@ box2d
 
 # joint revolute [
 
- default.joint.revolute.info {
+ default.joint.revolute.info { _ default.joint.info;
   local.anchor.a {x 0; y 0;};
   local.anchor.b {x 0; y 0;};
   reference.angle 0;
@@ -372,7 +372,7 @@ box2d
 # joint revolute ]
 # joint prismatic [
  
- default.joint.prismatic.info {
+ default.joint.prismatic.info { _ default.joint.info;
   local.anchor.a {x 0; y 0;};
   local.anchor.b {x 0; y 0;};
   local.axis.b {x 1; y 0;};
@@ -394,7 +394,7 @@ box2d
 # joint prismatic ]
 # joint distance [
 
- default.joint.distance.info {
+ default.joint.distance.info { _ default.joint.info;
   local.anchor.a {x 0; y 0;};
   local.anchor.b {x 0; y 0;};
   length 1;
@@ -407,7 +407,7 @@ box2d
 # joint distance ]
 # joint pulley [
 
- default.joint.pulley.info {
+ default.joint.pulley.info { _ default.joint.info;
   local.anchor.a {x 0-1; y 0;};
   local.anchor.b {x 1; y 0;};
   ground.anchor.a {x 0-1; y 1;};

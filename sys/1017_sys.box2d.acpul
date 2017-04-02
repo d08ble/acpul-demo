@@ -371,7 +371,49 @@ box2d
 
 # joint prismatic ]
 # joint distance [
+
+ default.joint.distance.info {
+ };
+
+ joint.distance.create 0;
+
 # joint distance ]
+# joint pulley [
+
+ default.joint.pulley.info {
+ };
+
+ joint.pulley.create 0;
+
+# joint pulley ]
+# joint mouse [
+
+ default.joint.mouse.info {
+ };
+
+ joint.mouse.create 0;
+
+# joint mouse ]
+# joint gear [
+
+ default.joint.gear.info {
+ };
+
+ joint.gear.create 0;
+
+# joint gear ]
+# joint wheel [
+
+ default.joint.wheel.info {
+ };
+
+ joint.wheel.create 0;
+
+# joint wheel ]
+  wheel 6;
+  weld 7;
+  friction 8;
+  rope 9;
 # joint ] 
 ## rope [
 # 

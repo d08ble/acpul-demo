@@ -490,7 +490,9 @@ box2d
 # joint rope [
 
  default.joint.rope.info {
-  
+  local.anchor.a {x 0-1; y 0;};
+  local.anchor.b {x 1; y 0;};
+  max.length 0;  
  };
 
  joint.rope.create 0;

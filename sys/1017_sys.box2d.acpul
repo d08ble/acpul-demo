@@ -378,7 +378,7 @@ box2d
    enable 0;
    speed 0;
    max.force 0;
-  }; # 11
+  }; # 13
  };
 
  joint.prismatic.create 0;

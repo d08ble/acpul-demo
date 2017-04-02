@@ -395,14 +395,29 @@ box2d
   reference.angle(i);
   limit.angle(i);
   motor.torque(i);
-  
+
 #  param(p.collide.connected, i.collide.connected);
 #  param2(p.local.anchor.a, i.local.anchor.a.x, i.local.anchor.a.y);
 #  param2(p.local.anchor.b, i.local.anchor.b.x, i.local.anchor.b.y);
   new(_0, t.revolute, _2, _3);
  };
 
- joint.revolute.get.local.anchor.a 0; # -> vec2
+ vget
+  # u0, joint, type
+   io(_0, 500356, _1, _2,0,0);
+
+ vset
+  # u0, joint, type, v
+   io(_0, 500357, _1, _2, _3, 0);
+
+ vset2
+  # u0, joint, type, v
+   io(_0, 500357, _1, _2, _3, _4);
+
+ joint.revolute.get.local.anchor.a 
+  # u0, joint, -> vec2
+  vget(_0, _1, local.anchor.a);
+
  joint.revolute.get.local.anchor.b 0; # -> vec2
  joint.revolute.get.reference.angle 0;
  joint.revolute.get.joint.angle 0; # -> vec2

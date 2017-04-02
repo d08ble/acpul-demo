@@ -312,6 +312,16 @@ box2d
   rope 9;
  };
 
+ joint.get.type 0;
+ joint.get.body.a 0;
+ joint.get.body.b 0;
+ joint.get.anchor.a 0;
+ joint.get.anchor.b 0;
+ joint.get.reaction.force 0;
+ joint.get.reaction.torque 0;
+ joint.get.data 0;
+ joint.set.data 0;
+
 # joint ]
 ## rope [
 # 

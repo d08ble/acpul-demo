@@ -446,8 +446,12 @@ box2d
 # joint gear ]
 # joint wheel [
 
- default.joint.wheel.info {
- 
+ default.joint.wheel.info { _ default.joint.info;
+  local.anchor.a {x 0; y 0;};
+  local.anchor.b {x 0; y 0;};
+  reference.angle 0;
+  frequency.hz 0;
+  damping.ratio 0;
  };
 
  joint.wheel.create 0;

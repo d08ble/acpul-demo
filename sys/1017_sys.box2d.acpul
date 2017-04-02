@@ -478,6 +478,10 @@ box2d
 # joint friction [
 
  default.joint.friction.info {
+  local.anchor.a {x 0; y 0;};
+  local.anchor.b {x 0; y 0;};
+  max.force 0;
+  max.torque 0;
  };
 
  joint.friction.create 0;
@@ -486,6 +490,7 @@ box2d
 # joint rope [
 
  default.joint.rope.info {
+  
  };
 
  joint.rope.create 0;

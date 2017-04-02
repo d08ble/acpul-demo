@@ -322,7 +322,40 @@ box2d
  joint.get.data 0;
  joint.set.data 0;
 
-# joint ]
+# joint revolute [
+
+ default.joint.revolute.info {
+  local.anchor.a {x 0; y 0;};
+  local.anchor.b {x 0; y 0;};
+  reference.angle 0;
+  limit {
+   enable 0;
+   lower 0;
+   upper 0;
+  };
+  motor {
+   enable 0;
+   speed 0;
+   max.torque 0;
+  };
+ };
+
+ joint.revolute.create 0;
+
+ joint.revolute.get.local.anchor.a 0; # -> vec2
+ joint.revolute.get.local.anchor.b 0; # -> vec2
+ joint.revolute.get.reference.angle 0;
+ joint.revolute.get.joint.angle 0; # -> vec2
+ joint.revolute.get.joint.speed 0; # -> vec2
+ joint.revolute.is.limit.enable 0;
+ joint.revolute.set.limit.enable 0;
+ joint.revolute.get.limit.lower 0;
+ joint.revolute.get.limit.upper 0;
+ joint.revolute.set.limits 0; # lower, upper
+
+# joint revolute ]
+
+# joint ] 
 ## rope [
 # 
 # rope.def 0;

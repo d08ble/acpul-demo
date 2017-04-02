@@ -199,7 +199,7 @@ box2d
 
  shape.polygon.vertices
   # u0, shape, dma,offset
-  io(_0, 500335, _1, _2, _3, _4);
+  io(_0, 500335, _1, _2,_3, 0);
 
  shape.edge.v0.v1 {
   # u0, shape, v0(x,y), v1(x,y)
@@ -209,15 +209,16 @@ box2d
 
  shape.chain.create.loop
   # u0, shape, dma,offset,count
-  io(_0, 500338, _1, _2, _3, 0);
+  io(_0, 500338, _1, _2,_3,_4);
 
  shape.chain.create.chain
   # u0, shape, dma,offset,count
-  io(_0, 500339, _1, _2, _3, 0);
+  io(_0, 500339, _1, _2,_3,_4);
 
  shape.chain.set.prev.vertex
  # shape, vertex[x,y]
  {
+  # u0, shape, dma
   io(_0, 500340, _1, _2,_3, 0);
  };
  shape.chain.set.next.vertex

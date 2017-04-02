@@ -435,7 +435,10 @@ box2d
 # joint mouse ]
 # joint gear [
 
- default.joint.gear.info {
+ default.joint.gear.info { _ default.joint.info;
+  joint1 0;
+  joint2 0;
+  ratio 1;
  };
 
  joint.gear.create 0;

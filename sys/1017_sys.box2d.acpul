@@ -367,7 +367,7 @@ box2d
  default.joint.prismatic.info {
   local.anchor.a {x 0; y 0;};
   local.anchor.b {x 0; y 0;};
-  local.axis.b {x 0; y 0;};
+  local.axis.b {x 1; y 0;};
   reference.angle 0;
   limit {
    enable 0;
@@ -387,6 +387,10 @@ box2d
 # joint distance [
 
  default.joint.distance.info {
+  local.anchor.a {x 0; y 0;};
+  local.anchor.b {x 0; y 0;};
+  length 1;
+
  };
 
  joint.distance.create 0;

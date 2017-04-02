@@ -299,11 +299,24 @@ box2d
  joint.def 0;
  joint.create 1;
 
-# joint ]
-# rope [
- 
- rope.def 0;
- rope.create 1;
+ joint.t {
+  revolute 0;
+  prismatic 1;
+  distance 2;
+  pulley 3;
+  mouse 4;
+  gear 5;
+  wheel 6;
+  weld 7;
+  friction 8;
+  rope 9;
+ };
 
-# rope ]
+# joint ]
+## rope [
+# 
+# rope.def 0;
+# rope.create 1;
+#
+## rope ]
 };

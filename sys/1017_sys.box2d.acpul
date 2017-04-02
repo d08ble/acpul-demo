@@ -352,6 +352,8 @@ box2d
  joint.revolute.get.limit.lower 0;
  joint.revolute.get.limit.upper 0;
  joint.revolute.set.limits 0; # lower, upper
+ joint.revolute.is.motor.enable 0;
+ joint.revolute.set.motor.enable 0;
 
 # joint revolute ]
 

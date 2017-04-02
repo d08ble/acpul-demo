@@ -38,8 +38,8 @@ box2d
  };
 
  world.scale
-  # u0, sx,sy
-  io(_0, 500322, _1,_2, 0,0);
+  # u0, world, sx,sy
+  io(_0, 500322, _1, _2,_3, 0);
 
  # BODY [
 

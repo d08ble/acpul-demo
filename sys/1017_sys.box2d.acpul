@@ -296,7 +296,8 @@ box2d
  # FIXTURE ]
 # joint [
 
- joint 0;
-
+ joint.def 0;
+ joint.create 1;
+ 
 # joint ]
 };

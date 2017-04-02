@@ -370,14 +370,26 @@ box2d
    # u0, type, v0,v1,v3
    io(_0, 500355, _1, _2, _3, _4);
 
-   ps {
-    collide.connected param(u0, p.collide.connected, _0.collide.connected);
-    local.anchor.a param2(u0, p.local.anchor.a, _0.local.anchor.a.x, _0.local.anchor.a.y);
-    local.anchor.b param2(u0, p.local.anchor.b, _0.local.anchor.b.x, _0.local.anchor.b.y);
-    reference.angle param(u0, p.reference.angle, _0.reference.angle);
-    limit.angle param3(u0, p.limit.angle, _0.limit.enable, _0.limit.lower.angle, _0.limit.upper.angle);
-    motor.torque param3(u0, p.motor.torque, _0.motor.torque.enable, _0.motor.torque.speed, _0.motor.torque.max.torque);
-   };
+  ps {
+   collide.connected param(u0, p.collide.connected, _0.collide.connected);
+   local.anchor.a param2(u0, p.local.anchor.a, _0.local.anchor.a.x, _0.local.anchor.a.y);
+   local.anchor.b param2(u0, p.local.anchor.b, _0.local.anchor.b.x, _0.local.anchor.b.y);
+   reference.angle param(u0, p.reference.angle, _0.reference.angle);
+   limit.angle param3(u0, p.limit.angle, _0.limit.enable, _0.limit.lower.angle, _0.limit.upper.angle);
+   motor.torque param3(u0, p.motor.torque, _0.motor.torque.enable, _0.motor.torque.speed, _0.motor.torque.max.torque);
+  };
+
+  vget
+   # u0, type, joint
+   io(_0, 500356, _1, _2,0,0);
+
+  vset
+   # u0, type, joint, v
+   io(_0, 500357, _1, _2, _3, 0);
+
+  vset2
+   # u0, type, joint, v0,v1
+   io(_0, 500357, _1, _2, _3, _4);
  };
 
  joint.new
@@ -402,17 +414,6 @@ box2d
   new(_0, t.revolute, _2, _3);
  };
 
- vget
-  # u0, type, joint
-   io(_0, 500356, _1, _2,0,0);
-
- vset
-  # u0, type, joint, v
-   io(_0, 500357, _1, _2, _3, 0);
-
- vset2
-  # u0, type, joint, v0,v1
-   io(_0, 500357, _1, _2, _3, _4);
 
  joint.revolute.get.local.anchor.a
   # u0, joint -> vec2

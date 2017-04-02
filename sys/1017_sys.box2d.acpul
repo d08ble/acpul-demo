@@ -317,7 +317,7 @@ box2d
   data {v0 0; v1 0; v2 0; v3 0;};
   body.a 0;
   body.b 0;
-  collide.connected 0;
+  collide.connected 0; # 8
  };
 
  joint.get.type 0;
@@ -423,7 +423,11 @@ box2d
 # joint pulley ]
 # joint mouse [
 
- default.joint.mouse.info {
+ default.joint.mouse.info { _ default.joint.info;
+  target {x 0; y 0;};
+  max.force 0;
+  frequency.hz 5;
+  damping.ratio 0.7;
  };
 
  joint.mouse.create 0;

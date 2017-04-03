@@ -144,7 +144,89 @@ box2d
  # u0, body -> va
   io(_0, 500376, _1, 0,0,0);
 
-# velocity ]
+ # velocity ]
+ # impulse [
+
+ body.apply.force {
+  # u0, body, v0(x,y), point(x,y)
+  io(_0, 500336, _4,_5, 0,0);
+  io(_0, 500377, _1, 0, _2,_3);
+ };
+
+ body.apply.force.to.center
+  # u0, body, point(x,y)
+  io(_0, 500377, _1, 1, _2,_3);
+
+ body.apply.linear.impulse {
+  # u0, body, v0(x,y), point(x,y)
+  io(_0, 500336, _4,_5, 0,0);
+  io(_0, 500377, _1, 2, _2,_3);
+ };
+
+ body.apply.angular.impulse 
+  # u0, body, v
+  io(_0, 500377, _1, 3, _2, 0);
+
+ body.apply.torque
+  # u0, body, v
+  io(_0, 500377, _1, 4, _2, 0);
+
+ # impulse ]
+ # param [
+
+ body.set.gravity.scale
+  # u0, bid, v
+  io(_0, 500378, _1, 0, _2, 0);
+
+ body.set.bullet
+  # u0, bid, v
+  io(_0, 500378, _1, 1, _2, 0);
+
+ body.set.angular.damping
+  # u0, bid, v
+  io(_0, 500378, _1, 2, _2, 0);
+
+ body.set.active
+  # u0, bid, v
+  io(_0, 500378, _1, 3, _2, 0);
+
+ body.set.awake
+  # u0, bid, v
+  io(_0, 500378, _1, 4, _2, 0);
+
+ body.set.fixed.rotation
+  # u0, bid, v
+  io(_0, 500378, _1, 5, _2, 0);
+
+ body.get.world.center
+  # u0, bid -> x,y
+  io(_0, 500379, _1, 0, 0, 0);
+
+ body.get.local.center
+  # u0, bid -> x,y
+  io(_0, 500379, _1, 1, 0, 0);
+
+ body.get.local.point
+  # u0, bid, x,y -> x,y
+  io(_0, 500379, _1, 2, _2,_3);
+
+ body.get.local.vector
+  # u0, bid, x,y -> x,y
+  io(_0, 500379, _1, 3, _2,_3);
+
+ body.get.world.point
+  # u0, bid, x,y -> x,y
+  io(_0, 500379, _1, 4, _2,_3);
+
+ body.get.world.vector
+  # u0, bid, x,y -> x,y
+  io(_0, 500379, _1, 5, _2,_3);
+
+ body.get.mass
+  # u0, bid -> m
+  io(_0, 500379, _1, 6, 0,0);
+
+ # param ]
 # BODY ]
  # COLLISION - old api!!! [
  # body [ 

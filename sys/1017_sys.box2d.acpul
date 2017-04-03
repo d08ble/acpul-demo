@@ -427,6 +427,7 @@ box2d
  joint.revolute.get.reference.angle 0;
  joint.revolute.get.joint.angle 0;
  joint.revolute.get.joint.speed 0;
+ 
  joint.revolute.is.limit.enable 0;
  joint.revolute.set.limit.enable 0;
  joint.revolute.get.limit.lower.angle 0;

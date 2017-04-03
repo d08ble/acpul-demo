@@ -428,18 +428,20 @@ box2d
  joint.revolute.get.joint.angle 0;
  joint.revolute.get.joint.speed 0;
 
- joint.revolute.is.limit.enable 0;
- joint.revolute.set.limit.enable 0;
- joint.revolute.get.limit.lower.angle 0;
- joint.revolute.get.limit.upper.angle 0;
- joint.revolute.set.limits 0; # lower, upper
+ joint.revolute.get.limit 0; # -> enable, angle(lower,upper)
+ joint.revolute.set.limit 0; # enable, angle(lower,upper)
+# joint.revolute.is.limit.enable 0;
+# joint.revolute.set.limit.enable 0;
+# joint.revolute.get.limit.lower.angle 0;
+# joint.revolute.get.limit.upper.angle 0;
+# joint.revolute.set.limits 0; # lower, upper
 
  joint.revolute.is.motor.enable 0;
  joint.revolute.set.motor.enable 0;
  joint.revolute.set.motor.speed 0;
  joint.revolute.set.motor.max.torque 0;
  joint.revolute.get.motor.max.torque 0;
- 
+
  joint.revolute.get.reaction.force 0;
  joint.revolute.get.reaction.torque 0;
  joint.revolute.get.motor.torque 0;

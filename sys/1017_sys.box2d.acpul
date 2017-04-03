@@ -414,6 +414,10 @@ box2d
   new(_0, t.revolute, _2, _3);
  };
 
+ joint.p { _;
+  joint.angle 20;
+  joint.speed 21;
+ };
 
  joint.revolute.get.local.anchor.a
   # u0, joint -> vec2
@@ -421,8 +425,8 @@ box2d
 
  joint.revolute.get.local.anchor.b 0; # -> vec2
  joint.revolute.get.reference.angle 0;
- joint.revolute.get.joint.angle 0; # -> vec2
- joint.revolute.get.joint.speed 0; # -> vec2
+ joint.revolute.get.joint.angle 0;
+ joint.revolute.get.joint.speed 0;
  joint.revolute.is.limit.enable 0;
  joint.revolute.set.limit.enable 0;
  joint.revolute.get.limit.lower.angle 0;

@@ -446,9 +446,9 @@ box2d
 # joint.revolute.set.motor.max.torque 0;
 # joint.revolute.get.motor.max.torque 0;
 
- joint.revolute.get.reaction.force 0;
- joint.revolute.get.reaction.torque 0;
- joint.revolute.get.motor.torque 0;
+ joint.revolute.get.reaction.force 0; # dt
+ joint.revolute.get.reaction.torque 0; # dt
+ joint.revolute.get.motor.torque 0; # dt
 
 # joint revolute ]
 # joint prismatic [

@@ -280,7 +280,7 @@ CLOCK 10170000;
 node.new.this.ex(r0, CLOCK, 0);
 
 NEBULA 11800;
-node.new.this.ex(r0, NEBULA, 0);
+#node.new.this.ex(r0, NEBULA, 0);
 
 
 system.monitor {

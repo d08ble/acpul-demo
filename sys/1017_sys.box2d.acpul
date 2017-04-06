@@ -454,12 +454,12 @@ box2d
    io(_0, 500355, _1, _2, _3, _4);
 
   ps {
-   collide.connected watch(_0.collide.connected); #param(u0, p.collide.connected, _0.collide.connected);
+   collide.connected param(u0, p.collide.connected, _0.collide.connected);
    local.anchor.a param2(u0, p.local.anchor.a, _0.local.anchor.a.x, _0.local.anchor.a.y);
    local.anchor.b param2(u0, p.local.anchor.b, _0.local.anchor.b.x, _0.local.anchor.b.y);
    reference.angle param(u0, p.reference.angle, _0.reference.angle);
    limit.angle param3(u0, p.limit.angle, _0.limit.enable, _0.limit.lower.angle, _0.limit.upper.angle);
-   motor.torque param3(u0, p.motor.torque, _0.motor.torque.enable, _0.motor.torque.speed, _0.motor.torque.max.torque);
+   motor.torque param3(u0, p.motor.torque, _0.motor.enable, _0.motor.speed, _0.motor.max.torque);
   };
 
   vget
@@ -484,7 +484,6 @@ box2d
  joint.revolute.create {
   # u0, info::default.joint.revolute.info, body(a,b)
   _ ps;
-  watch(_1.reference.angle);
   collide.connected(_1);
   local.anchor.a(_1);
   local.anchor.b(_1);

@@ -485,6 +485,8 @@ box2d
   # u0, info::default.joint.revolute.info, body(a,b)
   i _1;
   _ ps;
+  watch(i.reference.angle);
+
   collide.connected(i);
   local.anchor.a(i);
   local.anchor.b(i);

@@ -493,9 +493,6 @@ box2d
   limit.angle(_1);
   motor.torque(_1);
 
-#  param(p.collide.connected, i.collide.connected);
-#  param2(p.local.anchor.a, i.local.anchor.a.x, i.local.anchor.a.y);
-#  param2(p.local.anchor.b, i.local.anchor.b.x, i.local.anchor.b.y);
   new(_0, t.revolute, _2, _3);
  };
 

@@ -454,7 +454,7 @@ box2d
    io(_0, 500355, _1, _2, _3, _4);
 
   ps {
-   collide.connected param(u0, p.collide.connected, _0.collide.connected);
+   collide.connected watch(_0); #param(u0, p.collide.connected, _0.collide.connected);
    local.anchor.a param2(u0, p.local.anchor.a, _0.local.anchor.a.x, _0.local.anchor.a.y);
    local.anchor.b param2(u0, p.local.anchor.b, _0.local.anchor.b.x, _0.local.anchor.b.y);
    reference.angle param(u0, p.reference.angle, _0.reference.angle);

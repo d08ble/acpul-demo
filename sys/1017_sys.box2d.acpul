@@ -413,7 +413,8 @@ box2d
  joint.get.data 0;
  joint.set.data 0;
 
-# joint revolute [
+ # joint revolute [
+ # info revolute [
 
  default.joint.revolute.info { _ default.joint.info;
   local.anchor.a {x 0; y 0;};
@@ -431,6 +432,7 @@ box2d
   }; # 11
  };
 
+ # info revolute ]
  # joint io [
 
  joint { _;

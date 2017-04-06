@@ -484,9 +484,10 @@ box2d
  joint.revolute.create {
   # u0, info::default.joint.revolute.info, body(a,b)
   i _1;
-  ps.collide.connected(i);
-  ps.local.anchor.a(i);
-  ps.local.anchor.b(i);
+  _ ps;
+  collide.connected(i);
+  local.anchor.a(i);
+  local.anchor.b(i);
   reference.angle(i);
   limit.angle(i);
   motor.torque(i);

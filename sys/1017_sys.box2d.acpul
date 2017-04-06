@@ -484,7 +484,7 @@ box2d
  joint.revolute.create {
   # u0, info::default.joint.revolute.info, body(a,b)
   _ ps;
-  watch(_1.collide.connected);
+  watch(_1.reference.angle);
   collide.connected(_1);
   local.anchor.a(_1);
   local.anchor.b(_1);

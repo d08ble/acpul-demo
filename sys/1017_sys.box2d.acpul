@@ -383,16 +383,16 @@ box2d
  joint.create 1;
 
  joint.t {
-  revolute 0;
-  prismatic 1;
-  distance 2;
-  pulley 3;
-  mouse 4;
-  gear 5;
-  wheel 6;
-  weld 7;
-  friction 8;
-  rope 9;
+  revolute 1;
+  prismatic 2;
+  distance 3;
+  pulley 4;
+  mouse 5;
+  gear 6;
+  wheel 7;
+  weld 8;
+  friction 9;
+  rope 10;
  };
 
  default.joint.info {

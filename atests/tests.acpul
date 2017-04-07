@@ -36,7 +36,7 @@ test.bullet.physics 5100;
 #l0:=node.new.this.ex(r0, test.bullet.physics, 0);
 
 test.box2d 5150;
-#l0:=node.new.this.ex(r0, test.box2d, 0);
+l0:=node.new.this.ex(r0, test.box2d, 0);
 
 test.api.llog 5200; # new api: llog, cpu.formula.info, draw text
 #l0:=node.new.this.ex(r0, test.api.llog, 0);

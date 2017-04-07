@@ -522,11 +522,6 @@ box2d
   new(_0, t.revolute, _2, _3);
  };
 
- joint.p { _;
-  joint.angle 20;
-  joint.speed 21;
- };
-
  joint.revolute.get.local.anchor.a
   # u0, joint -> vec2
   vget(_0, p.local.anchor.a, _1);

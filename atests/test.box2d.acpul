@@ -1,36 +1,12 @@
 ### 5150 test.box2d
 
-# 11810 common
-# 11820 space
-# 11830 planet
-# 11840 floor
-# 11850 miner
-# 11860 gist
-
 r0:=k==0;
 
-draw(r0, 11801);
+draw(r0, 5151);
 
-_ @11810;
-
-SPACE 11820;
-PLANET 11830;
-FLOOR 11840;
-
-MINER 11850;
-
-GIST 11860;
-
-UI 11870;
-
-e0 r0;
-#e0 0;
-node.new.this.ex4(e0, SPACE, 0,0, 0, 0);
-node.new.this.ex4(e0, PLANET, 0,0, 0, 0);
-node.new.this.ex4(e0, FLOOR, 0,0, 0, 0);
-node.new.this.ex4(e0, MINER, 0,0, 0, 0);
-node.new.this.ex4(e0, GIST, 0,0, 0, 0);
-node.new.this.ex4(e0, UI, 0,0, 0, 0);
+_ @1010;
+_ @sys.node;
+_ @sys.box2d;
 
 # physics main [
 
@@ -52,9 +28,6 @@ physics {
   new;
  };
  step;
-# step;
-# step;
-# step;
 };
 
 physics;

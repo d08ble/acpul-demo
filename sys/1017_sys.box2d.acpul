@@ -538,7 +538,9 @@ box2d
   # u0, joint -> v
   vget(_0, p.joint.angle, _1);
 
- joint.revolute.get.joint.speed 0;
+ joint.revolute.get.joint.speed
+  # u0, joint -> v
+  vget(_0, p.joint.speed, _1);
 
  joint.revolute.set.limit 0; # enable, angle(lower,upper)
 

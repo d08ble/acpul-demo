@@ -522,14 +522,11 @@ box2d
   # u0, joint -> enable, angle(lower,upper)
   vget(_0, p.limit.angle, _1);
 
-# joint.revolute.is.limit.enable 0;
-# joint.revolute.set.limit.enable 0;
-# joint.revolute.get.limit.lower.angle 0;
-# joint.revolute.get.limit.upper.angle 0;
-# joint.revolute.set.limits 0; # lower, upper
-
  joint.revolute.set.motor 0; # enable, speed, max.torque
- joint.revolute.get.motor 0; # -> enable, speed, max.torque
+
+ joint.revolute.get.motor 0; 
+  # u0, joint -> enable, speed, max.torque
+  vget(_0, p.motor.torque, _1);
 
 # joint.revolute.is.motor.enable 0;
 # joint.revolute.set.motor.enable 0;

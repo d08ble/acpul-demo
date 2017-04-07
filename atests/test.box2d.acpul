@@ -141,7 +141,8 @@ test.bodies {
  j0:=box2d.joint.revolute.create(u0, joint0, body0, body1);
 # box2d.joint.revolute.get.local.anchor.a(u0, j0);
  box2d.joint.revolute.get.local.anchor.b(u0, j0);
- joint.revolute.get.reference.angle(u0, j0);
+ box2d.joint.revolute.get.reference.angle(u0, j0);
+
 
 # body.set.gravity.scale(u0, body, 10);
 # body.set.bullet(u0, body, 1);

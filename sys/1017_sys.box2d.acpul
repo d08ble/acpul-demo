@@ -503,7 +503,7 @@ box2d
 
  joint.revolute.get.local.anchor.a
   # u0, joint -> vec2
-  vget(_0, local.anchor.a, _1);
+  vget(_0, p.local.anchor.a, _1);
 
  joint.revolute.get.local.anchor.b 0; # -> vec2
  joint.revolute.get.reference.angle 0;

@@ -443,6 +443,32 @@ box2d
    reference.angle 3;
    limit.angle 4;
    motor.torque 5;
+
+   local.axis.a 6;
+   limit.translation 7;
+   motor.force 8;
+
+   length 9;
+   frequency.hz 10;
+   damping.ratio 11;
+
+   ground.anchor.a 12;
+   ground.anchor.b 13;
+
+   length.a 14;
+   length.b 15;
+   ratio 16;
+
+   target 17;
+   maxForce 18;
+
+   joint2 19;
+
+   max.torque 20;
+   max.length 21;
+
+   joint.angle 22;
+   joint.speed 23;
   };
 
   param
@@ -513,7 +539,10 @@ box2d
   # u0, joint -> v
   vget(_0, p.reference.angle, _1);
 
- joint.revolute.get.joint.angle 0;
+ joint.revolute.get.joint.angle
+  # u0, joint -> v
+  vget(_0, p.joint.angle, _1);
+
  joint.revolute.get.joint.speed 0;
 
  joint.revolute.set.limit 0; # enable, angle(lower,upper)

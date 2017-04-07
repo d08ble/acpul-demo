@@ -1,5 +1,222 @@
 ### 5150 test.box2d
 
+# 11810 common
+# 11820 space
+# 11830 planet
+# 11840 floor
+# 11850 miner
+# 11860 gist
 
+r0:=k==0;
+
+draw(r0, 11801);
+
+_ @11810;
+
+SPACE 11820;
+PLANET 11830;
+FLOOR 11840;
+
+MINER 11850;
+
+GIST 11860;
+
+UI 11870;
+
+e0 r0;
+#e0 0;
+node.new.this.ex4(e0, SPACE, 0,0, 0, 0);
+node.new.this.ex4(e0, PLANET, 0,0, 0, 0);
+node.new.this.ex4(e0, FLOOR, 0,0, 0, 0);
+node.new.this.ex4(e0, MINER, 0,0, 0, 0);
+node.new.this.ex4(e0, GIST, 0,0, 0, 0);
+node.new.this.ex4(e0, UI, 0,0, 0, 0);
+
+# physics main [
+
+physics {
+ world r15;
+ gravity.x 0;
+ gravity.y 0-9.8;
+ new {
+  world:=box2d.world(u0, gravity.x, gravity.y);
+  box2d.world.scale(u0, world, 0.1,0.1);
+ };
+ velocity.iteractions 8;
+ position.iteractions 3;
+ step {
+  box2d.step(u0, world, dt, velocity.iteractions, position.iteractions);
+ };
+
+ if (r0) {
+  new;
+ };
+ step;
+# step;
+# step;
+# step;
+};
+
+physics;
+
+# physics main ]
+
+# body polygon1 [
+
+body.polygon1 {
+ # type, x,y,w,h, angle, gravitiy.scale
+ t0 _0;
+ x0 _1; y0 _2; 
+ bw _3; bh _4;
+ a0 _5;
+ gs0 _6;
+
+ b1 d0;
+ b1s1 d1;
+ b1f1 d2;
+
+ ib1 { _ box2d.default.dynamic.body.info;
+  type t0;
+#  x 0+p0+w*s1;
+#  velocity.angular 10;
+  x x0;
+  y y0;
+  angle a0;
+  gravity.scale gs0;
+#  damping.linear 1;
+#  velocity.linear.x 0-100;
+ };
+
+ b1:=box2d.body.create2(u0, physics.world, ib1); 
+
+ b1s1:=box2d.shape.create.polygon(u0);
+ box2d.shape.polygon.box(u0, b1s1, bw, bh);
+
+# px 0;
+# py 1;
+# box2d.shape.circle.position(u0, b1s1, px,py);
+# c.x 0; c.y 0;
+# angle 0;
+# box2d.shape.polygon.box.a(u0, b1s1, 500, 500, c.x,c.y, angle);
+# box2d.shape.polygon.vertices(u0, b1s1, dma);
+# v0.x 0; v0.y 0; 
+# v1.x 100; v1.y 100;
+# box2d.shape.edge.v0.v1(u0, shape, v0.x,v0.y, v1.x,v1.y);
+# box2d.shape.chain.create.loop(u0, shape, dma);
+# box2d.shape.chain.create.chain(u0, shape, dma);
+# shape.chain.set.prev.vertex(u0, shape, px,py);
+# shape.chain.set.next.vertex(u0, shape, px,py);
+#
+
+
+ box2d.fixture.def(u0, 0.2, 0, 1, 0);
+ b1f1:=box2d.fixture.create(u0, b1, b1s1);
+ 
+# box2d.fixture.friction(u0, b1f1, 0.2);
+# box2d.fixture.restitution(u0, b1f1, 0);
+# box2d.fixture.sensor(u0, b1f1, 1);
+# box2d.fixture.density(u0, b1f1, 100);
+ 
+# box2d.fixture.filter.collision(u0, b1f1, 1,1+2, 0);
+
+
+
+};
+
+# body polygon1 ]
+
+test.bodies {
+ body0 l5;
+ body1 l6;
+
+ f0 rnd(u0)*100-100;
+ f1 rnd(u0)*15-7;
+ f2 rnd(u0)*30-70;
+
+ body.polygon1(box2d.dynamic, 200+f0,600+f0, 20+f1,20+f1, 0.1, 1);
+ body0:=body.polygon1.b1;
+
+ body.polygon1(box2d.dynamic, 400+f0,500+f0, 70+f2,100+f2, 0.5, 1);
+ body1:=body.polygon1.b1;
+
+ body.polygon1(box2d.static, w/2,100, w,100, 0, 0);
+# body.polygon1(box2d.static, w/2,500, 100,100, 0, 0);
+# body.polygon1(box2d.static, w/2+400,300, 100,500, 0, 0);
+# body.polygon1(box2d.static, w/2-400,300, 100,500, 0, 0);
+ body.polygon1(box2d.static, w/2+400,300, 100,700, 0, 0);
+ body.polygon1(box2d.static, w/2-400,300, 100,700, 0, 0);
+# body1:=body.polygon1.b1;
+
+ joint0 { _ box2d.default.joint.revolute.info;
+  collide.connected 0;
+  local.anchor.a {x 1; y 2;};
+  local.anchor.b {x 3+rnd(u0)*10; y 4+rnd(u0)*10;};
+  reference.angle 50;
+#  limit {
+#   enable 1;
+#   lower.angle 7;
+#   upper.angle 8;
+#  };
+  motor {
+   enable 1;
+   speed 10-rnd(u0)*200;
+   max.torque 100000;
+  }; # 11
+ };
+ watch(joint0.reference.angle);
+ j0 l7;
+ j0:=box2d.joint.revolute.create(u0, joint0, body0, body1);
+# box2d.joint.revolute.get.local.anchor.a(u0, j0);
+
+# body.set.gravity.scale(u0, body, 10);
+# body.set.bullet(u0, body, 1);
+# body.set.angular.damping(u0, body, 111);
+# body.set.active(u0, body, 0);
+# body.set.awake(u0, body, 0);
+# body.set.fixed.rotation(u0, body, 1);
+
+# body.get.world.center(u0, body);
+# body.get.local.center(u0, body);
+# body.get.local.point(u0, body, 0,0);
+# body.get.local.vector(u0, body, 0,0);
+# body.get.world.point(u0, body, 0,0);
+# body.get.world.vector(u0, body, 0,0);
+# body.get.mass(u0, body);
+
+# body.apply.force(u0, body0, 100,100, 1,1);
+# body.apply.force.to.center(u0, body0, 100,100);
+# body.apply.linear.impulse(u0, body0, 100,100, 1,1);
+# body.apply.angular.impulse(u0, body0, 10);
+# body.apply.torque(u0, body0, 10);
+};
+
+if (r0) {
+ w:=768;
+ h:=1024;
+
+ l8:=0; while(l8<50) { 
+  l8+=1;
+  test.bodies;
+ };
+};
+
+s:=0.5;
+
+t+=dt;
+
+k:=1;
 
 ### 5151 test.box2d.draw
+
+color(u0, 0.1,0.5,1,0.8);
+rect(u0, 6, 0,0,1024,1024);
+
+psize1(3);
+physics.world r15;
+
+_ @1010;
+_ @sys.box2d;
+
+l0:=box2d.world.draw(u0, physics.world);
+
+

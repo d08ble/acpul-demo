@@ -88,7 +88,7 @@ body.polygon1 {
 # box2d.fixture.friction(u0, b1f1, 0.5);
 # box2d.fixture.restitution(u0, b1f1, 100);
 # box2d.fixture.sensor(u0, b1f1, 1);
- box2d.fixture.density(u0, b1f1, 10);
+ box2d.fixture.density(u0, b1f1, 5);
  
 # box2d.fixture.filter.collision(u0, b1f1, 1,1+2, 0);
 

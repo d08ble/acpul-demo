@@ -164,7 +164,7 @@ test.bodies {
 
 #+ body.apply.force(u0, body0, 100,100, 1,1);
 #+ body.apply.force.to.center(u0, body0, 100,100);
-# body.apply.linear.impulse(u0, body0, 100,100, 1,1);
+#+ body.apply.linear.impulse(u0, body0, 100,100, 1,1);
 # body.apply.angular.impulse(u0, body0, 10);
 # body.apply.torque(u0, body0, 10);
 };

@@ -74,8 +74,8 @@ b2d.unit.new
 # box2d.body.group.add(u0, body1, cgs.enemy.fire);
 
  # BODY DATA
-# box2d.body.data.values4(u0, 1, 2, 3, 4);
-# box2d.body.data.set(u0, body0, 0);
+#!old box2d.body.data.values4(u0, 1, 2, 3, 4);
+#!old box2d.body.data.set(u0, body0, 0);
 
  # SHAPE
  shape1 r3;

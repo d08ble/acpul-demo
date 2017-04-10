@@ -122,10 +122,10 @@ box2d.test
  box2d.body.group.add(u0, body1, cgs.enemy);
 
  # BODY DATA
- box2d.body.data.values4(u0, 1, 2, 3, 4);
- box2d.body.data.set(u0, body0, 0);
- box2d.body.data.values4(u0, 5, 6, 7, 8);
- box2d.body.data.set(u0, body1, 1);
+#!old box2d.body.data.values4(u0, 1, 2, 3, 4);
+#!old box2d.body.data.set(u0, body0, 0);
+#!old box2d.body.data.values4(u0, 5, 6, 7, 8);
+#!old box2d.body.data.set(u0, body1, 1);
 
  n:=box2d.body.data.get(u0, body0, 0);
 # watch(n);

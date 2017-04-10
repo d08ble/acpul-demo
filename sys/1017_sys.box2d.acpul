@@ -99,18 +99,21 @@ box2d
 
  # create ]
 
- body.data.values4 # data[4]
- {
-  io(_0, 500310, _1, _2, _3, _4);
- };
- body.data.set # body, offset <data[4]>
- {
+# body.data.values4 # data[4]
+#  io(_0, 500310, _1, _2, _3, _4);
+# body.data.set 
+#  # u0, body, offset <data[4]>
+#  io(_0, 500311, _1, _2, 0,0);
+ 
+ body.data.set4 {
+  # u0, body, offset d0-d3
+  io(_0, 500310, _3, _4, _5, _6);
   io(_0, 500311, _1, _2, 0,0);
  };
- body.data.get # body, offset > data[offset]
- {
+
+ body.data.get 
+  # u0, body, offset -> v
   io(_0, 500312, _1, _2, 0,0);
- };
 
  # position, angle [
 

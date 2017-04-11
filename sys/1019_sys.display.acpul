@@ -50,4 +50,8 @@ display
  size
   # display.id -> w,h
   io(u0, 500250, _0,0,0,0);
+
+ scale
+  # display.id -> s
+  io(u0, 500251, _0,0,0,0);
 };

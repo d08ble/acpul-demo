@@ -1,0 +1,22 @@
+# types [
+
+#if0 {
+#
+#a $= type; # acpul
+#$a type; # bad vision (php)
+#a $type;
+#
+#a type;
+#var a; # js, everywhere
+#a:type; # flash :()
+#type a; # c
+#a = 1; # easy & dumb
+#a.x = 1; # easy & dumb
+#$a.x = 1; # ?
+#a.$x = 1; # ?
+#a ${ x $= 1; }; # nice, sh like
+#$ vs * vs & # vs
+#
+#};
+
+# types ]

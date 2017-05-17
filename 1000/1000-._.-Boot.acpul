@@ -274,7 +274,7 @@ node.new.this.ex(r0, PAINT, 0);
 #VG;
 
 PHOTONEO 7500;
-node.new.this.ex(r0, PHOTONEO, 0);
+#node.new.this.ex(r0, PHOTONEO, 0);
 
 CLOCK 10170000;
 #node.new.this.ex(r0, CLOCK, 0);
@@ -282,6 +282,7 @@ CLOCK 10170000;
 NEBULA 11800;
 #node.new.this.ex(r0, NEBULA, 0);
 
+node.new.this.ex(r0, 7900, 0);
 
 system.monitor {
  new.monitor {

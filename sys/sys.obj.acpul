@@ -15,6 +15,11 @@ obj.dump
 # u0, mode, obj
  obj_dump(_0, _1, _2, 0);
 
+obj.dump.lines
+# u0, obj, lines
+ obj_dump(_0, 125, _1, _2);
+ 
+
 # object common ]
 # map [
 

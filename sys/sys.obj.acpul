@@ -13,7 +13,7 @@ obj.clear obj_clear(_0, _1);
 
 obj.dump 
 # u0, mode, obj
- obj_dump(_0, _1, _2);
+ obj_dump(_0, _1, _2, 0);
 
 # object common ]
 # map [

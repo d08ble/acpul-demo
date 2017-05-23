@@ -286,7 +286,7 @@ node {_;
   io(_0, 7214, _1, _2, 0,0);
 
  get.child.dma
-  # u0, nid, dma
+  # u0, nid, dma -> -1 - bad dma size
   io(_0, 7214, _1, _2, _3, 0);
 
 # child.count

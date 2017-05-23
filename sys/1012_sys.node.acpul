@@ -274,16 +274,28 @@ node {_;
  value.g io(_0, 7214, _1, 10+_2, 0,0);
 
  change.parent
-  # u0, target, node
+  # u0, target.nid, nid
   io(_0, 7214, _1, _2, 0,0);
- 
- child.count
+
+ z.to.front
   # u0, nid
   io(_0, 7214, _1, 0,0,0);
 
- get.child.at
-  # u0, index
+ z.to.back
+  # u0, nid
   io(_0, 7214, _1, 0,0,0);
+
+ child.dma
+  # u0, nid, dma
+  io(_0, 7214, _1, _2, _3, 0);
+
+# child.count
+#  # u0, nid
+#  io(_0, 7214, _1, 0,0,0);
+#
+# get.child.at
+#  # u0, index
+#  io(_0, 7214, _1, 0,0,0);
 
 };
 

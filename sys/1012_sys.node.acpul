@@ -275,7 +275,15 @@ node {_;
 
  change.parent
   # u0, target, node
-  io(_0, 7214, _1, 6, 1,_2);
+  io(_0, 7214, _1, _2, 0,0);
+ 
+ child.count
+  # u0, nid
+  io(_0, 7214, _1, 0,0,0);
+
+ get.child.at
+  # u0, index
+  io(_0, 7214, _1, 0,0,0);
 
 };
 

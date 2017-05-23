@@ -285,7 +285,7 @@ node {_;
   # u0, target.nid, nid
   io(_0, 7214, _1, _2, 0,0);
 
- child.dma
+ get.child.dma
   # u0, nid, dma
   io(_0, 7214, _1, _2, _3, 0);
 

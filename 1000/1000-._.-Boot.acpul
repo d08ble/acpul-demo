@@ -323,6 +323,10 @@ if (r0) {
 
 system.monitor.init(0, 890);
 
+if (r0) {
+ os.main.ide.new(l0, 0,480,1, 600,400);
+};
+
 # old test [
 
 #node.new.this.ex(r0, -1000, 0);

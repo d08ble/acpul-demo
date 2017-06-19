@@ -193,12 +193,12 @@ cpu.get.device.type
 # ide [
 
 cpu.get.formulas.list
- # u0, buf -> buf[0]={fid*n}
- io(_0, 500438, _1, 0,0,0);
+ # u0, type, buf -> buf[0]={fid*n}
+ io(_0, 500438, _1, _2, 0,0,0);
 
 cpu.get.formula.name
- # u0, fid, buf -> buf[0]=name
- io(_0, 500439, _1, _2, 0,0);
+ # u0, type, fid, buf -> buf[0]=name
+ io(_0, 500439, _1, _2, _3, 0);
 
 # ide ]
 # core ]

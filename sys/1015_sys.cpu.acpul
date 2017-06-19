@@ -194,7 +194,7 @@ cpu.get.device.type
 
 cpu.get.formulas.list
  # u0, type, buf -> buf[0]={fid*n}
- io(_0, 500438, _1, _2, 0,0,0);
+ io(_0, 500438, _1, _2, 0,0);
 
 cpu.get.formula.name
  # u0, type, fid, buf -> buf[0]=name

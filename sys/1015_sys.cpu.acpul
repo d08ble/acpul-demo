@@ -223,6 +223,10 @@ debugger.frame.get.data
 debugger.frame.get.cmd
  # u0, type, v0,v1,v2
  io(_0, 500454, _1, _3,_4,_5);
- 
+
+debugger.set.frames.max
+ # u0, max
+ io(_0, 500455, _1, 0,0,0);
+
 # ide ]
 # core ]

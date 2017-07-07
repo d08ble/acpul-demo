@@ -210,7 +210,12 @@ debugger.off
 
 debugger.get.frames.count
  # u0, fid
- io(_0, 500451, _1, 0,0,0,0);
+ io(_0, 500451, _1, 0,0,0);
+
+debugger.select.frame
+ # u0, fid, i
+ io(_0, 500451, _1, _2, 0,0);
+
 
 # ide ]
 # core ]

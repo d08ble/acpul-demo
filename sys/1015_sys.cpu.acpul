@@ -225,8 +225,12 @@ debugger.frame.get.cmd
  io(_0, 500454, _1, _3,_4,_5);
 
 debugger.set.frames.max
- # u0, max
+ # u0, count
  io(_0, 500455, _1, 0,0,0);
+
+debugger.set.memory.max
+ # u0, size
+ io(_0, 500456, _1, 0,0,0);
 
 # ide ]
 # core ]

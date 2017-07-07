@@ -214,8 +214,15 @@ debugger.get.frames.count
 
 debugger.select.frame
  # u0, fid, i
- io(_0, 500451, _1, _2, 0,0);
+ io(_0, 500452, _1, _2, 0,0);
 
+debugger.frame.get.data
+ # u0, type, v0,v1,v2
+ io(_0, 500453, _1, _3,_4,_5);
 
+debugger.frame.get.cmd
+ # u0, type, v0,v1,v2
+ io(_0, 500454, _1, _3,_4,_5);
+ 
 # ide ]
 # core ]

@@ -232,5 +232,9 @@ debugger.set.memory.max
  # u0, size
  io(_0, 500456, _1, 0,0,0);
 
+debugger.set.data.mode
+ # u0, mode, obj, v0,v1
+ io(_0, 500456, _1, _2, _3,_4);
+
 # ide ]
 # core ]

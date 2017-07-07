@@ -200,5 +200,17 @@ cpu.get.formula.name
  # u0, type, fid, buf -> buf[0]=name
  io(_0, 500439, _1, _2, _3, 0);
 
+debugger.on
+ # u0, fid
+ io(_0, 500450, _1, 0, 0,0);
+
+debugger.off
+ # u0, fid
+ io(_0, 500450, _1, 1, 0,0);
+
+debugger.get.frames.count
+ # u0, fid
+ io(_0, 500451, _1, 0,0,0,0);
+
 # ide ]
 # core ]

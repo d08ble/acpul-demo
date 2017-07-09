@@ -204,11 +204,11 @@ cpu.get.formula.name
 
 debugger.on
  # u0, fid
- io(_0, 500150, _1, 0, 0,0);
+ io(_0, 500150, _1, 1, 0,0);
 
 debugger.off
  # u0, fid
- io(_0, 500150, _1, 1, 0,0);
+ io(_0, 500150, _1, 0, 0,0);
 
 debugger.get.frames.count
  # u0, fid

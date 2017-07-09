@@ -204,39 +204,39 @@ cpu.get.formula.name
 
 debugger.on
  # u0, fid
- io(_0, 500450, _1, 0, 0,0);
+ io(_0, 500150, _1, 0, 0,0);
 
 debugger.off
  # u0, fid
- io(_0, 500450, _1, 1, 0,0);
+ io(_0, 500150, _1, 1, 0,0);
 
 debugger.get.frames.count
  # u0, fid
- io(_0, 500451, _1, 0,0,0);
+ io(_0, 500151, _1, 0,0,0);
 
 debugger.select.frame
  # u0, fid, i
- io(_0, 500452, _1, _2, 0,0);
+ io(_0, 500152, _1, _2, 0,0);
 
 debugger.frame.get.data
  # u0, type, v0,v1,v2
- io(_0, 500453, _1, _3,_4,_5);
+ io(_0, 500153, _1, _3,_4,_5);
 
 debugger.frame.get.cmd
  # u0, type, v0,v1,v2
- io(_0, 500454, _1, _3,_4,_5);
+ io(_0, 500154, _1, _3,_4,_5);
 
 debugger.set.frames.max
  # u0, count
- io(_0, 500455, _1, 0,0,0);
+ io(_0, 500155, _1, 0,0,0);
 
 debugger.set.memory.max
  # u0, size
- io(_0, 500456, _1, 0,0,0);
+ io(_0, 500156, _1, 0,0,0);
 
 debugger.set.data.mode
  # u0, mode, obj, v0,v1
- io(_0, 500457, _1, _2, _3,_4);
+ io(_0, 500157, _1, _2, _3,_4);
 
 # debugger ]
 # ide ]

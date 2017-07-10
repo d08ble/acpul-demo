@@ -222,17 +222,19 @@ debugger.frame.get.data
  # u0, type, v0,v1,v2
  io(_0, 500153, _1, _3,_4,_5);
 
-debugger.frame.get.operations.count
- # u0 -> count
- debugger.frame.get.data(_0, 0, 0,0,0);
+debugger.frame {
+ get.operations.count
+  # u0 -> count
+  debugger.frame.get.data(_0, 0, 0,0,0);
 
-debugger.frame.get.operation
- # u0, i, mode -> *
- debugger.frame.get.data(_0, 1, _1, _2, 0);
+ get.operation
+  # u0, i, mode -> *
+  debugger.frame.get.data(_0, 1, _1, _2, 0);
 
-debugger.frame.get.operations.by.line
- # u0, line, obj -> *
- debugger.frame.get.data(_0, 2, _1, _2, 0);
+ get.operations.by.line
+  # u0, line, obj -> *
+  debugger.frame.get.data(_0, 2, _1, _2, 0);
+};
 
 debugger.frame.get.cmd
  # u0, type, v0,v1,v2

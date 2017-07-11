@@ -222,7 +222,7 @@ debugger.frame.get.data
  # u0, type, v0,v1,v2
  io(_0, 500153, _1, _3,_4,_5);
 
-debugger.frame {
+debugger.frame { _;
  get.operations.count
   # u0 -> count
   debugger.frame.get.data(_0, 0, 0,0,0);

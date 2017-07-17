@@ -32,6 +32,9 @@ cpu.debug.errors.enabled io(_0, 500402, _1,0,0,0);
 cpu.debug.log.to.xcode.console io(_0, 500403, _1,0,0,0);
 cpu.debug.log.to.console io(_0, 500404, _1,0,0,0);
 
+cpu.debug.console.on io(_0, 500440, _1,0,0,0);
+
+
 # H9-250714 [
 cpu.frame.dt
  #u0, dt

@@ -25,14 +25,3 @@ events.pop
  io(_0, 500703, _1,_2, 0,0);
 
 
-events.process {
-# id, event.loop, b0
- id _0;
- event.loop _1;
- tb0 _2;
-
- tb0:=1; while(tb0) { 
-  tb0:=ui.event(id);
-  events.loop(tb0, id);
- };
-};

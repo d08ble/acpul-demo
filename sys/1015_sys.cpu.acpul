@@ -43,11 +43,11 @@ cpu.debug.get.formula.info.runtime
  io(_0, 500441, _1, _2, _3, 0);
 
 cpu.debug.get.formula.info.runtime.memory.used
- # u0, fid, buffer -> buffer
+ # u0, fid -> mem(total, used)
  runtime(_0, 0, _1, _2);
 
 #cpu.debug.get.formula.info.runtime.objects
-# # u0, fid, buffer -> buffer
+# # u0, fid -> objects
 # runtime(_0, 0, _1, _2);
 
 # runtime ]

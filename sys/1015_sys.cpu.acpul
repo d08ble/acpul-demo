@@ -39,12 +39,12 @@ cpu.debug.console.on io(_0, 500440, _1,0,0,0);
 # runtime [
 
 cpu.debug.get.formula.info.runtime
- # u0, type, fid, type, obj -> ?obj
+ # u0, type, fid,interpreter, obj -> ?obj
  io(_0, 500441, _1, _2, _3, _4);
 
 cpu.debug.get.formula.info.runtime.memory
  # u0, fid,i -> mem.total, mem.used
- runtime(_0, 0, _1, _2);
+ runtime(_0, 0, _1, _2, 0);
 
 #cpu.debug.get.formula.info.runtime.objects
 # # u0, fid -> objects

@@ -32,7 +32,11 @@ cpu.debug.errors.enabled io(_0, 500402, _1,0,0,0);
 cpu.debug.log.to.xcode.console io(_0, 500403, _1,0,0,0);
 cpu.debug.log.to.console io(_0, 500404, _1,0,0,0);
 
+# new [
+
 cpu.debug.console.on io(_0, 500440, _1,0,0,0);
+
+# runtime [
 
 cpu.debug.get.formula.info.runtime
  # u0, type, fid, buffer -> buffer
@@ -45,6 +49,10 @@ cpu.debug.get.formula.info.runtime.memory
 #cpu.debug.get.formula.info.runtime.objects
 # # u0, fid, buffer -> buffer
 # runtime(_0, 0, _1, _2);
+
+# runtime ]
+
+# new ]
 
 # H9-250714 [
 cpu.frame.dt

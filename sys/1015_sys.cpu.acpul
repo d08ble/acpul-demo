@@ -42,7 +42,7 @@ cpu.debug.get.formula.info.runtime
  # u0, type, fid, buffer -> buffer
  io(_0, 500441, _1, _2, _3, 0);
 
-cpu.debug.get.formula.info.runtime.memory
+cpu.debug.get.formula.info.runtime.memory.used
  # u0, fid, buffer -> buffer
  runtime(_0, 0, _1, _2);
 

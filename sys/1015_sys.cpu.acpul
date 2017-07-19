@@ -44,7 +44,7 @@ cpu.debug.get.formula.info.runtime
 
 cpu.debug.get.formula.info.runtime.memory
  # u0, fid,i -> mem.total, mem.used
- runtime(_0, 0, _1, _2, 0);
+ runtime(_0, 0, _1,_2, 0);
 
 #cpu.debug.get.formula.info.runtime.objects
 # # u0, fid -> objects

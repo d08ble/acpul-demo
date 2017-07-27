@@ -282,6 +282,12 @@ debugger.cmd.param0
  # u0, p0,p1,p2
  debugger.cmd(_0, 0, _1, _2, _3);
 
+debugger.get.object.links {
+ # u0, mode, obj, fid
+ debugger.cmd.param0(_0, 0,0,0);
+ debugger.cmd(_0, 10, _1, _2, _3);
+};
+
 debugger.get.object.locations {
  # u0, mode, obj, fid
  debugger.cmd.param0(_0, 0,0,0);

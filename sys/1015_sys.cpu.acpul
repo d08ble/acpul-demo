@@ -279,8 +279,8 @@ debugger.cmd
  io(_0, 500158, _1, _2,_3,_4);
 
 debugger.get.object.locations
- # u0, mode, extra
- debugger.cmd(_0, 0, _1, _2, 0);
+ # u0, mode, obj, extra
+ debugger.cmd(_0, 0, _1, _2, _3);
 
 # debugger ]
 # ide ]

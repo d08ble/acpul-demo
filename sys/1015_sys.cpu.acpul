@@ -278,6 +278,10 @@ debugger.cmd
  # u0, cmd, v0,v1,v2
  io(_0, 500158, _1, _2,_3,_4);
 
+debugger.get.object.locations
+ # u0, mode, extra
+ debugger.cmd(_0, 0, _1, _2, 0);
+
 # debugger ]
 # ide ]
 # core ]

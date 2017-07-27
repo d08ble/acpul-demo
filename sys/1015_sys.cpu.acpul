@@ -274,6 +274,10 @@ debugger.set.data.mode
  # u0, mode, obj, v0,v1
  io(_0, 500157, _1, _2, _3,_4);
 
+debugger.cmd
+ # u0, cmd, v0,v1,v2
+ io(_0, 500158, _1, _2,_3,_4);
+
 # debugger ]
 # ide ]
 # core ]

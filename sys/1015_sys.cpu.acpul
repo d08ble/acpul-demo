@@ -254,7 +254,7 @@ debugger.frame { _;
   debugger.frame.get.data(_0, 1, _1, _2, _3);
 
  get.operations.by.line
-  # u0, line, obj, mode -> *
+  # u0, mode, line, obj-> *
   debugger.frame.get.data(_0, 2, _1, _2, _3);
 };
 

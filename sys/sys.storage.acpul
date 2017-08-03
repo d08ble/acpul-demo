@@ -79,5 +79,6 @@ storage.list.files
 
 storage.save.object {
  # pool,id, mode, obj,i
- 
+ io(u0, 500514, _4, 0,0, 0);
+ io(u0, 500516, _0,_1, _2, _3);
 };

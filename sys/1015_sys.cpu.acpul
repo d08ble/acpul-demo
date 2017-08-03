@@ -284,6 +284,8 @@ debugger.cmd.param0
 
 debugger.get.object.links { # ???
  # u0, mode, obj, fid
+ # mode: 
+ #  0 - graph dot
  debugger.cmd.param0(_0, 0,0,0);
  debugger.cmd(_0, 10, _1, _2, _3);
 };

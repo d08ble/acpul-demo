@@ -258,6 +258,11 @@ debugger.frame { _;
   debugger.frame.get.data(_0, 2, _1, _2, _3);
 };
 
+debugger.frame.get.operations.by.line.timeline
+ # u0, line, ops.out
+ debugger.frame.get.operations.by.line(_0, 0, _1, _2);
+
+
 debugger.frame.get.cmd
  # u0, type, v0,v1,v2
  io(_0, 500154, _1, _3,_4,_5);

@@ -262,6 +262,10 @@ debugger.frame.get.operations.by.line.timeline
  # u0, line, ops.out
  debugger.frame.get.operations.by.line(_0, 0, _1, _2);
 
+debugger.frame.get.operations.by.line.data
+ # u0, line, ops.out
+ debugger.frame.get.operations.by.line(_0, 1, _1, _2);
+
 
 debugger.frame.get.cmd
  # u0, type, v0,v1,v2

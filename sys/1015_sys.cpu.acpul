@@ -266,6 +266,11 @@ debugger.frame.get.operations.by.line.data
  # u0, line, ops.out
  debugger.frame.get.operations.by.line(_0, 1, _1, _2);
 
+debugger.frame.get.operations.by.line.data.text
+ # u0, line, ops.out
+ debugger.frame.get.operations.by.line(_0, 2, _1, _2);
+
+
 
 debugger.frame.get.cmd
  # u0, type, v0,v1,v2

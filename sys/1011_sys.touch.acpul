@@ -10,12 +10,12 @@ touch.a.mode a+1;
 touch.a.rect a+2;
 touch.a.event a+3;
 touch.a.get.draw.rects a+4;
+touch.a.rect2 a+5;
 
 touch.start io(u0, touch.a.reset, 0,0,0,0);
 
-touch.rect
+touch.rect {
 # id, x,y,w,h
-{
  io(u0, a.mode, _0, 1, 1, 0);
  _0:=io(u0, a.rect, _1, _2, _3, _4);
 };
@@ -24,6 +24,11 @@ touch.rect.screen {
  # id, x,y,w,h
  io(u0, a.mode, _0, 1, 0, 0);
  _0:=io(u0, a.rect, _1, _2, _3, _4);
+};
+
+touch.rect2 {
+ io(u0, a.mode, _0, 1, 1, 0);
+ _0:=io(u0, a.rect2, _1, _2, _3, _4);
 };
 
 touch.event 

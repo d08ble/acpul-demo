@@ -16,7 +16,7 @@ touch.a.rect2b a+6;
 touch.start io(u0, touch.a.reset, 0,0,0,0);
 
 touch.rect {
-# id, x,y,w,h
+ # id, x,y,w,h
  io(u0, a.mode, _0, 1, 1, 0);
  _0:=io(u0, a.rect, _1, _2, _3, _4);
 };
@@ -40,7 +40,7 @@ touch.rect2.lock {
 };
 
 touch.event 
-# id => event (x,y,gx,gy)
+ # id => event (x,y,gx,gy)
  io(u0, a.event, _0,0,0,0);
 
 touch.get.draw.rects

@@ -36,7 +36,7 @@ touch.rect2 {
 
 touch.rect2.lock {
  # id, x,y,w,h
- touch.rect2(_0, _1,_2,_3,_4, 1,0,0,0);
+ touch.rect2(_0, _1,_2,_3,_4, 1, 0,0,0);
 };
 
 touch.event 

@@ -27,17 +27,17 @@ touch.rect.screen {
  _0:=io(u0, a.rect, _1, _2, _3, _4);
 };
 
-touch.rect2 {
- # id, x,y,w,h, lock.on.touch, v0,v1,v2
- io(u0, a.mode, _0, 1, 1, 0);
- io(u0, a.rect2a, _5,_6,_7,_8);
- _0:=io(u0, a.rect2b, _1, _2, _3, _4);
-};
+#touch.rect2 {
+# # id, x,y,w,h, lock.on.touch, v0,v1,v2
+# io(u0, a.mode, _0, 1, 1, 0);
+# io(u0, a.rect2a, _5,_6,_7,_8);
+# _0:=io(u0, a.rect2b, _1, _2, _3, _4);
+#};
 
-touch.rect2.lock {
-  # id, x,y,w,h
-  touch.rect2(_0, _1,_2,_3,_4, 1,0,0,0);
-};
+#touch.rect2.lock {
+# # id, x,y,w,h
+# touch.rect2(_0, _1,_2,_3,_4, 1,0,0,0);
+#};
 
 touch.event 
 # id => event (x,y,gx,gy)

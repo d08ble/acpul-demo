@@ -50,6 +50,8 @@ media.ft.draw
  # u0, dma(p0,p1,p2)
  io(_0, 500903, _1,_2,_3, 0);
 
+
+
 media.video.recorder.texture {
  # u0, videofile(pool,id), mode, width,height -> tex
  io(_0, 500830, _1, _2, 0,0);
@@ -63,3 +65,9 @@ media.video.recorder.frame.ready
 media.video.recorder.stop
  # u0, tex
  io(_0, 500833, _1, 0,0,0);
+
+
+
+media.text.display.keyboard
+ # u0, on
+ io(_0, 500910, _1, 0,0,0);

@@ -74,6 +74,7 @@ media.input.e {
  key.down 1;
  key.up 2;
  key.flags.changed 3;
+ key.pressed 4;
 };
 
 media.input.display.keyboard

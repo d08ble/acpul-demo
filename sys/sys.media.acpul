@@ -66,12 +66,15 @@ media.video.recorder.stop
  # u0, tex
  io(_0, 500833, _1, 0,0,0);
 
-
+media.input.e {
+ key.down 1;
+ key.up 2;
+};
 
 media.input.display.keyboard
  # u0, on
  io(_0, 500910, _1, 0,0,0);
 
-media.input.keyboard.get.alt.keys.mask
+media.input.get.alt.keys.mask
  # u0
  io(_0, 500911, 0,0,0,0);

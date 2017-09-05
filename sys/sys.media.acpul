@@ -80,7 +80,7 @@ media.input.display.keyboard
  io(_0, 500950, _1, 0,0,0);
 
 media.input.get.keys.flags
- # u0
- io(_0, 500951, 0,0,0,0);
+ # u0, index
+ io(_0, 500951, _1, 0,0,0);
 
 # input ]

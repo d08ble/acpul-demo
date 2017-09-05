@@ -73,6 +73,7 @@ media.input.pool 950;
 media.input.e {
  key.down 1;
  key.up 2;
+ key.flags.changed 3;
 };
 
 media.input.display.keyboard

@@ -71,10 +71,10 @@ media.video.recorder.stop
 media.input.pool 950;
 
 media.input.e {
- key.down 1;
- key.up 2;
- key.flags.changed 3;
- key.pressed 4;
+ key.pressed 1;
+ key.down 2;
+ key.up 3;
+ key.flags.changed 4;
 };
 
 media.input.display.keyboard

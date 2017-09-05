@@ -68,6 +68,10 @@ media.video.recorder.stop
 
 
 
-media.text.display.keyboard
+media.input.display.keyboard
  # u0, on
  io(_0, 500910, _1, 0,0,0);
+
+media.input.keyboard.get.alt.keys.mask
+ # u0
+ io(_0, 500911, 0,0,0,0);

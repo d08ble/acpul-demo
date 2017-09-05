@@ -79,7 +79,7 @@ media.input.display.keyboard
  # u0, on
  io(_0, 500950, _1, 0,0,0);
 
-media.input.get.alt.keys.mask
+media.input.get.keys.flags
  # u0
  io(_0, 500951, 0,0,0,0);
 

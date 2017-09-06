@@ -85,4 +85,8 @@ media.input.get.keys.flags
  # u0, index
  io(_0, 500951, _1, 0,0,0);
 
+media.input.get.display.keyboard.rect
+ # u0
+ io(_0, 500952, _1, 0,0,0);
+
 # input ]

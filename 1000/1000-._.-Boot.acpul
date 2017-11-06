@@ -332,7 +332,7 @@ keyboard.hide.button 15822;
 node.new.this.ex4(r0, keyboard.hide.button,0,0,0,0);
 
 HEROLESSUS 10009000;
-node.new.this.ex(r0, HEROLESSUS, 0);
+#node.new.this.ex(r0, HEROLESSUS, 0);
 
 # keyboard ]
 

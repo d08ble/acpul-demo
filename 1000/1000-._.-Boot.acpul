@@ -236,7 +236,7 @@ node.new.this.ex(r0, GAME.CRAZY.BIRD, 0);
 
 
 AWESOME.NOTES 10010000;
-node.new.this.ex(r0, AWESOME.NOTES, 0);
+#node.new.this.ex(r0, AWESOME.NOTES, 0);
 
 ACPU.STUDIO 10019000;
 #node.new.this.ex(r0, ACPU.STUDIO, 0);

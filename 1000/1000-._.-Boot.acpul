@@ -325,7 +325,7 @@ if (r0) {
 system.monitor.init(0, 890);
 
 if (r0) {
- os.main.ide.new(r0, 0,480,1, 600,400);
+# os.main.ide.new(r0, 0,480,1, 600,400);
 };
 
 # keyboard [

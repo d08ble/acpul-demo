@@ -281,7 +281,7 @@ l0:=node.new.this.ex(r0, CLOCK, 0);
 node.prop.x.s(u0, l0, 550);
 
 NEBULA 11800;
-node.new.this.ex(r0, NEBULA, 0);
+#node.new.this.ex(r0, NEBULA, 0);
 
 #neo.v2.tests 7990;
 #node.new.this.ex(r0, 7990, 0);

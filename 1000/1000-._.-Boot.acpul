@@ -325,7 +325,7 @@ if (r0) {
 system.monitor.init(0, 890);
 
 if (r0) {
-# os.main.ide.new(r0, 0,480,1, 600,400);
+ os.main.ide.new(r0, 0,480,1, 600,400);
 };
 
 # keyboard [
@@ -368,7 +368,7 @@ llog.end(ll0);
 
 # touch debug should be lastest node [
 TOUCH.DEBUG 1006;
-node.new.this.ex(r0, TOUCH.DEBUG, 0);
+#node.new.this.ex(r0, TOUCH.DEBUG, 0);
 # touch debug should be lastest node ]
 
 #watch(r0);

@@ -166,7 +166,7 @@ zoom4
  y:=-1400;
  s:=5;
 };
-#zoom4;
+zoom4;
 
 zoomA
 {

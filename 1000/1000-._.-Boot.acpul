@@ -1,5 +1,4 @@
 ### 1000  ._. Boot
-
 # test needCompile [
 a1001 @1001;
 # test needCompile ]
@@ -8,10 +7,9 @@ _ @1010;
 _ @sys.node;
 _ @sys.touch;
 _ @sys.net;
-
+ 
 # NETWORKING [
 
-#net.host(192,168,7,225, 8077);
 net.host(192,168,0,104, 8077);
 net.editor.update(1);
 net.reset.after.update(1, 1000);
@@ -20,7 +18,11 @@ net.reset.after.update(1, 1000);
 
 r0:=k==0;
 
-#draw(r0, 1001);
+_ @sys.llog;
+llog.host(u0, 192,168,0,104, 8995);
+llog.enable(u0, 1);
+
+draw(r0, 1001);
 
 # sharedobj [
 
@@ -50,7 +52,7 @@ test.shrobj {
  sharedobj.key(r0, dma0,1000);
  l2:=dma.get(r0, dma0,0);
  dma.off(r0, dma0);
- _ @sys.llog;
+ 
  llog.begin(r0, S.boot.sharedobj);
  llog.erase(r0);
  llog.printv(r0, S.i0, l0);
@@ -329,6 +331,8 @@ system.monitor {
 };
 #system.monitor.init(0, 0);
 
+
+
 _ @sys.os;
 _ @os.main;
 
@@ -339,7 +343,7 @@ if (r0) {
 system.monitor.init(0, 890);
 
 if (r0) {
- os.main.ide.new(r0, 0,480,1, 600,400);
+# os.main.ide.new(r0, 0,480,1, 600,400);
 };
 
 # keyboard [

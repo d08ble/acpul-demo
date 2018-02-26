@@ -4,6 +4,7 @@
 
 livelog {
  a 502000;
+ io 0;
  begin
   # u0, str
   io(_0, a+0, _1,0,0,0);

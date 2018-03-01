@@ -100,7 +100,7 @@ cpu.init
   u20:=0; u21:=0; u22:=0; u23:=0; u24:=0;
   u25:=0; u26:=0; u27:=0; u28:=0; u29:=0;
   u30:=0; u31:=0;
-  cpu.profile.reset;
+  cpu.profile.reset(u0);
  };
 };
 

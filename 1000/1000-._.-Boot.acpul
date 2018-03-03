@@ -10,7 +10,7 @@ _ @sys.net;
  
 # NETWORKING [
 
-net.host(192,168,0,104, 8077);
+net.host(192,168,0,100, 8077);
 net.editor.update(1);
 net.reset.after.update(1, 1000);
 

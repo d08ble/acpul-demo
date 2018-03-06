@@ -357,3 +357,94 @@ it.tree.number_of_siblings
 #it.tree.next_at_same_depth
 
 # tree ]
+# jobj [
+
+jobj.new
+ # u0
+ obj_new(u0, 7, 0, 0, 0,0);
+
+#jobj.count
+# # o
+# obj.count(u0, _0);
+#
+#jobj.clear
+# # o
+# obj.clear(u0, _0);
+
+jobj.v.s
+ # jo, key, v
+ jobj_set(u0, 0, _0, _1, _2, 0);
+jobj.v.g
+ # jo, key -> v,o0=err
+ jobj_get(u0, 0, _0, _1, 0, 0);
+
+jobj.str.s
+ # jo, key, s
+ jobj_set(u0, 1, _0, _1, _2, 0);
+jobj.buf.s
+ # jo, key, buf
+ jobj_set(u0, 1, _0, _1, _2, 1);
+#jobj.str.g
+# # o, key -> ,o0=err
+# jobj_get(u0, 1, _0, _1, 0);
+
+jobj.buf.dma
+ # jo, key, dma
+ jobj_get(u0, 1, _0, _1, _2, 0);
+jobj.str.dma
+ jobj.buf.dma(__);
+
+jobj.g
+ # jo -> o,o0=err
+ jobj_get(u0, 11, _0, 0, 0, 0);
+jobj.dma
+ # jo, dma,o0=err
+ jobj_get(u0, 12, _0, _1, 0, 0);
+jobj.value
+ # jo -> v,o0=err
+ jobj_get(u0, 14, _0, 0, 0, 0);
+
+
+jobj.arr.s
+ # jo, key, i, o
+ jobj_set(u0, 2, _0, _1, _2, _3);
+jobj.arr.jo.g
+ # jo, key, i -> jo,o0=err
+ jobj_get(u0, 2, _0, _1, _2, 0);
+
+jobj.arr.clear
+ # jo, key
+ jobj_cmd(u0, 0, _0, _1, 0,0,0,0);
+jobj.arr.erase
+ # jo, key, start,end
+ jobj_cmd(u0, 1, _0, _1, _2,_3, 0,0);
+jobj.arr.count
+ # jo, key
+ jobj_cmd(u0, 2, _0, _1, 0,0,0,0);
+
+jobj.jo.s
+ # jo, key, o
+ jobj_set(u0, 3, _0, _1, _2, 0);
+jobj.jo.g
+ # jo, key -> jo,o0=err
+ jobj_get(u0, 3, _0, _1, 0, 0);
+
+jobj.jo.clear
+ # jo, key
+ jobj_cmd(u0, 4, _0, _1, 0,0,0,0);
+jobj.jo.erase
+ # jo, key
+ jobj_cmd(u0, 4, _0, _1, 0,0,0,0);
+
+# jobj [
+# json [
+
+json.decode
+ # s -> o
+ io(u0, 500520, _0, 0,0,0);
+
+json.encode
+ # o, to
+ io(u0, 500521, _0, _1, 0,0);
+
+# json ]

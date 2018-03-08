@@ -289,7 +289,7 @@ PHOTONEO 7500;
 #node.new.this.ex(r0, PHOTONEO, 0);
 
 CLOCK 10170000;
-#l0:=node.new.this.ex(r0, CLOCK, 0);
+l0:=node.new.this.ex(r0, CLOCK, 0);
 node.prop.x.s(u0, l0, 550);
 
 NEBULA 11800;

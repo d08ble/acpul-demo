@@ -436,6 +436,10 @@ jobj.jo.erase
  # jo, key
  jobj_cmd(u0, 4, _0, _1, 0,0,0,0);
 
+jobj.o.s # universal str/buf/o/jo
+ # jo, key, o
+ jobj_set(u0, 4, _0, _1, _2, 0);
+
 # jobj [
 # json [
 

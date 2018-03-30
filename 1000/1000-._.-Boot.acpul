@@ -340,7 +340,7 @@ if (r0) {
  os.main.panel.new(l0, 0,925,1, 768,100);
 };
 
-system.monitor.init(0, 890);
+system.monitor.init(0, 950);
 
 if (r0) {
 # os.main.ide.new(r0, 0,480,1, 600,400);

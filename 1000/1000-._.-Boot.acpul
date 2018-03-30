@@ -10,7 +10,7 @@ _ @sys.net;
  
 # NETWORKING [
 
-net.host(192,168,0,100, 8077);
+#net.host(192,168,0,100, 8077);
 net.editor.update(1);
 net.reset.after.update(1, 1000);
 
@@ -19,7 +19,7 @@ net.reset.after.update(1, 1000);
 r0:=k==0;
 
 _ @sys.llog;
-llog.host(u0, 192,168,0,100, 8995);
+#llog.host(u0, 192,168,0,100, 8995);
 llog.enable(u0, 1);
 
 draw(r0, 1001);

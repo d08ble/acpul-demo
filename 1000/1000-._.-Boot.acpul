@@ -343,7 +343,7 @@ if (r0) {
 system.monitor.init(0, 940);
 
 if (r0) {
- os.main.ide.new(r0, 0,525,1, 600,400);
+# os.main.ide.new(r0, 0,525,1, 600,400);
 };
 
 # keyboard [

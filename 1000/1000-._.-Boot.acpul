@@ -199,6 +199,10 @@ x:=0;y:=0;s:=1;
 new.Edit1
  node.new.this.object(r0, 1002, 0);
 
+if (r0) {
+ os.main.panel.new(l0, 0,925,1, 768,100);
+};
+
 #new.Edit1();
 
 #!node.new.this.object(r0, 2000, 0);

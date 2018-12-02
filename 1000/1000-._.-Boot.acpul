@@ -303,7 +303,7 @@ NEBULA 11800;
 #node.new.this.ex(r0, 7990, 0);
 
 _ @core.gl3d;
-l0:=node.new.this.ex(r0, gl3d.test.main, 0);
+#l0:=node.new.this.ex(r0, gl3d.test.main, 0);
 
 
 system.monitor {

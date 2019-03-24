@@ -275,6 +275,10 @@ HIPSTER.BANNER 10025000;
 #node.new.this.ex(r0, HIPSTER.BANNER, 0);
 
 
+
+
+
+
 VG {
 _ @core.vg;
 #node.new.this.ex(r0, core.vg.node.test0, 0);
@@ -290,7 +294,7 @@ node.new.this.ex(r0, PAINT, 0);
 };
 
 PHOTONEO 7500;
-#node.new.this.ex(r0, PHOTONEO, 0);
+node.new.this.ex(r0, PHOTONEO, 0);
 
 CLOCK 10170000;
 l0:=node.new.this.ex(r0, CLOCK, 0);
@@ -300,10 +304,11 @@ NEBULA 11800;
 #node.new.this.ex(r0, NEBULA, 0);
 
 #neo.v2.tests 7990;
-#node.new.this.ex(r0, 7990, 0);
+node.new.this.ex(r0, 7990, 0);
 
 _ @core.gl3d;
 #l0:=node.new.this.ex(r0, gl3d.test.main, 0);
+#node.prop.s.s(u0, l0, 0.4);
 
 
 system.monitor {
@@ -347,7 +352,7 @@ if (r0) {
 system.monitor.init(0, 940);
 
 if (r0) {
- os.main.ide.new(r0, 0,525,1, 600,400);
+# os.main.ide.new(r0, 0,525,1, 600,400);
 };
 
 # keyboard [
@@ -357,6 +362,9 @@ node.new.this.ex4(r0, keyboard.hide.button,0,0,0,0);
 
 HEROLESSUS 10009000;
 #node.new.this.ex(r0, HEROLESSUS, 0);
+
+BOOTLOADER 8000000;
+node.new.this.ex(r0, BOOTLOADER, 0);
 
 # keyboard ]
 
